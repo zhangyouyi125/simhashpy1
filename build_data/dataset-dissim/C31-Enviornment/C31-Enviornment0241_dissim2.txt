@@ -1,0 +1,16 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第2期 No.2 Vol.18 1998
+科技期刊
+
+经合组织发表报告批评西班牙环境保护不力
+　　一份经合组织(OECD)评论西班牙环境状况的报告虽然肯定了某些方面取得的进步，但较尖锐地批评了西班牙的环境保护实践。报告坚持要求西班牙作出更大努力。
+　　报告批评的主要目标是水和废物管理。另外包埋菌在低浓度DO或高浓度NH+4存在的条件下其脱氮活性均远高于未包埋菌。　 
+1.3　试验方法
+　　分别称取适量包埋菌和相当的未包埋反硝化菌放入人工合成废水中（含NO-3=50mg/L，PO3-４=3mg/L,COD/TN=20）,磁力搅拌，液面用液体石腊密封。同年西班牙排放氧化氮120万t，人均接近OECD平均值，其中移动源占了62%，电厂占21%，工业占15%。挥发性有机化合物总计120万t，45%来自移动源，55%来自固定源。固定源中使用各类溶剂是最大排放源。
+关键词　反硝化菌　废水生物脱氮　固定化细胞技术
+Denitrification characters of denitrifying bacteria immobilized by polyvinyl alcohol(PVA).Yuan Linjiang(Department of Environmental Engineering,Xi'an University of Architecture and Technology,Xi'an 710055) .China Environmental Science.1998,18(2):189～191
+Abstract― The denitrification characters of denitrifying bacteria immobilized by PVA were studied in this paper,compared with that of free bacteria. It's showed that the optimum pH value and temperature of immobilized denitrifying bacteria were 8 and 30℃ respectively.They are as same as that of free bacteria.When it was not in optimum condition, immobilized denitrifying bacteria's activity was greater than that of free bacteria.Immobilized denitrifying bacteria had more resistance to low temperature(10℃),DO low concentration and NH+４ high concentration than that of free bacteria.
+Key words: denitrifying bacteria　N-removal of wastewater　Immobilization cell technology
+　　 固定化微生物技术是目前各国污水生物处理领域竞相研究开发的内容之一，具有广阔的应用前景〔1〕。 在pH=8时，未包埋菌活性高于包埋菌,但pH值偏 离7.5～8.5时,包埋菌活性逐渐高于未包埋菌,偏离越远，两者活性相差越明显。
+江　年　摘自《Acid News》,December,11(1997)

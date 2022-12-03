@@ -1,0 +1,131 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+Windows 95下串行通信编程技术及其实现
+郭峰林　朱才连
+　　摘　要　本文首先简单讨论MSDOS、16位Windows和Windows95下的通信编程差别，然后着重讲述32位Windows95 环境下的通信编程技术，最后给出利用该技术实现串行通信的实例。
+　　关键词　API函数，串行通信，中断，查询，线程，同步，异步，阻塞
+TECHNIQUE OF SERIAL COMMUNICATION PROGRAMMING
+AND ITS REALIZATION IN WINDOWS95
+Guo Fenglin　Zhu Cailian
+Institute of Geodesy & Geophysics, Chinese Academy of Sciences, Hubei.Wuhan 430077
+　　Abstract　This paper discusses the difference of communication programming in the operating system of MSDOS,16 bit Windows and Windows95.Then tells of some problems about serial communication programming technique in 32 bit OS of windows95. Finally, an example of the application of this technique in windows95is provided.
+　　Keywords　API function, Serial communication, Interrupt, Poll, Thread, Synchronization, Asynchronization
+1　前言
+　　Windows95以其形象的图形界面设计、操作简单、功能强大、可靠性高等优点，赢得了越来越多的用户，开发Windows95应用程序已经成为当今的主流。在诸多的应用开发中，与外部硬件设备通信是常见的应用，而串行通信以其简单的硬件连接方式常常成为应用开发者的首选。同时该工具通过提供一隐式的冲突检测和协调算法[1]来解决用户间出现的冲突。
+　　笔者最近在Windows95环境下开发一套“公安110智能报警系统”，该系统需要对报警电话进行实时监控，以便能实时地进行接警和处警。报警电话的监控是通过检测从电话交换机中馈送的RS232标准的串行通信信号，其中串行口通信采用3线方式。
+　　由上可知，WBTool工具所采用的结构模型与典型的Client/Server结构不同之处在于它增加了一个消息转发器，其优点在于：当系统同时有多个组分别进行讨论时，消息转发器和服务器可以分担消息及数据的转发工作，这样可降低服务器负担，减少通信链路发生阻塞的次数，提高通信质量，从而有效地提高整个系统的健壮性。具体的工作如下：
+　　①对象管理Agent记录和维护本地出生用户Agent的特征信息(对象名，ID，驻留节点，驻留时的URL等 )，并赋予用户Agent一个含有出生地信息的标识号。
+　　在Windows下，串行口作为系统资源，由设备驱动程序统一管理，用户不能象在MSDOS下一样直接对串行口硬件端口进行编程。16位的Windows3.1操作系统提供了专门的串行通信的API函数：OpenComm()、CloseComm()、ReadComm()、 WriteComm()等，通过这些专用API（Application Programming Interfaces）函数来设置和读、写串行口。而Windows95将串行口和其它通信设备如Modern、传真机等统一视作文件，对串行口的打开、关闭、读写等操作与操作普通文件的API函数相同，如CreateFile()、CloseHandel()、ReadFile()、WriteFile()，正是由于这些函数的“多态性”， 同时还由于需要结合Windows95的线程编程、事件驱动等新技术，因而使得Windows95下的串行口通信编程比较复杂。
+3　Windows95下串行通信API函数
+　　在Windows95中将串行口与文件的统一了起来，对它们的打开、读、写、关闭等操作都使用相同的API函数，但是它们之间又有差别，譬如串行口不能象文件一样可以被删除，这些差别体现在API函数中部分参数的设置上。
+　　弄清串行通信API函数的用法是掌握串行通信编程技术的关键。下面介绍几个与串行通信编程密切相关的API函数，着重说明这些API函数在进行串行通信时参数设置需要注意的地方。其它没有提及的函数及参数可以参考Windows95 API函数手册。
+3.1　打开串行口API函数
+　　Windows95通信会话以调用CreateFile()函数打开串行口开始。数据包格式的BNF描述为：
+　　数据包：= 控制信息｜数据信息
+　　控制信息：= 操作码｜信息发送者
+　　数据信息：= 文本内容｜文本控制信息｜图形控制信息｜定位信息｜颜色信息
+　　定位信息：= {坐标位置(X,Y)}
+　　文本控制信息：=字体
+　　图形控制信息：=宽度
+　　由上可知，该协议集可扩充性强，用户可随时增加所需协议。
+2 关键技术
+2.1 通信协议集
+　　WBTool工具采用Java语言开发，由于该语言支持标准通信协议族TCP/IP，所以用户只需建立应用层协议集即可。
+　　CreateFile()函数原型:
+　HANDLE CreateFile(LPCTSTR szDevice, DWORD dwAccess,
+DWORD dwShareMode, LPSECURITY―ATTRIBUTES lpSA,
+DWORD dwCreate, DWORD dwFlagsAndAttributes,
+HANDLE hTemplateFile );
+　　调用此函数要注意这几个参数的设置：dwShareMode指定该端口的共享属性。该参数是为文件共享提供的，串行口不能作为共享设备。故参数值必须为0，这是文件与通信设备之间的主要差异之一；dwCreate必须为OPEN―EXISTING。因为CreateFile()只能打开存在的端口，而不能象创建新文件一样创建物理上不存在的新串口；dwFlagsAndAttributes描述了该端口的各种属性。对于文件来说，具有多种属性（只读、隐藏、系统）是可能的，但是对于串行口，唯一有意义的设置是FILE―FLAG―OVERLAPPED；参数hTemplateFile必须为NULL。
+　　返回值：若成功，返回创建的句柄；否则返回，INVALID―HANDLE―VALUE.
+　　举例：打开串行口1
+　HANDLE hComm;　　　　　　　　　　　　　　　　　　　　　　　　　　　//定义句柄变量
+　hComm = CreateFile( "COM1", 
+　GENERIC―READ|GENERIC―WRITE,NULL,NULL,
+　OPEN―EXISTING,FILE―FLAG―OVERLAPPED,NULL);
+　if (hComm == INVALID―HANDLE―VALUE) {……. 
+　// 打开串口错误的处理}
+3.2　配置串行口API函数
+　　串行口打开成功，接下来可以配置串行口通信参数如波特率、数据位数、停止位、校验位等。修改这些参数时要和设备控制块DCB(Device Control Block)打交道，DCB有近30个数据成员，是一个很复杂的数据结构，全部弄清楚它们的含义相当费时。而对于采用3线方式的串行通信来说，DCB结构中绝大多数参数可以不予考虑，因为只要设置好波特率、数据位、停止位、校验位等几个关键参数就行。使用流机制程序员能够方便地将复杂的对象写入文件或通过网络传输。
+　　通过下面的程序来说明串行通信参数的设置方法。例程中利用BuildCommDCB函数来设置DCB，然后用函数SetCommState()配置串行通信口。如果在本地磁盘上没有该类，它就向该Agent的诞生地的类服务器发送请求。譬如接收数据过程中突然被中断，或者发送数据突然停止等等。如果不认真对待，这些情况可能会引起I/O线程挂起或者线程被无限阻塞。Windows95对于这类问题提供了安全措施，它让你通过超时设置来决定通信是否异常并作相应处理。因此超时设置在串行通信中显得尤为重要。
+　　超时设置过程分为两步，首先设置COMMTIMEOUTS结构中的五个变量，然后调用SetCommTimeouts()函数设置超时值。
+　　该工具目前已经在Windows 95/NT环境下，用Java语言开发完毕，并在并行工程桌面电子会议系统中得到了成功的应用。读串行口的函数原型：
+　BOOL ReadFile (HANDLE hFile, LPVOID lpBuffer,
+DWORD nNumberOfBytesToRead,
+LPDWORD lpNumberOfBytesRead, 
+LPOVERLAPPED lpOverlapped data);
+　　其中,第一个参数hFile是由CreateFile()返回的句柄。参数lpBuffer是读取的数据缓冲区指针，要注意给该数据缓冲区分配足够的空间；参数nNumberOfBytesToRead是要读取的字节数；参数lpNumberOfBytesRead是实际读取的字节数；最后一个参数lpOverlapped 是指向一个可重叠I/O(异步)的数据结构指针。如果lpOverlapped设置为NULL，则ReadFile()工作在同步方式；如果lpOverlapped指向一个重叠结构，则工作在异步方式。
+3.5　写串口API函数
+　BOOL WriteFile (HANDLE hFile,　　　　　　　　　　　　　// 由CreateFile()返回的句柄
+　　　　　　　　　　　　　　LPCVOID lpBuffer,　　　　　　　　　　　　// 写缓冲区指针
+　　　　　　　　　　　DWORD nNumberOfBytesToWrite,　　　　　　　　　// 要写的字节数
+　　　　　　　　　　　LPDWORD lpNumberOfBytesWritten,　　　　　　　// 实际写的字节数
+　　　　　　　　　　　LPOVERLAPPED lpOverlapped　　// 指向一个可重叠I/O的数据结构);
+　　　　　　　　　　　　WriteFile()函数的工作方式选择与ReadFile()的相同,在此不重复。
+3.6　关闭串口API函数
+　　串行口是非共享资源，某应用程序打开串行口后，即独占该资源，使其它应用程序无法再访问，直到该应用程序释放串口。所以打开串口后，一定要关闭串口。
+　　.支持多交谈室同时工作，对于同一交谈室的交流信息其它交谈室不可见。函数原型：BOOL CloseHandle( HANDLE hObject );其中hObject参数为CreateFile()返回的端口句柄。返回值非0，则调用成功。
+4　Windows95的串行通信工作方式
+　　串行通信会话以调用CreateFile()函数打开串行口开始，接着设置串行口波特率、数据位、校验位、停止位等参数以及超时参数，最后选择一种工作方式读、写串行口。在Windows95中，串行通信有两种工作方式可供选择：查询方式和事件驱动方式。这两种工作方式各有优缺点，用户可以根据应用程序的实际需要选择其中的一种工作方式，下面对这两种工作方式分别介绍。
+4.1　查询方式
+　　对于从串口读取数据来说，查询是最为直接、易于理解的技术。但是查询会占用大量的CPU时间，效率较低。利用查询方式读取串口数据时通常要建立一个线程，建立线程使用CreateThread()函数。
+　　检查点　自治对象的执行状态与live方法的执行位置有关。举例：（假设端口已经打开)
+　DWORD ReadThread(LPDWORD lpdwParam)
+{ BYTE Buff［100］; 　　　　　　　　　　　　　　　　　　　　　　　　　//读数据缓冲区
+DWORD nBytesRead; 　　　　　　　　　　　　　　　　　　　　　　　　//实际读取的字节数
+COMMTIMEOUTS Timeouts;　　　　　　　　　　　　　　　　　　　　　　　　　　//超时设置
+Memset(&Timeouts,0,sizeof(COMMTIMEOUTS));
+Timeouts.ReadIntervalTimeout = MAXDWORD;
+SetCommTimeouts(hComm,&Timeouts);
+While(bReading){
+if(!ReadFile(hComm,Buff,100,&nBytesRead,NULL))
+{………　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//读取数据出错处理}
+else{………　　　　　　　　　　　　　　　　　　　　　　　　　　//正确读取数据的处理}
+}
+PurgeComm(hComm,PURGE―RXCLEAR);
+return 0;
+}
+　　例程中，线程的退出由bReading标志控制，当bReading为TRUE时，循环串口；当breading为FALSE时，线程退出。
+4.2　事件驱动方式
+　　事件驱动I/O方式是指线程通过监视通信资源中的一组事件来进行I/O操作，这种方式类似于MSDOS下的中断工作方式，效率高。可被监视的事件列表如下：
+
+事件掩码含义
+EV―BREAK检测到输入终止
+EV―CTSCTS(清除发送)信号改变状态
+EV―DSRDSR(数据设置就绪)信号改变状态
+EV―ERR发生了线路状态错误
+EV―RING检测到振铃
+EV―RLSDRLSD信号改变状态
+EV―RXCHAR收到任何字符并放进输入缓冲区
+EV―RXFLAG收到事件字符，并放进输入缓冲区
+EV―TXEMPTY输出缓冲区中最后一个字符发送出去
+
+　　实际编程中，对串行口的读、写操作需要建立两个工作者线程。在读或写线程中可以通过SetCommMask()函数设置事件屏蔽来监视指定通信资源上的事件。指定一组事件后，线程可以使用WaitCommEvent()函数等待其中一个事件发生，在等待过程中它将花费极少的CPU时间。注意：WaitCommEvent()函数和读写操作函数一样可以同步使用，也可以异步使用，这主要取决于在第三个参数中是否指定OVERLAPPED结构。如果指定为NULL，该函数就是同步的，必须等到SetCommMask()中指定的事件有一个发生时它才返回；如果指定了一个OVERLAPPED结构，该函数即工作在异步方式。通常将该函数工作在同步方式。
+　　下面的例程演示了利用事件驱动I/O方式从串行口读取数据。
+2.3　自治对象的实现
+　　在设计实现基于自治对象的分布式系统时，采用了 Java 语言，主要原因如下： 
+　　.Java 是跨平台的语言  采用了字节码，提供了跨平台解释器!ReadFile(hComm,Buff,1,&nBytesRead,NULL))
+{……　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//处理读错误}
+else{……　　　　　　　　　　　　　　　　　　　　　　　　　　　　//正确接收字符处理}
+}else{……　　　　　　　　　　　　　　　　　　　　　　　　　//非EV―RXCHAR事件的处理} 
+}}
+PurgeComm(hComm,PURGE―RXCLEAR);
+return 0;}
+　　在上面的例程中，设置EV―RXCHAR事件掩码，则告诉Windows无论何时接收到一个字节，就产生一个事件。在WaitCommEvent()返回后，比较该函数返回的事件掩码，如果是EV―RXCHAR，则说明接收缓冲区中至少有一个字符处于等待状态；否则，就是错误事件，需要进行错误处理。
+5　效果
+　　作者在开发的“公安110智能报警系统”时利用事件驱动方式的串行通信编程技术处理多种系统设备间频繁的数据交换任务，应用非常成功。
+　　系统中存在 3 类通信：用户Agent之间的通信、用户Agent和服务Agent之间的通信和场所间通信。
+作者简介：郭峰林　硕士研究生。
+朱才连　博士生导师，研究员。
+作者单位：中国科学院测量与地球物理研究所　湖北.武昌(430077）
+参考文献
+［1］　Microsoft Corporation,著.Win32程序员参考大全(二). 欣　力,等译.北京：清华大学出版社，1995，4
+［2］　Microsoft Corporation. Microsoft Developer Network
+［3］　Peter W.Gofton,著.精通串行通信.王仲文,等译.北京：电子工业出版社,1995，2
+［4］　Charles A.Mirho, Andre Terrisse,著. Windows95通信编程.贺　军,等译.北京：清华大学出版社，1997，12
+［5］　Scott Stanfield, RalphArvesen,著. Visual C++4开发人员指南.北京：机械工业出版社1997，6
+收稿日期:1999-03-11(修改稿)

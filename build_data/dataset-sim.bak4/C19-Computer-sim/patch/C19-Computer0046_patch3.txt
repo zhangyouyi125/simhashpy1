@@ -1,0 +1,56 @@
+计算机应用
+Computer Applications
+1999年 第19卷 第7期  Vol.19 No.7 1999
+
+
+
+VAX/VMS与Windows NT间实时文件传输的一种方法
+刘鲁川
+
+　　摘　要　作者结合工作实际，论述了FTP服务器的安装配置、客户端的具体操作、改交互的FTP命令为批处理命令和如何在应用系统中实现异种操作系统间的实时文件传输。
+　　关键词　FTP，VAX/VMS，Windows NT，实时文件传输
+
+1　问题的提出
+　　TCP/IP是网际互连协议，其协议簇中的文件传输协议FTP，具有适用范围广、通用性强、操作简单的特点。但用FTP进行不同操作系统间的文件传输，必须人工干预，在交互状态下完成。这给许多有特殊要求的应用系统带来不便。济南铁路局计算中心有DEC VAX系列机6台，VMS操作系统，其上运行着铁路运输统计报告、精密统计、货运计划、货票传递等系统。关于反求曲线/曲面参数,传统的方法大多是采用Newton迭代法,效率低,且易出错。这方面已有许多经典的算法,如Bézier曲线/曲面的de Casteljau算法、Nurbs曲线/曲面的deBoor算法等。关于MAF方法的收敛性,参见文献［4］。在济南铁路局机关办公自动化系统建设中，我们采用了IBM PC Server为Windows NT Server服务器，各处室现有PC机为客户机的client/server体系结构。由此产生的问题是，由于各种生产信息均在DECnet网上，为满足局机关各级管理人员及时了解生产情况的需求，必须使办公自动化局域网与DECnet相连，并实时地无须人工干预地自VMS向NT server传输数据文件。　　
+2　传输方案
+　　通过TCP/IP协议可实现不同机种、不同操作系统的互联。但用TCP/IP协议簇中的文件传输协议FTP进行文件传输，必须人工干预，在交互状态下完成。为此，需要对FTP的提交方式进行适当的改进，使VAX上的某批数据在任意时刻完成后，能自动的实时转储至NT server上。Internet市场的提出主要得益于联合数据库［2］和分布式处理上的技术进步,使得通过网络获取远程资源来建立一个应用系统成为可能。　
+
+
+3　FTP服务器的安装与配置
+　　在安装与配置FTP服务器前，首先应确保基于TCP/IP协议的局域网、广域网已正确安装，与此相关的参数、文件已正确设置，使用ping 命令测试网络能够正常运行。
+　　a） 在VMS系统下，很容易实现FTP服务。只要基于TCP/IP协议的网络功能已完整安装并能够正常运行，该机器就可以作FTP服务器使用了，无须任何额外设置。
+　　b） 在Windows NT Server 4.0中实现FTP服务。在NT Server 中打开控制面板，作以下安装配置：
+　　* 双击网络图标，查看已安装的网络软件，看是否有FTP服务器。若没有则应执行添加软件功能，选中TCP/IP通讯协议及相关组件，添加FTP服务。
+　　基本上,我们区分查询服务有两种方法。
+　　先确定一个近似参数u0,方法如下。
+　　* 双击FTP服务器图标，单击安全按钮，设置各磁盘分区的读写权限。
+中图法分类号　TP391
+Computing the Parameters of Points on Nurbs Curves and Surfaces via Moving Affine Frame Method
+HU Shi-min　SUN Jia-guang
+(National CAD Engineering Center　Tsinghua University　Beijing　100084)
+HU Shi-min　SUN Jia-guang
+(Department of Computer Science and Technology　Tsinghua University　Beijing　100084)
+JIN Tong-guang　WANG Guo-zhao
+(Department of Applied Mathematics　Zhejiang University　Hangzhou　310027)
+Abstract　The numerical instability in computing the parameters of the points on Nurbs curves/surfaces is a fatal disadvantage of Nurbs methods。(1) XML像HTML那样在Web上易于接受和处理；(2) XML使得与服务相关的源信息可以在Internet市场的不同组件,或不同的电子服务市场中很容易地进行交换；(3) XML的要求很低,并且传输和操作XML文件的基础设施也是无所不在的；(4) XML的简便性和普遍性保证了其随市场演变的灵活性；(5) Internet市场的目标是建成一个开放的市场,所以,源信息应该可以转换成CORBA和DCOM(distributed common object model)等对象,各种类型的Internet市场之间也应该可以通过交换源对象来使用各自的服务。　
+4　 FTP客户端的具体操作
+　　一旦启动安装、配置好的FTP服务器，在客户端就可以使用FTP命令存取FTP服务器上的文件了。FTP客户程序在以上两种操作系统下具有统一的操作界面，使用起来很象DOS下的命令解释程序COMMAMD.COM。启动后给出命令提示符“ftp>”，在此提示符下可执行FTP命令进行文件传输。
+　　利用FTP传输文件的过程很简单。
+　　.SO数据库类。
+胡事民（清华大学国家CAD工程中心　北京　100084；清华大学计算机科学与技术系　北京　100084）
+孙家广（清华大学国家CAD工程中心　北京　100084；清华大学计算机科学与技术系　北京　100084）
+金通光（浙江大学应用数学系　杭州　310027）
+汪国昭（浙江大学应用数学系　杭州　310027）
+。　　 
+5　用FTP批处理命令实时传输文件
+　　改交互命令为批处理命令　在VAX/VMS一端，FTP有使用脚本（script）即来自外部文件的命令清单的能力。设定本方案中NT server的Host name为JNOV3B ，以下脚本打开一个Host name为JNOV3B的连接，作为一个帐号、口令均为guest的客户登录到NT server上，卸载FILE1文件，然后退出。
+关键词　因特网市场,扩展标记语言,服务,注册,顾客/提供者。如果先前的脚本是在称为test.scr 的文件中，可以通过输入ftp -s：test.scr来启动该脚本。
+4 结　论
+　　Internet市场是一个有着极大潜力的研究新方向,在该领域,有许多问题值得我们进行更深入的探讨。
+　　实时文件传输　文件的实时传输是通过在VAX/VMS下编写的TRF.EXE　进程来实现的。其设计思想为：TRF为一常驻后台进程，平时处于睡眠状态，当各前台应用系统，比如铁路统计报告系统中来自各基层单位的上报数据齐全，并汇总成表后，前台应用系统通过系统异步自陷AST例程完成事件标志置起, 激活TRF.EXE，由其提交前述FTP批处理命令脚本，并清除事件标志，以此完成在无须人工干预的条件下，当某一条件满足时，实时实现VAX/VMS与Windows NT Server之间的文件传输。
+　　刘鲁川　硕士，工程师。从事MIS开发、Internet/Intranet系统集成、网络配置与管理等工作。
+　　作者单位：刘鲁川（山东财政学院网络中心　山东．济南 250014)
+参考文献
+［1］　TCP/IP培训教程. 北京：人民邮电出版社，1998，3
+［2］　WindowsNT安装与配置. 北京：清华大学出版社，1998，5
+　　收稿日期:1999-01-19

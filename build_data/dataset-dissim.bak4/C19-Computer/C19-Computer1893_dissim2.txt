@@ -1,0 +1,83 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　Vol.19　No.4　P.58-59
+
+
+
+优化Ｖｉｓｕａｌ Ｂａｓｉｃ查询的方法
+姚卫新
+摘 要： Ｖｉｓｕａｌ Ｂａｓｉｃ允许用户使用结构化语言ＳＱＬ从Ｊｅｔ ｄａｔａｂａｓｅｓＭＤＢ文件中取出数据，本文提出了一些优化查询操作的方法。
+关键词： 查询 ＳＱＬ语言 优化设计
+　　在Visual Basic程序设计中不可避免地要用到查询。本人在总结了多年的使用心得后，全面介绍了查询优化的方法。
+1　表设计
+　　在设计表中字段时，尽量选择长度较短的数据类型，这样可以增加每页中存放的记录个数。
+2．2　系统功能需求
+　　（1）遥控功能：要求系统具有远程控制测控对象，设置设备各项参数、定值，实时显示设备状态的功能。
+2　压缩数据库
+　　压缩数据库有二点好处：（1）随着数据库中数据量的增加，原有的优化方案可能不再有效，压缩数据库可以最大限度地克服这个缺点。（2）随着数据库中数据量的增加，它就变得比较“零碎”，压缩数据库可以把1个表的数据集中到硬盘的连续页中，提高顺序扫描的执行速度。压缩数据库的例子如下（它将保留1个备份）：
+　　DBEngine．CompactDatabase ″C＼VB＼BIBLIO．MDB″，″C＼VB＼BIBLIO2．MDB″
+　　Kill ″C＼VB＼BIBLIO．BAK″
+　　Name ″C＼VB＼BIBLIO．MDB″ As ″C＼VB＼BIBLIO．BAK″
+　　Name ″C＼VB＼BIBLIO2．MDB″ As ″C＼VB＼BIBLIO．MDB″
+　　如果数据库被频繁更新，最好考虑经常压缩数据库。
+　　（2）遥测功能：要求系统具有实时远程获取设备各项数据及设置相关参数的功能。另外，定时巡测可能会长时间占用信道，这给后台用户进行实时测控操作带来不便。由于测控现场环境往往会对设备造成一定影响，如瞬变干扰、共模干扰等，加入太多的数据处理会降低系统可靠性；另外，终端功能越繁杂，远程维护就越困难。另外，当设计开发时间不充足又必须短期内占领市场时，通常我们会采用增量开发，即首先完整地开发系统的1个核心子集，继之周期性地进行增量开发，不断精化产品，以完成系统最终设计和实现。
+　　例：下面的查询效率较低，因为SUM的字段在Ord表中，而GROUP BY的字段在Cust表中。
+　　SELECT Cust．CustID，
+　　　　　　FIRST（Cust．CustName）AS CustName，
+　　　　　　SUM（Ord．Price）AS Total
+　　FROM Cust INNER JOIN Ord ON Cust．CustID＝Ord．CustID
+　　GROUP BY Cust．CustID
+　　例：下面的查询效率较高，因为SUM和GROUP BY的字段均为Ord．CustID，它们来自同一个表。
+　　SELECT Ord．CustID，
+　　　　　　FIRST（Cust．CustName）AS CustName，
+　　　　　　SUM（Ord．Price）AS Total
+　　FROM Cust INNER JOIN Ord ON Cust．CustID＝Ord．CustID
+　　GROUP BY Ord．CustID
+5　分组字段越少越好
+　　GROUP BY中的字段越多，查询花费的时间越长。后台系统识别后送消息给通信解码模块，经解码后显示并存入服务器的相关数据库中。
+　　效率低的例子：
+　　SELECT Cust．CustID，
+　　　　　Cust．CustName，
+　　　　　Cust．Phone，
+　　　　　SUM（Ord．Price）AS Total
+　　FROM Cust INNER JOIN Ord ON Cust．CustID＝Ord．CustID）
+　　GROUP BY Cust．CustID，Cust．CustName，Cust．Phone
+　　效率高的例子：
+　　SELECT Ord．CustID），
+　　　　　　FIRST（Cust．CustName）AS CustName，
+　　　　　　FIRST（Cust．Phone）AS Phone，
+　　　　　　SUM（Ord．Price）AS Total
+　　FROM Cust INNER JOIN Ord ON Cust．CustID＝Ord．CustID）
+　　GROUP BY Ord．CustID
+6　在连接前嵌套GROUP BY语句
+　　如果连接二个表并且用其中1个表中的字段进行分组，把该SELECT语句分解为2个查询语句更为高效。
+　　进行分析调研时应注意收集经常型用户意见，照顾到偶然型、间歇型用户；人机交互中对于生疏型用户注意提供在线帮助、软件向导，而对于熟练型、专家型用户则应设计快捷操作方式以满足其需要；对于某些专业力量强的用户可能对系统进行二次开发，因此在系统初期设计时就应尽量降低该部分与核心系统的耦合度，并提供必要的接口。
+　　低效例子：
+　　SELECT Ord．CustID，
+　　　　　　FIRST（Cust．CustName）AS CustName，
+　　　　　　FIRST（Cust．Phone）AS Phone，
+　　　　　　SUM（Ord．Price）AS Total
+　　FROM Cust INNER JOIN Ord ON Cust．CustID＝Ord．CustID
+　　GROUP BY Ord．CustID
+　　高效例子：
+　　查询1：
+　　SELECT CustID，SUM（Price）AS Total
+　　FROM Ord
+　　GROUP BY CustID
+　　查询2：
+　　SELECT Query1．CustID，Cust．CustName，Cust．Phone，查询1．Total FROM Cust INNER JOIN Ord ON Cust．CustID＝Ord．CustID
+7　索引JOIN子句中的字段
+　　用JOIN连接表时，索引JOIN子句中用到的字段后，查询优化器将使用比较高级的内部连接策略来优化查询语句。中心站系统结构如图5所示。这样读到内存中的页比较少，所以，是否对表建索引要看情况而定。
+8　使用可优化的表达式
+　　尽量建立可以使用Rushmore技术进行优化的查询，Rushmore并不会自动地加速所有的查询。
+9　用COUNT（*）代替COUN（［字段名］）
+　　微软的数据库引擎对COUNT（*）特别关照，使得COUNT（*）执行时比COUNT（［字段名］）快得多。另外，这二个操作略有不同：COUNT（*）计算返回的所有行，COUNT（［字段名］）仅计算该字段名不为NULL的行。
+10　参数中避免LIKE
+　　由于查询在编译时参数的值尚未确定，索引不起作用，最好在SQL语句中写明参数的值。
+11　避免LIKE中的通配符在开头
+　　如果使用LIKE操作符来寻找匹配的行，通配符不能在开头位置，否则索引不起作用。
+　　（2）系统工作原理
+　　根据硬件结构，软件系统可以分为后台机上的后台子系统和前置机上的前置子系统二部分，系统间采用网络通信。
+13　避免NOT IN与子查询一起使用
+　　NOT IN与子查询一起使用效果非常差，最好将其转化成嵌套查询或使用OUTER JOIN。
+　　（3）定时自动巡测：系统按用户设定时间自动获取部分或所有测控对象的有效数据存入数据库作为历史数据备档

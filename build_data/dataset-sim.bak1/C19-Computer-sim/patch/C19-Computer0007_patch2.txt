@@ -1,0 +1,163 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+Web服务器与数据库服务器的连接技术
+丁明吉
+　　摘　要　本文详细论述了目前主要的三种接口技术并从Web模型入手，对它们的接口原理和开发过程进行了分析与对比，最后对这一接口技术的发展提出了看法。
+　　关键词　接口,Web服务器,CGI,API,JDBC
+INTERCONNECTION BETWEEN WEB SERVER AND DBMS SERVER
+Ding Mingji
+Information Centre of Liaohe Oilfield, Liaoning.Panjin 124010
+　　Abstract　This paper expounding three present major interface technology in detail，beginning with Web model ，analyzing and comparing their interface principle and their developing process. Finally，put forward my view in the development of this interface technology.
+　　Keywords　Interface，Web server，CGI，API，JDBC
+1　Web服务器与数据库的连接方法
+　　随着应用的普及，Web服务器与数据库服务器的连接显得越来越重要，许多厂商不断推出新的接口技术，使得这种连接更加简洁、方便和高效。Web与数据库的接口技术已成为基于Web的信息管理系统的核心。Web服务器与数据库的连接方法通常可分为基于Java的（JDBC）、通用网关接口(CGI)及应用编程接口(API)。
+2　Java数据库互联接口(JDBC)
+　　Java的推出使Web页面有了活力和动感，用户可以从Web服务器上下载Java小程序到本地浏览器上运行，这些下载的小程序可以就向本地程序一样，可独立地访问本地和其他服务器的资源，下面详细介绍JDBC的原理及实现方法。
+2.1　JDBC原理
+　　JDBC是一种可用于执行SQL语句的数据库API，它由一些Java语言写的类、界面组成。 
+　　使用数据库方法时，由于原始数据都存在一个库中，所以算法 Graph-search 中搜索的复杂性就转化成了对原始数据库的查询的复杂性。这些查询功能的性能往往直接影响到数据采掘和决策分析的性能，因此必须得到保证。如果Java小程序使用了JDBC，浏览器运行的小程序可直接与数据库建立连接(如图1所示)。
+
+图1　通过JDBC访问数据库
+　　JDBC是一个与数据库系统独立的API,它的结构有两层: JDBC API和JDBC Drive API。而且有许多专门的黑客站点，提供网络入侵的技术和工具，如 www.rootshell.com 、 www.10oht.com 、 www.2600.com 等。
+　　JDBC Driver Manager类似于ODBC Driver Manager，管理由各个数据库厂商开发的JDBC驱动程序。在通信过程中，考虑到被控设备的状态获得和通信线路的传输速度，应给予适当的延时来满足传输需要。每个数据库厂商仅需提供一个与ODBC类似的JDBC驱动程序,开发人员就可以在Java语言中访问该数据库。此外,JavaSoft提供了一个特殊的驱动程序，JDBC-ODBC桥，这个桥支持JDBC通过已有的ODBC驱动程序访问数据库。
+　　目前JDBC已得到许多厂商的支持，包括Borland、IBM、Oracle、Sybase等。目前流行的大多数数据库系统都推出了自己的JDBC驱动程序。
+2.2　JDBC实现
+　　JDBC API是通过Java的类接口实现的，几个主要的接口是:
+　　① java.sql.DriverManager: 负责处理JDBC数据库驱动程序的加载和卸载。
+2.2 网络服务系统配置信息的检查 
+　　主要检查以下方面：
+　　.不安全的服务程序：检查 inetd 是否允许网络用户访问那些公认的不安全网络服务。该驱动程序与远程数据库相连，返回一个java.sql.connection对象。
+　　② java.sql.Connection: 负责建立与数据库的连接。
+　　③java.sql.ResultSet: 表示从数据库服务器返回的结果集。通过操作给结果集实现对数据的访问。
+　　如果要访问数据库，首先必须建立一个java.sql.Connection对象，可以通过调用DriverManager.get.Connection得到此对象。该方法用一个URL串作为参数，该URL串唯一地指定了要访问的数据库服务器。任何一个SQL语句都可能改变数据库内的数据,但是,如果“AutoCommit”失效，则必须明显地使用Commit，否则无法实现数据库的更新。java.sql.Statement指在连接状态，能执行的SQL语句，它含有两个子类: java.sql.PreparedStatement 和 java.sql.CallableStatement; 前者执行一个预编译过的SQL Statement，后者执行某一连接状态数据库内的存储过程。JDBC API的java.sql.ResultSet对象控制经Statement获得的多行数据，它用游标(Cursor)指示当前的行,使用Next方法可以移动Cursor到下一行。ResultSet的GET方法能让你获得当前行内所有列的值。
+　　下面的Java程序段将连接一个ODBC数据源并执行一条SQL语句,返回的结果集放在结果集对象RS中。
+　String url="jdbc:odbc:Factory";
+Connection on=DriverManager.GetConnection
+(url,"UserName","PassWord")
+Statement stmt=con.CreateStatement();
+ResultSet RS=stmt.ExecuteQuery
+("SELECT Eno，Ename，Esex FROM Clerk");
+　　JDBC数据库采用URL的指名规则。JDBC URL结构为:Jdbc:<SubPro-tocol>: <SubName>,其中SubProtocol表示一个特定的数据库连接,SubName的内容依赖于SubProtocol,“jdbc:odbc:Factory”指定一个ODBC数据源Factory。
+3　通用网关接口技术(CGI)
+　　CGI是Web服务器运行外部程序的规范，按照CGI编写的外部扩展程序可以处理客户端(通常是Web浏览器)输入的协同工作数据，完成客户端与服务器的交互操作，扩展服务器的功能，完成服务器本身不能完成的工作。 
+　　(7) 令 N=N ∪ M,E=E ∪ {(n,m)|m ∈ M}, 把 M 的这些成员加进 OPEN 表。
+　　CGI应用程序能够与浏览器进行交互作用，还可以通过数据库的API与数据库服务器等外部数据源进行通信。
+　　tpNormal：正常优先级。这样，客户端用户就可以和Web服务器进行数据处理。几乎所有的服务器软件都支持CGI，开发者可以使用任一种Web服务器内置语言编写CGI语句，其中包括广为流行的Perl语言、C、C++、VB、Delphi等。
+4　Web服务器应用编程接口(API)
+　　有些Web服务器软件厂商针对CGI运行效率低下、编程困难等缺点,开发了各自的服务器API(Application Programming Interface)，试图克服CGI性能方面的缺陷。
+　　服务器API一般作为一个DLL提供,是驻留在Web服务器中的程序代码，它可以象CGI那样扩展Web服务器的功能。
+3　需要注意的问题
+3.1　关于PCI网卡
+　　若使用的是一般PCI网卡，由于其中断号与地址号不可修改，且数值随计算机的不同而变化，所以还应编辑E:\winnt\rpl\rplfiles\profiles\mywin95\suboot\protocol.ini文件，修改Bingings项和Interrupt,Iobase项。常见的API有Microsoft公司的ISAPI、Netscape的NSAPI、Informix公司的IUWCAPI。
+　　由于开发API应用程序存在许多潜在的困难,所以Microsoft与Netscape在其各自的服务器中提供了基于API的编程接口。在控制面板―服务中启动远程启动服务，并设为自动启动。
+作者单位:洪力奋　合肥经济技术学院计算机系　安徽.合肥(230052)
+参考文献
+［1］　张文星,纪有奎,编著.专家系统原理与设计. 武汉测绘科技大学出版社. 1989,10
+［2］　Turbo Prolog程序设计. 陈兆乾,潘金贵,编译.南京大学出版社. 1993,6
+［3］　郭盈发.汉字FoxBase+及其程序设计．西安:电子科技大学出版社．1993,12
+收稿日期:1999-04-19(修改稿)
+。
+5　各种接口技术的比较
+　　虽然JDBC 、CGI和Web Server API都能实现Web与数据库的连接,但它们的工作原理是不同的。
+　　CGI和API是将Web服务器与某一进程或API相连，该进程或API将得到的结果格式化为HTML文档，返回给Web服务器，然后由Web服务器将得到的HTML文档传给浏览器。就是说，与数据库的交互是由Web服务器完成的。而在JDBC中，浏览器将嵌于HTML文档中的Java应用程序下载到能够运行Java程序的本地浏览器中加以运行，就是说，与数据库服务器的交互是由浏览器直接完成的。表1对它们从不同侧面进行了比较。
+表1　各种接口技术比较
+
+性　能
+种　类　　　　CGIAPIJDBC
+实现的灵活性好好好
+编程的复杂度复杂复杂中等
+对程序员的要求高高中等
+开发时间长长中等
+可移植性较好差好
+CPU负担重较轻较低
+平台有关性有关有关无关
+
+　　相比较而言，CGI接口应用灵活，开发工具丰富，功能范围广,技术相对成熟。从事高压电气试验
+　　　　　车研究及软件开发。再加上与平台有关的缺点,因而CGI会被新的规范所取代。
+2.1　线程对象的特性
+　　Free on Teiminate特性：布尔型，只可在运行时使用。并且API致命的弱点是，各API间没有互通性，用一种API编写的程序不能到另一种Web服务器上运行，限制了使用范围。尽管个别公司(如Oracle)推出了基于API的开发工具,在一定程度上解决了API开发困难的问题,但仍存在与API一样的弱点，与各自Web服务器捆绑的太死，缺乏通用性。
+　　Java编程规范，接口清晰，开发效率高。Java代码在可移植性、安全性和可靠性等方面也有显著优势，利用Java的多线程控制技术可以大大提高程序的执行效率。而且Java翻译器是在客户端运行，开发人员能创建反馈迅速的Java Applet，这是CGI和API编程无法实现的。
+　　虽然Java缺乏组件结构,交叉平台的GUI构架很粗糙,技术还不够成熟,功能也有待扩展。但JDBC仍是最有前途的接口技术。这种攻击可绕过用户定义的过滤规则。重要的是,在数据库方面,所有的数据库厂商都宣布支持JDBC标准，已推出或准备推出各自的JDBC驱动程序;在Web服务器方面,除了Microsoft坚持自己的ActiveX外，其他厂商都宣布支持JDBC标准。随着时间的推移，JDBC会取代CGI成为新的通用的接口规范。
+6　前景
+　　Web服务器与数据库服务器的接口技术会随着Internet/Intranet应用领域不断拓展而推陈出新。随着分布式对象技术在Web中的应用,使人们在Internet/Intranet上实现跨平台互操作的愿望有可能变为现实,基于分布式对象的Web数据库应用系统将会成为企业进行分布式管理的有力武器。这些特权进程，都有自己的安全机制，防止被滥用。由于数据采掘处理的经常是非常大量的数据，复杂度高，因此要配置较高的硬件资源，并要保证它和 OLAP Server 间的高速数据通信 ( 最好用高速通信专线连接 ) 。
+作者简介：丁明吉　硕士。
+　　⑴ 建立调整库结构
+　　SELE 1
+USE &BBDM
+COPY TO TEMP1 STRU EXTE
+COPY TO TEMP2 STRU EXTE
+USE TEMP2
+REPL ALL FIELD―NAME WITH STUF(FIELD―NAME,
+1,1,"M") FOR "L"$FIELD―NAME
+APPE BLAN
+REPL FIELD―NAME WITH "GXCS",FIELD―TYPE
+WITH "N",FIELD―LEN WITH 2
+USE TEMP1
+APPE FROM TEMP2 FOR LEFT(FIELD―NAME,1)
+="M".OR.FIELD―NAME="GXCS"
+USE
+CREA &BBDM."WY" FROM TEMP1
+USE &BBDM."WY" ALIAS WY
+APPE FROM &BBDM
+　　⑵ 数据除以一万，同时计算误差，仅以字段L1为例
+　　REPL ALL M1 WITH L1/10000-ROUN(L1,-4)/10000
+REPL ALL L1 WITH ROUN(L1,-4)/10000
+　　⑶ 数据关系分析，自动设置GXCS值
+　　SELE 3
+USE SJGX
+SELE 1
+SET FILT TO LEN(TRIM(HCDM))>0
+GO TOP
+DO WHIL .NOT.EOF()
+MH="H"+TRIM(LTRIM(HCDM))
+SELE 3
+COUN TO MFH FOR 
+MH$GXS.AND.(.NOT.
+SUBS(GXS,AT(MH,MGXS)+LEN(MH),1) $SZF)
+SELE 1
+REPL GXCS WITH MFH
+SKIP
+ENDD
+SELE 1
+GO TOP
+DO WHIL .NOT.EOF()
+MH="H"+TRIM(LTRIM(HCDM))
+&MH=L1
+SKIP
+ENDD
+　　⑷ 按数据舍入调整原则索引排序
+　　INDEX ON GXCS+ABS(M1) TO WY
+FOR GXCS>0.AND.M1<>0
+SELE 3
+GO TOP
+　　⑸ 按数据关系循环
+　　DO WHIL.NOT.EOF()
+GX=UPPE(TRIM(GXS))
+WC=LEFT(GX,AT(′=′,GX)-1)+
+′(′+SUBS(GX,AT(′=′,GX)+1)+′)′
+SELE 1
+GO TOP
+　　⑹ 按调整记录循环
+　　DO WHIL .NOT.EOF().AND.ABS(&WC)>0.001
+MH="H"+TRIM(LTRIM(HCDM))
+IF MH$GX.AND.(.NOT.SUBS(WC,AT(MH,WC)+LEN(MH),1)$SZF)
+　　　REPL L1 WITH &MH+IIF(M1>0,1,-1),M1 WITH M1+IIF(M1>0,1,-1)
+　　⑺ 如引起审核关系不平衡，进行舍入调整，修改误差值，自动重建索引
+　　ENDI
+SKIP
+ENDD
+SELE 3
+SKIP
+ENDD
+RETU
+作者简介:洪力奋　硕士，讲师。
+作者单位：辽河油田信息中心　辽宁.盘锦（124010)
+参考文献
+［1］　T.Berners-lee. Hypertext Transfer protocol. Internet Engineering Task Foece Working Draft. 1993,11
+［2］　李建忠,付　裕,钱清全. 日新月异WWW. 微电脑世界, 1997;(2):100-103
+［3］　郑林峰,张公忠. JDBC接口技术.中国计算机报,1997;28(7):82
+收稿日期:1999-02-01(修改稿)

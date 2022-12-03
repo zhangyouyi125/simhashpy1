@@ -1,0 +1,57 @@
+计算机工程
+COMPUTER ENGINEERING
+1999年 第25卷 第8期 Vol.25 No.8 1999
+
+
+
+IPSOFACTO快速ATM信元传输上的IP交换
+许飞，许晓鸣，杨煜普，孙海荣
+摘要：介绍了一种无需信令通过ATM交换机建立路径，将IP流映射到ATM交换的技术。不仅通用支持整子与具体功能整子之间存在包含关系，而且具体功能整子内部也存在包含关系。多侧线精馏塔的神经网络控制.化工学报,1996,47(3):376～80
+　40　He H et al. The Self-learning CMAC Control of the Oil Temperature on Hydraulic System. Proceedings of IAS'95, Shenyang, China, 1599～1604
+　41　Quek C, Ng P W. Realisation of Neural Network Controllers in Integrated Process Supervision. Artificial Intelligence in Engineering. 1996, 10(2):135～142
+　42　Mulkul Agarwal. A Systematic Classification of Neural-net-work-based Control. IEEE control systems, 1997:75～93
+　43　Yonghong Tan, Achiel van Cauwenberghe. Nonlinear One-step-ahead Control using Neural Networks:Control Straegy and Stability Design. Automatica, 1996, 32(12):1701～1706
+　44　Xu J X. Direct Learning of Control Efforts for Trajectories with Different Times Scales. Proceedings of the 35th Conference on Decision and Control, Kobel, Japan, 1996:2501～02
+　45　段培永，邵惠鹤。
+　　2.2　整子的分类和内部结构
+　　按照应用领域，整子可以划分成不同的类别。（2）虚拟制造单元 整子控制一组物理设备，规划制造方案。输入空间的量化，可看作是选择模糊子集的过程，而定义在量化空间上的基函数可看作是模糊子集的隶属函数。但由于现有的上层协议是基于现有各种与 ATM 网络差异很大的低速网络的，将它们进行修改以使之适合 ATM 网络，并真正做到“无逢”连接 (ATM FORUM 的局域网仿真 LANE 和 IETF(Internet Engineering Task Force) 的 IPOA) ，有很多技术难题。另一种是研究全新的 ATM 上层协议，以期充分发挥 ATM 的技术优势，但意味着浪费大量已有的网络投资，并延长标准化周期。 
+1 基本原理 
+　　IPSOFACTO 工作的基本前提是交换机的输入端口的所有未用 VC 均映射到交换控制处理器。如图 1 所示。同时，鲁棒性也是神经控制的弱点。
+　　目前神经控制的分类尚无统一的标准。然后，交换控制器在 VC 表中添加一条记录《 { 输入端口，输入 VC} ， { 输出端口，输出 VC} 》 ( 如图 2 示 ) ，则该数据流的后续分组在信元级就如此交换了。 
+
+图 2 添加一条交换路径 
+　　相对于数据分组，交换控制器不为 IP 的“控制”信息创建交换路径，而是通过一条预定的“控制 VC ”发送和接收 IP “控制”信息。交换控制器处理这些 IP “控制”信息的结果是，建立起每串数据流的传递状态。集中控制结构基本采用一台主计算机完成全部信息处理和决策控制，制造系统的全部数据存储在一个全局数据库里。 
+　　对于 PIM “控制”分组与数据分组的区别是 IP 信头的协议号。而对 TCP ， quot; 控制“分组是由 TCP 信头的标志 (SYN/FIN) 来决定的。 
+
+图 3 流出 VC 变成未用 VC 的过程 
+　　使上游节点的正在使用的流出 VC 变成未用 VC 的过程如图 3 所示。 
+　　(1) 给该 VC 打上“暂态”的标记，然后向下游节点发送一条 RECLAIM 信息，并等待回答。 
+　　(2) 当下游节点收到一条 RECLAIM 信息，它将相应的流入 VC 打上“未用”标记，并向下下游节点发送 RECLAIM 信息同时向上游节点返回一条 RECLAIM-ACK 信息。 
+　　(3) 一旦上游节点收到 RECLAIM-ACK 信息就将该 VC 标记为“未用”。清华大学学报，1996，36(5):17～23
+　52　Chen Fu-Chuang, Hassan K Khilil. Adaptive Control of a Class of Nonlinear Discrete Time Systemss using Neural Networks. IEEE Trans. Automatic Control, 1995, 40(5):791～801
+　53　Hu Y, Fellman, Ronald D. Implementation Effient Learning Algorithm for Adaptive Control using Associative Content Addressable Memory. IEEE Tran. Syst. Man and Cybern, 1995,25(4):704～09
+　54　Ahmed M S, M Farooq. Neural-net-based Direct Self-tuning Control of Nonlinear Plants. INT. J. CONTROL, 1997,66(1): 85-104.Computers chem. Engng., 1992, 16(12):1039～1057
+　55　Nahas E P et al. Nonlinear Internal Model Control Strategy for Neural Network Models. Computers Chem. Engng., 1992, 16(12):1039～1057
+　56　Lin, Chun Shin Kim, Hyongsuk Selection of Learning Parameters for CMAC-based Adaptive Critic Learning. IEEE Transactions on Neural Networks. 1995, 6:642～7
+　57　Tan Y, Cauwenberghe A V. Nonlinear One-step-ahead Control using Neural Networks: Control Strategy and Stability Design. Automatica, 1996, 32(12):1701～1706
+　58　Lee S W, Kim J H. Control of Systems with Deadzones using Neural Network Based Learning Controller. Proceedings of IEEE Conference on Neural Networks, 1994,2535～38
+　59　Commuri S, Lewis F L. CMAC Networks for Control of Nonlinear Dynamical System: Structure, Stability and Passivity. Automatica,1997,33(4):635～41
+　60　P E An et al. Associative Memory Neural Networks: Adaptive Modelling Theory, Software Implementations and Graphical user Interface. Engng Applic. Artif. Intell. 1994,7(1):1～21
+　61　James K. & Peterson. Software Design for Neuralcontrol Code. Journal of Intelligent Material Systems and Structures. 1994, 5: 172～185
+　62　Farrell J A. Persistence of Excitation Conditions in Passive Learning Control. Automatica, 1997,33(4):699～703
+　63　Chen Fu-chuang, Chang Chih Horng. Practical Stability Issues in CMAC Neural Network Control Systems. IEEE Trans. On Control Systems Technology. 1996,4(1): 86～91
+1998-04-22收稿
+。 
+　　注意，不必对每条 VC 这样做，而是一对 RECLAIM 和 RECLAIM-ACCK 信息，可包含多条 VC 的状态转换。控制系统决定托盘是否进入、通过或离开某个站点。 
+2 优化 TCP 流 
+　　对于 TCP 流，在数据传递前要先进行 3 次握手。而在 IPSOFACTO 下，当首分组 (SYN) 被前向传递后，交换路径就建立起来了，即在数据传递前，一条端到端的交换路径就可得了。而要拆卸这条 ( 即将其标记为“未用” ) ，可通过发送 FIN 分组和 FIN 的应答分组到交换控制器 ( 而不是交换路径 ) 来实现，也就是说，这些分组被用作“控制”信息了。 
+　　这种优化仅在这些节点起作用，它们的 TCP 流的前向路径对称 ( 即该流的正向的流入端口正是它的反向流出端口 ) 。 
+3 小结 
+　　与 MPOA 不同， IPSOFACTO 不使用 ATM 信令就给 IP 流建立起交换路径。人工智能.北京：清华大学出版社，1996
+　14　Chien C J. A Discrete Iterative Learning Control of Nonlinear Time-varying Systems. Proceedings of the 35th Conference on Decision and Control, Kobel, Japan, 1996: 3056～61
+　15　Ker Jar-Shone et al. Hardware Realization of Higher-order CMAC Model for Color Calibration. Proceedings of the 1995 IEEE International Conference on Neural Networks. 1995:1656～61
+　16　Ker Jar-Shone et al. Hardware Realization of Higher-order CMAC Model for Color Calibration. Proceedings of the 1995 IEEE International Conference on Neural Networks. 1995:1656～61
+　17　Penterson J K. Software Design for Neurocontrol Code. Journal of Intelligent Material Systems and Structures, 1994,5:172～85
+　18　An P E et al. Associative Memory Neural Networks: Adaptive Modelling Theory, Software Implementations and Graphical user Interface. Engineering Applic. Artif. Intell. 1994, 7(1):1～21
+　19　罗　忠，谢文斌，朱重光。 Ipsilon 公司的方案是从下游节点选择 VC 对一串数据流进行交换， CSR 却是从上游节点选择 VC 。而 IPSOFACTO 是基于路由信息和 VC 的状态 ( 已用或未用 ) 来进行 IP 流到交换路径的映射的。 
+　　IPSOFACTO 与传统的 ATM 网络支持 IP 的方案 ( 如 IPOA 、 LANE 等 ) 一样，解决了 ATM 网络支持传统数据通信业务的问题，并表现出了其优越性，但它也不能为不同的用户提供特定的服务质量 (QOS) ，即不支持多媒体通信。因此，HMS体系结构、合作谈判机制、产品模型、控制策略、标准化规范和开发仿真工具等有待于进一步研究

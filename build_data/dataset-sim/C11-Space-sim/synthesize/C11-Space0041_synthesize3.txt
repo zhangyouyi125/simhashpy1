@@ -1,0 +1,148 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+一种用于热校准风洞的
+数据采集系统集成及软件设计
+张　强
+摘　要　简要介绍了研华ADAM4000系列模块的性能及其特点，并详细阐述了利用该系列模块组成一种用于热校准风洞的数据采集系统以及LABTECH CONTROL组态软件包在整个系统中的应用。 
+作者单位：郑新江（中国气象局国家卫星气象中心，北京 100081）　
+　　　　　罗敬宁（中国气象局国家卫星气象中心，北京 100081）　
+　　　　　刘征（中国气象局国家卫星气象中心，北京 100081）　
+
+参考文献：
+［1］郑新江,罗敬宁等. 2000年3～4月卫星监测沙尘天气分析[J]. 遥感信息,2000,(2): 26-30.
+
+收稿日期：2000年11月15日
+出版日期：2001年2月25日
+。目前，数据采集系统的种类多种多样，普通的数据采集系统采用板卡结构，传感器信号直接与板卡相联，通过计算机控制板卡的数据采集，这就存在一个问题：传感器信号在传输过程中很容易受到外界的干扰，引起测量数据的不准确。另外，还有一种数据采集系统，它采用的是模块化设计，根据不同的测试参数设计出不同的模块，这种模块便于现场采集数据，抗干扰能力比较强，传感器信号通过模块内部将模拟信号转换成数字信号再传给计算机，由于数字信号不受外界环境的干扰，被测数据的准确度大大增加。 
+作者单位：舒适（哈尔滨工业大学管理学院, 黑龙江哈尔滨 150001）　
+　　　　　陆力斌（哈尔滨工业大学管理学院, 黑龙江哈尔滨 150001）　
+　　　　　朱鸿昌（上海航天技术研究院509所，上海 200240）　
+
+参考文献：
+［1］孙增圻,张再兴,邓志东. 智能控制理论与技术[M]. 北京：清华大学出版社/南宁：广西科学技术出版社,1997.
+［2］李士勇.模糊控制、神经控制和智能控制论[M].哈尔滨工业大学出版社,1996.
+［3］欧洲空间标准化合作组织（ECSS）标准.空间产品保证（Space Product Assurance）ECSS-P系列标准 1996.4.19[S]. 中国航天工业总公司第七O八研究所, 1997
+［4］舒适,陆力斌,朱鸿昌. 航天产品保证与项目管理在实施QJ9000标准中的应用[J]. 科研管理,1999,（4）.
+［5］舒适,陆力斌,朱鸿昌.卫星产品保证体系的质量控制目标函数[M]. 管理工程学报, 2000,14（2）.14～17.
+
+收稿日期：2000年4月23日
+修稿日期：2000年9月29日
+出版日期：2001年2月25日
+。一是采用传统的软件开发工具如C++等开发自己的应用程序，但是开发周期长、困难多，且在今后的维护工作存在着问题;二是采用组态软件包开发，组态软件开发周期短、易维护、易扩展，因而值得推广。
+1　数据采集系统――ADAM4000系列模块
+　　台湾研华公司生产的ADAM4000系列数据采集模块是一种模块内内置微控制器，传感器到计算机接口的智能设备。该系列模块提供信号调理、隔离、调整量程、A/D和D/A转换、数据比较及数据通讯功能，某些模块还可以数字量I/O控制继电器及TTL器件。ADAM模块能连接到计算机并与之通讯。
+　　4)ADAM―4017接收同ADAM―4012,并提供八个模拟量输入通道。RS―485 网络提供较低噪声传感器读入，主计算机通过ADAM RS―232/RS―485转换器,用一个COM通讯端口连到RS―485网络。
+　　在上述两种情况下，ADAM―4510可扩展网络功能。然后根据模块的配置将数字量变换成工程单位、十六进制表示的二进制补码或满量程的百分数。当主计算机提出请求时，转换后的数据通过标准的RS―485接口送给主计算机。
+　　总之，使用ADAM4000系列模块和LT软件包能够方便地组成一套功能较齐全、使用方便的数据采集系统，特别是避免了数据在传输过程中受到干扰。通过提供A/D输入的光电耦隔离和变压器隔离，转换器的隔离电压达500 V DC，该系列模块能防止电源对地干扰和电源浪涌。相应的软件系统也有多种开发途径。
+关键词：卫星姿态控制；故障诊断；重构
+分类号：V448.22+2　文献标识码：A
+文章编号：1006－1630（2001）01－0039－05
+Automating Fault Diagnosis and Replacement for Satillite Attitude Control System
+WU De-an（No.812 Institute of SAST, Shanghai 200233, China）　
+
+Abstract：This article analyzes the status change in the attitude control system when faults appear based on one polar-orbit satellite, and provides a method to decide faulty component. It also puts forward a mixed knowledge represention which uses generating rules and frames to describe attitude control system and fault characteristics and the approach for automatic seperation of faulty component, automatic switch of spare parts and system replacement. Simulation test verifies the system's fearibility.
+Keywords：Satellite attitude control; Fault diagnosis； System rebuild
+作者简介：吴德安（1967-），男，工程师，硕士，研究领域：卫星姿控系统设计。维修对象通过各级维修接口进行有序流通。
+　　2)ADAM―4012接收
+　　a.毫伏级电压输入：±150 mV，±500 mV
+　　b.伏级电压输入：±1 V，±5 V，±10 V
+　　c.电流输入：±20 mA
+　　并提供一个模拟量输入通道。 
+作者单位：廖少英（上海航天技术研究院805所，上海 200245）　
+
+参考文献：
+［1］Gokcen N A. Solubility of N2(g) in liquid N2H4(CH3)2N2H2, 50Wt%N2H4＋50Wt%(CH3)2N2H2 and N2O4[R]. Aerospace Corp. Internal Report.
+［2］Carter W K, Piper je. Reusable Agena study[R]. Vol. 2: Techbical, NASA N74-32285. NASA-CR-120362, LMSC-D383059-Vol.2.
+［3］Atlas-Agena flight performance evaluation for the orbiting GEO physical observatory OGO-V mission[R]. NASA TMX-1967.
+收稿日期：2000年8月12日
+出版日期：2001年2月25日
+。采用RS―485传输标准，并用ASCII式通讯。
+　　5) ADAM―4018接收同ADAM―4011,并提供八个模拟量输入通道。
+1.2　通讯模块
+　　1)ADAM―4520
+　　ADAM―4520是RS―232/RS―485转换器，当计算机有RS―485接口时，就可以直接连到网络上。如果没有RS―485接口，就可以用ADAM―4520将计算机的RS―232转换成RS―485。
+　　2)ADAM―4510
+　　ADAM―4510是RS―485中继器，有两种情况需要使用中继器：
+　　a.连接的模块数超过16个;
+　　b.接到模块的连接线太长。
+　　模拟量输入模块采用微处理器控制的集成A/D转换器，将传感器电压、电流、热电偶或RTD信号转换成数字量。 
+作者单位：袁孝康（上海航天技术研究院509所，上海 200240）　
+参考文献：
+［1］国外应用卫星资料汇编[Z].上海航天局第八∑哐芯克,1992,12.
+［2］天基综合信息网络论文集[C]・组网技术.1999年全国天基综合信息网络研讨会,北京.
+［3］天基综合信息网络论文集[C]・星间链路.1999年全国天基综合信息网络研讨会,北京.
+收稿日期：2000年5月24日
+出版日期：2001年2月25日
+。由于ADAM4000系列模块是通过RS―485协议进行通讯，数据是通过数字量进行传输，这样就避免了信号在传输过程中的干扰和损失。
+关键词：失效；模糊；可靠性；缺陷
+分类号：TB114.3；TJ76　文献标识码：A
+文章编号：1006－1630（2001）01－0027－04
+Defect Security Reliability Asses Taking Account of Fuzzy Factor
+HU Kuan（Xi'an Second Artillery Engineering College, Xi'an Shaanxi 710025,China）　
+ZHANG Yong-jing（Xi'an Second Artillery Engineering College, Xi'an Shaanxi 710025,China）　
+CHANG Xin-long（Xi'an Second Artillery Engineering College, Xi'an Shaanxi 710025,China）　
+
+Abstract：Considering fuzzy factors in defect security reliability assessment, fuzzy and reliability analysis is carried out and a computation model of defect security reliability is established based on the fuzzy and reliability theory. And it is verified by an example, then the more practical result is gained.
+Keywords：Failure； Fuzziness； Reliability； Defect
+
+基金项目：国防科技预研课题(99JS60.1.2.JB4701)
+作者简介：胡宽(1976-)，男，硕士生，研究领域：航空宇航推进理论与工程。
+2　LABTECH CONTROL组态软件包
+　　工业控制是计算机应用的一个重要领域，在这个领域内一般各用户自己开发各自专门的软件;因此，当应用对象发生变化时，往往需要重新开发软件，工作量很大。现在，为了方便开发计算机应用系统，有很多菜单驱动的具有通用性的组态软件问世。我们所用的LABTECH CONTROL组态软件包（以下简称LT）就是其中之一，LT软件包是美国的LABTECH公司生产的，该软件功能强、组态灵活,在实时性和通用性等方面都优于一般的软件，该软件包括DOS和WINDOWS两种版本，在功能上两种版本是一样的，这里以介绍WINDOWS版本为主。当处理器在两次从I/O采样之间有间隙时，LT出空RAM缓冲区将数据写入磁盘;当处理器在I/O采样和写盘之间有间隙时，LT刷新屏幕显示。
+　　3) ADAM―4013接收来自铂、镍RTD（电阻式温度探测器）的输入,并提供一个模拟量输入通道。 
+作者单位：马龙（西安第二炮兵工程学院,陕西西安 710025）　
+　　　　　缪栋（西安第二炮兵工程学院,陕西西安 710025）　
+　　　　　沈绪榜（骊山微电子公司,陕西西安 710054）　
+
+参考文献：
+［1］TANG Min-shen.The application of correlation matching technique in image Guidance [C].Proceeding of CSAA 1st Electronic Conference of the Youth.Los Angeles.1994.CSAA.1994
+［2］孙仲康,沈振康.数字图像处理及其应用[M].北京：国防工业出版社,1985.
+［3］荆仁杰,叶秀清,徐胜荣等.计算机图像处理[M].杭州：浙江大学出版社,1990.
+［4］桑农,李捷,张天序.景区域误差模拟生成技术研究[J].华中理工大学学报.1998,26：24－28.
+［5］彭嘉雄.模板与图像相关的定位精度分析[J].宇航学报.1990,（2）：8－15.
+
+收稿日期：1999年12月24日
+出版日期：2001年2月25日
+。
+2.1　LT的主要性能
+　　.过程监督
+　　.报警监督和控制
+　　.实时数据显示
+　　.数据记录和保存
+　　.过程控制
+　　.容错功能
+2.2　LT的工作原理
+　　在正常模式下，数据通过不同的I/O设备接口，从不同的模块中读入数据，还可以将收集到的数据存入磁盘和显示。
+2.3　LT的菜单登录功能
+　　LT的所有软件皆是菜单驱动软件，都有一套完整、灵活、容易掌握的菜单系统。用户不必掌握专门的命令，通过菜单就可以生成应用系统，并且执行数据采集和过程控制，也可以通过菜单驱动新的硬件设备，设置软件环境以及在线数据分析。
+关键词：地球静止轨道；空间碎片；空间碎片缓减；空间碎片处置；弃星轨道
+分类号：V528　文献标识码：A
+文章编号：1006－1630（2001）01－0031－04
+The Disposal of Geostationary Orbit Space Debris
+ZHU Yi-lin（Beijing Institute of Space Science and Technology Information, Beijing 100086, China）　
+
+Abstract：This paper introduces the proposal on the disposal of Geostationary orbit (GEO) space debris recommended by the Inter-Agency Space Debris Coordination Committee (IADC), which has been submitted to the 37th session of the Scientific and Technica1 Subcommittee of the United Nations (UN) Committee on the Peaceful Uses of Outer Space. The paper describes the concepts of GEO and GEO ring, the situation of GEO objects, the strategy for GEO disposal and the specific measures for disposal of GEO space debris.
+Keywords：Geostationary orbit; Space debris; Mitigation of space debris; Disposal of space debris; Disposal orbit
+
+作者简介：朱毅麟（1934-），男，研究员，研究领域：航天器系统工程。
+3　数据采集系统的开发和应用
+　　用ADAM4000系列模块组成热校准风洞的数据采集系统，软件利用LT软件包开发。热校准风洞的测试参数包括温度、压力、电压、电流等，数量近100个，要想把这么多数据采进计算机,首先要针对各种测试参数的数量合理地分配数采模块，然后再根据各测量点的位置合理地安置模块，通过双绞线将各种模块连接在一起，最后通过LT软件包编制应用程序。
+3.1　硬件配置时容易出现的问题
+3.1.1　关于ADAM4000系列模块的接口问题
+　　ADAM4000系列模块在投入使用之前,必须通过一个初始化程序（ADAM）对其进行初始化配置，内容包括模块的地址、量程等。同时对天馈技术、微波接收机、定标技术、数据采集与处理、驱动与传输、电源、热控制等技术进行了分析。如果ADAM4000系列模块与计算机的COM1相连，则bass address即为1;如果ADAM4000系列模块与计算机的COM2相连，则bass address即为2。另外,在Block菜单中，接口通道一定要写对，对于单通道模块如ADAM―4011、ADAM―4012、ADAM―4013等，接口通道号即是在初始化时设定的地址号码;对于多通道模块如ADAM―4017、ADAM―4018，其接口通道是一个四位数，前两位表示的是该模块初始化时设定的地址号码，后两位表示的是该模块选中的通道，例如:一块ADAM―4018，其初始化地址为03，如果此时选中第0号通道，则在Block菜单中接口通道号即为300;如果选中的是第3号通道，则为303;如果一块ADAM―4011，其初始化地址是02，因为它是单通道模块，所以它的接口通道号为2。
+3.1.2　模块采样速度的设置
+　　对于ADAM4000系列模块由于其硬件本身最高采样频率是10 Hz，所以尽管计算机的主频率很高，但对于ADAM4000系列模块只能在它所允许的范围内设置采样频率，也就是说,10 Hz是ADAM4000系列模块的采样极限，如果一个系统配置了n个该系列模块，则采样频率为10/n Hz。
+　　LT软件包的组态功能较为强大，它的各个功能软件的开发应用，都能基于下拉式菜单或弹出式菜单以及填充方块、功能键的选择，组态功能使得监控管理对象的增加、修改、删除变得很简单，对今后非开发人员的维护工作提供了极大的便利。
+3.2　使用LT软件包时容易遇到的问题
+　　使用Replay块（重现块）时，所需重现点数不能超过数据文件长度。如果有控制输出，则处理后的输出数据放于相应的内存，然后按照组态条件规定的采样频率向I/O设备送出。另外，在使用X…Y计算块时,要注意该菜单页X、Y的顺序;某些计算块需使用参数r，r值一定要设置对。组态功能使得在试验过程中，有时需要观察移测偶在核心区的曲线分布。LT 软件包中TRACES菜单里包含有各种跟踪类型，如：T vs.Y、X vs.Y水平条、垂直条、数字表等，可以根据不同的需要选择不同的跟踪类型。模拟量输入模块提供信号调理、A/D转换、调整量程及RS―485接口的通讯功能。软件的组态功能为工作人员的维护工作提供了便利。
+27岁　男　助理工程师　读者服务卡索引号： 114
+作者单位：长城计量测试技术研究所,北京市,100095
+参考文献
+　[1]　工业控制领域最流行的软件包LABTECH汇编
+　[2]　LABTECH Hardware Interface Guide
+　[3]　ADAM4000系列数据采集模块用户手册
+1998-08-17收稿

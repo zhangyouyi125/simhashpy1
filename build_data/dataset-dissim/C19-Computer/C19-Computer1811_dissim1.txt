@@ -1,0 +1,87 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　No.19　No.1　P.37-38
+
+
+
+
+用Java语言实现Internet远程考试
+刘志明
+摘 要： 一个用Java语言编写的、可在因特网上运行的考试程序，可以实现实时在线的网上考试。这仅仅只有总能力的12％，比100Base－T略高一点。
+　　千兆位以太网（GigabitEthernet）这种高速的网络传输技术，具有极高的网络带宽，足以应付各种应用需求：如交换式工作组、公司内部Internet、实时多媒体等。本文介绍了一个用Java语言编写的可在因特网上运行的考试程序，通过这个程序，无论在哪个国家或地区，只要有1台能接入Internet的电脑，就可以实现实时在线的网上考试。这仅仅只有总能力的12％，比100Base－T略高一点。ISO/IEC正在讨论。为了适应网上教学的需要，软件设计了2个版本，1个为在线考试版，用于模拟真实考试；另1个为测试练习版，带有答案校验、复习改错功能。
+1.1 题库的建立
+　　面对题库所需的庞大的题量，如何快速地制作题目及输入输出直接影响到了程序的工作量和运行速度。但将时钟速率增加10倍就意味着传送1帧所需的时间就减少到原来的1/10，从而直接影响到网络的直径，从10BaseT的2000m缩短到100BaseT的200m。由于Java支持GIF格式的图片，故每道题可以做得很小，仅2KB左右。将图片按顺序编号no1．gif，no2．gif…后，可随时扩充新的题目而无需对原有题库修改，同时也便于随机调取题目。
+　　程序段举例如下：
+　　//随机调取5道句子填空题
+　　for(number＝1；number＜＝5；number＋＋)
+　　{
+　　　　while(equal)
+　　　　{
+　　　　　　current＿number＝(int)(Math．random()*1000)；
+　　　　　　//产生1个随机数，为题库中1000道题中的//某一图片题号
+　　　　for(i＝1；i＜＝5；i＋＋)
+　　　　{
+　　　　　　if(current＿number＝＝compare[i])
+　　　　　　{
+　　　　　　　equal＝true；//比较已调用题号，检验是否有//重复调用
+　　　　　　　break；
+　　　　　　}
+　　　　　　else
+　　　　　　equal＝false；
+　　　　}
+　　}
+　　problem[number]＝getImage(getCodeBase()，″lib/Verbal/ Sentence/no″＋current＿number＋″．gif″)；//从题库中调出题目图片
+　　equal＝true；
+　　compare[number]＝current＿number；
+　　ranswer[number]＝sentence＿rightanswer．charAt(cur－ rent＿number－1)；
+}
+　　此段程序为从“C：/…/lib/Verbal/Sentence/”目录中调出5道句子填空题，调出的题目保存在problem[number]图片数组中，对应的正确答案保存在ranswer[number]数组中。读者可以从中看出这段程序很方便地实现了从题库中随机调取题目的功能。
+　　电信号反射及伴随出现的干扰并不仅限于千兆位传输。但是，在台式机和服务器上采用这些先进技术，以及提高网络的访问速度经常会使局域网主干网承受更大的压力，并产生与那些在传统的共享式以太网局域网上类似的瓶颈。6类缆不仅频带宽高了1倍，其动态范围也大大提升了。将来题库扩充时也仅需将新题答案依次加在原题库答案之后，而无需改动源程序。程序段如下。
+HTML文件中：
+　　＜param name＝sentence＿rightanswer value＝″AEEADEDEBB…″＞
+源程序中：
+　　parameter＝getParameter(″sentence＿rightanswer″)；//获 //取答案参数
+　　if(parameter!＝null)
+　　sentence＿rightanswer＝parameter；
+　　ranswer[number]＝sentence＿rightanswer．charAt(cur－rent＿number－1)；
+//根据随机调取的题号从HTML参数中获得相应的正确答案
+　　if(answer[problem＿number]!＝ranswer[problem＿number]) mistake＿count＋＋；
+　　final＿score＝800－mistake＿count*20－(30－problem＿num－ ber＋1)*20；//比较应试者所选答案进行分数统计
+1.3 考试时间的监控
+　　既然是正式考试，就要有严格的时间控制。通过Java的Runnable接口可以很容易地控制考试的全部进程，不仅可以随时知晓考试的时间，而且能做到准时开始，准时结束，没有监考老师也同样能严格把握考试。程序段为：//时间显示线程
+　　public void start()
+　　{
+　　　　if(time＿thread＝＝null) {
+　　　　time＿thread＝new Thread(this)；
+　　　　time＿thread．start()；　//开始考试
+　　　　}
+　　}
+　　public void run()　　　//线程运行
+　　{
+　　　　while(time＿thread!这些反射很容易使整个网络不稳定，并且几乎不可能准确地找出症结所在。
+3 超5类电缆的性能
+　　5类电缆与超5类电缆关键性能比较如下：
+　　1．PS－Next衡量1对线对抵销其余3对线对所产生的干扰的能力，单位是dB。其中，答案的记录可通过输出流完成：
+　　public void output＿record()
+　　{　　try
+　　　　{
+　　　　answer＿record＿file＝new DataOutputStream(new FileOutputStream(″
+　　　　Record．Txt″))；//创建记录文件
+　　　　for(i＝1；i＜＝35；i＋＋)
+　　　　{
+　　　　answer＿record＿file．writeChars(″Right Answer″＋ i＋″Is：″＋ranswer[i]
+　　　　＋″＼n″)；
+　　　　answer＿record＿file．writeChars(″Your Answer″＋i＋″ Is：″＋answer[i]＋″
+　　　　＼n″)； //将答案写入文件
+　　　　}
+　　　　answer＿record＿file．close()；
+　　　　}
+　　　　catch (IOException e)
+　　　　{　}
+　　　　catch (SecurityException se)
+　　　　{　}
+　　}
+2 结束语
+　　从上述介绍读者可以看到，采用Internet进行远程考试可以大大缩短考试时间，节省人力物力，具有事半功倍的效果。由于篇幅所限，还有许多编程技巧和细节不能一一介绍。
+刘志明（北京信息工程学院96通信系100101）
+收稿日期：1999－08－25

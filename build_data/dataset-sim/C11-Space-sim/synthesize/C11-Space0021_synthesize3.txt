@@ -1,0 +1,121 @@
+航空工程与维修
+AVIATION ENGINEERING & MAINTENANCE
+1999年　第4期　No.4　1999
+
+
+
+　　介绍俄罗斯的几个航空维修企业的现状、振兴维修业的措施及实例。由双频激光器1发出的两个频率略有差异的左右旋圆偏振光f1和f2，经λ／4波片变成两个偏振方向互相垂直的线偏振光，又经过光阑3、倒置望远镜后，由分光镜5分成两束。苏联解体后，留在俄罗斯的航空维修业面临不少问题，主要是订货量减少，资金来源短缺，设备陈旧缺乏竞争力，还有技术力量流失等。在这种情况下，俄罗斯的航空维修业针对存在的问题及时采取了一些补救措施。
+　　首先是对一些历史悠久的军机维修工厂加大技术经济投入，使之满足先进军用飞机维修的需要。它采用了先进的技术及设备、培训了高效的技术专家。第三是加强多种经营，扩大国内外的维修服务对象。第四是将面临困难的制造企业改为维修企业以保存实力。
+　　．ТВ3－117涡轴发动机及其改型(米－8、米－14、米－17、米－24、米－28、卡－27、卡－28、K－32直升机)，翻修期寿命1500h，修理期30天；包括改装。其中275号航空修理厂于1941年6月成立于距巴库45km处的一个村镇，最初是一个流动性的航空修理所，在卫国战争期间曾多次迁移，后定点在克拉斯诺达尔(Карснодар)，1961年改名为275航空修理厂。
+　　该厂从1951年起开始修理喷气飞机，首批修理的有米格－15和米格－15比斯。
+关键词：产品保证；质保体系；神经网络；模型
+分类号：472.2　文献标识码：A
+文章编号：1006－1630（2001）01－0022－05
+The Neural Networks Model of Satellite Quality Assurance System
+SHU Shi（Management College, Harbin Institute of Technology，Heilongjiang Harbin 150001， China）　
+LU Li-bin（Management College, Harbin Institute of Technology，Heilongjiang Harbin 150001， China）　
+ZHU Hong-chang（No. 509 Institute of SAST, Shanghai 200240, China）　
+
+Abstract：The Neural Networks models of quality assurance system without satellite product assurance and quality assurance system with satellite product assurance are set up by use of theory and method of Neural Networks to simulate and control the satellite quality degree. And we also compare the difference and the relationships of these two systems by means of Neural Networks models.
+Keywords：Product assurance；Quality assurance system；Neural networks; Model
+
+作者简介：舒适（1973-），男，硕士生，研究领域：航天产品管理。1982年，该厂掌握了米格－23УБ教练型的修理，1991年掌握了米格－29的修理。该厂迄今为止修理了162架各型的米格－21、97架米格－23УБ教练型、36架米格－29УБ教练型和42架米格－29。
+关键词：失效；模糊；可靠性；缺陷
+分类号：TB114.3；TJ76　文献标识码：A
+文章编号：1006－1630（2001）01－0027－04
+Defect Security Reliability Asses Taking Account of Fuzzy Factor
+HU Kuan（Xi'an Second Artillery Engineering College, Xi'an Shaanxi 710025,China）　
+ZHANG Yong-jing（Xi'an Second Artillery Engineering College, Xi'an Shaanxi 710025,China）　
+CHANG Xin-long（Xi'an Second Artillery Engineering College, Xi'an Shaanxi 710025,China）　
+
+Abstract：Considering fuzzy factors in defect security reliability assessment, fuzzy and reliability analysis is carried out and a computation model of defect security reliability is established based on the fuzzy and reliability theory. And it is verified by an example, then the more practical result is gained.
+Keywords：Failure； Fuzziness； Reliability； Defect
+
+基金项目：国防科技预研课题(99JS60.1.2.JB4701)
+作者简介：胡宽(1976-)，男，硕士生，研究领域：航空宇航推进理论与工程。用工厂自有的资源取得了有关修理技术文件、必须的专用工艺设备，并与制造厂签订了合同。目前正在修理中的有10多架这样的飞机。
+　　为掌握苏－27的修理，该厂完成了大量的准备工作：培训了180名从事实际工作的工程技术人员和185名工人。第一架苏27－УБ的修理成功是在1995年12月。
+　　除了米格－29及苏－27的计划修理外，该厂还修复飞机的各种系统的附件、航空及无线电设备、航空武器、飞机紧急离机设备。工厂的任务是恢复装备的设计使用寿命，使之保持完好状态。近年它还对民品生产给以很大注意。但本文目的在于将时间推进方法应用于轴向流动跨音的通流计算，并非旨在给出一个理想的工程设计结果，因而没有进一步进行优化设计。建立了飞机研制、武器修理以及地面试验车间。该方法利用时频分析多通道滤波和时频局域化的特点，在时频平面内进行二维滤波，从而获得良好的杂波抑制能力，且具备较强的自适应性和鲁棒性。
+将制造厂转为修理厂
+　　1995年11月1日，在俄罗斯成立了阿维亚科尔修理厂，采取这一措施的目的是为了挽救前萨马尔斯航空工厂的破产。从1993年到现在，该部门的高级工程师对米格－21、米格－23和米格－29修理所需大量试验台和设备进行了改造及统一规格化，这些设备可用来修理苏－27的组合件及附件，并可节约大量的卢布。
+
+No.275航空修理厂维修的产品米格－29
+
+可靠性高的发动机
+　　目前由于资金短缺以及维修服务款项不能及时回收，要求采取新的财务政策及厉行节约。该系统以IBM公司的PC－486为基础，另外还有手提式个人计算机用以从测试器系统(Tectep)的存储器快速读出信息从而给出预先诊断，必要时，随后可在固定式计算机上进行快速处理及分析。以上各种信号一同送入到计数、细分系统中作进一步处理。它是于1946年在德国空军机场基础上建立起来的，修理过从美国租赁来的飞机，其后修理了苏联产的一些飞机如米格19、图－16、图－22P以及米－4、米－6、卡25等直升机。目前该厂已修理大约750架飞机及发动机，主要是为海军航空兵服务的。
+　　目前工厂的主要任务是大修TB3－117涡轴发动机。维修工作包括从分解、探伤、装配到台架试车。其次是用先进的技术武装企业，将现代化的故障诊断、寿命估算及维修技术引入维修企业。该厂的特点是重视修理的质量及可靠性。它坚持的一条原则是：质量就是可靠性。
+关键词：地球静止轨道；空间碎片；空间碎片缓减；空间碎片处置；弃星轨道
+分类号：V528　文献标识码：A
+文章编号：1006－1630（2001）01－0031－04
+The Disposal of Geostationary Orbit Space Debris
+ZHU Yi-lin（Beijing Institute of Space Science and Technology Information, Beijing 100086, China）　
+
+Abstract：This paper introduces the proposal on the disposal of Geostationary orbit (GEO) space debris recommended by the Inter-Agency Space Debris Coordination Committee (IADC), which has been submitted to the 37th session of the Scientific and Technica1 Subcommittee of the United Nations (UN) Committee on the Peaceful Uses of Outer Space. The paper describes the concepts of GEO and GEO ring, the situation of GEO objects, the strategy for GEO disposal and the specific measures for disposal of GEO space debris.
+Keywords：Geostationary orbit; Space debris; Mitigation of space debris; Disposal of space debris; Disposal orbit
+
+作者简介：朱毅麟（1934-），男，研究员，研究领域：航天器系统工程。着重对天基遥感信息网络的网络结构、传输方式、多址方式、传输链路的建立和保持、信息处理方式、传输协议、系统容量等问题进行了分析，提出了明确的见解和需要解决的关键技术课题。
+　　用先进的技术武装企业俄罗斯的军机企业有的既生产也负责维修。例如以B．B．切尔内舍夫命名的莫斯科机械制造股份有限公司，是俄航空发动机主要制造企业之一。中继级维修的准则是：电子产品故障诊断至最小可更换单元并更换；舱体内部液压部件采用无维修设计，舱体表面的液压器件以更换方式进行维修。
+　　．在新机减少、老机订货减少情况下，仍有必要保持一支维修力量，可以采用扩大业务、军转民、节约资源等方法来克服困难。在维修方面，由公司的高级技术专家对发动机进行保证性维护。这两种DVM精度指标相差不多，在其基本量程上都为ppm级，分辨力为0.1 μV(本文中所涉及的数字电压表的精度指标请参照表1。
+　　目前，为了提高对米格－29先进战斗机用的РД－33发动机的维修及对发动机状态的诊断能力，公司专门开发了信息诊断系统，该系统包括若干个分系统，其中有发动机试车检验分系统、早期诊断分系统、寿命消耗估算、振动诊断、工作过程参数诊断等。企业在水、电、生活后勤等服务方面力求节约以解决面临的困难。经常检验发动机的状态可以显著地延长技术维护的周期。
+　　随着这一系统的应用，并借助电子计算机来评估РД－33发动机的试验(包括在高空条件下的参数评估)，可以对超过规定寿命的发动机的维护可能性进行预测。
+　　为了便于维护，还开发了在维护条件下的发动机的非转动式油封装置。使用这种装置可以缩短燃滑油的消耗，提高发动机的寿命。
+　　在生产新发动机的同时，还进行了各种现役发动机的修理。在修理过程中，对零件及组合件的状态并行评估，随后对不符合技术条件的零件加以代换或修复，并代换承力大的零件及组合件。与新制造的发动机一样，对批生产的发动机的组合件应对其工作性能进行全过程检验和按程序进行调整。
+　　B．B．切尔内舍夫公司修理的发动机质量高，这是通过生产经验与寻求新的技术措施和工艺相结合的结果。例如，涡轮工作叶片上的防护层的恢复采用了现代工艺，采用了裂纹的补焊、在控制气氛室中个别元件的代换，用电子束焊接非分开式接头中的零件，用气体等离子喷涂来修复零件及密封涂层等。
+　　发动机的制造、修理、装配及试验由高技术专家来实现。同时，发动机的修理由原班人马、设备来完成。
+　　采用新工艺后可降低修理成本，在使用条件下保持高的飞行技术特性，降低油耗、保证装备的可靠性以及整个翻修期内使用特性的稳定性。此外，在修理过程中可以根据用户要求，对发动机单个元件的可靠性及工作性能进行补充研究并作出结论。这方面的工作不计入修理期，修理期自进厂之日算起，不得超过3个月。
+　　近年采取的全部技术及组织上的措施提高了РД－33发动机的可靠性，从而进一步提高了翻修期间以及设计期间的寿命。
+多种经营、走出国门的民航维修企业
+　　乌拉尔民航厂是俄罗斯联邦航空服务系统大型企业之一，从1939年以来累积了丰富的航空修理技术的经验。它的修理服务对象不只限于俄罗斯，还包括世界50个航空公司。
+
+乌拉尔民航厂维修车间一隅
+　　目前该工厂从事以下装备的大修及维修工作。
+　　．НК－8－2У喷气发动机(图－154ъ)保证翻修期寿命4000h，并根据技术状态延至6000h，维修期45天。到目前为止，修理НН－8－2У发动机已有15年以上历史。
+　　4)转折点的影响：U4
+　　根据经验，取U4＝0.3 μm。
+　　．ТВ2－117发动机及其改型(米－8直升机用)，翻修期寿命1500h延寿到2000h，修理期20天；目前年修理量只有240台，主要原因是民航不景气。
+加强军机维修企业
+　　苏联解体后，留在俄罗斯的军机维修厂中有的在历史上是与俄罗斯的军用航空紧密相连的企业。
+　　．ВР－8A减速器(米－8直升机)，翻修寿命1500h，修理期30天。
+　　．ГС－18МО起动发电机，НР－40……НР－3调节器泵及其改型。
+2　系统移植中出现的问题与措施
+2.1　网络工作站与服务器的联接
+　　ORACLE V6.0A关系型数据库的应用软件可在NOVELL NETWARE的工作站生成软件(WSGEN)生成的网络工作站上使用，而ORACLE 7 SERVER FOR NETWARE V7.0关系型数据库的应用软件(ORACLE DEVELOPER／2000)不能在此站点上使用，因此要用NETWARE 3.12 CLIENT FOR DOS／WINDOWS软件生成网络工作站，此网络工作站采用ODI(开放数据接口)方式上网，在这种情况下ORACLE V6.0A的应用软件仍然能用。
+　　该种测量方法由于受三坐标测量机自身尺寸的限制，无法实现在线测量，费时费力，而且因计算环节多而影响测量精度；但该种方法的优点是不仅可测量细颈的厚度，而且还可测量细颈沿深度方向在不同截面的尺寸，并且细颈可以是空间任意方向的。
+　　．防止高温腐蚀的扩散涂层及等离子涂层(离子/等离子涂层)
+　　．制造蜂窝密封件。
+　　．硬质合金涂层的爆炸喷涂及电声喷涂。
+　　．电子束钎焊，电子束及等离子焊。
+　　．非常有效的电镀设备。所以出现了主控计算机与工作站联机不通的情况。
+　　工厂修理的装备的可靠性指标与国际民航组织的标准相当。1997年工厂修理产品的总使用寿命为170万小时。
+　　该工厂有科技优势、专业人才和高技术设备，可以向用户提供高的修理质量、高的使用可靠性；最短的修理期；相当低的修理价格。
+　　除航空发动机修理外，企业还研制民用产品、能成批生产额定功率1000kW的ЭУ1000/1000发电设备。
+关键词：卫星姿态控制；故障诊断；重构
+分类号：V448.22+2　文献标识码：A
+文章编号：1006－1630（2001）01－0039－05
+Automating Fault Diagnosis and Replacement for Satillite Attitude Control System
+WU De-an（No.812 Institute of SAST, Shanghai 200233, China）　
+
+Abstract：This article analyzes the status change in the attitude control system when faults appear based on one polar-orbit satellite, and provides a method to decide faulty component. It also puts forward a mixed knowledge represention which uses generating rules and frames to describe attitude control system and fault characteristics and the approach for automatic seperation of faulty component, automatic switch of spare parts and system replacement. Simulation test verifies the system's fearibility.
+Keywords：Satellite attitude control; Fault diagnosis； System rebuild
+作者简介：吴德安（1967-），男，工程师，硕士，研究领域：卫星姿控系统设计。当时对该厂生产的图－154M的订货锐减。
+关键词：可贮存火箭推进剂；氦气；氮气；泵入口压力；增压气体
+分类号：V434+.212　文献标识码：A
+文章编号：1006－1630（2001）01－0016－06
+The Analytical Research of Relationship Between the Helium or Nitrogen Pressurization and the Engine Pump Inlet Pressure for Storable Propellant Rocket
+Abstract：This paper attempt from relationship between the helium or nitrogen solubility in the storable propellant and engine pump inlet pressure, as well as analysis, computation and research for the Agena pressurization system of the upper stage rocket of the America to analyze and study engine pump inlet pressure requirements of our country's storable propellant upper stage rocket and the pressurization system. The author considers that adopting the helium pressurization can decrease greatly the engine pump inlet pressure of the upper stage rocket, and considerably increase transport capacity of the rocket. This paper also puts forward a proposal of the corresponding improvements.
+Keywords：Storable rocket propellant; Helium; Nitrogen; Pump inlet pressure; Pressurized gas
+作者简介：廖少英（1936－），男，研究员，研究领域：宇航动力系统。在转变为维修厂后，该厂在激烈的航空维修市场中，终于站住了脚。
+　　这个企业除了生产也负责维修。大修时间由原来105～110天缩短到90天。为了完成由生产向维修的转变，该工厂做了不少工作。
+　　在3年中，工厂完成了全套质量保证及修理研究试验工作。
+
+
+图1　涡流发生器及其排列型式
+　　试验中厚的紊流附面层采用针式附面层调试装置产生［3］，附面层厚度δ与VG高度h之比为2∶1；所用半片叠合式三角形埋入式VG尺寸按文献［2］最佳尺寸设计，高度h=10 mm，其几何形状及排列型式如图1所示。这些工作的目标是满足国际标准ISO9000及АП－21和АП－145航空法规。因此，在工厂编写的学习教程中规定了保证符合设计及维修文件要求的程序，工厂编制了保证检验系统的文件、完成了保证符合OCT42314.85的工艺系统的可靠性工作，编制和推行了质量管理的自动化信息分析系统。
+经验教训
+　　以上是俄罗斯航空维修企业近年的一些情况，从中不难引出一些值得注意的经验教训，以下几点是值得重视的。
+　　目前该厂除了进行飞机大修工作外，还完成其他一些工作。
+　　．要改变重制造轻维修的观念，特别是民机更是如此。
+　　．无论是军机还是民机的维修必须十分重视技术改造。
+　　．在制造业不景气情况下，部分企业转向维修是保存实力的一种办法。
+　　．制造与维修兼顾，再加上多种经营，是合理利用资源，提高投入产出比的有效途径之一。
+　　．及时调整企业经营策略和方向是
+作者单位：中国航空信息中心

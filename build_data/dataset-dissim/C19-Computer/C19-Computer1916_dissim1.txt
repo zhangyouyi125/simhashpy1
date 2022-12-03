@@ -1,0 +1,32 @@
+微型机与应用
+WEIXINGJI YU YINGYONG
+2000　Vol.19　No.5　P.57-58
+
+
+
+
+在中文VFP6．0中使用OLE自动服务
+李元
+摘 要：使用OLE自动化服务在VFP中调用Excel或Word，完成报表的制作。
+　　BBS的管理者大致上可以分为站长（SYSOP）、站长对等账号（SYSOP equilvalent）、账号管理员（Account Manager）、板主（Board Manager）、讨论区管理员（General Board Manager）和活动看板管理员（Welcome ＆ Movie Board Manager）等。VFP本身的报表功能虽然已经很不错，但有时难以满足用户的各种特殊要求。这时可以使用OLE自动化服务在VFP中调用Excel或Word来完成这种特殊任务（VFP数据库应用软件作为客户，Excel或Word作为服务器）。Excel有强大的数据处理功能，而Word有强大的图文处理功能，不管什么样的报表任务都可很好完成。
+3 BBS的邮件功能
+　　任何一个BBS站内的用户都可以向Internet收发邮件，这是因为BBS软件拥有和本系统内部的邮件服务器（如：sendmail）相连通的工具，使每一个站内用户都拥有一个形式为“用户名．bbs＠BBS邮件地址”的邮件箱。因此，需要修改邮件服务器的配置文件sendmail．cf。
+表1 科研经费开支情况表
+费用项目一季度二季度三季度四季度合计
+科研材料1500200020004000　
+科研出差3000300040004000　
+其它费用15001200140001100　
+合计　　　　　
+
+　　我们希望在VFP的这个项目运行时，调用Word来制作这个数据表的“科研经费开支情况报表”，并在处理时自动计算合计数，最后将报表以Word文件存盘。下面的程序Word01．prg实现了这些要求。
+　　Firebird BBS、Maple BBS等各种BBS软件可以从下面的地址获得：
+　　ftp：／／ftp．whu．edu．cn／pub／Linux／bbs／
+　　解压后会自动在当前目录下建立1个目录bbs＿src，内含bbs程序和各种工具程序。我国的BBS系统之所以有今天这么生气蓬勃的场面，这与以学生为主的系统管理者在台前与幕后的默默耕耘与付出是密不可分的。图1即为程序运行的结果。
+
+图1 程序运行结果
+李元（贵阳贵州大学计算机软件与理论研究所550025）
+参考文献
+［1］李元．Visual FoxPro 6．0中调用AutoCAD的应用实例． 中国计算机报，1999年10月18日
+［2］Microsoft Corporation．Microsoft Visual FoxPro6．0程序 设计员指南．北京：希望电脑公司，1998
+［3］Bazian M．Visual FoxPro6．0开发使用手册．北京：机械工 业出版社，1999
+收稿日期：1999－11－10

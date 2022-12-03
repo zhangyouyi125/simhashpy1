@@ -1,0 +1,46 @@
+航空计测技术
+AVIATION METROLOGY &
+MEASUREMENT TECHNOLOGY
+1999年 第2期 No.2 1999
+
+
+
+一种新型的分布式数据采集器(二)
+朱　军　刘建国　彭泽兵　陈荔莹　李　滨
+A New Distributive Data Acquistition System (2)
+Zhu Jun,Liu Jianguo,Peng Zebing,Chen Liying,Li Bin
+
+4　系统结构和工作原理
+　　900系列分布式数据采集系统由900系列数据采集模块、电源、通讯电缆、主机构成。
+　
+　
+　　王常树：53岁　男　高级工程师
+作者单位：贵州黎阳机械公司，贵州省平坝县，561102
+　　1998-03-17收稿
+。可进行多量程、任意控制点的校准工作。测量结果经模块内部A／D转换后，用RS485通讯方式，经屏蔽双绞线送至主计算机进行采集，并以固定的数据格式输出，用户可根据需要，采用相应的软件对采集到的信号进行处理。本文在着重分析了以上问题后，介绍了自行研制的已获国家专利的STT―1 A系列总温热电偶校验器。其检定装置框图见图4。
+　　关键词　总温电偶　校验　STT―1 A校验器
+Calibration Problem of Total Temperature Themocouple Using for Aero Engine
+Wang Changshu
+　　Abstract　Because the aerodynamic constructure of the aero air total temperature thermocouple is complicated,its calibration is always not yet decided.Owing to the thermo-electric property move and the matching character change of the thermocouple after being made,the matching calibration is necessary.In this paper,after emphasizing the above problems,the STT-1A series total temperature thermocouple calibrator wining national patent and developed by myself is introduced.
+　　Key words　Total temperature thermocouple,Calibration,STT-1A Calibrator.
+
+　　前言
+　　在发动机台架试车及装机飞行中，监控温度是十分重要的参数，它直接影响着发动机的安全和寿命。每年因测温问题造成大量不必要的重复开车，全国的浪费是惊人的。其中912模块只有10个通道，端子1～4为一个通道，5～8为一个通道，其它的通道依此类推。
+2　内外场现场用总温热电偶检定装置的研制
+　　我厂为解决蜗轮喷气发动机台架试车温度测量的检定问题，自行设计制造了SJT―1A型检定装置。
+ZWP―6 T*4温度表测温原理图如图3。如果主机有RS485通讯接口，就可直接与模块进行通讯。
+5.2　模块的几种典型实用连接
+　　1)单模块的连接
+　　单模块的连接见图4。其中9XX模块上的26、27等数字为端子号，在此图上只画出了模块与接口及电源的连接，模块与各种传感器的连接省略。
+
+图4　单模块的连接
+　　2)少于5个模块的980网络的典型连接见图5。造成重复试车，无论是在燃油，还是在工时方面都造成极大的浪费，且直接影响了发动机的可靠性，因此航空发动机总温热电偶校验的问题有研究的必要性。
+
+图6　981网络的典型连接
+5.3　不同参数测量的连接与设定
+　　1)直流电压的测量(适合于910、911、912模块)
+　　直流电压的测量见图7。要注意的是，912模块测电压时，每个通道有两个端子不接，912模块只有10个通道。测量参数的通道、方法、量程等通过设置不同的命令解决。如：
+
+图7　直流电压、电流、热电偶测量
+
+　　02模块的01通道，1.2 V量程：＠02∶1CM1，1，4，0

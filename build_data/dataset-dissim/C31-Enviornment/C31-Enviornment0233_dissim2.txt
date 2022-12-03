@@ -1,0 +1,190 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第2期 No.2 Vol.18 1998
+科技期刊
+
+催化湿式氧化处理香料废水*
+杨　琦　赵建夫　汪立忠　陆雍森
+(同济大学污染控制与资源化研究国家重点实验室，上海 200092)
+文　摘　在中温(160℃)和中压(0.98Pa)条件下，采用催化湿式氧化处理香料废水。试验结果表明，香料废水经30min的湿式氧化处理COD、TOC、色度的去除率分别为69.1%、74.8%、79.5%，并对反应过程经验动力学模式进行求解。
+关键词　催化湿式氧化　香料废水　动力学模型　GC-MS
+Catalytic wet air oxidation of perfume wastewater.Yang Qi,Zhao Jianfu,Wang Lizhong，Lu Yongsen(State Key Laboratory of Pollution Control and Resource Reuse，Tongji University,Shanghai 200092).China Environmental Science.1998,18(2):170～172
+Abstract―Catalytic wet air oxidation,involving oxidation at high temperature and pressure conditions,is useful for the treatment of hazardous,toxic,and nonbiodegradable wastewater.The results show that the removal efficiency of COD,TOC and colorindex could reach 69.1%,74.8% and 79.5% respectively.Generalized empirical kinetic model for catalytic WAO of perfume wastewater is established.
+Key words:catalytic wet air oxidation　perfume wastewater　empirical kinetic model 　GC-MS
+　　香料生产过程中排放出大量的有机废水，其有机物含量高，难以用传统的废水处理方法进行处理。随着香料工业发展，探索出新的香料废水处理方法是十分必要的。
+关键词　除草剂　蝌蚪红细胞　微核试验
+A study of micronucleus in erythrocytes of tadpole induced by weedicide.Tang Xinhui(Department of Biology,Yancheng Educational College,Yancheng 224002).China Environmental Science.1998,18(2):162～165
+Abstract―Micronucleus test of erythrocytes of tadpole (Bufo bufo gargarizans) was applied to study possible mutagenic activities of 10 kinds of weedicides. The tadpoles were exposed in various weedicide samples for 7 days. Smears of cardiac blood samples were prepared. It was found that 8 kinds of weedicides such as propachlor and benthiocarb could induce sig-nificant increases in frequencies of micronucleated erythrocyte, the maximum frequency was 11.5‰(propachlor, 0.5 mg/L),there was significant difference in comparison with the control group (4.2‰,P<0.01). Amide and car-bamate of weedicide had great mutagenic activities with their mean frequencies of micronucleate cell of 8.2‰ and 6.5‰(0.8mg/L) respectively.In addition, the frequency of micronucleated cell showed a dosage－dependent elevation, and 6 kinds of weedicides such us benthiocarb in using concentration had significant mutagenic activities.
+Key words:weedicide　tadpole erythrocytes　micronucleus test
+　　随着工农业生产的发展，环境污染问题日趋严重。日本、美国、欧共体等国已将该技术成功应用于含高浓度有机物的焦化废水、农药废水、造纸废水和城市污水处理厂活性污泥等的处理，并具有相当强的经济竞争力。本文数据采用X2检验和F检验进行统计学分析。
+1．2　实验动物
+　　实验动物为中华大蟾蜍变态前的蝌蚪，从盐城市东门附近无污染水塘中捕捞，体重0.4～0.5g，于染毒前两周养在符合饮用水标准的地下水（下称地下水）中，每日上午投喂磨细的金鱼铒料1次，每周换水2次。
+1.2　反应装置
+　　采用ZY-ZA型高压反应釜，有效容积为2L，装置如图1所示。
+1.3　试验步骤
+　　在高压釜中加入300mL香料废水，升至预定温度时取样，然后开动搅拌器，充入氧气至一定压强，此时计反应时间为零点，开始记录时间。
+1　材料和方法
+1．1　药剂
+　　供试的药剂为10种常用稻田除草剂：二甲四氯钠（20%水剂，浙江海盐农药厂）、杀草丹（90%乳油，宜兴市益农化工厂）、氟乐灵（48%乳油，大丰市农药厂）、稻乐思（72%乳油，瑞士汽巴嘉基有限公司)、除草灵（18%颗粒剂，浙江东阳农药厂）、扫氟特（30%乳油、江苏汽巴农化有限公司）、苄甲黄隆（10%粉剂，南京梅山化工总厂）、毒草胺（20%粉剂，北京市农药二厂）、丁草胺（60%乳油，广州市农药厂）、禾大壮（72%乳油，美国施多福化学公司）。
+表2　香料废水的湿式氧化处理结果
+Table 2　Result of wet air oxidation for treatment perfume wastewater
+
+时间
+minCOD
+(mg/L)TOC
+(mg/L)pH值色度
+(倍)ECOD
+(%)ETOC
+(%)色度
+(%)
+　*1　*2*1*2*1*2*1*2*1*2*1*2*1*2
+15362605210011050172008.48.53500380057.727.260.738.870.868.3
+3022170433607080144608.28.02500330069.139.474.848.579.572.5
+4520070407006690130508.28.01500220072.043.476.853.687.581.7
+6019100381006320120708.08.01100180073.346.877.557.090.885.0
+9018990367506270119207.87.91100150073.548.777.757.694.987.5
+
+　　　　　　　注：*1为加催化剂的试样　*2为无催化剂的试样
+2　结果分析与讨论
+　　用ABO3稀土类催化剂，在160℃和0.98 MPa条件下进行试验，结果见表2。
+　　经湿式催化氧化30min后，测得BOD5为7820mg/L。这样，反应前原废水BOD5/COD=0.184,处理后废水BOD5/COD=0.354。
+2.1　湿式催化氧化反应动力学的经验模式
+　　由表2可见，COD的去除率与时间呈指数关系。
+　　　　设y=aebx　(1)
+式中：y为COD去除率；x为反应时间。
+对(1)式两边取对数lgy=lga+bxlge　(2)
+　　然后根据数值分析曲线拟合关系(见表3)。
+表3　拟合曲线数据
+Table 3　Calculation of imitation curve data
+
+ix(ti)
+(h)y(η)
+(%)lgyx2xlgy
+10.2557.70-0.23880.0625-0.0597
+20.5067.10-0.16050.2500-0.0803
+30.7572.00-0.14270.5625-0.1070
+41.0073.30-0.13491.0000-0.1349
+51.5075.50-0.12212.2500-0.1832
+4.00--0.79904.1250-0.5651
+
+由最小二乘法得：
+　　　　5lga+4lge.b=-0.799　(3)
+　　　　4lga+4.1251ge.b=-0.5651　(4)
+　　　　a=0.5972　b=0.1845
+　　　　η=0.5972e0.1845t　(5)
+η为COD去除率 　(6)
+故，=0.7889×104e0.1845t　(7)
+方程式(7)即为反应动力学模式，与Li〔1〕等人求得的啤酒废水动力学模型相似。
+2.2　反应机理讨论
+　　虽然对湿式催化氧化的催化剂活性进行了较多研究，但有关催化机理方面的报道却较少。Sadand〔2〕等人提出过催化WAO脱酚自由基反应机理。催化剂为负载型氧化铜。
+参考文献
+1　潘道一.动物学杂志，1990，25(1)：32～34
+2　Buckley J A.Fish Board Can.，1997，34：215～224
+3　Hooftman R N，Raat W K de. Mutation Res.,1982,104:147～152.
+4　Hooftmam R N, Vink G J.Ecotoxicology and Environmental Safety,1981,5：261～269
+5　贺维顺,王蕊芳.动物学研究，1992，13（3）：279
+6　贺维顺，王蕊芳，丘翠芳.环境科学学报.1987，7（4）：467～471
+7　贺维顺，王蕊芳，张春芳.环境科学学报，1991，11(3）:351～357
+8　张瑞涛.淡水渔业研究文集.北京：科学出版社，1990.16～20
+9　楼允东，吴　萍.中国环境科学，1996，16(4):275～278
+10　刘爱明等.动物学研究，1985，6(1）：8～10
+11　苏少泉.中国农田杂草化学防治，北京：中国农业出版社，1995.452～456
+作者简介
+汤新慧　女，1966年12月生。本文提出的反应历程基本与Sadand〔2〕等人过程相似。
+2　结果和讨论
+　　捕捞蝌蚪在地下水中暂养2周后其红细胞自发微核细胞率无明显个体差异，经不同浓度、不同种稻田除草剂试验液染毒的中华大蟾蜍蝌蚪红细胞微核细胞率的测定结果见表1。而一般有机物在中温(160℃)，中压(0.98Pa)条件下，产生许多中间产物，一般最终产物为羧酸类，而羧酸类很难氧化。 苄甲黄隆和二甲四氯钠分别属于磺酰脲类和苯氧羧酸类物质，到目前为止，尚未发现此两类除草剂对动物体具慢性毒性〔11〕。有关苯环取代基氧化规律的研究，国外做了大量工作。Kotuk.pull〔3〕等人认为苯环上氧化能力次序为：2NO2基团＞NO2基团+CH3基团＞Cl基团＞NO2基团＞CH3基团。而笔者认为，苯环上取代基应分为吸电取代基和供电取代基两类。
+2．5　使用浓度下6种除草剂诱发微核细胞率上升
+　　10种除草剂以使用浓度，1/5使用浓度、1/25使用浓度3种试验液染毒蝌蚪7d，测定其红细胞微核细胞率。这是因为吸电取代基使苯环上电子云密度增大，这样带负电含氧自由基很难靠近苯环，使氧化反应延缓，而碳氧基为吸电取代基，难以氧化。从鉴定结果看，与Vedprakash〔4〕等人的研究结果一致。
+表4　香料废水催化氧化30min前、后GC-MS鉴定结果
+Table 4　GC-MS analyse results of perfum wastewater of catalytic wet air oxidation 
+before and after 30 minutes 
+
+峰号特征离子(m/e)处理前处理后化合物名称保留值
+143 57 71 85800800正辛烷(两个正二十烷内标)-
+287 70 55 43 31-916醋酸戊酯-
+3106 77 51 3910231019苯甲醛1026
+494 66 391064-酚1063
+5108 94 79 65 5111691168苯甲醇-
+6128 102 641293-萘1298
+7156 138 123 108 95 89 561342-香茅醇1345
+8154 136 123 111 93 84 69 411371-香叶醇1375
+9152 151 119 92 65 521461-苯甲酸胺甲酯-
+10119 118　 90 63 511566-苯并吡喃-
+11138 120 92 70 65 43 311640-苯甲酸羟苯酯-
+12146 118 89 63 511669-苯并吡喃酮-
+13137 120 119 91 651772-苯甲酸丁酯-
+14147 118 78 51 431817-二甲糠醛吡啶-
+15171 153 125 118 99 691926-氯代苯甲酸铵-
+16183 165 147 137 103 75 51 431944-氯代肉桂酸-
+17205 188 160 146 124 97 69 621977-二氯苯甲酸胺-
+18132 131 119 104 95 77 642027-甲基苯恶嗪-
+19207 147 133 98 91 69 48-2256羧酸-
+2057 71 8522602258廿三烷2260
+
+　　　　注：“-”为未检出
+3　结论
+3.1　从经验反应动力学模型看出，在90min内反应呈一级反应。
+3.2　经催化处理香料废水可生化性提高，BOD5/COD从0.184提高到0.354。
+3.3　选用合适催化剂，处理率增加。
+参考文献
+1　Li.J.AIche.,1991,37(11):1687～1697
+2　Sadana A，et al.J.Catalysis,1974,35:140～152
+3　Kotuk P.Ind.Eng.Chem.Res.,1993,32:1772～1779
+4　Vedprakash S M,et al.Ind.Eng.Chem.Res.,1995,34:2～48
+作者简介
+杨　琦　男，1966年2月生。讲师，现为同济大学污染控制与资源化重点实验室在读博士生。
+　　自70年代以来，国内外有关学者运用水生脊椎动物微核试验法研究了一些化学物质的致突变效应。参加过上海自然科学基金课题“味精高浓度废水高效分解菌的选育与优化工艺研究”、“湿式催化氧化处理高浓度有机废水”。
+表1　除草剂对蝌蚪红细胞微核细胞率的影响
+Table 1　The effect of various weedicides on the micronucleus frequencies
+of erythrocytes in toad tadpole
+
+名称 浓度观察细胞数微核细胞数微核细胞率X2P
+　(mg/L)(个)(个)(‰)
+稻乐思0.121130904.3
+（酰胺类）0.5213911175.5
+　0.8218681326.08.70<0.01
+扫氟特0.1190651125.96.90<0.01
+（酰胺类）0.5187861317.016.93<0.01
+　0.8205581708.334.23<0.01
+毒草胺0.1190321407.421.38<0.01
+（酰胺类）0.52012623111.587.94<0.01
+　0.81865420110.872.85<0.01
+丁草胺0.1197731286.512.18<0.01
+（酰胺类）0.5213342059.655.79<0.01
+　0.8196271628.333.38<0.01
+杀草丹0.1187231065.7
+（氨基甲酸酯类）0.5199031206.08.25<0.01
+　0.8187351306.916.50<0.01
+除草灵0.118853985.2
+（氨基甲酸酯类）0.5219971285.86.94＜0.01
+　0.8193041276.613.07<0.01
+禾大壮0.118006734.1
+（氨基甲酸酯类）0.518112864.8
+　0.8187231105.96.82<0.01
+氟乐灵0.1188061015.4
+（二硝基苯胺类）0.5209361205.7
+　0.8204781286.310.29<0.01
+二甲四氯钠0.120235954.7
+（苯氧羧酸类）0.520328844.1
+　0.8199631045.2
+苄甲黄隆0.120198914.5
+（磺酰脲类）0.520063934.6
+　0.8187131085.7
+对照　28322118 4.2±0.3
+
+　　　　　　　　注：表后两列只列出差异极显著的数据
+表2　不同除草剂诱发蝌蚪微核细胞率的方差分析
+Table 2　Variance analysis of the frequencies of micronuc-
+leate in toad tadpole erythrocyte induced by different weedicides
+
+变异来源平方和自由度均方F
+浓度15.0827.5413.23*
+种类57.7978.2614.49*
+误差8.04140.57
+总和80.9123
+
+　　注：*α=0.005
+2．3　苄甲黄隆、二甲四氯钠无诱突变活性
+　　由表1可知,苄甲黄隆、二甲四氯钠在试验条件下对蝌蚪细胞微核无显著影响。国家科委“八五”攻关课题“催化湿式氧化处理活性污泥新工艺研究”。国家教委跨世纪优秀人才资助项目催化湿式氧化处理高浓度污水研究。发表论文18篇。
+收稿日期：1997-06-14
+*上海市自然科学基金资助项目

@@ -1,0 +1,218 @@
+土壤与环境
+SOIL AND ENVIRONMENTAL SCIENCES
+1999年 第8卷 第3期 Vol.8 No.3 1999
+
+
+
+絮凝-光催化处理实际染料废水的研究
+李芳柏　古国榜　陈伟彬　万洪富　何江华
+　　摘要：采用絮凝－光催化氧化工艺成功地处理了实际染料废水；研究了COD光催化降解动力
+学。COD和BOD5浓度分别为2169mg/L、295mg/L的染料废水，经絮凝－光催化处理后，出水COD和
+BOD5分别为214mg/L、18.5mg/L，去除率分别为90.1％、93.7％。向光催化体系中加入H2O2，可促
+进COD与BOD5的去除。直线的斜率为TCB
+在3种表面活性剂溶液中的分配系数Km，代表了表面活性剂对TCB的增溶能力。
+　　关键词：絮凝；光催化；染料废水；动力学
+　　中图分类号：X131.2 文献标识码：A
+Dye Waste water Treatment by Means of Flocculent-photo-catalysis Process
+LI Fang-bai1, 2，GU Guo-bang2，CHENG Wei-bin2，WAN Hong-fu1，HE Jiang-hua1
+（1: Guangdong Institute of Eco-environmental and Soil Sciences , Guangzhou 510650, China; 
+2: College of Chemical engineering, South China Technology University, Guangzhou 510642, China）
+Abstract: A new reactor system is designed to combine flocculent process with photo-catalytic reactor and 
+applied to treat dye waste water from a dye mill. After being treated by means of flocculent-photo-catalysis, the 
+concentration of COD and BOD5 of waste water decreases from 2169 mg/L or 295 mg/L to 214 mg/L or 18.5 
+mg/L respectively. The removal rate of COD and BOD5 is up to 90.1％ and 93.7％ respectively. The system 
+can treat dye waste water with a higher organic concentration.
+Key words: flocculent; photo-catalysis; dye waste water; kinetics
+　　印染行业是工业废水排放大户，我国每天约排放（3～4）×106 m3印染废水，全年为（9～12）
+×108 m3。也就是说，在表面活性剂的稀溶液中，
+由于表面活性剂的疏水基团在水相的存在，在一定程度上降低了溶液的极性，使得疏水有机物在
+水中的溶解度增加。这一增溶作用与天然
+水体中溶解有机质对疏水有机物的增溶相似。这些污染物许多为我国环境优先控制的有毒有机物，具有
+生物积累性，“三致”性。我国印染废水的处理率仅为22.5％，处理达标率仅42.0％；印染行业
+也是环境污染大户[1]。Javert等[17]的研究表明非极性化合物在十二烷基硫酸钠溶液中的增溶服从泊松分布，也就是
+说，一个分子的增溶对另一个分子的增溶不产生影响。而光催化法却能弥补这一缺点，它能把这些有机物彻底分解。但是光
+催化法对高浓度废水的处理效果不理想。
+　　表面活性剂和污染物的相互作用分为物理相互作用和相迁移相互作用。赵玉光等[2]提出以间歇延时曝气（IDEA）与光催化串联处理模拟印染废水取得了较
+好的效果。表面活性剂还能通过减小有机
+相和水相的界面张力促进土壤和含水层中非水相液体的移动[14～16]。
+作者单位：南京大学环境科学与工程系，污染控制与资源化国家重点实验室，南京210093
+参考文献：
+　1　Edwards D A, Luthy R G, Liu Z. Solubilization of polycyclic aromatic hydrocarbons in micellar nonionic 
+surfactant solutions[J]. Environ Sci Technol, 1991, 25: 127 
+　2　Diallo M S, Abriola L M, Weber W J Jr. Solubilization of non-aqueous phase liquid hydrocarbons in 
+micellar solutions of dodecyl alcohol ethoxylates[J]. Environ Sci Technol, 1994, 28: 1829
+　3　Kile D E, Chiou C T. Water solubility enhancements of DDT and trichlorobenzene by some surfactants 
+below and above the critical micelle concentration[J]. Environ Sci Technol, 1989, 23: 832
+　4　Abdul A S, Gibson T L, Rai D N. Selection of surfactant for the removal of petroleum products from 
+shallow sandy aquifers[J]. Ground Water, 1990, 28: 920
+　5　Pennell K D, Abriola L M, Weber W J. Surfactant enhanced solubilization of residual dodecane in soil 
+columns:.Experiment investigation[J]. Environ Sci Technol, 1993, 27: 2332
+　6　Jafvert C T, Van Hoof P L, Heath J K. Solubilization of non-polar compounds by non-ionic surfactant 
+micelles[J]. Wat Res, 1994, 28(5): 1009
+　7　Pennell K D, Adnofli A M, Abriola L M, et al. Solubilization of dodecane, tetrachloroethylene, and 1, 2
+-dichlorobenzene in micellar solutions of ethoxylated nonionic surfactants[J]. Environ Sci Technol, 1997, 31(5): 
+1382
+　8　Grimberg S I, Nagel J, Aitken M D. Kinetics of Phenanthrene dssolution into water in the presence of 
+nonionic surfactants[J]. Environ Sci Technol, 1995, 29(6): 1480
+　9　Guha S, Jaffe P R, Peters C A. Solubilization of PAH mixtures by a nonionic surfactant[J]. Environ Sci 
+Technol, 1998, 32(7): 930
+　10　Deitsch J J, Smith J A. Effect of triton X-100 on the rate of trichloroethene desorption from soil to water
+[J]. Environ Sci Technol, 1995, 29(4): 1069
+　11　Sahoo D, Smith J A. Enhanced trichloroethene desorption from long-term contaminated soil using triton 
+X-100 and phenomenon Increases[J]. Environ Sci Technol, 1997, 31(7): 1910
+　12　Imhoff P T, Arthur M H, Miller C T. Complete dissolution of trichloroethylene in saturated porous media
+[J]. Environ Sci Technol, 1998, 32(16): 2417
+　13　Kommalapati R R, Valsaraj K T, Constant W D, et al. Aqueous solubility enhancement and desorption of 
+hexachlorobenzene from Soil using a plant-based surfactant[J]. Wat Res, 1997, 31 (9): 2161
+　14　Grimberg S J, Miller C T, Aitken M D. Surfactant-enhanced dissolution of phenanthrene into water for 
+laminar flow conditions[J]. Environ Sci Technol, 1996, 30(10): 2967
+　15　Sahoo D, Smith J A, Imbrigiotta, et al. Surfactant-enhanced remediation of a 
+trichloroethene-contaminated aquifer 2: Tranport of TCE[J]. Environ Sci Technol, 1998, 32(11): 1686
+　16　Okuda I, McBride J F, Gleyzer S N, et al. Physicochemical transport processes affecting the removal of 
+residual DNAPL by nonionic surfactant solutions[J]. Environ Sci Technol, 1996, 30(6): 1852
+　17　Jafvert C T. Sediment-and saturated-soil-associated reactions involving an anionic surfactant 
+(dodecylsulfate): Partion of PAH compounds among phases[J]. Environ Sci Technol, 1991, 25: 1039
+收稿日期：1999-06-13
+。
+1　实验
+　　染料废水：本研究中的染料废水取自广州绢麻厂的染料废水；废水中含还原染料、分散染料
+等。原废水CODCr为22000mg/L；BOD5为2800mg/L。原废水经稀释后，用聚三氯化铁及FeCl3絮凝沉
+淀处理后，上清液采用光催化氧化处理。
+　　TiO2的固定：取钛酸丁酯17ml，无水乙醇80ml，蒸馏水14ml，冰醋酸8ml，采用溶胶－凝胶法
+制成0.05mol TiO2溶胶，磁力搅拌，加入活性炭15g，继续搅拌2h后，放入真空干燥炉中，以90oC
+干燥2h后取出；再重复上述过程3次，放入马福炉中，以600oC焙烧4h，得TiO2－活性炭光催化剂，
+备用。
+　　实验流程：原染色废水稀释后，经聚三氯化铁及三氯化铁絮凝沉淀处理后，进入光催化氧化
+体系。向光催化体系中加入TiO2－活性炭光催化剂10g/L。染料废水经蠕动泵进入光催化反应器中
+处理，废水流速为0.1L/min，系统的回流比为75％。
+　　从3种表面活性剂增溶能力的比较看，由于非离子表面活性剂增溶能力较高，在以去除有机污
+染物为目标的土壤修复中，采用非离子表面活性剂效果可能优于其它类型表面活性剂。
+当灯管距水面10cm时光照强度为95mW/cm2。
+　　分析方法：CODCr与BOD5均采用国家标准方法测定。
+2　结果
+2.1 不同处理方式对染料废水的处理效果
+　　原废水稀释20倍后，按1L废水中加入2ml聚三氯化铁的比例加入聚三氯化铁，再按0.01mol/L
+的浓度加入一定量的FeCl3・6H2O；充分搅拌后，静置4h，待充分絮凝沉淀后，取上清液进行光催化
+处理。原废水稀释20倍后，COD浓度为2169mg/L，BOD5为295mg/L；絮凝处理后，COD浓度下降至
+462mg/L，去除率为78.7％；BOD5浓度下降至65.8mg/L，去除率为77.7％。废水沉降处理后为紫红
+色。
+表1　不同处理方式对染料废水的光催化处理效果
+处理方式CODBOD5
+出水浓度/(mg/L)去除率/％出水浓度/(mg/L)去除率/％
+TiO2-活性炭（无光）41410.456.514.1
+光（TiO2-活性炭）39015.552.719.9
+活性炭+光（无TiO2）37618.550.822.8
+活性炭-TiO2+光21453.718.571.9
+活性炭-TiO2+光+H2O216564.210.883.6
+
+　　经絮凝处理后的废水按表1所列的不同处理方式，经光催化氧化处理24h，结果如图1。图1表
+明：光催化反应体系中无TiO2或者没有光照，COD的去除效果较差。体系中没有光照，只加入TiO2
+－活性炭光催化剂，COD去除率仅为10.4％，BOD5去除率为14.1％；体系中只有光照，不加入TiO2
+－活性炭光催化剂，COD与BOD5的去除率分别为15.5％、19.9％；若活性炭上没有TiO2，则COD与
+BOD5的去除率分别为18.5％、22.8％；反应体系中加入10g/L的TiO2－活性炭，在光照条件下，24h
+后COD与BOD5去除率分别为53.7％、71.9％；絮凝－光催化联合处理后，COD与BOD5去除率分别为：
+90.1％、93.7％，在此基础上，再加入1％（V/V）H2O2，则COD与BOD5去除率大大升高，分别达到
+64.2％、83.6％。
+作者单位：南京大学环境科学与工程系，污染控制与资源化国家重点实验室，南京210093
+参考文献：
+　1　Edwards D A, Luthy R G, Liu Z. Solubilization of polycyclic aromatic hydrocarbons in micellar nonionic 
+surfactant solutions[J]. Environ Sci Technol, 1991, 25: 127 
+　2　Diallo M S, Abriola L M, Weber W J Jr. Solubilization of non-aqueous phase liquid hydrocarbons in 
+micellar solutions of dodecyl alcohol ethoxylates[J]. Environ Sci Technol, 1994, 28: 1829
+　3　Kile D E, Chiou C T. Water solubility enhancements of DDT and trichlorobenzene by some surfactants 
+below and above the critical micelle concentration[J]. Environ Sci Technol, 1989, 23: 832
+　4　Abdul A S, Gibson T L, Rai D N. Selection of surfactant for the removal of petroleum products from 
+shallow sandy aquifers[J]. Ground Water, 1990, 28: 920
+　5　Pennell K D, Abriola L M, Weber W J. Surfactant enhanced solubilization of residual dodecane in soil 
+columns:.Experiment investigation[J]. Environ Sci Technol, 1993, 27: 2332
+　6　Jafvert C T, Van Hoof P L, Heath J K. Solubilization of non-polar compounds by non-ionic surfactant 
+micelles[J]. Wat Res, 1994, 28(5): 1009
+　7　Pennell K D, Adnofli A M, Abriola L M, et al. Solubilization of dodecane, tetrachloroethylene, and 1, 2
+-dichlorobenzene in micellar solutions of ethoxylated nonionic surfactants[J]. Environ Sci Technol, 1997, 31(5): 
+1382
+　8　Grimberg S I, Nagel J, Aitken M D. Kinetics of Phenanthrene dssolution into water in the presence of 
+nonionic surfactants[J]. Environ Sci Technol, 1995, 29(6): 1480
+　9　Guha S, Jaffe P R, Peters C A. Solubilization of PAH mixtures by a nonionic surfactant[J]. Environ Sci 
+Technol, 1998, 32(7): 930
+　10　Deitsch J J, Smith J A. Effect of triton X-100 on the rate of trichloroethene desorption from soil to water
+[J]. Environ Sci Technol, 1995, 29(4): 1069
+　11　Sahoo D, Smith J A. Enhanced trichloroethene desorption from long-term contaminated soil using triton 
+X-100 and phenomenon Increases[J]. Environ Sci Technol, 1997, 31(7): 1910
+　12　Imhoff P T, Arthur M H, Miller C T. Complete dissolution of trichloroethylene in saturated porous media
+[J]. Environ Sci Technol, 1998, 32(16): 2417
+　13　Kommalapati R R, Valsaraj K T, Constant W D, et al. Aqueous solubility enhancement and desorption of 
+hexachlorobenzene from Soil using a plant-based surfactant[J]. Wat Res, 1997, 31 (9): 2161
+　14　Grimberg S J, Miller C T, Aitken M D. Surfactant-enhanced dissolution of phenanthrene into water for 
+laminar flow conditions[J]. Environ Sci Technol, 1996, 30(10): 2967
+　15　Sahoo D, Smith J A, Imbrigiotta, et al. Surfactant-enhanced remediation of a 
+trichloroethene-contaminated aquifer 2: Tranport of TCE[J]. Environ Sci Technol, 1998, 32(11): 1686
+　16　Okuda I, McBride J F, Gleyzer S N, et al. Physicochemical transport processes affecting the removal of 
+residual DNAPL by nonionic surfactant solutions[J]. Environ Sci Technol, 1996, 30(6): 1852
+　17　Jafvert C T. Sediment-and saturated-soil-associated reactions involving an anionic surfactant 
+(dodecylsulfate): Partion of PAH compounds among phases[J]. Environ Sci Technol, 1991, 25: 1039
+收稿日期：1999-06-13
+。结果见表
+1。
+
+图1　不同处理方式对染料废水的光催化处理效果
+　　TiO2固定在活性炭上，避免了随水流失，并且由于活性炭为多孔物质，也大大增强了光催化剂
+对反应底物的吸附性能。另外，光催化体系中没有加入TiO2－活性炭时，光照对染色有机物也有一
+定的去除作用，这主要是由于经絮凝处理后的废水中含有Fe3+，在光照条件下，体系会发生化学反
+应，促使染色有机物的降解。当有H2O2存在时，体系可能会发生如下反应：
+Fe3+H2O2→Fe2+・OOHH+　　　　（1）
+Fe3+・OOH→Fe3+O2H+　　　　　（2）
+Fe2+H2O2H+→Fe3+・OHH2O　　（3）
+Fe3+e→Fe2+　　　　　　　　　　（4）
+Fe2+H+→Fe3+　　　　　　　　　　（5）
+　　Fe3+与H2O2的存在会促使体系中羟基自由基等的生成，提高有机物的去除效率。有关H2O2对光
+催化反应的作用机理在文献[3]中作了讨论。
+将3种表面活性剂分别配成不同浓度的溶液加入10ml离心管中，每个浓度做3个平行样，在每支离
+心管中加入足够量的TCB，离心管密封后放入恒温振荡器中，25℃振荡3d（72h）。
+2.2 不同稀释倍数的染料废水的处理效果
+　　光催化工艺对高浓度有机废水的去除效果不理想是阻碍其工业化应用的原因之一。
+　　假设化合物在表面活性剂溶液中的总浓度为St，在有过量有机物存在时，有机物在水相的浓度
+应始终等于其水溶解度So，则化合物在胶束相的浓度为：
+Cmic＝St－So　　（2）
+　　在临界胶束浓度以上时，表面活性剂单体的浓度始终等于临界胶束浓度CMC，若以Csurf代表表
+面活性剂在水相的总浓度，则以胶束形式存在的表面活性剂浓度Smic为：
+Smic＝Csurf－CMC　　（3）
+将式（2）和式（3）代入式（1）则得：Km=（St－So）/So（Csurf－CMC）　　（4）
+整理得：　　　　　　　　　　St/So=KmCsurf－KmCMC＋1　　（5）
+　　对于特定化合物和特定表面活性剂Km和CMC为常数，用A代表KmCMC－1则：
+St/So=KmCsurf＋A　　（6）
+　　实验数据以表面活性剂浓度大于CMC时的浓度对有机污染物增溶倍数作图，应得一直线，直线
+的斜率即为分配系数Km。原废水稀释10倍、20倍、60倍并经絮凝沉淀
+后，COD浓度分别为895mg/L、454mg/L、137.8mg/L，经24h光催化处理后，COD浓度分别下降至
+635mg/L、189mg/L、26.6mg/L，COD去除率分别为：29.1％、58.4％、80.7％。结果如图2所示。
+可见，随着有机物COD浓度的下降，COD去除率升高。在絮凝－光催化氧化体系中，絮凝可去除绝
+大部分非水溶性有机物；而水溶性有机物浓度较高时，光催化氧化处理效率有待进一步提高。赵
+玉光等提出了生物－光催化反应器系统处理印染废水，效果良好。因此，强化染料废水的前处
+理，并用光催化氧化作为絮凝处理或生物处理出水的深度处理工艺，可望获得良好的处理效果。
+
+图2　不同浓度下废水的光催化处理效果
+2.3 染料废水COD的光催化降解动力学
+　　以往的光催化反应动力学研究均以某一有机物的浓度作为指标[6]。对于实际废水，因为有机
+物种类繁多，只有用COD才能综合反映废水中有机物浓度，并且以COD为参数推算系统参数更适合
+于工程应用。因此假定COD与光催化反应时间成指数关系，则定量分析结果如图2所示，动力学方
+程的相关性显著。
+3　结论
+　　絮凝－光催化氧化联合处理染料废水是一种有效的方法。COD与BOD5浓度分别为2169mg/L、
+295mg/L的染料废水，经絮凝－光催化处理后，出水COD与BOD5分别为214mg/L、18.5mg/L，去除率
+分别为90.1％、93.7％；向光催化体系中加入H2O2，可促进COD与BOD5的去除。废水COD浓度与光催
+化反应时间成指数关系。
+作者简介：李芳柏(1968～)，男，博士，助理研究员。
+作者单位：李芳柏　万洪富　何江华广东省生态环境与土壤研究所，广州 510650；
+　　　　　李芳柏　古国榜　陈伟彬　华南理工大学化工学院，广州 510642
+参考文献：
+　1　李家珍. 染料、染色工业废水处理[M]. 北京: 化学工业出版社，1996. 5～100
+　2　赵玉光，王宝贞，李湘中等. 生物－光催化反应器系统处理印染废水的研究[J]. 环境科学
+学报，1998, 18(4): 373～379
+　3　李芳柏，古国榜. 亚甲基蓝溶液的光催化脱色及降解研究[J]. 环境污染与防治，1999(5)
+（待印）
+　4　Butler E C, Davis A P. Photo-catalytic oxidation in aqueous titanium dioxide suspension: the influence of 
+dissolved transition metals[J]. J Photochem Photobiol (A: Chem), 1993, 70: 273～283
+　5　Ruppert G, Hofstadler K, Bauer R, et al. Heterogeneous and homogeneous photoassisted wastewater 
+treatment[J]. Proc indian Acad Sci (Chem Sci), 1993, 105(6): 393～397
+　6　Hoffmann M R, Martin S T, Choi W, et al. Environmental applications of semiconductor photocatalysis[J]. 
+Chemical Reviews, 1995, 95(1): 69～96
+收稿日期：1999-06-17

@@ -1,0 +1,94 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1999年　第14卷　第2期　Vol.14　No.2　1999
+
+
+
+叶片前缘气膜冷却效率的实验研究
+朱惠人**　许都纯　郭涛　刘松龄
+　　【摘要】　采用放大的半圆柱状表面模拟涡轮叶片前缘的形状，对叶片前缘多排圆柱形孔的气膜冷却效率进行了实验研究。
+　　与三通道跟踪接收机相比，双通道跟踪接收机减少了1个差通道。研究了主流雷诺数及平均吹风比对冷却效率及二次流(冷气)出流轨迹的影响。实验参数范围是：主流雷诺数Re=42000～127000，平均吹风比M=0.8～2.0，测量分8个工况进行。
+　　主题词：　气膜冷却叶片　效率　实验
+　　分类号：　V231.1
+　　在现代高性能航空发动机中，为了提高燃气涡轮机的效率，就必须提高燃烧室出口燃气的温度，这往往会引涡轮叶片的高温腐蚀或损伤，因此必须采取冷却措施对涡轮叶片加以保护。特别是叶片的前缘附近区域，由于边界层很薄，换热很强，是涡轮叶片上需要加以保护的首选部位。目前对涡轮叶片实施防热保护的方法多为气膜冷却技术，因此了解当叶片前缘区域采用气膜冷却后该区域的换热特征及冷却效果如何，就显得特别地重要。最近几年有关这方面的研究逐渐增多了起来，Mehendale等人［1］对前缘附近区域有两排孔的气膜冷却情况下的传热及冷却效率进行了测量；Salcudean等人［2］对前缘附近区域有两排孔的气膜冷却情况下的冷却效率也进行了实验研究，但孔排的位置与文献［1］中的略有不同；Chen等人［3］采用传质技术模拟研究了前缘附近区域有单排孔的气膜冷却情况下的传热特征。本文的主要内容是对前缘附近区域有三排孔的气膜冷却情况下的冷却效率进行实验研究，获取了相应的实验数据，可作为涡轮叶片冷却设计参考之用。
+　　在天线馈源中，由于正交提取，方位、俯仰角误差载波信号含在一路差通道中，保证了方位、俯仰两个载波信号在传输中的一致性。
+　　主题词　自动跟踪，信号处理机，+传输解调
+Transfer and Demodulation of Auto-Tracking Signal
+Zhu Zhiqin
+(Beijing Research Institute of Telemetry, Beijing,100076)
+　　Abstract　Transfer and demodulation mode of auto-tracking becomes from tri-channel to double-channel and single-channel. The advanced two single-channel cooperative mode commonly used at present expresses the developing history of auto-tracking signal tranfer and demodulation technique.The operating principles, equipments, and their advantages and eisadvantages of different transfer and demodulation modes are introduced in this paper.
+　　Key Words　Automatic tracking，Signal processor，Trasfer-demodulation. 
+1　前　言
+　　对于导弹、火箭、卫星、飞机、炮弹等飞行目标的测量，其地面测控站采用自动跟踪方式是十分必要的。在模拟叶片前缘的半圆柱面上对称地开有6排圆柱形喷孔，以前沿驻点线为基准，各排孔的位置分别在±15°，±40°，±60°处，孔数分别为6，5，6，孔径d=9 mm，孔间距p=4d，孔长与孔径比l/d=4，孔轴线在高度方向上与表面的夹角为30°，与表面上气流的夹角为90°。
+
+
+图1　试验件示意图
+　　试验件上孔排所在的半圆柱面的内腔即为二次流腔室，为各排孔共用，这与实际涡轮叶片上前缘区域的多排孔一般均由一个腔室供气的情况相仿。对二次流采用硅碳棒加热系统进行加热，用浮子流量计测量其总流量。针对试件上多排孔共用一个腔室的特点，引入平均吹风比对实验工况进行划分：M＝（ρ.）2／（ρ.）∞ ，其中2为二次流从多排孔出流时的平均速度。
+
+
+图2　热电偶测点位置示意图
+　　实验中采用敷设加热带的方法测量排孔及排孔下游区域的冷却效率，为此，在试验件的表面上贴有厚度为0.04 mm，宽230 mm的不锈钢加热带，考虑到对称性，只在试件一侧的加热带背面的中部区域焊接了直径为0.1 mm的镍铬―镍硅热电偶95个，用于测量试件表面的温度，各热电偶测点的具体位置表示在图2中。实验时需测出试件表面的温度ti,j，二次流温度t2及主流温度t∞，按下式来计算冷却效率：
+
+其中taw,i,j为绝热壁温，是无法直接测量的。q′rad为试件表面向周围环境的辐射热量，q′cond为由腔室内壁导向试件表面的热量，两者均可通过传热计算得到。Hi,j为试验件表面的局部的换热系数，其测量方法及结果可参文献［4］。
+　　试验件装在实验段尺寸为2.2 m×0.5 m×0.27 m的回流式风洞中进行实验，实验段进口前收缩比为7.69∶1，以保证气流质量，主流速度可在3～40 m/s范围内进行无级调节，主流温度t∞约为10℃，二次流加热后温度比t∞高出20℃左右，二次流与主流的密度比在各工况中基本保持不变，为0.95。
+
+
+图4　检前分集合成跟踪接收机简图
+　　由图4可以看出，检前分集合成接收机为两个单通道，另加检前分集合成网络。实验的参数范围为主流雷诺数Re=ρU∞2R／μ＝42000～127000，二次流平均吹风比M＝0.8～2.0，在上述范围选取了8个工况进行实验。每个工况对应的实验参数列于表1中。
+表1　实验的工况参数表
+
+工况号12345678
+Re/10000
+M12.7
+0.86.7
+0.826.7
+1.26.7
+1.64.2
+0.874.2
+1.24.2
+1.64.2
+2.0
+
+2．1　主流雷诺数不变情况下，吹风比对冷却效率的影响
+　　图3给出了主流雷诺数Re=44480时，沿Z向冷却效率的算术平均值随x/d的变化情况。以前沿驻点线为基准，各排孔的位置分别在x/d =1.74，4.65及6.98处。可以看出：
+　　（1）在孔排区域，沿流动方向，由于二次流的不断增加，冷却效率增加很快，并在第三排孔下游附近达到最大值。在孔排区域下游，沿流动方向，由于二次流与主流的不断掺混，冷却效率η随x/d的增大而下降。这些定性结果与文献［1］中针对两排孔进行测量所得的结论一致。从定量上看，本实验采用三排孔，在相同吹风比下二次流量较大，孔排区域下游相同x/d处的冷却效率比采用二排孔时大一些。例如，当吹风比分别为0.87及1.2时，在x/d=38.89处，本实验测得的冷却效率约为0.3，而对文献［1］中采用二排孔的情况，冷却效率均在0.2以下。
+
+
+图3　主流雷诺数不变情况下，吹风比对冷却效率的影响
+　　（2）在相同的x/d处，无论在孔排区域或孔排区域下游，吹风比对冷却效率均有较大地影响。在本实验的吹风比范围内，随吹风比的增加，冷却效率呈逐渐下降趋势。这主要是因为吹风比较高时，二次流会直接喷射进入主流区，不能很好地附着在壁面所致。
+　　主题词　自动跟踪，信号处理机，+传输解调
+Transfer and Demodulation of Auto-Tracking Signal
+Zhu Zhiqin
+(Beijing Research Institute of Telemetry, Beijing,100076)
+　　Abstract　Transfer and demodulation mode of auto-tracking becomes from tri-channel to double-channel and single-channel. The advanced two single-channel cooperative mode commonly used at present expresses the developing history of auto-tracking signal tranfer and demodulation technique.The operating principles, equipments, and their advantages and eisadvantages of different transfer and demodulation modes are introduced in this paper.
+　　Key Words　Automatic tracking，Signal processor，Trasfer-demodulation. 
+1　前　言
+　　对于导弹、火箭、卫星、飞机、炮弹等飞行目标的测量，其地面测控站采用自动跟踪方式是十分必要的。从图4中可看出，在吹风比大于1时，主流雷诺数对冷却效率仅有很小影响，随主流雷诺数的增加，冷却效率略有下降。但在吹风比小于1时，主流雷诺数对冷却效率几乎没有影响。根据吹风比的定义，当吹风比不变时，主流速度与二次流速度是同步增加地。主流速度的增加会促使二次流向壁面附着，但二次流速度的增加，会使其直接进入主流而不向壁面附着。上述实验说明，当吹风比不变时，这两种影响因素的作用幅度是等同地，但效果相反，正好互相抵消。
+　　对两个差信号分别求和及求差：
+
+　　由UA及UE表达式可见，UA为方位误差信号，与εH成正比，且包括两个极化的分量；UE为俯仰误差信号与εV成正比，包括两个极化的分量。可以看出：在喷孔的右上角，冷却效率有一个极大值区，该区的位置随吹风比的增加呈逐渐上移趋势，这种现象在第三排孔附近的下游最为明显。
+　　双通道跟踪接收机设备组成见图2。原因主要是吹风比较大时，二次流动量也较大，沿喷孔出流后，向上喷射的距离也较远。
+
+
+图5　冷却效率的等值线分布图
+　　（2）图5(c)给出了M=0.8左右时，Re=127000的工况下冷却效率的等值线分布。
+
+
+图4　检前分集合成跟踪接收机简图
+　　由图4可以看出，检前分集合成接收机为两个单通道，另加检前分集合成网络。
+　　在实际的工程设计中，为了提高冷气的使用效率，应避免前排孔出流冷气的轨迹与后排孔出流冷气的轨迹相重合。当两通道输入载噪比相等时，分集合成比单路接收灵敏度提高了2.5 db；当因多径影响两路载噪比相差较大时，一般可改善6～8 db，在某些极端情况下，改善更大。吹风比越大，出流冷气的轨迹在主流的作用下向下游的偏斜越小。其中，检前分集合成跟踪接收机近十年来，先后应于用车载站、固定站、船载站。设备有所简化，可靠性有所提高。
+3　结论
+　　（1）在孔排区域及孔排区域下游，吹风比对冷却效率均有较大地影响，且随吹风比的增加，冷却效率呈逐渐下降趋势，主流雷诺数对冷却效率几乎没有影响。
+　　（2）出流冷气的轨迹主要受吹风比的影响较大，受主流雷诺数的影响很小。在本实验条件下，采用叉排孔布置的形式有可能造成前后排孔出流冷气轨迹的重合，降低冷气的使用效率。
+　　对两个差信号分别求和及求差：
+
+　　由UA及UE表达式可见，UA为方位误差信号，与εH成正比，且包括两个极化的分量；UE为俯仰误差信号与εV成正比，包括两个极化的分量。
+作者简介:**男　41岁　博士　副教授　西安市西北工业大学706教研室　710072
+作者单位:西北工业大学
+参考文献
+　　1　Mehendale A B,Han J C.Influence of High Mainstream Turbulence on Leading Edge Film Cooling Heat Transfer.ASME 90-GT-9
+　　2　Saludean M,Gartshore I,Zhang K,Mclean I.An Experimental Study of Film Cooling Effectiveness Near the Leading Edge of a Turbine Blade Journal of Turbomachinery.1994,116:71-79
+　　3　Chen P H,Miao Z M,Chen J W.Convective Transport Phenomena for Stagnation Film Cooling.HTD-Vol.300, Heat Transfer in Gas Turbines ASME 1994
+　　4　朱惠人等．叶片前缘气膜冷却换热的实验研究．推进技术，将发表
+（责任编辑　杨再荣）
+1998年6月收稿；1998年9月收到修改稿。

@@ -1,0 +1,70 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　Vol.19　No.4　P.58-59
+
+
+
+优化Ｖｉｓｕａｌ Ｂａｓｉｃ查询的方法
+姚卫新
+摘 要： Ｖｉｓｕａｌ Ｂａｓｉｃ允许用户使用结构化语言ＳＱＬ从Ｊｅｔ ｄａｔａｂａｓｅｓＭＤＢ文件中取出数据，本文提出了一些优化查询操作的方法。
+关键词： 查询 ＳＱＬ语言 优化设计
+　　在Visual Basic程序设计中不可避免地要用到查询。本人在总结了多年的使用心得后，全面介绍了查询优化的方法。
+1　表设计
+　　在设计表中字段时，尽量选择长度较短的数据类型，这样可以增加每页中存放的记录个数。连接（JOIN）使用的字段必须有相同或兼容的字段。
+2　压缩数据库
+　　压缩数据库有二点好处：（1）随着数据库中数据量的增加，原有的优化方案可能不再有效，压缩数据库可以最大限度地克服这个缺点。操作一个特定的对象必须从Application 对象开始，再到它的子对象（Document对象和Preferences对象），一直下去直到要操作的特定对象。自动化对象主要暴露二个方面：属性（properties）和方法（methods）。
+3　查询输出中尽量避免表达式
+　　某个带有表达式的查询输出作为另一个查询的输入时，可能会产生问题。
+　　在frmMain代码模块中写入代码：
+　　Private Sub Form＿Load（）
+　　　　Public acadApp As Object
+　　　　Public acadDoc As Object
+　　　　Public moSpace As Object
+　　　cmdbegin．Enabled ＝ False
+　　　Left ＝（Screen．Width － Width） ＼ 2 ′设置装入
+　　　　　　　　　　　　　　　　　　　　′时窗体最初位置
+　　　Top ＝（Screen．Height － Height） ＼ 2
+　　End Sub
+　　Private Sub cmdToACAD＿Click（）
+　　　　On Error Resume Next
+　　　　Set acadApp ＝ GetObject（， ″AutoCAD．Application″）
+　　　　acadApp．Visible ＝ True
+　　　　Set acadDoc ＝ acadApp．ActiveDocument
+　　　　Set moSpace ＝ acadDoc．ModelSpace
+　　　　MsgBox （″本软件和AutoCAD已经连接成功。可以合并为1个嵌套的SQL语句：
+　　Set RS＝DB．OpenRecordSet（″SELECT* FROM Authors WHERE Au＿ID＝1″）
+　　对于复杂的嵌套查询，把字段名直接写在表达式中：DB．CreateQueryDef（″Query1″，″SELECT IIF（Au＿ID＝1，′Hello′，′Goodbye′） AS X，Au＿ID，FROM Authors″）Set RS＝DB．OpenRecordSet（″SELECT * FROM Query1 WHERE Au＿ID＝1″）
+　　如果在查询输出中无法避免计算，可把计算放在上层查询中，不要放在下层查询中。
+4　分组、连接和累计
+　　连接二个表时，如果分组和累计字段名相同，应确保分组字段与累计（Sum，Count等）字段来自同一个表。
+　　例：下面的查询效率较低，因为SUM的字段在Ord表中，而GROUP BY的字段在Cust表中。
+　　SELECT Cust．CustID，
+　　　　　　FIRST（Cust．CustName）AS CustName，
+　　　　　　SUM（Ord．Price）AS Total
+　　FROM Cust INNER JOIN Ord ON Cust．CustID＝Ord．CustID
+　　GROUP BY Cust．CustID
+　　例：下面的查询效率较高，因为SUM和GROUP BY的字段均为Ord．CustID，它们来自同一个表。1997年发布的AutoCAD R14无论是在界面、速度还是在图形编辑方面都作了不少的改进；更重要的是R14 版提供了对ActiveX自动化技术的支持，使得熟悉支持ActiveX语言的开发人员可以在AutoCAD平台上开发出高效实用的应用程序。其中GetObject语句用于连接已经装入到内存的AutoCAD实例，而CreateObject语句则是将AutoCAD装入内存，创建1个新的AutoCAD实例，并与之连接。Document的ModelSpace和PaperSpace属性为图形对象（如Line、Point、Circle等等）提供入口；而非图形对象（如Layers、Linetypes等等）的入口则是通过Document其它相应属性（如Layers、Linetypes等等）提供。把带有GROUP BY子句的SECECT语句作为1个嵌套查询加入到上层查询的非分组表中。
+2　AutoCAD对象模型（Object Model）
+　　Visual Basic 总共可取得AutoCAD约70个对象，这些对象共有五百多个方法和属性。
+　　然而，如果有1个表相对比较小（占1－2页面），就不必要对该表建索引。这样读到内存中的页比较少，所以，是否对表建索引要看情况而定。
+8　使用可优化的表达式
+　　尽量建立可以使用Rushmore技术进行优化的查询，Rushmore并不会自动地加速所有的查询。
+9　用COUNT（*）代替COUN（［字段名］）
+　　微软的数据库引擎对COUNT（*）特别关照，使得COUNT（*）执行时比COUNT（［字段名］）快得多。另外，这二个操作略有不同：COUNT（*）计算返回的所有行，COUNT（［字段名］）仅计算该字段名不为NULL的行。
+　　On Error Resume Next
+　　Set acadAppEx ＝ GetObject（，″AutoCAD．Application″）
+　　If Err Then
+　　　　Err．Clear
+　　　　Set acadAppEx ＝ CreateObject（″AutoCAD．Application″）
+　　　　If Err Then
+　　　　　　MsgBox Err．Description ′报告错误并
+　　　　　　Exit Sub ′退出
+　　　　End If
+　　End If
+　　acadAppEx．Visible ＝ True ′使AutoCAD可见，缺省
+　　　　　　　　　　　　　　　　　　　　　′是不可见
+　　再次，就是使用Document对象取得绘图文档并定好图纸空间或模型空间。
+11　避免LIKE中的通配符在开头
+　　如果使用LIKE操作符来寻找匹配的行，通配符不能在开头位置，否则索引不起作用。一般是先试着连接已运行的AutoCAD。
+13　避免NOT IN与子查询一起使用
+　　NOT IN与子查询一起使用效果非常差，最好将其转化成嵌套查询或使用OUTER JOIN。在frmFileName窗体上也加入2个Commandbutton（其Name属性分别为cmdOK和cmdChooseFile；Caption 属性分别为“确定”和“选择文件”）、1个TextBox（Name为text1）用于显示所选择的数据文件和1个CommonDialoge（Name 属性为cdlg1）

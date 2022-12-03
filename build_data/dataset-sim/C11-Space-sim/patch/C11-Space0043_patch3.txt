@@ -1,0 +1,276 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+一种新型的分布式数据采集器（一）
+朱军　刘剑国　彭泽兵　陈荔莹　李滨
+　　摘　要　介绍了一种新型的分布式智能数据采集系统――ALPHA900系列数据采集器。该采集器由中国航空工业总公司第三○四研究所与英国ADAS公司联合设计研制。它集中了90年代采集器的优点，如可变字长、可编程智能前端、带温度补偿的连接器、可脱机工作等，并为突出各自功能形成系列。该采集器已成功地投入了工业生产，并且应用于工业过程监测、条件监测或加工监测。转捩诱导法向力以及它的作用点位
+置的测定，在国内外还是首次。
+　　关键词　数据采集　测量　自动控制　模块　分布式数据采集器　网络　监测
+A New Distributive Data Acquistition System (1)
+
+Zhu Jun,Liu Jianguo,Peng Zebing,Chen Liying,Li Bin
+　　Abstract　This article introduces a new intelligent data acquisition system called ALPHA900 series,which manufactured by 304th institute of China Aviation Industry Corporation and ADAS company of UK.It sums up the advantages of the data acquisition systems in 90's,such as variable byte length,programmable intelligent front,connections with temperature compensation and so on.Every module in this series has its special function.It has been put into production successfully and used for process monitoring,condition monitoring or machine monitoring.Connected by low cost RS485 network,the ALPHA 900 modules supply accurate measurement and control for temperature,pressure and strain along with data events and frequency.It also has attractive ratio of performance and price.
+　　Key words　Data acquisition,Measurement,Automatic control,Module,Distributive data acquisition system,Network,Industrial monitoring
+
+1　工业现场自动化测试及控制中问题的提出
+　　随着世界经济的发展和科技的进步，一个国家自动化程度的高低，已经成为衡量其经济发展水平的重要标志，而且在许多方面已经将它提高到决定性的高度。当雷诺数
+很高时，转捩发生在锥尖的紧下游，AW与AL十分靠近锥尖，量很小，所以，上
+述转捩诱导量都趋近于零。
+　　为促进工业自动化测试和控制水平的提高和适应日趋激烈的市场竞争，各国的工业测试和控制产品厂家纷纷推出了自己的杰作。
+
+    上面讨论的是平面流动边界层转捩形成转捩诱导法向力的机理。以总线系统为例，在工业领域应用的有：STD、STE、ISA、EISA、PCI、VME、MULTIBUS、PC/104、OPTOMUX、LONWORKS、CAN、MODBUS等等。本研究
+的圆锥流动，可看作背风面流动与迎风面流动的合成，见图6(b)。
+
+　　为了用实验证实转捩诱导法向力的存在，并从粘性气动力中将它分离出
+来，作者及国内的其他研究人员曾做过努力，其结果见文献［9］。
+　　从工业控制的结构方式而言，一般又分为集中控制、分散控制以及当前大量使用的集散分布式控制系统（DCS）。提到DCS，人们也许立刻就会浮现出一个庞大的体系结构，包括：复杂的网络结构、高大的机柜、繁杂的接线、大量的仪表等，更为头疼的是其昂贵的价格。
+
+4  实验结果及分析
+
+
+图2 尖锥底压系数b随Re数的变化
+
+图2为尖锥底部压力系数b随Re数的变化曲线。的确，这些公司的DCS是相当出色的，它们为许多结构复杂、设备门类繁多、数据交换吞吐较大、软硬件结构复杂的大规模系统做出了许多贡献。从我国国力来看，对一些大中型分布式控制系统无论是从财力物力，以及DCS的性能价格比上考虑，大多数用户均有些心有余而力不足;但中小型测量及控制系统是否需要分布式测量和控制呢？事实证明，答案是肯定的。把f和h围绕进行
+Taylor展开可以推出MEKF方程，X-是(17)式的精确解。
+　　当今的工业生产对工业测量和控制过程的要求越来越高，并且也越来越复杂。随着这种要求和复杂性的增加，各种协同测量仪器、产品和各种相关设备也必然会相应的增加。
+
+3  双重指标导引律
+
+    系统(1)―(2)所对应的确定性系统为
+
+
+在线性二次型控制方案中，我们要在满足微分方程约束(3)，始端条件约束t0，x0,y0,z0,vx0,vy0,vz0,aTx0,aTy0,aTz0以及终端条件约束tf的前提下，求出控制
+量aMx，aMy，aMz，使得性能指标最小。在这种情况下，测量和控制任务最好转交给各个局部小计算机，使每个分散在各个局部的小计算机分别成为一个独立功能岛或功能块，根据需要完成其独特的测量及控制功能，再将计算机技术、控制理论、控制算法、通讯技术、隔离技术、输入及输出技术、管理体制等有机的结合起来，即实现了当今世界上最为流行的分散控制，集中管理的模式。这就是现在被称之为带有智能的分布式控制系统。
+
+4  实验结果及分析
+
+
+图2 尖锥底压系数b随Re数的变化
+
+图2为尖锥底部压力系数b随Re数的变化曲线。包括过程控制、工厂自动化、半导体制、石油淬取和精炼、能源管理、冶金工业、电厂控制、食品工业、 给水与废水处理、管泵监测、造纸工业、化工产品制造、医药产品制造、石化过程控制、建材制造、纺织自动化、质量检测和控制、大型印刷业、远程遥测、玻璃及陶瓷制造、生物工程、港口运输工程、计算机集成制造、公路监测系统等。利用矩阵迹的性质，(6)式可
+以写作
+
+(7)
+把H,N,Φ，S按定义代入(7)式可得
+
+(8)
+当只考虑位置信息时，令s1=1,s2=s3=0,则(8)式化为
+
+(9)
+综合(5)、(9)两式，设双重性能指标为
+
+(10)
+其中c和s是大于零的常数。
+2　ALPHA900系列智能分布式数据采集器简介
+　　ALPHA900系列数据采集器综合了目前国内外各种同类产品的优点，是一种可用于工业过程监测、条件监测或加工监测及控制的经济型的并带有一定可编程的数据采集前端。数据采集系统使用价格低廉的RS485网络，不同的型号可提供精确的温度、压力及应变等物理量的测量、数字量的采集、事件和频率的测量等。
+
+
+图2 相对距离估计误差
+图3 相对速度估计误差
+图4 相标加速度估计误差
+6  结论
+
+    我们提出在导弹被动制导问题中采用改进的推广Kalman滤波器(MEKF)。
+　　其特点是：
+　　1）高性能――在低价位的基础上使用先进技术以获取高性能。
+
+    令为确定性微分方程
+d=f(t,)dt+Budt,0=EX0
+(17)
+的解，且令X为随机微分方程
+dX=f(t,X)dt+Budt+ε1σ(t)dw,X(0)=X0
+(18)
+的真实解。模块使用高质量的旋压式联接端子，热电偶模块具有特殊设计的隔热联接器，用于提高测量精确度；
+　　3）编程简单――每个模块部都有错误校验及命令协议。可通过主机或本地终端进行编程以及参数设置和初始化。驱动软件及子程序可对各种不同类型的测量进行更高性能的编程；
+　　4）软件校准――可对系统进行本地或远程校准。
+w和v都是均值为零的高斯白色随机向量，且w和v相互独立。仅有角度测量的导弹
+制导问题又称被动制导问题。这样，可以观
+察细长锥的气动特性随转捩位置从锥底向锥尖移动时的变化情况。模块可以重叠实装并带有标准导轨联接器；
+　　7）RS485多分支网络――网络以标准波特率工作。每个模块具有两个RS232接口，用于现场本机编程。仅有角度测量的导弹
+制导问题又称被动制导问题。每个通道都具有LED显示、可编程滤波和模块间同步功能；
+　　9）快速通讯――系统支持以76.8 k波特率在1.2 km范围内控制99个模块或1980个通道。
+显然，这时的转捩影响区占有最大的锥面面积，所以其积分效应最大。应
+用线性系统的Kalman-Bucy理论，模型(21)―(22)的最优估计器为
+
+初始条件为^0=0,P(0)=0。
+
+    仿真时，系统初始状态为x0=3500m,y0=1500m，z0=1000m，vx0=-1
+100m/s，vy0=-150m/s,vZ0=-50m/s,aTx0=aTy0=aTz0=0m/s2。
+　　ALPHA900系列产品严格依照当前工业标准制造。
+
+主题词　　推广Kalman滤波器  改进的推广Kalman滤波器   导弹被动制导  
+　　　　　双重指标导引律
+
+
+
+APPLICATION OF MODIFIED EXTENDED KALMAN
+FILTER TO PASSIVE MISSILE GUIDANCE
+Zhou Di
+(Department of Automation,Tsinghua University・Beijing
+*100084)
+Hu Hengzhang Yang XuDong
+(Aerospace School,Harbin Institute of Technology*Harbin
+*150001)
+Abstract  A modified extended Kalman filter(MEKF)is proposed and applied to passive 
+missile guidance.We adopt a dual control method to design guidance law for enhancing the 
+observability content of the control system.Simulation results indicate that if the expectation 
+of the system state is relatively large and the wave of the state is relatively minor,the 
+performance of the MEKF is much better than that of the extended Kalman filter(EKF).
+
+Key words Extended kalman filter  Modified extended kalman filter   Passive missile 
+guidance  Dual control guidance law
+
+1  引言
+
+　　随着被动测量技术在跟踪和制导中的广泛应用，如何在仅有角度测量的
+条件下对目标的状态进行估计引起了人们的浓厚兴趣。校准满足IP55/NEMA4标准。ALPHA900系列产品功能见表1。
+表1
+
+型号910911912913930931933980981982
+通道数20201020201018
+测量类型模拟模拟模拟模拟数字数字数字通讯通讯通讯
+直流电压****
+热电偶*
+直流电流　*　*
+电阻　　*
+应变　　*
+RTD　　*
+RS485通讯*********
+RS232通讯*******　*
+ETHERNET
+通讯　　　　　　　　　*
+计数　　　　***
+数字输入　　　　**
+数字输出　　　　　*
+计时　　　　　　*
+周期　　　　　　*
+频率　　　　　　*
+辅助报警I/O***　***
+电源　　　　　　　*
+高隔离
+(1000 V)　　　*
+
+
+3　各模块性能简介
+　　ALPHA900数据采集器共有91X、93X、98X三大系列十种型号。其中91X系列用于模拟量的测量，93X系列用于数字量的测量或控制，98X系列用于系统控制和网络通讯。
+3.1　91X系列模拟模块
+　　91X系列包括910热电偶模块、911电压和电流模块、912 RTD、电阻和电压输入模块、以及913具有隔离功能的电压和电流模块。仅有角度测量的导弹
+制导问题又称被动制导问题。
+为了克服这一约束，我们将f和h围绕已知量进行线性化而不是围绕被估计量
+进行线性化可得一种改进的推广Kalman滤波器(MEKF)。
+　　910热电偶模块可进行20个通道14～17位可变字长分辨率和1 μV灵敏度的电压和热电偶测量。该模块配有专用热电偶联接器，具有精确的热电偶冷端补偿，在较高精度的输出热电偶上可获得0.6 °C的精度。910模块适用于大部分工业通用热电偶，可监测热电偶的工作状态、报告开路及损耗情况。
+　　911电压和电流模块可进行20个通道14～17位可变字长分辨率和1 μV灵敏度的电压和电流测量。该模块配有通用的隔离螺栓联接器，可用于测量标准4～20 mA电流测量，并带有相应的内部分流器。模块组装时确定了测量电流的通道号，不带分流时，该模块可用于测量电压，费用低于910模块，而且还配有方便的隔离螺栓联接器，可使用外部分流器，但精度取决于连接及所用分流器的灵敏度。
+　　912 RTD、电阻和电压输入模块可进行10个通道14～17位可变字长分辨率和1 μV灵敏度的RTD、电阻和电压测量。该模块配有通用的隔离螺栓联接器，可采用二、三或四线制测量标准铂电阻RTD。电阻模式可用于热敏电阻或其它电阻传感器的测量。
+
+
+图6 转捩诱导法向力形成机理
+
+图6(a)所示平面流动，假定在A处发生转捩，则A点下游的边界层将局部隆起，
+并产生速度剖面的重建过程。
+　　可对91X系列模块编程，在一个完整的主循环（50或60 Hz）中对被测信号积分，使模块能抑制叠加在mV信号上的干扰。在测量中连续监测干扰，如果干扰超出了测量模式所允许的动态范围（自动量程下该范围要大些），将会产生错误报告。此外，91X系列模块可连续进行测量，或根据主机所发出的命令进行测量，并能按管理软件要求的格式返回。
+　　91X系列具有报警功能。因此，剩下的关键问题
+是证实这种转捩诱导法向力的客观存在,及其随Re数的变化规律。对于超声速流动，比如外流为M=5，边界层剖面
+内的大部分流动为超声速流动。可对每一个通道编程设置报警上限和下限以及死区阈值，以确保信号转换到报警状态。η为模型长细比(l/d)。
+
+　　用上述方法从本实验结果中分离出来的无粘量(CNα)in与(CmαT)in分别为
+2.00和3.916，与牛顿无粘理论值1.94、3.78很接近，差别只有3%。该报警输出可通过使数字输出的触点闭合来表示“收到”和取消。本文的重点就是介绍这项实验研究及其结
+果。图1中，在某一时刻t，相对距离估计误差利用公式
+
+
+求得，其中E［ex］代表x的估计误差的均值。
+3.2　93X系列数字模块
+　　93X系列包括930数字输入模块、931数字输入/输出模块和933事件捕获模块。其特点是：
+　　对于930、931模块，有：
+　　①数字状态输入（931有10个通道用于输出）；②计数；③低频测量；④每个模块多通道；⑤辅助报警I/O；⑥完全隔离输入（931有继电器输出）；⑦低速功能可进行编程过滤；⑧每个通道有指示灯。这样，可以观
+察细长锥的气动特性随转捩位置从锥底向锥尖移动时的变化情况。
+
+    上述双重指标控制问题可以沿直角坐标系的x、y、z轴解耦成三个子问题，
+这样只需考虑求aMy使得在满足约束=Vy,y=aTy-aMy,Ty=-λaTy以及t0,y0,vy0,aTy0和tf的条
+件下，性能指标
+
+(11)
+最小。该模块成本低，适用于要求输入间相互隔离的场合。
+
+图5为测得的前体轴向力系数随Re数的变化，可见粘性对轴向力的影响
+不大，这与预期结果是吻合的。每一个输出通道间相互隔离，能直接驱动开关装置或其它交流或直流负载。
+令
+
+
+s1,s2,s3是非负常数，时变矩阵
+
+
+其中q1=(x2+y２)(x2+y2+z2)/［2(x2+y2+z2)］。边界层的速度变化与厚度变化，意味着边界层
+内和外缘存在着一系列的弱冲波并跟随着一系列的弱膨胀波，导致边界层紧外
+流流线的鼓起。该模块提供18个全隔离输入通道用于事件测量。可用于事件时序的监测，例如工业现场的跳闸和控制反应等，以便研究原因及影响。
+
+主题词   细长锥　边界层转捩　雷诺数　气动特性　风洞试验
+
+
+
+MEASUREMENT STUDY OF TRANSITION INDUCED
+AERODYNAMICS ON 10° SHARP CONE
+Lou Hongtian
+(Beijing Institute of Aerodynamics*Beijing*100074)
+Abstract In this paper,the aerodynamics induced by boundary layer transition on sharp cone 
+were measured experimentally,on the condition when M=5,α=0°，θc=10° and ReL=
+(2.8~13.8)×106.Results show that,the asymmetric transition between leeward and windward 
+of 10° sharp cone will produce on the cone a transition induced normal force,whose direction 
+is in opposition with that of the normal force of non-viscous flow and its acting point is 
+allocated shortly behind the transitional belt.This induced normal force will cause obvious 
+variation of pressure center of the sharp cone along with Reynolds number,total amount of 
+movement can reach up to 3.2%.
+
+　In this paper,curves of aerodynamic coefficients of transition induced normal force to 
+Reynolds number are given out,such as its moment coefficients to cone nosetip,its acting 
+point and transition induced variation of pressure center,Also this paper proves that boundary 
+layer transition will cause pressure variation on body surface.
+
+　Key words  Slender cone   Boundary layer transition  Reynolds number  Aerodynamic 
+characteristics  Wind tunnel test
+
+1　引言
+
+　　边界层转捩对细长锥气动特性的影响一直是一个人们十分关注的课题。所记录的事件进入缓存区并由主机读取，不会丢失后续事件。X~的误差协方差矩阵P(t)与X的误差协方差矩阵相同。输入信号是有条件的。能够灵活处理常见问题，如触点抖动，使机械触点不会记录为多个事件。此外，这个研究结果还有助于证明边界层转捩将影响
+物面的压力分布。事件记录的分辨率是1 ms，在分散使用时，所有933记录器能够保持同步。输入状态的变化也可同时被计数，并不影响事件记录功能。输入通道的当前状态或计数值可根据需要返回主机。全部通道也可进行不超过400 Hz的频率测量。η为模型长细比(l/d)。周期及间隔的测量可以用4个通道进行，以提高低频信号的分辨率。与现场的联接采用隔离螺栓联接器。
+　　数字模块同样具有报警功能。另外，系统的动态模型(1)式是线性的，当初值较准确时，容易求得它的
+精确解。
+
+3  双重指标导引律
+
+    系统(1)―(2)所对应的确定性系统为
+
+
+在线性二次型控制方案中，我们要在满足微分方程约束(3)，始端条件约束t0，x0,y0,z0,vx0,vy0,vz0,aTx0,aTy0,aTz0以及终端条件约束tf的前提下，求出控制
+量aMx，aMy，aMz，使得性能指标最小。
+　　对于930、931模块，设置通道（930为1～10，931为1～5）中任一通道可产生第一个报警输出，设置通道（930为11～20，931为6～10）中任一个通道可产生第二个报警输出。可对每一个状态通道，编程设置报警状态（0或1）。计数输入只能指定一个高电平报警。两种报警输出的数字电平适用于采用隔离输入的外部小功率继电器。
+　　对于933模块，可对每一个状态或事件通道编程设置报警状态（0或1）。测量频率、周期和间隔时，可设置报警上限和下限以及死区阀值，以确保信号转换到报警状态。只有当通道设置为计数时才能指定高电平报警。两种报警输出的数字电平适用于采用隔离输入的外部小功率继电器。
+
+5  MEKF在导弹被动制导中的应用
+
+    在MEKF中，线性化的参考点是一个确定值，而在很多情况下，这个确定
+值就等于状态的均值。该报警输出可通过使数字输出的触点闭合来表示“收到”和取消。当出现新的报警或通道状态错误时，输出可一次打开。（注意：前两个报警输出和表示“收到”的输入未与RS485通讯口隔离。）
+3.3　98X系列主机适配器及接口
+　　98X系列包括980带隔离电源（与PC电源隔离）的ISA总线RS485接口、981RS232―485适配器、982无线电网适配器，该系列主要用于数据采集器的网络通讯和控制。
+　　980ISA总线RS485接口可直接向五个模块供电，支持标准波特率76.8 kB或更高的波特率，具有标准COM口；981RS232―RS485适配器具有内部方向控制功能，982无线电网适配器拥有IP地址，这两个模块均用DIN导轨安装。
+　　这些适配器使模块的接口能与标准PC相连，通过RS485接口进行通讯和监测。对于要求使用标准串行口的场合，981主机适配器允许通讯口对RS485网络操作。标准软件语言能以软件支持的波特率与输入输出模块通讯。利用矩阵迹的性质，(6)式可
+以写作
+
+(7)
+把H,N,Φ，S按定义代入(7)式可得
+
+(8)
+当只考虑位置信息时，令s1=1,s2=s3=0,则(8)式化为
+
+(9)
+综合(5)、(9)两式，设双重性能指标为
+
+(10)
+其中c和s是大于零的常数。980RS485主机接口能使计算机在较高波特率下工作，纠错与缓存性好，驱动软件和子程序与产品一起提供，以获得更佳性能。
+　　作为替代品，982无线电网络适配器能直接与无线电网络服务器通讯，该模块运行自己从服务器调用的相应软件，在其IP地址上按TCP/IP协定传送数据。
+50岁　男　高级工程师　读者服务卡索引号： 116
+作者单位：长城计量测试技术研究所，北京市，100095
+(未完待续)
+1999-01-22收稿

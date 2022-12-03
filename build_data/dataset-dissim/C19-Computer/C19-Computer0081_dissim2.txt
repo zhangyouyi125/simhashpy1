@@ -1,0 +1,61 @@
+计算机应用
+Computer Applications
+1999年 第19卷　第8期 Vol.19　No.8 1999
+
+
+
+Windows NT与NetWare无盘工作站的安装
+杨艺山　刘明春　刘世元
+1　Windows NT无盘工作站安装过程
+1.1　准备工作
+　　硬件：一台SBS（Server-based setup）服务器 ,一台Windows95有盘工作站，若干台配有BootRom的无盘工作站。需要注意的是BootRom中的引导程序是上NT网的，且与相应卡型（ISA/PCI）匹配。本人曾用卡型有TE3500(Realtek 8029芯片PCI网卡)，TE2500,TE2008B/A（UM9008芯片ISA网卡）。假设网络节点的数目｜ V ｜ =N ，目的节点的数目为｜ D ｜ =M ，则所有组合数目为 C0N-M+C1N-M+C2N-M+A+CN-MN-M=2N-M，可见 Steiner Tree 问题的求解随着 N－M 的增大成指数增长，因此是一 NP 问题。
+1.2　安装过程
+　　．　启动远程启动服务
+　　首先在安装 NT Server的主控域服务器上从控制面板―网络―协议中添加DLC(数据链接控制)协议，然后在服务中添加远程启动服务，在提示窗口中须两次正确输入安装路径，设含NT4.0光盘的光驱为F：,第一个路径为F:\I386,第二个路径为F:\clients\rpl，即可安装成功。在控制面板―服务中启动远程启动服务，并设为自动启动。这时就可以用装有BootRom&127;芯片的网卡启动工作站，如果网卡安装正确，远程启动管理器中将看到无盘工作站网卡的节点地址号。假设网络节点的数目｜ V ｜ =N ，目的节点的数目为｜ D ｜ =M ，则所有组合数目为 C0N-M+C1N-M+C2N-M+A+CN-MN-M=2N-M，可见 Steiner Tree 问题的求解随着 N－M 的增大成指数增长，因此是一 NP 问题。一般ISA卡I/O Base为300h，中断为3，BootRom基址选为C8000。若设置完毕重新开机后显示器“黑屏”，应拔下BootRom，用软件重新选择 BootRom 地址和程序字节数直到故障排除。经上述步骤更正后，一定要在服务器远程启动管理器中看到该卡地址号。
+　　．　在服务器上准备文件
+　　设NT安装在 E:\WINNT下,所用网卡为TE2008B,因该卡与NE2000网卡兼容，故可直接用E:\WINNT\RPL\BBLOCK\NDIS下的NE2000.dos和E:\WINNT\RPL\BBLOCK\NETBEUI\NE2000目录下的dosbb.cnf和protocol.ini文件，此外将dosbb.cnf文件中“EXE BBLOCK\I13.COM ～ ～ ～”一行改为“EXE BBLOCK\W95I13.COM ～ ～ ～”并另存为W95BB.CNF文件,以备启动WIN95时使用。若网卡不与E:\WINNT\RPL\BBLOCK\NETBEUI\下的任一网卡兼容，就必须将其DOS驱动程序复制到E:\WINNT\RPL\BBLOCK\NDIS目录下,一般其扩展名为.DOS,如PCIND.dos( TE3500N型PCI网卡)。新建一个目录,将NE2000目录下的PROTOCOL.INI和DOSBB.CNF复制到此目录下，编辑这两个文件, 并将网卡驱动器（NE2000）改成本网卡的名字（如PCIND）。它们之间的不同决定了它们的适用范围，一般地讲遗传算法的优化性能较好，而进化规划的收敛性能较好。而有些网卡可直接上NT，如Epro,Am2100等，这一步骤可省。目前已经有文献 [3] 使用遗传算法求解 Steiner Tree 问题，但完全使用遗传算法进行 Steiner Tree 问题的求解效率比较低下，因此本文试图通过进化规划算法和启发式算法结合求解 Steiner Tree 问题。先后使用V键(Vender销售商)，A键添加销售商名字(输入卡号前六位)， 然后使用B键，A键新增一个 BootBlock(引导块)输入引导块名如boot1和对应销售商名，以及启动文件名BbcFile=BBLOCK\NETBEUI\NE2000\DOSBB.CNF，接着使用C键，A键新增 Config(配置)如config1,输入对应引导块名,一级目录名dos, 二级目录名dos622共享配置文件fits\dos622.fit,个人配置文件fits\dos622p.fit,配置注释名如MyDos622，其他未列出的项均用回车作答。
+　　．　建立Dos6.22的无盘工作站
+　　将DOS6.22的系统文件复制到E:\WINNT\RPL\RPLFILES\BINFILES\DOS622下,并解除MSDOS.SYS和IO.SYS的S和H的属性，否则工作站启动后出现“Non System Disk”错。打开远程启动管理器，检查配置文件，更新数据库，添加新的配置文件。图 1 是一个简单的网络模型，图 2 是使用 MST 算法求解 Steiner Tree 问题的解，图 3 是最优的 Steiner Tree 问题的解。变异的幅度和问题的规模有关，可以在进化的开始使用较大的变异幅度，在进化的后期采用较小的变异幅度。
+　　．　建立Windows 3.2的无盘工作站
+　　启动Dos622远程工作站,使用Net Use映射放入服务器共享光驱的Windows 3.2安装盘,执行SETUP/A将Windows 3.2安装到C:\WIN目录下,进入C:\WIN,执行SETUP/N,将Windows 3.2安装到C:\Windows目录下。回到根目录,执行XCOPY /E C:\Windows C:\WKSTA.PRO\WIN以后，所有以此profile登录的工作站都可以共享Windows3.2了，一般此步骤可省，因为现在几乎不用Windows3.2了。
+　　．　安装Windows 95的共享文件
+　　首先，在NT服务器上建一共享目录(如PWIN95S)用于保存公共文件，并建另一共享目录(如:RPL95)用于保存每台工作站的私有文件,本人将其装在D盘。登录一台普通的Windows 95工作站,执行NETSETUP.EXE,将Windows 95的文件安装到\\NTS4\PWIN95S中(其中NTS4为服务器名)。按缺省值完成安装即可。它们之间的不同决定了它们的适用范围，一般地讲遗传算法的优化性能较好，而进化规划的收敛性能较好。此步骤使PWIN95S中的文件具有网络安装功能。
+　　 ．　在Windows 95下添加网卡
+　　在服务器的MS－DOS方式下再次执行RPLCMD，使用B键，A键新增一个引导块如boot2,输入对应销售商名和引导文件BBLOCK\NETBEUI\NE2000\W95BB.CNF,接着使用C键，A键新增 一个配置如config2,输入对应引导块名,一级目录名dos, 二级目录名win95，共享配置文件fits\win95.fit,个人配置文件fits\Win95p.fit，配置注释名Mywin95，其他未列出的项也均用回车作答。而使用进化规划和启发式算法结合的方法求解 Steiner 问题，可以提高启发式算法的鲁棒性，当然这是在付出一定计算代价的前提下获得的。NET USE F:\\NTS4\PWIN95S，NET USE G:\\NTS4\RPL95，在F盘上执行SETUP,将Windows 95安装到G:\CLIENT1目录下，若安装过程中对话框全中文，表示没有运行WIN95SRV.BAT 。安装出现“Setup Options”选择“Custom”;出现“Analyzing Your Computer”对话框时选择“No I want to modify the hardware list”，并删除所有硬件;出现“Network Configuration”对话框时,选择相应网卡，设置好相应的IRQ和I/O地址,其余选择Windows 95的缺省值。若“Network Configuration”对话框中未出现相应网卡名，可运行infinst.exe（与Netsetup.exe在同一目录下）将一些外部组件（网卡）添加到网络安装树，这时可以选择该网卡继续安装，否则会出现Setupx.dll保护模式错。运行“远程启动管理器”,执行“检查配置”和“修复安全性”，建立一个使用“Mywin95”配置的profile,例如:Mywin95。 
+　　尽管 Steiner Tree 的描述比较简单，但问题的求解非常困难，在图论中一般通过启发式方法解决这一问题。修改D:\PWIN95S目录下的MACHINES.INI文件。由于进化规划算法中的每一个个体对应于一棵 Steiner 树，这样可以通过进化规划算法的变异和选择操作使个体逐步进化，最终求得优化的 Steiner Tree 问题的解。
+　　．　安装其他Windows95工作站
+　　安装其他Windows 95无盘工作站时，先启动一台DOS无盘工作站。在一台普通的Windows 95工作站上执行Windows 95光盘上的NETSETUP.EXE程序。出现“服务器安装”对话框时,单击“设置路径”。出现“服务器路径”对话框时,输入\\NTS4\PWIN95S,单击“确定”。单击“机器安装目录”中的“添加”按钮,分别输入计算机名，本机工作目录和第一台无盘工作站的工作目录。例如:WS2，\\NTSR\RPL95\CLIENT2,\\NTS4\RPL95\CLIENT1,继续完成以后安装。在仿真中进化规划算法运行 50 代，群体规模选择为 20 ，变异幅度选择为 4 到 1 。重新启动工作站，完成安装。
+2　NetWare无盘工作站的安装过程
+2．1　准备工作
+　　硬件：一台Netware服务器 ,一台有盘(软盘即可)工作站，若干台配有BootRom的无盘工作站。软件：Novell Netware 3.12以上版本，Dos6.22, Windows95中文版，必需的Netsetup.exe等文件,注意事项同上。
+2．2　安装过程
+　　NetWare DOS无盘工作站的安装
+　　首先在服务器DOS6.22操作系统上安装Netware3.12网络操作系统。然后用一有盘工作站用软盘上网成功。软盘含DOS6.22系统COMMAND.COM(隐含IO.SYS，MSDOS.SYS),IPX.COM, NETX.COM, HIMEM.SYS,AUTOEXEC.BAT,CONFIG.SYS等文件。其中AUTOEXEC.BAT文件内容如下：
+　　IPX
+NETX
+F:
+LOGIN
+CONFIG.SYS文件内容如下：
+　　Files=50
+Dos=High.Umb
+Buffers=50
+Device=Himem.sys
+Device=Emm386.exe
+　　登录后用该软盘生成DOS启动映像文件，以下用SYS:PUBLIC下的SYSCON，USERDEF,MAKEUSER，MAP，SETPASS设置软件，编辑登录脚本(Login Script）等。
+　　NetWare Windows95无盘工作站的安装
+　　与NT的Windows95无盘站相比，有许多相同之处：比如硬软件要求相同，都需要安装共享目录和文件，配置安装脚本和Machines.ini文件。 
+1 Steiner 树问题的启发式算法和实质 
+　　目前已经有很多 Steiner 树问题的启发式算法 [2] ，这些算法都只能得到 Steiner 树问题的近似解，其中最常用的是 MST 启发式算法。
+3　需要注意的问题
+3.1　关于PCI网卡
+　　若使用的是一般PCI网卡，由于其中断号与地址号不可修改，且数值随计算机的不同而变化，所以还应编辑E:\winnt\rpl\rplfiles\profiles\mywin95\suboot\protocol.ini文件，修改Bingings项和Interrupt,Iobase项。此外，个别主板不支持这种无盘启动。
+3.2　需要区分的几个概念
+　　RAS(远程访问服务)　RAS为远程访问服务，RAS服务器最多允许256个远程客户拨入，通过调制解调器，ISDN卡，X.25线路提供访问服务。大家熟悉的拨号网络是其客户机版，通过他们可以连到Internet。
+　　网络客户管理器　管理工具中网络客户管理器是用于制作网络客户登录 Windows NT 域所必须的磁盘和一些客户端的网络管理工具的。将 G' 中的边映射回 G ，即得到所求的 Steiner 树。
+4结束语
+　　使用远程启动服务有以下优点：通过使用无硬盘驱动器的工作站增加网络安全性，防止引进计算机病毒；在分配信息和软件资源上具有更大权限,更易集中升级软件,降低购买和维护工作站的成本。因此在教学、培训、游戏网等场合用途很大。
+作者简介：杨艺山　副教授，主要从事网络技术，多媒体技术等领域的研究。　刘明春　博士研
+　　　　　究生。 
+　　进化规划和遗传算法一样有较好的全局性能，但有不同的侧重点。
+作者单位：杨艺山　刘明春　刘世元　西北工业大学电子工程系　陕西．西安(710072)
+收稿日期:1999-05-13(修改稿)

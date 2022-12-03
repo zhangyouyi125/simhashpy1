@@ -1,0 +1,43 @@
+城市环境与城市生态
+URBAN ENVIRONMENT & URBAN ECOLOGY
+1999年 第12卷 第4期 Vol.12 No.4 1999
+
+
+
+模糊综合法在城市绿地系统景观生态综合评价中的应用
+――以上海市为例
+周廷刚　陈云浩　郭达志　陶康华
+　　摘要：绿地是城市人工景观中最重要的自然要素，以往对绿地景观生态的研究主要集中在能量流动和空间结构等方面，很少涉及城市绿地景观生态的综合评价。本文利用融模糊综合评判和模糊聚类分析于一体的模糊综合法对城市绿地系统景观生态进行了综合评价。
+　　关键词：绿地系统；景观生态；模糊综合法；模糊综合评判；模糊聚类分析
+　　中图分类号：X171　　文献标识码：A　　文章编号：1002-1264(1999)04-0023-03
+Fuzzy Comprehensive Method and its Application in Landscape 
+Ecological Comprehensive Assessment of Urban Greenland System
+――Taking Shanghai as an Exmple
+ZHOU Ting-gang1，CHEN Yun-hao1，GUO Da-zhi1，TAO Kang-hua2
+(1.The Institute of Survey & Spatial Information Engineering, 
+China University of Mining & Technology. Jiangsu 221008)
+(2.The Institute of Urban & Tourism, Shanghai Normal University,Shanghai 200234)
+Abstract：In this paper, a new fuzzy comprehensive method is put forward, combining fuzzy comprehensive evaluation with fuzzy clustering analysis. It not only avoids both of their own disadvantages, but also takes better use of their advantages. Finally, this method is practiced in parts of comprehensive assessment in landscape ecology of urban Greenland system in Shanghai city. The practice indicates that it is better and easier compared with other conventional methods.
+Key words：Greenland system;　landscape ecology;　fuzzy comprehensive method;　fuzzy comprehensive evaluation;　fuzzy clustering analysis
+1　引言
+　　景观生态是一门以空间为基本特征的交叉性综合学科，集生态学、现代地理学、系统科学各门理论为一体，研究景观及其空间要素、考察景观系统的结构、功能、演变规律以及人类社会系统的相互作用，并进行景观优化利用及管理保护的原理的途径。作为人类改造最彻底的景观――城市而言，由于它具有高度的异质性，景观要素的流动复杂性［1］，因此迫切需要对城市绿地系统景观生态进行综合评价。
+　　模糊综合评判能够顾及评价界线的模糊性，但在根据最大隶属度或主导因素原则对综合评判矩阵确定定级结果时，丢失了各评价单元之间的相关信息，容易造成与实际不符的评价结果。试验结束时进水浓度达到COD=2000mg/L，SO42－=4000mg/L。城市绿地是城市景观的要素之一，因而本文将模糊综合评判与模糊聚类分析有机结合的模糊综合法用于城市绿地系统景观生态综合评价，能够扬长避短，是一种较好的方法。
+2　基本原理
+2.1　模糊综合评判
+　　影响城市绿地系统景观生态的因素指标很多且重要程度即权重各异，对其进行综合评判时应结合实际，因地制宜选择因素并确定权重，本模型采用特尔菲法，具体步骤如图1。
+　　设因素集U=｛U1，U2，…Um｝，权重集
+
+评语集V=｛V1，V2，…，Vn｝，U的所有因素综合评判
+矩阵
+(p=1，2，…，k；k代表绿地系统景观生态综合评价行政单元数）。对k个行政单元绿地系统景观生态的等级综合评价矩阵为：
+　　(1)
+2.2　模糊聚类分析
+　　把矩阵中的元素xij(i=1,2,…,k;j=1,2,…,n)作为原始数据，用夹角余弦rij=建立模糊相似矩阵R=(rij)kk，并用平方自合成法求得模糊等价矩阵t(R)。根据模糊概率选取聚类阈值，本文选取0.98（即属于同一类的概率达98%），以下面的方法进行聚类：
+　　1）对t(R)的每一列（tii除外）的k-1个元素求和：；
+　　2）求最大值T（1）max=max(T1,T2,…Tk)和比值K(1)j=Tj/T(1)max；
+　　3）把K(1)j＞0.98的Uj聚为一类；
+　　4）在剩余的Tj中再重复上述步骤，直到聚类完成。水力负荷q=0.06　m3/m2/h，流量0.23　L/h停留时间HRT=22　h。试验结束时进水浓度达到COD=2000mg/L，SO42－=4000mg/L。出水中测得的硫化物含量所指的就是最后这一部分。本试验研究使用三相工艺中的硫酸盐还原相来处理COD∶SO42－=1∶2的自配水的效果。(3)反应器中硫化物的抑制浓度为300mg/L，相应的硫化氢浓度为129mg/L。
+1.1.4　分析项目及测定方法［2］
+　　COD：标准重铬酸钾法；pH值：pHC-3型酸度计；悬浮固体(SS)和挥发性悬浮固体(VSS)：重量法；硫酸根(SO42－)：烧灼残渣重量法；硫化物：碘量法。这一阶段的硫酸盐去除量为300mg/L，硫化物浓度在50mg/L左右(相应的H2S浓度为16mg/L)。
+　　(5) 区域总优势度（D）
+　　绿化景观优势度（D0）反映了各类缀块在景观变化中的作用，其计算公式为：

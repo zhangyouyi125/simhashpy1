@@ -1,0 +1,69 @@
+计算机工程
+Computer Engineering
+1999年　第25卷　第9期　Vol.25 No.9  1999
+
+
+
+用Windows Sockets实现全分布式系统的方法
+胡慧圣　谢晓方
+　　摘　要：简要介绍一种基于Windows NT对等网络的安全分布式系统的实现方法．该方法以Visual C++为开发平台，采用Windows Sockets网络编程技术，实现了系统的全分布式设计．
+　　关键词：网络编程；Visual C++；Windows Sockets；CSocket；Windows NT；全分布式系统
+Implementation of an Entirely Distributed System with Windows Socket
+Hu Huisheng Xie Xiaofang
+(Naval Aeronautical Engineering Academy, Yantai 264001)
+　　Abstract　This paper introduces a method to reaize an Entirely Distributed System based on Windows NT peer network system. Inis method realizes the distribution with Windows Sockets in Visual C++.
+　　Key words　Network programming; Visual C++; Windows Sockets; CSocket; Windows NT; Entirely distributed system
+　　在某新型全分布式舰艇指挥控制系统的设计中，需要实现图1所示的通信结构，图中的连线表示系统在工作过程中可能的连接，可在系统运行期间动态连接或断开。实现该系统的核心问题是设计一个具有一定通用性的通信接口模块。
+
+图1　全分布式系统通信结构示意图
+　　Windows NT提供了两种主要的网络编程接口：管道和Windows Sockets。其中Windows Sockets的目的是为了实现对网络细节的屏蔽，程序员不用关心网络的具体实现和具体协议。虽然Windows Socket只定义了对TCP/IP协议的抽象说明，但任何协议族都可以遵循Windows Sockets，只要它提供有关实现的动态链接库。场所间通信器提供了网络之间的通信支持，场所之间信息的交流，Agent的传输和节点的构造等。自治对象的转移不仅是执行控制的转移，还包括执行代码的转移，这就涉及到一个经典的分布式系统难题－进程的转移。
+2.2　自治对象的体系结构
+　　自治对象系统由两部分组成：Agent和场所。
+1 通信线程类CComThread类的实现
+　　在Visual C++的MFC中，CAsyncSocket类描述了基本的Windows Sockets编程接口， CSocket类是从CAsyncSocket类派生而来的，它是在更高层次上对套接字的抽象，并可使用MFC的CArchive类，使得进程间的通信类似于MFC中对文件的序列化。服务Agent由该场所的管理员发出，它不能在网络上各个场所之中移动，它固定在某个场所，提供某种特定的服务，它可以与用户Agent 和其它的服务 Agent 交流信息。通信线程类从CWinThread类派生，以下简要论述其实现的基本步骤：
+1.1从CSocket类派生CListeningSocket类和
+　　CConnectedSocket类
+　　CListeningSocket类对象用于服务器侦听网络连接请求。其主要成员有通信线程的指针m_pComThread，在构造函数中赋值，用于向通信线程发送消息。
+　　系统中存在 3 类通信：用户Agent之间的通信、用户Agent和服务Agent之间的通信和场所间通信。
+　　CConnectedSocket类对象用于代理已建立连接的通信任务。其主要成员有：通信线程的指针和拥有该连接的本地窗口指针用于发送各种消息；套接字号用于在通信线程中标识已连接套接字；两个档案对象指针用于该通信连接的数据接收和发送。其主要方法有：初始化Init( )函数用于指定通信线程指针和本地窗口指针；重载基类OnReceive( )通知函数用于通知通信线程接收数据；重载基类OnClose( )函数用于通知通信线程连接或已经断开。
+1.2 从CObject类派生CMsg类和CMsgHead类
+　　CMsg类用于描述消息基类，任何在网上传输的数据消息都要从该类派生。其数据成员以消息名标识，而具体的数据消息类需要有自己要传输的数据成员。其方法为序列化函数，用于序列化消息名标识；而具体的数据消息类需要重载序列化函数，并在其中调用基类的序列化函数以及序列化其它需要传输的数据成员。类服务器负责 Java类库的加载。其成员和方法与CMsg类相近。
+1.3 CComThread类的主要数据成员
+　　CListeningSocket类对象指针为m_pListeningSocket，当通信线程作为服务器时令其侦听网络连接请求；指针链表m_ConnectedSocketList用于保存已建立连接的CConnectedSocket对象指针，通信线程根据此链表查找特定的通信连接来发送数据。RPC 的基本原理非常简单，即让本地计算机中的某个过程调用服务器上的另外一个过程。
+1.4 CComThread类主要方法的实现
+　　CreateSocket( )创建套接字消息处理函数：在通信线程的用户希望成为服务器时，向通信线程发创建套接字消息，在该消息处理函数中，通信线程根据指定端口号构造m_pListeningSocket对象并开始侦听。在系统中，专门提供了一个类服务器。在该函数中，通信线程构造一个CConnectedSocket对象，并根据指定服务器地址和端口号发出连接请求，若连接成功则计数器计数，设定套接字号并将该套接字加入套接字链表，并通知客户窗口连接成功及该连接的套接字号。
+　　ProcessPendingAccept( )接受连接方法：当服务器的侦听套接字收到连接请求时调用该函数，其代码如下：
+　　CConnectedSocket* pSocket = new CConnectedSocket(this)；
+　　if (m_pListeningSocket->Accept(*pSocket))
+　　{
+　　　　　m_PipeNumber ++；
+　　　　　pSocket->Init(m_PipeNumber,m_SourceWnd)；
+　　　　　m_ConnectedSocketList.AddTail(pSocket)；
+　　　　　m_pWnd -> PostMessage( MM_LISTEN_ACCEPT, m_PipeNumber,NULL) ;
+　　}
+　　else delete pSocket；
+　　SendMsg( )发送数据消息处理函数：当通信的一方要发送数据时，向通信线程发出发送数据消息，传递消息对象指针和套接字号，消息处理函数代码如下：
+void CComThread::SendMsg(CMsg* pMsg,UINT nPipeID)
+{
+　　for(POSITIONpos=m_ConnectedSocketList.
+　　　GetHeadPosition( )；pos!=NULL；)
+　　{
+　　CConnectedSocket* pSocket 
+　　　=( CConnectedSocket*) m_ConnectedSocketList. GetNext( pos )；
+　　if( pSocket -> m_PipeID = = nPipeID )
+　　{
+　　　CMsgHead MsgHead( pMsg -> m_MsgName )；
+　　　MsgHead.Serialize(*( pSocket -> m_pArchiveOut ) )；
+　　　pMsg -> Serialize(*( pSocket -> m_pArchiveOut ) )；
+　　　pSocket -> m_pArchiveOut -> Flush( )；
+　　　pos = NULL;
+　　}
+　}
+}
+　　ProcessPendingRead( )接收数据方法：当连接套接字链表中的某一套接字有数据等待接收时，调用此方法。该方法先调用：
+　　MsgHead.Serialize(*(pSocket->m_pArchiveIn))；
+　　读入消息头，并根据消息头中消息名构造消息类对象，再调用：m_pMsg->Serialize(*(pSocket->m_pArchiveIn))；
+　　读出消息对象，最后通过调用：
+　　pSocket->m_pWnd->PostMessage(MM_RECEIVE_MSG,(long)MsgName,(long)m_pMsg);
+通知数据传输目的窗口接收数据。
+　　DeleteConnect( )断开连接处理函数：当通信的一方想断开连接或另一方已断开连接时，调用该消息处理函数。在函数中，通信线程根据指定要断开的连接套接字号，在已连接套接字链表中查找该套接字并将其删除。绝大部分工作都由系统自动完成，使得大多数采用对象系列化的应用实现起来相当简单。特定服务通信的端口可由开发者自己设定，提供服务之前需要向目录服务 Agent 提交自己的特征信息 ( 如提供的服务类型，URL等 ) 

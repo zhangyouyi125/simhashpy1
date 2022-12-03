@@ -1,0 +1,75 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1999年 第14卷 第3期 Vol.14 No.3 1999
+
+
+
+关于两方程湍流模型的考虑*
+梁德旺　吕兵
+　　【摘要】　通过对两方程湍流模型的分析，提出了在主流区或远壁区用两方程模型,近壁区用代数湍流模型的思路，即所谓的“双层”模型概念。通过对平板湍流附面层的计算表明，这种分层计算措施获得的速度分布、壁面剪切力较单纯应用低雷诺数两方程湍流模型时的结果准确。圆柱顶部和底部面分为301×31个网格，其中沿径向方向分为31份。从而表明本文提出的分层计算措施是有效的，可满足工程计算要求。
+　　主题词：湍流　建立模型　计算流体力学
+　　分类号：O357.5
+A CONSIDERATION OF TWO EQUATION TURBULENCE MODEL
+Liang Dewang and Lu Bing
+（2nd Dept.Nanjing University of Aeronautics and Astronautics,Nanjing　210016）
+　　ABSTRACT　　A concept of "two-layer" turbulence model is proposed which employs an algebraic turbulence model in near wall area and a two-equation turbulence model in outer area or far wall area.The flows over a flat plate with M=0.3 uniform inflow and in a 90°rectangular bent duct with non-uniform velocity and high turbulence inflow are calculated respectively by use of the "two layer" turbulence model and two equation turbulence model with low Reynolds number modification.The obtained results show that the "two layer" turbulence model can predict the distribution of velocity and wall stress for external flow and the boundary layer thickness and main velocity for internal flow more accurately than the two equation turbulence model.Therefore the "two layer" model is a powerful tool in engineering.
+　　Key　Words　Turbulence　Modelling　Computational fluid mechanics
+1　引　言
+　　在近壁区内，分子粘性对流动的影响相对增强，它不仅影响了平均流的输运，而且直接或间接地影响各种湍流过程，此外，湍流动能K的产生率及耗散率ε达到极大,近似处于局部平衡，平均流速度和温度的二阶导数大，即平均流参数的梯度变化大。目前CAA中应用较多的方法是把计算域分为两部分，一部分描述声源的非线性产生，另一部分描述其线性传播，而计算声音传播的方法主要有：线性分析方法、近场非线性CFD方法+远场线性Euler方程解以及Kirchhoff方法。为与实验比较，观察点的位置与实验中麦克风位置相同［9］，如图2所示。
+　　处理低雷诺数湍流流动的工程方法有两大类；即壁面函数法和低雷诺数湍流模型。
+　　所谓壁面函数法就是采用简化分析的方法或经验式，给出近壁网格内的速度分量与壁面应力的关系，近壁网格内温度与壁面温差同壁面热流通量的关系，近壁网格内湍流动能的产生率与耗散率。这种方法不需在近壁区内求解平均流场或湍流参量的偏微分方程，不需在近壁区布置精细的网格（y+＞30）。但是，这种方法不能用于低雷诺数流动及不稳定或有分离的附面层流动，对于复杂三维流动，传统的壁面函数可能不合适。此外，近壁网格稀疏时平均流的计算精度受限。
+　　低雷诺数湍流模型则是由对高雷诺数湍流模型方程中的经验常数或函数进行近壁衰减和分子粘性效应修正而构成。文献［1］对近壁和低雷诺数模型进行了比较和分析。低雷诺数湍流模型可直接求解近壁区内的流动。但要求在近壁区设置很精细的网格，以便能正确地反映参数在近壁区的剧烈变化。如文献［2］用Launder／Sharma的K-ε模型求解平板湍流附面层，其近壁第一条网格的y+<<1。然而工程计算中，近壁网格的y+=2～3，由图1和图2可以看出，此时用低雷诺数湍流模型求解的平板湍流附面层速度分布(图中棱形点)与经验分布(图中实线)相差较远。造成误差的原因是近壁区内网格不够精细，近壁区内流动参数的求解不准确。
+　　鉴于上述原因，本文提出了在近壁区用Van Driest 的近壁衰减修正的混合长度模型(即Baldwin／Lomax代数模型)，其他区域依旧采用低雷诺数两方程湍流模型求解湍流流动的思路，对平板湍流附面层和非均匀来流条件下90°弯管内高湍流度流场的求解表明，这种分层求解措施可明显提高计算准确度。
+2　湍流模型和数值方法
+　　本文计算采用可压流体质量加权平均N-S方程，Launder／Sharma的K-ε模型［3］，Speziale K-τ模型［4］和Wilcox K-ω模型［5］。本文的计算采用时间相关法求解定常流动，其中空间积分采用格心格式的有限体积法，而时间积分采用五步龙格－库塔法，其CFL数为5.0。
+
+
+图6　取不同圆柱直径对远场声压比较
+
+图7　取不同圆柱高度对远场声压比较
+4　结　论
+　　(1)Kirchhoff方法由于考虑了桨叶附近的非线性影响，因而可以给出比传统的线性方法更接近于实际的结果；(2)采用Kirchoff方法时，Kirchhoff面的选取必须在包含非线性影响的同时，要求有足够的计算精度，因而不能靠近气动计算域的外边界；(3)当选用圆柱面为螺旋桨的Kirchhoff面时，远场声音信号主要来自于圆柱周面，而顶面＋底面的贡献很小，可以忽略。
+　　本文应用Kirchhoff方法计算一种双桨叶跨音速螺旋桨的远场噪声。
+3　“双层”模型概念
+　　为了探讨上述两方程湍流模型的效果，我们计算了长为1m的平板置于Ma=0.3的均匀流场中之平板湍流，来流Re数为6.9315×106。图1～3分别给出了用上述3个两方程湍流模型计算所得出口截面上无量纲平均速度分布。图中棱形点为用上述两方程湍流模型之计算结果。方块则为用Baldwin／Lomax［6］代数湍流模型的计算结果，实线则为理论及实验分析结果。图1和图2中的三角点则为用本文提出的“双层”模型计算结果，图3中三角点为K-ω模型结果。由图可以看出，对于平板附面层K-ω模型和B/L代数模型的计算精度最高，所得结果接近理论分布。这是因为B/L模型本身是平板附面层之经验模型。K-ω模型无需进行低雷诺数修正可直接应用于求解粘性底层流动［5］。而K-ε模型和K-τ模型尽管进行了近壁修正，但由于近壁网格不够精细(y+≈2)、低雷诺数修正有一定的近似性，造成计算结果误差大，具体表现为壁面剪切力不准（因uτ不准）。近壁区速度分布不准（作者用其他K-ε和K-τ模型进行了计算，结果也是如此）。
+*本文系德国教育、科学、研究与技术部(BMBF)资助项目
+作者简介：马亮衬小33岁　副教授　北京航空航天大学流体所　100083
+作者单位：马亮　(北京航空航天大学)
+　　　　　D. Lohmann　M. Kuntz　(德国宇航院)
+参考文献
+　1　Hardin J C,Hussaini M Y.Computational Aeroacoustics.Springer-Verlag,New York,1993
+　2　Wells V L,Renaut R A.Computing Aerodynamically Generated Noise.Annu. Rev. Fluid Mech.,1997,29:161-199
+　3　Lyrintzis A S.The Use of Kirchhoff Method in Computational Aeroacoustics.ASME Journal of Fluids Engineering,1994
+　4　Ffowcs J E,Hawkings D L.Sound Generation by Turbulence and Surfaces in Arbitrary Motion.Philosophical Transactions of Royal Society,A264,pp.321-342,1969
+　5　Farassat F,Meyers M K.Extension of Kirchhoffs Formula to Radiation From Moving Surfaces.Journal of Sound and Vibration,1988,123(3):451-460
+　6　Kuntz M.Rotor Noise Predictions in Hover and Forward Flight Using Different Aeroacoustic Methods.AIAA Paper 96-1695, 1996
+　7　Farassat F.Linear Acoustic Formulass for Calculation of Rotating Blade Noise.AIAA Journal,1981,19(9):1122-1130
+　8　Ma Liang, Lohmann D,Kuntz M.Numerical Simulation of High-Speed Propeller Flowfield Based on Euler Equations.Chinese Journal of Aeronautics (Accepted),1999,12(2):
+　9　Dobrzynski W M,Heller H H,Powers J O,et al.DFVLR/FAA Propeller Noise Tests in The German-Dutch Wind Tunnel DNW.FAA Report No. AEE 86-3, 1986
+1998年8月收稿；1998年12月收到修改稿。为此，本文提出了在近壁区用Van Drist的近壁衰减混合长度模型而在其他区域依旧应用上述两方程模型,即所谓的“双层”模型。它可表为： 
+
+或 Cμfμρkτ
+其中l和ω为文献［6］中给出的考虑压力梯度修正之Baldwin／Lomax代数湍流模型参数，k，ε及τ等为上述两方程湍流模型之参数。由图1和图2可以看出，采用“双层”模型后所得计算结果精度明显提高，而且双层K-ε模型的结果略优于B/L模型结果。
+
+
+图1　K-ε模型计算平板附面层速度分布
+
+图2　K-τ模型计算平板附面层速度分布
+
+
+图3　K-ω模型计算平板附面层速度分布
+4　非均匀来流条件下90°弯管内高湍流度流场计算
+　　为了进一步检验上面提出的“双层”模型的有效性，我们分别用K-ε模型和“双层”K-ε模型计算了来流为非均匀且具有高湍流度的90°弯管内湍流流动。之所以选择这样一个流动来检验模型是因为弯管内的流动具有很大的横向压力梯度和强的二次流，流动呈很强的三维性，而且比较接近于叶轮机械的叶栅通道内流动。根据文献［5］，远场观察点在时间t观察到的声压可用一般公式表示为：
+　(3)
+这里E1和E2的表达式为：
+　(4)
+　　本文中，Kirchhoff面为包围桨叶的非转动圆柱面，移动马赫数Ma为零，因而Kirchhoff公式相对简单，延迟时间通过此式确定：，其中为声源位置。这里给出的几何尺寸及下面将给出的入流、出流条件均为文献［7，8］实验几何尺寸及实验条件。由图可知管道为一个三维矩形90°弯管，其横截面为边长为0.254 m的正方形，入口至拐弯段0°截面距离为两倍管道宽度，出口截面则在拐弯段90°截面下游一倍宽度处，90°弯管内侧弯曲半径为0.457 m。计算用网格比图示网格密4倍，其网格节点数为57×57×121，近壁网格y+在3～4之间。坐标系固定在桨叶上并随桨叶一起转动，因而整个流场可作为定常流动。此时，来流温度为T0=295.71 K，来流Ma数为0.05802，单位长度Re数为1.3071×106，出口截面压力为101277.7 (N/m2)。由于来流附面层内速度分布规律不知，计算中假定为1/7次方指数规律。
+　　图5给出了0°，30°，60°，90°及出口截面上的主流速度的计算值与实验值的比较。图中各符号表示为实验测得的速度分布，实线为用“双层”K-ε模型计算得到的速度分布，虚线则为用K-ε模型计算得到的速度分布。
+3　计算结果与分析
+　　本文采用的Kirchhoff面为围绕桨叶的圆柱面，该柱面不随桨叶转动，如图1所示。计算中我们还比较了横向二次涡及湍能K的分布，虽然“双层”K-ε模型的计算结果准确性略优于K-ε模型，但没有明显的优势。
+
+
+
+图5　90°弯管内速度分布
+5　结束语
+　　由上面的讨论、分析可得如下结论性意见：(1)提出的近壁区用代数湍流模型，其他区域用两方程模型来计算湍流的措施是可行的、有效的，它可以获得较单纯用两方程模型更准确的结果。(2)对非均匀来流条件下90°弯管内高湍流度流场的计算是成功的。它不仅说明了文中提出的“双层”模型可用于三维湍流，而且表明可用于工程计算。讨论了Kirchhoff面的大小对远场声场计算的影响，并和线性方法及实验结果作了比较。

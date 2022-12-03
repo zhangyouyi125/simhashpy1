@@ -1,0 +1,100 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第3期 No.3 Vol.18 1998
+科技期刊
+
+三沟式氧化沟污水处理工艺的性能分析
+周　律　钱　易　(清华大学环境科学与工程系，环境模拟与
+水污染控制国家联合重点实验室，北京 100084)
+文　摘　以生产性10万m3/d规模的三沟式氧化沟作为研究对象。研究结果表明，该工艺运行稳定，满足BOD5和悬浮物浓度小于30mg/L出现的频率分别为92%和96%；剩余污泥得到一定程度的稳定；污水处理的比能耗为1.20 kW*h/去除kg　BOD5；另外还观察到反硝化运行和硝化运行的时间比tDN/tN对调节三沟式氧化沟脱氮效果起着重要的作用；并就三沟式氧化沟改扩建提出了建议。
+关键词　三沟式氧化沟　工艺性能　城市污水
+Analysis of process performance for triple oxidation ditch system treating municipal wastewater. Zhou Lu , Qian Yi（State Key Joint Laboratory on Environmental Simulation and Water Pollution Control，Department of Environmental Science and Engineering,Tsinghua University, Beijing 100084）.China Environmental Science.1998,18(3):210～212
+Abstract― A full-scale triple oxidation ditch(T-ditch) ，100，000m3/d　treating municipal wastewater in Handan City, Hebei province in China was studied in this paper.The T-ditch process combined with biological denitrification can achieve a high quality effluent in BOD5 and SS,and is reliable in operation based on statistical analysis.It is shown by the statistical analysis of data that the frequences of the appearance in BOD5 and SS below 30 mg/L are 92% and 96% respectively.The excess sludge from T-ditch is stabilized to some extent. The energy consumed in removing 1.0 kg BOD5 is 1.20kW.It was found that the ratio of denitrification phase time and nitrification one,tDN/tN, is an important parameter to improve nitrogen removal. Finally，suggestions to reconstruct T-ditch system are provided.
+Key words:triple oxidation ditch　process performance　municipal wastewater
+
+　　氧化沟污水处理工艺作为一种流程简单、管理方便的工艺，在我国污水处理中日益受到重视〔1〕。三沟式氧化沟是新一代氧化沟工艺的典型代表，这种氧化沟工艺结合了许多新的污水处理操作方式，如A/O法，SBR法等。但对此工艺的系统研究还比较少，影响了该工艺应用的针对性和科学性。本文以邯郸市东污水处理厂三沟交替式氧化沟为研究对象，对该工艺的特点进行了初步的探讨和研究。
+1　进出水水质的统计
+　　邯郸市东污水处理厂三沟式氧化沟从1990年11月建成投产至今，采用过两种不同的运行模式，即硝化模式和硝化-反硝化模式，具体操作过程见文献〔1〕。所不同的是C1和C2值都更小，说明间二氯苯比邻二氯苯抑制作用更强，氯苯诱导的酶对邻二氯苯的作用强于对间二氯苯的作用。发表论文20篇。而硝化-反硝化模式除了去除水中的有机物外还能将进水中的含氮物质大部分从系统中去除，最终减少系统排出的总氮量。 从本质上讲，前者类似于延时曝气工艺，而后者是将A/O法的过程结合在一起，同一池内交替地出现好氧、缺氧过程。比较这两个过程对实际应用具有较为重要的意义。通过收集运行记录并进行整理，两种模式在设计水量及其它相同操作条件下，处理有机物、悬浮物和总氮的效果见表1。
+　　表1是出现频率为50%的进出水水质数据。从表1可看出，以硝化-反硝化模式运行，工艺的稳定性高，满足BOD5和悬浮物浓度小于30mg/L（国家对城市二级污水处理厂出水水质的要求）出现的频率分别为92%和96%。
+表3　间二氯苯与氯苯共存时的理论与实际耗氧速率
+Table 3　The theoretical and practical oxygen consumption 
+rate of m-dichlorobenzene
+
+项　　目耗氧速率(mgO2/g　SS*h) 
+第1组第2组 
+氯苯(单基质理论值) 0.4360.291 
+间二氯苯(单基质理论值)0.1080.161 
+二基质(共存时理论值) 0.5440.452 
+二基质(共存时实测值) 0.520 0.445 
+
+　　同理，可求得C1=0.922，C2=1.097
+　　间二氯苯对氯苯的影响机制与邻二氯苯相似，即氯苯的存在能够加速间二氯苯的降解，间二氯苯的存在则会由于竞争作用而抑制氯苯的降解。以硝化-反硝化模式运行，出水BOD5（以小于20mg/L计）、悬浮物（以小于25mg/L计）、总氮浓度（以小于12mg/L计）满足设计值出现的频率分别为88%、94%和47%。
+参考文献
+1　Haigler B E，Nishino S F,Spain J C. Degradation of 1,2-dichlorobenzene by a pseudomonas Sp..Appl. Environ. Microbiol., 1988,54:294～301
+2　Spain J C，Nishino S F. Degradation of 1,4-Dichlorobenzene by a pseudomonas sp.Appl. Environ. Microbiol., 1987,53:1010～1019
+3　Oltmanns R H，Rast H G,Reineke W,et al.Degradation of 1,4-dichlorobenzene by enriched and constructed bacteria. Appl. Microbiol. Biotechnol. , 1988,28:609～616
+4　瞿福平，张晓健，吕　昕等. 氯代芳香化合物生物降解性研究进展. 环境科学，1997,18(2):74～78
+5　瞿福平，张晓健，何　苗等. 氯苯驯化活性污泥对同类有机物的好氧降解性能比较. 环境科学，1997,18(4):21～24
+6　瞿福平，张晓健，何　苗等. 氯苯类有机物生物降解性及共代谢作用研究. 中国环境科学，1997, 17(2):142～145
+7　俞毓馨. 环境工程微生物手册. 北京:中国环境科学出版社,1990.166
+8　Dalton H，Stirling D T.Cometabolism, Phil. Trans. R. Soc. PART:B,1982, 297:481～496
+9　瞿福平.氯代芳香化合物好氧生物降解性能及共基质条件下相互作用研究：〔博士论文〕.北京：清华大学环境工程系，1997
+作者简介
+瞿福平　男, 1966年1月生。
+关键词　 氯苯驯化污泥　氯苯类同系物　作用机制
+Effect of the coexistence of chlorobenzene homologue on the biodegradation of chlorobenzene for chlorobenzene acclimated sludge.Qu Fuping,Zhang Xiaojian,He Miao,Gu Xiasheng(Department of Environmental Science and Engineering, Tsinghua University, Beijing 100084).China Environmental Science.1998,18(3):202～205
+Abstract―By analyzing the contribution factor, a study on the effect of the coexistence of chlorobenzene homologue on the biodegradation of chlorinated benzene and action mechanism for the chlorinated benzene sludge was conducted. The experimental results show that the coexistence of o-dichlorobenzene and m-dichlorobenzene is favorable for the biodegradation of whole system.But the oxidation rate of chlorinated benzene decreases a lot,with competition and cometabolism being their action mechanism；while the coexistence of p-dichlorobenzene and 1,2,4-trichlorobenzene is not favorable for the biodegradation of whole system and chlorinated benzene,with inhibition being their action mechanism. 
+Key words:chlorinated benzene acclimated sludge　chlorinated benzene homologue　action mechanism
+　　氯苯类中的氯苯、邻二氯苯、间二氯苯、对二氯苯、1,2,4-三氯苯，都是毒性很高的化合物，被美国EPA列为优先污染物。
+　　生物处理采用表面曝气机(全厂三组氧化沟共设置42只Mammoth 9m转刷），在工艺运行中能耗比重较大。转刷的能耗约占污水处理厂总能耗的51.3%。但从解得的C1和C2可以看出，C1<1，说明氯苯的耗氧速率低于单基质时的耗氧速率，因为氯苯驯化污泥对两种基质都能产生降解作用，因此，氯苯耗氧速率的降低主要由于邻二氯苯的竞争作用引起，C2>1，说明邻二氯苯的实际耗氧速率较单一基质时的理论耗氧速率有所增加，氯苯的存在为邻二氯苯的降解提供了诱导酶，这实质上是氯苯诱导酶的共代谢作用加速了邻二氯苯的降解〔8〕。
+表2　邯郸厂的能耗与其它二级污水处理厂的能耗比较
+Table 2　The comparison of energy consumed between
+Handan WWTP and other secondary treatment plants
+
+处理方法一般应用范围比能耗*
+传统活性污泥法　　　深度处理(各种规模)1.26～3.56
+高纯氧活性污泥法　　深度处理(大型厂)　1.30～1.72
+传统氧化沟　　　　　深度处理(小型厂)　2.20～4.86
+邯郸污水处理厂氧化沟部分脱氮　　　　　1.20
+
+　注：* 能耗单位为kW*h/去除kgBOD5；均未考虑污水的提升
+　　从表2中的比较可以看出，三沟式氧化沟能耗是较低的，这体现了该工艺的优点。
+3　氧化沟的剩余污泥的稳定程度
+　　用VSS / SS作为污泥稳定性的判断指标可能比较直观，如中温厌氧消化，典型进入消化池污泥的VSS / SS为60%～70%，经过30～60d的消化，平均VSS约降低50%～60%，VSS / SS为50%左右。氧化沟中污泥VSS / SS一般为50%～60%，对照厌氧消化数据，可认为氧化沟的剩余污泥已得到相当程度的稳定。
+　　为使氧化沟的剩余污泥达到较好的稳定，在满足污水处理工艺要求的泥龄的基础上可再加上一定的污泥在沟中的停留时间，并建议参考好氧污泥消化池的设计的污泥停留时间作为氧化沟设计污泥停留时间，相当于污泥泥龄为15～20d。邯郸污水处理厂三沟式氧化沟整个系统的实际好氧泥龄为11d。现为清华大学化学工程系博士后。所以为达到更好的污泥稳定程度，可适当提高目前的泥龄。
+　　我国“城市污水处理厂污水污泥排放标准CJ3025-93”对剩余污泥卫生学虽无明确规定，但应看到卫生学方面的问题会直接影响到污泥的最终出路，处置不好可能会造成二次污染。据美国EPA在这方面的研究〔4〕 ,对三种病原菌属(大肠菌属、沙门氏菌属、葡萄球菌属)进行分析，结果表明，氧化沟或延时曝气工艺排放的剩余污泥可满足EPA推荐的B级污泥病原菌排放标准。
+4　tDN / tN对脱氮效果的影响
+　　根据硝化、反硝化的运行时间的不同，试验中共安排了5种工艺组合，对应的运行周期中反硝化运行和硝化运行的时间比tDN / tN（tDN、tN分别为反硝化、硝化的操作时间在一个运行周期的总和，tDN / tN相当于时间体积的加权平均值。）分别为0.27、0.40、0.47、0.75、1.0。贡献因子则为共基质中某基质实际耗氧速率与理论耗氧速率的比值，以Ci 表示，下标i表示第i种基质。结果表明，tDN / tN比值过高或过低，脱氮效率都会降低，当tDN / tN=0.40时有最佳的脱氮效果。
+
+图1　tDN / tN比与脱氮效果的关系
+Fig.1　The relation of tDN / tN and nitrogen removal
+　　所以，针对特定的水质保持合适的tDN / tN比是提高脱氮效率的重要操作因素。从几种组合出水中NO-3-N、NH+４-N浓度变化可进一步看出tDN / tN比在运行中的作用。由图2可看出，在运行周期不变时，减小tDN / tN比，处理系统的硝化能力也得到提高。
+
+图2　对二氯苯与氯苯共存时理论耗氧速率与实际
+耗氧速率的比较
+Fig.2　Comparison between theoretical and practical oxygen 
+consumption rate of p-dichlorobenzene
+　　同理，可求得C1=0.810，C2=0.360
+　　在对二氯苯与氯苯共存时，对二氯苯对氯苯驯化污泥有抑制作用，由表4中看出，对二氯苯的耗氧速率为负值，在此情况下，共存时的理论耗氧速率为它们的代数和，正负部分抵销后得到的理论耗氧速率可用“理论净”表示，如图2所示。出水中的NO-３-N浓度与NH+４-N浓度的变化呈相反的趋势。
+
+图2　不同tDN / tN比的情况下出水中的NO-3-N、
+NH+4-N浓度变化
+Fig.2　The concentration change of NO-3-N and 
+NH+4-N under different tDN / tN ratio
+5　三沟式氧化沟的改扩建
+　　改扩建时，可以将三沟式氧化沟改成按两沟式氧化沟运行，其后单独设置沉淀池，这样处理水量可提高1/3以上。在试验中，对二氯苯的C2值为0.360，表明在氯苯驯化污泥中，对二氯苯的抑制作用发挥较小，反过来说，氯苯的存在削弱了对二氯苯的抑制作用。
+
+图3　改扩建后的三沟式氧化沟建议运行模式
+Fig.3　The suggested operation parttern after reconstruction
+
+6　结语
+　　通过对生产性三沟式氧化沟的调查研究表明，这种工艺处理效果十分稳定，满足BOD5和悬浮物浓度小于30mg/L的频率分别为92%和96%。工艺能耗低，运行管理方便，是适合我国中小型城市使用的简便、高效的污水处理技术。研究中观察到反硝化运行和硝化运行的时间比tDN/tN对调节三沟式氧化沟脱氮效果起着重要的作用，是一个关键的运行参数，针对不同的污水水质，调节tDN/tN可达到比较好的氮去除效果。另外，三沟式氧化沟的改扩建业简便易行，通过建议的改扩建方法可大大提高处理水量。
+参考文献
+1　杨肇健. 三沟式氧化沟在处理城市污水中的应用.给水排水， 1992， 18(3):18～21
+2　Metcalf and Eddy,Inc.Wastewater engineering treatment:treatment,disposal and reuse(third edition). New York:McGraw-Hill Publish Co.,1991.163
+3　Owen W F.秦裕珩译. 废水处理节能. 北京：化学工业出版社，1993.118
+4　Surampalli R Y.Microbiological stability of wastewater sludge from activated sludges system.Bioresource Technology.1994,49(4):203～210
+作者简介
+周　律　男，1963年9月生。现为清华大学环境科学与工程系讲师。主要从事水污染控制的教学和科研工作。承担过“石化厂工业废水的厌氧处理”、“难降解有机物的厌氧降解研究”等项目。发表论文10余篇。
+致谢　论文中的一些数据采集得到邯郸污水处理厂的帮助在此表示感谢
+收稿日期：1997-07-16

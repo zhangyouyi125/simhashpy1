@@ -1,0 +1,101 @@
+Access最突出的特点是提供了大量的数据库向导（Wizard），使得用户可以快速地开发出适合于自己的数据库原型，大大缩短了开发周期并且，Oracle Developer/2000的智能性较差这种方法不需要用户提供附加的硬件定时器计算机应用
+COMPUTER APPLICATIONS
+年 第19卷 第6期时 Vol.19 No.6 1999
+
+
+
+Microsoft 与的性能比较
+刘广钟　刘晓飞
+　　摘　要　Microsoft Access是深受微机喜爱的关系管理，而Novell主要使用在大型计算机上，随着Oracle Developer/2000的，Oracle也开始在微机上流行起来。本文通过对二者在指令集、互操作能力、管理能力、信息安全性、用户界面、系统运转效率等方面的比较，阐述了这两种关系数据库管理系统在微机上运行的优缺点。
+　　关键词　Access，Oracle，Developer/2000，RDBMS，XML
+1　概述
+　　Access 是目前比较流行的关系数据库管理软件。与许多数据库管理软件一样，Access允许构造应用程序来收集和储存数据，并使其能很容易多种方式进行筛选、分类和更新数据。而且，可以通过显示在屏幕上的表单来查看Access的数据，也能在打印出的报表中看到它们。作为Microsoft Office Professional家族的一部分，Access 以其方便快捷的特点与Word和Excel一起在微机上得到了广泛的应用。。Oracle的“前端”和“后端”具有较大的独立性。近年来，Oracle开始在微机上流行起来。Oracle的强大功能既来自于其允许用户迅速而准确地进行数据检索的能力，也来自于其强大的保证数据的准确性和一致性及维护数据的安全能力。本文将对Ring 0和Ring 3两层软件的设计加以说明。
+
+图2　SQL语名的执行
+
+图3　PL/SQL块的执行
+　　与Oracle不同，Access一般不支持用户直接书写SQL语句来操纵数据。
+2　数据库体系结构的比较
+　　Oracle是一个典型的分布式数据库管理系统，这个系统采用客户/服务器体系结构。在网络环境中，每一个具有多用户处理能力的硬件平台都可以成为服务器，也可以成为工作站。多个服务器上的数据库对用户来说，是一个逻辑上的数据库整体，数据一致性、完整性及安全性都是对这一逻辑上的单一数据库进行控制的。服务器对共享数据的读取进行管理，而非数据库管理系统的处理操作可以由客户机来完成。Oracle分布式数据库系统结构如图1所示。Oracle数据库有明显的“前端”与“后端”之分。
+//通过VPICD-Virtualize-IRQ服务将已定义结构传入VPICD，VPICD分配IRQ并返回其句柄
+RTCIRQHandle=VPICD-Virtualize-IRQ(&IRQdesc);
+if(RTCIRQHandle==0)returnFALSE;//虚拟化失败
+//保存初始RTC状态寄存器以便退出时恢复现场
+SavedStatusRegisterA=ReadCMOS(STATREG-A);
+SavedStatusRegisterB=ReadCMOS(STATREG-B);
+RTClockFreqIndex=6;设置中断频率，见下文说明；
+statreg=(SavedStatusRegisterA & ～0xF)｜(RTClockFreqIndex & 0xF);
+WriteCMOS(STATREG-A,statreg);
+//设置RTC状态寄存器使得status register flags to enable it to assert its IRQ
+statreg=ReadCMOS(STATREG-B);
+statreg｜=ENABLE-INTERRUPT;
+WriteCMOS(STATREG-B,statreg);
+ReadCMOS(STATREG-C);
+TickCounter=0;//初始化中断计数器
+//保证IRQ在PIC中未被屏蔽
+VPICD-Physically-Unmask(RTCIRQHandle);
+return TRUE;
+｝
+BOOL IrqtestDevice:OnSysDynamicDeviceFxit()｛
+//恢复现场；
+Cancel-Global-Event(hEvent);
+WriteCMOS(STATREG-A,SavedStatusRegister A);
+WriteCMOS(STATREG-B,SavedStatusRegister B);
+VPICD-Physically-Mask(RTCIRQHandle);
+VPICD-Force-Default-Behavior(RTCIRQHandle);
+return TRUE;
+｝
+DWORD IrqtestDevice::OnW32DeviceIoControl
+(PIOCTLPARAMS pDIOCParams)
+｛
+switch(pDIOCParams->dioc-IOCtICode)｛
+case DIOC-OPEN;//CreateFile
+｛hWnd =0;//Ring 3层应用程序主窗口句柄初始化
+return 0;｝
+case W32IF-PASS-EVENT:
+PostMsghWnd=(DWORD*)pDIOCParams->dioc-InBuf;
+hWnd=(HANDLE)*PostMsghWnd;//获得主窗口句柄
+return 0;
+default:return-1;｝
+return 0;｝
+BOOL -stdcall RTCInt-Handler(VMHANDLE hVM,IRQHANDLE hIRQ)｛
+//在中断服务例程中，对中断计数器计数并向Ring 3层应用程序发送自定义消息；
+if(hWnd&&(TickCounter%100==0))｛
+SHELL-PostMessage(hWnd,WM-My-MESSAGE,0,0,NULL,NULL);｝
+TickCounter++；
+ReadCMOS(STATREG-C);//清除RTC状态标志
+VPICD-Phys-EOI(hIRQ);//指定VPICD清除此中断
+return TRUE;//thunk将清除进位
+｝
+//篇幅所限，针对COMS端口操作的两个函数ReadCMOS(BYTE reg)和WriteCMOS(BYTE reg,BYTE value)的源程序略，请参考VtoolsD连机帮助中的CHIME例子。“前端”开发工具构造的应用程序通过与数据库联接（Connect）来操纵“后端”的数据。作为一个开放型的分布式数据库产品，Oracle 提供局部自治和透明性的功能，并且能在各种形式的异构系统下正常工作，在相当程度上满足了硬件、操作系统和网络的独立性。
+
+图1　Oracle分布式数据库体系结构
+　　Oracle提供了一个完整的客户/服务器体系结构的DBMS。利用SQL*NET软件层，与多种操作系统支持的通信协议相配合，为Oracle RDBMS提供分布式处理环境，可实现单点更新，多点查询。。这样，用户可以很自由地管理和使用所有属于自己的数据及相关的对象。可以设置双缓冲区来实现实时中断与处理线程的同步。如果代码对象与数据成员在同一个文件中的话，则更新和修改这些代码对象就更加麻烦了。为了克服上述缺点，经验丰富的开发人员往往把数据成员与代码对象分别存储在两个不同的文件中，然后再使用Access本身提供的链接技术使数据成员与代码对象分成“前端”和“后端”。
+　　为打开的数据库设置密码是一种最简单的方法。通过Access的链接和导入功能，可以将Dbase、FoxPro、Paradox、Lotus、Excel等数据库以及Html文件，文本文件等链接或导入为Access可用的数据库。Access可以自动实现上述异种数据库向Access数据库的转换。。。
+　　Oracle不能自动实现异种数据库的互操作。用户可以利用它提供的开放客户适配器（Open Client Adapter），通过对ODBC编程来实现上述功能。目前，Oracle支持Microsoft SQL Server、Microsoft Access和Rdb等几种ODBC数据源。Oracle在实现异种数据库的互操作方面还有一定的局限性。
+4　数据管理能力的比较
+　　任何关系数据库管理系统（RDBMS）的首要功能都是检索和显示所存储的信息。通过对源代码的分析说明了实时硬件中断VxD的实现过程。SQL的SELECT语句有6个子句，通过它们可以很地将一个表单中的数据显示出来，也可以实现涉及多个表并且要根据表中数据进行计算的复杂查询。除了查询以外，Oracle还可以通过SQL语句简单地实现数据的插入、更新、删除等操作。。通过这些函数，可以实现一个或多个数据表（Table）之间的批量数据操作。可以设置双缓冲区来实现实时中断与处理线程的同步。在这里，用户既可以执行一条一条的SQL命令，也可以编写一段SQL程序来操纵数据。。SQL是一种国际标准的结构化查询词汇，Oracle通过它实现了与诸多数据库的兼容性。PL/SQL即模块式的过程化SQL，它具备了许多SQL中没有的过程化属性方面的优点，其中包括：模块化结构、允许使用定义标识符、用过程化语言控制结构进行程序设计、错误处理、高操作性能等。SQL和PL/SQL的执行示意图见图2和图3。
+　　作为世界上著名的两大软件公司的产品，Oracle和Access都具有各自的竞争优势和缺点，下面对二者作一个综合的比较。。在Access的Database窗口中提供了查询（Queries）、窗体（Forms）、报表（Reports）三个标签（工具）来帮助用户操纵和管理数据。Access本身也具备很强的数据管理功能。。
+　　在Access中可以通过宏和VB程序代码来操纵数据。宏是指一个或多个操作的集合，其中每个操作实现特定的功能，例如打开某个窗体或打印某个报表。宏可以使某些普通的任务自动完成。例如，可设置某个宏，在用户单击某个命令按钮时运行该宏，以打印某个报表。Access已经提供了近50个宏供用户使用，用户还可以自己编写宏来实现所需的操作。。这些程序段可以实现复杂的数据操纵功能。用户可以通过窗体上的VB控件调用这些程序段。通过这一工具，用户可以使用面向对象的方法来开发GUI的应用程序。
+　　Microsoft Access 提供了设置数据库安全的两种传统方法：为打开的数据库设置密码，或设置用户级安全，以限制允许用户访问或更改数据库的哪一部分。
+　　2.Ring 3级主应用程序设计
+　　将生成的VxD放入主应用程序的工作目录中，用CreateFile()函数动态加载VxD。
+3　数据互操作能力的比较
+　　Access提供了两种方法来获取外部数据源：链接和导入。设置密码后，只有键入正确密码的用户才可以打开数据库。由于Microsoft Access 对密码进行加密，因此直接查看数据库文件是无法得到密码的，所以这个方法是比较安全的。。并且，如果要复制数据库，则不能使用数据库密码。如果设置了密码，复制的数据库将不能同步。
+　　在Access中设置数据库安全的最灵活和最广泛的方法是设置用户级安全。Oracle提供了与Access类似但比Access强得多的安全机制。在工作组与信息文件中，用户标识为组的成员。Microsoft Access 提供两种默认的组：管理员（称作管理员组）和用户（称为用户组），但也可定义其它的组。
+　　Access的数据库管理员可以为组和用户授予，规定他们如何使用数据库中的对象。例如，用户组的成员可以查看、输入或修改“顾客”表中的数据，但不能更改表的设计。或者只允许查看包含定单数据的表，而不能访问“工资”表。 DeviceIoControl(hDevice,W32IF-PASS-EVENT,inBut,sizeof(PVOID),RetInfo,sizeof
+(RetInfo),&cbBytesRetumed,NULL))
+AfxMessageBox("DeviceIoCtl Siuled。。
+　　Access虽然提供了很多安全性措施，但它的安全性需要用户的主动防范，Access默认的数据库权限是对任何用户都开放的。这种安全类似于很多网络中使用的方法，它要求用户在启动 Microsoft Access 时确认自己的身份并键入密码。Oracle前后端的独立性为它的安全性提供了良好的基础。目前基于Windows平台的相关产品已经占据了市场份额的90%。
+　　Oracle的数据库管理员（DBA）可以给数据库的访问和数据库实体的存取予以授权。。Oracle7完全支持ANSI/ISO标准所申明的完整性约束，可以将完整性约束条件写在数据表中，不用编程就可以实施所有实体完整性和引用完整性规则。Oracle采用了透明的两阶段提交机制，以保证分布更新外交事务的完整性，多场地事务只要用标准SQL 的COMMIT邮局就可完成提交操作。Oracle可自动检测和所有故障，确保所有场地上一同提交或一同撤消。使用Oracle7可以将常用数据透明地复制到多个结点，Oracle7根据主表自动刷新它的只读副本（称为快照）。
+6　前端用户界面的比较
+　　作为Microsoft的一个拳头产品，Access提供了十分方便的用户界面。打开一个Access应用程序，我们可以见到Database窗口上有六个标签，分别为：表格（Tables）、查询（Queries）、窗体（Forms）、报表（Reports）、宏（Macros）和程序模块（Modules），这是Access提供给开发者管理使用数据的六种工具。
+　　由于Access与Windows操作系统同出自Microsoft公司，所以Access在其界面设计方面比Oracle产品具有优势。Access支持各种VB控件，并且与Windows操作系统做了很好的衔接。Access还提供了大量的设计模板和智能设计功能，方便易用。
+　　Developer/2000是Oracle提供的前端开发工具。本文将讨论在Windows 9X下实现实时控制的关键技术一一实时时钟中断驱动程序的设计及实现。Oracle提供SQL*Forms使用户可以开发和执行基于表格（Form）界面的应用程序。所有的VxD运行于Windows VMM的监控之下。而SQL*Loader工具则可以完成各类数据加载Oracle表的任务。Oracle Developer/2000的设计工具箱中可用的设计工具较少。虽然可以通过加载VBX控件来扩充工具箱，但受限较大。。从总体上来说，Oracle Developer/2000比Access要稍逊一筹。。但是，由于Access更多的是借助VB代码来实现应用程序，而VB是一种表述型语言，所以从总体来说效率低，它只适用于微机上的小型数据库管理。
+　　Oracle支持SQL和PL/SQL两种语言，具有较高的事务处理速度。Oracle从第7版开始采用了多线索服务器体系结构，能在所有硬件体系结构上为大量用户提供可扩充的高性能。Oracle还采用了自协调的多线索服务器体系结构，根据当前工作负荷，动态调整数据库服务器进程的个数。共享的SQL缓冲区允许所有用户在执行同一SQL语句时，共享内存中单一副本，使得内存占用达到最小。动态SQL、静态SQL以及存储过程可以为所有用户共享，该特性使操作系统开销和内存占用达到最小。Oracle7提供基于成本的智能查询优化器，系统根据表中的行数、索引等统计信息，决定最有效的存取路径。Oracle7的有效存取路径和并发控制特性，保证了对最复杂的查询也有极佳的查询性能。
+8　结束语
+　　通过以上比较我们可以发现，Access使用起来灵活、简便，但效率较低，适用于微机上开发小型数据库；而Oracle功能强大，运行效率较高，安全性较好，但对图形用户界面的设计不够方便，适合于设计中大规模数据库。 
+作者简介：刘广钟　副教授。从事网络技术及分布式数据库系统的研究。
+刘晓飞　教师。
+作者单位：中国矿业大学计算机科学与技术系　江苏.徐州（221008）
+收稿日期:1999-03-16(修改稿)

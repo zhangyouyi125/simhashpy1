@@ -1,0 +1,168 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　Vol.19　No.6　P.58-60
+
+
+
+
+基于Windows线程技术实现数据
+采集的简易编程方法
+周开利　汪云
+摘要：基于Windows线程编程技术，将DOS数据采集程序“包裹”成1个线程，利用共享文件交换数据，实现Windows环境下数据采集的简易编程。
+关键词：数据采集 Windows 线程 共享文件
+　　Windows以其友好丰富的图形用户界面、简单灵活的操作，折服了各行业的用户。
+　　为表格中插入的文本框、选择框等设置属性如下：
+　　＜TD＞＜INPUT id＝text2 name＝text2 datafld＝name ＞＜／TD＞
+　　＜TD＞＜SELECT id＝select1 name＝select1 datafld＝sex＞
+　　　　　＜OPTION value＝″男″ selected＞男
+　　　　　＜OPTION value＝″女″＞女
+　　＜／SELECT＞＜／TD＞
+　　主要是DataFld属性的设置，表示所关联的字段。要实现对数据的批量修改，还需要其它方法。在安装IIS4.0或相应的PWS后，上述示例的完整代码可在目录“…＼msadc＼samples＼adctest.asp”中找到，因而在这里不再赘述。
+＜HTML＞
+＜HEAD＞
+＜BODY＞
+＜OBJECT classid＝clsidBD96C556－65A3－11D0－983A－
+　　　　　　　　　　　　00C04FC29E33 height＝1 id＝ADC
+width＝1＞＜／OBJECT＞
+＜SCRIPT LANGUAGE＝″VBScript″＞
+′插入脚本
+SUB Window＿OnLoad  ′初始化
+　Serverstr＝″http／／＜％＝Request.ServerVariables(″SERV－
+　　　　　　　　　　　　　　　　　　　　　　　ER＿NAME″)％＞″
+　　Connectstr＝″DSN＝yypp；uid＝scott；pwd＝scott；connect－
+　　　　　　　　　　　　　　　　　　　　　　　string＝yypp；″
+　SQLstr＝″Select * from student″
+　ADC.Server＝Serverstr
+　ADC.Connect＝Connectstr
+　ADC.SQL＝SQLstr
+　ADC.Refresh
+END SUB
+SUB Update＿OnClick  ′保存
+　　On error Resume Next
+　　插入SSDBGrid控件：
+＜OBJECT ID＝″GRID″WIDTH＝600 HEIGHT＝200
+　Datasrc＝″＃ADC″
+　codebase＝″http／″＜％＝Request.ServerVariables(″SERV－
+　　　　ER＿NAME″)％＞／MSADC／Samples／ssdatb32.cab″
+　CLASSID＝″CLSIDAC05DC80－7DF1－11d0－839E－
+　　　　　　　　　　　　　　　　00A024A94B3A″＞
+　＜PARAM NAME＝″＿Version″ VALUE＝″131072″＞
+　＜PARAM NAME＝″BackColor″ VALUE＝″－2147483643″＞
+　＜PARAM  NAME＝″BackColorOdd″   VALUE＝″－2147483643″＞
+　＜PARAM NAME＝″ForeColorEven″ VALUE＝″0″＞
+　＜PARAM NAME＝″AllowAddNew″   VALUE＝″1″＞
+　＜PARAM NAME＝″AllowDelete″　VALUE＝″1″＞
+＜／OBJECT＞
+　　插入提交按钮：
+＜INPUT TYPE＝BUTTON NAME＝″Update″ VALUE＝″保存″＞
+　　(2)设置属性
+　　在插入对象后，必须适当地设置控件的属性。它所要求的仅仅是：(1)任何一种你所熟悉的DOS环境下的I／O编程技术和共享文件使用方法；(2)任何一种你所熟悉的Windows开发环境中有关线程和共享文件的应用方法。
+1  基本原理
+　　本文采用的方法如图1所示。
+
+图1  原理框图
+　　数据采集卡通过DOS I／O接口程序，对I／O口进行读写操作交换数据；而DOS I／O接口程序与Windows应用程序之间却是通过共享数据文件交换数据。换句话说，对I／O口直接操作的依然是DOS程序，Windows应用程序只是对数据采集间接控制，从而避开了Windows程序不能对I／O口直接读写的限制。
+　　问题的关键是Windows应用程序如何能实时获得I／O口的数据并对其读写进行控制，本文通过线程和共享文件解决这一问题。所谓线程，简而言之就是运行在应用程序中的独立进程，它只是代码的执行体，其处理时间由操作系统控制而不是程序控制。例如，在提交批量数据修改的按钮的“Click”事件中添加如下代码：
+＜SCRIPT LANGUAGE＝″VBScript″＞
+SUB Update＿OnClick
+　If ADC.ReadyState ＜＞ adcReadyStateLoaded then
+　　ADC.SubmitChanges  ′提交修改
+　　ADC.Refresh  ′重新访问数据
+　　Grid.Rebind   ′重新绑定数据
+　Else
+　　MsgBox ″Query results still arriving，Please wait″
+　End if
+END SUB
+＜／SCRIPT＞
+　　至此，基于浏览器的批量数据添加、删除与修改程序的工作就已基本完成了。DOS I／O接口程序通过对I／O口的直接读写完成数据采集并以采集的数据不断更新采集数据文件中的数据。Windows应用程序可同时从采集数据文件中读取数据，效果就好像从I／O口直接读取数据一样。
+1  RDS及其工作原理
+　　RDS(Remote Data Service)是由Microsoft公司开发的基于浏览器的快速而高效的数据连接与发布的基本框架，它的前身V1.0是Advanced Data Connector(简称ADC)，到V1.5后才改名为RDS。另一方面，如果我们需要对DOS线程进行控制或传输数据(如终止线程运行或传递D／A数据等)时，可以以同样方式再建立1个控制数据文件进行“消息”传递。
+2  软件编程
+2.1 DOS部分
+　　本文以市售PCLS－718数据采集卡为例，使用DOS环境下的Borland C＋＋进行软件编程。它是基于HTTP，HTTPS(HTTP over Secure Sockets layer)和DCOM应用协议的客户／服务器分布式应用技术。本文介绍的方法，虽然已具有一定的实用价值，但仍有一些问题需要解决，如安全性问题。这一访问模式与一般的ActiveX Server Page(ASP)不同，如图2所示。
+／／－－－－－－－－窗体Form1应用程序代码－－－－－－－－－／／
+＃include ＜vcl.h＞
+＃pragma hdrstop
+＃include ＜dos.h＞
+＃include ＜STDLIB.H＞
+＃include ＜conio.h＞
+＃include ＜io.h＞
+＃include ＜fcntl.h＞
+＃include ＜sys＼stat.h＞
+＃include ＜share.h＞
+＃include ＜stdio.h＞
+＃include ″thread1.h″
+＃pragma package(smart＿init)
+＃pragma resource ″*.dfm″
+TForm1 *Form1；
+TadaThread *adaThread；
+FILE fADout，*fDAin，*fCtrl；
+int chv，cht，da1，da2；
+／／－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+＿fastcall TForm1(TForm1(TComponent* Owner)
+　　　　：TForm(Owner)
+{
+}
+／／－－－－－－－－－－窗体Form1创建时响应事件－－－－－－－－－－／／
+void ＿fastcall TForm1::FormCreate(TObject *Sender)
+{
+　　　　adaThread＝new TadaThread)(false)； ／／启用DOS
+　　　　　　　　　　　／／I／O接口程序线程
+　　　　adaThread－＞Resume()；
+　　　　fCtrl＝＿fsopen(″Ctrl.dat″，″w＋″，SH＿DENYNO)；
+　　　　　　　　　　　／／建立控制数据共享文件
+　　　　fseek(fCtrl，SEEK＿SET，0)；
+　　　　fprintf(fCtrl，″％d＼n″，1)；／／写入控制字初值“1”
+　　　　fDAin＝fsopen(″DAin.dat″，″w＋″，SH＿DENYNO)；
+　　　　　　　　　　　／／建立D／A数据共享文件
+　　fADout＝＿fsopen(″ADout.dat″，″r″，SH＿DENYNO)；
+　　　　　　　　　　　／／建立A／D数据共享文件
+}
+／／－－－－－－－－－－－每0.2s一次的响应事件－－－－－－－－－－－／／
+void ＿fastcall TForm1::Timer1Timer(TObject *Sender)
+{
+　　da1＝10；
+　　da2＝20；
+　　fseek(fDAin，SEEK＿SET，0)；
+　　fprintf(fDAin，″％d ％d＼n″，da1，da2)； ／／将D／A变
+　　　　　　　　　　　／／换数据写入D／A数据文件中
+　　fseek(fADout，SEEK＿SET，0)；
+　　do {
+　　　　fscanf(fADout，″％d ％d＼n″，＆chv，＆cht)；
+　　　　　　　　／／从A／D数据文件中读取A／D变换数据
+　　　　if(chv＝＝5) ／／A／D通道号为5时
+　　　{
+　　　ListBox1－＞Items－＞Add(FloatToStr(chv)＋
+　　　　　　　　String (″  ″)＋FloatToStr(cht))；
+　　　　／／在窗体Form1的ListBox1中显示A／D通道
+　　　　　　　　　　　／／5的采集数据
+　　　break；
+　}
+　}while(chv＜15)；
+}
+／／－－－－－－－－－－窗体Form1关闭时响应事件－－－－－－－－－－／／
+void ＿fastcall TForm1::FormClose(TObject*Sender，
+　　　　　　　　　　　TCloseAction ＆Action)
+{
+fseek(fCtrl，SEEK＿SET，0)；
+fprintf(fCtrl，″％d＼n″，0)；／／写入终止程序运行控制字“0”
+fclose(fDAin)；
+fclose(fADout)；
+fclose(fCtrl)；
+}
+／／－－－－－－－－－－－线程thread1程序代码－－－－－－－－－－－－－／／
+＃include ＜vcl.h＞
+＃pragma hdrstop
+＃include ″thread1.h″
+＃pragma package(smart＿init)
+／／－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+＿fastcall TadaThread::TadaThread(bool CreateSuspended)
+：TThread(CreateSuspended)
+{
+}
+／／－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+void＿fastcall TadaThread::Execute())
+{
+system(″ada.exe″)；／／运行DOS I／O接口应用程序
+}
+　　为程序略去了采集卡的初始化程序和部分关系不大的语句，为读者在实际应用时应作相应增改。本文所述数据采集方法已成功应用于作者的项目开发中，对其它Windows环境下的应用程序开发也有一定参考价值。在运行测试时，浏览器将自动下载该控件，要注意的是，要正确设置在下面插入的SSDBGrid控件代码中的codebase属性，才可以顺利完成控件的下载过程

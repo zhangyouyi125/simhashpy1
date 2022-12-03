@@ -1,0 +1,95 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+月球探测器轨道设计与地面观测弧
+严　辉　吴宏鑫
+(北京控制工程研究所*北京*100080)
+　　摘　要　本文研究月球探测器轨道设计方法及与地面观测弧的关系。仿真的目的是在确保卫星姿控指标的条件下,挠性天线达到较高的跟踪指向用户星精度。通过建立B平面用迭代方法得到满足要求的月球卫星轨道,并认为定相环形转移轨道的测控优于直接转移轨道。
+　　主题词　月球探测器轨道　轨道转移　跟踪研究
+LUNAR TRAJECTORIES AND TRACKING ARCS
+Yan Hui　Wu Hongxin
+(Beijing Institute of Control and Engineering*Beijing*100080)
+　　Abstract　The paper involves how to establish lunar trajectorjes and their relations with tracking arcs.Direct transfers and phasing loop transfers are researched for lunar trajectories,and lunar orbits satisfied with the requirements can be obtained by iterations in B-plane.It shows the phasing loop transfers are better than the direct transfers in the tracking and guidance.
+　　Key words　Lunar trajectories　Orbital transfers　Tracking studies
+1　引　言
+　　月球探测器飞向月球实际上是求解二点边值问题。其最一般形式是找到连接地球发射点和月球目标点的轨道以使燃料最省。文［1］用优化方法研究了直接命中月球的轨道,本文通过建立B平面得到满足要求的月球卫星轨道［2,3］。
+　　进入90年代,日美月球探测器采用一种间接转移轨道即定相环形转移轨道或周期转移轨道(Phasing Loop Transfer Trajectory),转移轨道的相位为540度、900度、1260度…等,由于轨道绕地几周后再回到月球,故轨道控制比相位180度霍曼直接转移具有更大灵活性,节省修正燃料,且有较长的定轨时间［4,5］。本文比较直接与间接转移轨道与观测弧关系。仿真结果表明,星体姿态对天线指向精度会有较大影响,反映在每次星体姿态保持喷气的时刻,对挠性天线都表现为一个冲击振荡,虽然由于天线自身的阻尼作用,振动会被逐渐减弱,但在很长时间内难以达到满意的跟踪精度。
+2.2　测站坐标系
+　　原点在测站,基准面为地平面,x轴指向南,y轴向东,z轴向上。
+2.3　数学模型
+　　考虑地球、太阳、月球和探测器四体运动方程,不计引力摄动和各扰动影响,在地心惯性坐标系内,有
+
+(1)
+当探测器飞到月球影响球时,可将地心惯性坐标系平移至月心,在该坐标系建立同样的方程。式(1)中,vex,vey,vez为速度,x,y,z为坐标,ge,gm,gs为地球,太阳和月球对探测器的引力,gme,gse为月球和地球,太阳和地球之间的引力。
+　　第4步:根据第3步所得步进参数,进行天线跟踪指向控制。所谓B平面是垂直于无穷远速度的平面,并通过月心。以无穷远速度作为S轴,S与月球轨道平面法向的矢积作为T轴,R由右手法则确定,如图1所示。开环控制较之闭环控制更简便易行,设计思路是使控制频率避开具有较大振动模态分量的挠性天线低阶频率,从而保证天线指向控制的开环稳定性,为下一步跟踪指向闭环控制提供条件。B矢量大小为双曲线短半轴。将月球卫星轨道倾角及近月距用B矢量表示。
+　　②采用整星轮控方案;或在星上安装太阳敏感器,测量偏航角。
+2　挠性天线及星体动力学方程
+　　可以将挠性天线的运动处理为对刚性卫星的扰动作用,挠性天线运动与刚性卫星运动二者之间通过耦合系数连接,用混合坐标法得到既有刚性星体的姿态角,又有模态坐标的混合方程组［1］。
+参考文献
+1　Peter Likins,Yoshiaki Ohkami.Appendage Modal Coordinate Truncation Criteria in Hybrid Coordinate Dynamic Analysis.J.Spacecraft,1976,13(10):661-617
+2　章仁为.静止卫星的轨道和姿态控制.科学出版社,1987
+3　H.Schmeichel,T T.McElroy.TDRSS Single-Access Antenna Control System.AAS 80-007:115-146
+4　傅志方.振动模态分析与参数辩识.机械工业出版社,1990
+5　王鸿钰.步进电机控制技术入门.同济大学出版社,1990　
+本文于1996年4月1日收到
+。
+　　α是天线绕其Y轴的转动角度,qi,ζi,Ωi,bi(i=x,y,z)分别为天线三轴模态坐标,阻尼系数,特征频率和转动耦合系数。
+4　计算实例
+4.1　任务
+　　a.开始绕月时间为1997年8月25日12点;
+　　b.月球卫星轨道平面与月球赤道面垂直;
+　　c.近月距为100公里。
+4.2　约束
+　　a.停泊轨道倾角为43度。
+　　b.停泊轨道高度为200公里。
+4.3　初始条件
+　　考虑到能量最优,直接转移轨道的飞行时间大致为4天。若要满足任务要求,由停泊轨道至转移轨道的变轨时间为1997年8月21日9时36分,由圆锥曲线拼接法可得近似初始条件为
+fc0=180°
+v0=10.930km/s
+其中v0为初始速度,fc0为地心扫角,变轨速度方向沿停泊轨道切线,地心扫角由地月变轨点量至月球卫星轨道插入点,具体计算方法可见文［1］,并转换到地心坐标系中。
+4.4　初值迭代
+　　用牛顿迭代法变化初值v0和fc0,得到满足要求的B矢量,从而满足月球卫星设定的轨道倾角和近月距。一般迭代次数为3-10次,表1是直接转移的迭代过程,开始绕月的时间为1997年8月25日11时42分。
+表1　直接转移的迭代
+
+迭代次数初始速度(km/s)地心扫角(°)轨道倾角(°)近月距(km)
+110.930180-29.0729134.9
+210.91516179.85440.562005.5
+310.917420179.54888.53114.0
+410.917465179.535-89.92100.2
+
+　　表2为900度间接转移的迭代,其变轨时间经过试算调整为1997年7月31日20时47分,开始绕月时间为1997年8月25日11时35分。
+　　非阻尼(实际阻尼系数为0.005,可近似为非阻尼运动)的天线驱动万相轴n步后的运动方程可描述为:
+α=Δα∑nj=1［1-cosω(t-tj)］u(t-tj)
+(1)
+　　其中,Δα――万相轴步距
+ω――天线谐振频率
+u(t-tj)――单位阶跃函数
+　　考虑单位阶跃函数作用在以τ为间隔的不同时刻上:
+　　令:　t2k-1=kT
+t2k=kT+τ
+　　其中,k是1～n/2的整数,T是谐振动周期,0＜τ＜Τ
+　　将它代入方程(1),可得:
+α=n/2Δα［2-(1+cosωτ)cosωt-sinωτsinωt)
+(2)
+　　若取步进间隔τ为:
+τ=T/n
+(3)
+　　则n步后由于挠性振动荡项相互抵消,步进值只与步距和步数有关了:
+α=nΔα
+　　另外,为了配合跟踪速度α,可选取步进周期为:
+
+(4)
+　　应取接近跟踪速度的最小n值,但是如果此时步进周期接近天线的某个揩振周期时,就要取n+1,工程实际中,一般取τs=1.2T～1.8T,也就是使步进周期取在天线揩振周期的±20%内为宜。图3为直接转移的观测弧,图4为900度间接转移的观测弧。在借鉴和改进有关抑制挠性天线弹性振动研究的基础上,初步设计了星―地回路的挠性天线指向控制方案。
+　　图3和图4表明,间接转移的观测弧的时间是直接转移的数倍,且多次经过近地点和远地点,说明间接转移的测控要优于直接转移。
+5.2　结论
+　　a.B平面误差算法具有较好的收敛性;
+　　b.定相环形转移轨道测控优于直接转移轨道。
+参考文献
+1　严辉,陈士橹,吕学富.给定条件下直接命中月球轨道计算方法.中国空间科学技术,1996,3:17-21
+2　Carrico J.,etc.Rapid Design of Gravity Assist Trajectories,Proceedings of the ESA Symposium on Spacecraft Flight Dynamics.Germany,1991
+3　Carrico J.,etc.An Interactive Tool for Design and Support of Lunar,Gravity Assist and Libration-Point Trajectories.AIAA 93-1126
+4　Uesugi K.,etc.Mission Operations of the Spacecraft HITEN,Proceedings of the ESA Symposium on Spacecraft Flight Dynamics.Germany,1991
+5　Kaufman B.Mission Design of the CLEMENTINE Space Experiment.AAS 95-124
+本文于1997年5月20日收到
+　　*国家自然科学基金项目19782004

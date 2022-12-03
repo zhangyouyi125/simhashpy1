@@ -1,0 +1,74 @@
+航空计测技术
+Aviation　Metrology　&　Measurement　Technology
+1999年 第19卷 第3期 Vol.19 No.3 1999
+
+
+
+拟合激光陀螺数学模型的方法研究
+杨　恒啊〕隆∶鳌∏赜涝　王建培
+Frank*Bosselman
+摘　要　在分析激光陀螺的数学模型和三次样条函数拟合原理的基础上，针对俄罗斯某型低精度激光陀螺实际输入-输出特性曲线的数据，应用三次样条拟合方法进行分析处理，推导出了适用于非线性工作范围误差补偿且符合实际陀螺特性的数学模型。
+　　4)卸荷时二级杠杆的位置到达无触点行程开关JK的位置时，继电器1J有电吸合，其常闭触点断开，继电器2C失电，电机停转、卸荷完毕，这时主轴应摆出10°左右，让开光路，开始测量压痕。
+关键词　三次样条拟合原理　曲线拟合　激光陀螺(环形激光器)　数学模型
+A Study on Fitting Ring Laser Gyro Mathematic Model
+Yang Heng　Frank.Bosselman　Chen Ming　Qin Yongyuan　Wang Jianpei
+　　Abstract　Based on the analysis of mathematic model of ring laser gyro (RLG) and the principle of cubic spline data interpolation,pointing to the data of practical input-output characteristic curve of some Russian model of RLG and making analysis and treatment with the cubic spline data interpolation method,the mathematic model applying to error compensation in the nonlinear working range and being accordance with the practical gyro characteristic has been deduced.The method proposed in this paper can be applied to accuracy compensation of the RLG with worse linearity and lower working accuracy in the working range.
+　　Key words　Principle of cubic spline data interpolation,Curve fit,Ring laser gyro,Mathematic model
+
+　　前言
+　　激光陀螺作为一种可靠、高精度、低成本的角度传感器，是现代高科技的结晶，也是世界各国竞相开展研究的焦点。80年代中期，美国激光陀螺随机漂移的指标就已优于10－3(°)／h，在波音757／767飞机上装备激光陀螺的成功，标志着激光陀螺已进入实用阶段。由于激光陀螺的制造涉及环行激光器稳频、抖动偏频、精密光学加工等复杂工艺，因而工作区线性好、精度高的激光陀螺造价较为昂贵。
+1.2　加卸荷支杆部分
+　　这部分主要是把变速箱的动作传至支杆来操纵加荷和卸荷，支杆头部有触点A，以发出负荷保持时间为开始信号，并通过时间继电器2SJ给出负荷保持时间终止信号，支杆下部有一微动限位开关WK2(见图1)以限制砝码下降最低位置的行程。
+1　机构简述
+1.1　主轴杠杆部分
+　　这种硬度计的主轴为空心半开的摆动主轴，主轴的摆动由二级杠杆与推杆及复位弹簧操纵，打硬度时主轴摆至垂直位置，卸荷后向前摆出10°左右，故为无摩擦主轴。
+1　激光陀螺的理想输出模型
+　　理想情况下，当环形激光器在惯性空间旋转时，具有不同辐值、相位和偏振特性的相向行波将呈现非交互效应。这时，激光陀螺的输入―输出特性为图1中直线1，它通过坐标原点，与横坐标轴之间夹角的正切等于比例系数k，因而，陀螺的理想数学模型是斜率为k的一条直线。在实际情况中，激光陀螺的输入―输出模型曲线(如图1中曲线2)存在着闭锁区，也就是说激光器转速小于闭锁阈区时就感测不出角速度的变化。此时反向行波所合成的驻波不再驻留于惯性空间，而是被环形腔所带动，即驻留在环形腔上。
+3.3　变荷机构部分
+　　在试验过程中，有时会出现预选负荷不准的情况。为了能使激光陀螺的实际输入―输出特性曲线更接近于理想模型，美国Honeywell机械抖动偏频是激光陀螺消除闭锁现象的第一种实用的方案，也是目前性能最优良的方案之一。在图1中曲线3应是采用Honeywell机械抖动偏频后的输入―输出特性曲线，由图中可看出曲线3消除了曲线2的闭锁且较曲线2更接近理想特性曲线1。我们的目的是通过对一组经过抖动偏频后的实测点拟合，获得曲线3的估计方程，从而作为激光陀螺线性工作范围补偿的近似标准。
+2　样条的概念和三次样条函数的表达式
+　　样条是绘图员用来描绘光滑曲线的一种简单工具。
+1　机构简述
+1.1　主轴杠杆部分
+　　这种硬度计的主轴为空心半开的摆动主轴，主轴的摆动由二级杠杆与推杆及复位弹簧操纵，打硬度时主轴摆至垂直位置，卸荷后向前摆出10°左右，故为无摩擦主轴。试验的重要环节都有自动控制及保险机构，整个工作过程有指示灯显示，并有信号报警，使用比较方便，但在使用过程中，光学系统、变荷机构以及定位控制系统都易出故障，下面对其工作状态和具体的使用情况进行分析。
+3　使用及维修过程中易出现的问题
+　　该型号硬度计作为一种普及型的硬度计，使用的单位比较多，在使用过程中出现的问题也比较多，根据维修经验,总结以下几点：
+3.1　加荷保护部分
+　　加荷部分有三级定位保护，如A触点控制的延时继电器1SJ失控，其常闭触点脱不开，则1C维持导通状态，电机正转，支杆会继续向下运动，但当支杆碰到限位开关WK3或定位微动开关WK2时便停止加荷动作。
+
+
+图1　激光陀螺的理想输出模型(直线1)、未加抖动偏频的实际模型(曲线2)和加抖动偏频消除闭锁区的实际模型(曲线3)
+
+三次样条函数的定义：分段函数
+
+若y满足下列条件，称为三次样条函数：①在x1，x2，x3，…，xn上取值y1，y2，y3，…，yn；②在每个区间上[xi,xi＋1](i＝1，2，…，n－1)是一个三次多项式；③在[x1,xn]上有连续的一阶和二阶导数。
+我们考虑在区间[xi,xi＋1]三次样条函数的表达式问题。
+2　使用操作及电器动作过程
+　　1)打开电源开关K1，红色指示灯1 D亮，然后根据试验的需要变换负荷，打开光源开关K3，光源灯3D亮，然后转动丝杠的手轮使被测试样顶至保护罩。如果已知k1，k2，k3，…，kn的值，则对于给定的x∈[xi,xi＋1]便可以按公式(2)进行插值计算。当杠杆降低到适当的位置再按总停按钮3AN,即可进行修理。
+　　在自然边界条件下k1＝kn＝0，即样条在首尾两端自然伸直，此时有关于k1，k2，k3，…，kn的方程组(其中Φi＝3ci＝3P[xi－1,xi,xi＋1])
+
+该方程组也可用矩阵形式表示(此处略)
+3　实验分析与数据处理
+　　在光学平台上，对某型激光陀螺的工作区间0～110(°)／s以10(°)／s的间隔进行采样测量并求取平均值， 得到图2所示的对应转速的12个输出脉冲频率测
+
+
+图2　激光陀螺的12个采样点
+试点。当杠杆降低到适当的位置再按总停按钮3AN,即可进行修理。由图中可看出，在20～60(°)／s及100～110(°)／s工作范围内，陀螺的非线性化较为严重，实验证明，应用拟合的模型对实测点进行工作区的非线性校准补偿可以提高激光陀螺作为角速度传感器的测量精度。
+
+
+
+图3激光陀螺三次样条分段函数得到的拟合曲线
+4　结论
+　　由于三次样条函数曲线具有连续的曲率，符合激光陀螺的数学模型特性，因而采用三次样条函数插值的方法获得的曲线模型可作为激光陀螺线性工作范围补偿的近似标准。本文所提的补偿方法对于线性工作范围较差、精度较低的激光陀螺提高测量精度具有一定的实用价值。
+资金项目：中德合作研究项目,博士点基金资助
+作者简介：26岁　男　博士研究生
+作者单位:杨　恒啊〕隆∶鳌∏赜涝　王建培(西北工业大学自动控制系183＃信箱，西安市，710072)
+　　　　　Frank*Bosselman　(德国布伦瑞克工业大学导航与控制研究所)
+参考文献
+　　1　Pyrna.Test Methods and Test Facilities to Determine Fiber Optical Gyro Characteristics at IABG Inertial Test Laboratory.Symposium Gyro Technology,Stuttgart,GERMANY:1988,17.2～17.32
+　　2　Hugh J.Murphy.Digital pathlength control for ring laser gyros.United States Patent[19\],5108182.1992\|04\|28
+　　3　Bo H G.Pathlength controller for ring laser gyros.United States Patent[19\],4320974.1982\|05\|23
+　　4　Forederick Aronowitz.美国激光陀螺仪研制报告.惯导与仪表,1997,(1):42～46
+　　5　曹立凡,史万明.数值分析.北京:北京工业学院出版社,128～226
+收稿日期：1998-03-17
+修订日期：1998-07-02

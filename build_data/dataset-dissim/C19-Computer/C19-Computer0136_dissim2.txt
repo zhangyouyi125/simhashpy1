@@ -1,0 +1,140 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第10期 Vol.19 No.10 1999
+
+
+
+用NSAPI增强Web Server 功能
+汤敏　郑纪蛟
+　　摘　要　本文介绍了HTTP协议的简单工作过程和NSAPI的有关知识，并讲述了如何用NSAPI编写自定义SAF。
+　　关键词　HTTP, NSAPI, SAF, CGI
+1　NSAPI基础
+1．1　简介
+　　NSAPI是Netscape Server Application Programming Interface的缩写，它是用来实现SAFs(即Server Application Functiions，Server已自身带有一套SAFs，你可以用NSAPI编写自己的SAFs以便扩展Server功能)的，让服务器能够把对请求的处理分成若干小的步骤来完成，这样就可以合理安排每一个小的步骤，从而满足较好的速度和灵活性的要求。NSAPI是由NCSA和CERN Web Server的开发者设计的,为程序员提供了速度、与Server结合的紧密性以及灵活性，但同时又都需要对Web Server的处理过程有较深的理解。你如果是写CGI(Common Gateway Interface）,就不会用到NSAPI，而只需用WAI（Web Application Interface）；如果想开发有自己特色的身份验证，登录过程，或者是想修改已有的Server的行为，你就会用到NSAPI。
+1.2　HTTP基础
+　　HTTP协议是快速、简单和可扩展的协议，协议的具体内容我们在此不作讲解，有兴趣的读者可自己参阅有关文献。下面，我们对HTTP的工作过程作一个大致浏览：
+　　. 浏览器和服务器相连接并且发送请求。
+　　. 服务器接收请求，产生答复并断开连接（如果接收的是一个要求保持连接的请求，则不断开连接直到下一个请求到来）。
+　　请求是由Method,Universal Resource Identifier(URI)以及由空格分开的HTTP协议版本信息组成。请求通常由几个头（headers）和标志着头结束的一行空格，时常还有主体数据（body data）组成。Header提供请求或客户的有关信息，Body data典型的是POST和GET方法。
+　　典型的一般都是像下面的样子：
+　　GET /index.html HTTP/1.0
+User-agent: Mozilla
+Accept: text/html, text/plain, 
+image/jpeg, image/gif, */*
+　　服务器收到请求并处理它，且每次只处理一个请求，虽然服务器能够同时处理多个请求。处理一个请求必须经过几个步骤。我们称这种处理方式为“请求-应答处理”（Request-Response process），用NSAPI写的SAFs正是在这种处理过程中被执行。
+　　服务器产生一个包含HTTP协议版本、HTTP状态码(status code)以及被空格分开的解释短语（reason phrase）的应答，通常应答后面是几个头（header）和应答的主体数据（body data）。典型的应答如下所示：
+　　HTTP/1.0 200 OK
+Server: Netscape Enterprise Server/3.0
+Content-type: text/html
+Content-length: 83
+<HTML>
+<HEAD><TITLE>Hello World</Title></HEAD>
+<BODY>Hello World</BODY>
+</HTML>
+　　状态码和解释短语告诉浏览器服务器如何处理了请求。一般状态码200表明服务器成功处理了请求并且主体数据含有请求所要的项目，其他状态码是重定向请求于其他服务器或浏览器的缓存（cache）或者是出了错误（如404是找不到被请求的项目）。
+　　② 确定该请求操作产生的必要Web页面。主要研究分布式计算系统、分布并行算法。
+　　每一步为达到它的目的都需要执行一番操作，而这些操作是通过SAFs实现的。服务器内带有多种SAFs，这些SAFs实现服务器的功能和它的高级特性。
+　　每一个SAF都有自己的设置，并且它还有权访问到请求的相关信息和由以前SAFs创建和修改过的服务器变量（Server Variables），SAF依靠这些信息执行自己的操作。SAF还可以根据目前的请求和自身范围内的目的检查、修改或创建服务器变量。
+　　每一个SAF有返回代码以便告诉服务器是否执行成功。服务器依据这些返回代码可以决定是跳到下一步、执行当前一步的下一个SAF还是取消处理。
+　　通常，所有这些步骤是按顺序完成的，产生的答复发送给客户（在Service这一步），然后在日志文件中增加一条记录。然而，如果处理因为什么原因而被取消（如请求的资源不存在或用户无权访问等），服务器就跳到一个新的称作“Error”的步骤，这样Error处理步就替代了Service步。Error SAF会给客户发送描述问题的HTML页面，然后计入日志文件。
+2　指示和服务器内含SAFs
+　　Enterprise Server是通过几个文本文件来配置的。如果预送的Web页面有效率低，则实际上是传送了大量无效Web页面，这不仅不会提高浏览器响应速度，而且会因为加大网络负载引起网络传输速度降低而降低响应速度。
+　　两种预送页面选择策略各有一定的适用范围，可根据实际情况选用。magnus.conf文件是服务器的主配置文件，它决定服务器的名字、端口号和其他一些全局性设置；mime.conf文件决定如何将文件扩展名映射成HTTP的文件类型；obj.conf文件用来配置初始化和请求-应答处理中每一步SAFs的操作。你可编辑这个文件以便安装和配置自己的SAFs。
+　　obj.conf文件中含有指导初始化和请求-应答处理中每一步SAFs的操作的指示行（directive line）。请求-应答的指示（directives）按照<Object> 标记分成对象（Objects）组, 它以标签<Object>开始以标签</Object>结束。将它们称为“对象”是因为它们继承其它对象的行为。缺省的对象控制服务器对所有请求的缺省操作。其它对象要针对特定请求继承和（或）修改缺省的对象行为。
+　　当对象的参数与目前请求中的值相匹配时，它就被使能（Enabled）。一个对象标签有name和ppath两个参数，它们都可有自己的通配符。
+3.2　预送页面的选择
+　　当前因特网的网络带宽不大，如果预送页面的有效率高，则在整体效果上就是把用户要用到的必要Web页面提前传送，并不会加剧网络拥塞，相反的会因为Web Browser减少了对服务器的访问次数而缓和网络拥塞状况。处于使能状态时，其它对象中的指示就象缺省对象中的同种指示一样，这就让我们可以改变缺省对象的行为。
+　　指示行决定在请求-应答的每一步应执行哪些SAF。
+　　关键词　预送，响应时间，Web浏览器，Web服务器
+THE ACCELERATION TO WEB SERVER BASED ON
+PRE-SENDING TECHNOLOGY
+Tan Zhenqiang　Chen Xinmeng　Zeng Yan
+Department of Computer Science and Technology, Wuhan University, Hubei.Wuhan 430072
+　　Abstract　On account of the slow speed of Web Service, the paper introduces a kind of technology to accelerate the Web service based upon pre―sending Web pages . Secondly, we discuss the strategies to select pre―sent pages and to catch suitable time for pre―sending Web pages. Finally, we gave the experiment results and appraised it.
+　　Keywords　Pre―send, Respond time, Web browser, Web server
+1　Web浏览体系现状
+　　Internet的个人用户发展迅速，使用IE或Netscape进入Internet，并通过Web访问世界各地的Web服务器成为一种时尚，然而因特网用户可能都曾体验过响应速度慢的上网浏览经历，因此，采取适当的加速策略提高Web的浏览速度非常重要。“充分利用网络在整个时间段的带宽”即在Web Browser端并未发出Web请求时，Server也向该Browser传送它极可能用到的Web页面。它能作为独立Web加速软件的主页关联关系发现的办法。
+　　NameTrans：将请求中的URL中的转化为物理文件系统的路径。
+　　PathCheck：检查NameTrans中所转化的物理路径的有效性和存取权限。
+　　ObjectType：决定请求资源的MIME的类型。
+　　Service：发送结果给客户。它基于以下几个条件：(1)根据当前浏览器用户的浏览行为能有效的预测该用户未来将要用到的Web页面。
+　　AddLog：记录事务处理有关的信息。
+表1　页面关联表
+
+必要Web页面号预送Web页面号集
+1{ 2,3,4 }
+……
+N{ np1,np2...... }
+
+　　② 依据页面被访问的历史决定预送页面；即在服务器空闲时间段里，利用数据挖掘技术［2,3］，将满足一定支持度与可信度的“必要Web页面号→预送Web页面号”关联提取出来，刷新页面关联表。如果预送的Web页面有效率低，则实际上是传送了大量无效Web页面，这不仅不会提高浏览器响应速度，而且会因为加大网络负载引起网络传输速度降低而降低响应速度。它们从obj.conf文件、server和以前的SAF中接受参数。下面是SAF的“C”接口：
+　　int function(pblock *pb, Session *sn, Request *rq);
+　　pb含有obj.conf文件中的SAF配置行参数，sn含有与单个TCP/TP会话有关的信息，rq含有与当前请求相关的信息。SAF还有返回码表示该函数执行的情况，服务器根据返回码决定如何处理当前的请求。
+3.2　创建一个自定义SAF
+　　自定义SAF是一组存在于由服务器加载和调用的共享库中的函数。下面是创建自定义SAF的步骤：（后面附有一例）
+　　a) 用NSAPI编写自定义SAF的源程序，每一个SAF为一个指示（directive）服务。
+　　注意：写SAF时要写线程安全（thread-safe）的程序，任何阻塞（blocking）都可能影响服务器性能，每个SAF都带有参数，参数可在obj.conf中设置。
+　　b) 编译并链接源程序，创建共享库（.so, .sl, or .dll）文件。编译要用特定平台的编译器，Windows NT可用MicrosoftVisual C++6.0。服务器根目录下的include目录里有NSAPI的头文件，现在所有的头文件信息都包含在“nsapi.h”文件中，其他头文件都是向后兼容的，只要简单的包括“nsapi.h”即可。
+　　c) 修改obj.conf文件配置服务器以便加载含有自定义SAF的共享库，使在适当时调用自定义SAF。
+　　先在obj.conf文件中其他初始化指示后加下面一行：
+　　Init fn=load-modules shlib=［path］sharedlibname
+funcs="SAF1,...,SAFn"
+　　shlib是共享库在本地文件系统中的路径，funcs是一系列由逗号分开的可从库中加载的的函数名，函数名是区分大小写的。
+　　② 确定该请求操作产生的必要Web页面。各进程间运行状况如图1，图1描述了采用第二种方式实现加速预送技术的方法，这个思路适合于开发独立的浏览器服务器端加速软件，具有普遍意义。
+　　（2） Web Server收到该操作信息后，执行以下操作：
+　　① 处理并解释该操作信息。
+　　e) 从浏览器访问服务器以便测试自定义SAF。注意的是一定要禁止cache功能。在Navigator可以再点击reload按钮时按住shift键。
+　　例：（本例是执行身份认证的函数）
+#include "base/pblock.h"
+#include "base/session.h"
+#include "frame/req.h"
+typedef struct {
+char *name;
+char *pw;
+} user―s;
+static user―s user―set［］ = {
+{"joe", "shmoe"},
+{"suzy", "creamcheese"},
+{NULL, NULL}
+};
+#include "frame/log.h"
+#ifdef XP―WIN32
+#define NSAPI―PUBLIC ―　―　declspec(dllexport)
+#else /* !
+　　（3）Web Browser端先将必要页面进行解释，以此响应Web用户，同时把预送页面写入Browser端机器的Cache中!XP―WIN32 */
+NSAPI―PUBLIC int hardcoded―auth
+(pblock *param, Session *sn,Request *rq)
+{ 
+/* 由用户身份认证得到的参数 */
+char *pwfile = pblock―findval("userdb", param);
+char *user = pblock―findval("user", param);
+char *pw = pblock―findval("pw", param);
+/* 临时变量*/
+register int x;
+for(x = 0; user―set［x］.name != NULL; ++x) {
+/* 如果不是我们预期的用户，则继续 */
+if(strcmp(user, user―set［x］.name) != 0)
+continue;
+/* 验证口令 */
+if(strcmp(pw, user―set［x］.pw)) {
+log―error(LOG―SECURITY, "hardcoded-auth", sn,
+rq,"user %s entered wrong password", user);
+/* 再问一次以便增强函数功能 */
+return REQ―NOACTION;
+}
+/* 如果返回REQ―PROCEED, 则该用户为我们所接受*/
+return REQ―PROCEED;
+}
+/* 如果不匹配，再问一次*/
+log―error(LOG―SECURITY, "hardcoded-auth", sn, rq,
+"unknown user %s", user);
+return REQ―NOACTION;
+}
+作者简介：汤敏　硕士研究生。研究方向：计算机网络和信息通信系统。
+郑纪蛟　教授。
+3.2　预送页面的选择
+　　当前因特网的网络带宽不大，如果预送页面的有效率高，则在整体效果上就是把用户要用到的必要Web页面提前传送，并不会加剧网络拥塞，相反的会因为Web Browser减少了对服务器的访问次数而缓和网络拥塞状况。
+作者单位：浙江大学计算机系　浙江.杭州（310027）
+参考文献
+［1］　T.Berners-Lee,R.Fielding,H.Nielsen. Hypertext Transfer Protocol HTTP/1.0. RFC1945，1996；5(17)
+［2］　Tony Beveridge,Paul Mcglashan. ISAPI/NSAPI Web高级编程. 北京：中国水利水电出版社，1999，1
+收稿日期:1999-05-05

@@ -1,0 +1,28 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS
+1999年　第1期　No.1　1999
+
+
+
+本刊加入ChinaInfo信息服务系统申明
+　　为了实现科技期刊编辑、出版发行工作的电子化,推进科技信息交流的网络化进程,经研究决定,本刊入网“ChinaInfo(中国信息)网络资源系统《电子期刊》”,所以,向本刊投搞并录用的稿件文章,将一律由编辑部统一纳入ChinaInfo信息服务系统,进入因特网提供信息服务。凡有不同意将自己稿件纳入因特网传送交流的作者,请另投它刊。根据设计部门的要求,对P=0～0.05MPa段的压力、位移采样值进行线性拟合,拟合直线的斜率K定义为表征口盖板结构刚度的指标。
+　　ChinaInfo系统是由国家科委创力,国家科委信息司组织实施,中国科技信息研究所万方数据网络中心编辑制作的开放式因特网络信息资源系统,《电子期刊》是该系统中的重要信息服务栏目之一,已在98年内逐步制作编入200种科技期刊的全文内容。
+　　主题词　SiC束丝纤维　SiC颗粒　混杂增强　LY12铝合金　外压试验
+PREPARATION AND STRUCTURAL STIFFNESS 
+OF HYBRID SiC REINFORCED ALUMINUM 
+COMPOSITE HATCH COVER PLATE
+Yang Deming Pan Jin Zhuo Yue Wan Hong Fei Xiaoqing Yin Xinfang
+(Dept.of Materials Engineering and Applied Chemistry,National University of 
+Defense Technology．Changsha．410073)
+Sheng Zuming Zhong Fuqing Sun Jitong
+(Systems Engineering Institute,China Academy of Launch-vehicle Technology．Beijing．100076)
+　　Abstract　A composite hatch cover plate of aluminum alloy reinforced with SiC fiber and particulate,preparing by a self-sealed liquid pressure infiltration process,has been introduced.By using an external hot pressure test apparatus,the structural stiffness of the hatch cover plate has been eveluated at room temperature and 400℃,respectively.The results show that the composite plate had an increase of 50% in stiffness comparing with aluminum alloy plate.At 400℃,the stiffness of composite plate increased about 80% more than that of aluminum alloy plate.
+　　Key words　SiC fiber SiC particulate LY12 aluminum alloy Hatch cover plate External hot pressure test
+1　引言
+　　飞行器仪器舱操作孔的盖板(以下称口盖板)外形类似中国传统的瓦片,其弧形型面是直径大于1m、锥角15°锥面的一部分,母线长160mm,厚度2.13±0.15mm。
+本刊电子版网址:　http://www.chinainfo.cn.net/periodical
+/~kjqk
+　　
+　　特此申明
+《宇航学报》编辑部
+一九九九年元月

@@ -1,0 +1,90 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+竞争学习模糊神经网络及在导弹
+故障诊断中的应用
+胡昌华　王青　陈新海
+　　摘　要　尽管基于解析冗余的故障诊断方法有许多突出的优点而越来越多地得到研究和应用，但它依赖于系统的模型，当系统存在非线性或不确定性时，存在难以建模的困难，模糊神经网络可以通过学习建立系统的模型，且模型参数有明确的物理意义，初始参数易于选择，成为解决这一问题的优选途径，作者通过把模糊神经网络的学习转化为竞争聚类和线性优化问题，基于竞争聚类和最小二乘原理，提出了一种模糊神经网络学习算法，并在某伺服机构上进行了学习和故障诊断的实验，获得了良好的实验结果。
+　　主题词　故障诊断　竞争学习　模糊神经网络
+FUZZY NEURAL NETWORK BASED ON COMPETITIVE 
+LEARNING AND ITS APPLICATION TO 
+FAULT DIAGNOSIS OF MISSILE
+Hu Changhua
+(Section 302,Xian Inst.Of Hi-tech,Hongqing town . Xi'an . 710025)
+Wang Qing
+(Department of Automation,Beijng University of Aeronautics and Astronautics . Beijing . 100084)
+Chen Xinhai
+(College of Aeronautic,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　The fault Diagnosis based on analytical redundancy depends on system's model,while it is difficult to get the system's model when the system is non-linear or uncertain time-varying,there are some difficulties to put this method into application of non-linear system.The fuzzy neural network can build the system's model by learning,and the model's parameter established by this method has clear mean,it provide an effective way to solve the above problem.The key of the Application of the fuzzy neural network is the determination of its parameters.Different from the other researchers,the authors convert the learning process to cluster and linear optimum,based on competitive learning and least-square error criterion,suggest a learning algorithm for the fuzzy neural network system,the experiment in certain servo-mechanism get very good result.
+　　Key words　Fault diagnosis Competitive learning　Fuzzy neural network
+1　引言
+　　对于导弹等大型复杂系统，对其可靠性提出了极高的要求，系统应具有故障诊断和容错能力，美国NASA就曾规定空间机器人应有一个故障诊断系统。基于解析冗余的故障诊断方法不需要增加硬件，利于减小系统的体积和重量，在航天器控制系统故障诊断和容错控制中得到了越来越多的研究和应用。问题是基于解析冗余的故障诊断和容错控制方法需要系统的精确数学模型，而对于具有不确定时变的系统或非线性系统，很难用机理分析的方法建立系统的数学模型，近年来，模糊神经网络的任意非线性函数逼近能力得到了广泛研究和证实，而与人工神经网络相比，模糊神经网络的参数有明确的物理意义，初始参数的选择有一定的依据，显示出更大的优越性。
+表1
+
+类型结构操作准确度校准造价
+地中衡复杂简单高复杂昂贵
+小台面较复杂复杂高很难较高
+千斤顶简单简单高简单低
+
+
+　　在以往的千斤顶式飞机称重系统中，最不好解决的是称重的准确度和重复性问题。
+2　自适应模糊逻辑系统――一种模糊神经网络
+　　模糊神经网络由四部分组成：模糊化，模糊规则库，模糊推理机和反模糊化。
+2.6　键盘及显示
+　　由于本系统所用按键不多，故我们采用了独立式按键。它的原理框图如图1所示。用继电器控制它的不同的触发点，可产生不同的音乐，这样易于识辨不同的事件。
+　　模糊推理机是利用模糊规则库中的模糊规则来完成由输入空间上的模糊集到输出空间的模糊集上的映射，设是输入空间上的任一模糊集，则每个模糊规则Rk确定了一个定义于输出空间的模糊集CA . Rk，其隶属函数为：
+CA . Rk=sup{A(X)★Rk(X,Y)}　　　　　　　　　　　　(1)
+　　反模糊化完成从输出空间上的模糊集到输出空间上的确定值的映射，反模糊化中比较多采用的方法为“中心平均”反模糊化方法，即
+　　　　　　　　　　　　　　　(2)
+　　隶属函数常用的形式有三角形、梯形、高斯型等几种形式，如果隶属函数为高斯型的隶属函数，则
+　　　　　　　　　　　　　(3)
+　　如果隶属函数取为高斯型的隶属函数，推理规则中的T算子取代数积，反模糊化取“中心平均”的方法，则得模糊神经网络的描述
+　　　　　　　　　　　(4)
+　　(4)式的模糊逻辑系统与归化的径向基网络(隶属函数为高斯型非常相似，因此可把(4)式描述的系统看成一种模糊神经网络。
+3　模糊神经网络的竞争学习算法
+　　类似文［1］，易证(4)式的模糊神经网络可以以任意精度逼近任意非线性函数。(4)式的模糊神经网络用一条规则对应一组数据，Xjk为该组数据对应的输入模式的中心，如果固定σjk，则问题归结为如何确定Yk和Xjk，Xjk可由竞争学习方法确定。
+6　结束语
+　　这种新研制的便携式飞机称重仪已在南昌飞机制造公司、深圳中海直公司、新乡陆航维修大队、珠海直升机公司、通县陆航飞行团等单位使用，均得到了较好的评价。
+
+
+图5　全焊接密封充氮称重传感器
+　　对于姿态称重中的立体重心的计算,我们专门编制了一套计算机解析算法的程序，除了计算立体重心还打印出各种相关数据的称重报告。如果完全用人工进行过程控制，不仅难以保证升温、恒温的准确性，而且工作人员在长时间工作中容易因疲劳而造成不应的的失误。它的实际输入输出关系为：
+Vo＝247.3(Vth＋0.011)
+其中，Vo为AD595的输出电压，单位为mV；Vth为热电偶的输出电压，单位为mV。
+2　AWS-3的工作原理
+　　AWS-3型飞机称重系统是由四只称重传感器和一台指示仪表构成。
+　　用竞争学习方法确定聚类中心后，剩下的问题是如何确定Yk
+　　令
+　　　　　　　　　　则(4)式变为(8)式
+　　　　　　　　　　　　　　(8)
+hT(k)=［R1,R2,…,RM］,θ=［Y1,Y2,…,YM］T
+　　取性能指标为极小化J确定Yk，得
+］
+4　基于模糊神经网络的非线性系统故障诊断
+　　文［5］对基于观测器的故障诊断方法进行了深入的分析，由文［5］易得图1所示的用模糊神经网络作为观测器的故障诊断系统。
+
+图1　基于模糊神经网络的非线性系统故障诊断原理图
+　　利用系统正常工作的输入输出数据，用竞争学习算法建立模糊神经网络，使之与实际系统并行工作，当系统正常工作时，二者的残差比较小，一旦系统偏离正常工作状态或故障时，则二者的残差就比较大，据此借助一定的故障分离策略就可实现故障诊断，
+5　基于模糊神经网络的某导弹伺服机构故障诊断实验及结果分析
+　　导弹伺服机构是一个具有严重非线性的部件，采用机理建模的方法得到的模型很复杂而失去使用的价值，因此我们根据伺服机构的正常工作数据利用本文的方法建立模糊神经网络，并构造图1所示的诊断系统，考察这种模糊神经网络的非线性逼近能力和基于模型的故障诊断能力。针对这种情况，我们以单片机为核心设计了煤样工业分析方法的温度控制系统。利用正常系统的输入输出测量数据建立模糊神经网络，以该模糊神经网络作为伺服机构的观测器，构造图1所示的基于模糊神经网络的故障诊断系统，观测残差的输出情况。再结合K型热电偶的分度表，我们将会得到AD595的输出为10 mV／°C，可见它是线性输出，这使得硬件电路和软件编程都变得比较简单。
+
+图2　伺服机构正常残差输出随时间变化曲线
+
+图3　存在反馈电位计接触不良故障情况下残差输出随时间变化曲线
+　　实验表明，基于竞争学习的模糊神经网络能以较高精度逼近具有严重非线性的系统，据此构造的故障诊断系统可以有效地进行故障检测与诊断。
+3　主要技术指标及重心计算公式
+　　AWS-3型飞机称重仪的主要技术指标如下：
+　　1)量程：可配10 kg～200 t称重传感器四只，可满足各种型号飞机的称重需要;
+　　2)置零范围：全量程;
+　　3)直流供桥电压：6.88 V, 不稳定度小于0.001％FS;
+　　4)四路模拟输入：0～30 mV;
+　　5)准确度：Ⅲ级秤;
+　　6)过载能力：120％;
+　　7)工作环境温度：－10～45°C，湿度≤90％RH;
+　　8)称重数据及重心打印输出;
+　　9)电源电压的波动：(220±10％V),(50／60±2％)Hz;
+　　10)功耗：≤15 W

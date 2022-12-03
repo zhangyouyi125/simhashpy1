@@ -1,0 +1,90 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　No.19　No.1　P.53-54
+
+
+
+
+WINDOWS环境下动态设置打印机参数
+铁治欣　陈奇　俞瑞钊
+摘 要： 一种动态设置打印机参数的方法。在程序中运用此方法，用户在打印时只需在打印机中放入合适的纸张，而不用考虑打印机的设置。 
+关键词： 打印机 注册表 动态设置
+1 问题的提出
+　　在许多应用系统中，常常需要打印各式各样的票据和报表，它们经常是没有统一的格式，所需的打印纸也就大小不一，有的甚至有专用的格式。而且通过比较发现，这种方法采集数据的速度是令人满意的，对于MODEM和电话线路的通信质量的要求不高。一般情况下，用户会觉得用这样的软件很麻烦，并且经常会出现错误。MODEM的CD引脚接节点1的一个I／O口用于判断MODEM之间是否建立了载波链路。尤其是基于LonWorks技术的各种设备的可互操作及通过LonWorks通道可链接智能大厦这2大优势，使其极具发展前途。基于此，本文给出了一种比较自动和通用的解决方法。运用此方法开发打印程序，打印时用户只需往打印机中加入适当的纸张即可打印出正确的报表。所以必须了解RS232的接口信号，在常用的9个信号中，RTS／CTS请求应答联络信号是用于半双工MODEM系统中作送方式和接收方式的切换，在双工方式系统中，因配置双向通道故不需RTS／CTS联络信号。WINDOWS 95在用到某一设备或程序时，它就到注册表中取出有关这一设备或程序的设置信息。当增加1台设备时，WINDOWS 95就会在注册表中增加相应的项目；当修改某一设备的设置时，WINDOWS 95也会对有关这一设备的注册项目进行修改。所以我们可以通过动态修改注册表中的有关打印机设置的信息来达到动态设置打印机的目的。
+　　经研究发现，与打印机有关的主要设置有二项，其中第1项为当前默认打印机，其注册表入口为：HKEY＿LOCAL＿MACHINE\Config\0001\System\CurrentControlSet\Control\Print\Printers，设置值存放在default项中的字符串，即我们可以通过这一注册表的这一分支的default项得到WINDOWS的当前默认打印机。第2项为打印纸设置有关的项目，其注册表入口为：HKEY＿LOCAL＿MACHINE\System\CurrentControlSet\Control\Print\Printers\SETPRINTER，其中的SETPRINTER要替换为你所安装的打印机的名字，如Epson LQ－1600K等，这一分支有许多个项，最关键的项(也是与打印纸张设置有关的项)是Default DevMode，此项的设置值为1个二进制串，其中主要的几个参数的偏移地址和意义见表1。
+表1 打印机参数表
+
+设置项目偏移量字节数说明
+纸张设置0x2F2打印机纸张类型，256为用户自定义纸张，小于256的数值为该打印机能打印的标准纸张的编号，随打印机类型改变。此后，系统等待事件的发生，如果此时远端计算机进行拨号，拨通后首先要进行用户的口令检查，以避免他人误拨进入系统，一旦建立了连接，则连接MODEM的CD信号脚的I／O口将变为高电平，同时触发io＿changes（ ）事件，在此事件的处理过程中首先调用poll（ ）内部函数对网络变量进行轮询，并将网络变量的当前值发送出去。对监控的数据的处理相对比较简单，只需按照电梯的工作原理和各种信号的逻辑关系用图形动态模拟或用文字加以说明。
+打印方向0x2D20x01-纵向打印，0x02-横向打印。
+进纸方式0x3920x04-手动送纸，0x08-传纸器。此后，系统等待事件的发生，如果此时远端计算机进行拨号，拨通后首先要进行用户的口令检查，以避免他人误拨进入系统，一旦建立了连接，则连接MODEM的CD信号脚的I／O口将变为高电平，同时触发io＿changes（ ）事件，在此事件的处理过程中首先调用poll（ ）内部函数对网络变量进行轮询，并将网络变量的当前值发送出去。在PB中我们可以定义2个全局函数：gf＿PrnSetting()，gf＿PrnSettingBack()。在一定时间内若没有拨通，还要进行重拨。这2个函数的具体实现如下所示。
+//函数功能：用自定义参数设置打印机
+//输入参数：al＿Lengn-打印纸长度，al＿Width-打印纸宽度
+//　　　　　ai＿PaperSource-进纸方式，ai＿PrintDirection-
+//打印方向输出参数：ablb＿setvalue-打印机的原参数
+//返回值：1-成功，0-不成功
+Gf＿PrnSetting(long al＿Lengh，long al＿Width，int ai＿PaperSource，int ai＿PrintDirection，blob ablb＿setvalue)
+constant string cls＿valuename＝″Default DevMode″
+constant uint clu＿pos＿width＝51
+constant uint clu＿pos＿length＝49
+constant uint clu＿pos＿papersize＝47
+constant uint clu＿pos＿papersource＝57
+constant uint clu＿pos＿printdirection＝45
+constant uint clu＿usersizepaper＝256
+blob lb＿value，newvalue
+string ls＿key，ls＿printer
+int li＿ret
+li ret＝RegistryGet(″HKEY＿LOCAL＿MACHINE\Config\0001\
+　　　　　　　　System\CurrentControlSet″＋＆″\Control\Print\
+　　　　　　　　Printers″，′default′，RegString!，ls＿printer)
+IF li＿ret＜＞1 THEN
+　　MESSAGEBOX(″系统提示″，″打印机未设置！″，Excla－ mation!)
+　　RETURN 0
+END IF
+ls＿key＝″HKEY＿LOCAL＿MACHINE\System\CurrentControlSet\
+　　　　　control\Print\Printers\″＋ls＿printer
+RegistryGet(is＿key，cls＿valuename，RegBinary！，lb＿value)
+ablb＿setvalue＝lb＿value
+lb＿newvalue＝blobmid(lb＿value，1，clu＿pos＿papersize－1)＋
+　　　　　　　blobmid(lb＿value，clu＿pos＿width＋2)
+blobedit(lb＿newvalue，clu＿pos＿papersize，clu＿usersizepaper)
+blobedit(lb＿newvalue，clu＿pos＿length，al＿Length)
+blobedit(lb＿newvalue，clu＿pos＿width，al＿Width)
+lb＿value＝lb＿newvalue
+lb＿newvalue＝blobmid(lb＿value，1，clu＿pos＿papersource－1)
+　　　　　　　＋blobmid(lb＿value，clu＿pos＿papersource＋1)＋
+　　　　　　　＆ blobmid(lb＿value，1，clu＿pos＿printdirec－
+　　　　　　　tion－1)＋blobmid(lb＿value，clu＿pos＿printdi－
+　　　　　　　rection＋1)
+blobedit(lb＿newvalue，clu＿pos＿papersource，ai＿papersource)
+blobedit(lb＿newvalue，clu＿pos＿printdirection，ai＿printdirection)
+ls＿key＝″HKEY＿LOCAL＿MACHINE\System\CurrentControlSet\
+　　　　　Control\Printers\″＋ls＿printer
+li＿ret＝RegistrySet(ls＿key，cls＿valuename，RegBinary!，lb＿newvalue)
+IF ii＿r＜＞1 THEN
+　　MESSAGEBOX(″系统提示″，″打印机设置失败！″，Exclamation！)
+　　RETURN 0
+END IF
+RETURN 1
+//函数功能：恢复原打印机设置
+//输入参数：ablb＿setvalue-打印机原设置串
+//输出参数：无
+//返回值：1-成功，0-不成功
+Gf＿PrnSettingBack(blob ablb＿setvalue)
+int li＿ret
+string ls＿printer，ls＿key
+constant string cls＿valuename＝″Default DevMode″
+li＿ret＝RegistryGet(″HKEY＿LOCAL＿MACHINE\Config\0001\
+　　　　 System\CurrentControlSet″＋＆″\Control\Print－
+　　　　 ers″，′default′，RegString!，ls＿printer)
+IF li＿ret＜＞1 THEN
+　　MESSAGEBOX(″系统提示″，″打印机未设置！″， Exclamation!)
+　　RETURN 0
+END IF
+ls＿key＝″HKEY＿LOCAL＿MACHINE\System\CurrentControlSet\
+　　　　　Control\Print\Printers\″＋ls＿printer
+li＿ret＝RegistrySet(ls＿key，cls＿valuename，RegBinary!首先利用专用的网络适配器和软件将控制网络上的网络变量采集到计算机上，通过动态数据交换（DDE）将数据传给通信程序，再由通信程序实现和远程计算机之间的数据交换。有数据进入指定COM口的缓冲区时，会触发1个通信事件，收到数据后，首先要判断信息的类别，区分是控制信号还是要监测的数据，然后分别进行处理。
+铁治欣（杭州浙江大学计算机科学与工程系310027）
+陈奇（杭州浙江大学计算机科学与工程系310027）
+俞瑞钊（杭州浙江大学计算机科学与工程系310027）
+收稿日期：1999－07－21

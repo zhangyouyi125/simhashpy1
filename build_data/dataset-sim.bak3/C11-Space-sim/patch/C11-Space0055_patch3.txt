@@ -1,0 +1,122 @@
+航空计测技术
+AVIATION METROLOGY &
+MEASUREMENT TECHNOLOGY
+1999年 第2期 No.2 1999
+
+
+
+一种新型的分布式数据采集器(二)
+朱　军　刘建国　彭泽兵　陈荔莹　李　滨
+A New Distributive Data Acquistition System (2)
+Zhu Jun,Liu Jianguo,Peng Zebing,Chen Liying,Li Bin
+
+4　系统结构和工作原理
+　　900系列分布式数据采集系统由900系列数据采集模块、电源、通讯电缆、主机构成。可以在1.2 km的范围内，根据现场使用需要随意组成最少1个模块、20个测量点；最多不超过99个模块、1980个测量点(取决于模块)的测量系统。
+　　由于现代航天器的附件具有尺寸大、重量轻、柔性大等特点,小变形假设已经不再适用。
+2　反编译的背景知识介绍
+2.1　反编译的定义
+　　反编译可以看成是编译的逆过程,即将以机器语言形式存在的目标代码翻译成与其功能等价的高级语言形式的代码的过程［2］。
+　　确定型反编译的模型为一个映射,decompile:S―＞T,其中S是源代码集(source),是机器指令集;T是目标代码集(target),是高级语句集。如果中心刚体的控制力矩、附件的驱动力和中心刚体初始角速度均为零,那么当梁等速伸展或收缩时,其横向非线性振动是稳定的。
+设梁为不可伸长的,等截面的转动惯量为I,则系统的运动方程为［5］
+
+
+式中E为弹性模量,Ic和Mc(t)分别为中心刚体的转动惯量和控制力矩。
+
+图2　测量模块的工作原理
+
+　　9XX模块的端子号排列见图3。
+　　　　测试用C语言程序:
+　main()
+　　{ int a,b,c;
+　　　scanf(″%d″,&a);
+　　　if(a＞=0)
+　　　{ if(a＞20)
+　　　　　　　　{b=a;
+　　c=b+2;}
+　　　　else
+　　　　　c=a;　　}
+　　　else
+　　　{ c=a;
+　　b=c*a;}
+　　　printf(″%d″,c); }
+　　
+　　DCPL的输出结果:
+　　　main()
+　　{ int var1;
+　　register int var2;
+　　register int var3;
+　　scanf(″%d″,&var1);
+　　if(var1＞=0)
+　　{ if(var1＞20)
+　　{ var2=var1;
+　　　var3=var2+2;}
+　　　　else
+　　{ var3=var1;}}
+　　　else
+　　{ var3=var1;
+　　var2=var3*var1;}
+　　　printf(″%d″,var3);　}
+测试用C语言程序所对应的目标代码:
+2386:01FA 55　　　　　PUSH　　BP
+2386:01FD 8BECMOVBP,SP
+2386:01FD 83EC02SUBSPM+02
+2386:0200 56PUSHSI
+2386:0201 57PUSHDI
+2386:0202 8D46FELEAAX,［BP-02］
+2386:0205 50PUSHAX
+2386:0206 B89401MOVAX,0194
+2386:0209 50PUSHAX
+2386:020A E86714CALL1674
+2386:020D 59POPCX
+2386:020E 59POPCX
+2386:020F 837EFE00CMPWORD PTR［BP-02］,+00
+2386:0213 7C14JL0229
+2386:0215 837EFE14CMPWORD PTR［BP-02］,+14
+2386:0219 7E09JLE0224
+2386:021B 8B7EFEMOVDI,［BP-02］
+2386:021E 8BF7MOVSI,DI
+2386:0220 46INCSI
+2386:0221 46INCSI
+2386:0222 EB03JMP0227
+2386:0224 8B76FEMOVSI,［BP-02］
+2386:0227 EB0AJMP0233
+2386:0229 8B76FEMOVSI,［BP-02］
+2386:022C 8BC6MOVAX,SI
+2386:022E F766FEMULWORD PTR［BP-02］
+2386:0231 8BF8MOVDI,AX
+2386:0233 56PUSHSI
+2386:0234 B89701MOVAX,0197
+2386:0237 50PUSHAX
+2386:0238 E8990BCALL0DD4
+2386:023B 59POPCX
+2386:023C 59POPCX
+2386:020D 5FPOPDI
+2386:020E 5EPOPSI
+2386:023F 8BE5MOVSP,BP
+2386:0241 5DPOPBP
+2386:0242 C3RET
+4　结束语
+　　发展航天事业是我国的一项国策,航天计划的成功完成是众望所向。经过专家调查,此次失事的主要原因是:箭载计算机系统使用的软件出了问题。
+
+图3　9XX模块的端子分布
+　　模块的连接十分简便，在主机没有RS485通讯接口的情况下，可在主机内插入接口卡，或在主机的RS232接口上接入串行通讯接口模块，来与模块进行通讯。如果主机有RS485通讯接口，就可直接与模块进行通讯。
+　　主题词　伸展柔性梁　刚柔耦合系统　部分变量稳定性
+STUDY ON THE STABILITY OF NONLINEAR 
+VIBRATIONS OF A DEPLOYING FLEXIBLE 
+APPENDAGE OF A SPACECRAFT
+
+Li Junfeng　Wang Zhaolin
+(Department of Engineering Mechanics,Tsinghua University*Beijing*100084)
+　　Abstract　Consider a rigid-flexible coupled system which consists of a central rigid body deploying a flexible appendage.The appendage is modeled as a finite deflection beam having linear constitutive equations.By taking the energy integral as Lyapunov function,it is proved that nonlinear transverse vibrations of the beam undergoing uniform extension or retrieval are stable when there are not controlling moment in the central rigid body and driving force on the beam,according to the partial stable theorem.
+　　Key words　Deploying flexible beam　Rigid-fiexible coupled system　Partial stability
+1　引　言
+　　近年来,航天器的柔性附件(梁、板等)在伸展过程中的振动得到了广泛的关注［1-4］。其中9XX模块上的26、27等数字为端子号，在此图上只画出了模块与接口及电源的连接，模块与各种传感器的连接省略。
+　　(4)数据流分析器:根据库函数识别器提供的库函数参数信息和函数返回值信息、控制流分析器得到的基本块划分信息进行变量恢复。
+
+图5　少于5个模块的980网络的典型连接
+　　3)981网络的典型连接见图6。设Q为梁上任意点,在梁未变形状态Q点在动坐标系中的坐标为(x,0),在梁变形状态Q点在动坐标系中的坐标为(X(x,t),Y(x,t)),梁的中轴线在Q点的切线与OX轴夹角为θ(x,t)。本文假设附件是本构方程为线性的有限变形梁,考虑中心刚体运动与附件运动的非线性耦合,利用Lyapunov直接法严格证明了等速伸展或收缩的梁的横向振动是稳定的。
+　　西方各国早已将反编译技术用于航天事业和尖端工业,如:IBM为NASA的航天飞机研制的反编译器［3］;澳大利亚电子研究实验室研制的针对类Pascal语言的反编译器［4］;欧共体ESPRIT计划中的反编译研究,如英国的核工业部使用反编译技术验证大量的safty-critical软件,以提高软件的正确性［5］;我国从80年代初开始反编译的研究并且已逐步形成自己的产品［6］,但尚未见将反编译技术应用于航天技术的报导。如：
+
+图7　直流电压、电流、热电偶测量
+
+　　02模块的01通道，1.2 V量程：＠02∶1CM1，1，4，0

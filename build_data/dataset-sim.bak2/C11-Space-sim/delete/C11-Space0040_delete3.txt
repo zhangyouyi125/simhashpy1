@@ -1,0 +1,35 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+年 第1期 No.1 1999
+
+
+
+提高小频差法流量计
+测量的数理分析
+富　强　梁青阳
+　　摘　要　小频差法流量计的测量精度受各种因素的影响，因而获得精度比较困难。。在此基础上结合多年研制该流量计的实际经验，提出提高测量精度的及其方法。
+　　关键词　小管径　超声波流量计　精度　误差
+Mathematical Analysis o Increasing
+Measurement Precision o Ultrasonic Flowmeter
+with Small Tube iameter and Frequency Diference Method
+Fu Qiang,Liang Qingyang
+　　Abstract　 precision of the ultrasonic flowmeter with small tube  and  difference method is affected by several factors,so to gain more accuracy is difficult.In this paper many factors  the precision of measurement with the ultrasonic flowmeter with small tube diameter and frequency difference method are analyzed mathematically.Being based on that and combining with the practical experence of developing this flowmeter for several years,the measure and method for increasing precision of measurement have been proposed.
+　　Key 　Small tube diameter,Ultrasonic flowmeter,Precision,Error
+
+1　频差法超声波流量计的数学模型
+　　超声波测量基本原理如图1所示。。则超声波在顺流和逆流上的时间T1、T2分别为
+T1＝D／cos／(C＋θ)＋τ(1)
+T2＝D／cosθ／(C－Vsinθ)＋τ(2)
+
+其中，D为管道内径；C为被测流体的声速；V为流体的；τ为脉冲信号传播的附加时间(包括在声楔和管壁中传播时间及中的延迟时间，即声波不在被测流体中的传播时间)。
+　　该超声波在顺流和逆流方向上传播的频率为、f2，由(1)、(2)式可得出频差△f为
+△f＝f1－f2＝1／T1－1／T2＝DVsin2θ／((D＋τCcosθ)2－(τVsin2θ／2)2) (3)
+
+因为在实际测量中V＜＜C，所以(D＋τCcosθ)2＞＞(τVsin2θ／2)2，则△f简化为
+△f＝DVsin2θ／(D＋τCcosθ)2＝(sin2θ／D)(1＋τCcosθ／D)－2V (4)
+
+从式(4)得出流速公式
+V＝(D／sin2θ)(1＋τCcosθ／D)2△f (5)
+因为容积流量Q＝π(D／2)2VD(6)
+
+其中，VD＝V／K为管道横截面平均速度；K为流速系数。。

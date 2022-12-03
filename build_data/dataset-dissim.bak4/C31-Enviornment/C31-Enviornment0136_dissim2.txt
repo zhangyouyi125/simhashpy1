@@ -1,0 +1,96 @@
+土壤与环境
+SOIL　AND　ENVIRONMENTAL　SCIENCES
+1999年　第8卷　第2期　Vol.8　No.2　1999
+
+
+
+赤红壤旱坡地玉米测土施肥技术研究*
+孙映波 马曼庄 黄庆 张壮塔 谢汝升 陆立驹 徐庭均
+摘要　用东莞桥头和广州石牌的大田试验数据，配制每造玉米N、P、K肥需求量的Stanford经验公式，由目标产量与特定地块的肥力算出玉米配方肥的N、P、K组分量。
+关键词　赤红壤；玉米；测土施肥；NPK配方肥
+Study on Fertilizer Practice Basing on Latosolic Red Soil Test for Corn Grown in Dry Slope Land in Guangdong Province. Sun Yingbo, Ma Manzhuag, Huang Qing, Zhang Zhuangta and Xie Rusheng (Soil and Fertilizer Research Institute, Guangdong Academy of Agricultural Sciences, Guangzhou 510640); Lu Liju and Xu Tingjun (Sihui Agricultural Bureau, Sihui, Guangdong 52910). Soil & Environ Sci, 1999, 8(2): 121～123
+Through field experiments conducted in Guangzhou and Dongguan, Stanford experience equations were formed to calculate the total requirements of N, P2O5 and K2O by corn in one cropping season. Based on target yield and soil fertility of a specific plot, the constitutive quantities of N, P and K fertilizers for corn were maken out.
+Key words　latosolic red soil; corn; fertilization by soil test; NPK prescription
+　　赤红壤是南亚热带丘陵地区的主要土壤类型，其中有相当一部分被开垦为旱坡地，用于种植果树和玉米等作物。信宜点代表着我省粮食生产的高产水平，而新兴、徐闻点代表着中产水平。目前在广东省玉米栽培上还存在着盲目施用问题，这主要是沿用传统的施肥方法，偏施氮肥或进口复合肥，施肥量很大；其结果是，虽然增产，但不增收，而且使土壤性质恶化。
+表1　各监测点的养分含量
+
+监测点地址供试土壤名称有机质全氮碱解氮有效P速效K常年产量
+(g/kg)(mg/kg)(kg/hm2)
+新兴土肥站麻砂泥田37.21.9728268.0789750
+徐闻农科所乌赤土田87.23.1424932.54910500
+信宜土肥站洪积沙泥田30.41.5516425.07515000
+
+　
+1.2　监测点设计
+　　按《全国耕地土壤监测技术规程》设立施肥和空白两个处理，小区间用水泥板作隔板，空白区面积0.0033～0.0067 hm2。从以往监测的情况看，施肥水平对地力贡献率影响极大，施肥水平越高，地力贡献率越低。从表中可以看出，后5 a氮肥用量明显减少，钾肥增加。其中，徐闻点一直种植常规稻；信宜点一直栽培杂交稻（部分年份冬季种绿肥）；新兴点以常规稻－杂交稻为主，近两年两造均种植杂交稻。从表中可以看出，在目前的生产条件下，增施氮、钾肥能显著增加水稻产量。3次重复，随机排列。供试品种为粤农90－137。
+　　调查项目：每小区分别收获20株测定，收获后籽粒及茎叶分别晒干称重，并粉碎取样进行N、P、K含量测定（NP区只测K、NK区只测P、PK区只测N）。土壤有效氮采用碱解法、酸解法[4]测定；土壤有效P采用Olsen法、MIII法测定；土壤有效K采用NH4Ac法、MIII法测定。
+2　结果与讨论
+2.1　测土施肥公式中三大参数的确定
+　　由Stanford所创的测土施肥公式为：
+
+　　上式中，一季作物总吸收量＝目标产量×单位产量的养分吸收量。应用这个公式必须解决一季作物养分总吸收量、土壤养分供应量、肥料当季利用率三大参数。下面以肥料4个处理的田间试验结果为基本数据（表1）进行统计分析，计算出各参数的经验数据，进而得出某种肥料需用量的经验公式。
+表1　肥料4个处理的田间试验结果
+
+试验
+点数NPK肥区PK肥区NK肥区NP肥区
+产量
+(kg/hm2)吸N量
+(kg/hm2)吸P2O5量
+(kg/hm2)吸K2O量
+(kg/hm2)吸N量
+(kg/hm2)酸解N
+(mg/kg)吸P2O5量
+(kg/hm2)MIII-P
+(mg/kg)吸K2O量
+(kg/hm2)MIII-K
+(mg/kg)
+16960169.267.4200129.512757.6394161.3230
+27725170.480.9224.337.74847.6150117.5140
+34095188.473.7208.262.45350.1212146.1190
+44770190.871.6209.984.28956.7319138182
+
+　
+2.1.1　一季玉米养分总吸收量
+　　一季玉米N、P、K总吸收量实测结果见表1。
+表8　各监测点的养分产投比与土壤供肥水平
+
+　养分产投比土壤供肥水平1)
+　氮磷钾氮磷钾
+新兴1.0141.3842.4470.6690.7410.691
+徐闻1.3381.1162.3000.5780.6520.562
+信宜0.5410.4201.3300.3690.4270.381
+
+1）空白区水稻吸收养分量占施肥区水稻吸收养分量的百分数。
+2.1.2　赤红壤旱坡地土壤供肥量
+　　本研究采用直线回归方程直接由养分土测值求得土壤供肥量。对表1的基本数据统计得出下列式子：
+YN＝－3.7＋1.037XN，r =0.976*（n =4）
+YP2O5=41.14＋0.044XP2O5，r =0.977*（n =4）
+YK2O=49.59＋0.491XK2O，r =0.993**（n =4）
+
+　　上述式子表明土壤N、P2O5、K2O供应量与有效养分测定值之间均呈显著正相关。
+2.1.3　肥料当季利用率
+　　N、P、K肥料利用率通常用田间差减法计算：
+
+　　上式中，吸肥量是指吸N、P2O5、K2O量；缺养分区是指PK区缺N，NK区缺P，NP区缺K；施肥量指一造施入的N、P2O5、K2O总量。从表中可以看出，新兴、徐闻两个监测点N、P、K养分产出大于投入，显示出肥料施用不足；信宜点K素产出也大于投入，说明钾肥施用水平有待提高。
+2.1.4　测土施肥经验公式及计算实例
+　　上面通过肥料4个处理的田间试验，计算出一造玉米养分吸收量、土壤供肥量及肥料当季利用率三大参数，由此可根据Stanford公式得出一季玉米需肥量（Y）的经验公式为：
+YP2O5=0.07A－0.25XP2O5－235.1
+YK2O=0.15A－1.9XK2O－191.5
+
+　　上式中，A为目标产量（kg/hm2），X为有效养分测定值（mg/kg）。表中数据显示近年来新兴点的肥料利用率下降将近一半，在3个监测点中数值最低，而信宜点N、P肥料的利用率提高得很快，数值最高，说明有机无机肥料配合施用有助于提高肥料利用率。该土壤的有效N、P2O5、K2O含量分别为56（酸解法）、174（MIII法）、140（MIII法）mg/kg，设定玉米（品种阳单82号）目标产量为：6000 kg/hm2，则一季玉米施肥量分别为：YN=433.8，YP2O5=141.4，YK2O=442.5。即一季玉米需施入尿素（含N 460 g/kg）943 kg/hm2、过磷酸钙（含P2O5 140 g/kg）1010 kg/hm2、氯化钾（含K2O 600 g/kg）738 kg/hm2，据此可掺制成NPK配方肥。
+*国家“九五”科技攻关项目及广东省“九五”科技攻关项目。
+关键词　土壤肥力；长期定位试验；地力
+A Preliminary Report on Long-term Stationary Experiment on Soil Fertility. Tang Jiandong, Ye Xiyang, Rao Guoliang and Lin Bishan (Guangdong General Station for Soil and Fertilizer, Guangzhou 510500). Soil & Environ Sci, 1999, 8(2): 113～116
+3 long-term stationary experiments have been conducted in Guangdong province since 1987. Results show that under the conditions of the similar crop species and climate, the yield of the plots without applying fertilizer reflects soil nutrient supply much better than that with applying fertilizer. With the current fertilization patterns, the application of N, P and K in combination can increase the organic matter, total N and alkali-hydrolysable N in soil. Increasing the application of N and K fertilizer can raise the yield of rice.
+Key words　long-term stationary experiment; soil fertility; soil productivity
+　　1987年冬，广东省土肥部门根据原全国土肥总站的部署，在清城区、新兴县、徐闻县设置了3个国家级土壤监测点。
+作者单位：孙映波　马曼庄　黄庆　张壮塔　谢汝升　广东省农科院土壤肥料研究所，广州 510640
+　　　　　陆立驹　徐庭均　广东省新会市农业局，529100
+参考文献
+1　周鸣铮. 中国的测土施肥. 土壤通报，1987, 18(1): 7～13
+2　农业部农业局. 配方施肥. 北京: 农业出版社，1989. 45～47
+3　陆允莆. 浙江省红壤地区的估产测土施肥研究. 土壤通报，1986 (4): 163～167
+4　周鸣铮. 土壤速效氮测定的化学方法. 土壤学进展，1978 (6): 32～44
+收稿日期：1998－12－22
+
+　

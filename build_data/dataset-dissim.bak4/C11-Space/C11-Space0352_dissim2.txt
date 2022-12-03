@@ -1,0 +1,50 @@
+航空动力学报
+　　低雷诺数湍流模型则是由对高雷诺数湍流模型方程中的经验常数或函数进行近壁衰减和分子粘性效应修正而构成JOURNAL OF AEROSPACE POWER
+1999年 第14卷 第3期 Vol.14 No.3 1999
+
+
+
+发动机叶片无损检测的可靠性
+刘登第　傅惠民
+　　【摘要】　提出了一种发动机叶片无损检测可靠性分析方法，利用该方法可以有效地提高叶片中裂纹（缺陷）的检出概率（POD），并能对裂纹的漏检概率（POM）进行准确地评估和控制，使因叶片裂纹漏检而引起发动机故障的可能性降至最低程度，从而确保发动机的安全运行；该方法简单方便，易于工程实施和应用。
+　　主题词：航空发动机　叶片　无损检验　缺陷　可靠性
+　　分类号：TB114.3
+RELIABILITY OF ENGINE BLADE NONDESTRUCTIVE TESTING
+Liu Dengdi and Fu Huimin
+（5th Dept.Beijing University of Aeronautics and Astronautics,Beijing　100083）
+　　ABSTRACT　　The attention has focused on quantifying the capability of nondestructive testing (NDT) system for guaranteeing structural safety through damage tolerance analysis.A method of reliability assessment for engine blades NDT is presented,which can determine exactly the probability of flaw detection（POD）and assess the probability of flaws missed（POM）in the engine blades,as well as control the largest size of the flaws missed at inspections with high probability of flaw detection and confidence level.This method also raises the flaw detection probability and prevents the flight accidents caused by the missed flaws in engine blades.
+　　Key　Words　Aircraft engine　Blades　Nondestructive tests　Flaw　Reliability
+1　引　言
+　　叶片中裂纹(缺陷)漏检是导致发动机损坏的主要原因之一。某型发动机二级涡轮叶片因没有及时发现已出现的裂纹（曾连11 mm的裂纹也漏检）而导致断裂失效，酿成了多起重大飞行事故。此外，近壁网格稀疏时平均流的计算精度受限。一个最小能检测到零点几毫米，甚至几个微米裂纹的无损检测设备，常常连几个毫米，甚至十几个毫米的裂纹也会漏检［1］。为了解决这一问题，本文对这种无损检测的不确定性进行了研究，提出了一种发动机叶片无损检测可靠性分析方法，利用该方法可以有效地提高发动机叶片中裂纹（缺陷）的检出概率，保证无损检测质量，使叶片因裂纹（缺陷）漏检而危及发动机安全运行的可能性降至最低程度。
+2　发动机叶片的无损检测可靠性评估
+2.1　发动机叶片裂纹（缺陷）漏检概率(POM)曲线的确定
+　　发动机结构中的叶片缺陷漏检概率（POM）曲线的确定，是研究发动机叶片无损检测可靠性的基础，如何准确地对它们进行测定是问题的关键。然而工程计算中，近壁网格的y+=2～3，由图1和图2可以看出，此时用低雷诺数湍流模型求解的平板湍流附面层速度分布(图中棱形点)与经验分布(图中实线)相差较远。
+2.2　发动机单个叶片无损检测的可靠性
+　　当采用第j种检测设备对第i级的一个叶片进行一次检测时，其大于规定尺寸的裂纹漏检概率Pij可由式（1）求得，当独立检测K次时，裂纹的漏检概率为：P1=PKij。若用q种不同的检测仪器分别进行Kj次独立检测时，那么该叶片的漏检概率P1为：
+　(2)
+Kj是第j种检测仪器的独立检测次数，j=1，…，2，q。如果叶片按损伤容限设计原则设计，那么当规定的裂纹尺寸取aNDT时，可取Pij=10%，式（2）成为：
+　(3)
+2.3　发动机某一级叶片的无损检测可靠性
+　　设发动机第i级共有n个叶片，对其全部进行无损探伤后，如果每个叶片的裂纹（缺陷）漏检概率相同，则该级叶片中大于规定尺寸的裂纹漏检概率P2i由下式计算：
+P2i＝1-(1-P1)n　(4)
+式中P1由式（2）确定。
+
+
+
+图5　90°弯管内速度分布
+5　结束语
+　　由上面的讨论、分析可得如下结论性意见：(1)提出的近壁区用代数湍流模型，其他区域用两方程模型来计算湍流的措施是可行的、有效的，它可以获得较单纯用两方程模型更准确的结果。但是，这种方法不能用于低雷诺数流动及不稳定或有分离的附面层流动，对于复杂三维流动，传统的壁面函数可能不合适。造成误差的原因是近壁区内网格不够精细，近壁区内流动参数的求解不准确。因此，检测人员可以通过最佳独立检测次数和检测设备的不同组合来控制缺陷漏检概率。此时，来流温度为T0=295.71 K，来流Ma数为0.05802，单位长度Re数为1.3071×106，出口截面压力为101277.7 (N/m2)。粘性项及源项的计算采用中心格式，对流项则采用二阶精度的Jameson方法。
+3.2　发动机每一级叶片裂纹（缺陷）漏检概率控制
+　　设发动机中某一级共有n个叶片，欲使该级叶片中大于规定尺寸的缺陷漏检概率小于预先给定的P*2，则可由下式求得每个叶片应控制的缺陷漏检概率P*1：
+　(13)
+　　将式（13）代入式（9）～（12）即可求得使每个叶片中的缺陷漏检概率低于P*1应进行的独立检测次数，从而将该发动机每一级叶片缺陷的漏检概率控制在预先指定的P*2以下。图1和图2中的三角点则为用本文提出的“双层”模型计算结果，图3中三角点为K-ω模型结果。解得x后，代入式（14），即可得到每级叶片应该控制的裂纹漏检概率P*2i；再代入式（13），即可得到每个叶片应该控制的裂纹漏检概率P*1i；然后由式（9）～式（11）求得与每个叶片相对应的无损探伤次数，这样就可以通过增加对每个叶片的独立检测次数和不同探伤仪器之间的不同组合，保证该发动机所有叶片中大于规定尺寸的裂纹（缺陷）的漏检概率低于P*3。为此，本文提出了在近壁区用Van Drist的近壁衰减混合长度模型而在其他区域依旧应用上述两方程模型,即所谓的“双层”模型。
+作者简介：刘登第衬小33岁　博士生　北京航空航天大学飞行器设计与应用力学系
+作者单位：北京航空航天大学
+参考文献
+　1　傅惠民，钱若力.无损检测可靠性与寿命控制方法.航空动力报学报，1994，9(3)：227-232
+　2　刘登第，傅惠民等.一种新的数据融合方法.中国安全科学学报，1998，8(6)：1-4
+　3　Gallagher J P，et al.USAF Damage Tolerant Design Handbook.MIL-A-83444,1984
+　4　Berns A P,Hovey P W.Flaw Detection Criteria.AFWAL-TR-84-4022,1984
+　5　Lewis W H, et al. Reliability of Nondestructive Inspections (Final Report). SA-ALC/MME 76-6-38-1,USAF,1978
+　6　Simola K,Pulkkinen U.Models for Nondestructive Inspection Data.Reliability Engineering and System Safety.1998,60：1-12
+1999年3月收稿；1999年5月收到修改稿。

@@ -1,0 +1,44 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第2期 No.2 Vol.18 1998
+科技期刊
+
+硝基芳烃对鲤鱼鱼鳃ATPase的活性抑制和QSARs*
+徐镜波　（东北师范大学环境科学系，长春 130024）
+景体淞　（长春科技大学环境与建设工程学院，长春 130026）
+文　摘　在离体实验条件下，测定了20种硝基芳烃化合物对鲤鱼鱼鳃ATPase活性的半抑制浓度-logIC50值，以一阶价分子连接性指数1XⅤ，取代基常数总和∑σ-、指示变量I、分子分支指数1Ka、分子最低空轨道能ELUMO及辛醇─水分配系数logP为参数，进行定量结构活性相关性（QSAR）研究。结果表明，硝基芳烃的毒性和∑σ-、I、ELUMO 3个参数密切相关。在上述基础上，成功地建立了20种硝基芳烃的QSAR方程，其相关系数为0.927。
+关键词　硝基芳烃化合物　鲤鱼　ATPase　IC50　QSAR
+The inhibition of nitroaromatics to the enzymic activity of ATPase of carp gill and QSARs study. Xu Jingbo(Department of Environmental Science, Northeast Normal University Changchun 130024)；Jing Tisong(College of Environment and Construction Engineering,Changchun University of Science and Technology,Changchun 130026).China Environmental Science.1998,18(2):158～161
+Abstract―IC50 values of 20 nitroaromatic compounds to the enzymic activity of APTase of carp gill were measured In vitro. The Quantitative Structure Activity Relationship (QSAR) studies were carried out with the -logIC50 values of 20 nitroaromatic compounds to the enzymic activity of ATPase using the first-order valence molecular connective index １XⅤ, the sum of substituent constant ∑σ-, the indicator variable I, the molecular shap index　１Ka, the energy of lowest unoccupied orbital ELUMO and the octanol/water partition coefficients logP as variables. The results showed that the ∑σ-、I and ELUMO were closely correlated with toxicity of nitroaromatic compounds, Successful QSARs were developed with correlation coefficient r of 0.927,for 20 nitroaromatic compounds based on IC50 values of ATPase activities of carp gill.
+Key words:nitroaromatic compounds　carp　ATPase　IC50　QSAR
+　　苯的硝基衍生物为重要的环境污染物，在我国第二松花江中游硝基芳烃检出率较高，是美国EPA规定的优先监测污染物之一。1984年以来，国外学者系列报道了硝基芳烃化合物对黑头呆鱼、±唷⒃謇唷⒎⒐饩的急性毒性数据及构效关系研究〔1～6〕；国内学者1994年以来，也报道了这些化合物对鲤鱼的急性毒性数据及QSAR分析〔7〕。对TCE的气相光催化降解，文献〔5〕还采用了一种基于Langmuir-Hinshelwood公式的改进形式来描述。作者在离体条件下，测定了硝基芳烃对鲤鱼鱼鳃ATPase活性的半抑制浓度IC50值，并应用6种物理化学参数作为描述符，进行QSAR研究，建立模式，预测毒性，探讨硝基芳烃的毒性机制。
+1　材料与方法
+1.1　试验材料
+　　试验用鲤鱼由长春市水产所养殖基地提供，平均体长为6.25±0.14cm，体重为21.28±0.12g。试验鱼经5％食盐水消毒后在实验室条件下驯养两周，此期间死亡率低于5％，水质符合渔业水质标准。
+1.2　实验方法
+　　根据被测物LC50和预实验结果，按等对数间距将被测物配制成5个以上浓度，包括 0％、100％酶活性抑制浓度，并设对照。以丙酮为助溶剂，其用量为0.05％～0.1％。结果发现，Cl-浓度与H+浓度基本相等。
+　　统计计算使用STATGRAPHICS软件。
+2　结果与讨论
+2.1　实测IC50结果
+　　表1给出20种硝基芳烃化合物对鲤鱼鱼鳃ATPase抑制实测值和预测值（-logIC50，表中方程分别见文中 2.2 QSARs模型所列）。结果表明，各类硝基芳烃对ATPase的抑制作用有所不同，其毒性大小与取代基的种类，位置有关。含有硝基的芳烃，不同取代基对酶的抑制程度有如下趋势：二硝基苯（间－二硝基苯除外）＞二氯硝基苯＞二硝基苯胺＞二硝基甲苯≈硝基氯苯≈硝基溴苯＞硝基甲苯≈硝基苯酚（间－硝基苯酚除外）＞硝基苯胺（邻硝基苯胺除外）＞硝基苯。
+
+图3　光强与反应初始率
+TCE初始浓度为1.38×10-3mol/L 
+Fig. 3　Light intensity and reaction rate
+2.3.2　TCE光催化降解的速率方程式　半导体光催化是基于光致电子-空穴对迁移到半导体颗粒表面的不同位置，从而参与和加速氧化还原反应，还原和氧化吸附在表面上的物质。 表2中，logP为辛醇／水分配系数，带*号者为本文应用碎片常数法计算，括号内的数字是指取自该文献，其余数值均取自文献〔10〕。1XⅤ为一阶价分子连接性指数，是表征分子整体性质的参数。 I为指示变量，是反映硝基的数目及位置关系的经验指数，取自文献〔3〕或按〔3〕规则计算。光催化降解反应初始速率与光强的关系可用下式表示:
+　　　　　　　　　　r=kIn　(2)
+式中: r为反应初始速率，molCl-/(gTiO2*s)；k、n为常数；I为光强，mol/(cm2*s)。 ∑σ-栏中，加#注的按文献〔11〕所列规则计算，其余数值均取自文献〔5〕，取代基常数总和∑σ-是除NO2外苯环上其它取代基σ-值总和，为取代基电子效应参数。 ELUMO是LUMO能，与分子对电子的亲和力成正比，为电子效应参数，其值越负，表明电子进入该轨道后体系能量降低得越多，即该分子接受电子的能力越强。TCE浓度较低时(10-4mol/L), 其光催化降解初始速率随其浓度的增加而增加到一定值。QSAR分析过程中，先后出现的参数依次为∑σ-、I、ELUMO，其余3个参数logP、１XⅤ、１Ka均没有进入模式。∑σ-是6个物理化学描述符中对鲤鱼鱼鳃ATPase抑制的最好表征，可见电子效应对毒性的贡献最大，I和ELUMO实质上也是与化合物电子效应相关的两参数，同时受硝基芳烃化合物中硝基的位置和数目的影响。模型中依次出现的3个参数是描述硝基芳烃对鲤鱼鱼鳃ATPase抑制作用的最佳组合。受体端点ATPase是镶嵌在膜上的蛋白，酶的活性中心的天冬氨酸，其侧链对ATP进行亲核进攻，使其磷酸化。结果发现，TCE的光催化降解产物为HCl、CO2及Cl2，并得出TCE在无水条件下光催化反应的计量式为C2HCl3 + 2O2hvTiO2HCl + 2CO2 + Cl2，该计量式与有水条件下光催化反应降解TCE的计量式不同。作者认为，硝基芳烃化合物中，-NO2和-CH2、-NO2同时存在时，可能吸引了苯环上的π电子云，使苯环本身呈部分正电性，与酶活性中心的羧基吸引，发生加和反应，影响亲核作用。
+
+图3　光强与反应初始率
+TCE初始浓度为1.38×10-3mol/L 
+Fig. 3　Light intensity and reaction rate
+2.3.2　TCE光催化降解的速率方程式　半导体光催化是基于光致电子-空穴对迁移到半导体颗粒表面的不同位置，从而参与和加速氧化还原反应，还原和氧化吸附在表面上的物质。因此可以认为鲤鱼鱼鳃ATPase是硝基芳烃亚致死水平毒性反应的一个敏感指标。与对鲤鱼 LC50值的 QSAR分析结果相符〔7〕。硝基芳烃对鲤鱼鳃ATPase 的 IC50值与硝基芳烃对鲤鱼、黑头呆鱼的LC50值的相关分析结果，可以看出ATPase与鲤鱼的LC50值相关更好些。其关系式为： -logLC50＝0.696＋0.826(-logIC50)，r＝0.9561，n＝20
+　　　　应用QSAR方程，预测了硝基芳烃对鲤鱼鱼鳃ATPase的抑制值，结果表明，预测值与实测值十分接近，效果很好（表1）。
+　　　　酶活性抑制与QSAR研究,有助于分析毒物的作用机制,了解污染物对生物体在生化与分子水平上的作用原理,为亚致死剂量的生态风险评价提供科学依据,而且ATPase测定较为简便，有推广应用价值。
+3　小结
+3.1　离体条件下，测定了20种硝基芳烃对鲤鱼鱼鳃ATPase的IC50值。他们发现，TCE的气相光催化氧化过程反应速度比液相光催化氧化过程速度更快，且光利用效率高。
+收稿日期：1997-04-15
+*浙江省自然科学基金资助项目
+。副教授。因此，TCE须吸附在催化剂表面上后才能参与反应，而TCE的浓度直接影响它在催化剂表面的吸附程度，进而影响TCE降解反应的初始速率。现正主持国家自然科学基金“鱼体酶学指标的分子生态毒理学研究”项目。“火电厂循环冷却水排放对水生态热影响研究──火电厂热排水对湖泊水库理化性质影响研究”获水电部东北电业管理局技术改进一等奖。发表论文40余篇。
+收稿日期：1997-04-09
+*国家自然科学基金资助项目

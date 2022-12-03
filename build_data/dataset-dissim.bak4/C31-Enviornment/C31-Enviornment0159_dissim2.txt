@@ -1,0 +1,97 @@
+土壤与环境
+SOIL AND ENVIRONMENTAL SCIENCES
+1999年 第8卷 第3期 Vol.8 No.3 1999
+
+
+
+高产水稻氮钾施用量最佳配比研究
+卢普相　罗莲香　骆伯胜　张美兴　袁彩庭
+　　摘要：求导了水稻目标产量的预测方程，不同氮钾施用水平的等产方程，以及氮钾最佳配比
+方程。根据上述方程推导出地力产量为6345kg/hm2的水稻田目标产量为8589kg/hm2，N与K2O施用量
+的最佳配比为1∶1.22，即N 139.4kg/hm2、K2O 170.6kg/hm2。
+　　关键词：水稻；氮；钾；施肥量；最佳配比
+　　中图分类号：S511.044；S147.22 文献标识码：A
+Study on Optimum Proportion of Nitrogen to Potassium for High-yield Rice
+LU Pu-xiang，LUO Lian-xiang，LUO Bo-sheng，ZHANG Mei-xing，YUAN Cai-ting
+（Guangdong Institute of Eco-environmental and Soil Sciences，Guangzhou 510650，China）
+Abstract：In this paper, we work out a forecast equation for aim-yield of rice, an equal-product-curve equation 
+under different application rates of N and K2O，and the optimum proportion equation for N and K2O. 
+According to these equations, we calculate the optimum application proportion of N to K2O for the field, which 
+capability yield is 6345 kg/hm2, under the aim yield 8589 kg/hm2. The proportion is 1∶1.22，namely, N 139.4 
+kg/hm2 and K2O 170.6 kg/hm2. It quite accords with practice .
+Key words：rice；nitrogen；potassium；application rates；optimum proportion
+　　水稻施肥技术研究已经有很多报道，但养分配比方面的研究很多还停留在一般对比试验上。在砖红壤中，根瘤分布在0～10cm的表层土壤；在地表的
+根瘤须根形成一层“根毛毡”，根瘤较大，以簇状为主。又有试验结果认为水稻施N和K2O的最佳经济施肥量为202.5kg/hm2 和
+141.0kg/hm2，折算比例为1∶0.70[2]。不同林龄树木根瘤的特性，可能与木麻黄根瘤内生菌（Frankia）在土壤
+中分布特性有关。
+　　关键词：木麻黄；根瘤；生态分布
+　　中图分类号：S714.3 文献标识码：A
+Distribution of Nodule in Casuarina Plantations in Southern China
+KANG Li-hua，ZHONG Chong-lu
+（Research Institute of Tropical Forestry, CAF, Guangzhou 510520, China）
+Abstract: Distributional characteristics of nodule in casuarina plantations at 12 typical sites in Guangdong, Hainan, 
+Fujian and Guangxi were investigated. Results showed that there were significant correlations between soil N, P, B 
+and total nodule biomass, and between N, P, Co, Ca and young nodule biomass. The single nodules and young 
+nodules in the young forest were more than that in the mature forest. The most nodules were distributed in 5～30 
+cm depth of lateral roots in the coastal sandy soil and in 0～10 cm in the latosol.
+Key words Casuarina; nodule; distributional characteristics
+　　木麻黄是热带、亚热带滨海地区营造防风固沙林、农田防护林和能源林的主要树种；同时也
+是非豆科共生固氮树种，它与土壤中的放线菌――弗兰克氏菌（Frankia）共生而形成根瘤，将植
+物不能吸收利用的空气中的分子态氮转化成植物能吸收利用的氨态氮，促进其生长，增加土壤氮
+素收入，提高林地肥力？报酬递减律告诉我们，过高的集约投入与产出并不成正比，市场经济要求我们以
+合理的投入获得尽可能高的收益。
+1　试验方法
+　　1991～1996年，我们在兴宁市福兴镇研究“水稻年产18t/hm2栽培技术规程”，进行了大量的
+基础调查，布置了大量的小区和大田试验；试验地段在丘陵垌田区，土质为砂泥质水稻肥田；试
+验品种多采用中迟熟高产杂交水稻良种。根据根瘤的
+大小进行分级，测定根瘤蔟的直径。
+2　试验结果
+2.1 目标产量的确定
+　　我们栽种水稻时首先要知道水稻田的增产潜力，确定水稻目标产量，然后根据目标产量制订
+施肥方案。每株木麻黄总的根瘤N含量为
+37.50～67.49g，按常规造林每公顷2505株木麻黄，每公顷木麻黄根瘤的含N量为93.938～
+169.062kg。
+　　我们将24块高耕作水平的水稻田的地力产量与施肥产量标于图1，施肥产量是在正常年份早稻
+中迟熟种所能达到的产量结果。从图1可见施肥产量Y与地力产量X之间的关系很密切；经统计分
+析，Y与X的相关系数r=0.9085，其回归方程为：
+Y =1844+1.063X　　（1）
+
+图1　施肥产量与地力产量的关系
+　　对（1）式作显著性检验，其F值为104.0，大大超过极显著水准的临界F值7.95。因此在同一
+地域有了这个方程，如果知道一块田的地力产量，我们就完全可以预测在一般栽培努力下该田所
+能达到的目标产量。大根瘤为瘤簇直径≥5cm，中根瘤为1～5cm，小根瘤为＜1cm
+和单瘤。
+2.2 等产线的求导
+　　限于篇幅，本文只讨论氮、钾配合施用对水稻产量的影响。表1列出了不同的氮、钾量配合施
+用的水稻产量。氮、钾肥料效应的数学模型为二元二次方程：
+Y=B0+B1X1+B2X2-B3X12-B4X22+B5X1X2　　（2）
+　　对表1的试验数据作回归统计分析，得出（2）式中的各项系数B0、B1、B2、B3、B4、B5分别为
+3626、9.365、7.779、0.03383、0.01956、0.1495。
+3.2 木麻黄人工林固氮量
+　　本文的调查结果表明，3a生木麻黄每株的幼瘤生物量为14.1～26.9g，其含N量为24.76～
+47.24g；老年瘤的生物量为9.5～15.1g，其N含量为12.74～20.25g。Co是植物共生固氮的必需元素，土壤中
+的Co影响根瘤的形成并参与固氮作用[4]。
+
+图2　等产线与最佳配比线
+2.3 氮钾最佳配比方程的求导
+　　氮钾最佳配比线方程模型为[3]：
+X1 =（B1K-B2）/（2B3K+B5）+（2B4+B5K）X2 /（2B3K+B5）　　（4）
+　　（4）式中K=P2 /P1，P1、P2分别为N和K2O的市场零售价格。确定水稻的最佳经济施肥量要以
+当地最新的市场零售价格为准，目前兴宁市的尿素和氯化钾的零售价格分别为1.60、1.80元/kg，
+尿素含N 460g/kg，氯化钾含K2O 600g/kg，则K=0.8625。再将各项系数代入（4）式，得出此试验
+的氮钾最佳配比线为：
+X1=-7.141+0.7208X2　　（5）
+　　图2的直线就是据此方程绘制的。本
+文中逐步回归分析表明木麻黄根瘤生物量与N和P有显著正相关，与B有显著负相关；幼年根瘤生物
+量除了与N、P正相关外，还与微量元素Co有显著正相关。具体做法是将（3）与（5）式联合解方程组，即可求出2.1中已知地
+力产量的水稻田的N与K2O的最佳经济配比施用量为N 139.4kg/hm2、K2O 170.6kg/hm2，N与K2O的比
+例是1∶1.22。试验区土质为较肥沃的砂泥质水稻田，富氮缺钾，上述试验结果与生产实际相近；
+只要试验进一步完善，就可以逐步在大田生产中应用。本文研究我国木麻黄主要分布区的广东、海南、福建和广西人工林的根
+瘤生态分布特性，为营造木麻黄林提供科学依据。
+作者单位：广东省生态环境与土壤研究所，广州 510650
+参考文献：
+　1　罗莲香，袁彩庭，卢普相等.双季稻每公顷年产18t稻谷的施氮技术研究[J].中国农学通报，
+1997，13(4)：716～720
+　2　胡学玉.鄂粳杂1号肥料效应函数模型的建立与分析[J].湖北农业科学，1998(2)：47～50
+　3　陶勤南.农业试验设计与统计方法一百例[M].陕西：陕西科学技术出版社，1987.736～737
+收稿日期：1999-05-19

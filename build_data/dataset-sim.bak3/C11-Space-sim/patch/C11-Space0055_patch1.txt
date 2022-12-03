@@ -1,0 +1,69 @@
+航空计测技术
+AVIATION METROLOGY &
+MEASUREMENT TECHNOLOGY
+1999年 第2期 No.2 1999
+
+
+
+一种新型的分布式数据采集器(二)
+朱　军　刘建国　彭泽兵　陈荔莹　李　滨
+A New Distributive Data Acquistition System (2)
+Zhu Jun,Liu Jianguo,Peng Zebing,Chen Liying,Li Bin
+
+4　系统结构和工作原理
+　　900系列分布式数据采集系统由900系列数据采集模块、电源、通讯电缆、主机构成。
+　　<2>变量类型的推理分析
+　　把变量放在上下文中,利用推理规则进行再求精。前端传感器输入信号可以是模拟信号(如温度、压力、电压、电流、应变等)；也可以是数字信号(如开关状态监测、事件捕获、测频计数等)。测量结果经模块内部A／D转换后，用RS485通讯方式，经屏蔽双绞线送至主计算机进行采集，并以固定的数据格式输出，用户可根据需要，采用相应的软件对采集到的信号进行处理。假设附件为有限变形梁,则系统的运动微分程是非线性的。
+　　主题词　伸展柔性梁　刚柔耦合系统　部分变量稳定性
+STUDY ON THE STABILITY OF NONLINEAR 
+VIBRATIONS OF A DEPLOYING FLEXIBLE 
+APPENDAGE OF A SPACECRAFT
+
+Li Junfeng　Wang Zhaolin
+(Department of Engineering Mechanics,Tsinghua University*Beijing*100084)
+　　Abstract　Consider a rigid-flexible coupled system which consists of a central rigid body deploying a flexible appendage.The appendage is modeled as a finite deflection beam having linear constitutive equations.By taking the energy integral as Lyapunov function,it is proved that nonlinear transverse vibrations of the beam undergoing uniform extension or retrieval are stable when there are not controlling moment in the central rigid body and driving force on the beam,according to the partial stable theorem.
+　　Key words　Deploying flexible beam　Rigid-fiexible coupled system　Partial stability
+1　引　言
+　　近年来,航天器的柔性附件(梁、板等)在伸展过程中的振动得到了广泛的关注［1-4］。
+5　模块的结构与连接
+5.1　模块的结构
+　　测量模块是分布式数据采集系统的主要组成部分，负责完成多路传感器信号的扫描、采集、放大、A／D转换、信号发送等功能，其作用相当于目前常用的二次仪表，测量模块的工作原理如图2。
+
+图2　测量模块的工作原理
+
+　　9XX模块的端子号排列见图3。我国在该课题上的研究尽管起步较国外晚,但现已取得了长足的进展。
+　　1996年6月4日阿里亚娜-5型火箭发射失事,使欧共体蒙受25亿美元以上的损失。
+
+图3　9XX模块的端子分布
+　　模块的连接十分简便，在主机没有RS485通讯接口的情况下，可在主机内插入接口卡，或在主机的RS232接口上接入串行通讯接口模块，来与模块进行通讯。记OX轴和OY轴的单位矢量分别为i→和j→。
+　　(4)数据流分析器:根据库函数识别器提供的库函数参数信息和函数返回值信息、控制流分析器得到的基本块划分信息进行变量恢复。
+3　稳定性分析
+　　为研究特解的稳定性,取如下扰动变量:
+
+代入系统运动方程(1)-(7)得扰动方程
+
+系统的动能为
+
+系统的势能为
+
+当Mc(t)=0,F(t)=0时,系统有能量积分
+H=T+V=const
+(10)
+将扰动表达式代入得
+
+(11)
+显然,H≥0,从H的表达式(11)可知,只有
+
+(12)
+时,H才可能取零值。
+
+图4　单模块的连接
+　　2)少于5个模块的980网络的典型连接见图5。
+
+图5　少于5个模块的980网络的典型连接
+　　3)981网络的典型连接见图6。
+设梁为不可伸长的,等截面的转动惯量为I,则系统的运动方程为［5］
+
+
+式中E为弹性模量,Ic和Mc(t)分别为中心刚体的转动惯量和控制力矩。
+　　(3)控制流分析器:根据反编译控制流文法,以语法制导的方法进行控制流的分析和归约,生成控制流模块的机内表示形式及其结构文件。文献［1］的渐近公式表明,在等速伸展时所有模态振动发散。航天器的各部分都离不开计算机的控制,各种控制软件、计算软件、分析软件等等在航天器的设计与应用中起着重要地位

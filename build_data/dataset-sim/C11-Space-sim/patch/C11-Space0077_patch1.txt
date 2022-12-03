@@ -1,0 +1,98 @@
+航空计测技术
+AVIATION METROLOGY &MEASUREMENT TEHNOLOGY
+1999年　第19卷　第4期　Vol.19　No.4　1999
+
+
+
+空间坐标转换技术的分析与研究(一)
+周维虎+啊±家槐　丁叔丹　费业泰
+摘　要　系统分析了空间坐标转换的不同形式及其相互关系，运用旋转矩阵理论作了较为深入的探讨，指出了使用中应注意的问题。提出了齐次矩阵、微分运动、微分算子及雅可比矩阵等有用概念，作为例子,讨论了这些概念在机器人学中的应用。
+关键词　坐标转换　矩阵　雅可比矩阵　齐次矩阵　微分算子　微分运动
+Analysis and Study of Spatial Coordinate Transformation Technique (1)
+Zhou Weihu,Lan Yibing,Ding Shudan,Fei Yetai
+Abstract　The different types of spatial coordinate transformation and the relation between them are analyzed systematically in this paper.Using the rotation matrix theory,the deep search is done and the attentive problems during use are pointed out.The useful concepts of homogeneous matrix,differential movement,differential operator and Jacobi matrix etc. are proposed.The application of these concepts to robotics is discussed.
+Key words　Coordinate transformation,Matrix,Jacobi matrix,Homogeneous matrix,Differential operator,Differential movement
+　　空间测量和机构运动都离不开空间坐标转换，在不同的应用领域坐标转换具有不同形式。
+　　为了在设计中提高部件和系统的可靠性，NASA采用MSG－3原理设计和建造航天飞机，这是因为航天飞机是由成千上万个独特而又复杂的系统组成的，不能在预定的维修时间内采用现成做好的系统进行拆换。本文利用旋转矩阵理论对空间标转换进行了较为系统的分析与研究，旨在熟练地掌握这一有用工具，在实践中灵活运用。
+1　基本原理
+　　设有两个原点相同的直角坐标系，O-XYZ，O′-X′Y′Z′，如图1所示，任一点P在这两个坐标系中的坐标分别为(x，y，z)，(x′，y′，z′)。由于维修费用在飞机使用费用中占的比率很大，没有营运人愿意承担被称之为“过度维修”的费用。
+　　如果原点O′在O-XYZ坐标系中的坐标为(xo，yo，zo)，则
+(x，y，z)T=(xo，yo，zo)T＋R*(x′，y′，z′)T　　　　　　　　 (4)
+2　　逆变换与正交矩阵
+由(2)式知
+(x′，y′，z′)T＝R－1(x，y，z)T 　　　　　　　　　　　　　(5)
+　由(x，y，z)计算(x′，y′，z′)，只需对旋转矩阵求逆。
+　　根据假设模态法,梁的横向挠曲变形可表为:
+　　　　　　　　　　　　　　　　　　(1)
+式中,ψi为振形函数;ηi为模态坐标;N为所取模态阶数。
+4　平面两杆机构动力学实验结果及分析
+4.1　平面两杆机构结构特点
+　　实验用平面两杆机构简图如图2。
+
+图1
+3　单次旋转矩阵与复合旋转矩阵
+　　一般来说，两坐标系之间的变换需三次旋转才能完成。为此，编制了一本“使用方法和程序：手册，用于记录确定维修需求的判定过程。
+
+图3　平面两杆机构实测功率谱图
+　　根据上述结构特点,视柔性梁的边界条件为弹簧铰支―自由,由此得该系统前三阶固有频率的理论值分别为1.547、11.34、33.82Hz,与上述三阶实测频率值均很吻合。他们对于右手坐标系是右旋，对于左手坐标系为左旋。当左、右手坐标系之间转换时，需改变一个坐标轴的方向。例如，如果一个部件故障率为0.0013％，那么其存活概率就为99.9987％。
+　　作者单位：王建明　洪嘉振(上海交通大学工程力学系.上海.200030)；王示　周学军(山东建筑工程学院.济南.250014)
+参考文献
+　1　Chalhoub N G,Ulsoy A G.Control of a flexible robot arm:experiment and theoretical results.ASME Journal of Dynamic System,Measurement,and Control,1987,109:299-309
+　2　Fumitoshi M,Higenobu F.Feedback control of a flexible manipulator with a parallel drive mechanism.International Journal of Robotics Research,1987,6(4):76-84
+　3　费丛宇,邵成勋等.柔性机械臂点位控制逆运力学方法的实验研究.振动与冲击,1994,(2):1-6
+　4　王建明,刘又午等.动力刚化多体系统动力学.非线性动力学学报,1996,3(4):351-359
+　5　马良埕.应变电测与传感技术.北京:中国计量出版社,1993
+收稿日期:1998年5月20日,修回日期:1998年10月13日
+。
+4　旋转矩阵的左乘与右乘
+　　设O-XYZ为基础坐标系，O′-X′Y′Z′为转换后的新坐标系。转换由多个单次旋转组成。如果第二次旋转是相对于基础坐标系来做的，则第二个旋转矩阵左乘第一个旋转矩阵，R＝R2R1，依此类推。
+　　如果第二旋转是相对于第一次旋转之后做的，则第二个旋转矩阵右乘第一个旋转矩阵，R＝R1R2，依此类推。后一种变换方式也称为相对变换。
+4　平面两杆机构动力学实验结果及分析
+4.1　平面两杆机构结构特点
+　　实验用平面两杆机构简图如图2。Kardan旋转是三个连动的旋转轴中不出现同名轴，如图2所示。
+1)保持Z不动，OXY按右手规则旋转αz角；
+2)保持Y0不动，OZX0按右手规则旋转αy角；
+3)保持X′不动，OY0Z0按右手规则旋转αx角；
+Kardan旋转属于相对变换，坐标转换公式为
+(x，y，z)T＝R3(αz).R2(αy).R1(αx).(x′，y′，z′)T　　　　　　　 (11)
+令
+
+则有
+a1＝cosαy.cosαz
+b1＝cosαy.sinαz
+c1＝－sinαy
+a2＝－cosαx.sinαz＋sinαx.sinαy.cosαz
+b2＝cosαx.cosαz＋sinαx.sinαy.sinαz
+c2＝sinαx.cosαy
+a3＝sinαx.sinαz＋cosαx.sinαy.cosαz
+b3＝－sinαx.cosαz＋cosαx.sinαy.sinαz
+c3＝cosαx.cosαy
+
+图　2
+Euler旋转与Kardan旋转不同，Euler旋转的三个旋转轴中，第一根轴与最后一根轴同名。如图3所示。
+1)绕Z轴旋转角，使X轴到达OXY平面与OX′Y′平面的交线位置；
+2)绕X轴(I线)转动θ角，使Z轴与Z′重合；
+3)再绕Z′反转φ角，使X，Y与X′，Y′重合。
+坐标转换公式为
+(x，y，z)T＝R3()R1(θ)R3(φ).(x′，y′，z′)T
+＝R.(x′，y′，z′)T 　　　　　　　　　　(12)
+仿(11)式，R中各项元素为
+
+
+
+图　3
+6　旋转矩阵的奇异性
+　　实际应用中，旋转矩阵有时会出现奇异性。文中介绍了实验系统的组成;阐述了基于应变法测量作大范围运动柔性梁弹性振动位移的原理;描述了包括模态分析和动力学响应实验在内的实验过程和结果,通过与相应仿真结果的对比分析证实了实验结果的准确性和可靠性。
+MSG－3维修原理浅谈
+Business Jet Operators Adopt MSG－3 Philosophy
+肖宏
+　　公务机制造商采用一种名为MSG－3（维修指导小组－3）的维修原理，以期降低40％的维修费用。在实行了多年自底向上的在部件级实施的使用维修大纲后，航空工业现在又重新确定建立维修大纲的方法，该方法已经转变为一种自顶向下的、根据飞行日志进行监控、采取预防性维修的维修大纲。若圆柱垂直放置，θ角很小，旋转矩阵奇异，将解不出角。此时，改为Kardan旋转可解决这一问题。
+　　Kardan旋转也存在同样问题，当αy≈±90°时，有
+
+旋转参数相关，矩阵R奇异，解不出独立转角。
+　　因此，使用中应根据具体情况灵活运用旋转模式。
+
+图　4
+作者简介:+36岁　男　高级工程师
+作者单位:长城计量测试技术研究所，北京市，100095
+　　收稿日期:1998-10-14收稿

@@ -1,0 +1,104 @@
+计算机工程
+COMPUTER ENGINEERING
+1999年  第25卷 第7期 Vol.25 No.5 1999
+
+
+
+Jasmine在网上商场中的应用
+何武
+摘要　Jasmine是纯面积对象型多媒体数据库，它采用WebLink工具，实现从WWW直接对Jasmine数据库中动态、交互式信息的存取。讨论Jasmine在网上商场中的应用。
+关键词　模板Weblink开放数据库查询语言
+Jasmine’s Application in Online Shopping
+He Wu
+Est-China Research Institute of Computer Technology Shanghai 200233
+Abstract：Jasmine is and object-oriented multimedia database.It realizes access to dynamic and interactive information in Jasmine database by WebLink tool.The article discussed Jasmine's application in online shopping
+Key words：Template;WebLink;ODQL
+　　近年来,随着以计算机网络为核心的信息技术的迅速发展及国际互连网在全球的日益普及和应用,电子商务已成为网络技术应用新的发展方向。电子商务作为一种新型的商业模式，必将对未来商业的发展产生深远影响。
+5　结束语
+　　在序列化一个对象时，若被序列化对象是编译时为其分配内存，且其关联（实现为成员指针指向）对象中也有对象关联于自己，问题便出现了。作者前不久参与了上海市首家网上商场购物系统的设计与开发，该系统采用美国CA公司最新推出的面向对象数据库技术Jasmine，利用其适合开发电子商务应用环境和对多媒体数据进行有效管理的特色，通过三维虚拟空间、逼真的实物模型、精美的图片信息，为顾客营造了一个网上购物的环境。顾客足不出户，在家中或办公室的电脑上轻点鼠标，便可逛商场、选商品，进行实时的网上订购并由商家送货上门。
+1　Jasmine介绍
+　　Jasmine是CA与富士通合作开发的第一套可在Internet和客户/服务器计算环境中创建下一代商业系统的纯对象解决方案，它为开发商提供了非常适合动态多媒体应用的开发环境。Jasmine带有用于创建和管理图形、动画、声音、时间序列、全球定位坐标和全动态影象等复杂数据的综合类库，用户可以利用它连接企业数据，构建电子商务应用等。主要从事计算机检测及智能控制的研究。由于用Jasmine构筑的应用具有真正的面向对象的特征，因此它不仅易于增强和易于添加新特性，而且以后的维护也将更简单。基于Jasmine的Web应用被建造在一个安全的、强大的、分布式的和规模可变的架构上。
+　　作为面向对象数据库，Jasmine数据库的设计和创建采用的是面向对象的设计方法(Object-Oriented Design ,OOD)。采用多级内码分词理论，实现数据表中的内容的多向转换。控制器为一台工业控制计算机和一台PLC，工控机为主控制器，PLC用于对管路电磁阀的控制。例如该购物系统确定了商品、服装、西服、食品、家电等类。
+　　2) 定义类层次关系  类被组织为层次关系以表示具有特殊性和一般性的自然关系。如下例中代码为Word模块中用Visual Basic Application 宏代码创建VFPApplication对象，打开VFP中的数据库表Table1,将其中的记录内容粘贴到Word文档的实例。位于一个类上层的类称为该类的超类，位于一个类下层的类称为该类的子类。直接位于一个给定类上层的类称为该类的直接超类，直接位于一个给定类下层的类称为该类的直接子类。例如商品类是服装等其它所有类的超类，服装等其它所有类是商品类的子类；服装类是西服类的直接超类，西服类是服装类的直接子类。基于多级内码的语音处理技术恰好解决了分词方面的问题，该技术与数据库处理平台相结合，使得数据库文本信息的语音服务成为现实。比如商品类定义有品名、品牌等属性，服装类则只需要定义颜色、材料等商品类所没有定义的属性，品名、品牌等属性已经自动继承了。原因在于服装类是商品类的子类，子类自动继承父类的属性。
+　　If em―1.text <> "0000/00/00" Then
+　　　em―1.GetData(ld―birth) 　　　　　　//获取时间
+　　Else
+　　　SetNull(ld―birth)
+　　End If
+　　　ls―birth = string( ld―birth, ′YYYY/MM/DD′ )
+　　… …
+　　Update worker Set
+　　　　Birthday = TO―DATE(:ls―birth, ′YYYY/MM/DD′)
+　　　　Where worker―bh = :ls―bh
+　　　　Using sqlca;
+　　另外还有一些值得注意的地方：Oracle库中的日期描述符对时、分、秒的表示与PowerBuilder有所不同。通过使用WebLink，能用客户端的浏览器在Internet上访问存储在Jasmine数据库中的信息，包括多媒体数据。
+Pro1.prg
+* VFP调用DELPHI应用程序project1.exe
+* 首先创建一个表单，在其上添加OLE控件，
+* 并链接应用程序Project1
+Set Talk Off
+Clear
+frmMyForm=CreateObject(′form′)　　　　　　&&创建一个表单
+frmMyForm.Closable=.F.
+frmMyForm.AddObject(′CmdCommand1′,′CmdMyCmdBtn′)
+　　　　　　　　　　　　　　　　　　　　　　&&添加命令按钮
+frmMyForm.AddObject(′OleObject′,′Myclass′)
+　　　　　　　　　　　　　　　　　　　　　　&&添加OLE对象frmMyForm.CmdCommand1.Visible=.T. 
+　　　　　　　　　　　　　　　　　　　　&&显示QUIT命令按钮frmMyForm.OleObject.Visible=.T. 
+　　　　　　　　　　　　　　　　　　　　　　&&显示OLE控件
+frmMyForm.OleObject.Height=150 
+　　　　　　　　　　　　　　　　　　　　&&设置OLE控件尺寸
+frmMyForm.OleObject.Width=200
+frmMyForm.Show　　　　　　　　　　　　　　　　　&&显示表单
+frmMyForm.OleObject.DoVerb(0)
+　　　　　　　　　　　　　　　　　　　　　　&&执行OLE对象
+Read Events　　　　　　　　　　　　　　　　　&&开始事件处理
+Define Class MyClass as OleControl　　　　　　　　　　　　　　　　　　
+　　　　　　　　　　　　　　　　　　　　&&定义OLE控件类型
+DocumentFile =′c:\vfp\project1.exe′
+　　　　　　　　　　　　　　　　　　　　&&指定OLE执行文件
+Enddefine
+Define Class cmdMyCmdBtn as CommandButton
+　　　　　　　　　　　　　　　　　　　　&&定义命令按钮类型
+Caption=′退 出′ 
+　　　　　　　　　　　　　　　　　　　　&&命令按钮上的标题
+Cancel=.T. 　　　　　　　　　　　　　　　&&默认QUIT命令按钮
+Left=125 
+　　　　　　　　　　　　　　　　　　　　　&&命令按钮的尺寸
+Top=210
+Height=25
+Procedure Click 
+　　　　　　　　　　　　　　　　　&&停止事件处理，清除表单
+Clear Events
+Enddefine
+Return
+
+　　利用此段程序代码可以在VFP程序中调用各种.EXE应用程序，甚至非Windows的应用程序。当该数据库中的数据变化时，HTML文件中的数据也随之自动更新。我们把这种设计用来包含数据库中输出数据的HTML文件叫做模板。即首先通过服务器上“控制面板”的ODBC设置DSN，通过DSN指向ODBC数据库。这些命令可以是查询、修改，以及其它的数据库操作。
+　　如上例中，在恢复Client―Obj1的指针成员变量m―pServer时，产生了新对象Server―Obj-2。
+　　・管理数据库流程 流程是指来自同一个浏览器的一系列信息。通过执行一个WebLink命令,WebLink流程被激活。一旦被激活，WebLink流程就能够连续地接收查询请求，直到数据库的流程被关闭。
+　　应用模板是WebLink应用开发的一大特色。使用模板可以节省大量的开发时间和调试时间。借助于模板，可以方便地进一步定制所需的应用。WebLink考虑了Web环境的需要,提供了一个实例，其中包括了一些简单的模板，对用户很有帮助。用户可以参照设计。
+RS.MoveFirst:将指针移到第一个记录。在使用一个模板之前，必须先把该模板存储在WebLink对象数据库中。通过使用createTemplate()这个方法来实现。注意，每次创建或修改一个模板，都必须执行这个方法。每个模板都有唯一的名字。必须为每一个包含数据库信息的HTML输出页都定义一个模板。
+　　WebLink中常用的命令有以下几个：
+　　odb_login命令用来连接数据库。
+　　odb_get命令用来对数据库进行查询，显示Jasmine数据库中的对象。它具有返回多结果集的能力。
+　　odb_logout命令用来关闭数据库连接。
+　　WebLink具体工作过程如下：
+　　1) 首先用户在客户机的浏览器上发出请求。请求命令嵌在客户端的HTML文本中。该请求通过使用HTTP协议被传送到Web服务器上的WebLink。
+　　2) WebLink收到请求后，将查询提交给Jasmine数据库服务器。仿真使用MicroSim Eval 7.1软件。 gs―new―sql是全局变量，用来储存经过转换后数据库可接受的SQL语句!所以，妥善地解决开关量采集的实时性和准确性问题对实现变电站综合自动化有相当重要的意义。
+　　4) 带有最终数据的HTML文件送回用户的浏览器。像其它的HTML文件一样，浏览器把符合查询条件的数据库中的数据在屏幕上显示出来。
+3　网上商场购物系统
+　　(1)系统运行环境
+　　服务器端软件环境为：
+　　・操作系统:Windows NT 4.0
+　　・数据库管理系统：Jasmine 1.2
+　　・Web服务器：IIS3.0
+　　・数据库模板：用ODQL、HTML语言编写
+　　硬件环境为：华胜Pentium/350
+　　(2)网上商场购物系统的运行
+　　用鼠标点取商品图标，或输入查询条件执行，获得输出界面。有兴趣者，可访问网址URL:http://billion.commerce.sh.cn。
+作者简介：何武 男，23岁，助理工程师，主攻方向；分布式计算、系统管理和数据库
+作者单位：华东计算机研究所总体预研部上海200233
+参考文献
+1　Jasmine Reference.CA公司,1998
+2　WebLink Manual.CA公司,1998
+收稿日期：1998-12-17

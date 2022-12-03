@@ -1,0 +1,81 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1999年 第14卷 第3期 Vol.14 No.3 1999
+
+
+
+某直升机齿轮传动系统的瞬态热分析*
+刘志全　沈允文　陈国定　苏华
+　　【摘要】　提出了传动系统瞬态温度场的分析方法，建立了失去润滑条件下传动系统功率损失及对流换热系数的计算模型，该模型考虑了失去润滑后传动系统热状态参数的时变特征。在稳态热分析的基础上，求解了某直升机齿轮传动系统的瞬态温度场，为该传动系统生存能力的预测提供了理论依据。
+　　主题词：齿轮传动　温度场　热分析
+　　分类号：TH132　V275.1
+TRANSIENT THERMAL ANALYSIS OF A HELICOPTER GEAR TRANSMISSION SYSTEM
+Liu Zhiquan
+(Mechanism Division, Beijing Institute of Spacecraft System Engineering,Beijing　100086)
+Shen Yunwen，Chen Guoding，Su Hua
+(Mechanical Engineering Department,Northwestern Polytechnical University,Xi'an　710072)
+　　ABSTRACT　　Survivability of a gear transmission system in attack helicopter after Loss-Of-Lubrication (LOL) is greatly dependent on the transient temperature fields of the systems.A helicopter gear transmission system was researched.A method is put forward to calculate the transient temperature fields of this system after LOL and the models for power losses and heat transfer (convection) coefficients are established.In these models,the time-variance characteristics of thermal physical parameters,such as viscosity,thermal conductivity are considered.A computer program is worked out for calculating the transient temperature fields of the system on the basis of these models.In the computation,the calculational results of the steady state temperature field in the transmission system are used as initial values of the transient temperature fields and the time steps are properly controlled so as to prevent "data oscillation".The transient temperature fields of the gear transmission system are obtained from the computation and can serve for predicting the survivability of the gear transmission system.
+　　Key　Words　Gear transmission　Temperature field　Thermal analysis
+1　引　言
+　　军用直升机传动系统，在战场上遭敌方火力攻击而中弹漏油失去正常润滑的概率很大。在失去润滑这样严苛的工作条件下，传动系统的生存能力很大程度取决于传动系统的瞬态温度场和传动元件材料的热承载能力。需要指出的是，对于柔性较高的转子，较低的密封腔流体周向平均速度，有利于转子的稳定运行。
+2　传动系统瞬态温度场的分析方法
+　　求解系统瞬态温度场所遵循的基本原理是，节点的净热流量等于节点相关体积内能的增加。即：
+qj＝ρjCpjVj（dTj／dτ）　　（j=1，2，…，n）　(1)
+这里qj，ρj，Cpj，Vj和Tj分别表示第j个节点处的“净热流量”、“材料密度”、“材料比热”、“相关体积”和“温度”。τ为时间，dTj／dτ为第j个节点处的温升率。
+
+
+图1　转子密封系统
+　　流体动力系数满足VanderPol型振子方程：
+　(2)
+式中各经验系数为α＝0.1，γ＝1／30，b＝0.52。但是若时间步长Δτ选取不当，就会发生计算结果的“振荡”现象，为此时间步长需满足条件dT(k+1)j／dT(k)j＞ 0，即：
+　(4)
+对于有n个节点的系统，满足式(4)的△τ(k)j就有n个。在每一次循环时对不同节点可选用统一的一个时间步长△τ(k)，即：△τ(k)=Min(τ(k)j)，(j=1，2，…，n)。
+*本文系国家“九五”国防预研资助项目
+作者简介：何立东衬小36岁　博士　高级工程师　哈尔滨市中国船舶工业总公司第七O三研究所　150036
+作者单位：中国船舶工业总公司第七O三研究所
+参考文献
+　1　何立东.转子轴承密封系统若干非线性问题的研究.哈尔滨工业大学学报，1998，30(增刊)：14-17
+　2　崔尔杰.非定常流中若干非线性问题的分析与模拟：现代流体力学进展Ⅱ.北京：科学出版社，1993；72-88
+1998年8月收稿；1998年11月收到修改稿。但密封的流体阻尼是非线性的，是最难确定的一个参数。应用反旋流时，由4只直径d0增大为Φ8 mm的喷嘴，沿与转子旋转方向相反的切线方向，以U2＝41 m/s的速度，向密封腔中喷入气流。
+　　主题词：转子　密封　非线性振动　数据模拟
+　　分类号：O322　TH113.1
+NUMERICAL SIMULATION OF ANTI-SWIRL ARRANGEMENTS FOR SUPPRESSING ROTOR/SEAL INSTABILITY
+He Lidong
+(№703 Research Institute of China Shipbuilding Co.，Нarbin　150036)
+　　ABSTRACT　　A nonlinear oscillator model，which is usually used to study the dynamic characteristics of structures in flow，has been applied to the nonlinear dynamic characteristics of rotor／seal system.Emphasis is put on the effects of the nonlinear unsteady flow in the small clearance on the rotor dynamic characteristics.The mechanism of anti-swirl arrangements for suppressing rotor／seal instability is considered.The comparison between the theoretical and experimental results of a rotor／seal system is in a reasonable agreement and shows that this method provides a theoretical basis　for application of anti－swirl technique to engineering practices.
+　　Key　Words　Rotors　Sealing　Nonlinear vibration　Numerical simulation
+1　前　言
+　　随着透平机械负荷、转速及效率等参数的提高，密封流体激振导致转子失稳的问题，已引起广泛的关注。
+　　圆锥滚子轴承的平均功率损失Nf可按下式计算［2］：
+　(5)
+这里ni为轴承内圈转速(r/min)，Fr和Fa分别为圆锥滚子轴承承受的径向力和轴向力(N)。d和αe分别为轴承的内径(m)和接触角。对于传动系统内的4个圆锥滚子轴承I1，I2，O1和O2可按式(5)分别算出其平均功率损失N(I1)f，N(I2)f，N(O1)f和N(O2)f。该平均功率损失在轴承内外圈上的分配原则与文献［1］中对应的分配原则一样。本节将应用非线性振子模型，分析试验中发生的不恰当反旋流导致的转子失稳现象。同理，机匣内空气与圆锥滚子轴承之间的对流换热系数也可近似地按有润滑情况下对应的换热系数公式(文献［1］)计算。但需将公式中的导热系数、普朗特数、运动粘度替换为机匣内空气对应的热物性参数［4］。除此之外，其它节点处（节点号为j=2，7，11，12，20，24，25）的对流换热系数可用下式计算［5］：
+αj＝0.3Re0.57jxjKj/Lj　(6)
+式中：Re，K，x和L分别为雷诺数、导热系数、修正系数和定型尺寸。该方法的思想是把流体与其中的振动物体，视为一个整体系统，利用描述物体振动和非定常流脉动的非线性数学模型，建立起流动和物体运动参数之间的关系，对方程求解或数值计算，达到了解其总体流动特性和物体受力状态的目的。机匣内空气的热物性参数随机匣内空气温度的变化关系为：
+　(7)
+　　金属材料的密度ρ(kg/m3)和比热Cp［J/(kg.℃)］随温度的变化不是很大，可近似将其视为定值，即：ρj=7850 和Cpj=641(j=1，2，5，10，13，14)；ρj=7810和Cpj=670(j=3，4，8，9，17，18，21，22)；ρj=2680和Cpj=963(j=6，7，11，12，20，24)；ρj= 7830和Cpj=550(j=15，19，23，25)。这里j为节点号。文献［1］中提及的导热系数Kb和Ks随温度T的变化规律为：
+Kb(T)＝-3.36×10-5T2+2.3×10-2T+37.836　　（100℃≤T≤900℃）　(8)
+Ks(T)＝-2.5×10-5T2-2.55×10-2T+43.8　　　（100℃≤T≤400℃）　(9)
+4　节点净热流量及节点相关体积
+　　某节点j的净热流量qj等于功率损失(发热量)在该节点上的分配Qj加上流入该节点的热流量QINj减去流出该节点的热流量QOUTj。即： 
+qj＝Qj+QINj-QOUTj　(10)
+对于本文研究的在失去润滑条件下的直升机齿轮传动系统
+　(11)
+　(12)
+这里，RwCj和RjCx为传导热阻。RjVy为对流换热热阻，σ=5.67×10-8 W/(m2。K4)为玻尔兹曼黑体辐射常数。εZ为表面黑度，AZ为辐射换热面积。下标中的w，x，y，Z均指与节点j有直接换热关系的节点号。qj及Vj(j=1～15，17～25）的算式所占篇幅较大(详见文献［6］），此处不一一罗列。失去润滑情况下的传导和对流热阻仍按文献［1］中的热阻公式来计算，但需考虑失去润滑后热物性参数随温度变化的因素。
+5　瞬态热分析结果及讨论
+　　根据上述瞬态热分析思想和数学模型，笔者编程计算了某直升机齿轮传动系统的瞬态温度场。需要输入的结构参数和工况参数与该传动系统稳态温度场计算时的一样。因此一般都选用反旋流而不是正旋流，来抑制转子的不平衡响应，确保转子的稳定性。取循环次数k=800次。计算结果：(1)传动系统输入轴有关节点温度随时间的变化关系如图2和图3所示。
+3.3　不恰当的反旋流导致转子失稳
+　　如果反旋流的流速、流量合适，反旋流可以抑制转子的不平衡响应；否则，反旋流也会导致转子振动失稳。主动齿轮齿面是整个传动系统中温度最高的部位。(2)输出轴有关节点的温升率较之于输入轴有关节点的温升率小得多，在τ=220秒的时间经历内，大多数节点温度仅升高10℃～20℃，从动齿轮齿面温度上升48℃。(3)从T3，T8，T17，T21随时间变化的曲线来看，在4个轴承中，轴承I1和I2在失去润滑后发生失效的可能性大于轴承O1和O2。(4)与文献［7］所揭示的温度时变规律比较，本文的瞬态温度场计算结果基本反映了传动系统的热时变规律。
+*本文系国家自然科学基金资助项目（编号：59705003）和航空基础科学基金资助项目（编号：97C53029）
+作者简介：刘志全衬小35岁　博士后　副教授　北京市9628信箱48分箱　100086
+作者单位：刘志全　(北京空间飞行器总体设计部)
+　　　　　沈允文　陈国定　苏华　(西北工业大学)
+参考文献
+　1　刘志全，沈允文，陈国定，张永红．某直升机齿轮传动系统的稳态热分析．中国机械工程，1999，10(6)：607-610
+　2　万长森．滚动轴承的分析方法．北京：机械工业出版社，1987
+　3　Handschuh R F.Thermal Behavior of Spiral Bevel Gears. Ph. D. Thesis,1993,NASA-TM-106518,1995
+　4　Hadden G B,Kleckner R J,et al.Users Manual for Computer Program AT81Y003 SHABERTH Steady State and Transient Thermal Analysis of a Shaft Bearing System Including Ball,Cylindrical and Tapered Roller Bearings.NASA-CR-165365,1982
+　5　Harris T A.Rolling Bearing Analysis.2nd ed.A Wiley-Interscience Publication,John Wiley & Sons,1984
+　6　刘志全．武装直升机生存能力的研究―传动系统的稳态及瞬态热分析．西北工业大学博士后研究工作报告，西安：1998：55～57
+　7　Coe H H.Thermal Analysis of a Planetary Transmission with Spherical Roller Bearings Operating After Complete Loss of Oil.NASA-TP-2367,1984:8
+1998年9月收稿；1998年11月收到修改稿。

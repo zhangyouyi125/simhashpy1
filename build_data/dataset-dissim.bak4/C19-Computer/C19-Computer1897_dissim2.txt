@@ -1,0 +1,77 @@
+微型机与应用
+WEIXINGJI YU YINGYONG
+2000　Vol.19　No.5　P.11-13
+
+
+
+
+注册表读写函数的设计
+陈建军
+摘 要：一个利用Windows API函数设计的注册表读写函数，作为一个标准模块可添加到任何一个VB应用程序中，将抽象的应用程序接口转变为一个高级函数接口。这个EventIn是1个MFVec2f。它容纳了应用程序和计算机软硬件系统的全部配置信息、初始化信息等重要数据。
+　　用此方法实现动画，需定义1个ViewPoint（VP）节点，用于移动对象的插值器PositionInterPolator（P）节点，用于旋转对象的插值器OrientationInterPolator（O）节点，以及作为set＿fraction eventIn资源的TimeSensor（Time）节点。前者只要利用注册表编辑器（Regedit．exe）即可，而后者一般是由Windows系统提供若干API函数，由编程语言调用实现。但由于Win32 API函数一般是为C／C＋＋编程人员编写的，文档采用了C语言的数据结构，在其它语言中无法将其一一对应。有些函数的调用方式又比较特殊，对一般编程者而言很难理解，再加上注册表本身很庞杂，操作不慎会使机器崩溃。例如：要播放由10个角色组成的动画，所需定义的Script节点如下：
+　　DEF Myscript Script｛
+　　　eventIn SFFloat fraction
+　　　eventOut SFInt32 whichChoice
+　　　url″vrmlscript：
+　　　function fractionvalue（）｛
+　　　whichChoice＝value ＊9； 
+　　　｝″
+　　｝
+　　然后通过如下路由实现动画： 
+　　ROUTE TS．touchTime TO Time．startTime
+　　ROUTE Time．fraction＿changed TO MyScript．fraction
+　　ROUTE MyScript．whichChoice TO MySwitch．whichChoice
+　　其中的MySwitch定义了包括各个角色的Switch节点。
+　　Visual Basic是当前最流行而又大众化的语言。虽然VB提供了SaveSetting、GetSetting等函数可用来在注册表中存取有关设置，但它们的功能有限，无法满足应用程序对注册表进行各种操作的要求。因此我们设计了一个VB的自定义函数RegCRWDKey，作为一个标准模块可添加到任何一个应用程序中。
+　　Public Function RegCRWDkey（ByVal Mode As String，ByVal strhKey As String，［ByVal subKey As String］，［ByVal keyvalueName As String］，［keyValue As String］）As Integer
+　　该函数可以对注册表的任何登录项进行创建、读取、写入和删除操作，功能非常强大，使用却十分便捷。表1为操作一览表。
+表1 RegCRWDKey操作一览表
+功能ModestrhKey[subKey][keyValue Name][key Value]返回错误码
+创建子键C根键名子键名忽略忽略0：调用成功
+1：Mode错
+2：根键名错
+3：调用失败
+4：打开键错
+5：键值名错
+6：关闭键错
+读键值R根键名子键名若缺省，读根键键值键值名若缺省，读默认键值读出的键值调用时必须是非定长字符串变量
+写键值W根键名子键名若缺省，写根键键值键值名若缺省，写默认键值待写键值串
+删子键或键值D根键名子键名键值名若缺省，删除指定子键忽略
+
+注：1．带［］的参数是可选的； 
+　　2．“根键名”为Windows预定义的6个标准键名，请参见注册表；
+　　3．“子键名”如同DOS的树型目录结构，如：“Test＼WindowSize”；
+　　4．除keyValue外所有参数中字母的大小写均具有同等含义。
+1 注册表基本结构
+　　在Win95／98系统中，注册表采用“关键字”及“键值”来描述登录项及其数据。
+2．3 使用纹理坐标的动画
+　　在VRML中可以用ImageTexture节点为对象添加纹理。左窗格是登录区，由系统预定义的6个主关键字（或称为“根键”）及若干主键（或子键）组成；右窗格是数据区，由“键值名”和“键值”组成。
+
+图1 注册表
+2 API函数读写注册表的一般过程
+　　（1）使用RegOpenKey或RegCreateKey打开或创建1个键。
+　　（2）若上一步成功，则使用RegQueryValue或RegQuery－ValueEx读取键值，用RegSetValue或RegSetValueEx设置（写）键值。
+2．4 使用BackGround节点创建动画
+　　VRML中的Background（B）节点为虚拟世界提供背景颜色或图像。
+　　（3）完成操作后用RegCloseKey关闭键。
+　　为了接收颜色插值器value＿changed事件产生的颜色值，定义1个Script节点如下：
+　　DEF S Script｛
+　　EventIn SFFloat fraction
+　　EventOut MFColor color
+　　Field SFNode CI USE CI
+　　url ″vrmlscript：
+　　　function fraction（）｛
+　　　　color［0］＝CI．value＿changed；
+　　　　color［1］＝CI．value＿changed； 
+　　｝″｝
+　　ROUTE TS．fraction＿changed TO CI．set＿fraction
+　　ROUTE TS．fraction＿changed TO S．fraction
+　　ROUTE S．color TO B．set＿skyColor
+2．5 帧动画
+　　利用VRML中的角色（1个平坦的始终面向用户的图像）和Switch节点便可在VRML中实现帧动画。TextureCoordinate节点定义如下：
+　　TextureCoordinate｛
+　　　 ExposedField MFVec2f Point［］
+　　　　｝
+　　point域中的值是在每一个坐标处使用的s和t值。注册表内容请参见图1。
+　　帧动画是将一幅幅图像逐次播放，当用于形成动画的对象方便创建成图像时，可以用此方法。这种切换完全由创作者控制，这就必须用Script节点对它进行编程来完成某一特定的任务。
+　　注意：对注册表的操作必须正确无误，否则后果不堪设想！随着视点的变化，化身的位置也发生变化，因此观察到的场景也不断变化，从而实现了动画

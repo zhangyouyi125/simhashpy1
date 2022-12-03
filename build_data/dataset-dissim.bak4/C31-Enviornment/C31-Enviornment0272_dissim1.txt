@@ -1,0 +1,157 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第3期 No.3 Vol.18 1998
+科技期刊
+
+邻单胞菌L1对氯代苯的降解特性的研究
+罗如新*　李顺鹏　(南京农业大学微生物系，南京 210095)
+张素琴　 (中国科学院武汉病毒研究所，武汉 430071)
+文　摘　从某化工厂废水处理厂活性污泥中分离得到一株能以氯苯为唯一碳源的细菌，革兰氏阴性杆菌，兼性厌氧，初步鉴定为邻单胞菌属(Plesiomonas)。该菌在有氧情况下18天内对氯苯的降解率为50%，在厌氧条件下18天内对氯苯的降解率为37.2%。不同底物试验结果表明，该菌还能利用间氯酚、TCP、2，4-D等二氯、三氯化合物，此外不经诱导抗汞能力达15mg/L。细胞抽提物开环酶分析，L1菌株在好氧条件下拥有一条被氯苯诱导的邻位裂解途径。
+关键词　邻单胞菌　氯苯降解率　抗汞　邻苯二酚双加氧酶
+Degradation characteristics of chlorobenzene by Plesiomonas sp.L1 .Luo Ruxin,Li Shunpeng(Department of Microbiology,Nanjing Agricultrual University,Nanjing 210095)；Zhang Suqin(Wuhan Institute of Virology,Academia Sinica,Wuhan 430071).China Environmental Science.1998,18(3):272～275
+Abstract―A bacterium which can degrade chlorobenzene as the sole source of carbon and energy was isolated by selective anaerobic enrichment from activated sludge.The bacterium was preliminarily identified as a Plesiomonas sp..The anaerobic and aerobic biodegradation rates of chlorobenzene determined by GC were 37.2% and 50%，respectively. The organism also grew on metachlorophenol, 1，2，4-trichlorobenzene, 2，4-dichlorophenoxyacetic acid. It had resistance to mercuric chloride with a concentration of 15mg/L without induction. Dioxygenase assays of cell extracts suggested that the strain L1 possessed an ortho pathway which was induced by chlorobenzene. 
+Key words:Plesiomonas　degradation rate of chlorobenzene　mercury resistance　catechol dioxygenase 
+　　氯代苯类有机物作为重要的化工原料，广泛用于农药、医药和材料合成等行业，但随着废水和废物进入环境造成环境污染。这类化合物化学性质稳定，与非氯代化合物相比，由于其更高的持久性和更强的毒性，对环境危害特别严重。
+　　利用微生物来降解氯代苯类有机物在国内外已有很多报道，筛选出了许多能利用这些难降解物质的微生物〔1～3〕。并对氯代苯类化合物的降解途径、遗传背景等也有深入的研究〔4〕，但这些研究大多集中于好氧菌或厌氧菌的特性，而在污染环境中往往是好氧和厌氧条件并列或交替存在，更需要在两种情况下都能发挥一定功效的微生物类群。发表论文18篇。
+1　实验方法
+1.1　样品来源
+　　活性污泥样品采自苏州化工厂废水处理厂。
+1.5　小麦样品中稀土元素的测定
+　　向恒重的小麦样品中加入约10mL浓HNO3，盖上表面皿，浸泡过夜。
+1.3　氯苯降解菌的富集、分离(厌氧分离)、鉴定
+　　富集培养基成分（每升)：蛋白胨10g，KH2PO4 0.10g，葡萄糖0.10g，NaCl 0.10g，pH值为7.0～7.2，383Pa，115℃，30min，高压灭菌。
+　　无机盐培养基成分（每升)：NH4NO3 1.0g，(NH4)SO4 0.5g，MgCl2 0.5g，KH2PO4 0.5g，NaCl 0.5g，pH值为7.0～7.2，121℃，30min，高压灭菌。
+　　LB培养基（每升)：蛋白胨10g，酵母粉5g，NaCl 10g，pH值为 7.0～7.2，121℃，30min，高压灭菌。 
+　　厌氧富集驯化：采用亨盖特厌氧技术，在厌氧条件下，30℃，150mL富集培养基，加活性污泥5mL，氯苯浓度为50mg/L，以后每隔1周移种1次，以接种量为10%接入新鲜培养基中，5周后氯苯浓度提高至300mg/L，然后用无机盐培养基代替富集培养基驯化1周。 以含氯苯浓度为300mg/L的无机盐培养基进行滚管分离，约1周后出现菌落，厌氧条件下挑单菌落移入无机盐液体培养基中，再滚管2次，选择生长最快的菌落移至无机盐液体培养基中。与空白对照相比，外源稀土的添加明显提高了酸可提取态和有机质及硫化物结合态在土壤中的含量，随着添加的外源稀土浓度的增大，这两种形态稀土的浓度也逐渐升高。
+　　对分离得到的细菌进行形态结构、生长特性、生理生化等方面的试验。具体方法参考《一般细菌常用鉴定方法》，最后根据《伯杰氏细菌鉴定手册》鉴定到属。
+1.4　氯苯的微生物厌氧降解和好氧降解
+　　用气相色谱法测定氯苯的含量。
+　　厌氧降解：装50mL无氧无机盐培养基于80mL血清瓶中，加氯苯，30℃静止培养。主要从事稀土环境化学的研究工作。
+　　好氧降解：装50mL无机盐培养基于250mL三角瓶中，加氯苯，30℃摇床培养。同样设2个对照，3个重复。
+　　每隔5天取样测定。样品处理方法：取样品1mL，加1mL苯，充分振荡，静止2h分层，吸取上层有机相，加少量无水硫酸钠，片刻即澄清，可用于进样测定。但是水可溶解态的含量与空白相比没有多大变化，这主要是因为在逐级提取法中吸附作用控制着土壤中稀土元素的释放〔5〕，在以去离子水为提取剂时，由于土壤对稀土离子有很强的吸附能力，因此，随着外源稀土含量的增加水可溶解态稀土的含量变化不大。待试菌株经活化后，在以上述底物为唯一碳源的无机盐培养基平板上划线。底物浓度为100mg/L，同时以不含底物的无机盐培养基作细菌的阴性对照，30℃培养数日后观察其生长情况。
+　　抗性试验：Ap(25mg/L)、Cm(30mg/L)、Km(25mg/L)、Tc(20mg/L)、Sm(10mg/L)、Gm(10mg/L)、HgCl2(1～20mg/L)，L1菌株划线在含上述物质的LB固体平皿上，30℃培养48h，观察其生长情况。
+1.6　双加氧酶分析
+1.6.1　细菌生长　将L1菌株接种于20mL LB液体培养基中，30℃摇床培养16h，常温下于 4000rpm离心5min。一部分于4℃冰箱保存以作对照，另一部分在以苯或氯苯为唯一碳源 的无机盐培养基中30℃驯化16h。
+2　结果与讨论
+2.1　外源稀土进入土壤后的形态分布(表2)
+　　从表2可看出,5种外源稀土进入土壤后其形态分布规律基本一致,即酸可提取态>有机质及硫化物结合态>水可溶解态。4℃下，15000rpm离 心30min，取上清液，可用于酶分析。
+1.6.3　Folin-Ciocalteu试剂法测定抽提物中蛋白含量。
+1.6.4　邻苯二酚1，2-双加氧酶(Catechol1，2-dioxygenase，简称C12O)测定　反应混合物 含1μmol EDTA，0.1μmol邻苯二酚(Catechol)或氯代邻苯二酚(Chlorocatechol)，8.7μmol 磷酸盐缓冲液(pH7.0)，细胞抽提物(含0.02～0.06mg蛋白质)，最终体积为1mL。30℃水浴 10min，测定A260处的增值，表示产物顺*顺-己二烯二酸的积累。研究结果表明：外源稀土进入土壤后主要以酸可提取态存在，不同形态的稀土浓度大小依次为：酸可提取态>有机质及硫化物结合态>水可溶解态。细胞抽提物在加入前先经55℃加热10min处理。
+表2　土壤中外源稀土的存在形态(mg/kg)
+Table 2　The species of spiked REEs in soil(mg/kg)
+
+元素形态外源稀土含量(mg/kg)
+0.0010.025.035.050.085.0100
+La酸可提取态8.4514.422.028.035.652.674.0
+　有机质/硫化物结合态1.882.392.963.234.196.137.76
+　水可溶解态0.151.161.171.171.221.21.16
+Gd酸可提取态3.2810.721.629.639.463.391.9
+　有机质/硫化物结合态2.562.873.693.444.577.509.51
+　水可溶解态2.392.412.242.442.312.412.22
+Y酸可提取态3.4711.423.231.641.966.596.8
+　有机质/硫化物结合态0.972.233.825.097.0211.215.1
+　水可溶解态0.52.002.402.602.002.812.92
+Ce酸可提取态13.718.828.334.643.964.391.1
+　有机质/硫化物结合态9.6810.711.110.311.714.516.1
+　水可溶解态7.737.487.297.066.986.726.68
+Sm酸可提取态4.739.8116.721.928.745.165.3
+　有机质/硫化物结合态4.624.034.224.694.857.449.18
+　水可溶解态4.774.224.374.014.84.464.2
+
+
+图1　稀土元素在小麦根和茎、叶中富集百分数
+Fig 1　The distribution of REEs in different parts of wheat
+　　从表3中的相关系数可看出，酸可提取态和有机质及硫化物结合态的稀土均和小麦根中稀土的富集量有较好的相关性，而水可溶解态则与小麦中的稀土含量相关性很差，这说明在研究稀土元素从土壤向小麦迁移的过程中，酸可提取态和有机质及硫化物结合态起着非常重要的作用。
+　　酶活性以每毫克蛋白每分钟内转化基质的毫摩尔数来表示。
+2　结果与讨论
+2.1　细菌的分离与鉴定
+　　L1菌为革兰氏阴性无芽孢杆菌，极生单鞭毛，兼性厌氧，接触酶、氧化酶阳性，硝酸盐还原试验阳性，葡萄糖发酵产酸产气，肌醇发酵产酸产气，不液化明胶、水解淀粉、不利用柠檬酸，最适温度为30～37℃，最高温度为44～45℃，初步鉴定为邻单胞菌属(Plesiomonas sp.)〔5〕。
+2.2　L1菌对氯苯的降解
+　　气相色谱测定条件：柱DC QF-1, 1.5%, 2.1m; INJT 230℃, 柱温190℃, N2 70mL。
+
+图1　厌氧降解曲线
+Fig.1　Anaerobic degradation of CB
+　　厌氧测定结果见图1，对照在18天内的降解率为5.3%，3个处理的平均降解率为42.5%，扣除对照，L1菌在厌氧条件下18天内对氯苯的降解率为37.2%。
+　　好氧测定结果见图2，对照在18天内降解率为8.7%，3个处理平均降解率为58.7%，扣除对照，L1菌在好氧条件下18天内对氯苯的降解率为50%。
+
+图2　好氧降解曲线
+Fig.2　Aerobic degradation of CB
+　　由此可见L1菌能在好氧和厌氧两种条件下对氯苯都有降解，好氧降解率比厌氧降解率高12.8%。
+2.3　底物试验和抗性试验
+表1　L1菌在不同底物上的生长情况
+Table 1　The growth of strain L1 in some substrate
+
+底物生长情况底物生长情况
+M-M＋2，4-D+
+M＋间氯酚+M+四氯酚 -
+M＋TCP+M＋PCP-
+
+　　注：M为无机盐培养基，“－”为不生长，“＋”为生长良好，下表类同 
+表2　L1菌对各种抗生素抗性试验
+Table 2　Antibiotic resistance of strain L1
+
+抗生素生长情况抗生素生长情况
+Ap +Tc -
+Cm -Sm +
+Km-Gm-
+
+表3　L1菌对不同浓度HgCl2的抗性
+Table 3　Mercury resistance of strain L1
+
+HgCl2(mg/L)生长情况HgCl2(mg/L)生长情况
+3+ 15+
+6 +16-
+9 +17+
+12+18-
+13+19-
+14+20-
+
+　　L1菌的底物利用试验结果见表1，表明L1菌有较宽的底物利用范围。能利用一氯、二氯、三氯化合物，而不能利用四氯以上的氯代化合物。从表2，表3可见，L1菌还具有Apr、Smr、Hgr，自然抗汞能力达15mg/L。
+3.2　土壤中酸可提取态，有机质及硫化物结合态的含量与稀土在小麦根中的富集量有显著的相关关系，与这两种形态相比，水可溶解态则没有明显的相关关系。所以微生物的抗汞性已被用来对含汞三废进行净化处理，通过驯化、诱变处理还可进一步提高L1菌株的抗汞性，更好地用于环境保护中。 
+2.4　双加氧酶酶活性测定
+　　酶活性测定结果见表4，可见L1菌拥有被氯苯诱导的邻位裂解途径。
+　　对芳香化合物主要代谢途径的研究揭示了由不同酶完成起始的转化步骤，但都转变为有限的中心中间代谢产物，如原儿茶酸和(取代的)儿茶酚。这些双羟中间代谢产物进一步代谢都是通过两种途径之一即间位裂解途径和邻位裂解途径，这两种途径最终都进入三羧酸循环。
+表4　细胞抽提物邻苯二酚双加氧酶活性分析
+Table 4　Catechol dioxygenase activities in cell extracts
+
+被分析的酶和分析基质 酶活性
+氯苯 苯 酵母抽提物
+邻苯二酚1.2-双加氧酶
+邻苯二酚0.304 0.3260.004 
+3-氯邻苯二酚 0.301 0.015 0.005 
+4-氯邻苯二酚0.287 0.014 0.004
+邻苯二酚2.3-双加氧酶
+邻苯二酚 0.012 0.004 0.005 
+3-氯邻苯二酚 0.001 0.0030.001 
+4-氯邻苯二酚 0.0020.0040.001 
+
+　　C12O活性通过cis-cis-muconate生成率来测定。0.1μmol Catechol转化生成cis-cis-muconate在260nm处吸收值增加0.56。C23O活性通过测定2-HMS的生成率来分析。在375nm处吸收值增加0.98表示0.1μmol Catechol被氧化为2-HMS。无细胞抽提液在55℃处理10min ，以使2-HMS Hydrolyase失活，防止2-HMS的进一步氧化，在55℃不至于使C23O失活〔7〕。
+　　卤代芳烃的代谢往往是通过氯代儿茶酚再进一步分解。
+表1　连续化学浸提各形态稀土元素的操作步骤
+Table 1　The procedure of chemical sequential extraction
+for different species of REEs
+
+步骤浸提操作　　　　　　稀土的形态　　　　
+10.5 g 土壤加25 mL去离子水在25℃下浸提24h水可溶解态
+2残渣用25 mL 0.1 M HCl (pH 1.0), 在25℃下恒温震荡5h，放置过夜酸可提取态
+3残渣用pH值为2的25mL 30％的H2O2/0.02M HNO3 (体积比 5：3)，有机质及硫化物
+　在85±2℃的水浴上间断搅拌2h，然后同法提取3h，冷却后，结合态
+　按固液比1：10加入 0.1 M HCl 连续搅拌 0.5h 
+
+1.3　实验作物的培养
+　　选用扬麦158号 tritiicum 为实验作物，取小麦种若干，分盛于两个250mL的烧杯中，用2%的NaClO浸泡30min，灭菌消毒后，置于日光灯下，恒温约20℃培养，每天换水2～3次。这些矿化氯代儿茶酚的酶比普通邻位裂解途径的酶有更宽的底物专一性。因此氯代儿茶酚降解途径也被称作修饰的邻位裂解途径(the modified ortho cleavage pathway)〔8〕。L1菌株也是通过邻位裂解途径来代谢氯代苯，并且通过底物利用试验也证实了L1菌株的邻位裂解酶也具有较宽的底物专一性。在厌氧条件下，L1菌如何代谢氯苯还有待进一步确定。
+3　小结
+　　兼性厌氧菌L1能以氯苯为唯一碳源生长，初步鉴定为邻单胞菌属(Plesiomonas)。在好氧和厌氧条件下，L1菌对氯苯都有降解，在18天内好氧降解率比厌氧降解率高12.8%。L1菌还能利用间氯酚、TCP、2,4-D等二氯、三氯化合物，具有Ap和Sm抗性，抗汞能力达15mg/L。在好氧条件下，L1菌株拥有一条被氯苯诱导的邻位裂解途径。
+参考文献
+1　Reinke W,Knackmuss H J. Microbiol metabolism of haloaromatic: Isolation and properties of a chlorobenzene-degrading. Appl. Environ. Microbiol. ,1984, 47(2):395～402
+2　Berry D F,Francis A J,Bollag J M. Microbial metabolism of homocyclic and heterocyclic aromatic compounds under anaerobic conditions. Microbiol. Rev.,1987 , 51(1):43～59
+3　Nishino S F,Spain J C,Belcher L A， et al. Chlorobenzene degradation by bacteria isolated from contaminated groundwater. Appl. Environ. Microbiol.,1992 , 58(5):1719～1726
+4　Rasul Chaudhry G,Chapalamadugu S. Biodegradation of halogenated organic compounds. Microbiol. Rev.,1991, 55(1):59～79
+5　中国科学院微生物研究所菌种分类组.一般细菌鉴定手册.北京：科学出版社，1978.65～66
+6　中国大百科全书编写组.中国大百科全书－环境科学.北京：中国大百科全书出版社，1983.130～131
+7　Chakrabarty A M. Genetic basis of the biodegradation of saliaylate in Pseudomonas. J. Bacteriol.,1974 , 112(2):815～823
+8　van der Meer J R,de Vos W M,Harayama S，et al. Molecular mechanisms of genetic adaptation to xenobiotic compounds. Microbiol. Res., 1992, 56(2):677～694
+作者简介
+罗如新　女，1970年1月生。1996年7月南京农业大学微生物专业博士毕业。现为复旦大学环境科学与工程系讲师。主要从事环境微生物学的教学与科研工作。先后参加“有机磷农药残留的微生物降解及其应用”(获江苏省教委科学技术进步三等奖)；“细菌质粒在环境化学污染物转移中的生态学效应”；“降解和清除污染物基因在高羊茅草中的表达机理研究”等国家自然科学基金项目。发表论文5篇。
+收稿日期：1997-07-07
+* 现在复旦大学环境科学与工程系工作

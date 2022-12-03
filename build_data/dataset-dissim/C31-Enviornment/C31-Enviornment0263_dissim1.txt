@@ -1,0 +1,69 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第3期 No.3 Vol.18 1998
+科技期刊
+
+NO-CO-CO2-N2体系中若干金属氧化物对NO
+去除反应的催化作用
+徐春保　吴胜利　苍大强　(北京科技大学冶金学院，北京 100083)
+葛西荣辉　(东北大学素材研究所，仙台 980，日本)
+文　摘　 采用固定床流动反应装置，考察Cu2O、CuO、Cr2O3、Fe2O3、MnO2、Ni2O3、V2O5等金属氧化物对NO-CO-CO2-N2体系中NO去除反应的催化作用，同时，分析了NO-CO-CO2-N2体系中金属氧化物对NO去除的作用。
+关键词　水污染　可视化　交互处理　动态显示
+Study on the visualization of control analysis for water pollution.Xuan Hua (Department of Environmental Information, Chinese College of Environmental Management Officials,Qinhuangdao 066000).China Environmental Science.1998,18(3):231～235
+Abstract―Taking Wanjin Canal water system for example, this paper for the first time in our country,puts forword the technical route of realizing the visualization system of computer pictures for the control analysis of water pollution and the design program of the system. The possibility of realizing mutual treatments for the dynamic pictures of river system is discussed in detail. The simple and practical mean is provided for dealing with the water environmental information of a large number of changing valley in a twinkle. By way of this technique, decision makers can make a new decision successfully when they grasp and know well the various changing circumstances of actual water systems.
+Key words:water pollution　visualization　mutual treatments　dynamic pictures
+　　进行水环境规划，首先要揭示的是规划范围内环境性质的空间变化规律，摸清环境现状，并由此进行功能区划、环境容量计算等一系列工作，这些工作都基于地理位置图。金属氧化物存在条件下NO-CO-CO2-N2体系中，NO去除反应较为复杂，NO/CO气相直接反应、低价氧化物对NO的还原作用、金属氧化物对NO分解反应的催化作用及金属氧化物对NO/CO反应的催化作用等都可能存在。大部分金属氧化物以对NO/CO反应的催化作用为主，而Ni2O3的预还原试样对NO的直接分解反应表现了极强的催化活性。
+关键词　金属氧化物　催化活性　NO的去除　NO/CO反应　NO的直接分解
+
+Catalytical performance of several metallic oxides on elimination of NO in NO-CO-CO2-N2 system.Xu Chunbao, Wu Shengli, Cang Daqiang (School of Metallurgy , University of Science and Technology Beijing, Beijing 100083); Eiki Kasai ( Institute for Advanced Materials Processing ,Tohoku University, Sendai 980 , Japan).China Environmental Science.1998,18(3):236～239
+Abstract―Catalytic performance of several oxides, i.e. Cu2O, CuO, Cr2O3, Fe2O3, MnO2, Ni2O3 and V2O5 on elimination of NO in NO-CO-CO2-N2 system has been examined in a fixed bed reactor. At the same time, the roles of metallic oxides in the reaction system of NO-CO-CO2-N2 has been discussed. The experimental results show that each metallic oxide gives catalytic activity on the elimination of NO with different extent , and especially Fe2O3, Ni2O3, CuO, etc. give high catalytic activities. NO elimination reactions are much complicated in the system of NO-CO-CO2-N2 with the existence of metallic oxides. Homogeneous reaction between NO and CO, reduction of NO by the lower valued metallic oxides, direct decomposition of NO as a catalytic reaction and catalytic reaction of NO/CO may all contribute in NO elimination. The results of further experiments show that most of the metallic oxides give a catalytic effect on NO/CO reaction, while pre-reduced Ni2O3 sample shows remarkable catalytic activity to the direct decomposition of NO.
+Key words:metallic oxide　catalytic activity　elimination of NO　NO/CO reaction　decomposition of NO
+　　炼铁工业是主要的NOx污染源之一，仅次于火力发电工业和交通运输业。如在此期间修改某一污染源的排放数据，则重新计算排放量和比例数，重新排列控制顺序，重新为河段填充颜色，因此这是一个动态的系统，即可反映现状，又能预测未来。同时在图的下方，列出了CODCr三级五项的排放标准。作者〔4～5〕曾研究了烧结床层中焦炭粒子的不同赋存状态、焦炭粒子的不同附着粉成分对于NO的生成和抑制的影响。研究结果表明，不仅低价态的铁氧化物如Fe3O4、FeO 等对NO的生成具有抑制作用，而且高价态的铁氧化物（Fe2O3、CaO*Fe2O3）也能抑制NO的生成。在该过程中，NO/CO反应被认为是抑制NO生成的主要原因。本文将在上述研究〔3～5〕的基础上，考察Cu2O、CuO、Cr2O3、Fe2O3、MnO2、Ni2O3、V2O5等单元金属氧化物对NO去除反应的催化作用。同时对NO-CO-CO2-N2体系中的催化机理进行探讨。
+1　实验
+1.1　试样
+　　实验所用的金属氧化物 (Cu2O、CuO、Cr2O3、Fe2O3、MnO2、Ni2O3、V2O5 ) 系化学分析用的高纯度氧化物粉剂(不纯物含量<1.0%)。这些氧化物粉剂经称量，加适量蒸馏水调匀后制成直径3～4mm的球形颗粒。制成的颗粒预先在100℃温度下烘干1h，在空气气氛中再升温至800℃，并在此温度下保持3h。制成的试样经X射线衍射物相分析后作实验用试样。试样的制粒过程中未加任何添加剂，试样成型粒的强度靠氧化物在高温焙烧过程的再结晶和固相反应。
+1.2　实验装置和方法
+
+图1　实验装置示意
+Fig.1　Schematic diagram of experimental apparatus 
+1.纯N2　2.纯CO　3.纯CO2　4.NO
+　　采用图1所示的固定床反应装置。3种不同的语言符号表示同一内容时，以相同的颜色，给人以直观、清晰的印象。为了均匀反应气流及预热反应气体，反应管下部填充30mm厚Al2O3球（球径2～3mm）。反应管上部为试样层（层厚15mm），反应管置于竖式电炉内，紧靠试样层处置Pt/Pt-Rh热电偶测量试样层温度。高纯标准气经干燥后按一定配比混合，混合气由进气管导入反应管(反应气流量1.4mL/min，反应空速SV＝8000h-1）。用KNOS-600型气体分析仪（日本高立理化株式会社）连续测定排气中的NO浓度。
+2　结果与讨论
+2.1　NO-CO-CO2-N2 体系中金属氧化物对NO去除反应的催化作用
+
+图2　500℃下各氧化物试样对NO去除反应的催化作用
+Fig.2 Catalytic effect of metallic oxides preheated 
+at 500℃ on elimination of NO
+　　图2为500℃下，反应混合气800mL/m3 NO-0.2%CO-2%CO2-N2流经各氧化物试样层时反应管出口NO浓度随时间的变化曲线。各氧化物试样所对应的NO浓度变化曲线均呈相同的趋势,初始阶段出口NO浓度不断降低，直至达到稳定的最低值。NO的还原率 (RR) 由下式计算：
+
+式中：(NO)入口和(NO)出口分别为反应管入口与出口气体中NO的浓度。
+3.2　图形色彩变化模块
+　　该模块根据有关数学模型计算的结果，调用色彩函数，将水系的不同区域染成不同的颜色〔3〕，颜色越深，越接近黑色，则表明该区域污染越严重；反之颜色越浅，越接近浅兰色，则表明该区域较为清洁，应保持下去。根据图2，各氧化物试样对应的SRR值计算为: Al2O3 2.5%、Cu2O 12.5%、MnO2 11.3%、Cr2O3 83.1%、V2O5 37.0%、Fe2O3 100.0%、CuO 97.5%和Ni2O3 98.1%。并按水环境功能区划对工业结构进行经济评价，调整工业布局，加强对新建工业选址的监督，防止出现新的不合理布局，在经济迅速发展的前提下，实现经济和水环境的基本协调，这项工作是安阳市实现水环境战略中解决矛盾的协调因子之一，是分析水环境目标可达性的重要依据。其中CuO、Cr2O3、Fe2O3、Ni2O3等的催化作用非常显著。按NO的稳定转化率，500℃下各氧化物对NO的去除反应的催化活性由高而低的顺序：Fe2O3 > Ni2O3 > CuO >Cr2O3 > V2O5 >Cu2O > MnO2。
+4.2　污染源时空分布系统
+　　污染源的时空分布及排污去向是划分水体功能的重要依据，也是计算削减污染物及进行环境影响评价的重要基础数据。与500℃(图2)相比可见，温度对氧化物催化活性影响较大，Cu2O、Cr2O3、Ni2O3的活性增加，而CuO、Fe2O3的活性则有所降低。通常温度的增高，表面反应速度常数增大，反应速度加快，然而当吸附成为反应的限制环节时，温度的增加反应物气体分子在氧化物表面吸附变得困难，反应速度则要降低。
+
+图3　800℃下各氧化物试样对NO去除反应的催化作用
+Fig.3　Catalytic effect of metallic oxides preheated
+at 800℃ on elimination of NO
+2.2　讨论
+　　金属氧化物存在条件下，NO-CO-CO2-N2体系中的反应非常复杂，对此作者综合各个可能的环节，反应体系中金属氧化物对NO去除反应的可能作用有：NO/CO单相反应、低价氧化物对NO的还原作用、氧化物表面上NO的催化分解及氧化物表面上NO/CO的催化反应等。
+　　反应管内不加入任何金属氧化物试样，反应混合气800mL/m3NO-0.2%CO-2%CO2-N2流经加热至不同温度的Al2O3球层时进行气相直接反应。不同温度下，反应管出口排气中NO浓度的稳定值如图4所示。
+关键词　水污染　可视化　交互处理　动态显示
+Study on the visualization of control analysis for water pollution.Xuan Hua (Department of Environmental Information, Chinese College of Environmental Management Officials,Qinhuangdao 066000).China Environmental Science.1998,18(3):231～235
+Abstract―Taking Wanjin Canal water system for example, this paper for the first time in our country,puts forword the technical route of realizing the visualization system of computer pictures for the control analysis of water pollution and the design program of the system. The possibility of realizing mutual treatments for the dynamic pictures of river system is discussed in detail. The simple and practical mean is provided for dealing with the water environmental information of a large number of changing valley in a twinkle. By way of this technique, decision makers can make a new decision successfully when they grasp and know well the various changing circumstances of actual water systems.
+Key words:water pollution　visualization　mutual treatments　dynamic pictures
+　　进行水环境规划，首先要揭示的是规划范围内环境性质的空间变化规律，摸清环境现状，并由此进行功能区划、环境容量计算等一系列工作，这些工作都基于地理位置图。
+
+图4　NO/CO气相直接反应对NO去除的能力
+Fig.4　Capacity of homogeneous reaction of NO/CO 
+for NO elimination
+　　由于体系中CO的存在，使高温下金属氧化物可以被CO还原为低价氧化物，从热力学上分析，低价金属氧化物还原NO也是可能的〔5〕。它作为科研工作的一种强有力的手段，大大提高了人类认识世界、研究世界的能力〔2〕。800℃下的结果如图5所示。各氧化物的还原产物对NO均有一定的去除作用。其中CuO、Cu2O、Cr2O3、Fe2O3试样的还原产物对应的出口NO浓度曲线具有相似的特点，即随着时间增加出口浓度不断增大。可以解释为随着表面低价氧化物被NO逐渐氧化为高价氧化物，它们对NO的还原作用逐渐减弱。值得注意的是Ni2O3试样的还原产物对应的NO浓度曲线与上述其它氧化物试样有截然不同的特点，随着时间的增加，出口NO浓度非但未增大，反而呈逐渐降低的趋势，50s后降至一个稳定的最低值 ( SRR高达95％ )，这一结果难以用低价氧化物对NO的还原作用来解释，可以认为Ni2O3的预还原试样不仅对NO具有还原作用，而且对NO的直接分解还起着极强的催化作用。
+
+图6　500℃下部分氧化物试样对NO分解反应的催化作用
+Fig.6　Catalytic effect of several metallic oxides
+at 500℃ on decomposion of NO
+　　 近来的研究〔7〕表明一些金属氧化物对NO的直接分解具有一定的催化作用。作者选择了Fe2O3、Ni2O3和Cr2O3氧化物试样研究对NO直接分解反应的催化作用。有关计算的结果将反映在图下方的方框内和水系各控制单元的颜色上。由图6可见，各氧化物对NO直接分解均有一定的催化作用，只是Fe2O3和Cr2O3试样对NO分解的催化活性随时间的增加而降低，而Ni2O3试样对NO分解的催化活性在实验时间内一直呈持续升高的趋势。由上述分析可见，NO-CO-CO2-N2体系中金属氧化物以对NO/CO反应的催化作用为主。在万金渠水系中，选择COD、SS和石油类三项指标，将各污染源以圆圈的图符标识在图上，并以直线标明它的排污去向及所排向的区域，当用户需要了解有关污染源的信息，需要修改有关数据时，可用鼠标点动该图符，则在其附近自动开出一污染源的信息窗口，如图2所示。按NO的稳定还原率大小，500℃下各氧化物的催化活性由高至低的顺序为：Fe2O3 > Ni2O3 > CuO > Cr2O3 > V2O5 > Cu2O > MnO2。
+3.2　温度对氧化物试样的催化活性影响较大，与500℃相比，800℃下Ni2O3、Cr2O3、Cu2O的催化活性增加，而CuO、Fe2O3的催化活性降低。 
+3.3　镍的氧化物对NO的直接分解反应具有独特的催化作用。在万金渠水系中，选择COD、SS和石油类三项指标，将各污染源以圆圈的图符标识在图上，并以直线标明它的排污去向及所排向的区域，当用户需要了解有关污染源的信息，需要修改有关数据时，可用鼠标点动该图符，则在其附近自动开出一污染源的信息窗口，如图2所示。北京科技大学博士研究生。主要从事低NOx燃烧、燃烧尾气NOx净化用催化剂及燃煤过程中同时抑制污染物NOx及SO2生成新技术研究。发表论文10篇。
+致谢　感谢北京科技大学炼铁实验室高级实验师许满兴先生对本实验研究的帮助。硕士研究生寿秋爽、李敏和邓勇参加了部分实验工作，在此一并致谢
+收稿日期：1997-07-06

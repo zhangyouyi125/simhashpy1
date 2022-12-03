@@ -1,0 +1,107 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第4期 No.4 Vol.18 1998
+科技期刊
+
+厌氧(水解)―好氧处理工艺的理论与实践
+王凯军　 (北京市环境保护科学研究院，北京 100037)
+文　摘　对厌氧、好氧工艺在污水处理领域的作用和新的应用领域进行了探讨。厌氧和好氧处理工艺各有优点和缺点，而厌氧-好氧联合处理工艺可以发挥单独工艺的优点，厌氧-好氧联合处理工艺在难降解污水的处理上有其独特的优点。主要从事水泥化学、工业废渣利用及环境材料的研究。
+　　指标化：根据环境影响分类，依据一定的模型将各LCI数据转化为相应的环境影响指标。对于厌氧、好氧和兼性微生物，特别是兼性微生物作用的深入研究，有助于进一步开发高效率、低能耗的污水处理新工艺。
+关键词　厌氧处理　水解工艺　兼氧反应
+Theory and application of anaerobic(hydrolysis)-aerobic treatment process.Wang Kaijun(Beijing Municipal Research Institute of Environmental Protection,Beijing 100037).China Environmental Science.1998,18(4):337～340
+Abstract―In this paper,author discussed the functions and new application areas of anaerobic and aerobic treatment processes. The integrated anaerobic-aerobic process can mutually complement in their advantages and offset in their disadvantages, especially for refractory wastewater treatment. Anaerobic(hydrolysis)-aerobic process has been widely accepted in the field of municipal wastewater treatment and also applicable for industrial wastewater. Through theory analysis and further experiment, it is found that the hydrolysis process has the capacity as a pretreatment unit for anaerobic treatment of high SS contained wastewater. It might be a new technical solution for such kind of industrial wastewater. It is beneficial to further study the roles of facultative bacteria for developing new processes with characteristics of low energy consumption and high efficiency.
+Key words:anaerobic treatment　hydrolysis process　facultative reaction
+　　经过多年的研究和开发水解―好氧生物处理工艺已经趋于成熟，并被广泛地应用于城市污水和各种难降解污水工业废水的处理中〔1，2〕。所有的原料开采以相同的电力消耗计，未考虑其它污染物。如何及时地总结这些新的进展，并从理论上给予合理的解释，并应用指导生产实践是本文的目的之一。同时本文也介绍了作者在水解工艺这一领域新的探索和实践。
+1　基本理论
+　　污水生物处理工艺分好氧和厌氧工艺，这两类各有特点和优缺点。随着生物技术的发展，作为生物处理的主角仍是微生物。
+收稿日期：1997-10-20
+*湖北省自然科学基金资助项目
+。过去对于好氧微生物和专性厌氧微生物研究十分充分, 而对兼氧性微生物的研究不多。各种类型有机污染物的厌氧(缺氧)、好氧降解反应过程汇总如下。除反应式(1,5)为传统的厌氧和好氧工艺流程外，其它反应均为一些新工艺的化学反应基础。
+好氧(缺氧)过程 
+1　COD → H2O＋CO2 (传统好氧工艺) 
+2　NH+4　→　NO-３ (硝化工艺) 
+3　H2S → So (微需氧或缺氧工艺) 
+4　R-Cl → CO2 + Cl- (好氧反应)
+厌氧(缺氧)过程
+5　COD → CH4+CO2 (传统厌氧工艺)
+6　NO-3 → N2 (反硝化或缺氧工艺)
+7　SO2-4 → H2S (厌氧反应)
+8　RCCl → CH４+CO2+Cl- (厌氧反应)
+　　利用兼性细菌的工艺人们已有涉及，如对去除 N、P的A2O或AO工艺(反应2，6)是利用兼性菌在好氧条件下进行好氧代谢，而在厌氧条件下进行不同代谢反应的工艺。在含有硫酸盐的有机废水中，厌氧反应将有机物和硫酸盐分别转化为有机酸和硫化氢(反应7)，产生的硫化氢被微需氧细菌直接氧化为硫元素，这可以用来去除硫化物并回收硫元素(反应3)。单纯减少水泥生产阶段煤耗而提高电耗并不能从根本上改善水泥的环境性能，只是将污染从水泥行业向电力行业转嫁。
+　　以上的基本原理是新工艺开发的基础。例如，目前国内外流行的A-B工艺和序批式活性污泥(SBR)工艺。前者是在A段的高吸附段，发生水解和部分酸化反应，大分子物质降解为小分子物质，所以使得整个工艺的效率大为提高，而SBR过程同样历经了好氧―缺氧和厌氧的过程。
+2　水解―好氧工艺应用
+2.1　低浓度污水处理
+　　成功的利用兼性微生物的典型工艺是由北京环保所在80年代开发的水解―好氧生物处理工艺〔1〕。水解池利用水解和产酸微生物，将污水中的固体、大分子和不易生物降解的有机物降解为易于生物降解的小分子有机物，使得污水在后续的好氧单元以较少的能耗和较短的停留时间下得到处理。采用水解―活性污泥法，与传统的活性污泥相比，其基建投资，能耗和运行费用可分别节省30％左右。由于水解池具有改善污水可生化性的特点，使本工艺不仅适用于易生物降解的城市污水等，而且更适用于处理不易生物降解的某些工业废水，如纺织废水、印染废水、焦化废水、酿酒、化工、造纸废水等。工艺的应用情况见表1〔2〕。
+　　由表5标度值得到相应的判断矩阵，求出其特征向量经一致性检验合格得到各指标的权重系数，结果见表6。萘属于难降解芳香族化合物，其在城市污水的难降解部分中占很大的比例。据北京市环境监测中心测定，萘在北京市城市污水中普遍存在，而且在传统的活性污泥中不能很好降解，天津市纪庄子污水处理厂的出水测定也证实这一点。
+　　考虑到水泥寿命周期的不确定性，本研究以原料开采至水泥生产，同时以一定标准的混凝土制造构成LCA评价的寿命周期，其流程见图1所示。在萘与水解污泥接触24.5h后，光密度降低率达98.9％；水解反应3h后，在230nm左右有一吸收峰，根据有机化合物的波谱和萘的降解途径分析，这个吸收峰可能是萘的中间产物(水杨酸或β-酮已二酸)，水杨酸的BOD为0.95mg BOD5/mg水杨酸很容易降解。
+2　硅酸盐水泥LCA评价方法
+　　硅酸盐水泥LCA评价一般分为两种。所以，水解预处理为进一步的生物处理创造了有利的条件。
+
+图1　难生物降解物质萘的水解、好氧降解反应比较
+Fig.1　The anaerobic and aerobic degradation of refractory chemical-naphane
+3　水解工艺的再认识
+3.1　水解工艺的再开发与应用
+　　水解池除将污水中的固体状态大分子和不易生物降解的有机物降解为易于生物降解的小分子有机物的这一特点外，还有悬浮物去除率高和去除的悬浮物可以在水解池中得到部分消化的特点。近年来，利用这一特点进行处理高含悬浮物和脂类废水，如酒糟废液、活性污泥、乳制品废水和畜禽粪便等，表2为处理这类废水的实验结果〔5〕。
+表2　水解池处理不同高悬浮物或脂类废水(mg/L)
+Table 2　Results of hydrolysis reactor for high SS and lipids contained 
+wastewater treatment (mg/L)
+
+成分
+(COD)
+
+剩余污泥生活污水奶制品废水
+t=17℃HRT=3.0hSRT=20dt=20℃HRT=9.6hSRT=1.4dt=20℃HRT=4.5hSRT=2d
+OLR=5.6gCOD/L*dOLR=4.5gCOD/L*dOLR=21.2gCOD/L*d
+进水出水去除率(%)进水出水去除率(%)进水出水去除率(%)
+总量697432382010129943890156360
+悬浮355124651339832011564
+胶体14511123　27　230323590
+脂类　-----290798
+
+　　实验结果表明，水解反应器作为预处理对于悬浮性COD和脂类有较高的去除率，对于城市污水和剩余污泥悬浮性COD去除率分别为65％和98％。而奶制品废水由于乳酸的预酸化使pH值降低至4.0，造成蛋白质和脂类的沉淀从而达到98%的去除率。去除的悬浮COD或污泥在水解池内得到富集，对于城市污水、剩余污泥可达到20～30g/L,奶制品废水达到100g/L，以上物质在水解池中得到了部分水解和酸化需要进一步稳定。单纯减少水泥生产煤耗而提高电耗并不能从根本上改善水泥的环境性能，只是将污染从水泥行业向电力行业转嫁。以上研究结果扩大了高效厌氧处理工艺的应用范围和效率。所有的原料开采以相同的电力消耗计，未考虑其它污染物。能否提高其去除效率，并采用高效的厌氧工艺是研究开发的目标。
+3.2.1　活性污泥　某医院污水处理厂水量为
+2000m3/d,污泥稳定化装置做成一体化的设备(图2)。为使活性污泥达到稳定化和良好的脱水性能，剩余污泥先排入污泥酸化池，污泥酸化池为完全混合并带搅拌反应器(CSTR)，在池内活性污泥进行酸化水解，水力停留时间为3～5d。污泥酸化池出水排入水解池，进行固液分离，水解池排出的上清液排入UASB反应器，从水解池排出稳定化的污泥进行脱水。实验结果表明，厌氧出水可达到90%以上COD去除率，污泥脱水性能良好，从而解决了污泥处理问题。
+
+图2　污泥三阶段处理工艺
+Fig.2　Three stage treatment system for slurry treatment
+3.2.2　酒精糟液的处理　薯干糟液与玉米槽液不同，由于其蛋白含量较低回收价值不大。合理的治理工艺应首先采用适合的固液分离，上清液采用上流式厌氧污泥床技术处理。其中固液分离方法之一是经过带式脱水机进行固液分离，滤液(固含量<0.3%)已经适合采用UASB技术处理,并且可以采用较高的容积负荷。另一种固液分离的方法是采用分离的两级厌氧系统，糟液经厌氧酸化池水解酸化，去除大部分悬浮物和部分有机物质，然后进入固液分离池去除固体物质，以利于后续UASB的正常运行，经固液分离后的液体进入UASB反应器，经厌氧处理后再进入好氧生化池。这两种方法在工程中都得到应用，表3为不同工艺的应用情况。
+表3　高含悬浮物废水的应用实例
+Table 3　The application cases of high suspended solids contained wastewater treatment
+
+地　　点　　　　糟液量(m3/d)分离方式UASB负荷
+(kgCOD/m3*d)后处理温度(℃)
+山东日照酒厂150水解酸化池10.0接触氧化35
+唐山冀东制药厂2000水解池＋浓缩池7.0活性污泥35
+山东扳倒井酒厂450带式机械脱水机7.0SBR55
+山东景芝酒厂850卧式离心机8.0接触氧化55
+河南邓州酒厂1000带式机械脱水机10.0CAST55
+安徽泗县酒厂250带式脱水机7.0SBR35
+
+4　结论
+4.1　厌氧(水解)―好氧联合处理工艺，具有单独好氧处理和厌氧处理两者的优点，特别适于难生物降解污水的处理。
+2.1.3　不考虑水泥的循环利用、废弃处理。
+4.3　含悬浮物比例较高的低浓度污水(城市污水和屠宰废水等)和高固体含量的废水(剩余污泥、酒精糟液、畜禽粪便等)是目前厌氧处理的难点和热点。利用水解工艺可以解决高固体悬浮物给厌氧工艺带来的抑制和破坏。
+参考文献
+1　王凯军. 低浓度污水厌氧(水解)处理.北京：中国环境科学出版社,1991
+2　王凯军,许晓鸣,郑元景.水解-好氧生物处理工艺应用实例.环境工程,1991,9(4):3～7
+3　Wang Kaijun.Integrated anaerobic and aerobic treatment of sewage.Netherlands：Den Haag, 1994
+4　王凯军,许晓鸣,陶　涛等. 水解池稳定塘废水处理系统研究. 中国环境科学, 1991,12(2):81～86
+5　Zeeman G Wendy，Sanders T M,Wang Kaijun,et al. Anaerobic treatment of complex wastewater and waste activated sludge-application of an Upflow Anaerobic Solid Removal(UASR) reactor for the removal and pre-hydrolysis of suspended COD. IAWQ Conference of Advance Wastewater Treatment. 1996.225
+作者简介
+王凯军　男，1960年5月生。博士，现为北京市环境保护科学研究院副总工程师，副研究员。公用系统的环境数据见表1。承担国家“七五”、“八五”、“九五”攻关课题和北京市科研项目多项。
+表7　水泥寿命周期各阶段综合指标及比例
+Table 7　The environment impact level and proportion at different production stages
+
+生产过程标准指标×权重系数10-12（a）综合指标比例(%)
+EDPGWPHTAPPOCDNP
+原料开采0.040　　　　　0.0400.6
+水泥制造2.4451.8480.11850.09570.03250.01774.557468.06
+混凝土制造0.176　　　　　0.1762.63
+电力生产1.0530.4940.09850.07960.01190.01501.75226.17
+原煤开采0.004　　　　　0.0040.06
+运输　0.0690.01570.01390.06510.00280.16652.49
+总计3.7182.4110.23270.18920.10950.03556.6959100
+
+3　结论
+3.1　运用寿命周期全程评价方法，从考察水泥整体生产行为与环境的相互作用评价、分析和解决环境问题，对水泥工业新品种、新工艺和新设备的研究和开发，改善环境等方面均具有十分重要的意义。其中“水解－好氧工艺研究”获北京市科技进步一等奖并获国家发明专利；“水解－氧化塘工艺”获国家环保局二等奖。并主持过北京市和其它省市多项设计工程。发表论著50余篇。
+收稿日期：1997-09-15

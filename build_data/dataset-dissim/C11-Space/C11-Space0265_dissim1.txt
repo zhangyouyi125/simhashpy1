@@ -1,0 +1,77 @@
+　宇航学报
+JOURNAL OF ASTRONAUTICS
+1999年 第20卷 第3期 vol.20 No.3 1999
+
+
+
+参数不确定空间机械臂系统的
+自适应鲁棒性联合控制*　
+陈　力　刘延柱
+　　摘　要　本文讨论载体位置与姿态均不受控制的自由浮动空间机械臂系统的控制问题。其中OPEN可为几种状态：①接到该份EO，尚未经CCB讨论；②CCB已讨论，已正式答复买方；③接到正式EO，但卖方无法按此实施，处于再次与买方协商的阶段。通过仿真运算，证实了方法的有效性。
+　　主题词　自由浮动空间机械臂系统　多刚体系统动力学　自适应鲁棒性联合控制
+THE SCHEME OF COMBINING ADAPTATION WITH 
+ROBUSTNESS CONTROL FOR SPACE MANIPULATOR 
+SYSTEM WITH UNCERTAIN PARAMETERS
+Chen Li
+(Department of Mechanical Engineering,Fuzhou University.Fuzhou.350002)
+Liu Yanzhu
+(Department of Engineering,Shanghai Jiao Tong University.Shaihai.200030)
+　　Abstract　In this paper,the control of free-floating space manipulator is discussed.with the augmented state-feedback control model,The scheme of combining adaptation with robustness control is proposed for a free-floating space manipulator whose papameters is uncertainty to track the desired trajectory of workspace.It is demonstrated by the simulation that the control scheme is efficient.
+　　Key words　Free-floating space manipulator Multibody dynamics Combining adaptation with robustness control
+　　1　引言
+　　航天技术的发展，使空间机械臂的作用日益重要。由于空间臂的载体自由浮动，位置和姿态控制系统在机械臂操作期间常处于关闭状态，机械臂的运动将引起载体的耦合运动。因此空间机械臂系统的动力学和控制问题远较地面固定机械臂复杂，并成为人们研究的热点［1，2，6，7］。由于各种原因，实际空间臂系统的参数(如质量、长度等)是难以精确确定的。因此它的控制系统必须具有在这些参数波动的条件下仍能使手端稳定地实现惯性空间期望轨迹的能力。转包商没有设计更改产品工程图纸的权力，只能接受指令，按指令执行，也就是按工程指令EO的内容编制自身的生产性文件AO/FO，并严格按EO上指定的更改起点实施更改，以确保产品的符合性。因此地面臂的控制方法难以直接应用于空间臂系统。
+结束语
+　　工程更改预审动态跟踪系统的建立，使成飞公司基于零件批投产的生产管理模式与麦道公司架次管理的模式达到了契和，不仅完好地实施了工程更改，而且将库存在制品的报废率降到最低点，以此保证了交付产品的符合性与正确性。Gu等［5］对载体位置和姿态均无控制情形，提出将手端与铰坐标组成增广变量，使动力学方程中的惯性参数符合线性规律。本文改进了增广变量法，并针对机械臂与载荷参数均存在不确定性的情况，提出了追踪惯性空间轨迹的自适应鲁棒性联合控制方法，并利用Lyapunov直接方法证明了控制系统满足渐近稳定性条件。仿真计算结果表明控制方法的有效性。
+　　2　动力学方程
+　　以图(1)所示作平面运动的自由浮动二杆空间机械臂系统为例，系统动力学方程可利用多体动力学的任何一种建模方法导出。如可利用Robersen-Wittenburg方法［8］，将载体质心坐标xc,yc和相对Y轴的转角θ1以及各杆的相对转角θ2，θ3构成广义坐标q：
+　　　　　　　　　　　　　　　
+
+图1　平面两杆自由浮动空间机械臂系统
+列出如下形式的系统动力学方程：
+　　　　　　　　　　　　　　　　　　　　　　　　(1)
+其中D(q,)为5×5质量矩阵，h(q,)为包含哥氏力、离心力的5阶列阵，τ=(τ2　τ3)T为关节铰控制力矩τ2,τ3组成的2阶列阵；且对任意变量z∈h5,矩阵D、h间存在关系［3］：
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(2)
+将对称的质量阵D(q,)写作分块形式，则方程(1)可分解为：
+　　　　　　　　　　　　　　(3)
+其中Dbb和Drr为3×3和2×2对称子矩阵，Dbr=DTrb为3×2子矩阵，上式左端第一式的积分表示自由浮动空间机械臂系统的动量和动量矩守恒关系。
+　　3　增广变量
+　　机械臂控制系统要求与机械臂抓手固定的载荷实现沿惯性空间预定轨迹的运动，设载荷质心相对惯性参考系的坐标为Y=(xp　yp)T,则Y可表示为广义坐标q的函数，而Y相对q的Jacobi矩阵表为：，。
+　　为保证系统动力学方程中的参数以线性形式出现，将Y代替铰坐标qr，使qb与Y构成新的增广变量X=［qTb　YT］T。这些EO的状态被置为CHECK值。若Jr非奇异，则矩阵Ja可逆，从方程(4)可解出：
+　　　　　　　　　　　　　　　　　　　　　　　(5)
+　　设XD=［qTb　YTD］T,其中YD为载荷的期望运动轨迹。e1=YD-Y为实际轨迹与期望轨迹之间的误差，则X与XD之间的增广输出误差向量e为：e=XD-X=［0T　eT1］T。
+　　利用实测的输出误差e计算系统的参考铰速度:
+　　　　　　　　　(6)
+其中K1为任选的对称正定常值矩阵。由于生产是一个动态过程，零件生产、组件装配都随计划在不间断地进行，故不能简单地确定某更改的起点，麦道公司内部有运作程序规定设计与制造间协商纳入更改的起点，同样针对转包商也有相应的程序。
+　　将(11)式确定的控制力矩代入系统动力学方程(10)，得到
+　　　　　　　　　　　(12)
+矩阵WΦ定义为：,,其中ξ、分别为从真实模型D、h及参考模型中分离出的待估计参数值和可调的参数值，W为q、的不含待估计参数的函数矩阵。
+　　在实际的空间机械臂系统中，系统参数有时并非都是未知的，如其抓取的载荷的参数可能是未知的，但有关机械臂的参数并非完全不确定，可能只是难以精确确定。工程更改预审是转包生产中项目管理的重要组成部分，是产品生产与验收不可缺少的关键环节，其跟踪控制的好坏，直接关系到供应商的信誉与威望。从而简化控制器的结构，使之更便于实时控制。
+　　主表单中的“数据输入”功能可运行数据输入表单，实现对预审EO数据表的输入。
+　　系统开发初期，采用FOXBASE的技术建立数据库，并以此衍变出若干子库，实现主库与子库间的相互转化及调用，为此建立了最基本的一个数据库，将所有预审EO的数据输入其中，采用人工设定方式来标记预审EO的状态，每份EO的状态仅为OPEN(未解决)和CLOSE(关闭)两种。
+　　5　仿真算例
+　　设仿真的空间机械臂系统如图(1)所示，并设空间机械臂手端在惯性空间的期望轨迹为圆：xD=4.2-0.6.cos(1.5t)，yD=4.0+0.6.sin(1.5t)。
+　　选择“新的EO”功能可运行新EO的输入表单，在该表单中可进行预审EO的图号、版次、收到日期及更改内容简述的输入。
+　　设系统中载荷参数未知、机械臂的参数为不精确确定，则系统的待估计参数向量为：
+ξE=(m1 m2 m3 m1R21 m2R22 m3R23 m2a2 m3a3),ξR=(mp Ip)
+　　仿真过程中，提到的控制系统对ξE保持鲁棒性，对ξR则采取参数调节。
+　　设空间机械臂系统的实际参数值为ξE=(40　2.0　2.0　34.17　6.0　6.0　3.0　3.0)，ξR=(3.0　1.5)；仿真时ξE的估计值为=(38.0　1.5　1.5　30.0　5.0　5.0　2.0　2.0)，且已知参数实际值与估计值间的误差范围为c1=3.0,c2=1.0，c3=1.0,c4=5.0,c5=2.0，c6=2.0,c7=2.0,c8=2.0；而ξR=(mp　Ip)未知，采用(16)式的调节规律，并假定ξR中各分量的初始估计值均为1。监控这些不同状态标识，也就达到了对预审EO进行动态跟踪的目的。图(3)为本体姿态角及机械臂关节角变化曲线。图(4)为ξR的调节规律。
+
+图2　手端实际轨迹与期望轨迹
+
+图3　本体姿态角和机械臂关节角变化曲线
+
+图4　参数mp,Ip的自适应规律
+　　仿真结果证明了，本文提出的自适应鲁棒性联合控制规律的有效性。
+*国家自然科学基金资助项目(19872032)及航空基金自选课题资助项目
+作者单位：陈　力：福州大学机械工程系.福州.350002
+　　　　　刘延柱：上海交通大学工程力学系.上海.200030
+参考文献
+　　1　Papadopoulos E G,Dubwsky S.On the Nature of Control Algorithms for Free-Floating Space Manipulators.IEEE Transactions on Robotics and Automation,1991,7(6):750-758
+　　2　Vava Z,Dubowsky S.On the Dynamics of Space Manipulators Using the Virtual Manipulator,with Applications to Path Planning.Journal of the Astronautical Science,1990,38(4):441-472
+　　3　Slotin J E,Li W P.On the Adaptive Control of Robot Manipulators.Journal of the Robotics Reserach,1987,6(3):49-59
+　　4　Michael W,Walker.Adaptive Control of Space-Based Robot Manipulators.IEEE Transactions on Robotics and Automation,1992,7(6):828-835
+　　5　Gu Y L,Xu Y S.A Normal Form Augmentation Approach to Adaptive Control of Space Robot Systems.Journal of the Dynamics and Control,1995,5:275-294
+　　6　刘延柱，顾晓勤.空间机械臂逆动力学的Lyapunov方法.力学学报，1996，28(6)
+　　7　陈力，戈新生，刘延柱.自由浮动空间机械臂系统运动规划的最优控制方法.全国第七届空间及运动体控制技术学术年会论文集，1996：47-51
+　　8　刘延柱，洪嘉振，杨海兴.多刚体系统动力学.北京：高等教育出版社，1989
+收稿日期:1997年8月18日,修回日期:1998年7月30日

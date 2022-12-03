@@ -1,0 +1,66 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+一种显微硬度测试用小型台钳
+朱子才
+　　显微硬度计是进行硬度试验的精密仪器，可以测试样品中,小到某个晶粒的硬度值。
+
+主题词  图像相关  多模跟踪   速度和加速度滤波器  模型概率
+　
+MULTIPLE MODELS ADAPTIVE 
+TARGET IMAGE TRACKING
+Zhou Rui Shen Gongxun
+(Beijng University of Aeronautics and Astronautics*
+Beijing*100083)
+Cui Hutao Yang Di
+(Harbin Institute of Technology*Harbin*150001)
+Abstract  In this paper,the target image position offset measurement models in image 
+sequence are developed under the effects of additive and multiplitive noise.In consid-
+eration of the target maneuvering,the target states are estimated by multiple-model 
+filters and two-stage Kalman filters,depressing the effects of noise and avoiding the 
+explicit maneuvering detection.The algorithm has good performance with high speed 
+and small savings.
+
+Key words  Image correlation  Multiple model tracking   Velocity and acceleration 
+filter  Model probabitity 
+
+1  引言
+
+　　在基于图像传感器的目标跟踪系中,由于各种噪声影响,例如传感器噪声、
+背景噪声和图像量化噪声等,使得跟踪器提取到的目标位置信息含有较大误差。
+　　显微硬度计载物台是一个四方的平台，显微硬度计在测试样品时，要求样品的待测面平整，放在载物台上要稳定，当加荷时待测面不得晃动，保持水平状态，只有这样,打出来的压痕尺寸才准确；打完硬度，用测量显微镜进行测量时才能保证测量精度，否则就没有办法看清压痕的轮廓，更谈不上进行测量。滤波是抑制噪声、提高跟
+踪精度的一种有效方法,而正确的目标测量模型和动态模型是实现精确跟踪与
+滤波的前提和基础。要是花时间去加工样品使其形状符合测试要求是个费工、费时，甚至徒劳无益的事。为了导出系统方程的具体形式,
+必须先写出系统功能、势能和非保守力所做的虚功等之表达式(本文从略)。并针对目标机动性,采用多模虑波器和两段卡尔曼虑波器对目
+标状态进行估值,有效抑制了各种噪声影响,又消除了显式的目标机动性检测,
+且有较高的实时性和较少的存储量等优点。文献［3］采用速
+度滤波器和加速度滤波器并行切换的方法实现了对机动性或随机不确定性运
+动目标的跟踪,滤波维数低,计算量小,但需要显式的机动性检测。
+(对称布置的)挠性(梁式)天线-4位置参数:ro4x=0.1493520E-01m。设梁的横截面积为A,材料密度为ρ,xe-ze平面
+弯曲刚度为(EI)x,ye-ze平面弯曲刚度为(EI)y,梁截面扭转刚性模量为GΨ,截面
+惯性极矩为Ip,梁之长度为L,端部xe=0的末端刚体m0与端部xe=L的末端刚体mL
+的惯性张量分别为:
+
+末端质量m0在xe、ye方向的质心位置为Δx0、Δy0。
+
+　　图2给出了目标图像在X方向的位置和速度跟踪结果,其中实线是理想结
+果,虚线是多模跟踪结果。又设带偏置末端惯性质量的连续梁三维耦合振动的固
+有频率为ωb。在进行材料的金相试验时,也往往要用显微硬度计来测试材料微区的硬度值，以便对材料的特质做出全面的评估和科学的判断；但是，在实验室得到的这类待测材料的样品中，多半样品形状很不规则，要对这些不规则样品做显微硬度试验，首先要处理的就是怎样平稳地放置样品在显微硬度计载物台上的问题。
+　　显微硬度计载物台是一个四方的平台，显微硬度计在测试样品时，要求样品的待测面平整，放在载物台上要稳定，当加荷时待测面不得晃动，保持水平状态，只有这样,打出来的压痕尺寸才准确；打完硬度，用测量显微镜进行测量时才能保证测量精度，否则就没有办法看清压痕的轮廓，更谈不上进行测量。
+　　不规则的样品显然不能直接放到显微硬度计载物台上进行硬度测试。要是花时间去加工样品使其形状符合测试要求是个费工、费时，甚至徒劳无益的事。
+　　为了给不规则样品做显微硬度测试，专门设计制作了一个小型台钳。在给样品进行显微硬度测试时，只要将样品待测面打磨平整，按做金相测试的要求抛光，将试样放在小型台钳的底座上夹紧，使待测面保持水平，然后将小型台钳放置到显微硬度计的载物台上，对好焦距，即可进行显微硬度测试。
+这些噪声一般可以分为两类:加性噪声和乘性噪声。其结构尺寸如图1所示。3   带偏置末端惯性质量的连续
+梁三维模态分析
+
+    
+
+图2 端部带偏置惯性质量的梁数学模型
+刚性主体附加挠性天线所组成的子系统(SCOLE模型)可建模为带偏置末端惯性
+质量的连续梁系统(如图2),连续梁的三维振动由xe、ye方向的弯曲振动与绕ze
+轴的扭转振动耦合而成［2］。
+　　经过多次使用证明：这种小型台钳在给不规则样品做显微硬度试验时,方便、实用、稳定、可靠，是做显微硬度测试不可缺少的工具。拟坐标系下的Lagrange方程是
+由常微分方程与偏微分方程组成的混合微分方程组,它表明带挠性附件的航天
+器系统属于分布参数系统范围

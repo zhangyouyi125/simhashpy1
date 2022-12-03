@@ -1,0 +1,77 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年  第3期   No.3 May   1998
+科技期刊
+基于极化域能量谱的飞机
+目标识别
+
+肖顺平　王雪松　郭桂蓉　庄钊文
+(国防科技大学电子工程学院ATR国家实验室*长沙*410073)
+　　摘　要　本文导出了Poincare极化球大圆极化轨道上目标散射能量与极化态的正弦关系,结合宽带观测条件,定义了极化域能量谱的新概念,并利用五种飞机目标的宽带极化散射数据,提取了极化域能量谱特征,获得了良好的目标识别效果。
+　　主题词　宽带　极化域能量谱　雷达目标识别
+AIRPLANE TARGET RECOGNITION 
+BASED ON ENERGY SPECTRUM IN 
+THE POLARIZATION DOMAIN
+Xiao Shunping　Wang Xuesong　Guo Guirong　Zhuang Zhaowen
+(ATR Lab,National Univ of Defense Technology*Changsha*410073)
+　　Abstract　In this paper,the relationship between target's scattering energy and the incident polarization is derived on the greatcircle track on the Poincare Sphere.Considering the wideband measurement condition,the conception of energy spectrum in the polarization domain is defined.On the basis of energy spectrum,the polarization features of five kinds of airplane targets are extracted in the wide-band and polarimetric case,and satisfactory recognition results are achieved.
+　　Key words　Wide-band　Energy spectrum in the polarization domain　Radar target recognition
+1　引　言
+　　目标散射信号中的极化是极为重要的信息资源,对它的充分开发利用将为目标识别开阔新的前景,是雷达技术重要的发展方向之一。迄今虽然出现过一些极化雷达目标识别方法(多数是在少量观测频率上及对简单形体目标而言),但总的来说极化目标识别的研究仍处于低谷,有关工作在文献［1］中进行了系统的搜集与归纳。八十年代末,宽带波形技术的成熟,给雷达目标极化识别增添了新的特征信息量,使得对飞机等复杂目标的可靠识别成为可能。从目前已有的技术途径来看,关于极化谱的概念及其在目标识别中的应用研究,极少见到报道,本文工作就是这方面的一次新尝试。
+2　目标散射能量与极化轨道上极化态的关系
+2.1　椭圆极化比
+　　考虑极化基变换,即
+　　(A.B)=(H.V)［T］,酉过渡矩阵
+由于φ1,φ2并不影响新基A、B的极化状态(H、V为一对水平、垂直极化基),仅有φ1对A、B之间的相对相位作贡献,故暂可不考虑φ2,根据坐标变换,有:
+
+在后面研究极化轨道的相关问题中,为了不失一般性,可令φ=0,则:
+,这便是椭圆极化比与线极化比的关系。
+　　可以证明,对于两种约束(场论约束,网络约束)［2］,功率矩阵的变基皆为酉变换,说明了变基时的能量不变性,因此,反射波的功率密度由给出。
+2.2　目标散射能量与大圆极化轨道上极化态的正弦关系
+　　限制椭圆极化比两个自由度中的一个,不妨恒定θ,且θ=θ0∈［0,π］或∈［-π,0］,γ∈［-π/2,π/2］,这是绕AB直径的一个大圆极化轨道。交会控制的目的是把机动船导向目标船,并最终与其实现安全的对接。
+　　整理,有
+
+(6)
+
+由上式可以看出,目标散射能量与大圆极化轨道上的极化态(一个γ值对应一种极化状态)呈现为正弦关系,曲线的性质由目标本身的物理结构特性决定。
+　　主题词　椭圆轨道上卫星交会　周期运动　距离速率控制算法　末端控制模式
+CONTROL SCHEMES FOR TERMINAL
+SPACECRAFT RENDEZVOUS
+Yu Shaohua　Yang Linna
+(The Center for Space Science and Applied Research,Chinese Academy of Sciences*Beijing*100080)
+　　Abstract　Three control schemes are proposed,based on the Range-Rate control algorithms.They are valuable from the application point of view,and adaptable to various space missions in elliptival orbits.The controlled trajectory is stable,smooth,and selectable.The control and propulsion subsystems of the spacecraft,heeded,are also simple.
+　　Key words　Satellite rendezvous in elliptical orbit　Periodic motion　Range-Rate control algorithms　Terminal control schemes
+1　引　言
+　　空间飞船在轨交会已成为载人航天的例行作业。
+3　目标极化散射特性的能量谱描述及特征提取
+　　J.Johannes在其博士论文［3］中定义了极化谱概念。
+　　(2)横向发动机aφ的控制规律如下:
+
+其中q＞0,φd可在(0,2π)区间任选。文献［5］给出了计算极限环和判断其稳定性的方法。另外,由于本文的极化测量是在宽带条件下进行的,因此这种单频点下极化谱的概念难以适用。存在一个临界ec,当e大于ec时,极限环变作不稳定。本文将指出在椭圆轨道条件下,RRCA/ODRRCA法仍然有效,交会轨迹呈现出减辐摆动,而其方向角最终进入极限环;进而提出了三种典型控制模式,能在一般的轨道情形下有效地完成末端交会。研究发现,不同目标的能量谱是有很大差别的,
+
+
+图1　H飞机目标的极化域能量谱
+表明不同目标宽带散射能量在同一极化轨道上的起伏有各不相同的变化特性。给定一条极化轨道,对于一个目标在特定姿态下的宽频带极化散射矩阵序列,可以求得每个频率点上目标在此极化轨道上的最大、最小散射能量,分别记为和,把两者之差作为衡量目标在此频率点上的回波能量对于入射极化状态(在给定极化轨道上)的敏感程度,由此以多频目标集为论域,在其上定义一个模糊集:
+　　　=目标极化敏感
+那么目标在特定观测频率点上对模糊集A的隶属度为:
+
+定义两种贴近度运算:
+
+如图2是H飞机目标在观测频率范围为34.7～35.7GHz的局部和全局隶属度:
+
+
+图2(a)　H飞机目标局部隶属度
+
+
+图2(b)　H飞机目标局部隶属度
+4　目标识别实验研究结果
+　　本文实验是在外场进行,阶梯变频雷达测量系统的工作频率范围34.7～35.7GHz,阶梯变频间隔为2MHz,水平、垂直极化分时发射、同时接收;五种飞机目标模型长约为1.5～3.0米,宽约为1.0～1.8米,其姿态均为0°横滚角、0°俯仰角、方位角范围为0°～30°,方位角采样间隔为1°。
+2)ODRRCA控制模式
+　　此模式用两组发动机,纵向发动机(其控制方法与RRCA模式相同)和横向发动机,以实现ODRRCA控制规律。由这一识别器结构可获得表1的各目标识别率。再加上有k,k1,k2,φd,q等可选控制参数,充分地扩大了该模式应用范畴和应变能力,提高了控制功能和潜力。对受控运动动力学的深入剖析和计算机仿真表明:交会过程和轨迹平稳、形态可选、完全满足交会精度要求。所用到的测轨定轨技术和脉冲生成技术都有一定的误差,因此不可能指望在本段中控制会达到两飞船对接所需要的位置和速度的精度指标。
+参考文献
+1　肖顺平.宽带极化雷达目标识别的理论与应用.国防科技大学博士论文,1995.12
+2　Kostinski A B and Boerner W M.On Foundations of Radar Polarimetry.IEEE Trans.on A.P.,Vol.AP-348.No.12,1986
+3　Van Zy1,Johannes J.On the importance of polarization in scattering problems.Ph.D.Dissertation,1986
+4　肖顺平等.基于极化谱的飞机目标识别.电子学报,1997.12
+5　肖顺平,王雪松,庄钊文.基于模糊特征提取的飞机目标识别.湖南省宇航学会年会,1996.1
+6　肖顺平等.目标动态极化结构特征提取与识别.电子学报,1998.3

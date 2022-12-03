@@ -1,0 +1,75 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+一类非线性控制器nPI及其在扫描镜
+精密伺服系统中的应用
+梁文宝
+(航天工业总公司三院三部*北京*100074)
+徐立新
+(北京理工大学*北京*100081)
+梅晓容　庄显义
+(哈尔滨工业大学*哈尔滨*150001)
+　　摘　要　本文给出一种非线性控制器,并将它应用于扫描镜精密伺服系统的校正。理论分析和应用结果表明,它能显著改善控制系统的静态和动态性能。
+　　主题词　非线性控制器　描述函数　扫描镜　伺服系统
+A KIND OF NONLINEAR CONTROLLER nPI 
+AND ITS APPLICATION IN SCANNING 
+MIRROR PRECISE SERVO SYSTEM
+Liang Wenbao
+(General Design Institute of The Third Research Academy of 
+China Aerospace Corporation*Beijing*100074)
+Xu Lixin
+(Beijing Institute of Technology*Beijing*100081)
+Mei Xiaorong　Zhuang Xianyi
+(Harbin Institute of Technology*Harbin*150001)
+　　Abstract　A kind of nonlinear controller nPI is presented and used to correct scanning mirror precise servo system in this paper.The theory analysis and experiment result prove that the nPI can improve control system characteristics obviously.
+　　Key words　Nonlinear controller　Description function　Scanning mirror　Servo
+1　引　言
+　　由于线性比例积分控制器(PI)既能保证系统具有较高的静态精度,又能兼顾系统具有良好的动态性能,因此它在控制系统的综合中获得了广泛的应用。耶鲁大学的Coifman和斯坦福大学的Donoho另辟蹊径,提出了直接对信号和图像取阈值处理［4］。为此本文给出一种非线性比例积分控制器(nPI)。
+　　记W(m,n)的傅氏变换为W^(M,ω)=W^(2mω)。滤波前后信噪比为:滤波前信噪比为11.97dB;用无理论阈值WTDF滤波,经过十几次的试凑,信噪比增益为6.54dB,用本文的理论阈值WTDF滤波,信噪比增益值达9.74dB。
+2.2　nPI控制器的特性分析
+　　非线性比例积分控制器的结构如图1所示。利用式(1),经过推导得其描述函数为
+N(jω)=H(ω)ejφ(ω)
+(2)
+其中
+
+(3)
+
+(4)
+为了把nPI同PI进行比较,下面给出PI的幅频和相频特性
+
+(5)
+
+(6)
+　　可以看出,nPI和PI的幅频特性相似,并且对任意角频率ω,总有nPI的幅频增益大于PI的幅频增益,即H(ω)＞HL(ω)。基于上述思想,将信号在不同尺度上的子波变换值按相邻相乘处理,利用阈值检验,从噪声中检出重要的信号边缘,并移去噪声,再重构信号。
+　　上述特性可以用来区分噪声和信号。
+2　信号和噪声的多尺度数学机理
+　　在有背景干扰环境下检测信号,不仅与信号的形式和干扰性质有关,也与信号处理的方式本身密切相关。它的典型结构是由两套机组构成,分别控制扫描镜片的俯仰和方位运动。
+　　在实际子波计算中,一般将原始的离散数据序列V视为一连续函数在尺度2°上的离散子波值,即S(0,n)=V(n)。具有理论阈值的WTDF的性能改善是显而易见的。式(7)为俯仰系统的开环传递函数。
+
+(7)
+根据系统的技术要求,推得控制规律如下
+Gbc(S)=0.02S
+(8)
+
+(9)
+其中Gc(S),Gbc(S)分别为串联控制器及前馈环节的传递函数。
+3.2　扫描镜系统的试验结果及分析
+　　图2给出了俯仰系统采用PI和nPI校正的阶跃响应曲线和正弦响应曲线。其中采用PI校正时,系统超调量为36.4%,调节时间为230ms,而采用相同参数(KP;TI)的nPI校正时,系统阶跃响应的超调量为25.6%,调节时间为110ms;再看图3的正弦响应,采用nPI校正不仅具有较小的相位滞后,而且具有更高的跟踪精度。
+
+
+(a)线性校正的阶跃响应　　(b)非线性校正的阶跃响应
+图2　采用nPI与PI校正系统阶跃响应的比较
+
+
+(a)线性校正的正弦响应　　(b)非线性校正的正弦响应
+图3　采用nPI与PI校正系统正弦响应的比较
+4　结　论
+　　本文利用非线性积分器,构造一种非线性控制器nPI。在早期的多尺度信号处理工作中,人们就已注意到信号和噪声在不同尺度上有不同的特征表现,并试图有效地利用这些特征,子波变换的出现为这一思想提供了一个自然而完善的工具［1,5,6］,使信号的多尺度处理技术向前推进了一大步。即r＞0,F(x)与rHF(rH)是统计一致的,F(x)的一次实现在所有尺度和分辨率上看起来是相似的。
+参考文献
+  1　牛景汉.一类理想非线性积分器的研究.信息与控制,1986,15(1):1-7
+  2　庄显义等.红外目标背景仿真装置设计报告.哈尔滨工业大学仿真中心,1993
+  3　徐立新.扫描镜精密伺服系统的计算机解耦控制.基础自动化,1994,1(5):27-29
+  4　梁文宝.扫描镜精密伺服系统的计算机控制研究.哈尔滨工业大学硕士学位论文,1996,1　
+本文于1996年5月13日收
+　　*本课题获国防预研基金资助

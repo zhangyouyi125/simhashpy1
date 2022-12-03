@@ -1,0 +1,72 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1999年 第14卷 第3期 Vol.14 No.3 1999
+
+
+
+发动机叶片无损检测的可靠性
+刘登第　傅惠民
+　　【摘要】　提出了一种发动机叶片无损检测可靠性分析方法，利用该方法可以有效地提高叶片中裂纹（缺陷）的检出概率（POD），并能对裂纹的漏检概率（POM）进行准确地评估和控制，使因叶片裂纹漏检而引起发动机故障的可能性降至最低程度，从而确保发动机的安全运行；该方法简单方便，易于工程实施和应用。本文的计算采用时间相关法求解定常流动，其中空间积分采用格心格式的有限体积法，而时间积分采用五步龙格－库塔法，其CFL数为5.0。某型发动机二级涡轮叶片因没有及时发现已出现的裂纹（曾连11 mm的裂纹也漏检）而导致断裂失效，酿成了多起重大飞行事故。之所以选择这样一个流动来检验模型是因为弯管内的流动具有很大的横向压力梯度和强的二次流，流动呈很强的三维性，而且比较接近于叶轮机械的叶栅通道内流动。一个最小能检测到零点几毫米，甚至几个微米裂纹的无损检测设备，常常连几个毫米，甚至十几个毫米的裂纹也会漏检［1］。(2)对非均匀来流条件下90°弯管内高湍流度流场的计算是成功的。
+2　发动机叶片的无损检测可靠性评估
+2.1　发动机叶片裂纹（缺陷）漏检概率(POM)曲线的确定
+　　发动机结构中的叶片缺陷漏检概率（POM）曲线的确定，是研究发动机叶片无损检测可靠性的基础，如何准确地对它们进行测定是问题的关键。经研究表明，叶片中裂纹（缺陷）a的置信度至少为γ的漏检概率Pu由下式给出：
+　(1)
+式中参数α，β，Sα，Sβ和Sαβ可按文献［1］方法求得；tr是t分布的百分位值。由图可知，在各截面上均有“双层”K-ε模型的计算结果优于K-ε模型的计算结果。若用q种不同的检测仪器分别进行Kj次独立检测时，那么该叶片的漏检概率P1为：
+　(2)
+Kj是第j种检测仪器的独立检测次数，j=1，…，2，q。
+　　鉴于上述原因，本文提出了在近壁区用Van Driest 的近壁衰减修正的混合长度模型(即Baldwin／Lomax代数模型)，其他区域依旧采用低雷诺数两方程湍流模型求解湍流流动的思路，对平板湍流附面层和非均匀来流条件下90°弯管内高湍流度流场的求解表明，这种分层求解措施可明显提高计算准确度。为了加速收敛，计算中采用了当地时间步长，网格加密，隐式残余平均和焓阻尼等加速收敛技术。
+2.4　发动机全部叶片的无损检测可靠性
+　　设一发动机共有m级叶片，Ai为第i级叶片中大于规定尺寸的裂纹漏检这一事件，概率P(Ai)为其漏检概率，那么，对这m级叶片进行全部无损探伤后，发动机全部叶片中大于规定尺寸的裂纹漏检概率P3为：
+　(6)
+　　由于各级叶片之间的探伤是相互独立的，所以，式（6）可以简化为：
+　(7)
+即
+　(8)
+式中P2i为第i级叶片中大于规定尺寸裂纹漏检概率，可由式（4）或式（5）确定，i=1，2，…m。
+3　发动机叶片裂纹（缺陷）漏检概率控制方法
+3.1　发动机单个叶片裂纹（缺陷）漏检概率控制
+　　从式（2）可以看出，通过增加检测设备的独立检测次数，可以明显地减少发动机叶片中缺陷的漏检概率。它可表为： 
+
+或 Cμfμρkτ
+其中l和ω为文献［6］中给出的考虑压力梯度修正之Baldwin／Lomax代数湍流模型参数，k，ε及τ等为上述两方程湍流模型之参数。
+　　主题词：湍流　建立模型　计算流体力学
+　　分类号：O357.5
+A CONSIDERATION OF TWO EQUATION TURBULENCE MODEL
+Liang Dewang and Lu Bing
+（2nd Dept.Nanjing University of Aeronautics and Astronautics,Nanjing　210016）
+　　ABSTRACT　　A concept of "two-layer" turbulence model is proposed which employs an algebraic turbulence model in near wall area and a two-equation turbulence model in outer area or far wall area.The flows over a flat plate with M=0.3 uniform inflow and in a 90°rectangular bent duct with non-uniform velocity and high turbulence inflow are calculated respectively by use of the "two layer" turbulence model and two equation turbulence model with low Reynolds number modification.The obtained results show that the "two layer" turbulence model can predict the distribution of velocity and wall stress for external flow and the boundary layer thickness and main velocity for internal flow more accurately than the two equation turbulence model.Therefore the "two layer" model is a powerful tool in engineering.
+　　Key　Words　Turbulence　Modelling　Computational fluid mechanics
+1　引　言
+　　在近壁区内，分子粘性对流动的影响相对增强，它不仅影响了平均流的输运，而且直接或间接地影响各种湍流过程，此外，湍流动能K的产生率及耗散率ε达到极大,近似处于局部平衡，平均流速度和温度的二阶导数大，即平均流参数的梯度变化大。
+　　若当K1=K2=…=Kq=K时，上式变为：
+　(11)
+　　如果叶片按损伤容限设计原则进行设计，当规定的裂纹尺寸取aNDT时，可取Pij=10%，此时式（11）成为：
+　(12)
+如果计算出的K值不为整数时，可取大于它的最小整数为最佳独立检测次数。它可表为： 
+
+或 Cμfμρkτ
+其中l和ω为文献［6］中给出的考虑压力梯度修正之Baldwin／Lomax代数湍流模型参数，k，ε及τ等为上述两方程湍流模型之参数。
+3.3　发动机全部叶片的裂纹（缺陷）漏检概率控制
+　　欲使一台发动机全部m级叶片中大于规定尺寸的裂纹（缺陷）的漏检概率小于预先给定的P*3，则首先将P*3按每级叶片的重要程度进行分配，求得每级叶片应控制的缺陷漏检概率P*2i：
+P*2i＝ωix　(14)
+式中x由下式计算：
+　(15)
+式中ωi是第i级叶片的重要度，归一化处理后，满足条件。这种方法不需在近壁区内求解平均流场或湍流参量的偏微分方程，不需在近壁区布置精细的网格（y+＞30）。
+　　当ωi=1/m，则表示每级叶片的重要程度都相同，即P*21=P*22=…=P*2m，那么（15）式变为：
+　(16)
+则
+　(17)
+即
+　(18)
+4　结束语
+　　本文方法不但可以评估和控制发动机叶片中的裂纹漏检概率，而且还可以对发动机其他零部件中的裂纹（缺陷）漏检概率进行有效地评估和控制，从而提高无损检测质量，使发动机因裂纹（缺陷）漏检而破坏的可能性降至最低程度。
+作者简介：刘登第衬小33岁　博士生　北京航空航天大学飞行器设计与应用力学系
+作者单位：北京航空航天大学
+参考文献
+　1　傅惠民，钱若力.无损检测可靠性与寿命控制方法.航空动力报学报，1994，9(3)：227-232
+　2　刘登第，傅惠民等.一种新的数据融合方法.中国安全科学学报，1998，8(6)：1-4
+　3　Gallagher J P，et al.USAF Damage Tolerant Design Handbook.MIL-A-83444,1984
+　4　Berns A P,Hovey P W.Flaw Detection Criteria.AFWAL-TR-84-4022,1984
+　5　Lewis W H, et al. Reliability of Nondestructive Inspections (Final Report). SA-ALC/MME 76-6-38-1,USAF,1978
+　6　Simola K,Pulkkinen U.Models for Nondestructive Inspection Data.Reliability Engineering and System Safety.1998,60：1-12
+1999年3月收稿；1999年5月收到修改稿。

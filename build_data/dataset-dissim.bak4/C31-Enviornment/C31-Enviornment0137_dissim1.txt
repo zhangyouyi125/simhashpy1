@@ -1,0 +1,111 @@
+土壤与环境
+SOIL　AND　ENVIRONMENTAL　SCIENCES
+1999年　第8卷　第2期　Vol.8　No.2　1999
+
+
+
+专用叶面营养对叶菜的增产效果及其机理研究
+肖参明 黄继茂 刘国坚 李娘辉 黄群声 张铭光
+摘要　采用大田试验研究专用叶面营养液对主要叶菜的增产效果；并以芥菜为供试叶菜系统研究了专用叶面营养液对叶菜的增产机理。结果表明：专用叶面营养液可明显促进芥菜对N、P、K养分的吸收，提高叶片硝酸还原酶活性、叶绿素含量及光合速率，增加产量和改善品质。专用叶面营养液分别优于这种营养液中的营养物质和生长调节剂。
+表1　肥料4个处理的田间试验结果
+
+试验
+点数NPK肥区PK肥区NK肥区NP肥区
+产量
+(kg/hm2)吸N量
+(kg/hm2)吸P2O5量
+(kg/hm2)吸K2O量
+(kg/hm2)吸N量
+(kg/hm2)酸解N
+(mg/kg)吸P2O5量
+(kg/hm2)MIII-P
+(mg/kg)吸K2O量
+(kg/hm2)MIII-K
+(mg/kg)
+16960169.267.4200129.512757.6394161.3230
+27725170.480.9224.337.74847.6150117.5140
+34095188.473.7208.262.45350.1212146.1190
+44770190.871.6209.984.28956.7319138182
+
+　
+2.1.1　一季玉米养分总吸收量
+　　一季玉米N、P、K总吸收量实测结果见表1。
+关键词　叶菜；专用叶面营养；产量；增产机理
+Study on the Effects of Special Foliage Nutrients. Xiao Canming, Huang Jimao and Liu Guojian (Soil and Fertilizer Research Institute, Guangdong Academy of Agricultural Sciences, Guangzhou 510640); Li Nianghui , Huang Qunsheng and Zhang Mingguang (Department of Biology, South China Normal University, Guangzhou 510631). Soil & Environ Sci, 1999, 8(2): 124～126
+Field trials were conducted to study the effects of special foliage nutrients (SFN) on green vegetable yields and its mechanisms. The results indicated that the uptake of N, P and K by green vegetables was promoted by using SFN. The SFN increased chlorophyll content, NR activity and net photosynthetic rate of blade. Owing to the increases of physiological activities as above, the yields of green vegetables were increased by 16.8％～25.3％ with 20.2％ on average and the quality was improved as compared with control. The optimal diluted times of the SFN applied to green vegetables was 300.
+Key words　special foliage nutrients; green vegetables; yields; mechanism of action
+　　从1993年开始，作者根据叶菜类的共性，从土壤－根系营养及增加叶面积的机理，研制出一种专用叶面营养液，几年来反复在菜芯、小白菜、芥兰等叶菜上进行试验。试验结果表明，这种营养液与国内外其它叶面肥相比，均取得增产幅度最大的效果。
+关键词　赤红壤；玉米；测土施肥；NPK配方肥
+Study on Fertilizer Practice Basing on Latosolic Red Soil Test for Corn Grown in Dry Slope Land in Guangdong Province. Sun Yingbo, Ma Manzhuag, Huang Qing, Zhang Zhuangta and Xie Rusheng (Soil and Fertilizer Research Institute, Guangdong Academy of Agricultural Sciences, Guangzhou 510640); Lu Liju and Xu Tingjun (Sihui Agricultural Bureau, Sihui, Guangdong 52910). Soil & Environ Sci, 1999, 8(2): 121～123
+Through field experiments conducted in Guangzhou and Dongguan, Stanford experience equations were formed to calculate the total requirements of N, P2O5 and K2O by corn in one cropping season. Based on target yield and soil fertility of a specific plot, the constitutive quantities of N, P and K fertilizers for corn were maken out.
+Key words　latosolic red soil; corn; fertilization by soil test; NPK prescription
+　　赤红壤是南亚热带丘陵地区的主要土壤类型，其中有相当一部分被开垦为旱坡地，用于种植果树和玉米等作物。
+1　材料与方法
+1.1　专用叶面营养液的组成
+　　这种营养液含有四种成分：（1）叶面必需而土壤缺乏且易被吸收的活性营养元素；（2）有效提高叶面光合能力，增加叶绿素含量的媒体；（3）通过叶面吸收而促进根系吸收土壤养分的生长物质；（4）降低表面张力，促其迅速渗入叶肉组织的表面活性物质。
+1.2　不同叶面营养的增产效果试验
+　　1993～1996年在广州市郊等地进行了小白菜、芥兰、菜心小区试验，设3～4个处理：（1）对照（清水）；（2）专用叶面营养液稀释400倍；（3）“喷施宝”稀释8000倍；或（4）“高美施”稀释600倍。小区面积20.0～26.7 m2，3次重复。土壤有效氮采用碱解法、酸解法[4]测定；土壤有效P采用Olsen法、MIII法测定；土壤有效K采用NH4Ac法、MIII法测定。
+1.3　增产机理试验
+　　试验在广东省农科院试验地进行，供试叶菜为潮州大芥菜，供试土壤质地为粘壤土，pH 6.46，NH4+-N 75 mg/kg，P2O5 82 mg/kg，K2O 68 mg/kg，有机质10.8 g/kg，全N 1.2 g/kg。
+　　试验设6个处理，其中将构成专用叶面营养液的“营养物质”及“生长调节剂”作两个单独喷施处理：（1）对照（清水）；（2）营养物质稀释400倍；（3）生长调节剂稀释400倍；（4）专用叶面营养液稀释300倍；（5）专用叶面营养液稀释400倍；（6）专用叶面营养液稀释500倍。小区面积20 m2。于芥菜小苗期、中苗期各喷1次（间隔8 d），喷至叶面叶背湿透。3次重复。
+　　于中苗期喷后6 d、12 d，用POC-1型数字显示叶绿素测定仪测定叶片叶绿素含量，以及用磺胺比色法[1]测定叶片硝酸还原酶活性。于喷后12 d，用改良半叶法[1]测定叶片的光合速率。收获期各处理随机取20棵芥菜测定单株质量、Vc和可溶糖量[2]。
+1　材料与方法
+　　试验于广州石牌和东莞桥头春、秋玉米上进行。参加该研究的还有林志军等同志。
+表1　专用叶面营养液在菜心、小白菜、芥兰上的增产效果
+
+处 理菜心小白菜芥兰
+　产量
+(kg/hm2)相对产量
+(%)产量
+(kg/hm2)相对
+(%)产量
+(kg/hm2)相对产量
+(%)
+专用叶面营养液14625**116.816920**125.319935**118.6
+高美施13650*108.914595*108.118555*110.3
+喷施宝　　14175105.017775*105.7
+对照（清水）125251001350010016815100
+
+**表示1%显著水平；*表示5%显著水平。
+　　调查项目：每小区分别收获20株测定，收获后籽粒及茎叶分别晒干称重，并粉碎取样进行N、P、K含量测定（NP区只测K、NK区只测P、PK区只测N）。
+　　在肥料4个处理中，一造玉米N、P2O5、K2O的施用量分别为310、117、270 kg/hm2，根据表1的吸肥量数据及N、P2O5、K2O施用量计算，得出N利用率分别为：12.8%、42.8%、40.6%、34.4%，平均32.7%；P2O5利用率分别为：8.4%、28.5%、20.2%、12.7%，平均17.5%；K2O利用率分别为：14.3%、39.6%、23%、26.6%，平均25.9%。专用叶面营养液优于“营养物质”和“生长调节剂”，且稀释300倍喷施效果最好，例如，喷后6 d、12 d，硝酸还原酶活性较对照分别增加144%和90%。
+2.4　对芥菜叶片光合特性的影响
+　　叶面营养液改善了芥菜的N素代谢，使得叶片中的叶绿素含量提高（表2）。在这方面，专用叶面营养液优于单独喷施“营养物质”或“生长调节剂”。表2亦显示，专用叶面营养液对叶片光合速率的影响与其对叶绿素的影响一致，稀释300倍时光合速率最高，较对照增加36.9%。
+2.5　对芥菜产量与品质的影响
+　　专用叶面营养液增加了芥菜对养分的吸收，提高了叶片光合效率，从而促进了植株生长。4个肥料处理为：NPK肥区、NP肥区、NK肥区、PK肥区。
+表3　专用叶面营养对芥菜单株质量的影响 kg/株，n=30
+
+处 理产量
+(kg/hm2)比对照增加
+(kg/hm2)增幅
+(%)Vc
+(mg/kg)可溶性糖
+(g/kg)
+对照（清水）37849　　　　
+营养物质稀释400倍407502901**7.7036922.4
+生长调节剂稀释400倍441006250**16.543422.9
+专用叶面营养液稀释300倍471499300**24.641624.1
+专用叶面营养液稀释400倍456007750**20.545624.1
+专用叶面营养液稀释500倍440506201**16.444923.8
+
+　
+　　专用叶面营养液对芥菜的产量与其对芥菜的单株质量的影响一致，以稀释300倍时产量最高。专用叶面营养液可改善芥菜的品质，表现为Vc及可溶性糖较对照明显增加（表4）。
+表4　专用叶面营养液对芥菜产量与品质的影响
+
+处 理范围平均比对照增加增幅(%)
+对照（清水）0.84～1.020.88　　
+营养物质稀释400倍0.91～1.100.940.066.80
+生长调节剂稀释400倍0.91～1.121.020.1415.9
+专用叶面营养液稀释300倍0.94～1.251.090.2123.9
+专用叶面营养液稀释400倍0.94～1.081.060.1820.4
+专用叶面营养液稀释500倍0.95～1.051.040.1618.2
+
+　
+3　小结
+　　专用叶面营养液能使叶菜大幅度增产，能改善叶菜的品质。3次重复，随机排列。专用叶面营养液稀释300倍时，芥菜的产量最高，较对照增产24.6%。即一季玉米需施入尿素（含N 460 g/kg）943 kg/hm2、过磷酸钙（含P2O5 140 g/kg）1010 kg/hm2、氯化钾（含K2O 600 g/kg）738 kg/hm2，据此可掺制成NPK配方肥。
+作者单位：肖参明　黄继茂　刘国坚　广东省农科院土壤肥料研究所，广州 510640
+　　　　　李娘辉　黄群声　张铭光　华南师范大学生物系，广州 510631
+参考文献
+1　张志良. 植物生理学实验指导. 第2版. 北京: 高等教育出版社，1990. 59～162
+2　中国土壤学会农业化学专业委员会. 土壤农业化学常规分析方法. 北京: 科学出版社，1983. 308～330
+收稿日期：1998－12－06

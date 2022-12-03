@@ -1,0 +1,20 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　No.19　No.1　P.54
+
+
+
+
+关于Office 2000 
+　　Office 2000 Office 2000在支持编程开发方面有哪些新特点？″， Exclamation。通过编程界面，开发人员可以轻而易举地将病毒检查工具添加到Office 2000。这2个函数的具体实现如下所示。
+表1 打印机参数表
+
+设置项目偏移量字节数说明
+纸张设置0x2F2打印机纸张类型，256为用户自定义纸张，小于256的数值为该打印机能打印的标准纸张的编号，随打印机类型改变。开发人员可以为其Visual Basic for Applications （VBA）宏签名，这样用户便可以知道宏的来源以及它们是否被改动过。用户可以指定对于有特定开发人员签名的未经改动的宏不显示警告信息。第2项为打印纸设置有关的项目，其注册表入口为：HKEY＿LOCAL＿MACHINE\System\CurrentControlSet\Control\Print\Printers\SETPRINTER，其中的SETPRINTER要替换为你所安装的打印机的名字，如Epson LQ－1600K等，这一分支有许多个项，最关键的项(也是与打印纸张设置有关的项)是Default DevMode，此项的设置值为1个二进制串，其中主要的几个参数的偏移地址和意义见表1。VBA 6为Office提供了非模态用户窗体以及对附加ActiveX控件的支持等功能。
+　　4．可编程性。（1）共享Add－In结构。在统一的插入模式下，利用Microsoft Office COM加载项，开发人员可建立Office集成的解决方案。，ls＿printer)
+IF li＿ret＜＞1 THEN
+　　MESSAGEBOX(″系统提示″，″打印机未设置。Office 2000的“打开文件”命令中有病毒扫描API。，ls＿printer)
+IF li＿ret＜＞1 THEN
+　　MESSAGEBOX(″系统提示″，″打印机未设置。这种方法的缺点是每次打印时还要去选择1个逻辑打印机，增加了操作人员的操作步骤。为了提高安全性和用户满意度，开发人员可以通过宏签名来保证他们不受病毒影响。第2项为打印纸设置有关的项目，其注册表入口为：HKEY＿LOCAL＿MACHINE\System\CurrentControlSet\Control\Print\Printers\SETPRINTER，其中的SETPRINTER要替换为你所安装的打印机的名字，如Epson LQ－1600K等，这一分支有许多个项，最关键的项(也是与打印纸张设置有关的项)是Default DevMode，此项的设置值为1个二进制串，其中主要的几个参数的偏移地址和意义见表1。（5）应用程序级事件。″，Exclamation。
+
+　　下面我们给出这种动态设置方法在PowerBuilder(PB)中的实现方法。Office 2000可用于开发HTML脚本和基于HTML的客户解决方案。

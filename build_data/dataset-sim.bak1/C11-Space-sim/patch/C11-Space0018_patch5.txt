@@ -1,0 +1,76 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+星用非金属材料出气污染性质
+原位测试设备研制
+王先荣　柴强　曾克仁　王益
+　　摘　要　成功研制了星用非金属材料出气污染性质原位测试设备，可原位、连续、定量测试星用非金属材料出气可凝挥发物，给出全过程的出气数据。测试系统稳定、测试仪器灵敏、最小可检达4.4×10-8g/cm2。是我国目前唯一的多功位星用非金属材料出气污染高灵敏度原位测试设备。
+　　主题词　非金属材料　出气污染　测试设备
+A SIMULATION EQUIPMENT USED FOR DETERMING THE
+OUTGASSING AND CONTAMINATION PROPERTY 
+OF NON-METAL SPACECRAFT MATERIALS
+Wang Xianrong　Chai Qiang　Zeng Keren　Wang Yi
+(Lanzhou Institute of Physics . Lanzhou . 730000)
+　　Abstract　A simulation equipment used for determing the outgassing and contamination property of non-metal spacecraft materials has been built recently.It is used to measure Collected Volatile Condensable Materials(CVCM) in a simulated space vacuum environment and will give out all the CVCM data of the entire outgassing measuring process.The stability of temperature control system is ±0.1℃.Measure system consists with 4 QCM.The equipment resolution reaches the 4.4×108g/cm2.The main design is as same as the equipment type of NASA and ESA.So that the test and its data could be compared and exchanged internationally.
+　　Key words　Non-metal spacecraft materials　Outgassing contamination　Measurement equipment
+1　引言
+　　近十年来，中国长寿命、高可靠应用卫星的发展，使卫星在轨分子污染问题日益突显。有效预测、防护和控制分子污染危害的措施之一是执行航天工业部部标准《真空中材料挥发性能测试方法》QJ1558-88（参照采用ASTM E595［1］、ESA PSS-01-702［2］），该标准规定了真空环境下材料出气总质量损失（TML）、收集到的可凝挥发物（CVCM）标准测试方法［3］及相应的测试设备［4］。β＞0时幅值增加，而β＜0时幅值减小。进而根据规定指标淘汰出气量级大的材料，选择出气量级较低、污染危害较小的非金属材料初步入选。
+　　然而星用非金属材料的最终取舍除了要考虑上述测试、评价、筛选结果外，尚要综合考虑所用材料的用量、应用位置、相对敏感器件和表面的视角、材料本身的出气过程等多种因素。
+
+　　在做出对策之前,我们首先应对航天器轨道上的高能带电粒环境有所认识。但上述异位测试设备不具备这种功能，只能提供实验测试前后的数据用作材料出气污染性质的评价和筛选，却不能提供有关材料出气污染过程的任何数据。
+　　由于表面固体材料的不同,羽流粒子对体固壁面的撞击须分别按完全弹性、非弹性和完全非弹性三种情况处理。
+2　设备构成
+2.1　设计原理
+　　在模拟空间真空环境下将待进一步原位测试评价筛选的星用非金属材料置于样品仓中，由样品仓温控系统实施加热使样品受热温度至125℃（沿用NASA、ESA同类评价筛选设备设定温度）；材料样品在此模拟空间真空环境和受热状态下将发生出气释放行为，出气物将沿着出气通道输运至收集仓；收集仓由腔体和石英晶体微量天平（QCM）系统的探头构成，探头及其用作出气物凝结收集的石英晶振片温度控制在25℃（沿用NASA、ESA同类评价筛选取设备设定温度）；出气物中那些可以在25℃下发生凝结的成分将被石英振片收集，并将凝结质量以晶振频率的变化定量给出。
+
+　由如上所述光信号延迟效应普遍存在所决定,在相对静止或运动的两观测者
+研究相对静止或运动的两时钟相应所显时间值,以及相对静止或运动的两物理
+事件所发光信号的传播过程的情况下,两观测者对两时钟相应所显时间值 以及
+两物理事件所发光信号传播过程所作全面描述均应包括“看到的情况”和“实
+际的情况”。
+定理2：对于式(2)、式(3)所示单输入单输出线性定常对象，若采用积分控制器：u(k)=u(k-1)+ki(k)y(k)，则在保证系统稳定的前提下，在稳态要保证1)}较小，ki(k)的选取应与Q与反比，其中
+证明：
+　　将u(k)=u(k-1)+kicx(k)+kiv(k)代入式(2)有
+x(k+1)=(A+bkic)x(k)+bu(k-1)+kibv(k)
+(4)
+由此写出扩展向量的状态方程
+
+(5)
+式(5)可简写成
+
+故
+
+　　若要保证系统稳定，则+1)}主要由的选取应与Q成反比。
+
+　　在仿真模型里必须建立计算过程，对信息进行分析和积累，求出所解。
+2.2　设备构成
+　　图1给出了设备构成示意图，图2给出了设备测试单元示意图。因此,不管推出什么控制方法,都必须改善方向角的稳定性。在两时钟受非均匀引力和电磁力作用,dW≠dW′≠0
+的一般情况下,由时钟显时规(4)式决定,两时钟相应所显时间值dt、dt′如
+下
+dt=K1K2(-dE+dW), dt′=K′1Ｋ′2(-dE′+dW′)
+(6)
+　　在此情况下,尽管有K1=K′1,K2=K′2,但由于dW≠dW′,所以,两相同钟由
+相关内、外因素决定相应所显时间值不能保持恒相同。系统根据这些提取的特征量在线调节控制器的参数。真空室由钟罩和下法兰组件组成。钟罩外装有水循环套以降低真空室内壁温度、沉积材料出气分子，从而减小交叉污染。窄带的综合业
+务数字网采用电路交换方式，其基本速率接口可以传输音频和可视电话质量
+的视频信号，不过由于它具有恒定的速率，对于非连续媒体传输效率较低。涡轮分子泵采用FB-450型作为主泵。机械泵采用2XZ型，机械泵的出气口装有电磁隔断放气阀，以减少机械泵返油。
+②温控系统
+　　样品仓及样品控测温采用两台TDW-3902型电子温度调节器实施。其中一台用于测温，另一台用于控温。在样品仓上设有两个测温点和一个控温点，并采用Pt100铂电阻，尽可能提高控温和测温精度。同样,利用统计结果,我们可以得到质
+子通量最大时的峰值能谱的平均情况和最坏情况(置信度90%)。
+③测试系统
+　　采用石英晶体微量天平（QCM）作为测试检测系统。此自行研制的微量天平，采用特定切角、孪生晶片差频技术及特别装配工艺降低温漂，同时采用中规模CMOS数字电路检测显示，使微量天平整机具备温漂小、温区宽、功耗小、分辨率高等多项优良参数。
+2　物理数学模型
+　　本文根据计算机条件和调姿发动机的特点,选择了如图1所示的真空羽流场进行数值模拟。测试表明，设备功能稳定、灵敏度高、测试数据可靠，确能真实模拟空间真空环境并对星用非金属材料出气污染性质进行原位连续定量测试，从而为综合多种因素进行更深层次的模拟、计算、预测奠定了设备基础。
+
+　　表１.系统概况。在导航段中,两飞船的轨道各异,它们的空间位置相距甚远,其交会控制不外乎是由地面站指挥的脉冲变轨。
+作者单位：兰州物理研究所 . 兰州 . 730000
+参考文献
+1　ASTM Designation:E595-90.Standard Test Method for Totol Mass Loss and Collected volatile Condensable Materials from Outgassing in a vacuum Environment.Published April 1990
+2　ESA PSS-01-702 Issue 1.A Thermal Vacuum Test for the Screening of Space Materials. March 1983
+3　中华人民共和国航天工业部部标准：QJ1558-88.真空中材料挥发性能测试方法.1988-04-25发布
+4　薛大同，魏向荣，王先荣，等.空间材料出气筛选装置的研制与试验.中国空间科学技术，1993，13（2）：53
+收稿日期:1998年2月9日
+修回日期:1998年12月7日

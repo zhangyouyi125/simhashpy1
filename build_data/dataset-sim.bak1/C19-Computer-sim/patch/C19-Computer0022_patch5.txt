@@ -1,0 +1,143 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+使用VxD实现Windows95的中断处理
+王勇　盖江南　付长冬
+　　摘　要　本文主要说明在Windows 95系统平台下虚拟设备驱动程序（VxD）如何处理中断，包括申请、占有、释放，并给出VxD处理中断的流程和具体实例。由(8)和(9)可得η＝370，可以选取ε＝0.1，.因此我们容易计算出 Riccati方程(7)的正定矩阵解，从而可得鲁棒镇定状态反馈控制器为
+u(t)＝-38.4708x1(t)-38.5227x2(t)
+注释:国家科学基金(No.69674007)及南通工学院科研基金资助
+作者简介:　陆国平，33岁，博士。由于系统通常都是在Windows 95系统下开发的，所以需解决Windows 95下的中断实现问题。
+作者单位：电子科技大学计算机学院　四川.成都(610054)
+参考文献
+［1］　吴清萍.电算化基础与电算化软件.北京：电子工业出版社，1996
+［2］　孟繁金.基础会计.中国财政经济出版社,1995
+［3］　侯善魁,孟凡一.商业信息系统管理.中国商业出版社,1993
+［4］　Cheng J. Improving the Software Reusability in Object--Oriented Programming. ACM SIGSOFT. Software Notes, 1993;18(4)
+［5］　David L.Wellsetala. Architecture of an Open Object--Oriented Database System. Computer. 1992;25(10)
+［6］　诸葛海.面向对象的MIS开发方法.软件学报，1995；（2）
+收稿日期:1999-06-07
+。
+廖蓉　工程师。而应用程序的代码只在可信度最低的第3级内执行，其访问硬件和接触自身进程空间以外的内存的能力受到限制。
+　　在Windows 95下可以用两种方法实现中断，一种是编写DLL程序，另一种是使用虚拟设备驱动程序（VxD）。从表中可见本文算法获得的目标值为38。
+　　可以利用众多的ISP建立企业庞大的拨号服务器池。VMM的任务是将构成系统的硬件虚拟化，分配应用程序执行的时间片并管理虚拟内存的内务，对用户而言是不可见的。硬件设备在数据准备好之后就发中断信号，但VxD并不直接截获这些中断，而是依赖于虚拟可编程中断控制器（VPICD）来处理硬件中断。
+　　VPICD虚拟化可编程中断控制器（PIC）硬件，允许其它VxD支持自己的硬件设备，譬如磁盘驱动器和通信端口，它们使用硬件中断去通知主机输入数据或状态的改变。VPICD可以映象硬件中断到其它设备，向其它设备提供一些服务，通过这些服务允许虚拟设备请求中断，并可在虚拟机中模拟硬件中断，称为虚拟中断。并且它还可以处理PIC硬件的I/O操作。
+作者单位：中国科学院空间中心四室　北京（100080）
+收稿日期:1999-06-18
+。
+
+图1　VPICD的处理结构图
+　　VPICD提供的基本服务如下：
+　　（1） VPICD―Vrtualize―IRQ
+　　（2） VPICD―Set―Int―Request
+　　（3） VPICD―Phys―EOI
+　　（4） VPICD―Virtual―EOI
+　　（5） VPICD―Clear―Int―Request
+　　（6） VPICD―Force―Default―Behavior
+　　（7） VPICD―Force―Default―Owner
+　　VPICD―Virtualze―IRQ负责向VMM申请硬件中断IRQ。给定模糊数，定义两个特殊的概率分布，累积概率分布F*(cumulative possibilit y distribution)和累积必然分布F*(cumulative necessity distribution)。
+2　数据窗口的动态修改技术
+　　在数据窗口中的列、文本、按钮、图片都称为数据窗口对象（Dwobject），它们都有自己的属性。
+　　VPICD―Set―Int―Request设置一个指定的中断和虚拟机的虚拟中断请求，导致虚拟机系统产生一个虚拟中断。
+　　VPICD―Clear―Int―Request则消除在指定虚拟机中设置的虚拟中断。
+　　VPICD―Pyhs―EOI结束一个硬件中断，允许下一次的硬件中断。
+　　VPICD―Virtual―EOI允许其它的VxD向VPICD发送虚拟EOI命令，结束一个虚拟中断。在Microsoft PC Mail执行文件目录下运行Admin程序，以Admin权限的用户身份进行登入；创建新的外部邮局，输入Exchange Server影子邮局的网络名、邮局名、路由方式和连接类型；如果指定邮局的路由方式和连接类型是Direct和通过Async或X.25的，必须设置与Exchange Server影子邮局连接的端口、速率、登录识别符和口令信息。VPICD―Force―Default―Owner则重新设置此IRQ对应的默认的中断处理程序。
+2　虚拟设备的中断控制
+　　在阐述虚拟设备的中断控制前，首先说明一个非常关键的数据结构，定义如下：
+　VPICD―IRQ―Descriptor STRUC
+　　　VID―IRQ―Number　　　　dw　？
+　　　VID―Optionsdw0
+　　　VID―Hw―Int―Procdd？
+　　企业协作网VPN（Extranet VPN） 这种功能可通过Internet 将客户、供应商、合作伙伴或相关企业连接到中心Intranet 的非管制区？
+　　　VPICD―IRQ―Descriptor　　ENDS
+　　此数据结构中的域含义如下：VID―IRQ―Number定义虚拟设备申请的IRQ数，VID―Options必须为0，VID―Hw―Int―Proc是用户中断处理程序的地址，在虚拟化成功后，它将替代系统默认的中断处理程序地址。以上三个域是必须填写的。虽然每台Exchange Server只能运行一个MMC实例，但通过单个MMC可以连接到多个MS PC Mail邮局，而且一个MMC能够为Exchange机构中的一个场点或所有场点提供服务。
+　　虚拟设备中断控制的处理过程如下：（1） 当用户通过CreateFile()函数装载VxD时，系统向VxD发送DEVICE―DYNAMIC―INIT消息，VxD消息控制处理程序调用对应的初始化程序。在此程序中如下处理：
+　　MOV EDI，OFFSET32 VID
+VxDCall VPICD―Virtualize―IRQ
+　　而VID可以如下定义：(假设申请IRQ 为9，中断处理程序为hw―int―proc)
+　VID VPICD―IRQ―Descriptor <9，0，hw―int―proc，>
+　　（2） 中断处理程序在处理中断时必须按以下的步骤进行：
+　　. 调用VPICD―Pyhs―EOI结束物理中断。
+　　. 调用VPICD―Set―Int―Request设置虚拟中断。
+　　（3） 在虚拟中断处理程序中作如下处理：
+　　. 真正的中断处理。
+　　. 调用VPICD―Clear―Int―Request清除虚拟中断。
+　　. 调用VPICD―Virtual―EOI结束虚拟中断。ADO使用内置的RecordSets对象作为数据的主要接口，使用VBScript或JScript语言来控制对数据库的访问及查询结果的输出显示。在此程序中作如下处理：
+　MOV EDI，IRQHANDLE
+VxDCALL VPICD―Force―Default―Behavior
+VxDCALL VPICD―Force―Default―Owner
+3　VxD实现中断处理的实例
+　　本节以一个具体实例说明VxD中如何处理中断，给出的实例略有删节。
+. 386p
+. xlist
+#include vmm.inc
+#include debug.inc
+#include shell.inc
+#include vpicd.inc
+. list
+CVXDSAMP―DYNAMIC EQU 1　　　　　　　　　　　　　　　　　　　　//申明是一个动态VxD。
+CVXD―DEVICE―ID EQU 28ABH　　　　　　　　　　　　　　　　　　　//定义虚拟设备标识号
+VxD―LOCKED―DATA―SEG　　　　　　　　　　　　　　　　　　　　　　　//定义IRQ结构内容
+　　CVXD―IRQ―Desc VPICD―IRQ―Descriptor <09h，0，\
+OFFSET32 ―　CVXD―HW―INT，
+OFFSET32 ―　CVXD―VIRT>
+irqhandle dd 0
+VxD―LOCKED―DATA―ENDS　　　　　　　　　　　　　　　　　　　　　　　　//定义VxD参数
+DECLARE―VIRTUAL―DEVICE CVXDSAMP， 1， 0，CVXD―Control，
+CVXD―DEVICE―ID， UNDEFINED―INIT―ORDER
+VxD―CODE―SEG
+BeginProc CVXD―Dynamic―Init
+mov edi，offset32 CVXD―IRQ―Desc
+VxDcall VPICD―Virtualize―IRQ
+jc errorhandle
+mov irqhandle，eax　　　　　　　　　　　　　　　　　　　　　　　　　　//保存IRQ句柄
+mov eax，VXD―SUCCESS
+ret
+errorhandle：　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//出错处理
+mov eax，-1
+ret
+EndProc CVXD―Dynamic―Init
+BeginProc CVXD―Dynamic―Exit
+mov eax，irqhandle　　　　　　　　　　　　　　　　　　　　　　　　　　//返回IRQ句柄
+VxDcall VPICD―Force―Default―Behavior
+mov eax，VXD―SUCCESS
+ret
+EndProc CVXD―Dynamic―Exit
+VxD―CODE―ENDS
+VxD―LOCKED―CODE―SEG
+BeginProc CVXD―Control　　　　　　　　　　　　　　　　　　　　　　//消息控制函数例程
+Control―Dispatch SYS―DYNAMIC―DEVICE―INIT， CVXD―Dynamic―Init
+Control―Dispatch SYS―DYNAMIC―DEVICE―EXIT， CVXD―Dynamic―Ex it
+clc
+ret
+EndProc CVXD―Control
+BeginProc CVXD―HW―INT ，PUBLIC　　　　　　　　　　　　　　　//物理中断处理函数例程
+cli
+mov eax，irqhandle
+VxDcall VPICD―Phys―EOI　　　　　　　　　　　　　　　　　　　　　//结束本次硬件中断
+VxDcall VPICD―Set―Int―Request　　　　　　　　　　　　　　　//设置一个虚拟中断请求
+clc
+ret
+　　EndProc CVXD―HW―INT
+BeginProc CVXD―VIRT ，PUBLIC　　　　　　　　　　　　　　　　　//虚拟中断处理函数例程
+；； 处理中断事务?
+　　为了镇定不确定系统(1)，我们利用下列形式的线性状态反馈控制律：
+u(t)＝-Kx(t)　　　　　　　　　　　　　　(2)
+其中常数增益矩阵K∈Rm×n.为了简便起见，ΔA(r0(t)),ΔAd(r1(t)),ΔB(s 0(t)),ΔBd(s1(t)),d(t)以及h(t)有时分别记为ΔA, ΔAd, ΔB, ΔBd, d和h， 
+　　于是(1)和(2)所构成的闭环系统为
+　　　　　　　　　(3)
+其中.
+　　首先我们引入下列引理：
+　　引理2.1　(参见［3］)
+YTX+XTYXTX+YTY
+其中X，Y为适当维数的短阵。
+作者简介：王勇　助理讲师。主要从事技术开发、系统管理与维护等工作。
+盖江南　硕士研究生。
+　　本文介绍ASP工作的原理并针对一个具体的应用实例介绍其使用方法。
+付长冬　硕士研究生。
+　　流量计费　设置域内IP地址类；设置计费标准；按IP分类统计；设置域内IP地址类；按用户名分类统计；查询日志；按用户名查询；预付款项管理；费用统计。
+2.2　会计信息功能模块
+　　建立在企业MIS基础上的会计信息完成以下功能：
+　　集成帐务　是财务分系统的核心，主要处理凭证录入、会计科目设定、初始建帐、外币收/付款凭证的录入、生产各类帐本、完成月末记帐和零星记帐以及凭证打印等等

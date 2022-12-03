@@ -1,0 +1,165 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第5期 No.5 Vol.18 1998
+科技期刊
+
+除草剂普杀特在土壤―水两相中的吸附-脱附和光解* 
+郑　巍　刘维屏　（浙江大学化学系，杭州 310027）
+文　摘　为了解普杀特农药进入自然界的环境行为，特别是它在不同土壤―水体系中的分配和归宿，研究了其在8种土壤上的吸附-脱附过程，并且通过模拟太阳光探讨了普杀特在水相中的光解情况。结果表明，普杀特在土壤上的吸附-脱附与土壤的理化性质密切相关，高有机质、低pH值的土壤具有强吸附能力；其吸附、脱附均可用Freundlich方程描述，但脱附等温线要滞后于吸附线。
+　　从表6可知，最优组合为A3，B3，C2，D1。
+关键词　普杀特　吸附-脱附　光解
+Adsorption-desorption and photolysis of the herbicide imazethapyr in soil-water environment. Zheng Wei，Liu Weiping(Department of Chemistry, Zhejiang University, Hangzhou 310027).China Environmental Science.1998,18(5):476～480
+Abstract―The adsorption-desorption of the herbicide imazethapyr on eight soils were studied，as well as the photolysis of imazethapyr in aqueous solutions. The results showed adsorption and desorption of the herbicide were influenced by soil properties. Their isotherms conformed to the Freundlich equation. Sorption coefficient (Kaf) was significantly dependent on organic matter content and pH value of soil. However, the desorption process exhibited pronounced hysteresis in all the soils. The photolysis of imazethapyr took place easily with 254nm and 300nm irradiating and the reaction could fit well the first-order kinetic equation.
+Key words:imazethapyr　adsorption-desorption　photolysis
+　　农药在土壤上的吸附-脱附和在水相中的光解是影响农药环境行为的重要因素〔1，2〕，通过对它们的研究，可以了解农药在土壤―水环境中的存在状况和迁移转化规律，并以此作为判断农药能否造成土壤和地下水污染的一个重要依据。因此，最佳工艺条件定为：NH4F∶废白土（质量比）=1.28，NH4F∶H2O（质量比)=0.9，时间为4h，温度为60℃。国外一些学者曾报道过普杀特农药在土壤上的吸附情况〔4,5〕，其结果与田间研究有一定差异，这主要是农药在土壤上不仅会产生吸附，同时还存在脱附作用。本研究在大量前期工作基础上〔1～5〕， 已基本形成了一套比较成熟的废白土综合治理工艺路线：用中性表面活性剂溶液回收废白土中石蜡和润滑油〔6〕；用酸碱法从脱腊、脱油废白土中制取白炭黑〔7〕。另外，还通过模拟太阳光，探讨普杀特在水相中的光解情况。
+1　材料与方法
+1.1　试剂
+　　普杀特标准品(99.3%)，由美国氰胺公司提供；乙腈为HPLC级，其余化学试剂均为分析纯试剂。
+3.1　最佳NH3加入量，反应温度，反应时间
+表5　正交试验因子水平
+Table 5　The factor and level of perpendicular test
+
+项　目因子　因子水平
+12 3
+NH3用量(25%) (mL)A　100 50 20
+(NH4)SiF6用量 (mL)B　100 100 100
+反应温度 (℃) C　80 60 40
+反应时间 (h) D　8 6 4
+
+表6　正交试验和极差分析
+Table 6　The perpendicular test results and maximum diffence analysis
+
+序号　 A　　B　　C　　 D　　 白炭黑产量 (g)
+1 1 1 1 1 2.9
+2 12 2 2 2.7
+3 1 3 3 3 2.4
+421 2 3 2.7 
+5 2 2 3 1 2.6
+6 231 2 2.4
+7313 2 2.6
+832 1 3 2.5
+9 332 1 3.1
+K1 8.0 8.2 7.8 8.6
+K2 7.7 7.8 8.5 7.7
+K3 8.2 7.9 7.6 7.6
+k1 2.67 2.73 2.60 2.87
+k2 2.57 2.60 2.83 2.57
+k32.73 2.63 2.53 2.53
+极差 0.16 0.13 0.30 0.34
+
+　　采用L9(34)正交表进行实验，因子水平见表5，实验结果见表6。博士、副教授、硕士研究生导师。控制及数据处理由Baseline 810软件在NEC APCⅣ微机上进行。色谱柱为Waters μ Bondpak C18(10μ)，φ4×300mm分析柱；流动相:乙腈∶水=70∶30(V/V)，由H3PO4调pH值至2.5～3.0，流量1mL/min；检测波长230nm，该条件下普杀特的保留时间为3.87min。
+　　离心机为J2-21和L5-50B型，由美国Beckman公司生产；光解器由美国Rayonet公司生产，光源为Philips公司生产的RUL-254nm、300nm和366nm，采用3×8W。光解管结构参见文献〔7〕。
+表1　供试土壤的部分理化性质(%)
+Table 1　Selected physico-chemical properties of soils(%)
+
+编号有机质粘土矿物砂　粒粉　粒水分pH(S∶W=1∶1)*CEC**
+11.4323.6332.5638.723.257.4017.92
+21.4510.7748.5636.832.226.287.68
+31.6946.5816.4429.924.507.7223.73
+42.409.1070.1016.801.405.244.33
+55.512.0667.8523.552.224.729.48
+68.3958.2614.8418.50-7.5542.50
+716.00　14.6032.9026.209.506.0517.62
+825.60　30.685.0924.8612.48　4.4353.32
+
+　　　　　　　注：* S∶W为土/水比　** CEC为阳离子交换容量(meq/100g)，测定方法见文献〔6〕
+1.4　吸附-脱附实验方法
+　　5.0g干燥的土壤样(<1.0mm)，加20mL一定浓度(Ci0)的普杀特水溶液于50mL的聚乙烯离心管中，在25±2℃环境中振摇24h后，以20 000r/min离心15min，准确取出5.00mL上层清液，由HPLC测定得浓度为Ci1。再由下式计算普杀特在吸附平衡后的吸附量：
+Csi = (Ci0－Ci1) ×20.0/5.0
+式中：Csi为吸附量(μmol/kg);Ci0为起始浓度(μmol/L);Ci1为平衡浓度(μmol/L)；i为起始浓度代号。反应时间可缩短为4h，效果反而更好。其脱附可用残余吸附量(Csij)表示，计算式为:
+Csij =Csij-1－4Cij+3Cij-1，(j =1, 2,3,…)
+式中：Csij为残余吸附量(μmol/kg);Csij-1为(j-1)次的残余吸附量(μmol/kg);Cij为平衡浓度(μmol/L);Cij-1为(j-1)次的平衡浓度(μmol/L)；j为稀释法脱附的次数。
+1.5　光解实验
+　　100μmol/L的普杀特水溶液在石英光解器中用RUL-254nm、RUL-300nm和RUL-366nm灯辐射，定时测定普杀特的残留量。在RUL-300nm为光源辐照时，还以添加1%丙酮（敏化剂）和改用玻璃光解器进行比较。
+　　从表3，表4的结果可知，进一步增加NH4F用量与反应时间，对反应程度几乎不起作用。实验中，为了充分平衡，控制吸附-脱附时间为24h。
+2.1.2　土壤pH值对吸附的影响　许多研究表明，土壤pH值是影响农药在土壤上吸附的一个重要因素〔2，8〕。本实验采用1mol/L的HCl和NaOH溶液，对8种土壤的pH值进行调节，研究土壤pH值变化对普杀特吸附造成的影响。从表2可知，当土壤pH值增大，土壤对普杀特的吸附能力显著下降，表明普杀特在酸性土壤中易吸附，而在中性、碱性土壤中流动性大，吸附小。这是因为普杀特属于弱酸型除草剂，它既含有喹啉和吡啶这类碱性基团，又含有可电离为阴离子的羧酸基团，其pK值分别为2.1和3.9。自然界中，土壤pH值通常在5～9，这样进入土壤的普杀特主要以阴离子形式存在，而土壤胶体一般是以带负电为主，它将排斥呈阴离子态的普杀特分子。当土壤pH值增加，普杀特分子电离为阴离子（－COO-）就多，它与土壤间的排斥将增大，普杀特在土壤上的吸附能力就显得很弱。故对中性或碱性土壤施药要注意施药量，以免造成水体的污染或危害，而对酸性土壤可增加施药量，以达到最佳的除草效果。
+表1　最佳反应温度选择
+Table 1　Choice of optimum reaction temperature
+
+序号反应温度
+（℃） 剩余废白土量
+（g）
+1100　26.1
+280 26.6
+360 26.7
+44026.9
+
+　　 由表1可知，温度对反应程度的影响不太明显，但40℃时反应物抽滤困难，所以选择反应温度为60℃。
+
+
+图1　晋杀特在4种土壤上的吸附-脱附等温线
+Fig.1　Adsorption-desorption isotherms of imazethapyr on four soils 
+○ 吸附等温线　△ 脱附等温线　2, 4, 6, 8为土壤编号
+　　由表3可见，除草剂普杀特在8种土壤上的吸附容量差别较大，其Kaf值在0.47～31.48之间，说明吸附能力从弱到中等均有。一般认为土壤农药的吸附能力大小，主要与土壤的理化性质以及农药的本身性质有关，其中土壤的有机质含量是影响离子型农药吸附大小的一个最重要因素，当土壤有机质较低时，土壤其它理化性质，如土壤类型、pH值、粘土和水合氧化物含量也是应考虑的影响因素。普杀特属离子型农药，8种土壤对它吸附的Kaf依次为：8＞5＞2＞6＞1＞7＞3＞4，其中8号土壤有机质含量最高，它对普杀特吸附能力也最大。为使整个废白土综合治理工艺更趋合理，借鉴文献报道的氟化法生产白炭黑新工艺〔8〕，通过NH4F-NH3和氨与废白土的组合反应，形成闭路循环，同时只需在每次循环中添加必需的能量及补充少量的NH4F和NH3，就可将废白土中SiO2转变成水合SiO2及白炭黑，且整个工艺过程无三废排放，符合绿色化生产要求。将Kaf值除以有机质含量得KOM (KOM=Kaf/OM%,即单位有机质含量所对应的吸附系数），KOM大小可反映除有机质外土壤其它因素对农药吸附的影响情况，如农药的疏水特性、土壤pH值、CEC含量等。根据吸附反应自由能与有机质吸附常〕数的关系式：△G=-RT ln KOM，求出普杀特在土壤中的吸附自由能变化量在5.36～14.08kJ/mol之间，因其值均小于40kJ/mol〔9〕,表明普杀特在土壤上吸附以物理作用为主。
+　　根据以上结果，对普杀特在8种土壤上的吸附常数Kaf与土壤有机质含量（WOM,%)、粘土含量(Wclay,%)及土壤pH值进行相关性研究，得出拟合方程为：
+Kaf = 45.0 + 0.28WOM + 0.28Wclay －7.59 pH
+(r=0.88)
+可见普杀特在土壤上的吸附与土壤有机质、粘土含量成正相关，与土壤pH值成负相关。
+表3　普杀特在8种土壤上吸附的Freundlich方程参数*
+Table 3　Parameters of the Freundlich equation for imazethapyr adsorption on eight soils
+
+土壤OM(%)　Kaf　1/n　r2KOM1△G(kJ/mol)
+11.431.670.780.956116.7811.79
+21.453.470.550.991239.3114.08
+31.691.220.770.97872.1910.60
+42.400.470.470.98019.587.37
+55.5114.560.500.995264.2513.82
+68.392.590.710.99730.878.50
+716.001.390.770.9978.695.36
+825.6031.480.630.993122.9711.92
+
+　　　　　　注：* OM(%)为有机质含量　△G为吸附反应自由能　r为相关系数
+表4　普杀特在7种土壤上脱附的Freundlich方程参数
+Table 4　Parameters of the Freundlich equation for imazethapyr desorption on seven soils
+
+Ci(μmol/L)参数土壤1土壤2土壤4土壤5土壤6土壤7土壤8　
+20Kdf2.2831.8060.8658.1136.6481.99537.32
+　r20.9540.9650.9550.9620.9320.7660.855
+40Kdf8.7792.3511.43914.0712.212.28366.76
+　r20.9260.9830.8550.9630.9710.9560.852
+80Kdf11.1974.8722.83318.4021.643.011108.57
+　r20.9790.9840.9930.9790.9810.9550.884
+150Kdf16.389.7022.78822.4824.274.673157.87
+　r20.9890.9830.9940.9910.9930.9950.891
+250Kdf27.6916.9711.56123.9315.0972.982209.85
+　r20.9350.9610.9990.9910.9830.9930.964
+350Kdf39.0822.401.90415.3720.183.049269.41
+　r20.8920.8910.9950.9930.9820.9780.966
+450Kdf53.0429.832.39919.5025.365.324335.27
+　r20.9500.8050.9840.9750.9460.9270.945
+
+　　从表4可知，普杀特在7种土壤上脱附的Freundlich常数(Kdf）多数大于吸附过程Kaf，说明普杀特在土壤上的吸附除物理作用外，还因土壤中金属阳离子通过桥联作用使普杀特分子与有机质或粘粒矿物表面相结合，发生化学吸附，由于化学吸附过程不可逆，导致脱附Freundlich线落后于吸附线，出现脱附滞后现象（图1)。但该工艺需耗用较多酸碱，且有废酸水排放。主波长为254nm和300nm的光对普杀特辐照有较快的降解作用，而用主波长366nm的光照射其降解速度就小得多，可见普杀特在紫外光照射下易降解，而在可见光区降解较难进行。普杀特在玻璃光解器中用主波长300nm的光照射，发现其降解速率下降近一个数量级，这进一步说明普杀特光解是由紫外光起决定作用。另外，添加1%光敏剂丙酮，未发现有加速普杀特降解的效果。
+表5　普杀特光解动力学参数
+Table 5　Photolysis kinetic parameters of imazethapyr in water
+
+条　　件　　速率常数
+k×103／min 半衰期
+t1/2(min)r2
+254nm（石英管）31.60.370.983
+300nm（石英管）18.50.620.997
+366nm（玻璃管）0.5222.200.985
+300nm（玻璃管）2.973.980.998
+300nm+1%丙酮（玻璃管）2.135.420.979
+
+
+图2　普杀特光解曲线
+Fig.2　Photolysis curves of imazethapyr in water 
+A.254nm(石英管)　B.300nm(石英管)　C.300nm(玻璃管） D.366nm(玻璃管）
+3　小结
+3.1　8种土壤对普杀特的吸附均与土壤的理化性质有关，土壤pH值越小，有机质含量越高，吸附能力越强。吸附等温线可用Freundlich方程表示，经相关性研究发现其吸附系数Kaf与土壤上有机质、粘土矿含量成正相关，与pH值成负相关。
+3.2　普杀特在土壤上脱附也满足Freundlich方程，其脱附线落后于吸附线而产生滞后现象，说明土壤对普杀特除物理作用外，还存在不可逆的化学吸附。
+3.3　主波长为254nm、300nm 的光对普杀特的降解有明显作用，而在366 nm的光照射下降解不易发生。说明普杀特的光解主要是由紫外光引起的。
+参考文献
+1　Pusino A, Liu W P, Petretto S, et al.Adsorption and desorption of dimepiperate by soils. Water, Air, and Soil Pollution, 1994,73:325～331
+2　Romero E, Schmitt P, Mansour M.Photolysis of pirimicarb in water under natural and simulated sunlight conditions. Pestic. Sci., 1994,41:21～26
+3　刘乾开主编.新编农药使用手册．上海：上海科学技术出版社，1993.402～404
+4　Loux M M, Liebl R A, Slife F W.Adsorption of imazaquin and imazethapyr on soil, sediments, and selected adsorbents. Weed Science, 1989,37:712～718
+5　Stougaard R N, Shea P J, Martin A R. Effect of soil type and pH on adsorption,mobility, and efficacy of imazaquin and imazethapyr. Weed Science, 1990,38:67～73
+6　Hendershot W H，Duquette M A.Simple barium chloride method for determining cation exchange capacity and exchangeable cations. Soil Sci. Soc. J. Amer., 1986,50:605～608
+7　刘维屏,王琪全，方　卓.新农药环境化学行为研究．中国环境科学，1995，15(4):311～315
+8　刘维屏，Gessa C.利谷隆在土壤中的吸附过程与机理．环境科学，1995，16(1):16～18
+9　杨克武，安风春，莫汉宏.单甲脒在土壤上的吸附．环境化学，1995,14(5):431～435
+作者简介
+郑　巍　男，1972年7月生。浙江大学化学系博士研究生。主要从事环境污染化学研究。发表论文8篇。
+收稿日期：1997-09-06
+* 国家自然科学基金资助项目(39670420)

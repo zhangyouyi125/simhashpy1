@@ -1,0 +1,128 @@
+航空计测技术
+AVIATION METROLOGY &
+MEASUREMENT TECHNOLOGY
+1999年 第2期 No.2 1999
+
+
+
+专用瞄准设备自动检定系统*
+郭晓松啊』葡认楝啊〔獭∶
+　　摘　要　介绍了专用瞄准设备自动检定系统的系统配置、工作原理及软件设计，并对系统的测量不确定度进行了分析和评定。
+　　关键词　专用瞄准设备　自动检定　软件设计　不确定度
+Automatic Verification System for Special-purpose Aiming Equipment
+Guo Xiaosong,Huang Xianxiang,Cai Meng
+　　Abstract　This paper presents the system configuration,operation principle and software design of the automatic verification system for the special-purpose aiming equipment.It analyses and evaluates the uncertainty of measurement also.
+　　Key words　Special-purpose aiming equipment,Automatic verification,Software design,Uncertainty
+　　引言
+　　专用瞄准设备的定期检定工作是航天发射中的重要技术保障环节，多年来，这项工作一直采用人工作业方法，不仅技术难度大、操作时间长、计算繁杂，而且检定结果的准确度受人为因素影响较大，不便于计量检定工作的开展；因此，研制专用瞄准设备自动检定系统是十分必要的。本文以专用瞄准设备自动检定系统为背景，重点介绍了系统的组成、原理和软件设计，并对测量不确定度进行了计算和评定。
+算例:　再入参数Ve=6722m/s,He=80816m,θe=-20.4°,m=3000kg,S=3.0m2
+控制高度=2273m
+再入干扰:10%标准大气密度偏差
+采用原控高方程:x1=22,y=10.60S
+控高偏差:ΔH=853m
+　　采用本文设计的控高方程,控制误差如下表所示:
+误差项ΔHtΔHgvΔHGΔHVΔ(2)H
+数　值25.713.3-6.20.019.3
+总误差52.1m
+　　两种计算结果比较可以看出,本文设计的控高方程的精度比原方程的精度提高了8倍。
+
+图1　系统组成结构图
+
+1.2　工作原理
+　　T2002通过RS232接口和数据电缆与主控计算机相连，对专用瞄准光学设备的检定数据，可以经接口直接输入计算机进行计算、显示和储存。FDF的鲁棒决策要解决的问题是:分析上述两部分不确定性对故障检测的影响,采用附加阈值等手段使模型存在误差时FDF方法检测故障尽量准确。其中，控制PCLD―788，可以选择被检仪器和被检项目；控制PCLD―785可以选择不同的HP测试仪器。通过这种灵活的逻辑控制，可以使不同的被检仪器和被检项目与相应的HP测试仪器对应起来。系统工作时，计算机按规定的检测程序，控制PCLD―788和PCLD―785依次沟通被测仪器检测点与测试仪器的信号通道，实时测量该检测点的工作状态，测量数据经GPIB接口和数控电缆送入计算机进行处理，经分析计算和比较判断，显示记录检测结果，从而实现了多点位、多通道、多状态的实时检测。
+2　软件设计
+　　系统软件采用VB(Visual Basic 3.0)语言编程，在Windows3.2操作平台支持下运行。
+
+　　用VB编写Windows应用程序，就是以制作必要的窗体、控制及专用控制作为对象，根据需要布置好，然后根据对象、相应的事件编写该事件的执行程序，并将各对象按一定的功能要求连接起来。编写应用程序的关键，在于确定选择对象及其响应事件，实现各对象之间的逻辑连接。该方法对再入干扰不能完全补偿,最大控高误差达1300m,如此大的误差不能满足精度要求。常用的惯性控高方法是过载延时方法,控高方程为:
+
+(1)
+nx1,x1分别为实际弹道和标准弹道的过载,Ty,y分别为实际弹道和标准弹道从x1至高度处的延时。在这里,与故障fi有关的特征值与特征向量的数目ni是待定的,ni个有关特征向量vij(j=1,2,…,n)构成了故障fi的检测空间。计算结果表明,该控制方法的控制误差小于100m。
+2.3　检测项目窗体
+　　完成各仪器检定项目的检定方法提示、数据输入、数据处理和结果显示等。前者“污染”故障向量而影响故障检测,称为“显性不确定性”,后者改变了误差系统的特征方向从而改变了故障下设计残差输出方向,称为“隐性不确定性”。记特征值扰动为δλi=λ0i-λi,特征向量扰动为δvi=v0i-vi,πi为所设计的故障fi下的输出残差向量(πi=Cvij),π0i为对应的实际输出残差向量(π0i=Cv0i),则隐性隔离阈值Ythj(j=1,2,…,r)如下表示
+
+(2.3.1-1)
+其中
+
+　　证明:
+　　根据已知可以得到
+δvi=-T-i(λi)(δλiI-δG)v0i
+其中Ti(λi)=λiI-G
+　　设αi为πi与π0i的夹角,根据欧氏空间中向量夹角的定义,有
+
+根据假设,δπi≈0,因此,δπi与πi和π0i分别近似正交(零向量与任何向量正交),不难得到
+
+
+而根据线性代数理论有
+
+所以
+
+即　　　
+　　故障fjμj对应检测空间中的nj个特征向量,因此选取这nj个αi中的最大上界作为隐性阈值是合适的,即阈值可由(2.3.1-1)式给定。
+2　FDF的鲁棒决策方法
+2.1　基本FDF方法
+　　考虑系统
+
+(2.1-1)
+其中,A∈Rn×n,B∈Rn×q,C∈Rm×n,当系统发生部件或执行机构故障时,系统方程为
+
+其中,fi∈Rn×1是预先知道的故障方向,μi是任意未知时变标量。
+2.5　数据查看及打印窗体
+　　每个被检仪器对应一个数据查看窗体。该窗体内设置用Foxpro2.5制作的数据库，并创建相应的结合控制显示出各段的参数，用户可方便地查看检测数据，并按规定格式打印检定结论。
+　　主题词　再入飞行器　惯性控制　方法
+THE INERTIAL CONTROLLING METHOD 
+TO HEIGHT OF BALLISTIC REENTRY VEHICLE
+
+Yang Huiyao　Wang Shicheng　Deng Fanglin
+(The Second Artillery Engineering College*Xi'an*710025)
+　　Abstract　The opening parachute signal is required to sent on the fixed height when the vehicle reentry.The height controlled error through axis apparent acceleration can not meet the required precision.This thesis designs an inertial controlling method to the height with the signal of the axis apparent acceleration and its integral by the method of conjugate equation.The computation results show that the controlled error is less than 100m.
+　　Key words　Reentry vehicle　Inertial controlling　Method
+1　引　言
+　　当飞行器再入至回收区上空时,要求在规定高度上打开降落伞,无线电控制容易受干扰,所以,一般都用惯性控制。
+
+图2　窗体间数据流程图
+
+3　不确定度评定
+3.1　专用光学设备检定不确定度
+　　将T2002和23面棱体的标准偏差，按方和根合成的方法求出合成不确定度，并乘上因子k(k＝3)，得到光学设备检定扩展不确定度U。
+　　(1)T2002标准不确定度uB1：0.5″;
+　　(2)23面棱体标准不确定度uB2：uB2＝0.2″／3≈0.07″。
+　　合成不确定度uc及扩展不确定度U分别为
+uc＝(u2B1＋u2B2)1／2
+＝(0.52＋0.072)1／2
+＝0.503″
+U＝kuc＝3×0.503″≈1.51″
+3.2　专用电子设备检定不确定度
+　　根据专用电子设备的实际工作情况和被检范围，重点对交直流电压、电流参数的测量不确定度进行测试、评定和计算。ni的确定,L增益阵的求取等参见文献［5］,这里不具体叙述。
+　　以上四部分的合成不确定度为
+uc＝(u2B1＋u2B2＋u2B3＋u2A)1／2
+　　扩展不确定度U为
+U＝kuc(k＝3)
+　　表1给出了测量不确定度评定和计算的实际结果。
+
+表　1
+
+　1～25 V2～25 V(175～500 Hz)100 mA0.8 A(4.8 kHz)
+uB139.72×10-6～64.00×10-610.39×10-4～12.13×10-43.20×10-48.70×10-4
+uB21.33×10-6～3.63×10-63.03×10-6～13.81×10-68.60×10-52.60×10-4
+uA0.68×10-6～6.26×10-66.44×10-6～11.18×10-66.40×10-64.40×10-6
+uB34.39×10-6～50.40×10-64.11×10-5～8.57×10-56.60×10-61.30×10-5
+uc40.47×10-6～81.55×10-610.43×10-4～12.14×10-40.33×10-30.09×10-2
+U12.15×10-5～24.47×10-531.29×10-4～36.42×10-40.99×10-30.27×10-2
+
+
+　　选取最大值作为交直流电压、电流测量的扩展不确定度，即UDCV＝24.47×10-5;UACV＝36.42×10-4;UDCA＝0.99×10-3;UACA＝0.27×10-2。本文在选择标准过载x1的同时,用延时Ty、轴向视速度Wx1及其积分W*x1的线性组合代替原延时方程,以达到提高控制精度的目的。
+　　系统采用的“模块化、积木式”的总体结构设计，确保了系统具有良好的通用性和经济性。只需改变部分硬件接口和相应软件，便可以方便地将系统应用到其它型号瞄准设备自动检定中，应用前景十分广阔。
+　
+　
+　　*该项目获国家科学技术进步一等奖
+　　郭晓松：36岁　男　教授
+作者单位：郭晓松啊』葡认(第二炮兵工程学院机电工程系，陕西省西安市，710025)
+　　　　　蔡　萌(西北工业大学计算中心，陕西省西安市，710072)
+　
+参考文献
+　[1]　Hewleet-Packard Company.HP Standard Instrument Control Library User's Guide for Windows
+　[2]　Hewleet-Packard Company.Using the HP-IB Interfa-
+ce with Microsoft Windows.1995.1
+　[3]　Hewleet-Packard Company.HP34401A Multineter,1992.6
+　　
+　　1998-04-17收稿

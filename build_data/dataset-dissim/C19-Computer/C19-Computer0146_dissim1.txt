@@ -1,0 +1,22 @@
+微型电脑应用
+MICROCOMPUTER APPLICATIONS
+2000　Vol.16　No.1　P.2
+
+
+
+迎接挑战共筑辉煌
+――纪元晋千献辞――
+何友声　朱仲英
+摘　要：本文概述了20世纪的科技发展成就，展望了21世纪高新技术发展的特点和趋势，预测了信息技术发展与应用的热点，提出了若干对策建议。
+关键词：信息技术　网络　创新
+Abstract：The remarkable achievements of science and technology in the 20th century are briefly introduced. Prospects of the develop ing high technologies, their characteristics and trends in the new century are f orec asted. The growing information technology and the hot spots in applications are predicted. Some measures and suggestions are also proposed in this paper.
+Keyword：Information Technology (IT) Network Innovation In itiative ▲
+　　一个充满机遇与挑战的新世纪，在亿万人们的热切期盼中来临了。本会和本刊的全体同仁深怀敬意，向所有关心、爱护和支持本会和本刊发展的各级领导、院士、专家和朋友们，表示衷心感谢，恭贺大家新年快乐、合家安康、万事如意。
+　　世纪之交，回眸历史，我们深为20世纪人类的三大发现：相对论、量子论和量子力学、DNA分子模型而感到豪情满怀；更为继农业革命和工业革命之后出现的人类社会第三次技术经济革命――信息革命而感到欢欣鼓舞!20世纪是一个充满奇迹的伟大世纪。如果没有指定一个Locale, JDK1.1会从环境中提取缺省的Locale(us-en)。Locale 类封装了局域的一些信息，如国家,语种,日期代码等!字符流使用大量的字符集转换。这是千载难逢的机遇与挑战。
+　　信息科技是21世纪的带头学科，IT产业是新世纪的主导产业，其核心技术是系统集成化的芯片与核心软件，这是我国的薄弱点，我们必须强攻下这片战略高地，把握住中国IT产业的命运。当前IT技术的发展趋势表现为数字化、网络化、多媒体化、智能化和系统集成化。
+　　java.io 中所有的类，它们用InputStream和OutputStream流工作，都增加了相应的Reader和Writer字符流类。CIMS (Computer Integrated Manufacture System)/CIPS(Computer Integrated Production Syste m)与智能化大厦技术，为企业的综合信息化、智能化、集成化，提供了强有力的理论和应用工具 。“三S”技术(遥感RS、全球定位系统GPS和地理信息系统GIS)，为发展空间信息系统技术，开辟了极其广阔的天地。三网融合(电话网、有线电视网和计算机网络)和3C技术(计算机Computer、通信Communication和消费产品Consumer Products)交融汇聚所带来的信息家电革命已拉开序幕。后PC时代正在到来，其特点表现为：信息数字化、电脑信息化、家庭网络化和网络全球化，后PC时代人们将生活在全新的数字化生活环境中，这预示着IT产业和家电产业将面临新的巨大的发展机遇。Internet和WWW技术的崛起，势必使传统的电话网进化为宽带的分组 数据网为重心的新通信网，进而，以波分多路WDN为基的全光通信网也趋于成熟。而新一代I nternetⅡ将 以高速宽带的网络特征，促使电子商务、数字图书馆、虚拟实验室和远程网教育等实用化和 普及化。那时，人们才真正置身于信息社会和网络时代之中。
+　　“迎接未来科学技术的挑战，最重要的是要坚持创新，勇于创新。创新是一个民族的灵魂，是国家兴旺发展的不竭动力。科技创新已越来越成为当今社会生产力的解放和发展的重要基础和标志。”时代的呼唤，人民的嘱托，使我们从事IT事业的科技工作者深感任重而道远。
+　　java.txt 是一个完全意义上的新包。JDK 1.1提供了InputStreamReader和OutputWriter两个类，用来创建基于字节流的新的Reader和Writer对象，使Reader/Writer类同目前使用字节流的其他类兼容。应广大读者要求，自1999年起本刊已改为月刊，以便更及时地为广大科技工 作者和计算机用户提供最新的计算机应用科技成果，研究热点及发展趋势等最新信息，更好地为社会服务。
+　　若你正在开发新程序，就在以前使用InputStream和OutputStream流的地方，用相应的Reader和Writer类来代替。我们衷心希望《微型电脑应用》这块园地，继续在广大作者、读者关心支持下，常绿常新、茁壮成长。
+　　java.txt 是一个完全意义上的新包。伟大的中华民族又面临着千载一逢的重铸辉煌的希望。历史上一些国家抓住机遇，后来居上，成为当时世界上最发达的国家的事例很多。新增的Reader和Writer除了处理16位的国际码特性以外，和其他字节流的工作是一样的。
+　　若你正在开发新程序，就在以前使用InputStream和OutputStream流的地方，用相应的Reader和Writer类来代替

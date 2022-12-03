@@ -1,0 +1,45 @@
+计算机工程
+COMPUTER ENGINEERING
+1999年 第25卷 第8期 Vol.25 No.8 1999
+
+
+
+IPSOFACTO快速ATM信元传输上的IP交换
+许飞，许晓鸣，杨煜普，孙海荣
+摘要：介绍了一种无需信令通过ATM交换机建立路径，将IP流映射到ATM交换的技术。
+　　下面以PowerBuilder6.0为开发工具，介绍具体的实现方法。
+关键词：IPSOFACTO；IP交换；交换路径
+IPSOFACTO--IP Switching over Fast ATM Cell Transport
+Xu Fei,XuXiaoming,Yang Yupu,Sun Hairong
+(Dept.of Automation,Shanghai Jiaotong University,Shanghai 200030;
+State Key Lab.of Optical Communication,University of Electronic and Science technology,Chengdu 610054)
+【Abstract】In this paper a techonology of setting up path through an ATM switch without signaling system and reflection IP flows to an ATM switch is presented.The function of IPSOFACTO is to reflect IP flows to an ATM switching path.
+【Key words】IPSOFACTO;IP Switching;Switching path
+　　ATM 技术本身是一种新的网络体系，目前达到标准化并已实现的主要是低层通信支持环境：物理层、 ATM 层和 AAL 层，相当于 OSI 物理层和链路层的协议。随着 ATM 逐步走向实用化，学术界和工业界已认识到建立 ATM 网络上层协议国际标准的迫切性和重要性。在已知模糊数的平均值的概率分布区间[A*,A*]后，一种去模糊的方法是计算平均值区间的质心：(A*+A*)/2。
+　　对于这种不确定的情况，传统的处理方法是：
+　　(1) 将非精确数近似用一个精确数来表示，然后用解精确问题的方法求解，这种方法存在两 个缺点，一是模型发生了变化，问题的解产生偏差；一是获得的问题解形式不符合传统的表 达方式、不直观。但由于现有的上层协议是基于现有各种与 ATM 网络差异很大的低速网络的，将它们进行修改以使之适合 ATM 网络，并真正做到“无逢”连接 (ATM FORUM 的局域网仿真 LANE 和 IETF(Internet Engineering Task Force) 的 IPOA) ，有很多技术难题。另一种是研究全新的 ATM 上层协议，以期充分发挥 ATM 的技术优势，但意味着浪费大量已有的网络投资，并延长标准化周期。 
+1 基本原理 
+　　IPSOFACTO 工作的基本前提是交换机的输入端口的所有未用 VC 均映射到交换控制处理器。","成功保存。这就要求数据库系统有良好的灵活性和可扩充性。当该线的下游末端的交换控制器收到首分组时，就根据 IP 路由表选择它的出线，以及该出线的一条未用的 VC 。然后，交换控制器在 VC 表中添加一条记录《 { 输入端口，输入 VC} ， { 输出端口，输出 VC} 》 ( 如图 2 示 ) ，则该数据流的后续分组在信元级就如此交换了。 
+
+图 2 添加一条交换路径 
+　　相对于数据分组，交换控制器不为 IP 的“控制”信息创建交换路径，而是通过一条预定的“控制 VC ”发送和接收 IP “控制”信息。交换控制器处理这些 IP “控制”信息的结果是，建立起每串数据流的传递状态。设SL()表示左边部分构成的面积；同样，SR() 表示右边部分构成的面积。同时，定义一个附加的保存表，将这些列属性名称的修改信息保存在该表中。而对 TCP ， quot; 控制“分组是由 TCP 信头的标志 (SYN/FIN) 来决定的。 
+
+图 3 流出 VC 变成未用 VC 的过程 
+　　使上游节点的正在使用的流出 VC 变成未用 VC 的过程如图 3 所示。 
+　　(1) 给该 VC 打上“暂态”的标记，然后向下游节点发送一条 RECLAIM 信息，并等待回答。 
+　　(2) 当下游节点收到一条 RECLAIM 信息，它将相应的流入 VC 打上“未用”标记，并向下下游节点发送 RECLAIM 信息同时向上游节点返回一条 RECLAIM-ACK 信息。 
+　　(3) 一旦上游节点收到 RECLAIM-ACK 信息就将该 VC 标记为“未用”。由于模糊数定义为一个基于概率分布的集合，模糊数平均值可以通过模糊数的概率分布来计算：
+
+其中A*是和累积概率分布F*相关的平均值，A*是和F*相关的平均值。 
+　　注意，不必对每条 VC 这样做，而是一对 RECLAIM 和 RECLAIM-ACCK 信息，可包含多条 VC 的状态转换。可见获得的结果不仅具有很好的柔性，而且具有与传统相一致的表达方式。 
+2 优化 TCP 流 
+　　对于 TCP 流，在数据传递前要先进行 3 次握手。而在 IPSOFACTO 下，当首分组 (SYN) 被前向传递后，交换路径就建立起来了，即在数据传递前，一条端到端的交换路径就可得了。而要拆卸这条 ( 即将其标记为“未用” ) ，可通过发送 FIN 分组和 FIN 的应答分组到交换控制器 ( 而不是交换路径 ) 来实现，也就是说，这些分组被用作“控制”信息了。 
+　　这种优化仅在这些节点起作用，它们的 TCP 流的前向路径对称 ( 即该流的正向的流入端口正是它的反向流出端口 ) 。","保存失败。其语法为：
+　　dwcontrol.object.dwobjectname.
+{ .object.dwobjectname .}{.property}=value 
+　　下面语句设置数据窗口中name列背景颜色为白色：
+　　dw―1.object.name.background.color
+=rgb(255,255,255)
+　　以下设计过程使用的是数据窗口表达式方法。 Ipsilon 公司的方案是从下游节点选择 VC 对一串数据流进行交换， CSR 却是从上游节点选择 VC 。而 IPSOFACTO 是基于路由信息和 VC 的状态 ( 已用或未用 ) 来进行 IP 流到交换路径的映射的。 
+　　IPSOFACTO 与传统的 ATM 网络支持 IP 的方案 ( 如 IPOA 、 LANE 等 ) 一样，解决了 ATM 网络支持传统数据通信业务的问题，并表现出了其优越性，但它也不能为不同的用户提供特定的服务质量 (QOS) ，即不支持多媒体通信。
+　　从(1)中可以看出，解模糊Flow-shop问题的关键是模糊数的运算与比较

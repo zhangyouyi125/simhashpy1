@@ -1,0 +1,115 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+耦合多体系统动力响应计算*
+陆毓琪　芮筱亭　刘正福　黄葆华
+(南京理工大学应用数学系*南京*210094)
+　　摘　要　由于弹性体与刚体之间的动力耦合,使得耦合多体系统的特征值问题非自共轭,难以用经典的模态分析方法解决含有刚、弹耦合多体系统的动力响应问题。
+4.2.2　ANN1的训练
+　　由图3及能量函数(3-3)和BP算法(3-4)可知,训练ANN1的关键步骤是计算ANN1的输出误差Δu(t)。
+　　主题词　耦合多体系统　算子　自共轭　正交
+DYNAMIC RESPONSE OF 
+THE COUPLED MULTIBODY SYSTEM
+Lu Yuqi　Rui Xiaoting　Liu Zhengfu　Huang Baohua
+(Nanjing University of Science and Technology*Naijing*210094)
+　　Abstract　The eigenvalue problem of coupled multibody system is not self-adjiont and the study of dynamic response of the system by classical modal analysis method is difficult because of the dynamic coupled action between tlastic bodies and rigid bodies.In this paper,we take a multibody system as example,the augmented formulas of eigenvalue and boundary value problem of the multibody system are developed.The general response of the system to arbitrary excitations is accurately represented by the orthogonal augmented eigenfunction series.
+　　Key words　Coupled multibody system　Operator　Selfadjoint　Orthogonal
+1　引言
+　　多体系统对任意激励的动力响应计算问题具有重要的理论意义和实用价值。
+　　证明:令　　　　　　δu=limα→0Δu(t)(4-12)
+　　则
+(4-13)
+　　故当α足够小时,有
+ΔJ(1)=J(1)k+1-J(1)k＜0(4-14)
+　　即
+J(1)k+1＜J(1)k(4-15)
+(证毕)
+　　按式(4-10)计算出系统(2-1)第k次运行时ANN1输出误差Δuk(t),即可运用BP算法(3-4)对ANN1进行在线训练
+5　神经元状态反馈控制器设计与训练
+　　对伪线性系统(4-6)定义泛函
+(5-1)
+存在最优状态反馈控制律
+v(t)=v(yd,z)(5-2)
+其中,状态变量z∈Rr定义为:zi=Diy(i=0,1,…,r-1)。由图5可知,经过35次在线仿真训练,登月舱软着陆过程逼近了期望的下降曲线,神经元控制系统获得了良好的控制效果。由于弹性体与刚体之间的动力耦合作用,使得多体系统的特征值问题非自共轭。
+2.3　登月舱软着陆过程控制问题描述
+2.3.1　登月舱模型及其运动
+　　登月舱在月球表面软着陆是登月行动的重要环节之一。
+3.2　登月舱的神经元控制系统结构
+　　构造图3所示的登月舱人工神经元非线性动态逆控制系统。
+2　力学模型
+
+
+图2.1　耦合多体系统
+　　系统由平面运动的刚体A和与其固结的匀质梁B组成,以固结点O为坐标原点,建立静止直角坐标系,X轴沿未变形的梁的中心轴线指向梁的另一端。人工神经元网络所具有的自学习自组织能力,为解决非线性、模型不精确或模型未知系统控制问题提供了一条新的途径。设梁的抗弯刚度和单位长度的质量分别为EI和,刚体的质量和绕质心的转动惯量分别为m和J*。求系统的动力响应。
+　　2)推进系统质量流速满足:
+　　登月舱动态特性由如下非线性微分方程描述:
+(2-3)
+　　将式(2-5)化为式(2-1)所示的非线性状态微分方程:
+x(t)=x1(t)
+(2-4)
+其中,y=x1为登月舱距离月球表面的高度,为控制量。本文应用神经元网络实现被控非线性系统的动态逆模型,使该方案在具有处理非线性问题的能力的同时,具有了处理模型不精确或模型未知问题的能力;而系统的线性化又使文献［1］提出的神经元状态反馈控制方案易于实现。
+　　系统的边界条件为
+Z(L)=［y(L),θ(L),0,0］T(3.3)
+Z(-l)=［y(-l),θ(-l),0,0］T(3.4)
+　　将式(3.3)、(3.4)代入式(3.1)得频率方程
+U31U42-U32U41=0(3.5)
+解式(3.5),即可求得耦合系统的各阶固有频率。设所得频率均为单根,即
+O=ω21＜ω22＜ω23＜……
+　　由式(3.1)得振型函数
+y(x)=C1U11+C2U12(3.6)
+式中,C1、C2为任意常数,并且
+C2/C1=-U31/U32=-U41/U42(3.7)
+上述各式中
+U11=S(λx)+mbω2U(λx)/(λ2EI)+mω2V(λx)/(λ3EI)
+U12=lS(λx)+T(λx)/λ+(mab-J*)ω2U(λx)/(λ2EI)+maω2V(λx)/(λ3EI)
+U31=λ2EIU(λL)+mbω2S(λL)+mω2T(λL)/λ
+U32=λ2EIlU(λL)+λEIV(λL)+(mab-J*)ω2S(λL)+maω2T(λL)/λ
+U41=λ3EIT(λL)+mbω2λV(λL)+mω2S(λL)
+U42=λ3EIlT(λL)+λ2EIU(λL)+λ(mab-J*)ω2V(λL)+maω2S(λL)(3.8)
+S(λx)、V(λx)、U(λx)、T(λx)为Крыдов函数［9］。
+为系统固有振动频率。
+4　增广特征矢量及其正交性关系
+　　设空间｜α｜=H(Ω)R2,其中H(Ω)为Hilbert空间,Ω为梁的定义域(0,L］,｜α｜中的任意元素U=［U(x),U1,U2］T,U(x)∈H(Ω),U1,U2为两个标量,在｜α｜上定义内积
+〈U,V〉=∫L0U(x)V(x)dx+U1V1+U2V2(4.1)
+　　定义增广算子
+(4.2)
+(4.3)
+其中,算子的定义域为空间｜α｜的子空间
+D={V｜V=［U(x),U(0),U′(0)］T,U″(L)=0,U(L)=0,U(x)∈H(Ω),
+且U(x)在Ω上有四阶导数}(4.4)
+则原来的特征值问题等价于
+ω2MV=KV,　V∈D(4.5)
+其中
+VK(x)=［yK(x),yK(x)｜x=0,y′K(x)｜x=0］T,(K=1,2,…)(4.6)
+我们称其为增广特征矢量。
+　　由引理3-1可知,最优状态反馈控制律(5-2)可用BP神经元网络实现,如图3所示的模块ANN2。
+　　式中
+7(5.13)
+7(5.14)
+(5.15)
+系统中刚体的响应为
+y(t)=y(0,t)-yx(0,t)b(5.16)θ(t)=yx(0,t)(5.17)
+式中y(t)表示刚体质心的位移,θ(t)表示为刚体的转角。
+　　ANN1的设计步骤为:
+　　1)依据伪线性系统输出误差Δy(r),利用动态学习算法计算ANN1输出误差Δu
+　　2)依据ANN1输出误差Δu,利用BP学习算法进行自组织,使ANN1逼近系统的非线性动态逆模型
+　　(2)采用神经元网络ANN2实现系统的状态反馈控制
+　　对线性化后的登月舱伪线性系统外环进行状态反馈设计,利用BP人工神经元网络逼近任意非线性映射的能力,采用神经元网络ANN2实现某种最优的状态反馈控制律。
+6　算例
+
+
+图6.1　梁中点的响应
+用上述方法求解某多体系统的响应,由电算得到梁中点前8秒时间的响应历程,如图6.1。
+7　结论
+　　由上述可见:多体系统传递矩阵法为解决诸如航天、兵器等工程问题中的多体系统固有振动特性问题提供了方法;通过构造增广算子和增广特征矢量,建立其正交条件,使多体系统传递矩阵法可以解决多体系统动力响应的精确分析问题。
+参考文献
+  1　芮筱亭,隋文海,邵允中.刚体的场传递矩阵及其在多体动力学中的应用.宇航学报,1993,4:82-87
+  2　芮筱亭,陆毓琪.多体系统振动的传递矩阵法.宇航学报,1995,3:41-47
+  3　Stein E,Hang Y J,芮筱亭,陆毓琪,曾仕伦,刘正福.TraNSFER Matrix method of damping multibody systems vibration.宇航学报,1996,2:28-35
+  4　芮筱亭等.多体系统发射动力学.国防工业出版社,1995
+  5　芮筱亭,陆毓琪,付效山,俞占鸿.多体系统传递矩阵法.南京大学出版社,已付印
+  6　Yang B.Linear vibration of a compled spring-rigrdbar system,Proceedings of the International Conference on Vibration Engineering,International Acadlmic Publishers,1994
+  7　刘延柱等.多刚体系统动力学.高等教育出版社,1989
+  8　Witlenburg J.Dynamics of Systems of Rigid Bodies,B.G.Teubner,Stuttgart,1977(中译本:谢传锋译,多刚体动力学,北京航空学院出版社,1986)
+  9　И．М．Бабаков，Теория　копебаний，Гостехиздат,(中译本:振动理论,蔡承文等译,人民教育出版社,1963)

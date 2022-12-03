@@ -1,0 +1,71 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS
+1999年 第2期　No.2 1999
+
+
+
+捷联惯导系统中确保全姿态测量的
+软故障检测和隔离
+秦永元　牛惠芳
+　　摘　要　本文探讨了最多有两个捷联陀螺发生软故障时的故障检测和隔离方法,给出了由奇偶向量确定的软故障χ2检验法,详细推导了两个陀螺都发生软故障时的极大似然故障隔离判决函数的计算公式,归纳出了对故障陀螺的隔离搜索算法。
+　　方程(2.1)～(2.8)组成一组以β和θ为参数的封闭方程组,当来流的组分、温度、压力和流速给定时便可得到斜爆轰极曲线,从而预测斜爆轰的驻定范围,驻定斜爆轰的倾斜角等重要参数。
+　　主题词　软故障　检测　隔离　奇偶向量
+THE SOFT FAULT DETECTING AND LSOLATING TO 
+ENSURE THE ENTIRE ATTITUDE MEASURING OF 
+A STRAPDOWN INERTIAL NAVIGATION SYSTEM
+Qin Yongyuan Niu Huifang
+(Dept.of Automatic Control Northwestern Polytechnical University.Xi'an.710072)
+　　Abstract　In the federated filter design,the reliability of a strapdown inertial navigation system should be guaranteed absolutely because it is used as a common reference system.The paper investigates the way to detect and to isolate at most two faulty inertial components.The soft fault detection algorithm based on chi-square test is reviewed.The parity judgement function to isolate two faulty inertial components based on maximun likelyhood test is deduced in detail.The algorithm to search the faulty components is induced.The fault detection and isolation of the scewed redundant ring laser gyro cluster is simulated on the computer.The results show that the searching scheme can detect and isolate faulty components correctly even if the soft faults are as tiny as the gyro drifts.
+　　Key words　Soft fault Detection Isolation Parity vector
+1　引　言
+　　要获得运载体的完整姿态信息,捷联陀螺必须采用余度斜置和容错测量技术。对于由陀螺失效引起的硬故障,采用奇偶方程校验能有效地隔离出失效陀螺,但对陀螺性能变化引起的软故障,则须采用极大似然法作故障隔离。通常只研究仅一个陀螺有软故障时的隔离方法［2］,然而两个陀螺都有故障的概率不可忽视。本文探讨最多有两个陀螺发生软故障时的检测和隔离方法。该发动机的基本思路是将爆轰波驻定在发动机燃烧室的进气口,超音速来流在激波作用下迅速燃烧,其产物膨胀加速达到预定出口速度并由此产生推力。图2　(b)为反应热的变化曲线,复杂反应系统中有些反应是放热的,如生成H2O的反应,有些反应是吸热的如生成自由基和离子的反应,当激波强度增加时,平衡向自由基和离子增多的方向移动,故反应热随之下降。设TD为某一阈值,在无故障条件(H0)下D超越TD的条件概率为α,若所取α很小,则可得如下故障判决准则:
+　　若D＞TD,则判定至少有一个陀螺出故障;
+　　若D＜TD,则判定所有陀螺工作正常。以H2-O2混合物为例,设初始压力为0.1013MPa,温度为298.15,当量比为1,反应产物包括诸如H2O,H2O2,OH,OH+,OH-,HO2,H2,H,H+,H-,O2,O,O-2,O3,O+,O-等所有可能存在的各种分子,自由基和离子。文献［2］给出了故障隔离判决函数:
+　　　　　　　　　　　　　　　　　　(7)
+式中,Vj为V的第j列,‖Vj‖=VTjVj。显然,初温愈高,爆轰波可驻定区域愈大、愈易形成驻定爆轰。
+3　两个陀螺都有软故障时的检测和隔离算法
+　　若陀螺i和陀螺j都出故障,并记该事件为Hij,其中i,j=1,2,…,m,i≠j,则故障向量为:
+　　　　　　bf=eifi+ejfj　　　　　　　　　　　　　(8)
+　　若两故障量悬殊很大,则可按单个陀螺出故障的情况分析之,故障隔离判决函数按(7)式计算。
+　　若两故障量大小接近,即fi≈fj=f,则(8)式可写成:
+　　　　　　bf=(ei+ej)f　　　　　　　　　　　　　　(9)
+或
+　　　　　　bf=(ei-ej)f　　　　　　　　　　　　　　(10)
+　　先讨论(9)式所示情况。
+　　作者单位：南京理工大学动力工程学院.南京.210094)
+参考文献
+　1　Nicholls JA.,Dabora EK.and Gealer RL.Studies in Connection with Stabilized Gaseous Detonation Waves.7th Symp.on Combust,Butterworth,London.1959,766-772
+　2　Gross RA.and Chinitz W.A Study of Supersonic Combustion Jorunal of Aerospace Sciences,1960,27(6):517
+　3　Morrison RB..Oblique Detonation wave Ramjet.NASA CR-159192,1980
+　4　Dabora EK.and Brode JC..Standing Normal Detonations and Oblique Detonations for Propulsion.AIAA-93-2325,1993
+　5　Ostrander MJ.,Hyde JC.,Young MF.,Kissinger RD.and Pratt DT..Standing Oblique Detonation wave Periormance.AIAA-87-2002,1987
+　　本文为国防弹道重点实验室基金资助
+　　收稿日期:1997年5月4日,修回日期:1998年1月5日
+。以H2-O2混合物为例,初始压力为0.1013MPa,初始温度为298.15,当量比为1,θ-β曲线如图3所示。一般讲弱(欠驱)爆轰是不存在的,故爆波仅能在由CA和CB曲线所夹的区域被驻定在飞行尖劈上。由方程(2.1)～(2.3)
+　　　　　　　　　　　　　　　　　　(3.5)
+　　　　　　　　　　　　　　　　　 (3.6)
+记迭代过程中的值
+　　　　　　　　　　　　　　　　　　　(3.7)
+　　　　　　　　　　　　　　　　　　(3.8)
+由方程(3.7)
+　　　　　　　　　　　(3.9)
+　　　　　　　　　　　　　　(3.10)
+由方程(3.8)
+　　　　　　　　　(3.11)
+　　　　　　　　　　　　　(3.12)
+其中可以通过平衡计算求得。所假设的条件为:六个单轴激光陀螺的敏感轴分别沿正十二面体的法线,陀螺从1至6作编号,(1)式中H阵见［8］p92。(3)式求解详见［2］,P按(2)式构造。其余条件和仿真结果列于表1～表4。诸表中,括号内的数字组为隔离函数最大值指示的故障陀螺号,加*号表示判定正确的情况。
+　　使爆轰波驻定的设想始于五十年代［1,2］,作为一种技术,它可以用于高速推进系统,例如爆轰发动机。根据以上分析,可得对故障陀螺作搜索和隔离的流程图如图1所示。
+
+图1　根据故障判决函数搜索隔离故障陀螺的流程图
+　　作者单位：西北工业大学自动控制系.西安.710072)
+参考文献
+　1　Patton R J,Chen J.Robust Fault Detection and Isolation (FDI) Systems.Control and Dynamic Systems,1996,174:171-224
+　2　Potter J E,Suman M C.Thresholdless Redundancy Management with Arrays of Skewed Instruments.AGARDOGRAPH-224,1977:15-1～15-25
+　3　Kerr T H.Decentralized Filtering and Redundancy Management for Multisensor Navigation.IEEE Trans.on Aerospace and Electronic Systems,1987,23(1):83-118
+　4　Frank P M.Advances in Observer-based Fault Diagnosis.Proc.Int.Conf.on Fault Diagnosis,TOOLDIAG'93,Toulouse:817-836
+　5　Lou X,Willsky A S,Verghses G C.Optimally Robust Redundancy Relations for Failure Detection in Uncertain Systems.Automatica,1986,22(2):333-344
+　6　Watanabe K,Himmelblau D M.Instrument Fault Detection in Systems with Uncertainties.Int.J.Syst.Sci.,1982,13(2):137-158
+　7　Daly K C.Generalized Likelihood Test for FDI in Redundant Sensor Configurations.Journal of Guidance and Control,1979,2(1):9-17
+　8　以光衢等.惯性导航原理.航空工业出版社,1987年第一版:91-92
+　　本文为航空基金资助项目
+收稿日期:1996年11月1日,修回日期:1998年2月19日

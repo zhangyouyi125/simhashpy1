@@ -1,0 +1,163 @@
+信息与控制
+Information and Control
+1999年　第28卷　第1期　Vol.28　No.1　1999
+
+
+
+不确定时滞系统的无记忆鲁棒控制
+
+陆国平
+
+　　摘　要　讨论了含有时变时滞以及时变输入控制的 时滞线性系统的鲁棒可镇定性问题，就所有可结构化不确定参数以及所有非结构化不确定参 数两种情形分别得到了系统可由状态反馈控制器镇定的充分条件，并且相应给出了控制器的 设计。 
+　　关键词　时滞线性系统；不确定参数,鲁棒控制,代数Riccati方程
+ROBUST CONTROL FOR UNCERTAIN DYNAMIC DELAY SYSTEMS BY
+MEMORYLESS FEEDBACK
+LU Guoping 
+(Department of Automatic Control, Nantong Institute of Technology , Jiangsu 226007)
+Abstract　This paper focuses in the problem of robust stabili zation for the linear uncertain dynamic delay systems with time-varying delays and delay input. The paper presents state feedback controllers which stabilize t he systems for all admissible uncertainties including unstructured and structure d uncertainties respectively. The robust controllers can be synthesized by simpl e formulae.
+　　Key words　delay systems, uncertain parameter, robust controller , algebraic riccati equation
+
+1　引言
+　　含不确定参数的线性系统的鲁棒镇定问题已引起人们的关注，参见文献〔3，4，6，7〕等， 在文献〔3，4，6，7〕等的基础上，文献〔5〕讨论了一类含不确定参数的时滞线性系统的 鲁棒镇定问题，其中系统中时滞为常数并且不含时滞控制。本文讨论在实际应用中更为一般 的含有时变时滞状态以及时变时滞控制输入的不确定时滞线性系统，因此，文献〔5〕中所 讨论的系统以及主要结果可以看着本文的一个特例。本文通过Lyapunov方程的正定解(参见文献〔6，7〕)得到了鲁棒镇定反馈控制器存在的判别准则，并且给出了控制器的设计 。本文的证明过程中利用了改进的Razumikhin定理以及二次调节理论中的方法。
+　　本文采用如下记号： Rn×m表示 n×m 实矩阵空间；λmax(A) 以及 λ min(A)分别矩阵A的最大和最小特征值； AT表示矩阵A的转置。‖A‖表示矩阵A的矩阵范数，即‖A‖=〔λmax(ATA)〕 。A＞B和A＜B分别表示矩阵(A-B)为正定和负定矩阵。
+2　主要结果
+　　考虑下列含不确定参数的时滞线系统：
+(t)=〔A+ΔA(r0(t))〕x(t)+〔Ad+ΔAd(r 1(t))〕x(t-d(t))　　　　　　　
++〔B+ΔB(s0(t))〕u(t)+〔Bd+ΔBd(s1(t))〕u(t-h(t))　　　　　　(1)
+其中x(t)∈Rn为系统的状态，u(t)∈Rm为控制输入，A和Ad∈Rn×n，B和B d∈Rn×m为实常数矩阵。
+　　关键词　数据窗口，对象，数据库
+　　在实际的数据库开发中，用户往往会有这样的要求，他们希望能够根据企业（公司）环境的变化实时对数据库的列属性名称进行调整。
+
+图1
+3.3.2　创建列属性名称保存窗口
+　　. 创建列属性名称保存窗口对象w―2；
+　　w―2的open事件的脚本程序为： 
+　　{ 
+dw―2.settransobject(sqlca)
+dw―1.retrieve()
+} 
+　　. 在窗口上放置数据窗口控件dw―1，并将之与数据窗口对象d―define相连接。
+　　为了镇定不确定系统(1)，我们利用下列形式的线性状态反馈控制律：
+u(t)＝-Kx(t)　　　　　　　　　　　　　　(2)
+其中常数增益矩阵K∈Rm×n.为了简便起见，ΔA(r0(t)),ΔAd(r1(t)),ΔB(s 0(t)),ΔBd(s1(t)),d(t)以及h(t)有时分别记为ΔA, ΔAd, ΔB, ΔBd, d和h， 
+　　于是(1)和(2)所构成的闭环系统为
+　　　　　　　　　(3)
+其中.
+　　首先我们引入下列引理：
+　　引理2.1　(参见［3］)
+YTX+XTYXTX+YTY
+其中X，Y为适当维数的短阵。
+　　从而我们有下列基本结果：
+　　定理 2.1　若存在常数矩阵K∈Rm×n以及正定矩阵P， Q∈Rn×n使得下列不等式成立：
+J(r0,r1,s0,s1)=PA-PBK+P△A-P△BK+ATP-KTBTP+△ATP)
+　　(4) 
+则闭环系统(3)渐近稳定。
+　　通过动态地创建数据窗口对象中的对象、设置数据窗口对象的属性以及数据窗口对象中对象的属性、访问数据窗口控制中的数据可以达到修改数据窗口外观的目的。
+　　在以下的讨论中，我们总是假设：ΔA(r0(t))＝BG(r0(t)),ΔAd(r1(t))＝BH(r1 (t)),ΔB(s0(t))＝BL(s0(t)),ΔBd(s1(t))＝BF(s1(t)),Ad＝BE，Bd＝BD. 
+　　定理 2.2　若(A，B)可镇定，并且存在正常数ε使得
+　　　　　　　　　(5)
+其中＝max｛‖F(s1(t))‖2，s1(t)∈Ω1｝.则系统(1)可由下列形式 的状态反馈控制器鲁棒镇定.
+u(t)＝-Kx(t)＝-R-1BTPx(t)　　　　　　　　　　　　(6)
+其中矩阵P＞0为下列代数Riccati方程的解.
+PA+ATP-PBR-1BTP+Q＝0　　　　　　　　　　　　　　(7)
+其中分别选取R＞0和Q＞0使得对于所有si(t)∈Ωi,(i＝0,1)下列不等式成立.
+　　　　　　(8)
+其中
+　　　　　　　(9)
+　　证明　选取下列形式的Lyapunov泛函：
+
+则有
+
+反复利用引理引2.1可得
+
+
+于是
+
+由(7)可得
+PA+ATP-PBR-1BTP+I+GTG＜0，　r0∈0
+而根据(7)我们有
+，ri(t)∈i, si(t)∈Ωi,i＝0，1.故当x(t)≠0时，皆有＜0.从而本定理得证。这样可以使此次所做的修改可以保存到下次修改为止。此外可选取到R使得(8)成立，事实上，R-1＝ηI＞0即满足条件。
+　　程序中访问数据窗口对象的方法有两个：
+　　. 使用describe( )，modify( )函数
+　　下面语句获取数据窗口中name列背景颜色（background.color）属性值：
+　　dw―1.describe("name. Background.color")
+　　下面语句设置数据窗口中name列背景颜色为白色：
+　　dw―1.modify("name. Background.color=
+string(rgb(255,255,255))" )
+　　. 使用数据窗口表达式
+　　数据窗口表达式使用点操作符（.）来指示要访问的对象、对象中的对象、以及对象的属性。
+　　W―1的open事件的处理程序为：
+　　{ 
+dw―1.settransobject(sqlca)
+dw―2.settransobject(sqlca)
+//dw―2为隐藏的列属性名称的保存表
+dw―1.retrieve()
+dw―2.retrieve()
+dw―1.object.per―id―t.text=dw―2.getitemstring(1,1)
+dw―1.object.per―name―t.text=dw―2.getitemstring(1,2)} 
+dw―1.object.per―department―t.text=dw―2.getitemstring(1,3) 
+} 
+　　. 在窗口上放置按钮控件“修改列属性名称”（cb―1）
+　　cb―1的clicked 事件的处理程序为： 
+　　{ open(w―2) 
+// 用于弹出3.3.2中创建的列属性名称保存窗口w―2
+}
+　　w―1窗口的外观如图1。
+3　设计步骤
+3.1　定义表结构
+　　在PowerBuilder6.0的数据库画笔（DataBase Painter）中定义表结构。
+u(t)＝-γBTPx(t)　　　　　　　　　　　　　(10)
+其中P＞0为下列Lyapunov方程的正定矩阵解。
+　　. 为职员信息表（personnel）定义数据窗口对象d―personnel，PowerBuilder6.0自动将列的相应文本对象（用于显示列的header及label值）命名为:
+Per―id―t 
+Per―name―t 
+Per―department―t
+　　可以通过修改这些文本对象的text属性达到修改列属性名称的目的。
+1　设计思想
+　　利用PowerBuilder6.0的动态数据窗口(DataWindow)技术修改数据库的列属性名称。我们在讨论中主要利用 了文献［8］中的改进的Razumikhin定理。","保存失败。
+　　定理 2.5　在假设2的条件下，若(A，B)可镇定，并且对于所有的s0(t)∈Ω0皆有I+L+LT＞0，则系统(11)可由下列状态反馈控制器鲁棒镇定。
+u(t)＝-R-1BTPx(t)
+其中对于所有s0∈Ω0，R满足下列不等式：
+R-1+LR-1+R-1LT≥EET+2
+这里的＝max｛‖H(r1)‖ r1(t)∈1｝；P为下 列Lyapunov方程的正定矩阵解：
+PA+ATP+Q＝0
+其中对于所有r0∈0，Q满足下列关系式：
+Q＞2qI+GTG
+其中q为某一大于1的正常数.
+　　定理 2.6　若A为Hurwitz，并且对于所有s0∈Ω0皆 有2I+L+LT＞0，则系统(11)可由下列状态反馈控制器鲁棒镇定：
+u(t)＝-γBTPx(t)
+其中P为下列Lyapunov方程的正定矩阵解：
+PA+ATP+Q＝0
+这里的Q满足下列不等式：Q＞2qI+GTG，r0(t)∈R0，q为某一大于1的正常数 ；，其中.
+　　定理2.5和定理2.6的证明类似于定理2.4，故从略。
+3　数值例子
+　　下面我们通过一个数值例子进一步说明本文的主要结果.考虑形式为(1)的含不确定参数的时 滞线性系统，其中
+
+
+ΔBd(s1(t))＝BF(s1(t))； F(s1(t)＝s1(t); ｜s1(t)｜＜0.1
+Ad＝BE；E＝(-1 1)；d(t)＝1-0.75sint； r＝0.5
+Bd＝BD； D＝(1 2)
+显然A不稳定，而(A，B)可镇定。利用定理2.2，我们可以选取R-1＝ηI。由(8)和(9)可得η＝370，可以选取ε＝0.1，.因此我们容易计算出 Riccati方程(7)的正定矩阵解，从而可得鲁棒镇定状态反馈控制器为
+u(t)＝-38.4708x1(t)-38.5227x2(t)
+注释:国家科学基金(No.69674007)及南通工学院科研基金资助
+作者简介:　陆国平，33岁，博士。研究领域为非线性系统镇定问题，时滞系统和非线性系统 鲁棒H∞控制。
+作者单位：南通工学院自动化系　江苏　226007
+参考文献
+1　Jabbari F, Schmitendorf W E. A Nonitereative Method for the Des ign of Linear 
+　　Robust Controllers, IEEE Trans. 1990,30:954～957
+2　Hale J K. Theory of Functional Differential Equations. Springer-Verlag, N ew York
+　　1977
+3　Petersen I R. A Stabilization Algorithm for a Class of Uncertain Linear Sy stems,
+　　Systems Control Lett. 1987,8:351～357
+4　Phoojaruenchanachai S, Furuta K. Memoryless Stabilization of Uncertain Linear 
+　　Systems Including Time-varying State Delays, IEEE Trans. Automat. 1992,37:1022
+　　～1026
+5　Trinh H, Aldeen M. Stablization of Uncertain Dynamic Delay Systems by Memoeyless 
+　　Feedback Controllers， Int.J. 1994,59:1525～1542
+6　Tsay S C. Robust Control for Linear Uncertain Systems Via Linear Quadratic State 
+　　Feedback, Systems Control Lett. 1990,15:199～205
+7　Tsay S C, Fong I K, Kuo T S. Robust Linear Quadratic Optimal Control for Systems
+　　with Linear Uncertainties, Int.J. 1991,53:81～96
+8　Xu B, Liu Y. An Improved Razumikhin-type Theorem and its Applications, I EEE 
+　　Trans. Automat. 1994,39:839～841
+收稿日期:1997-12-09

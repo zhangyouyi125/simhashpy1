@@ -1,0 +1,86 @@
+信息与控制
+INFORMATION AND CONTROL
+1999年 第28卷 第2期 Vol.28 No.2 1999
+
+
+
+语音动力学系统的神经网络建模方法研究*
+郑会永　肖田元　韩向利　刘华强　戴冠中
+　　摘要　人工神经网络(ANN)方法是非线性动力学系统建模的有效方法。因此产生第二种转折的条件是
+
+或
+这里。
+　　关键词　人工神经网络(ANN)，递推预报误差算法(RPE)，混沌吸引子，分维
+RESEARCH ON MODELLING VOICE NON-LINEAR DYNAMIC SYSTEMS
+ZHENG Huiyong　XIAO Tianyuan　HAN Xiangli　LIU Huaqiang　DAI Guanzhong
+(Dept. of Automatic Control,Northwestern Polytechnical University,Xi'an,710072)
+　　Abstract　This paper presents,the use of recursive prediction error algorithm(RPE) of training multilayered artificial neural neural(ANN) networks in discrete time non-linear dynamic system identification. As an example,the nonlinear voice dynamic system is modelled based on RPE algorithm. The results provide a good foundation to understand and identify voice model. 
+　　Key words　ANN,recursive prediction error algorithm(RPE),chaotic attractor,fractal
+　　1　引言
+　　以前，根据测量信号建立系统模型常常采用试验改进、再试验再改进的“炒菜”方式(Trial and Error)，耗时、耗力，盲目性很大。降低消耗、少做试验并达到预期目的是人们梦寐以求的愿望。随着计算机科学、智能技术尤其是人工神经网络(ANN)的发展，使得实现这种愿望成为可能，并已在混沌的研究与开发中取得了重要进展。ANN以实验数据为基础，经过有限次迭代计算，就可获得一个反映实验数据内在规律的数学模型。因此，探讨和研究ANN建模方法是非常有意义的。目前这方面已有一些新的进展，如Billings等人将传统的参数估计预报误差方法(RPE)运用于多层ANN的学习训练，以取代反向传播BP算法，该算法收敛速度快、预报精度高\[1\]。文献\[2\]运用该方法对实际工业过程进行了建模研究，也取得了良好结果。
+　　本文分析了语音非线性动力学系统的非线性特性，应用RPE算法对该系统进行了建模研究，估计出了语音稳态吸引子的分维。计算表明，语音系统运行于低维混沌吸引子上，而且ANN方法比传统系统辨识方法能更准确、更有效地揭示和逼近过程的输入输出关系。
+　　2　多层ANN及系统状态空间重构
+　　一般说来，描述一个实际系统(如语音动力学系统)的数学模型是非常复杂的，其确切形式也是未知的。实际系统的建模必须依赖于一组已知的函数集合。设顾客进入系统的顺序固定,系统指标是使总服务时间最短。
+　　关键词　离散事件系统，优化，矩阵图
+OPTIMIZATION OF MULTI-STAGE SERVE STATION SYSTEMS
+ZHENG Yingwen
+(Institute of Automation,Fuzhou Univ.))
+　　Abstract　In this paper the problem of optimization of multi-stage serve station systems (MSSS) in DEDS is developed.Customers enter MSSS with a fixed order.The designer of MSSS can put certain investment on some stations to shorten serve time. An approach is presented to optimize the investment strategies,which should get minimal total serve time.
+　　Key words　DEDS, optimization, matrix graph
+　　1　模型的建立
+　　离散事件系统及网络规划中的许多问题,可以描述为如下的“多级服务台”问题[1].n个顾客依次通过m个不同的服务台,在同一时刻,1个顾客只能在1个服务台上接受服务,1个服务台也只能同时接待1个顾客。多层ANN的一个显著特点就是可以用来实现某些复杂非线性函数。理论上已严格证明了单隐藏层ANN可以唯一地逼近任何一个连续函数。图1给出了ANN结构示意图，它由输入层、隐藏层和输出层组成，整个网络的特性取决于相邻层间神经元的联结权值以及隐藏层中神经元的阈值。
+
+
+图1　神经网络结构示意图
+　　当实际系统进入稳定状态即达到稳态吸引子后，由于人们的知识仅限于测量时间序列，不能得到系统的真实吸引子，而只能利用Takens状态空间重构理论\[3\]来得到拓扑同构的、完全反映真实吸引子几何特征的重构吸引子。设重构吸引子所在嵌入空间为Rn0，则重构吸引子状态方程为
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(1)
+其中，为服从特定分布的噪声向量。
+　　在两条平行的纵坐标轴上,左轴标上的值,右轴标上的值,将与之间用线段连结,凡的用红线,否则用蓝线。令n0,n1,n2分别是输入层、隐藏层和输出层中神经元的数目。x1i，b1i(i=1,2,…,n1)是隐藏层中第i个神经元的输出值和阈值，wkij是联结第k-1层中第i个神经元和第k层中第j个神经元的权值，网络的(n0+n2+1)n1个参数构成参数向量θ。取隐藏层节点的作用函数为S型函数g(x)。则隐藏层输出x1i和网络输出y(t)为
+　　　　　　　　　　　　(4)
+　　由输入输出的延迟项构成输入向量，设ε(t)为实际输出过程与ANN预报输出之差，可通过某种训练算法在某种准则下得以确定。
+　　3　ANN的RPE算法描述［1］
+　　在参数估计中，预报误差法RPE的准则函数定义为[1]
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　(5)
+式中，ε(t)是预报误差向量，N是轨道矩阵列向量数。RPE算法的基本原理是沿J的Gauss-Newton搜索方向修正未知参数向量，从而使J→min，参数向量按下式修正
+　　　　　　　　　　　　　　　　　　　　　　　　　(6)
+其中是Gauss-Newton搜索方向，而
+　　　　　　　　　　　　　　　　　　　　　　　　　　　(7)
+　　则递推预报误差算法为
+　　　　　　　　　　　　　　　(8)
+这里λ(t)是遗忘因子。为实现自适应算法，迭代初期置λ(t)<1；当t→∞时，取λ(t)→1。在多级服务台系统中,为保证w尽量小,最大路径上的各级服务要一个接一个进行,不能有任何时刻中断。λ0和初始遗忘因子λ(0)根据需要设定。
+　　比如在机械加工线上,可以把n个工件依次通过m个机床的问题看作是这种问题。
+　　下面归纳出RPE算法用于单隐藏层ANN的具体流程[2].
+　　(a)取小随机值作为权和阈值向量θ的初始值；取P(0)=diag(104，104，…，104)；λ取合适值；(b)根据网络输入，按(4)计算隐藏层节点x1i及输出向量的值；(c)利用(9)构成Ψ阵。
+　　矩阵T中,设有q条路径R(1),R(2),…,R(q)都是权等于r的最大路径,它们经过j列的各元素的和分别为,这些和与单位投资效率ηj相乘的值为不难看到,如果系统建立者的改善方案是对j列投资额为μjε,这里,那么路径R(1)缩短了,R(2)缩短了最大路径的减少量为
+
+而系统的最大投资效益ξ为
+
+　　最优投资方案(μ1,μ2,…,μm)的选择,当最大路径数q=2时,可用图解法来作。反复(b)、(c)、(d)直至收敛。
+　　4　语音动力学系统的数学描述
+　　语音是人类特有的功能，通过声波给出了明确信息。现在投入少量资金ε,没有引起最大路径的变化,这时的最佳投资方法称为微观优化策略。因而对该系统的动态建模有助于深入理解语音。建模时，语音可以看成是一个非线性动力学系统的输出，输入是基音。假设tk时刻的语音信号由下列方程给出
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(10)
+其中，x∈Rn,u∈R，时间序列y∈R，音周参数θk∈Rm。这时的最大路径是从Ai经tij通过j列到tkj再到Bk止。f(*)在(tk-tk-1)区间内非时变，但随k变化，这表明讲话者语音随时间运动。设语音稳态吸引子真实状态为s(t)。系统构造如图2所示。对T1部分用第1型计算,T2部分用第2型计算,那么在T1T2分割线旁相邻两个元素和的最大值就是总服务时间w。图4中的A是人们听到的16位采样的一段语音信号y(t)。
+　　常见的分割方法是将T的前几列划为T1,其余的列划为T2,在分割线左边一列的元素为A1,A2,…,An,分割线右边一列元素为B1,B2,…,Bn,则
+　　第4型　当把矩阵T按第3型方式写成为
+后,我们令a1=A1,a2=A2-A1,…,an=An-An-1;bn=Bn,bn-1=Bn-1-Bn,…,b1=B2-B1,由此可得到一个n×2型矩阵T(4),总服务时间W为a1到bn的最大路径的权。不同的轨迹对应不同的系统，进而对应不同的语音。图4中，a、b两点可看成系统状态处于最低点；如果在a处激励后，系统沿一个轨迹运行到最低点，在b点又重复上述过程，所以在某一时刻，我们得到的语音系统的信息完全依赖于(a,b)之间的音周信号，而tk时刻相应的音周参数可以由ANN计算得到。
+　　5　用ANN实现的语音动力学系统建模
+　　用来建立语音系统ANN的结构确定为n0=3,n2=3,输入向量定义为
+x1(i)=X(:,i),　i=1,2,…,cohumn(X)-1　　　　　　　　　　　　　　　　　　　　　　　(11)
+X是轨道矩阵。图4中的A、B和图5分别是实测数据及用RPE算法训练后ANN的预报输出和残差序列。我们假定顾客或工件的排序是固定的,这样,可以把tij写成一个n×m的矩阵,称为O型矩阵。
+
+
+图5　预测残差序列
+　　6　结束语
+　　语音系统是一类典型的非线性动力学系统，以音周参数为最小单位的ANN识别方法克服了时间不确定性在语音中的影响，又完整的表达了语音状态及拓扑结构。
+　　第5型 以第3型方式将矩阵T左边n列划为T1区,用1型表示,把T的右边数列划为T2区,用2型表示,但中间保留几列未划在T1或T2之中,仍用tij表示,记作T0区,这时的路径是从T1区边界上的某个元素Ai开始,经过T0区的某些元素,到达T2区边界的元素Bj(i≤j),路径的权是这些元素相加,其最大值就是总服务时间w。
+*博士后基金资助。
+作者简介：郑会永,男，28岁，博士生。研究领域为神经网络，非线性科学中的混沌与分形理论。
+　　　　　刘华强，男，36岁，博士后。研究领域为语音识别，神经网络，混沌、分形及应用等研究。
+　　　　　戴冠中，男，60岁，教授，博士生导师，校长。研究领域为大系统理论、飞行器的并行仿真、神经网络与神经网络计算机、工业智能控制系统和容错控制系统等。
+作者单位：郑会永　肖田元　韩向利：清华大学自动化系　北京　100084
+　　　　　刘华强　戴冠中：西北工业大学自动控制系　西安　710072
+参考文献
+　1　Billings,et al。当ε逐渐增大到一定数值时,最优投资策略会发生变化。Mechnical Systems and Signal Processing,1991:233～255
+　2　杨熔,李永华,苏义鑫。用神经网络建立非线性系统模型研究。控制理论与应用,1995,12(1): 81～85
+　3　Takens　F。Detecting Strange Attractors in Turbulence。Lecture Notes in Mathematics,D.A.Rand and L.-S. Young,Eds,Springer,Berlin,1981:727
+1997-04-14收稿

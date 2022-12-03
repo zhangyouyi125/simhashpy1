@@ -1,0 +1,71 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+用DEBUG检测BIOS“千年虫”
+　　美国国家软件测试实验室研制的2000.EXE是世界公认PC硬件千年虫标准测 试软件的测试软件 之一。动态联盟企业除具有一般企业的基本特征，还有一些专门的特点：动态联盟企业通常由盟主企业发动组建，根据机遇产品的资源需求设定企业模型、选择联盟伙伴、确定协作关系，并在企业运作过程中根据需要对协作关系作出调整，其组织过程需要灵活可变的动态性；动态联盟企业是以生产经营过程为主线的企业组织，各成员在这一主线的贯穿下，按照一定的协作规则完成各自环节上的任务，其运作过程强调明确可控的协作性；动态联盟企业的各成员在组织上相对独立，地理上较为分散，但他们之间的协作需要快速畅通的信息传递，其信息系统要满足及时有效的分布性。公共对象请求代理体系（CORBA）是对象管理组织（OMG）制定的分布式对象计算的一套规范？
+　　第一步：采用ADO通过ODBC与数据库服务器dbsrv建立连接。联系类中的主控方法是工作流执行的“全权代表”，其过程包括调用发出成员的信息发送方法、调用接收成员的信息处理方法以及创建下一个联系对象等。
+白庆华　教授，博士生导师。由于不同的工作流可能需要不同类型或个数的控制参数来表示，因此允许定义不同的联系类，但所有联系类都应是基本联系类的子类，以保证联系类对象基本功能的实现。
+　　如果存在BIOS“千年虫”，就要设法解决。ASP可使用VBScript、Javascript、Perl等多种脚本语言进行编程;
+　　. 内置对象和组件。
+　　成员类所封装的数据和方法除了联盟成员的基本信息和基本职能执行过程，还包括接受联系类对象调用的通用接口函数及它们的参数说明，这些接口函数根据参数不同决定调用哪些任务处理方法。
+<%
+//引入查询编号变量sql―id
+var id=Request.QueryString("sql―id");
+var sqlqry="select tsql.s―text from pubs.tsql
+where tsql.s―id=";
+//创建Command对象
+var cmd=Server.CreateObject("ADODB.Command");
+cmd.ActiveConnection=DBConn;
+cmd.CommandText=sqlqry+id;
+//调用cmd的Execute方法执行查询
+var rsTmp=cmd.Execute();
+%>
+　　第三步：执行SQL，并以超文本形式返回查询结果。
+沈益民　副研究员。当然，软件也不是万能的。比如BIOS本身不接受“2000”的机器，则应采用硬件方法解 决。
+张海盛　研究员，博士生导师。
+　　有感兴趣者可与编辑部或本文作者直接联系。
+<%
+//提取编号为sql―id的查询语句
+var sql―text=rsTmp.fields.getValue("s―text");
+//创建、初始化Recordset对象
+var rsResults=Server.CreateObject("ADODB.Recordset");
+rsResults.CursorType=adOpenDynamic;
+rsResults.LockType=adLockOptimistic;
+//执行编号为sql―id的查询
+rsResults.Open(sql―text,DBConn);
+//以超文本方式显示查询结果
+var rdCount=rsResults.getCount(); 
+//记录数
+var fdCount=rsResults.fields.getCount();
+//字段数
+%>
+<table border=1>
+<thead>
+<tr>
+<% for i = 0 to fdCount -1 %>
+<th>
+<% =rsResults.fields.getName(i) %>
+</th>
+<% next %>
+</tr>
+<tbody>
+<%
+for i = 0 to rdCount - 1
+Response.Write("<tr>");
+for j = 0 to fdCount - 1
+Response.Write("<td>");
+Response.Write(rsResults.fields.getValue(j));
+Response.Write("</td>");
+next
+rsResults.moveNext();
+next
+%>
+</tbody>
+</table>
+5　结语
+　　上述系统设计和实现只是整个Web应用中的一部分，尚有许多需要改进和增加的部分，如：参数查询处理、用户标识验证、安全性机制、事务处理、数据库管理的Web化以及用户的个性化设置等。
+作者单位：孙先锋　中国科学院成都计算机应用研究所（610041）
+电话：(028)52270 92

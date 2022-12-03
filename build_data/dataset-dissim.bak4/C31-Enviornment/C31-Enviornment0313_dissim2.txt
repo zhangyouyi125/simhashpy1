@@ -1,0 +1,17 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第4期 No.4 Vol.18 1998
+科技期刊
+
+美国两年内有26%环保公司歇业
+　　在1995～1996年间有四分之一以上曾经登在明尼阿波利斯市的环境信息公司(EI)出版的工商行名录上的美国环境服务公司已经歇业。
+关键词　恒温平台石墨炉　塞曼效应　镉、砷、铜、铅　环境水
+Continuous determination of trace cadmium，arsenic，copper and lead in environmental water by stabilized temperature platform furnace AAS using longitudinal arrangement Zeemen-effect background correction. Wu Hua，Wu Fuquan，Li Shaonan (Suzhou Research Institute of Environmental Science , Suzhou 215004).China Environmental Science.1998,18(4):374～377
+Abstract― A new method for the precise determination of trace cadmium, arsenic, copper and lead in environmental water by using longitudinal arrangement Zeemen-effect background correction, maximum power heating, peak area integration and Pd as a matrix modified,called altogether the stabilized temperature platform furnace (STPF) AAS,has been studied. This method is rapid, accurate and precise. The detection limits(3σ) , relative standard deviation(n=6) and recovery for Cd,As,Cu and Pb were 2.5×10-13，5.0×10-11,3.8×10-11 and,2.5×10-11g;3.4％～4.9％,2.5％～4.3％,1.8％～3.6％ and 1.8％～4.1％;93.5％～106％,91.5％～103％,93.5％～110％ and 91.8%～108％respectively. This satisfactory method has shown an outlook for the absolute analysis.
+Key words:stabilized temperature platform furnace 　Zeemen-effect　Cd、As、Cu、Pb　environmental water
+　　为评价环境水质质量需要监测的项目，诸如痕量元素镉、砷、铜和铅，由于水体易受环境影响，其基体与含量往往变化不一，靠单一的方法测定难以准确定量。主要从事原子光谱分析。佛蒙特州歇业公司百分比最高，为67%，在调查的12家公司中有8家歇业。
+　　研究人员Jamie Anderson说，虽然受影响的大多数是雇员少于25人的公司，但涉及面较广，且大多数公司已从业7年以上。他说：“这就表明整个环保业都受到影响”。调查对象包括咨询公司、环境研究所、治理商、供应商、土壤钻探服务公司和监测井钻探公司等。
+
+图1　镉、砷、铜、铅的灰化和原子化曲线
+Fig.1　Curves of ashing temperature and atomization temperature on the absorbency of Cd、As、Cu and Pb
+1,2 灰化温度曲线　3,4 原子化温度曲线　*未加基体改进剂　。他说：“许多专业公司上报的项目被取消是因为用户认为新的管理改革会进一步降低治理费用”。针对这种情况本文采用扣除背景能力高而且精确的纵向塞曼效应，最大功率升温提高灵敏度，L'vov平台消除由基体形成的气相干扰，加入钯基体改进剂提高灰化温度最大限度排除氯化物、硫酸盐和硅酸盐基体的干扰，从而能够无需分离即可直接准确测定环境水中痕量元素镉、砷、铜、铅

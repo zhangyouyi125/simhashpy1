@@ -1,0 +1,295 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年4月  第19卷  第2期科技期刊
+
+
+战术导弹的块对角控制器
+赵国荣 张福恩
+(哈尔滨工业大学*哈尔滨*150001)
+顾文锦
+(海军航空工程学院*烟台*264001)
+摘  要　　本文定义了非线性系统的块对角模型，基于这类模型，借助于反馈
+线化方法，提出了一种被称作块对角控制器(Block Diagonal Controller―下文简称
+BDC)的设计方法。使一类非线性系统的线性化设计能够简单地被实现。设计的
+结果已经被一战术导弹的数学仿真所证明。
+
+主题词  反馈线性化  飞行控制系统  控制器
+
+
+BLOCK DIAGONAL CONTROLLER OF THE
+TACTICAL MISSILE
+Zhao Guorong Zhang Fuen
+(Harbin Institute of Technology*Harbin*150001)
+Gu Wenjin
+(Naval Aeronautical Engineering Acadimy・*antai*264001)
+Abstract  In this paper,a block diagonal form about nonlinear system is defined.Based on 
+the definition,a design method called block diagonal controller(BDC)is proposed via 
+feedback linearization.Thus,a linearization design of a class of nonlinear system can be 
+simply realized.The result of design has been proved by mathematical simulation of a 
+certain anti-ship missile.
+
+Key words  Feedback linearization  Flight control system   Controller
+
+1  引言
+
+　　G.Meyer［1~3］等人将直升机运动描述成一个块三角系统，使之有别于一
+般的仿射非线性系统。在均匀背景中，检测单元变量v和
+参考单元变量xi、yj(i∈，j∈)是统计独立和同分布的随机变量，它们的概
+率密度函数(pdf)和概率分布函数(cdf)分别为
+f(x)=e-x　　　　x＞0
+(3)
+F(x)=1-e-x
+(4)
+MOSCM的前沿滑窗采用OS方法估计杂波功率水平，它先对参考单元的样本按幅
+值大小排序，然后选取第k个样本作为前沿滑窗对杂波功率水平的局部估计
+X=x(k)
+(5)
+它的pdf为
+
+(6)
+后沿滑窗采用CM方法估计杂波功率水平，先筛除掉最大的r个样本，
+对剩下的(N-r)个样本求平均，作为后沿滑窗对杂波功率水平的局部估计
+
+(7)
+r≠0时，Y的pdf为［7］
+
+(8)
+其中
+
+(9)
+MOSCM检测器取两个局部估计的均值作为检测器对杂波功率水平的估
+计，可将均值的因子1／2归并到门限参数中去，故有
+Z=X+Y
+(10)
+Z的pdf为
+
+(11)
+3  MOSCM-CFAR检测器在均匀背景中的性能分析
+
+    设置门限的统计量Z是随机变量，检测器的性能由平均检测概率和平均虚警
+概率决定［3］，平均虚警概率和平均检测概率分别为
+
+(12)
+计算Pfa和Pd的关键就在于求fZ(z)的拉氏变换ΦZ(u)由式(11)，得
+ΦZ(u)=ΦX(u)ΦY(u)
+(13)
+其中Φx(u)、Φy(u)分别是fx(x)、fy(x)的拉氏变换，有
+
+(14)
+由(12)式和(13)式，可得MOSCM检测器的平均虚警概率和平均检测概
+率分别为
+
+(15)
+(16)
+在均匀背景下，平均判决门限ADT常用来比较不同CFAR检测器的检
+测性能，可得MOSCM检测器的平均判决门限ADT［1］的解析表达式
+
+(17)
+　　在均匀背景中，对于任意给定的Pfa，解式(16)可得MOSCM的门限参数T?第二个问题――怎样找到这种变换?G.Meyer等人根据块三角结构的特殊
+性，构造了WT-映射而使这一问题迎刃而解。近年来人们基于有序统计(OS)提出了
+一类恒虚警处理技术，Rohling［1］首先提出了有序统计(OS)方法，Rickard
+和Dillard［2］提出了筛选平均(CM)方法，Gandhi和Kassam［3］提出了剔除
+平均(TM)方法，这些方法对多目标或杂波边缘情形都有不同程度的鲁棒性。
+进一步研究发现，具有这种结构的被控对象，采用块对角控制器可以使线性
+化设计简单、直观，而且所设计的系统是渐近稳定的。
+
+2  精确线性化的标准形
+
+定义1如果非线性系统
+(1)
+通过微分同坯
+Z=T(X)=［h1(X)，…，Lr1-1fh1(X),…,hm(X)，…，Lrm-1fhm(x)］
+其中。能够变换成一个Brunovsky标准形
+=AZ+BV
+式中A=blockdiag［A1,A2,…,Am］,B=［B1，B2，…，Bm］
+
+第i列这种变换的结果称为精确反馈线性化的标准形。
+
+定理1  非线性系统式(1)在X0的一个邻域可变换成精确反馈线性化的标准形，
+当且仅当该系统的相对度r等于系统的维数n。(证明略)3  块对角模型及其精
+确线性化
+
+3.1  块对角非线性系统
+
+    定义2  非线性系统式(2)
+
+
+(2)
+被称作块对角系统。且式(2)的每一个方程(输出方程除外)称为一个子块，
+其中，Xi,Fi∈Rm,Fi(Xi(0),Xi+1(0))=0,(i=1,2,…,p),U,Y∈Rm。表2给出了在SwerlingⅡ型目标条件下，几种检测器出现多目
+标时的CFAR损失。根据相对度定义［4］，
+
+因为在Fp中出现输入U，所以输出yj的相对度为
+p，由于yj有m个输出，则总的相对度为m×P。
+
+主题词  雷达  检测  恒虚警率   有序统计
+　
+A ROBUST CFAR DETECTOR WITH AUTOMATIC
+CENSORING TECHNIQUE
+He You Meng Xiangwei
+(Naval Aeronautical Engineering Academy*Yantai*264001)
+Abstract  In this paper a new CFAR detector(MOSCM)based on order statistics(OS)and 
+censored mean(CM)is proposed.It selects the mean value of OS and CM local estimations 
+as a globle noise power estimation for the detector,and it also uses the automatic censoring 
+technique proposed You He［5］.Under SwerlingⅡ assumption,the analytic expression 
+of Pfa,Pd and ADT of MOSCM are derived.By comparison with other schemes,the results 
+show that MOSCM-CFAR detector has an adaptability for both homogeneous background 
+and nonhomogeneous background caused by multiple interfering targets,particularly in 
+multiple target situations,it exhibits good robustness,the detection performance is improved,
+and its sample sorting time is less than half of that of OS,CM.
+
+Key words  Radar  Detection  CFAR  Order statistics
+
+1  前言
+
+　　雷达在噪声和其它干扰背景下检测目标，总是希望无论干扰电平如何变
+化，检测系统的虚警概率最好能维持不变，即使变化，也希望变化较小，这
+就需要采用恒虚警率(CFAR)处理技术。
+若Pfa=10-6，参考单元总数R=M+N=32，表1给出了MOSCM的部分门限参数T和
+ADT的值。
+3.4  相对度分解
+
+    定理3(相对度分解定理)具有相对度n的块对角非线性系统式(2)能分解成
+m×P个相对度为1的子系统，且n=m×P。
+
+    证明  对方程组(2)式任取一子块，根据定理2，系统式(2)的相对度为n
+=m×P。
+i=Fi(Xi,Xi+1)(i=1,2,…,p)
+(3)
+设Yi=Xi,Ui=Xi+1，则方程(3)可写成：
+
+(4)
+显然，式(4)m个输出的相对度均为1，又因为系统有p个子块，则原系统
+可分解为p×m=n个相对度为1的子系统。
+证毕
+4  块对角控制器(BDC)设计
+
+    为简化问题，考虑一个三阶单输入单输出(SISO)块对角非线性系统：
+(5)
+系统式(5)总的相对度为3，根据定理3，系统可以分解成3个相对度为1
+的子系统。块对角控制器的设计步骤如下，首先考虑系统(5)的第一个子块，
+设：
+1=v1
+(6)
+该子系统的控制器被设计成
+v1=-a1(x1-1)
+(7)
+其中1为系统的期望轨迹(通常事先给定)，系数a1为正实常数。则可得第一
+个子块的闭环运动方程：
+1+a1(x1-1)=0
+(8)
+当t―→∞,x1-1―→0。显然，该闭环系统是渐近稳定的。借助于系统(5)
+的第一个方程，我们可以得到第二个子块的期望输入2：
+2=f-11(x1,1)
+(9)
+依次类推，被控对象的实际输入可由下面的方程求得：
+f3(x3,u)+a3(x3-3)=0
+(10)
+即u=f-13(x3,3)。可得出检测单元的二
+元假设检验对为
+
+(2)
+其中a=1+λ，λ是信噪比，μ代表噪声强度。
+
+
+
+图1 三阶块对角控制系统
+在图1中，ai称为衰减系数。通常，选取ai＜ai+1，目的是保证内回路的快速性要
+好于外回路。显然，本文提出的BDC设计方法避免了G.Meyer的WT-映射。
+
+5  导弹BDC设计
+
+    导弹刚体运动方程可由以下非线性微分方程描述［5］：
+
+(11)
+以及几何关系方程：
+［α β γC］T=F*(θC，φC,φ，γ，θ)
+(12)
+从方程(12)，能够得到一个逆解［6］，即
+［φθγ］T=F-1*［φC θC γC α β］
+(13)
+设
+X1=［x,y,z］T
+X2=［V,θC,φC］T
+X3=［φ,γ，θ］T
+X4=［ωx1,ωy1,ωz1］T
+U=［Mx,My,Mz］T
+
+和
+X3=［φθγ］T=F-1*［φC θC γC αβ］
+则导弹运动方程可以写成
+(14)
+显然，导弹运动方程是一个典型的块对角非线性系统，根据上面的推论，
+此系统可变换成精确线性化的标准形。由于它的后沿滑窗采用可抗击干扰目标的筛选平均(CM)，使得它
+比前沿滑窗采用OS、后沿滑窗采用CA类的恒虚警检测器［4］更有效。因此，能够用BDC设计方法
+设计飞行控制系统，设计的结果见图2。
+
+
+
+图2 导弹的块对角控制器
+6  数学仿真
+
+    下面我们依照图2所示的控制器结构，结合某型反舰导弹进行仿真研究。
+仿真将分两种情况，一是假设模型确定；二是假设模型存在非结构性的不确
+定性。仿真的初始条件见下表
+表1 仿真的初始条件
+xyzVθCφCθφγωxωyωz
+0m1m0m30m/s35°0°35°0°0°0°/s0°/s0°/s
+
+
+6.1  模型确定情况
+
+    这里以导弹的高度轨迹曲线和相应的法向过载曲线(图3a,3b)以及在30
+°扇面发射时的侧向轨迹曲线和相应的侧向过载曲线(图4a,4b)为例给出仿真
+结果，并与原导弹控制系统相对应的仿真曲线作一比较。可以发现，采用BD
+C方法设计的导弹控制系统，无论是高度改平时间还是侧向改平时间都要好于
+原导弹控制系统，最大高度和最大侧向偏移也比原系统有明显的减小。另外，
+可以看出过载比原系统平滑且符合设计要求。特别要指出的是，该飞行控制
+系统在降高和转弯过程中不必给定程序下滑指令。由于
+采用了自动筛选技术，使得干扰目标进入后沿滑窗的机会变小，它的后沿滑
+窗只需筛除掉最大的r个样本，使得它的样本排序时间比GOSCA和OS，CM大为
+缩小。根据实际情况，仿真时分两类摄动。
+
+　　第一类：将α，β，和MA上下分别改变5°，5°，和1%，高度曲线见图5
+
+　　第二类。将用于插值计算的气动系数预置值上下分别改变30%，高度曲
+线见图6
+
+
+
+图5 高度轨迹曲线(第一类)
+图6 高度轨迹曲线(第二类)
+从图5和图6可以看出，BDC导弹控制系统对非结构性不确定性有良好的适
+应性。
+
+7  结论
+
+    导弹非线性飞行控制系统的设计可采用反馈线性化的方法，导弹运动方
+程符合块对角结构并可采用BDC设计方法。由于这里考虑的是均匀环境
+和多目标情形，不失一般性，可令μ=1。主要特点有：
+
+    (1)采用BDC设计的飞行控制系统(见图2)可方便地实现质心控制；
+
+    (2)在结构强度允许的情况下，该控制系统能实现任何期望规迹飞行，只
+要设计一个规迹发生器，对图2上的和进行设定就可实现；
+
+    (3)与G.Meyer等人的方法相比，BDC方法的每步运算都是精确解，而前
+者在T、W变换过程中采用了估计值，有关导弹运动方程的逆解析解可参考文
+献［6］；
+
+    (4)图2所示的控制器结构为现代高性能飞行器提供了一个强有力的工具，
+比如目前较为流行的倾斜转变(BTT)技术，如果采用BDC，就很容易被实现。为了便于比较，使几种检测器至少具有容纳六个干扰目标
+的能力，MOSCM选取M=8,N=24,k=2,r=2，GOSCA选取M=8,N=24,k=2,l=22,OS选
+取R=32,k=26。
+参考文献
+1  Hunt L R,Su R,Meyer G.Golbal transformations of nonlinear system.IEEE Trans.
+Aut.Contr.，1983，AC-28(1)：24-31
+2  Meyer G,Cicolani L.Application of nonlinear system inverses to automatic flight 
+control design-system concept and flight evaluation.AGARD ograph on theory and 
+applications of optimal control in aerospace systems,AG-251,Brussels：Pieter Kant,
+1980,10-1-10-29
+3  Meyer G,Su R,Hunt L R.Application of nonlinear transformations to automatic flight 
+control.Automatica,1984,20(1)：103-107
+4  Isidori A.Lectures on nonlinear control.Preliminary Verion July,1987,76-77
+5  陈佳实.导弹制导和控制系统的分析与设计.北京：宇航出版社，1989，54-61
+6  赵国荣.导弹运动方程的逆解析解.自动驾驶仪与红外技术.1996，3：33-38

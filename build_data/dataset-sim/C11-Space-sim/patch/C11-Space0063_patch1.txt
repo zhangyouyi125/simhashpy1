@@ -1,0 +1,72 @@
+航空计测技术
+Aviation　Metrology　&　Measurement　Technology
+1999年 第19卷 第3期 Vol.19 No.3 1999
+
+
+
+拟合激光陀螺数学模型的方法研究
+杨　恒啊〕隆∶鳌∏赜涝　王建培
+Frank*Bosselman
+摘　要　在分析激光陀螺的数学模型和三次样条函数拟合原理的基础上，针对俄罗斯某型低精度激光陀螺实际输入-输出特性曲线的数据，应用三次样条拟合方法进行分析处理，推导出了适用于非线性工作范围误差补偿且符合实际陀螺特性的数学模型。尽管不同类型的卫星大角度机动对控制的要求有所不同,但迅速抑制挠性附件因机动而激发的振动以保持机动过程平稳,以及在机动末端不产生大超调并迅速实现高精度姿态定位,是挠性卫星大角度机动控制的两个基本要求。
+关键词　三次样条拟合原理　曲线拟合　激光陀螺(环形激光器)　数学模型
+A Study on Fitting Ring Laser Gyro Mathematic Model
+Yang Heng　Frank.Bosselman　Chen Ming　Qin Yongyuan　Wang Jianpei
+　　Abstract　Based on the analysis of mathematic model of ring laser gyro (RLG) and the principle of cubic spline data interpolation,pointing to the data of practical input-output characteristic curve of some Russian model of RLG and making analysis and treatment with the cubic spline data interpolation method,the mathematic model applying to error compensation in the nonlinear working range and being accordance with the practical gyro characteristic has been deduced.The method proposed in this paper can be applied to accuracy compensation of the RLG with worse linearity and lower working accuracy in the working range.
+　　Key words　Principle of cubic spline data interpolation,Curve fit,Ring laser gyro,Mathematic model
+
+　　前言
+　　激光陀螺作为一种可靠、高精度、低成本的角度传感器，是现代高科技的结晶，也是世界各国竞相开展研究的焦点。80年代中期，美国激光陀螺随机漂移的指标就已优于10－3(°)／h，在波音757／767飞机上装备激光陀螺的成功，标志着激光陀螺已进入实用阶段。由于激光陀螺的制造涉及环行激光器稳频、抖动偏频、精密光学加工等复杂工艺，因而工作区线性好、精度高的激光陀螺造价较为昂贵。
+　　主题词　钛合金　切削温度　解析预测　有限差分
+ANALYTIC PREDICTION OF CUTTING 
+TEMPERATURE FOR HARD PROCESSING MATERIALS
+Lui Weina
+(Chang chun Institute of Optics and Fine Mechanics．Changchu．130022)
+Yang Lifeng
+(The Northeast Surveying and Designing Institute．Changchu．130021)
+　　Abstract　Based on heat transfer,by useing a finite difference numerical method and personal computer,temperature field at cutting area in two dimensional machining process ispredicted.Take machining titanium alloy by useing diamond tool and carbide tool for examples,the cutting temperature is calculated.The calculated temperature is in good agreement with that measured.This indicates that computer simulation of cutting temperature is applicable.It also provides a new analytic method for the study of cutting and processing features of hard processing materials.A large amount of experiments will be saved thus.It lay a fundation for predictingthe optimum cutting process and instructing the development of new cutter materials.
+　　Key words　Titanium alloy Cutting temperature Analytic prediction Finite difference
+1　引言
+　　随着宇航事业的迅速发展,配备于各类高新仪器与装备的高质量、性能好的材料不断问世,这给加工与制造技术提出了更新、更高的要求。本文提出了符合三次样条拟合原理的多项式拟合某型激光陀螺数学模型，旨在对工作区线性误差较大的激光陀螺进行误差补偿的方法予以研究。
+1　激光陀螺的理想输出模型
+　　理想情况下，当环形激光器在惯性空间旋转时，具有不同辐值、相位和偏振特性的相向行波将呈现非交互效应。这时，激光陀螺的输入―输出特性为图1中直线1，它通过坐标原点，与横坐标轴之间夹角的正切等于比例系数k，因而，陀螺的理想数学模型是斜率为k的一条直线。在实际情况中，激光陀螺的输入―输出模型曲线(如图1中曲线2)存在着闭锁区，也就是说激光器转速小于闭锁阈区时就感测不出角速度的变化。
+
+图1　全物理仿真系统结构示意图
+　　该全物理仿真系统在很多关键方面模拟了实际卫星,如几乎无摩擦的力学环境,失重的独立运动状态,刚挠惯量比及耦合关系,执行机构的模式与配置,敏感器的类型和测量信息等等。
+　　(3)观察挠性板的振动线位移变化情况下可知,机动初始段因中心刚体加速而激发的挠性振动在机动过程中被有效抑制,保持了机动过程的平稳。
+　　高硬、高韧材料的切削加工过程是一个高温、高压、产生大变形的复杂过程,切削温度、应力是影响刀具寿命的重要因素。在图1中曲线3应是采用Honeywell机械抖动偏频后的输入―输出特性曲线，由图中可看出曲线3消除了曲线2的闭锁且较曲线2更接近理想特性曲线1。切屑上边LM和工件右边IJ被假定为导热系数KW=0,其他自由表面假定传热系数Ct等于零。
+2　样条的概念和三次样条函数的表达式
+　　样条是绘图员用来描绘光滑曲线的一种简单工具。为此,本文采用变结构控制方案来解决挠性卫星的大角度机动控制问题,并成功地进行了国内首次全物理仿真实验,取得了显著的控制效果,从而验证了变结构控制方案在实际中应用的可行性和有效性。加抖动偏频后的实际模型(图1中曲线3)与下式样条函数的定义较为接近。
+　　本文介绍较为常用的三次样条函数插值的应用。
+
+
+图1　激光陀螺的理想输出模型(直线1)、未加抖动偏频的实际模型(曲线2)和加抖动偏频消除闭锁区的实际模型(曲线3)
+
+三次样条函数的定义：分段函数
+
+若y满足下列条件，称为三次样条函数：①在x1，x2，x3，…，xn上取值y1，y2，y3，…，yn；②在每个区间上[xi,xi＋1](i＝1，2，…，n－1)是一个三次多项式；③在[x1,xn]上有连续的一阶和二阶导数。
+我们考虑在区间[xi,xi＋1]三次样条函数的表达式问题。
+　　δ2是控制系统关启的阈值,其取值应满足当卫星中心刚体姿态在要求的精度范围内时,不予控制;当受扰动姿态超出预定范围时,则立即施加控制力矩予以调节。如果已知k1，k2，k3，…，kn的值，则对于给定的x∈[xi,xi＋1]便可以按公式(2)进行插值计算。因此问题转化为如何确定k1，k2，k3，…，kn的问题。
+　　在自然边界条件下k1＝kn＝0，即样条在首尾两端自然伸直，此时有关于k1，k2，k3，…，kn的方程组(其中Φi＝3ci＝3P[xi－1,xi,xi＋1])
+
+该方程组也可用矩阵形式表示(此处略)
+3　实验分析与数据处理
+　　在光学平台上，对某型激光陀螺的工作区间0～110(°)／s以10(°)／s的间隔进行采样测量并求取平均值， 得到图2所示的对应转速的12个输出脉冲频率测
+
+
+图2　激光陀螺的12个采样点
+试点。为此本文对控制律(5)进行修正:
+
+(6)
+式中δ2＜δ《δ1,可见此时飞轮的功能已由单纯消颤扩大至在|s|≤δ1范围内实现非线性控制。由图可见,将切削速度提高到200米/分条件下干切削时,刀具温度由200℃上升到500℃左右,刀尖处为600℃,即使这样,刀具温度仍低于金刚石的分解温度,这说明,还可以采用比200米/分更高一些的切削速度切削或在切削速度不变的条件下加大其他切削用量进行切削加工。这样,便于在模型中引入边界条件。在二元定常切削条件下,切削温度计算的程度流程图如图3所示。
+资金项目：中德合作研究项目,博士点基金资助
+作者简介：26岁　男　博士研究生
+作者单位:杨　恒啊〕隆∶鳌∏赜涝　王建培(西北工业大学自动控制系183＃信箱，西安市，710072)
+　　　　　Frank*Bosselman　(德国布伦瑞克工业大学导航与控制研究所)
+参考文献
+　　1　Pyrna.Test Methods and Test Facilities to Determine Fiber Optical Gyro Characteristics at IABG Inertial Test Laboratory.Symposium Gyro Technology,Stuttgart,GERMANY:1988,17.2～17.32
+　　2　Hugh J.Murphy.Digital pathlength control for ring laser gyros.United States Patent[19\],5108182.1992\|04\|28
+　　3　Bo H G.Pathlength controller for ring laser gyros.United States Patent[19\],4320974.1982\|05\|23
+　　4　Forederick Aronowitz.美国激光陀螺仪研制报告.惯导与仪表,1997,(1):42～46
+　　5　曹立凡,史万明.数值分析.北京:北京工业学院出版社,128～226
+收稿日期：1998-03-17
+修订日期：1998-07-02

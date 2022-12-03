@@ -1,0 +1,163 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年  第3期   No.3 May   1998
+科技期刊
+反编译在航天工业中的应用*
+
+赵　蕾　吴　岩　王开铸
+(哈尔滨工业大学计算机系319信箱*哈尔滨*150001)
+　　摘　要　本文论述了反编译作为一种程序验证的工具在航天工业中的重要地位和应用;介绍了反编译的背景知识;给出一个实用的反编译系统DCPL的设计模型和关键技术及其一个运行结果示例以说明反编译器的功能。M(x,t),P(x,t),S(x,t)分别是梁的弯矩、轴向力和剪力,连界条件为
+
+式中F(t)为梁的伸展驱动力。航天器的各部分都离不开计算机的控制,各种控制软件、计算软件、分析软件等等在航天器的设计与应用中起着重要地位。文［1］假设航天器中心刚体的运动与附件的伸展和振动不耦合,所得渐进分析解适用于中心刚体固定不动的情况。经过专家调查,此次失事的主要原因是:箭载计算机系统使用的软件出了问题。此软件是从阿里亚娜-4型火箭的软件系统中移植过来的,由于5型火箭上增加了新机构,而4型火箭的软件不能对这些新机构发出的信号进行分析和处理,从而导致火箭控制失灵。由于阿里亚娜-5型火箭发射的失事,使软件可靠性和正确性问题再度摆到软件开发者面前［1］。
+2　系统建模
+
+
+图1　系统示意图
+考虑图1所示作平面运动的力学系统。本文介绍了反编译器的功能、产生背景和它在航天工业中的应用,并给出了我们正在研制的一个实用反编译系统DCPL的体系结构及关键技术,最后给出其一个简单的运行示例。
+2　反编译的背景知识介绍
+2.1　反编译的定义
+　　反编译可以看成是编译的逆过程,即将以机器语言形式存在的目标代码翻译成与其功能等价的高级语言形式的代码的过程［2］。
+　　确定型反编译的模型为一个映射,decompile:S―＞T,其中S是源代码集(source),是机器指令集;T是目标代码集(target),是高级语句集。
+2.2　反编译的产生背景
+　　反编译(Decompilation)一词第一次出现于1960年。六十年代,随着第三代计算机的产生,为了挽救大量的运行在即将报废的第二代计算机上的软年,同时也为加速开发第三代机器的软件,美国开始研制专门用途的反编译器作为软件移植的工具。
+2.3　反编译在航天技术中的应用
+　　反编译发展至今,其应用领域主要体现在软件维护和软件安全性［2］两方面。用于软件维护时,主要是恢复丢失的源代码、将软件移植到新的硬件平台、重新结构化旧有软件等等。用于软件安全性时,主要是针对安全性要求极高(safty-critical)的软件,发现其中是否有病毒,或是否有隐藏的窃密程序(Trojan)。
+　　西方各国早已将反编译技术用于航天事业和尖端工业,如:IBM为NASA的航天飞机研制的反编译器［3］;澳大利亚电子研究实验室研制的针对类Pascal语言的反编译器［4］;欧共体ESPRIT计划中的反编译研究,如英国的核工业部使用反编译技术验证大量的safty-critical软件,以提高软件的正确性［5］;我国从80年代初开始反编译的研究并且已逐步形成自己的产品［6］,但尚未见将反编译技术应用于航天技术的报导。
+　　用于航天的软件系统通常不经过编译优化以避免不必要的软件错误,反编译此类软件的难度相对减小。可以通过将内存映象的反编译结果与原始输入(源程序)相比较来验证软件的正确性,如果二程序完全等价,则编译结果可靠(反编译可靠的前提下)。如下图示:
+
+
+图1　反编译验证程序正确性
+如果对于每一种输入,都有输出1=输出2=预测结果,则可说明编译是可靠的。文献［2］的计算结果表明,在等速伸展时有一些模态振动发散而另一些模态振动稳定。
+3　一个实用反编译系统DCPL的体系结构
+　　DCPL是我们研制的一个反编译系统,其设计吸收了编译技术中的成熟理论。
+3.1　DCPL体系结构
+　　下图给出了DCPL的模型。CX0Y0是惯性坐标系,而OXY是描述梁伸展运动和变形运动的固联于中心刚体O点的动坐标系。
+
+
+图2　DCPL体系结构
+3.2　DCPL各模块的功能
+　　(1)预处理器:是DCPL的基础,以可执行文件作为输入,将其部分反汇编,根据程序的启动代码,提取出相应的数据段和代码段,存储在中间文件中。
+　　(2)库函数识别器:是对中间文件的一遍扫描。根据库函数特征表识别出文件中所有库函数和用户自定义函数的入口。采用顺序-索引-连接技术构造特征表。
+　　主题词　伸展柔性梁　刚柔耦合系统　部分变量稳定性
+STUDY ON THE STABILITY OF NONLINEAR 
+VIBRATIONS OF A DEPLOYING FLEXIBLE 
+APPENDAGE OF A SPACECRAFT
+
+Li Junfeng　Wang Zhaolin
+(Department of Engineering Mechanics,Tsinghua University*Beijing*100084)
+　　Abstract　Consider a rigid-flexible coupled system which consists of a central rigid body deploying a flexible appendage.The appendage is modeled as a finite deflection beam having linear constitutive equations.By taking the energy integral as Lyapunov function,it is proved that nonlinear transverse vibrations of the beam undergoing uniform extension or retrieval are stable when there are not controlling moment in the central rigid body and driving force on the beam,according to the partial stable theorem.
+　　Key words　Deploying flexible beam　Rigid-fiexible coupled system　Partial stability
+1　引　言
+　　近年来,航天器的柔性附件(梁、板等)在伸展过程中的振动得到了广泛的关注［1-4］。用一指针数组指向各个特征链的头结点,数组的下标值是索引函数作用于各个特征结点上的结果;同一个链上的各个结点的特征值经索引函数作用后其值相同;链表内部,各结点依照使用频率顺序存放。
+　　(3)控制流分析器:根据反编译控制流文法,以语法制导的方法进行控制流的分析和归约,生成控制流模块的机内表示形式及其结构文件。采用约束属性文法描述控制流,如<for>∷=jmp{statement}m0{cmp}<jop>
+｜jmp.destination=cmp.offset&&jop.destination=statement.offset｜之后的是该规则的约束。用移进-归约策略和模式匹配方法相结合进行分析和归约。
+则Q点向径为
+
+Q点的绝对速度为
+
+Q点的绝对加速度为
+
+梁对固定点C的动量矩为
+
+其中ρ为梁的密度,A为横截面面积。具体实现时分两步走:<1>变量定值-应用信息的收集和综合
+　　为每个变量构造定值-应用链。
+设梁为不可伸长的,等截面的转动惯量为I,则系统的运动方程为［5］
+
+
+式中E为弹性模量,Ic和Mc(t)分别为中心刚体的转动惯量和控制力矩。定值-应用链可以推理相关联的简单类型变量的类型(字符型、整型等)。
+　　<2>变量类型的推理分析
+　　把变量放在上下文中,利用推理规则进行再求精。文［1］假设航天器中心刚体的运动与附件的伸展和振动不耦合,所得渐进分析解适用于中心刚体固定不动的情况。将同时出现次数超过阈值的一组内存单元和寄存器绑在一起,形成一个token(一个复杂的数据类型),阈值可根据结果进行调整。这是一个反馈过程,用于恢复复合数据类型(数组、结构等),规则型如:call a［］-＞initiate array;exist(loop,index si,base bx)-＞assign array;(add ax,adc dx)-＞addition long等等。
+4　结　论
+　　可定轴转动的中心刚体和安装在其上柔性附件组成一个刚柔耦合系统。
+　　(5)优化器:将前几个模块生成的结果进行综合分析,去除冗余变量和中间语句,如中间变量和指令,进行语句的合并和流程的结构化。
+　　(6)翻译器:将前述模块生成的机内表示形式翻译成C语言程序形式,输出给用户,完成反编译的任务。
+3.3　系统的一个运行结果举例
+　　下面是一个简单的C语言程序以及其目标代码的反汇编形式和应用于DCPL的输出结果。
+　　　　测试用C语言程序:
+　main()
+　　{ int a,b,c;
+　　　scanf(″%d″,&a);
+　　　if(a＞=0)
+　　　{ if(a＞20)
+　　　　　　　　{b=a;
+　　c=b+2;}
+　　　　else
+　　　　　c=a;　　}
+　　　else
+　　　{ c=a;
+　　b=c*a;}
+　　　printf(″%d″,c); }
+　　
+　　DCPL的输出结果:
+　　　main()
+　　{ int var1;
+　　register int var2;
+　　register int var3;
+　　scanf(″%d″,&var1);
+　　if(var1＞=0)
+　　{ if(var1＞20)
+　　{ var2=var1;
+　　　var3=var2+2;}
+　　　　else
+　　{ var3=var1;}}
+　　　else
+　　{ var3=var1;
+　　var2=var3*var1;}
+　　　printf(″%d″,var3);　}
+测试用C语言程序所对应的目标代码:
+2386:01FA 55　　　　　PUSH　　BP
+2386:01FD 8BECMOVBP,SP
+2386:01FD 83EC02SUBSPM+02
+2386:0200 56PUSHSI
+2386:0201 57PUSHDI
+2386:0202 8D46FELEAAX,［BP-02］
+2386:0205 50PUSHAX
+2386:0206 B89401MOVAX,0194
+2386:0209 50PUSHAX
+2386:020A E86714CALL1674
+2386:020D 59POPCX
+2386:020E 59POPCX
+2386:020F 837EFE00CMPWORD PTR［BP-02］,+00
+2386:0213 7C14JL0229
+2386:0215 837EFE14CMPWORD PTR［BP-02］,+14
+2386:0219 7E09JLE0224
+2386:021B 8B7EFEMOVDI,［BP-02］
+2386:021E 8BF7MOVSI,DI
+2386:0220 46INCSI
+2386:0221 46INCSI
+2386:0222 EB03JMP0227
+2386:0224 8B76FEMOVSI,［BP-02］
+2386:0227 EB0AJMP0233
+2386:0229 8B76FEMOVSI,［BP-02］
+2386:022C 8BC6MOVAX,SI
+2386:022E F766FEMULWORD PTR［BP-02］
+2386:0231 8BF8MOVDI,AX
+2386:0233 56PUSHSI
+2386:0234 B89701MOVAX,0197
+2386:0237 50PUSHAX
+2386:0238 E8990BCALL0DD4
+2386:023B 59POPCX
+2386:023C 59POPCX
+2386:020D 5FPOPDI
+2386:020E 5EPOPSI
+2386:023F 8BE5MOVSP,BP
+2386:0241 5DPOPBP
+2386:0242 C3RET
+4　结束语
+　　发展航天事业是我国的一项国策,航天计划的成功完成是众望所向。近几年各国因航天器的软件可靠性较差导致的种种航天发射失败所造成的不必要的人员伤亡和财政浪费,使得软件正确性验证日益显现出重要性。
+则Q点向径为
+
+Q点的绝对速度为
+
+Q点的绝对加速度为
+
+梁对固定点C的动量矩为
+
+其中ρ为梁的密度,A为横截面面积。我国在该课题上的研究尽管起步较国外晚,但现已取得了长足的进展。经济国内反编译同行的研究和实践,现有的反编译系统基本达到了验证简单程序的要求,但要反编译大规模的软件,诸如用于航天计划中的软件,还需要深入的研究。将反编译技术应用于航天领域以提高航天器材的可靠性,航天发射的成功率,航天器运行的正确性,确实是一个很有前途的研究方向。
+参考文献
+1　李未.欧洲程序设计方法研究的三个动向.智能机研研究动态,Vol 9,1996
+2　Cristina Cifuentes and John Gough K.Decompilation of binary programs.Software Practice and Experience,1995,25(7)
+3　Spector A and Gifford D.Case study:the space shuttle primary computer system,Communications of the ACM,27,872-900
+4　Hood S T.Decompiling with definite clause grammars.Research Report,ERL-0571-RR,1991
+5　Pavey D J and Winsborrow L A.Demonstrating equivalence of source code and PROM contents.4th European Workshop on Dependable Commputing,8-10,1992
+6　合肥工业大学微机所.DECLER用户使用手册.1995.3

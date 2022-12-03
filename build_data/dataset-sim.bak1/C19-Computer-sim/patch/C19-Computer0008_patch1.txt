@@ -1,0 +1,111 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+基于Web.sql的Web数据库接口程序生成器
+肖宗水　柴乔林　单玉峰
+　　摘　要　本文详细地介绍了Web.sql数据库接口程序生成器的设计思想、功能特点、实现方法及应用。 
+　　(2) 中层：介于低层和高层之间不直接与模拟对象有关的用于完成某些辅助操作功能的函数。
+　　关键词　Web数据库接口，WWW ，Intranet， Perl语言
+WEB DATABASE INTERFACE
+PROGRAM GENERATOR BASED ON WEB.SQL
+Xiao Zongshui　Chai Qiaolin　Shan Yufeng
+Netware Center, Sandong University of Industry, Sandong.Jinan 250061
+　　Abstract　This paper introduced Web database interface program generatorbased on Web.sql and its main idea , function, features and application,it provides developers with a new kind of developing method and tool ofWeb database interface program.
+　　Keywords　Web database interface，WWW，Intranet，Perl
+1　前言
+　　通过Web.sql接口可以将Web服务器和Sybase数据库服务器透明地集成在一起，为动态构造Web页发布数据库信息［1］提供了一种简便方法。根据上述 HSV 视觉模型，可以对数字地面高程模型 (DEM) 数据进行分类，分类可以依据 DEM 高程数据的多种统计特征值进行，然后将不同的分类结果映射到 HSV 视觉空间中的 H 、 S 、 V 分量，最后将这些分量合成，即可形成彩色图象。应用说话者识别进行多媒体数据流的分段是一个很有前途的领域。另外，在利用FORM交互式界面来完成数据的录入和提交时，用于处理FORM数据的服务器端Web.sql程序通常不能与对应的FORM在同一个HTML文件中，而FORM中各控件的参数定义需要在Web.sql程序引用，这就要求在不同文件之间相互参照，给编程带来较多不便。本文介绍的基于Web.sql的Web数据库接口符号及相应的程序生成器则给出了一种解决上述问题的方法。
+2　设计思想与数据库接口描述符号
+　　通过对Web.sql接口及其Web数据库应用程序［2,3］进行分析和研究。我们将那些常用的应用程序段，如将系统注册、SQL语句的提交、取回SQL语句的结果、FORM提交事件处理和菜单功能等定义为各种接口符号，将其插入到HTML文档中适当的位置，并开发了相应的程序生成器，对含有这些符号的HTML文档进行处理，将其转换为对应功能的Perl程序，从而实现Web服务器对Sybase数据库的访问。图1给出了这种应用示意。添加单元内部编辑功能目的是移动和选择一组单元。
+　　（2） <%SQL：sql―sta%>
+　　向数据库服务器发送SQL语句，其中sql―sta是要发送的语句。
+　　（3） <%RESULT%>......<%/RESULT%>
+　　<%RESULT%>与<%RESULT%>构成一个循环，如果所发送的是select语句，则按行处理返回的查询结果。当规定了会话总层数，而在本地范围内一些层未被分配时，在任何本地成员加入会话前，代理必须分配缺少的层。
+　　例如：select name，sex，age from tab―man
+$col［0］－－>name
+$col［1］－－>sex
+$col［2］－－>age
+　　（5） <%ACTION：form―action―name %>......<%/ACTION%>
+　　FORM表单中输入的数据提交后，服务器端的数据处理过程，其对应的程序代码单独生成一个事件处理程序文件。其中form―action―name应与FORM中action的url相同。
+　　（6） <%GOTO：url%>
+　　重定向到url指明的Web页。
+　　（7） <%REFRESH：n：url%>
+　　设置浏览器定时访问url指明的Web页，其中n为时间间隔，单位是秒。如果url指明的是当前页，则引起该页定时刷新。
+　　（8） <%LOGIN%>......<%/LOGIN%>
+　　执行用户注册功能。 
+2 音乐喷泉系统的设计思想及特点 
+　　通过上微机用户可方便地按音乐节拍进行控制码编辑。通常，<%LOGIN%>符号用在<%ACTION%>块中。
+　　（9） <%RIGHT：right―name %>....<%/RIGHT%>
+　　检查用户是否具备某项权限，具备right―name权限的用户才能执行其中的程序块。
+　　（10） <%LOGIN CHECK%>....<%/LOGIN CHECK%>
+　　检查用户是否注册，防止用户直接输入URL执行敏感程序。 
+2 仿真系统结构及流程 
+　　细胞周而复始的生长分裂过程即细胞周期，其组成及动态过程如图 2 所示，各期细胞形态和功能上的变化本文不再详述。
+2.2　通常的程序结构
+　　<%DATABASE：db%>
+<LOGIN CHECK%>
+<RIGHT：right―name%>
+　　
+关键词：可视化；数字高程模型；晕渲图
+Making Terrain Shading Map with ARC/INFO
+Li Hong,Zhai Zhanqiang,Tang Shucai
+(The Third Institute of the Second Artillery Army,Beijing 100085)
+【Abstract】This paper presents a set of model for mapping DEM data t°HSV color space,experiment is programmed with AML supported by ARC/INF°software on the SGI workstation.The shaded image with the method described in the paper is colorful and shows wide dynamic range.
+【Key words】DEM;Visualization;Shading map
+　　在地图制图中，经常利用地面对高程的晕渲处理来表现地表的高程分布、起伏状况及坡度变化等；在作战模拟与飞行视景仿真中，地形晕渲处理可应用于对战场地理环境的可视化
+<%MENU：menu―item%>
+　　HTML代码
+<%SQL：sql―sta%>
+<%RESULT%>
+　　HTML格式化代码
+<%/RESULT%>
+<%/MENU%>
+<%/RIGHT%>
+<%/LOGIN CHECK%>
+<%ACTION：form―action―name%>
+<%SQL：sql―sta%>
+<%GOTO：url%>
+<%/ACTION%>
+3　程序开发过程和程序生成器的实现
+3.1　接口符号程序开发过程
+　　（1） 在Frontpage中编辑HTML文档，Frontpage是较为常用的可视化HTML编辑器，可以用其中的EDIT:Database Column Value功能输入接口符号，或直接在普通的文本编辑器中输入；
+　　（2） 在HTML中的适当的位置插入接口符号，得到的新文件以“.htx”为扩展名；
+　　（3） 将包含接口符号的.htx文档转换为Perl程序；
+　　（4） 测试生成的Perl程序。
+3.2　程序生成器处理流程
+　　（1） 程序生成器符号表
+　　@symbol=｛"各接口符号", ... ...｝；
+　　在接口符号中涉及到可变参数的位置用$para代替。
+　　（2） 接口符号对应的代码块表：
+　　@code=｛qq!.....
+　.....!,
+qq!.....
+　.....!,
+　......｝；
+　　@symbol与@code的元素一一对应。要做到这一点，播放控制器必须解释节目单中的顺序、跳转、循环等控制结构!HTML代码!;
+　　（4） 对.htx文件中的<%ACTION: form―action―name%>块内的代码，单独生成一perl程序文件，文件名为form―action―name的内容。
+3.3　数据库接口程序生成器的组成
+　　（1） 程序生成器(compiler.pl)：通过调用该程序将接口描述程序(*.htx)转换为perl程序(*.pl)。
+　　（2） 生成与测试环境(wdtool.htm)：该环境提供一个基于浏览器的交互式界面。用户可以输入接口描述程序文件名和将要生成的perl程序文件名，如test.htx和test.pl，然后将其提交到服务器端的compiler.pl，将接口描述程序test.htx转换为对应的perl程序test.pl。另外用户可以测试一下生成的perl程序的执行情况。 
+2.2 播放控制器与节点链接机制 
+　　播放控制器的主要任务是将用户定义的节目单解释到节目一级，并将一个节目的所有对象属性转化为一种形式化描述，通过 DDE 提交给多媒体播放器。
+　　（4） 程序源码查看器(viewsrc.hts)：该文件用于查看生成的perl程序的源代码。
+　　（5） 程序在线调试器(wd.pl):通过调用该程序完成对接口描述程序的转换和调试。可以在浏览器地址栏中直接输入接口描述程序的文件名进行调试，方式为:“.../wd.pl?htx=test.htx”。设用户指定颜色为 l0 、模糊度为 σ ，则经过正态分布拟合后的直方图特征 f (l) 如下： 
+　　（13）
+　　可以证明在这个范围内的颜色都可能与用户实际需要的颜色相关，因此可以按上式来确定用于检索的颜色扩展值。Web服务器可以是IIS或Netscape Enterprise Web Server。
+4　程序生成器的特点
+4.1　安全性
+　　开放性的信息共享是internet/intranet网络的一个重要特性，但是这又带来了网络资源的安全性问题。WWW是internet/intranet网上最重要的服务之一，因此,Web站点的安全，特别是数据库的安全成为业界非常重视的研究课题。因此，在Web数据库接口描述程序语法中通过定义三个语言符号实现了Web数据库应用程序的安全性。如<%LOGIN CHECK%>、<%login%>、<RIGHT:right―name%>等，其中<LOGIN CHECK%> 的功能是通过核对客户端机器的IP地址和输入的用户名检查用户注册信息。通过 capPreview 宏实现。这在一定程度上解决了Web数据库应用系统中的安全问题,有效的对系统进行保护。
+4.2　基于事件驱动的编程方法
+　　FORM表单是用户可以把自己的信息提交给Web服务器，也可接受从Web服务器反馈回来的信息进行修改，使客户端和服务器之间实现了交互式的访问，因而得到了广泛的应用，尽管微软公司的Frontpage为编程人员提供了一个可视化的开发环境，能方便的创建和定义FORM，但是对于由FORM提交的数据的处理需要由服务器端的CGI程序来完成（在FORM的Action中指定），而该CGI程序必须由某种编程语言编写的独立的程序文件。在接口描述程序语言中，通过定义<%ACTION%>接口符号，使开发人员能在同一个HTML文档中既可以定义FORM，同时也可以在<%ACTION%>块中用定义的接口符号编写FORM数据处理程序。把FORM中数据的提交作为一个事件，该事件触发<%ACTION%>块中程序的执行。
+4.3　实用性
+　　该生成器使Web.sql对用户成为透明，用户只需在诸如Frontpage等Web开发工具中编排HTML文档，并在HTML文档中适当的位置插入接口符号，由生成器自动完成接口描述程序到Perl程序的转换。这对不熟悉perl语言和Web.sql的用户，则不必专门学习这些相关知识，只需开发更容易掌握的接口程序，就可以完成Web数据库应用程序的开发任务。每个 SDP 信息中包含同一管理范围内的一列连续地址，但不包括不同范围内的地址。
+作者简介：肖宗水　硕士，讲师。相对于语音识别而言，说话者区别是比较简单而实用的技术。目前克服这一缺陷的方法是采用直方图二次距离法，即在欧氏距离计算中加进颜色相似矩阵，其形式如下 [3] ： 
+D(Hq,Ht)=(Hq-Ht)T A(Hq-Ht)　　(11) 
+式中， An×n为颜色相似矩阵
+　　(12)
+　　其元素 sij 表示颜色ci和 cj 之间的相似度，如 (5) 式计算所得。主要研究方向：计算机网络及神经网络技术。
+单玉峰　硕士，讲师。主要研究方向：网络多媒体应用。 
+　　参数设置完成之后，视频数据的采集是整个应用的关键，根据应用的不同可以将视频帧采集到的文件或采集的缓存直接加以处理

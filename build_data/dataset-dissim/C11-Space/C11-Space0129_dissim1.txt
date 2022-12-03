@@ -1,0 +1,140 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+卫星间光通讯系统中比特率等主要
+参量对最大通讯距离的影响*
+马　晶　谭立英　周毅刚　耿完桢　金恩培
+(哈尔滨工业大学应用物理系*哈尔滨*150001)
+　　摘　要　文中讨论了在保证卫星间光通讯系统的通讯质量前提下,系统的各个主要参量之间的相互制约关系,最大通讯距离受各参量影响的情况。通过分析各个参量对通讯距离影响的大小,找出了增大通讯距离的较好途径。
+　　主题词　卫星间光通讯　通讯距离　参量分析
+THE INFLUENCE OF BIT RATE AND 
+OTHER MAIN PARAMETERS ON MAXIMUM 
+COMMUNICATION DISTANCE IN A SYSTEM 
+OF INTERSATELLITE OPTICAL COMMUNICATIONS
+Ma Jing　Tan Liying　Zhou Yigang　Geng Wanzhen　Jin Enpei
+(Harbin Institute of Technology*Harbin*150001)
+　　Abstract　In this paper,it is discussed that relations of limited each other between the main parameters of the system on the premise of assuring the communication quality of the system of intersatellite optical communications,it discusses mainly in the case of the maximum communication distance influenced by the parameters.The better way for increasing the communication distance is found by means of analyzing the influence of parameters upon the communication distance.
+　　Key words　Intersatellite optical communication　Communication distance　Analysis of parameters
+1　引言
+　　在受到人们越来越重视的卫星间光通讯中,由于受到卫星载体的限制,装于卫星上的光通讯系统在体积和重量上都不可过大,这就使得光通讯系统的发射功率、发射及接收天线的大小等都受到很大的制约。对于一定的空间链路,应当根据实际情况选择适当的发射功率以及适当大小的天线,使得整个系统在性能上既能满足要求,又不至于使系统有过大的余量。
+　　文中探讨了卫星间光通讯系统在保证通讯质量的情况下,最大通讯距离随通讯系统的其它参数(如系统的发射功率、接收灵敏度、比特率、天线的半径等)变化的规律。通过计算分析,找出了在保证通讯质量的前提下,增加卫星间光通讯系统通讯距离的途径。则有:
+Z(x)=UZ(-l)(3.1)
+式中,系统的传递矩阵
+U=U1U2(3.2)
+U1和U2分别为梁和刚体的传递矩阵［5］,Z(-l)为刚体端点的状态矢量,l=a+b。其中接收系统的灵敏度S可用系统正常工作时接收天线上所需的最小接收功率Preq来代替,显然Preq越小,S越高。而且以后的推导中总是认为系统工作在最小接收功率下。
+　　下面主要分析最大通讯距离z与其它参量的关系。
+　　卫星间光通讯所用的光源为激光器,故由发射天线发射出的光束为高斯光束。若接收天线处高斯光束的光斑半径为w(z),接收天线的孔径面积为Ar,显然有Ar=πa2。为简单起见,假定在光束横截面内能量分布是均匀的,光束外能量为零［1］,则天线接收到的功率为
+(1)
+从而有
+(2)
+根据高斯光束在自由空间传输的规律,有［2］
+(3)
+其中f=(πw20)/(λ),w0为高斯光束的腰斑半径。在本文的分析中,假定卫星间光通讯系统中发射光束的发散角θ是在考虑了瞄准问题之后确定的,并保持θ不变。由于θ=2λ/πw0［2］,所以w0为一常量。
+　　对于一个确定的光通讯系统,当探测器确定后,探测器的灵敏度Preq随着系统所传输数据的比特率Rb变化而变化。当选用APD探测器、误码率BER=10-9时,有Preq∝R(7)/(6)b［3］。设作用在刚体上的主矢和主矩分别为F0(t)j吆挺0(t)k,作用在梁上的分布力为f(x,t)j,(i,j,k)为直角坐标系的单位矢量。实际上,因为考虑的是最大通讯距离,对接收天线的要求主要是能够得到探测器所需的最小接收功率Preq(不考虑损耗)。设
+(4)
+上式中的系数k可由实验数据确定。
+　　由式(1)、(2)、(3)、(4)可导出z与a、Rb、P的关系如下:
+(5)
+　　下面对(5)式进行分析。
+2.1　天线横向半径a与通讯距离z的关系
+　　当选定Ge-APD探测器,由文献［4］可知,在误码率为10-9、λ=1.3μm及Rb=30Mbit/s时,Preq=-50dBm。而根据卫星间光通讯的一般情况,可取w0=0.125m,P=50mW［5,6］。由此可得到在不同比特率时通讯距离z与天线横向半径a的关系。用计算机对(5)式进行数值计算的结果绘制成z与a的关系曲线见图1。
+　　由图1可看出,z与a基本成线性关系。则有:
+Z(x)=UZ(-l)(3.1)
+式中,系统的传递矩阵
+U=U1U2(3.2)
+U1和U2分别为梁和刚体的传递矩阵［5］,Z(-l)为刚体端点的状态矢量,l=a+b。也就是说,当比特率足够高时,增加接收天线的横向半径对通讯距离的影响下降。
+6　算例
+
+
+图6.1　梁中点的响应
+用上述方法求解某多体系统的响应,由电算得到梁中点前8秒时间的响应历程,如图6.1。
+
+
+图1　通讯距离z与天线半径a的关系曲线
+
+
+图2　比特率Rb对z/a的影响
+　　由图2容易看出,随着Rb增大,z/a急剧减小,因此对于较高比特率的情况,增加接收天线的孔径对通讯距离的影响不大。
+2.2　比特率Rb的变化对通讯距离的影响
+　　由前面可知,对于一定的探测器,其灵敏度是随着比特率的增加而降低的。
+　　系统的边界条件为
+Z(L)=［y(L),θ(L),0,0］T(3.3)
+Z(-l)=［y(-l),θ(-l),0,0］T(3.4)
+　　将式(3.3)、(3.4)代入式(3.1)得频率方程
+U31U42-U32U41=0(3.5)
+解式(3.5),即可求得耦合系统的各阶固有频率。图3即为对应于不同的接收天线横向半径,通讯距离z随比特率Rb变化的情况。可以看出,对不同的a值都有同样的现象,即当比特率开始增加时,通讯距离锐减;而当比特率增加到一定值后,通讯距离的减少变得缓慢了。当a值较大时,曲线的转折部分(即通讯距离由锐减到缓慢的过渡阶段)变化较慢,而当a较小时,这种变化过程就显得快多了。
+　　a与Rb对z的综合影响见图4。图中显示了a的增大和Rb的减小都会使通讯距离增加,而它们综合作用的结果使曲面在左后方出现一个尖峰。　　
+
+
+图3　z与Rb关系曲线
+
+
+图4　z随Rb和a的变化曲线
+同样可求得z/Rb的表达式如下:
+(7)
+(7)式表明,z/Rb不仅与比特率Rb有关,而且与天线横向半径a有关,它们的关系可由图5看出。当Rb增大时,增加Rb对z的影响逐步下降(z/Rb的绝对值减小,这一趋势在a较大时尤为明显)。设作用在刚体上的主矢和主矩分别为F0(t)j吆挺0(t)k,作用在梁上的分布力为f(x,t)j,(i,j,k)为直角坐标系的单位矢量。图6中针对不同的比特率绘出了相应的曲线。特征矢量在通常意义下不正交,从而不能直接用模态分析方法求解刚、弹耦合多体系统的动力响应,难以对系统的动力响应进行精确分析。在图7中,综合展示了这种关系。从图7可明显看出整个曲面沿P增大的方向在逐渐变平,当比特率较高时,曲面越接近平面。在比特率为1000Mbit/s左右时,曲面的这一部分已经变得类似一个略有一些斜率的平面了。
+　　为了进一步看出P对z的影响,采用与前面相仿的方法,可导出z/P的表达式为:
+(8)
+　　从(8)式可知发射功率P对通讯距离z的影响也是非线性的,随着P的增大,P对z的影响力也在下降,即z/P变小;同时,z/P也受比特率Rb的影响,Rb越大,P对z的影响力越小,所以在图8中可以看到整个曲面随着Rb的增大而变得平坦了,同时曲面沿着P增加的方向向下倾斜。
+2.4　探测器的灵敏度Preq对通讯距离z的影响
+　　前面的讨论都是基于系统的探测器已经给定,即若比特率不变,则系统的灵敏度也就固定了。这一节讨论当系统的比特率固定时,系统灵敏度的改变对通讯距离的影响。
+　　由前面可得通讯距离z与探测系统灵敏度Preq的关系为
+
+
+图5　z/Rb随a和Rb变化曲线
+
+
+图6　z～P曲线
+
+
+图7　z与P和Rb的综合关系曲线
+
+
+图8　z/P随P和Rb变化情形
+(9)
+相应的曲线见图9。
+　　主题词　耦合多体系统　算子　自共轭　正交
+DYNAMIC RESPONSE OF 
+THE COUPLED MULTIBODY SYSTEM
+Lu Yuqi　Rui Xiaoting　Liu Zhengfu　Huang Baohua
+(Nanjing University of Science and Technology*Naijing*210094)
+　　Abstract　The eigenvalue problem of coupled multibody system is not self-adjiont and the study of dynamic response of the system by classical modal analysis method is difficult because of the dynamic coupled action between tlastic bodies and rigid bodies.In this paper,we take a multibody system as example,the augmented formulas of eigenvalue and boundary value problem of the multibody system are developed.The general response of the system to arbitrary excitations is accurately represented by the orthogonal augmented eigenfunction series.
+　　Key words　Coupled multibody system　Operator　Selfadjoint　Orthogonal
+1　引言
+　　多体系统对任意激励的动力响应计算问题具有重要的理论意义和实用价值。
+　　主题词　耦合多体系统　算子　自共轭　正交
+DYNAMIC RESPONSE OF 
+THE COUPLED MULTIBODY SYSTEM
+Lu Yuqi　Rui Xiaoting　Liu Zhengfu　Huang Baohua
+(Nanjing University of Science and Technology*Naijing*210094)
+　　Abstract　The eigenvalue problem of coupled multibody system is not self-adjiont and the study of dynamic response of the system by classical modal analysis method is difficult because of the dynamic coupled action between tlastic bodies and rigid bodies.In this paper,we take a multibody system as example,the augmented formulas of eigenvalue and boundary value problem of the multibody system are developed.The general response of the system to arbitrary excitations is accurately represented by the orthogonal augmented eigenfunction series.
+　　Key words　Coupled multibody system　Operator　Selfadjoint　Orthogonal
+1　引言
+　　多体系统对任意激励的动力响应计算问题具有重要的理论意义和实用价值。
+　　显然上述耦合多体系统动态特性的精确分析方法,还可以进一步推广。
+
+
+图9　z与Preq关系曲线
+
+
+图10　z与Preq和P的综合变化关系曲线
+为了比较灵敏度的改变对通讯距离的影响与其它参量改变对通讯距离的影响的大小,可用与前面相同的方法导出z/Preq的表达式
+(10)
+　　从(6)、(7)、(8)、(10)式容易看出,a对z的影响是线性的,而P、Preq及Rb对z的影响都是非线性的。
+3　结论
+　　通过上面的分析讨论,可以得知增加通讯距离的途径主要有增大接收天线的横向半径、提高探测器的灵敏度和增加发射功率。
+7　结论
+　　由上述可见:多体系统传递矩阵法为解决诸如航天、兵器等工程问题中的多体系统固有振动特性问题提供了方法;通过构造增广算子和增广特征矢量,建立其正交条件,使多体系统传递矩阵法可以解决多体系统动力响应的精确分析问题。则有:
+Z(x)=UZ(-l)(3.1)
+式中,系统的传递矩阵
+U=U1U2(3.2)
+U1和U2分别为梁和刚体的传递矩阵［5］,Z(-l)为刚体端点的状态矢量,l=a+b。但是,由于天线半径a的增加对通讯距离的影响是线性的,同时因受到星本体条件的限制,天线不可能过大,故天线一般不必太大,如在SILEX计划中的天线孔径为25cm［5］。求系统的动力响应。因为通讯距离随探测器灵敏度Preq的变化率是以灵敏度的3/2次方变化的(由(10)式可见),所以当灵敏度达到一定程度后,增加灵敏度对通讯距离的影响相当明显,这不失为一个增加通讯距离的好方法。同时在满足系统需要的前提下,不应让系统的比特率留有太大的余量,否则会使系统的通讯距离大大减少,在较低比特率的系统中尤应如此。
+　　当然以上各个参量的改变有时还受到实际器件和制造工艺等的限制,在实际的卫星间光通讯系统中还要根据具体情况进行综合考虑。
+参考文献
+  1　马晶,谭立英等.卫星间直接光通讯的信号发射及接收系统.哈尔滨工业大学学报,1996,28(3):27-31
+  2　邹英华等编著.激光物理学.北京大学出版社,北京,1991:32
+  3　王延恒编著.光纤通信技术基础.天津大学出版社,天津,1990:147
+  4　Kaneda T,Kanbe H.“Optical Devices and Fibers”(Y.Suematsu,ed).Ohmsha,Tokyo,1983,5:48
+  5　G.Oppenhauser et al.The European SILEX project and other advanced concepts for optical space communications.SPIE Proc.Vol.1522 Optical Space Communication Ⅱ,1991:2-13
+  6　Motokasu SHIKATANI,et al.Optical intersatellite link experiment between the earth station and ETS-Ⅵ.SPIE Vol.1218 Free-Space Laser Communication Technologies Ⅱ,1990:2-17

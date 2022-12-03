@@ -1,0 +1,27 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+发汗冷却控制研究学术研讨会在北京召开
+　　发汗冷却控制研究获国家自然科学基金长期资助,是应用基础研究项目。参与研究的单位有航天部二院、中科院系统所和西北工业大学为代表的十余个国内研究单位和高等院校。
+　　7月29日该项目在北京召开学术研讨会。会议内容包括数学模型、数值方法及仿真、数学定理证明、控制理论研究、实验研究和应用研究等七个方面。参加会议的学者和专家有广泛的代表性。
+3　数值计算结果及讨论
+3.1　Φ1400的M1固体火箭发动机壳体(模型一)
+　　图1为M1固体火箭发动机壳体结构示意图,封头及筒身为纤维缠绕复合材料(Kevlar49/epoxy),裙部为合金铝。
+　　可表示为:
+
+
+(2)
+其中Sij、Eij、ui分别为t时刻定义在初始构形V0下的克希荷夫应力、格林应变和位移,ΔSij、ΔEij、Δui分别为t到t+Δt的相应增量。若用更高强度的Apmoc ⅡRE04替代Kevlar49/epoxy,则封头部位的相对承载能力降低,即Δ2∶σb2＞Δ1∶σb1,从而也使爆破有向封头转移的趋势。同时指出,该项目研究的生命力在于:(1)研究发汗的角度不同,即不是从气体边界层角度研究发汗,而是从固体传热角度研究发汗;(2)以动边界发汗控制传热方程为基础(即存在动边界影响的传热项);(3)分布参数系统闭合回路控制,包括发汗剂可压缩和发汗剂不可压缩两类发汗控制数学模型;(4)应用前景广泛,存在可观的经济效益和明显的社会效益。文献［10］曾对三种常用的玻璃/环氧、Kevlar/环氧及碳/环氧纤维增强复合材料进行讨论。
+　　参加会议的科学家有航天总公司总师张履廉院士,他对该项研究给予高度评价,充分肯定该项目的创新性质,他在讲话中指出:……这是新思想形成的新概念,产生了新理论,开拓了新领域,构成新的学科,……。
+　　主题词　固体火箭发动机　几何非线性　有限元分析　爆破研究
+THE BURSTING STUDY OF FILAMENT 
+WOUND ROCKET MOTOR CASE
+Sun Xuekun
+(State Key Lab of Rolling and Automation,Northeastern University*Shenyang*110006)
+Guo Yanyang　Du Shanyi
+(Composite Research Center,Harbin Institute of Technology*Harbin*150001)
+　　Abstract　In this paper we employed the nonlinear finite element method to calculate the stress and bursting pressure of filament wound rocket motor case.The Maximum stress criteria and the stiffness degradation were introduced to the failure analysis.Therefore we can simulate the working precess of the case.Especially the effects of the material performance and nonlinearity on the loading capacity of the dome were also discussed.Diverse results were gotted for two different cases and they can be used to guide the optimum design and mending strength of the case.Otherwise,from the view point of burst,the way from simulated case to real structure was also discussed.
+　　Key words　Rocket motor　Nonlinearity　Finite element analysis　Bursting study
+1　引　言
+　　纤维增强复合材料在航空航天、汽车、化工等许多领域得到广泛应用,特别在固体火箭发动机壳体上,玻璃/环氧、Kevlar/环氧及碳/环氧均得到应用。该项目从建立数学模型开始,到数值分析、数学定理证明、控制理论研究、实验研究和应用研究一整套研究方法,集中体现了它是一项系统工程,也体现了参与研究的学者和科学家们的奉献精神,是十分可贵的。另外,M1壳体爆破压力的计算值是8.0MPa,封头爆破:实验结果为7.7MPa,也在封头爆破,可见该方法能较好地给出壳体的应力分析和爆破预报。同时能充分发扬学术民主,能容纳不同意见,在会上自由发表学术观点,不搞学霸。在愉快认真的气氛中于30日晚结束了会议。在会议小结中指出:这是一次高效学术研讨会。因此,针对该模型结构,单纯提高材料性能收效甚微,只有将材料与结构有机结合起来,才能达到优化的目的。我们将封头上一点应力随骨压的变化示于图4,可以看出,由于采用大变形分析理论,封头的承载能力相对线性增长而言提高了Δ1,也就是相对于筒段而提高了封头的承载能力,从而使爆破位置有向筒段转移的趋势。图2、图3分别为M1壳体封头上某一点及筒身中点的环向应变随内压变化曲线,相应的纵向应变的变化趋势与此相类似

@@ -1,0 +1,76 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+交流稳压电源的远控接口电路
+王文海
+　　几乎所有的电气产品和设备均需进行电源电压变化对其性能影响的试验；但现在市场上的交流稳压电源几乎都没有远控接口，其输出电压均需进行手动调节，工作很不方便，更不能组成自动测试系统。上、下壁沿横向各安排三个喷嘴,
+并采取模喷方式。控制精度在±1％以内。
+1　工作原理
+　　接口电路的原理见图1。
+
+图　1
+　　图中,A1为K＝1的反相放大器；R1＝R2；A4为同相跟随器，R6＝R7，其输出电压为－e1／2；A5为差分放大器，R8＝R9＝R10＝R11；对同相输入e2而言K＝2，对反向输入e3而言K＝1，所以输出电压e0＝e2＋e1／2。文献［１］给出了不同装药情况下主要燃
+烧产物间存在的化学反应、速率常数及平衡常数表达式。为此使超燃冲压发动机以双模态方式工作,即当飞行M低于6时,进
+气道中产生正激波,实现亚燃冲压的热力循环。由壁压分布
+知,当仅在第一等截面段喷氢时,产生了较严重的上游干扰。
+
+    
+
+(a)下板壁轴向壁压分布 (b)计算的马赫数沿轴线的分布
+图7 扩张段和第二等截面段同时喷氢的结果(NO.118)
+
+表1列出了对以上实验计算得到的燃烧效率和总压恢复系数,以及由皮托压测得
+的出口平均马赫数。
+
+主题词  双模态超燃冲压发动机  超音速燃烧   亚音速燃烧  实验研究
+　
+EXPERIMENTAL STUDY OF
+A DUAL MODE SUPERSONIC COMBUSTOR
+Hu Yuli Qian Zhibo
+(Northwestern Polytechnical University*Xi'an*710072)
+Liu Jinghua
+(The 31st Research Institute*Beijing*100074)
+Liu Ling
+(Northwestern Polytechnical University*Xi'an8*710072)
+Abstract  In this paper,a supersonic combustor formed of a segment with constant 
+cross-section,a divergent segment and a segment with constant cross-section is designed,
+and do combustion tests with it.It is indicated by one-dimensional calculation that 
+supersonic combustion or subsonic combustion can be realized as flight speeds with the 
+supersonic combustor formed of a segment with constant cross-section,and by different 
+fuel-supplied ways,which makes the flight lower limit of Scramjet engine extended up to 
+flight Mach number 3.
+
+Key words  Dual-mode scramjet engine  Supersonic combustion   Subsonic combustion  
+Test research
+
+1  引言
+
+　　冲压发动机适用于飞行M≥3,飞行M在3～6时,亚燃冲压性能优于超燃冲
+压［1］。两处喷氢量各占50%。作为应用，对压力比为3.23的某欠膨胀火箭燃气射流流场进行了数值模拟。即可用e1来调节交流稳压电源的输出电压。
+3　试验结果
+　　将此接口电路接入由中科院计算所生产的DF―5K交流稳压电源上，通过调节e1来实现对该交流稳压电源输出电压的控制。
+
+
+图2 混合流压力、密度等值线分布
+图3 混合流压力、温度沿射流轴线的变化曲线
+由图2可见，本文假设条件下的组合数值格式对火箭燃气射流流场中的激波捕
+捉较为成功，保持了TVD格式的高精度、高分辨率；图3所示对比曲线表明，
+有无化学反应模型其数值计算结果存在较大差异，特别是温度参数，这主要
+是由于含反应模型计算时，反应吸收或放出热量，它以源项形式影响守衡方
+程组，另外轴线上混合流压力、温度的变化曲线与无反应模型时相比波动性
+较大，这与组分间各不相同的热力学特性及相互扩散有关。为了区别本文所作假设与以往
+假设条件的不同，图3中另一条曲线为文献［２］的结果。
+
+2  控制方程及对流项的求解
+
+    以下给出二维(轴对称)含有限速率非平衡化学反应流体流动的守恒方程
+组及辅助性方程(以三组分系统为例，三组分以上系统情况，可相应类推)。
+
+　　在多组分系统中，压力服从道尔顿分压定律
+。
+读者服务卡索引号： 120
+作者单位：长城计量测试技术研究所，北京市，100095
+1998-02-23收稿

@@ -1,0 +1,76 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第10期 Vol.19 No.10 1999
+
+
+
+互联网防火墙的设置
+张珏　唐宁九
+　　摘　要　论述Firewall的作用以及安装实例。
+　　真实感图形的生成算法要求正确地计算各顶点的法向量，以反应物体真实表面，所以要有法向量数据。电脑上的Firewall是一个逻辑装置，用来保护私人的区域不受公用部份的侵害，做法是：
+　　. 使用一部有路由功能的电脑(例如Linux OS)；
+　　. 加入两个界面（例如：串行口，以太网卡等）；
+　　. 关掉IP Forwarding的功能；
+　　. 把其中一个界面接上外界网络（如互联网）；
+　　. 把受保护的网络接在另一个界面上。
+　　现在你使电脑接到两个不同的网络上。这部Firewall电脑，现在就称为Firewall服务器了，可以接到Internet上，也可以接到保护网络（Protected Network）上。但保护网络无法连上Internet，Internet也连不上保护网络。
+　　如果要从保护网络内连上Internet，必须要先连接到Firewall，从那里使用Internet。同样的，Internet上的人要进入保护网络，也必须先透过Firewall。
+　　这种作法，对于Internet上的攻击有很优秀的免疫作用。如果有人企图对受保护的网络进行攻击，则必须先穿过Firewall，攻击必须分成两个步骤，难度也增加了。如果有人想借着使用一般的手法，如邮件炸弹（MAIL BOMB）或“Internet Worm”来攻击受保护的网络，他们可能是无法如愿的。
+2　Firewall的缺点
+　　Firewall最大的问题在于由内部网络访问外界网络的困难。基本上，Firewall利用拨号帐号来减少对于Internet的使用，必须选登录到Firewall才能做其他对Internet的Access动作。因此一些需要直接连接Internet程序（如Netscape）便无法在Firewall后方顺利动作，解决的办法是使用Proxy Serer。
+3　Firewall的安全性
+　　目前的Firewall还不够好，因为它还敞着大门等别人来攻击。首先，取消所有不需要的功能，例如netstat、systat、tftp、bootp、finger。甚至你可以关掉telnet，只允许rlogin或vica-versa。
+4　Firewall软件
+　　单纯的Firewall除了Linux核心及基本网络套装软件（inetd,telnetd和telnet,ftpd和ftp）外，不需外加任何软件。所以有些软件可以使你的Firewall更有用，这里简单介绍以下软件。
+4.1　IS Firewall Toolkit
+　　TIS中有一套程序用来进行Firewalling，这些程序和socks基本上相同，但采用了不同的设计策略。socks是用一个程序来完成所有的Internet动作，TIS则用不同的功能发展不同的程序。
+　　以WWW和telnet作例子，在socks中，设定一个config文件和一个daemon,透过这个文件及daemon,telnet及WWW可以正常使用，就宛如你没把它们关掉前一样。而在TIS toolkit中，须为WWW and Telnet各设一个daemon及config文件。建立了点、边、面间的三种拓扑关系，即E→{V} ，E→{F}，F→{V}。目前在众多的计算机仿真系统中，普遍采用OpenGL建立系统的三维真实感图形。
+　　Socks易于安装、易于complie且具有较大的弹性。
+作者简介：张予川　博士，副教授。但二者都提供了对外的绝对保护。
+4.2　TCP Wrapper
+　　TCP Wrapper不是一个Firewalling工具，但它提供了许多相同的效果。通过TCP wrapper，你可以控制谁有权Access你的机器和Access那些服务，同时可能追踪连线的记录，而且它还提供了一个基本的侦测伪装功能。TCP wrapper基于一些理由，并未广泛的运用。
+4.3　Ipfw和Ipfw Admin
+　　这是国内使用最多的Firewall软件之一，它使用和安装都比较简单，可以提供转向功能。该段记录了每一个块的定义，记录了这些块的名字、类型、基点及组成该块的所有成员。
+4.4　Proxy Server
+　　Proxy Server需要额外的软件，你可以从互联网上下载所需软件。在sock-conf下同时有一个config文件范例。
+　　socks的程序需要两个configuration文件。一个说明那些Access是被允许的，另一个则是把请求route到适当的Proxy Server。Access文件必须设在server上。从13.0开始，AutoCAD首次使用了ACIS（America Committee forInteroperable Standard）技术，将实体造型系统集成到AutoCAD的核心模块上，实体造型已成了其基本功能。
+　　Firewall内的DNS，在Firewall内安装DNS是很简单的事，只要在Firewall的机器上装个DNS，并且将Firewall内的机器DNS设定改成它就行了。
+　　（4）实体段。
+5　网络设计实例
+　　假设现在一个公司里有50部电脑，有多重的访问等级，要依据不同的等级完成不同的事情。同时要求某些机器能够通过路由器访问Internet，很明显，就必须把网络中的一部分保护起来，防止不同等级的人去接触。
+　　这些等级分别为：
+　　员工级　泛指可以给所有的人看的，一些公开的、不需要保护的资料。
+　　管理层　在这里所要保护的资料只允许管理人员查看。
+2　实体模型的描述
+　　仿真系统三维实体模型的建立，首先由现有的造型软件AutoCAD建立几何模型，然后通过它的数据交换文件DXF文件，仿真系统获得AutoCAD生成的实体模型的数据，建立系统自身的实体模型。模型的建立可采用交互式，也可采用参数化的方法，标准件可建立图形库。
+　　2) 32个IP地址挪出23个，供互联网访问机器使用。
+　　3) 一个IP给Linux系统。
+　　4) 一个IP给网络上另一部Linux系统。
+　　5) 两个IP号码给Router。
+　　6) 剩下四个Domain Names设为paul,ringo,john和george,用来掩人耳目。
+　　7) 保护网络地址为192.168.2.xxx。
+　　建立出两个分离的网络，放在不同的办公场地中，避免线路上的盗用。
+　　三维形体的几何、拓扑信息都记录在实体（ENTITIES）段中，其由多个POLYLINE实体描述组成，每个POLYLINE实体对应AutoCAD中的体素和由扫描产生的基本形体。
+　　有一个File Server连上两个保护网络，对管理级用192.168.2.17，对核心级用192.168.2.23。之所以用不同的地址是因为它们用两个不同的Ethernet卡，IP forwarding已经关掉，可以避免网络数据的转发。
+　　两台Linux系统上的IP Forwarding都关掉，路由器不会把发送到192.168.2.xxx的数据包向前传，除非另有设定。从13.0开始，AutoCAD首次使用了ACIS（America Committee forInteroperable Standard）技术，将实体造型系统集成到AutoCAD的核心模块上，实体造型已成了其基本功能。
+作者简介：张予川　博士，副教授。
+　　NFS server也可以设计来提供不同的文件案存取权限，这可以用手动来控制，但要用到一点符号链结的技巧，使得一些共用文件可供所有人使用。利用这个设定再加上一块Ethernet卡可以使三个网络都可以分享这些文件案。
+5.2　Proxy的架设
+　　制定三个网络的访问权。
+　　（4）实体段。我们所介绍的这种方法，相信会对其它类似系统的图形建模提供借鉴。
+　　不允许任何人用File Server作互联网访问，以防止病毒及其他的恶作剧等。
+　　（4）实体段。
+　　不允许管理级的机器使用某些互联网络资源（如WWW）。防止资料泄密。所以管理级Linux系统上的sockd.conf文件设定如下：
+　　deny 192.168.2.17 255.255.255.255
+　　核心级机器上则是：
+　　deny 192.168.2.23 255.255.255.255
+　　管理级还要加上这一行：
+　　deny 0.0.0.0.0.0.0.0 eq 80
+　　这样可以防止任何机器作用Port 80(HTTP Port)，但其他的服务仍然是开放的，除了浏览Web之外，然后两边的文件中还要加上：
+　　Permit 192.168.2.0 255.255.255.0
+　　使得192.168.2.xxx的电脑可以使用这个Proxy Server，除了已经被拒绝者之外。ACIS技术允许对实体做更完整更精确的描述，在建立复杂实体时，仍需对基本体素做布尔操作，但计算机内不再使用CSG树，而是利用ACIS机制生成实体的B-rep表示。
+作者简介：张珏　工程师。主要研究方向：网络技术应用。
+唐宁九副教授。主要研究方向：计算机基础教育。
+作者单位：张珏　四川大学计算机基础教育中心　四川.成都（610064）
+唐宁九　四川大学计算机学院　四川.成都（610064）
+收稿日期:1999-04-28

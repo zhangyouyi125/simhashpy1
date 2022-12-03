@@ -1,0 +1,120 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1998年  第13卷  第1期科技期刊
+
+冷气喷射对直叶栅型面压力分布影响的实验研究*
+
+哈尔滨工业大学 陈 浮**  杨 弘 龚存忠 冯国泰 王仲奇
+【摘要】   对一个具有典型涡轮导向器叶片型线的直叶栅，由叶片表面不同位置以
+不同的质量流量比喷射冷气，进行型面压力分布变化规律的实验研究。结果表明，
+前缘正对来流方向喷射冷气时压力变化较小。压力梯度和主流速度的不同使得压力
+面喷射冷气对压力分布的影响要小于吸力面喷射冷气时的情况。冷气射流对主流的
+滞止作用所造成的压力升高值比卵型涡导致的压力降低值小。
+主题词：斜孔板　气膜　冷却　绝热壁温　　　　　　自由词：　多斜孔壁
+分类号：V231.1
+AN INVESTIGATION ON FILM COOLING 
+EFFECTIVENESS OF INCLINED-MUTIHOLE WALLS 
+WITH DIFFERENT PATTERNS
+Song Bo，Lin Yuzhen，Liu Gaoen，Wang Huafang
+（4th Dept.Beijing University of Aeronautics and Astronautics,Beijing　100083）
+ABSTRACT　An experimental investigation on the film cooling effectiveness of the inclined-multihole walls with different patterns(In-line,Staggered,In-line+compound angle,Staggered+compound angle) was conducted by using the method of heat-mass transfer analogy.The holes were inclined with 30° to the wall surfaces and the compound angle was 45° to the mainstream.The multihole patterns were arranged with streamwise row-to-row spacings of eight hole diameters and spanwise hole pitch-to-diameter ratio of four.The superior mutihole pattern was found out from the experiments.
+Key　Words　Multihole wall　Gasfilms　Cooling　Adiabatic wall temperature
+1　引　言
+　　随着现代航空燃气涡轮发动机性能的不断提高，涡轮进口温度越来越高，使得燃烧室及涡轮部件的热负荷大大增加；相应地，对冷却技术提出了更苛刻的要求。
+主题词：  喷射冷却  表面压力  涡轮   导向叶片
+分类号：  V231.3
+
+１  引  言
+
+    升高涡轮前燃气温度，可以改善航空燃气轮机性能，但必须对涡轮通道部分的
+部件进行强制冷却。Wilfert和Fottner［1］，Yamamoto［2］和Goldstein和Chen［3］等分
+别研究了冷气喷射对直叶栅气动性能及流场结构的影响，但关于冷气喷射对叶栅型
+面压力分布影响的实验研究结果发表较少。冷气喷射对型面压力分布的影响显著地
+改变了叶型表面附面层的流态和附面层分离点的位置，进而影响了叶型损失的分布。
+本文就这一问题进行了研究，详细分析了冷气喷射对叶型型面压力分布的影响，得
+出了一些有意义的结论。
+
+２  实验装置
+
+    实验是在哈尔滨工业大学发动机气体动力研究中心低速风洞实验台上进行的［4］。
+图1示出了实验用某典型涡轮导向器叶片型线，冷气喷射孔位置（具体参数见表1）及静
+压孔分布。叶片内部有两个分离的气腔，采用上下通气的方法以使喷射气流均匀稳定。当一个传热过程和一个传质过程的流动完全相似，即描述它们的连续方程和动量方程相同且边界条件不变，同时分子刘易斯数Le=Sc/Pr=1及湍流刘易斯数Let=Sct/Prt=1时，传热的能量方程和传质的质量扩散方程的解具有完全相同的形式。型面压力通过叶型表面39
+个静压孔沿展向在21个均匀布置的高度上测得。实验中0.6%和1.2%的喷射质量流量比大
+约对应于0.9和1.85的喷射速度比(即冷气喷射速度与叶栅出口质量平均速度之比)。
+2　实验系统及参数
+　　本实验采用传热传质类比方法，通过测定非渗透壁异性气体(CO2)浓度来获得气膜冷却的绝热温比η。喷射冷气温度与主流温度同为室温。因此，研究排列方式对η的影响只有针对孔阵前几排后的下游区域才有意义。主流遇到冷气射流接近于遇到圆柱
+形障碍物时的情形，即喷射气流前压力升高，其后压力降低。大喷射流量比（β=1.2%）
+所造成的压力变化大于小喷射流量比(β=0.6%)所造成的变化。
+　　实验板几何参数见表1。
+
+图2 叶片前缘孔1,2,3喷射冷气时中径处型面压力分布图(Hs为叶型型面静压系数)
+
+    作者认为喷射处主流速度和压力梯度的不同造成了这些差别。孔1，喷射气流与主流
+掺混降低了压力面侧前缘圆弧后一段型面上的压力，在这一局部扩压区导致附面层的分
+离和再附，对压力分布的影响较大。
+主题词：斜孔板　气膜　冷却　绝热壁温　　　　　　自由词：　多斜孔壁
+分类号：V231.1
+AN INVESTIGATION ON FILM COOLING 
+EFFECTIVENESS OF INCLINED-MUTIHOLE WALLS 
+WITH DIFFERENT PATTERNS
+Song Bo，Lin Yuzhen，Liu Gaoen，Wang Huafang
+（4th Dept.Beijing University of Aeronautics and Astronautics,Beijing　100083）
+ABSTRACT　An experimental investigation on the film cooling effectiveness of the inclined-multihole walls with different patterns(In-line,Staggered,In-line+compound angle,Staggered+compound angle) was conducted by using the method of heat-mass transfer analogy.The holes were inclined with 30° to the wall surfaces and the compound angle was 45° to the mainstream.The multihole patterns were arranged with streamwise row-to-row spacings of eight hole diameters and spanwise hole pitch-to-diameter ratio of four.The superior mutihole pattern was found out from the experiments.
+Key　Words　Multihole wall　Gasfilms　Cooling　Adiabatic wall temperature
+1　引　言
+　　随着现代航空燃气涡轮发动机性能的不断提高，涡轮进口温度越来越高，使得燃烧室及涡轮部件的热负荷大大增加；相应地，对冷却技术提出了更苛刻的要求。由于吸力面在前缘附近有
+很长一段顺压区，孔3的冷气射流对其附近的主流有一定影响，但不能使附面层发生分离，
+对压力的影响较小。涡轮入口处燃气温度很高，前缘冷却很重要，前缘正对来流方向喷射
+冷气对压力影响较小，气腔内的对流冷却也可以很好的保护前缘。
+
+3．2 叶片吸力面喷射
+    从图3（图中，场β=0.0%，○―β=1.2%，□―β=0.6%）可以看出吸力面上孔4，5，
+6喷射冷气时型面压力分布的变化很显著。孔4喷射冷气引起的变化量及变化区域最大。吸力
+面型面压力差值等值线分布图（图4）也表明了这一点（实线：压力值升高；虚线：压力值降
+低）。
+
+图3 叶片吸力面孔4,5,6喷射冷气时中径处型面压力分布图(Hs为叶型型面静压系数)
+
+图4 叶片吸力面孔4,5,6喷射(β=0.6%）与不喷射冷气时型面压力差值等值线分布图
+
+        孔4从最低型面压力点前的位置喷射冷气，压力降低较明显，卵型涡［5］降低压
+力的结果使最低压力点逆主流方向移动，扩大了吸力面上的扩压段，使叶型表面附面
+层增厚，为它的脱离创造了有利条件，增加了叶型损失。孔5，孔6均位于喉部以后的
+扩压段上，孔6处的主流速度较低，喷射气流后的卵型涡强度较强，对型面压力扰动较
+大。另外，吸力面附近区域，在通道涡的作用下，流体向中径处积聚，喷射冷气很难
+沿叶展方向形成冷却气膜并且保持较长距离。
+
+3．3 叶片压力面喷射
+图5（图中，场β=0.0%，○―β=1.2%，□―β=0.6%）为压力面上孔7、8、9喷射冷气
+时型面压力分布图，可以看出喷射冷气对压力分布影响不很明显。冷气与主流掺混均发
+生在顺压力梯度区，卵型涡强度较小，附面层不易分离，因此喷射冷气对压力影响不显
+著。另外，压力面上的流动较为平缓，喷射冷气易于随着主流沿叶展方向形成覆盖在整
+个型面上的冷却气膜。已有的关于离散孔气膜冷却的研究多限于单孔、单排孔的基础性研究［2］，多排孔气膜冷却由于各孔射流的相互作用而体现出更大的复杂性，研究手段大都依靠实验，这方面的报道很少［3，4］，文献［5］对此作了系统总结。小孔与壁面夹角为30°，复合角为45°，孔阵排距比8.0，侧向间距比4.0，吹风比为1.94。型面压力降低越大，在一定意义上
+表明卵型涡强度越大，喷射冷气与主流掺混越剧烈，叶型损失越大。从图中可以定性看
+出不同位置喷射冷气时卵型涡强度的大小。复合角对孔阵η的影响一方面对侧向均匀性有利，可加强列间气膜保护；一方面由于复合角使冷却射流与主流夹角变大从而更难贴壁形成气膜，导致冷却保护效果
+
+
+图7　4种孔阵排列方式的比较
+降低，所以对气膜冷却的总体水平的影响由这两方面因素综合决定，因此，复合角的采用要针对具体情况综合考虑。由于位于顺压力梯度区，压力面
+喷射冷气导致的变化量小于吸力面喷射冷气时的变化量。实验中，非渗透壁相应于绝热壁，测出非渗透壁表面CO2浓度Ciw，已知射流CO2浓度Cj和主流CO2浓度C∞(C∞=0)，由浓度比ηc=(C∞-Ciw)/(C∞-Cj)=Ciw/Cj来代表绝热温比η［6］。(3)吸力
+面上喷射冷气将使叶型表面附面层增厚，增加叶型损失。(4)冷气射流对主流的滞止作
+用所造成的压力升高值比卵型涡导致的压力降低值小。
+
+本文系国家自然科学基金资助项目，编号：59306055
+男  27岁  博士生  哈尔滨工业大学能源科学与工程学院241教研室   150001
+参考文献
+1Wilfert G,Fottner L.The Aerodynamic Mixing Effect of Discrete Cooling Jets With 
+Mainstream Flow on a Highly Loaded Turbine Blade.ASME,1994:94-GT-235
+2Yamamoto A,Kondo Y,Murao R.Cooling-Air Injection Into Secondary Flow and 
+Loss Field Within a Linear Turbine Cascade.ASME Journal of Turbomachinery,1991:
+Vol,113,pp.375-383
+3Goldstein R J,Chen H P. Film Cooling on a Gas Turbine Blade Near the End Wall.
+ASME Journal of Engineering for Gas Turbines and Power,1985，107：117-122
+4陈浮，杨弘，龚存忠等．冷气喷射对直叶栅型面压力及气动损失分布影响的实
+验研究．中国工程热物理学会热机气动热力学学术会议论文集，No．962045，1996
+5Lee S W,Lee J S,Ro S T. Experimental Study on the Flow Characteristics of Streamwise 
+Inclined Jets in Crossflow on Flat Plate.ASME Journal of Turbomachinery, 1994:Vol,116,pp.97-105
+
+1996年12月收稿；1997年2月收到修改稿。
+
+（责任编辑  魏星禄）

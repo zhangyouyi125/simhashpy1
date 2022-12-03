@@ -1,0 +1,205 @@
+水土保持通报
+BULLETIN OF SOIL AND WATER CONSERVATION
+1999年 第19卷 第2期 No.2 Vol.19 1999
+
+
+
+半干旱区发展集雨节灌农业的效益研究
+曹　国
+摘　要　半干旱区集蓄雨水的主要目的是抗旱保苗，补灌大田粮食作物，解决人畜饮水和补灌果树、塑料大棚蔬菜、日光温室蔬菜，发展庭院经济。评定雨水利用措施效益的结果表明：集蓄的雨水用于大田作物补灌，每1t水产值均在11元以下。用于果园补灌，每1t水产值高达40元，补灌日光温室蔬菜，每1t水产值可达72元，补灌塑料大棚蔬菜，每1t水产值达15元。由于大部分自然集流面都远离农户，不便于蔬菜果树生产，只能用于粮食作物生产，尽管经济效益不如蔬菜和果园高，但通过大面积补灌，可以提高粮食作物产量，解决温饱问题。
+关键词　集雨　节灌　效益
+文献标识码：A　　　文章编号：1000-288X(1999)02-0040-04　　　中图分类号：F323.213
+Benefit of developing Runoff Harvesting and Economical
+Supplementary Irrigation in Semi-arid Area
+CAO Guo-fan
+(Dryland Farming Institute of Gansu Academy of Agricultural Sciences, Lanzhou, 730070, PRC)
+Abstract　The main aim of runoff harvesting in semi-arid area is to lighten soil and water loss, solve the problem of watering people and domestic animals, develop courtyard economy, prevent drought and keep a full stand of seedings, irrigate supplementarily(SI) fruit trees, vegetables in greenhouse and solar radiation greenhouse, irrigate supplementarily field crops. Different use measures of harvested runoff have much different benefit. According to output value of water pur ton(OVPt). The results of benefits of every water use measures show: If soil water capacity is lower than 11 percent, water providing sowing technology can keep a full stand of seedings used 15～45m3/ha water. Water providing dibble technology can keep a full stand of seedings of corn or other thinly scattered crops used 1～1.5kg water pur spot or 30～45m3/ha water. Through SI, OVPt of fruit trees can reach 40 Yuan,and that of vegetables cultivated in solar radiation greenhouse can reach 72 Yuan, vegetables cultivated in greenhouse 15 Yuan, the OVPt of field crops are all lower than 11 Yuan. But most of the area which is suitable for runoff harvesting is far from household, it is difficult to produce fruit and vegetables in this area, cereals can be produced only. Although benefit of fields crops cultivated with SI is not goods enough, if SI is used in a big area, the problem of sufficient goods and adequate clothing can be solved stablely.
+Keywords: rainfall harvesting; supplementary irrigation; benefits
+　　为了做到有的放矢，在我们大力推广集雨节灌农业之前，必须首先弄清楚怎样应用所集蓄的雨水才是最有效的，各种用途的效益究竟有多大。粉煤灰的pH为4.5～12.8；其pH值一般由母煤中硫的含量决定，高硫煤产生酸性灰，低硫煤产生碱性灰，通常以碱性灰为多。
+1　集蓄雨水的自身效益
+1.1　解决人畜饮水问题
+　　在半干旱区的许多地方，人畜饮水问题一直是一个突出问题，方圆上百里没有水源，也没有机动车可走的路，每户都要投入一个主要劳力，专门负责从很远的地方挑水。通过收集雨水解决人畜饮水问题，使大量的劳力从繁重的挑水活动中解放出来，从事其它生产和经济活动，可以获得更大的经济效益。
+1.2　发展庭院经济
+　　集蓄的雨水用于发展庭院经济，不管是搞食用菌栽培，名贵药材种植，还是发展特种养殖，调查结果表明：每1t水产值都在50元以上，是增加农民收入的有效途径。
+1.3　抗旱保苗
+　　注水播种技术 ，是在常规播种机上安装施水装置，从而使播种、施肥、施水、复土等多项作业同时完成的一种抗旱保苗播种技术。一般施水量为15～45m3/hm2。据试验，注水播种技术在土壤含水量低于11％的情况下，能保证作物正常出苗，在土壤墒情不足时可使苗全苗壮。因此，具有抗旱保苗的作用。若作物出苗后能有足够的雨水补充，就能保证一定的产量形成。
+3.2 MetaWin软件使用方法
+3.2.1 数据输入
+　　打开MetaWin文件，下拉file菜单，点击edit data file，进入数据输入状态，可直接在弹出的窗口中输入数据，也可从file菜单中点击load a file上载已有的文件。一般每穴施水1～1.5kg，30～75m3/hm2就能保证苗齐苗壮。半干旱区的冬春降水比较少，玉米苗期常常缺水，若能保证全苗，后期进入雨季，就能保证理想的产出。
+2　积蓄雨水生产蔬菜的效益
+2.1　塑料大棚生产蔬菜的效益
+　　1996年和1997年在定西唐家堡布设了3种蔬菜作物的补灌试验，有西红柿、茄子、黄瓜3种蔬菜，每种设3个补灌量，依次为0mm/hm2，1500mm/hm2，3000mm/hm2，小区面积27m2，其它管理同于大田。产量结果见表1。黄瓜对水分的变化最敏感，产量随水分的增产幅度最大，其次是西红柿，茄子对水分的敏感性较差，但总的变化趋势是一致的，补灌量增加，产量提高，尤其是补灌100mm的处理较对照显著增产，说明在半干旱区蔬菜生产中，补充供水可以收到事半功倍的效果。
+表1　塑料大棚生产蔬菜补灌的效益
+处理产量/
+(kg.hm-2)较CK增产/
+(kg.hm-2)水的产值/
+(元.t-1)补灌效率/
+(kg.mm-1.hm-2)
+茄子不补灌18129―――
+茄子补灌100mm22990．54861．59．7248．6
+茄子补灌200mm2571675877．6037．95
+黄瓜不补灌46113―――
+黄瓜补灌100mm580111189819．03118．95
+黄瓜补灌200mm638221770914．1688．5
+西红柿不补灌39550．5―――
+西红柿补灌100mm48898．5934814．9593．45
+西红柿补灌200mm5298613435．510．7567．2
+
+　　注： 1996年和1997年平均效益。
+　　试验证明：同样的水分用于不同的蔬菜生产,产生的效益不尽相同,有限的雨水补灌黄瓜,补灌效率高，每1t水产值大,补灌茄子,补灌效率低,每1t水产值小,说明集蓄的雨水应优先选择补灌黄瓜。对黄瓜而言，补灌100mm每1t水产值和补灌效益都明显高于补灌200mm处理，因此，200mm雨水应分别补灌在0.13hm2黄瓜地，而不是全部补灌到同一地块。
+2.2　日光温室生产蔬菜的效益
+　　1997年和1998年在定西唐家堡进行了黄瓜不同补灌方式和不同补灌量的试验研究，试验选择滴灌、渗灌和沟灌3种灌水方式，每种灌水方式分设3个灌水量，分别为每1hm2灌水3000m3，4500m3，6000m3 ，其它管理同于大田。结果表明：等量雨水不同补灌方式产生的效益不同，渗灌效果优于滴灌和沟灌，滴灌优于沟灌，相同灌水方式不同灌水量的产量随补灌量增大而增加，但补灌效益和每1t水产值随补灌量的增大而降低，说明补灌量超过200mm后，补灌量继续增大，是对宝贵雨水资源的浪费。
+3　集蓄雨水生产果品的效益
+　　采用地下固定滴灌方式，利用建造在果园中较高部位的15m3的高位水池，将水窖中集存的雨水直接输送到果树根部进行补充灌溉,补灌的增产效果非常明显。不仅如此，由于补灌水改变了土壤结构、水分和养分状况，能促进果树根系和枝条的生长，使果树吸收根数量增加，春梢生长量增大，叶面积增大，对果树的营养生长具有良好的作用。据在树冠外缘60cm2土壤剖面调查，补灌后，果树吸收根总量比对照增加104％；另一方面，良好的营养生长不仅促进了生殖生长，成花率、座果率和单果重，分别比对照提高了50％，32.8％和24.0％，而且果品的品质也大大地改善，商品价值也得到了很大的提高。据测定，平均单果重、最大单果重、可溶性固形物和一级果品率分别比对照增加了42.1g，22.5g，0.80％和17.4％，达到217.6g，254.3g，14.8％和93.4％。
+对　　　错
+②EnTA是一种环境管理工具.
+对　　　错
+③EnTA可以用来：
+a)补充环境影响评价，
+b)评价一项技术，
+c)帮助政策制订，
+d)上述全部.
+④EnTA的使用者是：
+a)工程师，
+b)非政府组织，
+c)工商界，
+d)政府，
+e)上述全部.
+⑤EnTA的作用是提供关于一种技术的定性信息.
+对　　　错
+⑥为了进行一项EnTA，其信息必须涉及：
+a)该技术的成本，
+b)该技术的环境效应，
+c)资源投入与产出，
+d)能源投入与产出，
+e)要使用该技术的社会范畴，
+f)技术方案，
+g)上述全部.⑦EnTA是技术进口者的一种宝贵工具.
+对　　　错
+⑧一项EnTA的程度和详细水平总是相同的，而不管评价的是什么.
+对　　　错
+答　案
+①错.EnTA是从环境观点对任何一种技术的评价.要考察该技术的潜在环境影响――正面影响和负面影响.在这种意义上，“环境”也包括该技术的潜在社会影响和健康影响.
+②对.EnTA是用来改善决策的若干种环境管理工具之一，其总目标是改善工业界的环境表现.其它工具包括寿命周期评价(LCA)、环境影响评价(EIA)等.
+③d).EnTA可以在微观层次或宏观次上使用.在微观层次上，可以把它理解为一种特定技术的评价，或一个较大工业项目评估的组成部分，例如作为一种环境影响评价(EIA)的补充.在宏观层次上，EnTA使政策制订者能考察一种特定技术工艺如小轿车制造与另一些方案相比的可能后果，从而对政策制订做出贡献.
+④e).任何一位想评价一种技术对社会环境和生态环境的潜在影响的人员都可以使用EnTA.
+⑤对.EnTA是一种描述性过程，着重说明一种特定技术和有关方案的优缺点.然后，对照所定义的基准来衡量这些优缺点.(基准由用户而不由EnTA过程确定.)
+⑥b)、e)、f).一项EnTA依靠关于该技术以及要使用该技术的生态范畴和社会范畴的信息.关于技术方案的信息对于EnTA过程来说也是重要的.只有通过比较不同技术的社会效应和环境效应，用户才能就最适合于使用的技术做出有信息依据的决策.
+⑦对.进行一项关于某一潜在技术进口的EnTA，有助于进口者考察该技术可能对当地“环境”如基础设施、社会问题、环境等产生什么影响.EnTA的替代技术方案这一节也有助于进口者思考在一些情况下可能更适用的其它方案.
+⑧错.一项EnTA的范围、程度和详细水平取决于其使用目的、使用者的需要及可利用的信息、资源和专门知识.
+会 议 动 态
+　　1997年5月26―28日，联合国环境署的工业与环境中心和国际环境技术中心办公室召集了第二次国际“与环境无害技术(ESTs)有关的信息系统专家会议”.与会者交流了关于信息传播的经验和设想，尤其关于如何改善与关键用户如中间商和联合国公约秘书处与行动纲领的信息交换.
+　　通过讨论和工作组，与会者同意：
+　　1.改善专门技术信息的描述，以超越单一问题分析和包括关键环境基准.这种信息应当针对国际公约和行动纲领中勾画的重要环境问题，例如危险废物的发生(巴塞尔公约)、臭氧耗损物质的生产(臭氧公约)、化学品的使用或生产(化学品行动纲领)等；
+　　2.确定一份环境基准“核查清单”(以上述第1点为基础)，以有助于指导各信息系统扩大对可供利用技术的这种描述；
+　　3.不要重打鼓另开张，而是以现有信息系统为基础；
+　　4.创办一个网络之网络，以使各信息系统能交换信息和经验.
+　　许多与会者同意参与一种献身性电子函件listserv，以期继续讨论有关信息传播的合作与协调.当前的讨论涉及如何把环境基准纳入技术描述之中.
+　　欲索取此次会议最终报告或关于listserv的信息者，请联系：Laura Williamson,UNEP IE.
+新出版物
+调整新世纪的影响评价
+　　位于美国佐治亚州亚特兰大市的佐治亚理工学院军队环境政策研究所(AEPI)已经启动一项关于(环境)影响评价方法的年度动态.其目的是简明地评论达到当前技术水平的方法、尤其方法论，以及评价和预测分析方面的当前发展.这种评价应当起到提醒实践者注意方法论进展和有助于学生了解当前方法论问题的作用.
+　　与国际影响评价协会(IAIA)、全国环境专业人员协会(NAEP)和美国生态学会(ESA)合作，两位编者Alan Porter和John Fittipaldi已经选择了一批评价专家来写这样一些主题的评论文章：评价总论、宏观评价、过程、风险评价、面向产业的影响评价和环境影响评价中的模式.在为这本出版物而编纂的专稿中，有“环境技术评价(EnTA)培训思路”，描述了联合国环境署国际环境技术中心/联合国环境署工业与环境中心联合EnTA计划的能力建设努力.
+　　这种评论对于那些想对评价方法有更多了解的人员是免费的.编者和著者同样希望该“方法评论”将有助于改善环境影响评价的实践，和进一步刺激其发展方面的进展.
+Alan Porter的联系地址：
+Fax:1.404.892.9381
+E-mail:aporter＠isye.isye.gatech.edu
+
+联合国环境署国际环境技术中心代表Toru Tamura先生在
+中国武汉EnTA研讨会上作报告(摄影：IETC)
+致编者的信
+　　来自斯威士兰的问侯.希望你能回忆起我们1996年11月下旬在南非波切夫斯特鲁姆举行的环境技术评价(EnTA)培训研讨会上见面的情景.(编者注：关于该研讨会的信息，请参阅EnTA简讯No.5)遵照这次研讨会的精神，我给大学学生举办了两个关于与EnTA有关的问题的讲座.我也使用了一批EnTA资料来讲授社会科学中的核心课程.的确，联合国环境署工业与环境中心和国际环境技术中心举办的这次研讨会是非常有用的，开阔了在发展领域工作的科学家和非政府组织的眼界.我相信，那些将成为明天的领导者的学生必须对环境问题有所了解.
+R.Mathew
+Dept.of Sociology
+University of Swaziland
+Put/Bag Kwaluseni
+SWAZILAND
+Fax:268,85276
+地址变更
+国际技术评价与预报机构协会(IATAFI)最近已经从桑斯里的STATOIL迁往Hordaland Fylkeskommune的欧洲办事处中的办公室.其新联络信息是：
+IATAFI
+c/o Hordaland Fylkeskommune
+European Office
+N-5020 Bergen,Norway
+Tel:47.5523.9534
+Fax:47.5523.9579
+E-mail:iatafi＠iatafi.no
+Web:www.iatafi.no
+研 讨 会 动 态
+　　1997年5月27―30日，武汉市政府主办了一次联合国环境署国际环境技术中心为中国地方政府官员举办的关于环境技术评价的领导培训研讨会.这次研讨会侧重于利用EnTA作为采用环境无害技术(ESTs)尤其废水管理技术进行大城市管理的决策工具.
+　　这次研讨会也代表实施中国政府与联合国开发计划署之间最近缔结的关于在“可持续城市计划”之下对武汉市和沈阳市的援助协议的第一步.作为中国工业城市环境退化的实例，沈阳和武汉渴望成为有强烈环境意识的现代化橱窗.
+　　关于该研讨会的进一步信息，请联系Toru Tamura,TETC.
+。以陇春8139为指示品种，随机排列，小区面积300m2，施肥水平、田间管理同大田。实行菜－粮轮作，通过不同作物的根系作用，有机质的残余作用，水旱交替、干湿交替作用，加快土壤的熟化程度，增加土壤中被固定的养分的释放，达到用地养地、提高土壤肥力的目的，改善了作物根部的环境。结果表明：地膜覆盖穴播使产量大幅度提高，以穗粒数增加为主；补灌使产量成倍增加，以小穗数增多和千粒重增大为特征，补灌加地膜覆盖的效果更好，能使小穗数、穗粒数、千粒重都增加。
+3.3 pH值
+　　污泥中重金属的溶解主要是受pH值控制。
+4.2　旱地地膜谷子的集流补灌试验
+　　以陇谷5号为指示作物，随机设计，3次重复，小区面积36m2。分别在拔节期、始穗期、灌浆期每1hm2补充供水30mm，其它同大田。在三种改性磷肥中，H2PO4-、HPO42-离子可能通过Ca2+与添加剂形成多元络（螯）合物，或通过表面吸附及包被作用减少了其有效磷在土壤中的固定，从而大大增加了其生物有效性。说明拔节期补充供水的效果最好。
+　　关键词：气候变化；土壤有机质；分解
+　　中图分类号：X142；S153.6+21　文献标识码：A
+　　A number of studies over the past decade have used state-of-the-art atmospheric, biospheric, and oceanographic models to estimate the potential magnitude of future climate change and related impacts on the biosphere[1～2]. These studies have demonstrated that the rate of climate change could be unprecedented in the recent geologic history and have large effects on the terrestrial biosphere. Soil organic matter (SOM) is a sensitive indicator of climatic patterns, and it can be expected to manifest measurable responses to global warming. This paper discusses climate change in relation to SOM in the light of some studies.
+1 Soil as Part of the Carbon Cycle
+　　The carbon in soil organic matter is a significant component of the earth’s carbon reservoirs, with around 1.5′ 1018 g. This is small compared with the carbon stored in the deep ocean (C 38′ 1018 g) and in the deep earth. The turnover time of carbon in the soil-vegetation system is variable, ranging from less than a year for annual vegetation, to thousands of years for organic matter parts of soil profiles[3]. 
+　　The loss of carbon from both terrestrial biomass and soil organic matter has been considerable over the last 200 years. The calculation of the net release, over this whole period or currently per year, is very difficult due to the heterogeneity of the land surface, the variation in treatment or cover, and the uncertainty of the areas of particular ecosystems.
+　　The current net release of C from soils and plants is estimated to be around 1015 g/a, but the uncertainties in the data and the variable assumptions and definitions used by different authors provide a very large margin of error. The total release of C since 1880 is estimated at 120′ 1015 g[3].
+　　During the last century the major component of this was probably the loss of soil organic carbon from the cultivation of virgin grasslands, but now it is from the felling of forests, mainly in the tropics. A major complication occurs in peatlands, where the storage of C can be regarded as part of a soil reservoir, or as a separate compartment (subfossil C). Indeed, the whole question of carbon changes in wetland ecosystems is extremely interesting, because of the potential changes in coastal wetlands due to sea-level rise, as well as to temperature change and the production of CH4, another greenhouse gas, as well as CO2 from such systems. 
+2 Influence of Climate Change on SOM
+　　The total amount of organic matter in the soil depends on the balance of biomass production and decomposition, and on the soil capacity for organic matter storage. At global scales, a more general pattern is evident: SOM increases along gradients of increasing precipitation and decreasing temperature[4～5].
+　　The role of temperature in determining the global pattern of SOM follows directly from its differential effects on production (additions to SOM) and decomposition (losses of SOM). SOM increases accelerate as temperature decreases, a finding that is consistent with the pattern revealed by aggregated data arrayed to show variations with both temperature and precipitation is held constant4～5]. Assuming that the shift in the SOM profile would be proportional to the temperature gradient, a 2 ℃ warming would shift the SOM profile poleward by 2.67 degrees latitude (approximately 300 km) and a 4 ℃ warming by 5.33 degrees (approximately 600 km). The predicted shift in steady state SOM in the Northern hemisphere is therefore on the order of 150 km/℃[6].
+　　It has been argued that the stimulation of photosynthesis, the “fertilization effect” of increasing carbon dioxide, could more than compensate for these temperature effects. This is proving to be a more complicated problem than it might appear at first glance. How the temperature response of net primary productivity might be modified by increased CO2 concentrations is still difficult to predict. It is now clear, however, that the effects of the expected simultaneous increases in CO2 concentrations and temperature will have interactive effects on plant photosynthesis and respiration, perhaps combining to lower net photosynthesis at temperatures below 18 ℃ and increasing them above[7]. If this proves to be a general pattern it may mean that tropical latitudes will benefit more from the fertilization effect than temperate and boreal zones.
+　　In terms of the global atmospheric CO2 pool however, it is the balance of effects on decomposition and production that are of concern. If the stimulation of photosynthesis by CO2 is the predominant effect, then CO2 concentrations should decrease as temperature increases and thus generate a negative feedback to CO2. If the stimulation of decomposition and loss of SOM is the predominant effect, then CO2 concentrations should increase with temperate and thus generate a positive feedback to CO2[6].
+　　The recent completion of drilling at Vostok station in East Antarctica has allowed the extension of the ice record of atmospheric composition and climate to the past four glacial-interglacial cycles[8]. Atmospheric concentrations of CO2 and CH4 correlate well with Antarctic air-temperature throughout the record. Present-day atmospheric burdens of these two important greenhouse gases seem to have been unprecedented during the past 420000 years[8]. The decomposition and loss of SOM may be an important role in increasing concentrations of CO2 and CH4 in the atmosphere. MacDonald et al. (1999)[9] show that elevated soil temperatures may increase C loss from soils by accelerating microbial respiration and dissolved organic C leaching. Dissolved organic C leaching from soils may ultimately return to the atmosphere as CO2 lost from streams, lakes, or oceans[10]. Depending on the above and below-ground responses of forests to elevated atmospheric CO2 and warming[11～13], increased C fluxes from soils could create a positive feedback to increasing atmospheric CO2 concentrations[1, 14].
+3 Consequences of Soil Warming for Foliar Litter Decay
+　　Litter decomposition plays a role in regulating the balance between C assimilation and release in terrestrial ecosystems. Temperature is a well-established environmental factor governing litter decomposition rates, with litter decay rates generally increasing with increasing temperature in the range 5～30 ℃[15～18].
+　　A growing number of studies are using in situ soil temperature manipulations or “soil warming” experiments to test the response of key soil processes to altered thermal conditions[19～22]. These in situ soil warming experiments are not intended to simulate global climate change, i.e., the gradual increase in both soil and air temperature on decadel time scales. Rather, they provide a uniquely powerful tool to evaluate temperature controls on soil processes under field conditions. For example, Van Cleve et al. (1990)[19] demonstrated a significantly increased decomposition of the forest litter in a black spruce (Picea mariana) stand in Alaska in response to an 8～10 ℃ increase in soil temperature. Lukewille and Wright (1997)[22] showed a significant increase in NO3 and NH4 concentrations in runoff, which they suggested was due to increased N mineralization in a boreal forest catchment in Norway in response to a 3～5 ℃ increase in soil temperature. Rustad et al. (1998)[23] conducted a study to investigate the effects of soil warming on the decomposition of red spruce (Picea rubens) and red maple (Acer rubrum) foliar litter at Howland, ME. Experimentally increased soil temperatures (increase of 4～5 ℃) were maintained during the snow-free season from 1993 through 1995 in replicated 15 by 15 m plots using heat-resistance cables. For red maple litter, significant treatment effects included greater loss of mass (27%) and C (33%), and greater accumulation of Zn (54%) during the first 6 months of decay in the heated plots than the control plots. After 30 months of decay, significant treatment effects were no longer evident for red maple litter. Few treatment effects were observed for red spruce litter during the initial 18 months of decay. However, after 30 months of decay, significant treatment effects included greater loss of mass (19%), C (19%), N (24%), Ca (27%), Mg (12%), K (4%), Zn (60%), and cellulose (40%) in red spruce litter in the heated plots than the control plots. They concluded that a modest increase in soil temperature (4～5 ℃) can significantly increase litter decay rates and alter litter decay dynamics in this coniferous forest stand, and that these changes exhibit variations in their temporal development as a function of species and litter quality attributes[23].
+Biography：XIAO Hui-lin（1961～），male，associate-professor
+作者单位：Guangdong Institute of Eco-environmental and Soil Sciences, Guangzhou 510650, China
+References:
+[1] Jenkinson D S, Adams D E, Wild A. Model estimates of CO2 emissions from soil in response to global warming [J]. Nature, 1991, 351: 304～306
+[2] Smith T M, Shugart H H, bonan G B. Modelling the potential response of vegetation to global climate change [J]. Adv Ecol Res, 1991, 22: 93～116
+[3] Tinker P B, Ineson P. Soil organic matter and biology in relation to climate chance [A]. In: Scharpenseel H W, et al., eds. Soil on A Warmer Earth [C]. Amsterdam, The Netherlands: Elsevier Science Publishers, 1990. 71～87
+[4] Post W M, Emanuel W R, Zinke P J, et al. Soil carbon pools and world life zones [J]. Nature, 1982, 298: 156～159
+[5] Post W M, Pastor J, Zinke P J, et al. Global patterns of soil nitrogen storage [J]. Nature, 1985, 317: 613～616
+[6] Franz E H. Potential influence of climatic change on soil organic matter and tropical agroforestry [A]. In: Scharpenseel H W, et al., eds. Soil on A Warmer Earth [C]. Amsterdam, The Netherlands: Elsevier Science Publishers, 1990.109～120
+[7] Allen S G, Idso S B, Kimball B A. Interactive effects of CO2 and environment on net photosynthesis of water lily [J]. Agriculture, Ecosystems and Environment, 1990, 30: 81～88
+[8]Petit J R, Jouzel J, Raynaud D, et al. Climate and atmospheric history of the past 420000 years from the Vostok ice core, Antarctica [J]. Nature, 1999, 399: 429～436
+[9]MacDonald N W, Randlett D L, Zak D R. Soil warming and carbon loss from a lake states spodosol. Soil Sci Soc Am J, 1999, 63: 211～218
+[10]Kling G W, Kipphut G W, Miller M C. Arctic lakes and streams as gas conduits to the atmosphere: implications for tundra carbon budgets. Science, 1991, 251: 298～301
+[11]Curtis P S, O’Neill E G, Teeri J A, et al. Belowground responses to rising atmospheric CO2: Implications for plants, soil biota and ecosystem processes. Plant Soil, 1994, 165: 1～6
+[12]Oechel W C, Cowles S, Grulke N, et al. Transient nature of CO2 fertilization in Arctic tundra. Nature, 1994, 371: 500～503
+[13]O’Neill E G. Responses of soil biota to elevated atmospheric carbon dioxide. Plant Soil, 1994, 165: 55～65
+[14]Kirschbaum M U F. The temperature dependence of soil organic matter decomposition, and the effect of global warming on soil organic C storage. Soil Biol Biochem, 1995, 27: 753～760
+[15] Daubenmire R, Prusson D. Studies on the decomposition of tree litter [J]. Ecology, 1963, 44: 585～592
+[16] Witkamp M. Decomposition of leaf litter in relation to environment, microflora, and microbial respiration [J]. Ecology, 1966, 47: 194～2o1
+[17] Meentemeyer V. Macroclimate and lignin control of litter decomposition rates [J]. Ecology, 1978, 59:465～472
+[18] Ruark G A. Modelling soil temperature effects on in situ decomposition rates for fine roots of lobolly pine [J]. For Sci, 1993, 9:118～129
+[19] Van Cleve K, Oechel W C, Hom J L. Response of black spruce (Picea mariana) ecosystems to soil temperature modifications in interior Alaska [J]. Can J For Res, 1990, 20: 1530～1535
+[20] Peterjohn W T, Melillo J M, Steudler P A, et al. Responses of trace gas fluxes and N availability to experimentally elevated soil temperatures [J]. Ecol Appl, 1994, 4: 617～625
+[21] Harte J, Torn M, Chang F. Global warming and soil microclimate: results from a meadow warming experiment [J]. Ecol Appl, 1995, 5: 132～150
+[22] Lukewille A, Wright R F. Experimentally increased soil temperature causes release of nitrogen at a boreal forest catchment in southern Norway [J]. Global Change Biol, 1997, 3: 13～21
+[23] Rustad L E, Fernandez I J. Soil warming: consequences for foliar litter decay in a spruce-fir forest in Maine, USA [J]. Soil Sci Soc Am J, 1998, 62: 1072～1080
+Received data：1999-09-12
+。
+表2　不同时期补充供水的穗长、穗粒重、千粒重、产量、补灌效率
+处理穗长/
+cm穗粒重/
+g千粒重/
+g产量/
+(kg.hm-2)水产值/
+(元.t-1)补灌效率/
+(kg.mm-1.hm-2)
+未补灌(CK)13.12.62.81726.5―0
+拔节期补灌14.64.13.02749.54.7734.05
+始穗期补灌13.73.83.02578.53.2328.35
+灌浆期补灌13.33.43.12311.52.7019.50
+
+4.3　旱地地膜玉米集流补灌效益研究
+　　1997年在定西唐家堡进行了地膜玉米集流补灌试验，以极早熟玉米良种新玉6号为指示作物，分播前管灌40mm，播前点浇5mm，大喇叭口期滴灌40mm和对照（不灌）4种处理，随机排列，重复3次，其它管理类同于大田。
+2.2 不同施氮量的氮肥淋溶损失
+　　随着施氮量增加，每次淋溶均表现出氮的淋失量增加，但淋失率却下降。点浇5mm最经济实惠,在水资源极度贫乏的半干旱区值得推广。
+作者单位：曹国(甘肃省农业科学院旱地农业研究所.兰州市.730070）
+参考文献
+　[1]赵松岭．集水农业引论．西安：陕西科学技术出版社，1996
+　[2]马天恩，高世铭．集水高效农业．兰州：甘肃科学技术出版社，1997
+　[3]高世铭．旱地作物补充供水及覆盖保水效果研究．西北农业学报，1995(2):59-63
+　[4]文军，朱生金．青海省东部干旱山区雨水集蓄与利用．水土保持通报，1998（4）：53－56
+收稿日期：1998-12-16

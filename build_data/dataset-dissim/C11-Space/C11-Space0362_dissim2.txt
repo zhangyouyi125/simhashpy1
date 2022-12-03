@@ -1,0 +1,183 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1999年　第14卷　第1期　VOL.14　No.1　1999
+
+
+
+扩压器叶片形线逆命题设计的一种新方法
+　　樊会元　王尚锦　席　光
+摘要：应用遗传算法结合神经网络技术通过对候选叶片表面速度分布与目标速度分布之间误差的极小化，求解给定表面速度分布下的扩压器叶片形线。叶片形线利用Bezier曲线参数化表示，候选叶片形线的流场分析由BP神经网完成。以上各图中的Ti，δ，NPR，
+Cfg，Cfgx，Pu，Pd和Pt分别表示喷管的矢量推力、矢量角、压比、总推力系数、轴
+向推力系数、上、下壁面压力和进口总压。
+主题词：扩压器　神经网络　叶片　设计
+分类号：TH452
+A NEW INVERSE DESIGN METHOD
+OF DIFFUSER BLADES PROFILE
+Fan Huiyuan，Wang Shangjin，Xi Guang
+(Xi′an Jiaotong University, Xi′an, 710049)
+ABSTRACT　A genetic algorithm combined with a neural network technique is proposed to search for turbomachinery diffuser blade profile under the condition of a given velocity distribution on its surface.Such a new inverse method works through minimizing the error between surface velocity distribution of candidate blades and the target velocity distribution.For ease in employing genetic algorithm,the blade profiles searched are parameterized with Bezier spline curves.The flow analysis of the candidate blades is carried out by BP neural networks which have been trained with a set of samples.The proposed approach is demonstrated through the application to a diffuser with two-dimensional height-and thickness-constant blades.The simulations show that the new method is not only feasible,but also reliable and effective.
+Key　Words　Diffusers　Neural networks　Blades　Design
+1　引　言
+　　透平机械扩压器叶片的逆命题设计一般是给定叶片表面速度分布（下称SVD（Surface Velocity Distribution))或压力分布，通过一定方法直接构造叶片。由于矢量喷管流场的复杂性，用解析法和试验法建模都存在许多
+困难。近几年较多被采用的逆命题方法还有最优控制和最优化类方法［1，2］。由于这些方法多为梯度类方法，因而不能有效处理多极值和非连续目标函数问题(流体机械逆命题设计问题多属此类问题)。研究者们一直在寻找更好的逆命题设计方法。图6～图8表示流场计算结果和网络输出，曲线1表示神经网络输出，曲线2表
+示流场计算结果，两者能够很好地吻合。   
+主题词：  喷管  矢量控制  数学模型  有限元法   神经网络
+分类号：  V233.7
+
+    带有推力矢量的飞行／推进系统综合控制和矢量喷管控制律研究必须建立矢量
+喷管的数学模型。神经网络技术是模拟生物神经元结构和人脑机制的一种计算策略，目前在流体工程中的应用也初见端倪［6，7］。本文应用GA结合神经网络技术实现透平机械扩压器二元叶片逆命题设计。在叶片目标SVD给定情况下，一个由染色体表示的个体(候选叶片)组成的种群在GA算子的作用下朝目标SVD与候选叶片SVD之间误差的极小化方向进化，最终求得具有目标SVD的叶片形线。在GA进化中，两个经训练的误差反向传播神经网络(BP网)用于完成对候选叶片形线下扩压器的流场计算。BP网训练所需的样本由搜索空间中人为构造若干叶片形线以及采用已有程序对相应流场进行分析而获得。所提出的方法应用于一实际离心压缩机平行直壁扩压器的等厚叶片设计。结果显示，只要任给一个可行SVD，该方法可以成功的求得满足要求的叶片形线。
+2　GA的应用
+　　GA通过对由若干个体组成的种群利用基本生物进化准则进行进化来求解问题。现就扩压器叶片形线逆命题设计问题，建立应用GA的求解方法。
+2．1　叶片形线参数化及编码
+　　当GA被用于求解一个实际的设计问题时，首先须将每一个设计变量以有限长字符串编码。设计变量的某组编码头尾相接组成的长串即为代表某一个体（候选设计）的染色体。本文中个体为候选叶片形线，叶片形线被参数化为由很少的变量表示。本文采用Bezier样条曲线来参数化叶片形线。为此，物理平面上的环列扩压器叶栅须由(1)式被保角地变换为映象平面
+
+
+图1　映象面上叶片形线及参数示例
+上的直列叶栅。
+Z=log(Z′／R1)／log(R2/R1)　(1)
+式中：Z′代表物理平面，R1和R2代表扩压器进口和出口半径，Z代表映象平面。候选叶片形线首先在映象平面产生，然后，由(1)式的逆变换变回到物理平面作为实际候选叶片形线。设在映象平面叶片形线由4次Bezier曲线刻画，因此其形状可由相应的Bezier5边形确定。采用加权形式的梯度下降法调整学习参数的公式为：
+
+X=X0-e／X ， X=［Wi,j,k，θi,k，λi,k，φi,k］T
+
+(e)/(X)=［（μ1,1(e1)/(Wi,j,k)）  （μ2,1(e1)/(θi,k)）  
+（μ3,1(e1)/(λi,k)）  （μ4,1(e1)/(φi,k））］T
+
+μ1,1=｜e1｜η1  ，  μ2,1=｜e1｜η2   ，  μ3,1=｜e1｜η3  ，  μ4,1=｜e1｜η4
+
+其中μ1,1，μ2,1，μ3,1，μ4,1为输入、输出对误差的加权值；η1，η2，η3，
+η4为适当非零常数。其中Bn,i=cinti(1-t)n-i，而t是曲线参数，其值取为0≤t≤1。为了既保证形线的任意性又简化计算，P0固定于坐标原点，即P0(0，0)，P2和P4点在x方向固定，而在y方向可变，且x2=0.5，x4=1。P1和P3在x方向可变，但在y方向接受叶片入口角和出口角约束。设叶片入口角和出口角分别为θ1和θ2，则可得y1=(tgθ1)x1，y3=(tgθ2)x3+tgθ2-y4。这样，由Bezier曲线表达的叶片形线被其多边形顶点中的四个未知坐标参数x1，y2，x3，y4确定。
+　　由上述任意四个叶片形线参数组成一个四维向量X=(x1　x3　y2　y4)代表一个体。采用二进制编码方案对每个参数编码，即可构成个体染色体。
+2．2　BP网模型
+　　BP网由于具有良好的函数逼近特性而被本文用于进行已知叶片形线下的流场分析。为简化网络结构从而节省训练时间，将候选叶片的SVD分为吸力面和压力面两部分考虑。设SVD在这两个面上的部分可以分别用5次多项式拟合。由此，本文建立了两个BP网分别用于求解叶片吸力面和压力面的SVD。两个网络均具有4-8-8-6结构形式（即包括一个输入层，两个隐层和一个输出层）。4个输入单元分别代表候选叶片形线参数x1，x3，y2和y4，6个输出单元分别代表吸力面或压力面SVD的5次多项式系数。在本文下节所述给定流动条件和扩压器结构尺寸下，利用改变叶片形线参数的方法随机产生叶片形线共200个。用依据势流理论和边界元方法开发的叶栅分析程序，在物理面上对这些叶片的流场进行分析，得出每个叶片形线所对应的速度分布参数(拟合速度分布的多项式系数)。由叶片形线参数和相应吸力面和压力面SVD多项式系数组成两组样本对各200个，由每组中各随机抽取100个作为训练样本集对所建网络分别进行训练，采用BP算法修正网络权值。训练过程在一个586微机上进行，当两个网络训练样本集上的输出误差平方和≤0.20时，结束训练。用各自的100个剩余样本对对训练后的网络进行检验，网络的输出误差平方和均≤1.0，证明训练效果良好。经训练的两个BP网只要给其输入一个叶片形线参数(只要该参数在训练样本张成的空间内)，便可立即输出相应的吸力面和压力面SVD的多项式系数。
+
+男  28岁  博士生  西安市西北工业大学动力与热力工程系709教研室   710072
+参考文献
+1Richard J R,Laurence D L.Static Internal Performance Including Thrhust 
+Vectoring and Reversing of Two-Dimensional Converging-Diverging Nozzle.N84-18165
+2Jameson A,Schmidt W,et al.Numerical Solution of the Euler Equation by 
+Finite Volume Methods Using Runge-Kutta Time Stepping Schemes.AIAA:81-1259,1981
+3Nguyen D H,Widrow B B.Neural Networks for Self-Learning Control Systems.
+IEEE Control Systems Magzine,1990:18-23
+4刘小勇，樊思齐．采用BP网络辨识航空发动机模型．航空动力学报，
+1996，11(2)：153-156
+
+1997年1月收稿；1997年5月收到修改稿。本文中令GA极小化目
+标函数：K(X)＝∫R2R1(Vt-Va)2dR　(2)
+式中：Vt代表目标SVD，Va代表候选叶片形线的实际SVD。   
+主题词：  喷管  矢量控制  数学模型  有限元法   神经网络
+分类号：  V233.7
+
+    带有推力矢量的飞行／推进系统综合控制和矢量喷管控制律研究必须建立矢量
+喷管的数学模型。计算个体适应值时，须先对染色体进行解码，再利用BP网求解相应候选叶片形线表面的SVD。然后由(2)和(3)式计算适应值。在神经网络中用广义S型函数描述神经元的输入、输
+出特性，即
+oi,k=θi,k／［1+exp（-λi,kneti,k）］ ， neti,k=Wi,j,koj,k-1+φi,k           (2)
+
+其中oi,k，neti,k，θi,k，λi,k，φi,k，Wi,j,k分别表示k层i节点输出、输入、
+饱和值、调节S型函数的斜率、阈值以及k-1层j节点对k层i节点的权值。一个循环（进化代）可以包括自然遗传学中的许多操作，本文使用其中三个最基本的操作：选择、杂交和变异。亦即本文GA方法的一个完整进化由选择、杂交和变异三步组成。选择是按照适应值挑选父本的过程。适应值越高的个体被选上的可能性越大。
+
+假设σi,k=-e1／neti,k ， σi,k=-e1／oi,k             (4)
+
+则由(2)～(4)式可以得到与e1有关的学习参数偏导数：
+
+e1／X=［-σi,koj,k-1 -ξi,k（oi,k／θi,k -ξi,koi,k（1-oi,k／θi,kneti,k -σi,k］T
+
+其中e1／X=［e1／Wi,j,k  e1／θi,k  e1／λi,k  e1／φi,k］T      (5)
+
+(5)式中除了σi,k和ξi,k外，其它量均可在前向通道计算得到，σi,k和ξi,k
+通过误差在网络中反向传播计算到。而未被选上配对的父本染色体同时被直接考贝为子个体。变异是所有子个体按照变异概率对基因(二进制字节值)的改变。变异过程中染色体的所有字节值被检查是否需要改变，若改变则由0变1或者相反。
+3　应用实例及讨论
+　　方法应用于一实际离心压缩机扩压器场合。采用加权形式的梯度下降法调整学习参数的公式为：
+
+X=X0-e／X ， X=［Wi,j,k，θi,k，λi,k，φi,k］T
+
+(e)/(X)=［（μ1,1(e1)/(Wi,j,k)）  （μ2,1(e1)/(θi,k)）  
+（μ3,1(e1)/(λi,k)）  （μ4,1(e1)/(φi,k））］T
+
+μ1,1=｜e1｜η1  ，  μ2,1=｜e1｜η2   ，  μ3,1=｜e1｜η3  ，  μ4,1=｜e1｜η4
+
+其中μ1,1，μ2,1，μ3,1，μ4,1为输入、输出对误差的加权值；η1，η2，η3，
+η4为适当非零常数。神经网络通过学习适当调整学习参数Wi,j,k，θi,k，
+λi,k，φi,k使神经网络输出值与通过流场计算得到的Ti，Cfg，δ之间的el和e趋
+于极小。
+　　为了获得可行叶片形状，本例型线参数取值界定为0≤x1≤0.5，0.5≤x3≤1.0，0≤y2≤1.2，0.8≤y4≤2.0。变量编码的长度取决于要求的精度。设一实变量区间由长度为l的二进制数编码，则该变量区间被等分为2l-1个子区间。
+
+１  流场计算及结果
+
+    图1为矢量喷管几何模型简图［1］。如对参数x1，设要求计算精度为小数点后3位，则意味着区间［0，0.5］应至少被等分为(0.5-0)×100=50个子区间。显然，x1编码所需要的二进制数长度至少为6(因为有26=64＞50)。
+
+（责任编辑  魏星禄）
+。这种建模方法可以得到矢量喷管在不同状态下的空间域连续的统
+一数学模型；也适用于不同类型矢量喷管的建模。本例中的选择过程采用标准轮盘赌方法。
+
+２ 统一数学模型
+
+    假定喷管进、出口条件不变，矢量喷管的数学模型为：
+
+Ti=f1（α，β1，β2） ， Cfg=f2（α，β1，β2） ， δ=f3（α，β1，β2）    (1)
+
+f1，f2和f3是非线性函数，而三层神经网络能够逼近任意非线性，所以本文采用3
+个3层网络来逼近以上3个函数。赌轮以随机方式转动以确定个体是否被选为父本。杂交采用4点杂交模式，每个形线参数的基因段同时进行杂交运算。
+
+    通过网络不断学习，最终最终得到了以神经网络描述形式的矢量喷管统一数学
+模型。神经网络通过学习适当调整学习参数Wi,j,k，θi,k，
+λi,k，φi,k使神经网络输出值与通过流场计算得到的Ti，Cfg，δ之间的el和e趋
+于极小。
+　　在BP网训练样本所张成的空间中，人为构造了若干不同的叶片形线(下称原始叶片形线)，由求取BP网训练样本的同一流场分析程序求解出相应的SVD。以这些SVD为目标SVD，用本文方法求解满足这些速度分布的叶片形线。方法由Matlab语言在一个586个人计算机上实现。以上各图中的Ti，δ，NPR，
+Cfg，Cfgx，Pu，Pd和Pt分别表示喷管的矢量推力、矢量角、压比、总推力系数、轴
+向推力系数、上、下壁面压力和进口总压。本文选取其中四个叶片形线情况(Case1，Case2，Case3和Case4)予以报导。四个叶片形状参数列于表1。
+
+
+
+图2　由GA方法所求叶片形线与原始叶片形线对比
+表1　原始叶片形线参数
+Casex1x3y2y4
+1
+2
+3
+40.20
+0.10
+0.23
+0.080.90
+0.80
+0.93
+0.931.00
+0.60
+1.15
+0.600.90
+1.10
+1.85
+1.85
+
+
+
+图3　由GA方法所求叶片给定SVD与实际SVD对比
+　　GA进化150代后所求得的叶片形线与原始叶片形线对比于图2。此时GA所求叶片的SVD与相应目标SVD示于图3。图3中纵坐标为无因次叶片表面速度，其中V代表实际速度值，V0代表扩压器入口气流速度值、横坐标为扩压器相对子午截距，其中L代表点至叶片前缘实际截距，LC代表前后缘之间截距。
+
+    考虑输出层，并由(2)和(3)式得
+
+σl,n=(d1-ol,n)ol,n(1-ol,n/θl,n)λl,n ， ξl,n=dl-ol,n             (6)
+
+对于隐层有
+
+ξi,k=（σj,k+1+Wi,j,k+1） ， σi,k=ξi,koi,k1-(oi,k)/(θi,k)λi,k           (7)
+
+k层ξ取决于k+1层的σ，计算时从输出层逐层计算到输入层，在同一层ξ可以并处理。图4显示4种情况下，GA进化过程中最好适应值和种群平均适应值的演变情形，从中可以看出遗传算法种
+
+
+图4　GA进化过程中最好个体适应值和种群平均适应值演变情形
+群的整体进化特征和个体的适者生存特征。
+4　结　论
+　　提出的扩压器叶片形线逆命题设计新方法，在叶片表面速度分布给定时，可满意地求得相应叶片形状。提出的方法除具有遗传算法固有优点外，由于神经网络技术的采用，大大缩短了遗传进化过程中流场分析所占时间，提高了数值计算效率。方法稍加改动即可推广到机翼形叶片和三元叶片的逆命题设计。对其中的目标函数形式和流场分析程序等作相应变化，方法的思想亦可以用于求解更为复杂的流体机械设计问题。
+作者简介：樊会元　男　35岁　博士生　西安交通大学能源与动力工程学院机泵中心710049
+作者单位：　西安交通大学
+参考文献
+［1］　Venkataraman P.Inverse Airfoil Design Using Design Optimization. AIAA-96-2503-cp,1996
+［2］　Lewis J C,Agarwal R K.Airfoil Design Via Control Theory Using Full Potential and Euller Equations.AIAA-96-2483-cp,1996
+［3］　Obayshi S,Tankanshi S.Genetic Optimization of Target Pressure Distribution for Inverse Design Methods.AIAA Journal,1996,34(5):881-886
+［4］　Quagliarella D,Cioppa A D.Genetic Algorithm Applied to the Aerodynamic Design of Transonic Airfoils.Journal of Aircraft,1995,32(4):889-890
+［5］　Obayashi S,Tsukahara T.Comparison of Optimization Algorithm for Areodynamic Shape Desian.AIAA-96-2394-cp,1996
+［6］　Prasnth R K,Whitaker K W. Neuromorphic Approach to Inverse Problems in Aerodynamics.AIAA Journal,1995,33(6):1150-1152
+［7］　Whitaker K W.Specifying Exhaust Nozzle Contours with a Neural Network.AIAA Journal,1993,31(2):
+收稿：1998年1月
+修稿：1998年4月
+责任编辑：杨再荣

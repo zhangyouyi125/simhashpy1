@@ -1,0 +1,110 @@
+信息与控制
+INFORMATION AND CONTROL
+1999年 第28卷 第3期 Vol.28 No.3 1999
+
+
+
+基于信息化的并行设计研究*
+唐敦兵　李东波　张世琪
+　　摘要：提出了在并行设计中信息进化的观点，以信息进化矩阵为基础，导出了设计过程中的各活动信息调整量模型，研究了并行设计过程中耦合活动集从迭代到收敛的规律，为并行设计的规划和控制提供了理论依据。
+　　关键词：并行设计，信息进化，耦合
+　　中图分类号：TP14　　　　　　文献标识码：B
+A RESEARCH ON CONCURRENT DESIGN BASED ON
+INFORMATION EVOLUTION
+TANG Dunbing　LI Dongbo　ZHANG Shiqi
+(School of Manufacturing Engineering , Nanjing University of Science & Technology, Nanjing 210094)
+　　Abstract　The view of information evolution in concurrent design process is put forward in this paper. Based on the information evolution matrix, the information evolution model in concurrent design process is established. And the convergence law of coupled activities in concurrent design process is presented by analyzing the information evolution matrix, which can give theory guidance to control and plan the concurrent design
+　　Key words　concurrent design, information evolution, coupling
+　　1　引言
+　　产品设计从根本上决定着产品的内在质量和生产成本，研究者们一直没有停止对新的、有效的设计理论和方法学的探索。目前，并行设计方法的研究与实施正受到学术界和企业界的广泛重视，它的指导哲学是在设计阶段尽可能地同时考虑产品生命周期中的众多因素，尽早地发现设计中可能出现的问题并加以解决，实际上是希望以设计初始阶段局部过程的反复与迭代来克服传统设计中全局的较大的反复与迭代。然而，对设计过程的这种组织方法，必然会增加设计过程管理的复杂性与综合性。因此，有必要从本质上揭示并行设计的内在规律，确定有效的控制和管理方法，否则，如果因为局部过程的反复与迭代周期过长，则会造成整个设计周期的加长，甚至导致设计过程的发散。在传统的顺序设计中，必须等上游的设计活动完成以后，在能获取完整信息的情况下，下游活动才开始进行，否则，下游活动无法进行。但在并行设计中，设计活动是并行进行的（并不等于同时进行），大部分时间里获得的都是并不完整的设计信息。从生命系统理论的观点来看，随着并行设计中耦合活动迭代过程的逐渐收敛，设计信息是通过不断地调整，逐渐由不完整状态进化到完整状态的[5,6]。因此，本文提出一种新的鲁棒故障检测策略，其结构如图1所示。
+　　2　有关信息进化的基本概念
+　　2.1　信息量大小的度量
+　　为了能度量活动间信息的流量，将活动间的信息交互看作是以信息发送和接受的形式进行的。并行设计中的每个活动的进行实际上可看作是一系列的决策过程，这种决策可能需要其它活动的信息才能作出，信息量的大小反映在这种信息帮助决策的贡献大小上。如果将决策的对象看作一个随机事件，其概率为P(x)，按照信息论的观点[3]，则信息量大小可用I(x)表示：
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(1)
+　　由（1）式可见，对某个活动而言，帮助决策的对象出现的概率越大，则信息量就越小，反之，信息量就越大。
+　　2.2　信息进化的假设
+　　为了便于研究，对并行设计的实际过程进行了一定的简化和假设：
+　　（1）在并行设计中耦合迭代的各个阶段，每个活动都独立地并行进行一次［7］；
+　　（2）耦合活动集中，每一个活动的进行必然引起和其它活动间不同程度的信息调整，在迭代过程中，假设信息调整量保持不变，即信息调整量线性假设；
+　　2.3 信息调整向量
+　　每经过一次迭代，所涉及到的活动都要进行信息调整，正是在这种不断调整的过程中设计信息由不完整状态逐渐进化到完整状态的，而信息调整量的大小表明了其迭代工作量的大小。信息调整向量ΔIt是N×1维向量，N对应耦合集中活动的数目，ΔIt所含元素ΔIit表示在迭代过程的t阶段，i活动需要完成的信息调整量。可用一个三层RBF神经网络来实现，整个RBF神经网络控制器的输入输出特性为非线性映射，即
+　　　　　　　　　　　　　　　　　　(5)
+其中为输入向量，n+m为输入节点个数，s,n分别为隐层和输出节点数，wji为输出层线性组合的权重，宽度ρj为一正标量，cj为隐层节点中心，隐层的非线性激活函数Ψ(.)取为正态分布的高斯函数：
+　　假设1　在某一紧集上，RBF神经网络可对式（2）中的连续非线性函数ψ(x,u,t)进行任意逼近，即存在理想权矩阵W*，使得ψ(x,u,t)=W*Ψ(x,ρ)。ΔI表示整个迭代过程中信息调整总量。
+　　2.4 信息进化矩阵
+　　信息进化矩阵C是一个M×M阶方阵，M表示耦合集中活动的数目。但这些方法仅能适用于线性的被控对象，尽管近年来对非线性系统的故障检测也取得了一定的研究成果［2］，然而对于一般的非线性系统仍缺乏有效的检测手段。由信息进化的假设，它的元素即信息进化系数在迭代过程中保持常量。
+　　信息调整总量为
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(4)
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(5)
+　　信息调整总量ΔI表示了由于耦合迭代引起的整个设计过程任务量的增加，因而信息调整总量标识了迭代过程的收敛性。
+　　另外，信息进化矩阵主要是依据耦合设计活动间联系的强弱来建立的。系统在正常情况下它接近于零。假设耦合活动集中有M个活动a1,a2,…,aM，每个活动ai从其它活动中获取的信息量分别为：
+
+其中I′ii=0,即设计活动本身的信息传递为零。
+　　从信息发送的角度看，每个活动ak可能向M个活动发送信息，信息量分别为：
+
+其中Ikk=0。
+　　2　问题描述
+　　考虑如下仿射非线性动态系统
+　　　　　　　　　　　　　　　　　(1)
+其中，为有界故障向量，即为连续可微向量或矩阵函数。由矩阵论[8]的有关知识可知，对于方阵C，存在特征结构矩阵Λ和相对应的特征向量矩阵S，并有如下关系
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(10)
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(11)
+将（11）式代入（5）式得
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(12)
+　　通过信息进化矩阵的对角化，建立了迭代过程中信息调整总量与信息进化矩阵特征值及其特征向量之间的关系。信息调整总量所代表的耦合迭代过程的收敛性，可以通过C的特征结构矩阵的收敛性表示。研究领域为鲁棒与自适应控制，以及高精度伺服控制。定义状态估计误差
+，则该观测器的设计问题就是选择合适的L阵使估计误差渐近趋于零，以下定理给出了观测器系统稳定的条件。
+　　由（13）式和（14）式有
+　　　　　　　　　　　　　　　　　　　　　　　　　　(15)
+（15）中的E为单位矩阵，（14）式进一步变化为
+　　　　　　　　　　　　　　　　　　　(16)
+将（16）式代入（15）式得
+　　　　　　　　　　　　(17)
+　　(17)式表明信息调整总量的收敛规律取决于1/(λi-1)(i=1,2,…,n)的变化规律。
+　　信息进化矩阵的特征值对应了耦合活动间相互作用的一种作用方式，特征值的大小定性反映了信息调整总量收敛的趋势［7］，也反映了信息进化的速度快慢。
+　　(1) 实特征值对信息进化的影响
+　　当λ=a∈[-1，1]时，负的特征值对信息进化有较小的影响，正的特征值对信息进化具有重要的影响，a值越大，则1/(1-a)的值越大，表示迭代过程收敛越慢，则信息进化速度也越慢，并行设计中的信息处于不完整状态的时间越长。
+　　(2) 复特征值对信息进化的影响
+　　若λ=a+bi，a,b∈R
+　　　　　　　　　　　　　　　　　　　　　　　　(18)
+　　若b≠0, 且a2+b2＜1，有
+　　　　　　　　　　　　　　　　　　　　　　　　　　　(19)
+　　又
+　　　　　　　　　　　　　　　　　　(20)
+通过（18）、（19）、（20）式的变化，复特征值对信息调整量的影响，可转化为对其实部的作用，复特征值实部的增大将使迭代过程收敛减慢，也使信息进化速度减慢。
+　　周　川，29岁，博士研究生。
+　　快速的信息进化表明在迭代过程的早期各耦合活动就能得到较为完整的信息，因而可以根据其它活动较为正确的结果进行调整，使得迭代过程能在较短的时间内收敛。慢速的信息进化与此相反。
+　　关键词：故障检测，神经网络，观测器，鲁棒性
+　　中图分类号：TP206　　　　　　文献标识码：B
+ROBUST FAULT DETECTION FOR A CLASS OF NONLINEAR SYSTEM
+BASED ON NEURAL NETWORKS OBSERVER
+HU Shousong　ZHOU Chuan
+(Department of Automatic Control, Nanjing University of Aeronautics and Astronautics, Nanjing 210016)
+HU Weili
+(Department of Automatic Control, Nanjing University of Science and Technology, 210094)
+　　Abstract　A new type of non-linear observer-based robust fault detection and isolation (FDI) using neural networks is presented in this paper. Firstly, a radial basis function neural networks is used to approximate the nonlinear item of the monitored system to improve the accuracy of state estimation, and the state estimation error is proved to be zero asymptotically. On the other hand, a neural network classifier is applied to identify the type and location of faults. In order to improve the robustness of fault classification, the neural network has been trained with noise injected inputs and the generalization capability an remarkably be enhanced. Therefore, this FDI strategy has good robustness against modeling error and environment disturban-ce. At last , this method is applied to faults detection of fighter aircraft with structure damage, and simulation results reveal that this FDI strategy is effective.
+　　Key words　fault detection， neural networks， observer， robustness
+　　1　引言
+　　基于观测器或Kalman滤波器的故障检测与隔离（FDI）在自动化过程中得到了广泛的研究与应用［1］。
+
+
+图1　特征值对迭代收敛性的影响
+
+图2　信息进化示意图
+　　另外，与特征值相对应的特征向量则定量地描述了耦合活动间相互作用的程度，即各耦合活动在收敛迭代过程中对信息进化的一种影响率。特征向量的元素表现了耦合活动对信息调整总量的影响程度，不同的元素值则表明了各活动对信息进化的影响程度的差异。
+　　4　结束语
+　　本文提出了并行设计中信息进化的观点，以信息进化矩阵为基础，推导出了信息调整量模型，进一步揭示了并行设计过程收敛的规律，为并行设计的控制、规划以及并行设计的正确实施提供了理论指导。
+*国防科技预研跨行业基金项目,98J18.1.4BQ026
+作者简介：唐敦兵，27岁，男，博士生。研究领域为CIMS、并行工程等先进制造系统和CAD/CAPP集成技术研究。
+作者单位：南京理工大学制造工程学院　南京　210094
+参考文献
+　1　董　明，查建中，郭　伟。并行工程中的任务组织，系统工程理论与实践，1996，(8)：69～78
+　2　孙晓斌，肖人彬。基于效率的并行设计研究，华中理工大学学报，1997，25，(12):50～62
+　3　崔南方，陈荣秋，马士华。
+　　定理1［3］　对于给定的非线性系统（2）及其观测器（3），如果ψ(x,u,t)满足全局Lipschitz条件且，其中P,Q为正定对称阵，满足Lyapunov方程，则
+　　定理1仅提供对给定L阵来检验估计误差是否收敛的方法，并未指明对给定的常数γ如何选取L才满足γ＜λmin(Q)/2λmax(P)。华中理工大学学报，1997，25(12)：59～62
+　4　Bossak M A, Simulation Based Design, Journal of Materials Processing Technology, 1998,76:8～11
+　5　Krishman V. Managing the Simultaneous Execution of Cuopled Phases in Concurrent Product Development , IEEE Transaction on Management, 1996, 43(2):210～217
+　6　Krishman V, Eppinger S D, Whitney D E. Accelerating Product Development by the Exchange of Preliminary Product Design Information, Journal of Mechanical Design, 1995, 117(4):491～498
+　7　郭　伟。并行设计实施理论与方法的研究. 天津大学博士学位论文，1994
+　8　黄有度，狄成恩，朱士欣。矩阵论及其应用，合肥：中国科学技术大学出版社，1995
+1998-06-23收稿

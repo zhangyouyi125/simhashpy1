@@ -1,0 +1,69 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　Vol.19　No.4　P.58-59
+
+
+
+优化Ｖｉｓｕａｌ Ｂａｓｉｃ查询的方法
+姚卫新
+摘 要： Ｖｉｓｕａｌ Ｂａｓｉｃ允许用户使用结构化语言ＳＱＬ从Ｊｅｔ ｄａｔａｂａｓｅｓＭＤＢ文件中取出数据，本文提出了一些优化查询操作的方法。
+关键词： 查询 ＳＱＬ语言 优化设计
+　　在Visual Basic程序设计中不可避免地要用到查询。这样就充分保证了系统数据管理的安全。
+　　进行分析调研时应注意收集经常型用户意见，照顾到偶然型、间歇型用户；人机交互中对于生疏型用户注意提供在线帮助、软件向导，而对于熟练型、专家型用户则应设计快捷操作方式以满足其需要；对于某些专业力量强的用户可能对系统进行二次开发，因此在系统初期设计时就应尽量降低该部分与核心系统的耦合度，并提供必要的接口。连接（JOIN）使用的字段必须有相同或兼容的字段。管理员可以通过它将数据分析处理后显示或通过有线信道上报。（2）随着数据库中数据量的增加，它就变得比较“零碎”，压缩数据库可以把1个表的数据集中到硬盘的连续页中，提高顺序扫描的执行速度。压缩数据库的例子如下（它将保留1个备份）：
+　　DBEngine．CompactDatabase ″C＼VB＼BIBLIO．MDB″，″C＼VB＼BIBLIO2．MDB″
+　　Kill ″C＼VB＼BIBLIO．BAK″
+　　Name ″C＼VB＼BIBLIO．MDB″ As ″C＼VB＼BIBLIO．BAK″
+　　Name ″C＼VB＼BIBLIO2．MDB″ As ″C＼VB＼BIBLIO．MDB″
+　　如果数据库被频繁更新，最好考虑经常压缩数据库。
+3　查询输出中尽量避免表达式
+　　某个带有表达式的查询输出作为另一个查询的输入时，可能会产生问题。如下例，查询1（Query1）是第2个SELECT语句的输入：
+　　Dim DB As Database
+　　Dim RS As RecordSet
+　　Set DB＝DBEngine．Workspaces（0）．Opendatabase（″Biblio．MDB″）
+　　DB．CreateQueryDef（″Query1″，″SELECT IIF（Au＿ID＝1，′Hello′，′Goodbye′） AS X FROM Authors″）
+　　Set RS＝DB．OpenRecordSet（″SELECT * FROM Query1 WHERE X＝′Hello′″）
+　　查询1中的IIF（）表示式不能被优化，所以第2个SELECT语句中的WHERE条件也不能被优化，故整个查询就不能优化。后台系统识别后送消息给通信解码模块，经解码后显示并存入服务器的相关数据库中。
+4　分组、连接和累计
+　　连接二个表时，如果分组和累计字段名相同，应确保分组字段与累计（Sum，Count等）字段来自同一个表。
+　　例：下面的查询效率较低，因为SUM的字段在Ord表中，而GROUP BY的字段在Cust表中。
+　　SELECT Cust．CustID，
+　　　　　　FIRST（Cust．CustName）AS CustName，
+　　　　　　SUM（Ord．Price）AS Total
+　　FROM Cust INNER JOIN Ord ON Cust．CustID＝Ord．CustID
+　　GROUP BY Cust．CustID
+　　例：下面的查询效率较高，因为SUM和GROUP BY的字段均为Ord．CustID，它们来自同一个表。
+　　SELECT Ord．CustID，
+　　　　　　FIRST（Cust．CustName）AS CustName，
+　　　　　　SUM（Ord．Price）AS Total
+　　FROM Cust INNER JOIN Ord ON Cust．CustID＝Ord．CustID
+　　GROUP BY Ord．CustID
+5　分组字段越少越好
+　　GROUP BY中的字段越多，查询花费的时间越长。使用FIRST（）累计函数有助于减少GROUP BY语句中字段的个数。
+　　效率低的例子：
+　　SELECT Cust．CustID，
+　　　　　Cust．CustName，
+　　　　　Cust．Phone，
+　　　　　SUM（Ord．Price）AS Total
+　　FROM Cust INNER JOIN Ord ON Cust．CustID＝Ord．CustID）
+　　GROUP BY Cust．CustID，Cust．CustName，Cust．Phone
+　　效率高的例子：
+　　SELECT Ord．CustID），
+　　　　　　FIRST（Cust．CustName）AS CustName，
+　　　　　　FIRST（Cust．Phone）AS Phone，
+　　　　　　SUM（Ord．Price）AS Total
+　　FROM Cust INNER JOIN Ord ON Cust．CustID＝Ord．CustID）
+　　GROUP BY Ord．CustID
+6　在连接前嵌套GROUP BY语句
+　　如果连接二个表并且用其中1个表中的字段进行分组，把该SELECT语句分解为2个查询语句更为高效。把带有GROUP BY子句的SECECT语句作为1个嵌套查询加入到上层查询的非分组表中。因此我们采用VC＋＋作为实时测控和定时巡测子系统的开发平台，以最大限度地满足系统效率。
+　　然而，如果有1个表相对比较小（占1－2页面），就不必要对该表建索引。
+　　（2）安全性（security）：指未经许可的人员接近系统和对数据加以控制的程度，包括存取控制、存取审查。
+8　使用可优化的表达式
+　　尽量建立可以使用Rushmore技术进行优化的查询，Rushmore并不会自动地加速所有的查询。
+
+图2　系统需求数据流图
+2．3　系统性能需求
+　　目前该系统一般应用于比较重要的部门，因此在系统设计中必需保证其可靠性和安全性，在条件允许的范围内尽量提高系统效率。另外，这二个操作略有不同：COUNT（*）计算返回的所有行，COUNT（［字段名］）仅计算该字段名不为NULL的行。这样就充分保证了系统数据管理的安全。
+11　避免LIKE中的通配符在开头
+　　如果使用LIKE操作符来寻找匹配的行，通配符不能在开头位置，否则索引不起作用。可以看出Excel在数据分析处理方面还存在着不足。
+13　避免NOT IN与子查询一起使用
+　　NOT IN与子查询一起使用效果非常差，最好将其转化成嵌套查询或使用OUTER JOIN。系统软件结构如图4所示

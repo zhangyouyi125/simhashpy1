@@ -1,0 +1,190 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+智能结构及其控制系统集成优化设计
+惩踔叶　袁国良　陈塑寰
+　　摘　要　将智能结构的振动控制性能指标和集成结构的质量作为目标函数，结构尺寸参数和控制系统的控制参数同时作为独立的设计变量，并施加约束条件，从而将智能结构及其控制系统集成优化设计问题转化为多目标数学规化问题。数值结果表明，利用本文方法设计出的智能结构及其控制系统，能极大地抑制系统的振动。
+　　主题词　智能结构　控制系统　集成优化设计　压电传感元件和执行元件
+THE INTEGRATED OPTIMIZATION OF INTELLIGENT
+STRUCTURES AND CONTROL SYSTEMS
+Wang Zhongdong Yuan Guoliang
+(Department of Agronomy and Agricultural Machinery Agriculture 
+and Animal University of PLA . Changchun . 130062)
+Chen Suhuan
+(Department of Mechanics Jilin University of Technology . Changchun . 130022))
+　　Abstract　Conventional structural sizing variables and elements of the feedback gain matrix are both treated as the independet design variables,the performance index of vibration control and the mass of the integrated structure are chosen as objective functions,and some constraints are included in the optimization.Then,the integrated optimization of intelligent structures and control systems is converted into multiobjective optimization.The numerical results show that the in telligent structure and the control system designed by the present method can greatly suppress the vibration of the structure.
+　　Key words　Intelligent structure Control system Integrated optimization Piezodelectric sensor and actuator
+1　引言
+　　近十年来，常规结构及其控制系统集成优化设计问题吸引了很多国内外研究者，并发表了多篇有关这方面的论文［1-5］。本文针对压电类智能结构的特点，提出了结构及其控制系统集成优化设计的一种新方法。
+4　变结构控制策略
+　　在第i个区间段［ti,ti+1），构造变结构滑动模态超平面为：
+Si(t)=C(ti)X(t)-Wi(t)　　　　　　　　　　　　　　　　(9)
+　　　　　　C(ti)=［C1(ti) C2(ti)］∈Rm×n,C2(ti)∈Rm×m　　　　　　　(10)
+Wi(t)=C(t0)E(t-t0)X(t0)　　　　　　　　　　　　　　　(11)
+式中，C(ti)为第i个区间段的滑态参数矩阵，Wi(t)为滑态超平面的时变因子，t0为系统启控时刻；E(t-t0)为对角阵，eii(t-t0)=exp(βi(t-t0)),βi为期望的特征极点，Re(βi)＜0,i=1,2,…n。
+2　模态空间最优控制系统设计
+压电类智能结构的运动方程表示为［6］
+　　　　　　　(1)
+式中［Ms］、［Mp］、［Kuus］和［Kuup］分别为主结构和压电传感元件及执行元件的质量阵和机械刚度阵，［Kuv］和［Kuu］为主结构和压电材料区的机电耦合刚度阵，［Kvv］为压电材料区的压电刚度阵，［Cs］为系统的结构阻尼阵，［D］为控制力分布阵，{}、{}和{u}分别为结构节点加速度、速度和位移向量，{uc}为控制力向量。
+　　设［M］=［Ms］+［Mp］、［K］=［Kuus］+［Kuup］+［Kuv］［Kvv］-1［Kvu］，则式(1)简化为
+［M］{}+［Cs］{}+［K］{u}=［D］{uc}　　　　　　　　　　(2)
+取前nc个正规化的模态矩阵［Φ］∈Rn×nc，由展开定理得
+　　　　　　　　　　　　　　(3)
+式中{q}为模态坐标
+将式(3)代入式(2)并进行正交变换，则有
+　　　　　　　(4)
+式中［ξ］=diag［ξ1　ξ2　…　ξnc］和［Ω］2=diag［ω21　ω22　…　ω2nc］分别为结构的模态阻尼比对角阵和特征值对角阵,{fmc}为模态控制力。
+当采用独立模态控制法［7］控制模态时，方程(4)可由nc个下面的一阶方程代替
+i+2ξiωii+ω2iqi=fmci　i=1,2,…,nc　　　　　　　　　　　(5)
+引进{zi}={qi　i}T和{umci}=fmci，式(5)可转化为状态空间方程形式
+{i}=［Ami］{zi}+［Bmi］{umci}　　　　　　　　　　　　(6)
+式中
+
+此时对应第i模态的控制力为
+{umci}=-［Gmpi　Gmvi］{zi}　　　　　　　　　　　　(7)
+式中Gmpi和Gmvi为第i个模态增益。
+将式(7)代入式(6)可得对应第i模态的闭环状态空间方程
+{i}=［Amci］{zi}　　　　　　　　　　　　　(8)
+式中
+
+相应于第i模态的控制系统性能指标表示为
+　　　　　　　　(9)
+其中［Qmi］=diag［ω2i　1］和［Ri］=［ri］分别为第i模态向量{zi}和模态控制力向量{umci}的加权阵。
+根据最优控制规律，第i个最优模态控制力可表示为
+{umci}=-［Ri］-1［Bmi］T［Pi］{zi}　　　　　　　　　　(10)
+式中［Pi］为2×2阶加权阵，它满足2×2阶Riccati方程
+［Pi］［Ami］+［Ami］T［Pi］+［Qmi］-［Pi］［Bmi］［Ri］-1［Bmi］T［Pi］=0　(11)
+联合求解式(7)、(10)和(11)，整理得
+　　　　　　　　　　　　(12a)
+　　　　　　　　　(12b)
+3　智能结构及其控制系统的集成优化设计
+　　在智能结构及其控制系统集成优化设计中，将主结构的尺寸参数{Vs}和控制系统的控制参数{Vc}同时作为独立的设计变量，结构振动控制性能指标J及集成结构的质量作为目标函数，并施加以下约束：(1)闭环特征值的实部；(2)闭环阻尼频率；(3)瞬时控制力。
+　　采用主目标优化法，将振动控制性能指标作为主目标函数，集成结构质量转变为约束条件。这样，智能结构的集成优化设计问题可表示为
+min J{Vs},{Vc}　　　　　　　　　　　　　　(13a)
+受性能约束
+m({Vs})≤m0　σi({Vs},{Vc})≤σ0　ωd1({Vs},{Vc})≥ωd0
+　　　　　  　　　　　uci({Vs},{Vc},t)≤uc0　　i=1,2,…,nc　　　　　　　　　　　　　(13b)
+及侧面约束
+VLsk≤Vsk≤VUsk　k=1,2,…,n1　VLcj≤Vcj≤VUcj　j=1,2,…,n2　　　　　　(13c)
+其中，{Vs}={Vs1　Vs2　…　Vsn1}、{Vc}={Vc1　Vc2　…　Vcn2}为设计变量，n1,n2分别为结构变量和控制变量的个数，J、m、σi、ωd1和uci分别为结构振动控制性能指标、集成结构质量、闭环特征值的实部、一阶阻尼频率和瞬时控制力，VUsk、VLsk、VUcj和VLcj分别为结构变量和控制变量的上下限值。
+4　变结构控制策略
+　　在第i个区间段［ti,ti+1），构造变结构滑动模态超平面为：
+Si(t)=C(ti)X(t)-Wi(t)　　　　　　　　　　　　　　　　(9)
+　　　　　　C(ti)=［C1(ti) C2(ti)］∈Rm×n,C2(ti)∈Rm×m　　　　　　　(10)
+Wi(t)=C(t0)E(t-t0)X(t0)　　　　　　　　　　　　　　　(11)
+式中，C(ti)为第i个区间段的滑态参数矩阵，Wi(t)为滑态超平面的时变因子，t0为系统启控时刻；E(t-t0)为对角阵，eii(t-t0)=exp(βi(t-t0)),βi为期望的特征极点，Re(βi)＜0,i=1,2,…n。J越小，结构振动被抑制的效果越好。
+在模态空间中，J表示为
+　　　　　　　　　　　　　(14)
+式中{w}=({q}　{})T,［Qm］=diag(［Ω］2［I］)。
+根据Lyapunov方法，式(14)可以表示为
+　　(15)
+第i个模态振动控制性能指标表示为
+　　　　　　　　　　　　　(16)
+同样利用Lyapunov方法，式(16)简化为
+　　　　　　　　　　　(17)
+式中为矩阵［O］的对角分块阵，并且［Oi］满足Lyapunov方程
+［Qmi］+［Amci］［Qi］+［Oi］［Amci］=［0］　　　　　　　　(18)
+解之可得出［Oi］
+　　设一脉冲力{F}={F0}δ(t)作用在智能结构上，δ(t)为狄拉克函数。
+　　主题词　时变线性系统　全程滑态　变结构控制　分段定常
+ON DESIGN OF GLOBAL SLIDING-MODE VARIABLE
+STRUCTURE CONTROL FOR TIME-VARYING
+LINEAR SYSTEMS
+Zhang Ke
+(College of Astronautics,Northwestern Polytechnical University*Xi'an*710072)
+　　Abstract　A global sliding-mode variable structure control scheme for the time-varying systems is proposed in this paper.By applying the online piecewising algorithm suggested,the time varying systems are firstly transformed into a class of piecewise constant systems.And the global sliding-mode variable structure control for the latter systems is given.The example results prove this scheme is effective.
+　　Key words　Time-varying linear systems Global sliding-mode variable Structure control Online piecewising algorithms
+1　引言
+　　对于定常线性系统的滑态变结构控制理论研究已较为成熟，尤其是采用全程滑态思想设计的滑态超平面和变结构控制律，基本消除了变结构控制中的能达阶段，使得系统的抗参数摄动和外界干扰能力大大提高［1］。
+3.2　闭环特征值实部及闭环阻尼频率
+　　智能结构对应第i个模态的闭环系统的复特征值可表示为
+λi=σi+jωdi　　　　　　　　　　　　　　　　　　　(21)
+式中σi为复特征值的实部，ωdi为阻尼频率。
+根据式(8)，可将对应于第i模态的闭环系统的复特征值问题表示为
+det(λi［I］-［Amci］)=0　　　　　　　　　　　　(22)
+解之得
+　　　　　(23)
+由式(21)，则有
+　　　　　(24)
+3.3　瞬时控制
+考虑t=0时瞬时控制力的峰值。
+由式(4)有
+{uc}=(［Φ］T［D］)-1{fmc}　　　　　　　　　　　　　(25)
+采用状态反馈控制，模态控制力表示为
+{fmc}=-［Gm］{w}=-(［Gmp］　［Gmv］){w}　　　　　　　　　(26)
+式中，［Gm］为模态反馈增益阵，［Gmp］和［Gmv］分别为［Gm］中对应于模态位移和速度的矩阵。
+将式(26)代入式(25)，并考虑式(19)关系，则t=0时，瞬时控制力的峰值表示为
+{uc(0+)}=-(［Φ］T［D］)-1［Gmv］{F0}　　　　　　　　　　(27)
+4　数值示例及讨论
+　　如图1所示为一压悬臂梁结构。主结构上下表面各粘结一层压电材料(PVDF)。在振动控制中，主结构上表面的压电材料层充当分布的执行元件，下表面的压电材料层充当分布的传感元件。主结构及压电材料的材料性质如表1所示。
+5　仿真算例
+　　考虑如下五阶时变多变量控制系统：
+(t)=(A(t)+ΔA(t))X(t)+(B(t)+ΔB(t))U(t)+Dv(t)
+
+
+v(t)是零均值，方差为0.4的白噪声。根据设计指标要求，选择滑态运动期望的极点集为{-5.0，-5.0}，则滑态移动参数为βi=5(i=1,2,3,4,5)。
+　　主题词　时变线性系统　全程滑态　变结构控制　分段定常
+ON DESIGN OF GLOBAL SLIDING-MODE VARIABLE
+STRUCTURE CONTROL FOR TIME-VARYING
+LINEAR SYSTEMS
+Zhang Ke
+(College of Astronautics,Northwestern Polytechnical University*Xi'an*710072)
+　　Abstract　A global sliding-mode variable structure control scheme for the time-varying systems is proposed in this paper.By applying the online piecewising algorithm suggested,the time varying systems are firstly transformed into a class of piecewise constant systems.And the global sliding-mode variable structure control for the latter systems is given.The example results prove this scheme is effective.
+　　Key words　Time-varying linear systems Global sliding-mode variable Structure control Online piecewising algorithms
+1　引言
+　　对于定常线性系统的滑态变结构控制理论研究已较为成熟，尤其是采用全程滑态思想设计的滑态超平面和变结构控制律，基本消除了变结构控制中的能达阶段，使得系统的抗参数摄动和外界干扰能力大大提高［1］。对三种方法设计出来的结构，采用闭环控制后，进行了瞬态位移响应计算，其结果如图2所示。
+2　一般时变线性系统模型
+　　考虑一般形式的时变线性不确定性多变量系统：
+=［A(t)+ΔA(t)］X+［B(t)+ΔB(t)］U+D(t)f　　　　　　　　(1)
+其中，X∈Rn,U∈Rm,f∈Rl,A(t)∈Rn×n,B(t)∈Rn×m,D(t)∈Rn×l,t∈Ω,Ω=［0,∞］。
+　　选择变结构控制律及Lyapunov函数为：
+u=-g(t)×(C(ti)i)-1×sgn(S)　　　　　　　　　　　　(12)
+v=STS/2　　　　　　　　　　　　　　　　　　　　　　(13)
+则由滑动模态可达性条件＜0，推导可得：
+=-g(t)(Si)Tsgn(Si)-g(t)(Si)TC(ti)ΔBi(C(ti)i)-1sgn(Si)
++(Si)T［C(ti)iX+C(ti)ΔAiX+C(ti)Df-i(t)］　　　
+≤-g(t)‖(Si)T‖［1-‖ΔBi‖‖C(ti)‖‖(C(ti)i)-1‖］
++‖(Si)T‖［(‖C(ti)i‖+‖ΔAi‖‖C(ti)‖)‖X‖
+　　　　　　　　　+‖C(ti)D‖×‖f‖+‖(t)‖］＜0　　　　　　　　　　　　　　　(14)
+对于‖ΔAi‖及‖ΔBi‖有：
+‖ΔAi‖=‖Δi+ΔA(t)‖≤‖Δi‖+‖ΔA(t)‖≤ηa‖i‖,t∈Γi　　　　(15)
+‖ΔBi‖=‖Δi+ΔB(t)‖≤‖Δi‖+‖ΔB(t)‖≤ηb‖i‖,t∈Γi　　　　(16)
+则推导可得：
+g(t)=(1-a4)-1{a1‖X‖+a2+a3(t)}+ε　　　　　　　　　　　(17)
+a1=(1+ηa)×‖i‖×‖C(ti)‖　　　　　　　　　　　　　(18a)
+a2=‖C(ti)‖×‖D‖×‖f‖　　　　　　　　　　　　　　(18b)
+a3(t)=‖(t)‖　　　　　　　　　　　　　　　　　　　　(18c)
+a4=ηb×‖i‖×‖C(ti)‖×‖(C(ti)i)-1‖　　　　　　　(18d)
+　　由(17)、(18d)式可见，在控制律计算中要求满足a4＜1成立。A(t)，B(t)时变矩阵中各元素的取值如下：
+　　a11(t)=0.5+0.4sin(t)+0.2t　　　　　　a12(t)=5+0.7(t-2.1)(t-5.6)
+　　a13(t)=0.6+0.4sin(t)cos(0.3t)　　　　a14(t)=-1.5+0.4cos(0.3t)
+　　a15(t)=-0.7+0.2(t-2.0)　　　　　　　 a21(t)=1.81sin(2+t)+1.0
+　　a22(t)=-0.73+1.0　　　　　　　　　　 a23(t)=0.8+0.3sin(t)-0.1t
+　　a24(t)=5-2.1cos(t)　　　　　　　　　 a25(t)=1.1+0.2sin(1.2t)
+　　a31(t)=0.9cos(3+1.3t)+0.2　　　　　　a32(t)=0.7-0.2t
+　　a33(t)=0.2(t-0.3)+1.0　　　　　　　　a34(t)=1.3+sin(2.1t)
+　　a35(t)=5.0+1.3cos(2.2t)　　　　　　　a41(t)=1.39cos(1.0+0.3t)
+　　a42(t)=0.87-0.3(t-2.3)(t+3.1)　　　　a43(t)=0.044t-1.21
+　　a44(t)=2.23+sin(1.1t)　　　　　　　　a45(t)=0.5+0.3cos(1.22t)
+　　a51(t)=0.49sin(3.0+1.3t)　　　　　　 a52(t)=0.7-0.31sin(t)
+　　a53(t)=1.2cos(1.5t-3.0)+0.1(t-2)　　 a54(t)=2.3+0.1(t-2.1)
+　　a55(t)=5.5+2.0cos(1.22t)　　　　　　 b41(t)=8.0+sin(t-2)
+　　b42(t)=1.21+cos(t-3.0)　　　　　　　 b52(t)=6.0+2.0cos(0.9t)
+系统的时间指标为，要求系统调节到原点的时间不大于2.0秒。仿真7秒的结果见图1～图4示。这个结果说明，此时的结构尺寸接近最优尺寸。以上的数值结果说明，采用文中的方法对智能结构及其控制系统进行集成优化设计后，不仅改善了结构振动控制性能及控制系统的性能，而且降低了结构的尺寸，达到了同时优化控制系统，又优化结构尺寸的目的。
+*国家自然科学基金资助项目
+作者单位：王忠东　袁国良：解放军农牧大学农学农机系 . 长春 . 130062
+　　　　　陈塑寰：吉林工业大学力学系 . 长春 . 130022
+参考文献
+1　Hale A L,Lisoeski R J,Dah1 W E.Optimal Simultaneous Structural and Control Design of Manoeuring Flexible Spacecraft.Journal of Guidance,Control,and Dynamics,1984,8(1):86-93
+2　Salama M,Udwadia F.Simultaneous Optimization of Controlled Structures.Computational Mechanics,1988,3:275-282
+3　Miller D F,Shim.J.Gradient-Based Combined Structural and Control Optimization.Journal of Guidance,Control adn Dynamics,1987,10(3):291-298
+4　Mclaren M D,Stater G L.A Covariance Approach to Integrated Structure/Control Optimization.Proceedings of AIAA Dynamics Specialist Conference,Long Beach,CA,1990,189-205
+5　Kajiwarn I,Nagamatsu A.Approach for Simultaneous Optimization of A Structure and Control System.AIAA Journal,1994,32(4):866-872
+6　Suhuan Chen,Zhongdong Wang.Active Vibration Control and Suppression for Intelligent Structures.Journal of Sound and Vibration,1997,200(2):167-177
+7　Thoms H L,Schmit L A.Control Augmented System Synthesis with Dynamic Stability Constraints.AIAA Journal,1991,29(4):619-626
+收稿日期:1998年2月24日
+修回日期:1998年7月15日

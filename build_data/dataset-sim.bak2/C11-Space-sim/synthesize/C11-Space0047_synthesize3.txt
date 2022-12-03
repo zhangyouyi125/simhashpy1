@@ -1,0 +1,31 @@
+从而拓宽了该合金的应用
+　　当然，为了保证交流稳压电源输出稳压精度，则要求e1满足相应的稳定度其中主掌控器采用IBM386微机;位置控制器采用8031作CPU,8155作I/O和定时,AD754作D/A转换,2764作ROM;电机同轴带有20000P/rev的高精度光脉冲编码器作为位置和速率反馈元件,与位置检测板上的防颤、倍频、鉴相和F/V等电路构成速度控制系统;速度控制器单元为带逻辑控制的无环流可控制硅可逆调速系统航空计测技术
+AVIATION MTROSOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+交流保险丝电池的远控接口
+王文海
+　　几乎所有的电气产品和设备均需进行电源变化对其性能影响的试验；但现在市场上的交流稳压电源几乎都没有远控接口，其电流均需进行手动调节，工作很不方便，更不能组成自动测试。。。
+1　工作原理
+　　接口电路的原理见图1。□
+。如采用分段内插的方法，还可得到更高的控制精度。A为正弦电压发生器；输出取样B和输出取样C分别监视Ui和Uo的状态，并与基准电压D在E中进行比较和放大，经模相变换电路F获得与反馈量相关的信号，驱动A产生需要的补偿电压，从而保证输出电压稳定；G是电源滤波器和抑制电路。
+读者服务卡索引号： 120
+作者单位：长城计量测试技术研究所，北京市，100095
+1998-02-23收稿
+。
+　　主题词　粘弹性　模态　桁架　阻尼
+ABSOLUTE VALUE MODAL STRAIN ENERGY 
+METHOD FOR VISCOELASTIC DAMPING 
+CONTROL OF TRUSS STRUCTURE
+Lü Gang Lu Feng Zhang Jinghui
+(Xi'an Jiaotong University.Xi'an.710049)
+　　Abstract　The Modal systemic Energy Method(MSE) and Absolute Value Strain Energy Method(AVMSE) to solve the activation eigenvalue problems approximately are described briefly.The modal damping ratio of space truss structure with added viscoelastic dampers is calculated using both MSE and AVMSE methods for damping control of the structure.The experiment in damping control of a truss structure adding viscoelastic dampers is completed.The consists between the analytical results and experimental results shows that the AVMSE method is more advanced and accurated than the MSE method while the effect of viscoelasticity to the structure is larger for calculating the modal damping ratio of the complex eigenvalue problems.
+　　Key words　Viscoelastic Mode Truss Damping
+1　前　言
+　　模态应变能法(MSE)已被广泛用于计算粘弹性阻尼结构的模态阻尼比［1,2］,这种方法简单、计算量小,可得到粘弹性结构模态阻尼比的近似值,在阻尼结构的动力分析和设计中被广泛采用。
+　　图中，Ui为输入电压；Uo为稳压输出电压。特别是e1由微机控制的D／A板的输出获得时，由于一上电，D／A的寄存器处于随机状态，往往会输出过高或过低的电压，从而使交流稳压电源的工作不正常。。即可用e1来调节交流稳压电源的输出电压。
+3　试验结果
+　　将此接口电路接入由中科院计算所生产的DF5K交流稳压电源上，通过调节e1来实现对该交流稳压电源输出电压的控制。。
+　　A2和A3组成双向精密限幅器，当输入电流e1为负电压，其斜率D3和D4所形成的电压；或当e1为也已电压，其量值小于D5所形成的电压时，D1和均，对电路工作不造成影响；而当输入电压e1超过上述范围时，D1或D2导通，从而对A1的输出限幅。。。此电路的设立是为了防止当输入电压最佳值或过低时，使得交流稳压电源的输出电压过高或过低，引起保护电路动作

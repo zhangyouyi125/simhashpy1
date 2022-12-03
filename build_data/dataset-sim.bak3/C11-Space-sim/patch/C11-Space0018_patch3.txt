@@ -1,0 +1,67 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+星用非金属材料出气污染性质
+原位测试设备研制
+王先荣　柴强　曾克仁　王益
+　　摘　要　成功研制了星用非金属材料出气污染性质原位测试设备，可原位、连续、定量测试星用非金属材料出气可凝挥发物，给出全过程的出气数据。测试系统稳定、测试仪器灵敏、最小可检达4.4×10-8g/cm2。是我国目前唯一的多功位星用非金属材料出气污染高灵敏度原位测试设备。
+　　主题词　非金属材料　出气污染　测试设备
+A SIMULATION EQUIPMENT USED FOR DETERMING THE
+OUTGASSING AND CONTAMINATION PROPERTY 
+OF NON-METAL SPACECRAFT MATERIALS
+Wang Xianrong　Chai Qiang　Zeng Keren　Wang Yi
+(Lanzhou Institute of Physics . Lanzhou . 730000)
+　　Abstract　A simulation equipment used for determing the outgassing and contamination property of non-metal spacecraft materials has been built recently.It is used to measure Collected Volatile Condensable Materials(CVCM) in a simulated space vacuum environment and will give out all the CVCM data of the entire outgassing measuring process.The stability of temperature control system is ±0.1℃.Measure system consists with 4 QCM.The equipment resolution reaches the 4.4×108g/cm2.The main design is as same as the equipment type of NASA and ESA.So that the test and its data could be compared and exchanged internationally.
+　　Key words　Non-metal spacecraft materials　Outgassing contamination　Measurement equipment
+1　引言
+　　近十年来，中国长寿命、高可靠应用卫星的发展，使卫星在轨分子污染问题日益突显。有效预测、防护和控制分子污染危害的措施之一是执行航天工业部部标准《真空中材料挥发性能测试方法》QJ1558-88（参照采用ASTM E595［1］、ESA PSS-01-702［2］），该标准规定了真空环境下材料出气总质量损失（TML）、收集到的可凝挥发物（CVCM）标准测试方法［3］及相应的测试设备［4］。此项标准测试可给出卫星和其它航天器所用非金属材料在轨道真空环境和给定工况下24小时内的总质量损失及可凝挥发物数据（实验前后的称量数据），从而可对多种不同非金属材料的出气污染性质在地面模拟环境下进行测试比较，评价和筛选。进而根据规定指标淘汰出气量级大的材料，选择出气量级较低、污染危害较小的非金属材料初步入选。它的原理框图如图1所示。其中，出气过程影响尤为重要，直接关系着出气污染的过程、量级，并为整星及分系统污染的模拟、计算、长期预报提供重要的直接依据。但上述异位测试设备不具备这种功能，只能提供实验测试前后的数据用作材料出气污染性质的评价和筛选，却不能提供有关材料出气污染过程的任何数据。它通过P1口来实现，具有与外中断INT1电路配置灵活，软件结构简单的特点。
+　　关键词　飞机　称重　传感器　单片机　千斤顶　滑动底盘
+Development and Application of a New Generation of Portable Airplane
+Weighing System
+Chen Kexing,Wang Wenjian
+　　Abstract　This paper presentes a new type of portable airplane weighing system,especially its performance,principle and application.
+　　Key words　Airplane,Weighing,Load cell,Single-chip computer,Hoisting jack,Sliding chassis
+　　在飞机的制造、改装及大修中都必须对飞机进行称重试验，要求给出飞机的重量、重心等参数。从而实现了出气污染全过程的原位、连续、定量测试。有关出气材料受热温度的设定、出气凝结温度的设定、样品仓和收集仓的设计，仍采用与NASA、ESA同类测试筛选设备之相同设定并和异位评价筛选设备相一致。这种设计处理使得原位设备与异位设备衔接一致并可与国际通用设备进行测试比较。根据其偏差值的大小，采用人工智能领域中的产生式控制算法控制输出通道的控制输出量，也就是控制双向晶闸管的导通和截止时间，这样就控制了电热炉输入功率的大小，从而控制了电炉的温度，使其逐渐趋于设定值且达到平衡。设备由真空系统、温控系统和测试系统三大部分组成。
+表1
+
+类型结构操作准确度校准造价
+地中衡复杂简单高复杂昂贵
+小台面较复杂复杂高很难较高
+千斤顶简单简单高简单低
+
+
+　　在以往的千斤顶式飞机称重系统中，最不好解决的是称重的准确度和重复性问题。ICL7135的输出是通过并行口8255读入的。真空室由钟罩和下法兰组件组成。钟罩外装有水循环套以降低真空室内壁温度、沉积材料出气分子，从而减小交叉污染。
+　　关键词　煤样分析　温度控制　流程曲线　控制算法
+Design of Temperature Control System for Coal-sample Industrial Analysis
+Qin Haifeng,Qin Ruijie
+　　Abstract　A temperature control system for coal-sample analysis is introduced in this paper.The hardware is mainly composed of thermocoouple special amplifier,8031 chip microprocessor and its digital power regulating circuit.The software takes intelligence production control algorithm.The practical application shows that all the indexes of the system fully meet the needs of GB212-77.
+　　Key words　Coal-sample analysis,Temperature control,Process curve,Control algorithm
+　　在一些用煤量大的的单位，如热电厂等，为了了解煤的质量，往往要计算煤的固定炭。一般说来，控制周期长于基本周期。机械泵采用2XZ型，机械泵的出气口装有电磁隔断放气阀，以减少机械泵返油。
+②温控系统
+　　样品仓及样品控测温采用两台TDW-3902型电子温度调节器实施。之后继续在815 °C环境下灼绕，每隔20 min取出称重，直到重量变化小于0.001 g为止。在样品仓上设有两个测温点和一个控温点，并采用Pt100铂电阻，尽可能提高控温和测温精度。
+1　飞机称重系统的分类
+　　综合我国目前所使用的飞机称重系统可大致分为下面三大类型：
+　　炒笮偷牡刂泻馐匠浦叵低(机械、电子两种)
+　　承√面可移动式飞机称重系统
+　　城Ы锒ナ椒苫称重系统
+　　现按结构、使用情况、造价等对三种类型的飞机称重系统进行比较如表1。
+③测试系统
+　　采用石英晶体微量天平（QCM）作为测试检测系统。此自行研制的微量天平，采用特定切角、孪生晶片差频技术及特别装配工艺降低温漂，同时采用中规模CMOS数字电路检测显示，使微量天平整机具备温漂小、温区宽、功耗小、分辨率高等多项优良参数。
+3　设备功能及技术指标
+　　齐备功能：原位连续定量测试星用非金属材料出气可凝挥发物率
+　　设备技术指标：
+　　*真空度　　　　　　＜1×10-5Pa(空载)
+　　*控温精度±0.1℃
+　　*测量系统交叉干扰≤1Hz
+　　*测量温漂＜2Hz(4小时内)
+　　*可凝挥发物最小可检4.4×10-8克/cm2
+　　图3给出了某型号所用非金属材料经由设备原位连续定量测试给出的出气可凝挥发物、时间曲线。测试表明，设备功能稳定、灵敏度高、测试数据可靠，确能真实模拟空间真空环境并对星用非金属材料出气污染性质进行原位连续定量测试，从而为综合多种因素进行更深层次的模拟、计算、预测奠定了设备基础。
+
+
+图5　全焊接密封充氮称重传感器
+　　对于姿态称重中的立体重心的计算,我们专门编制了一套计算机解析算法的程序，除了计算立体重心还打印出各种相关数据的称重报告。
+　　该设备除了具备上述测试功能外，还具有材料出气机理的研究功能，有关这一方向的研究结果，将在以后的文章中陆续给出。本系统有四个传感器通道，可进行三点、四点两种支撑方式的飞机称重并计算其水平重心

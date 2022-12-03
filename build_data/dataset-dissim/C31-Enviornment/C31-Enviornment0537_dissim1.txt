@@ -1,0 +1,107 @@
+城市环境与城市生态
+URBAN ENVIRONMENT & URBAN ECOLOGY
+1999年 第12卷 第5期 Vol.12 No.5 1999
+
+
+
+磁絮凝法处理DZA有机废水的研究
+郑学海，李思明
+　　摘要：本文介绍了磁絮凝与磁分离技术，应用该技术能有效处理水中DZA有机物，实现数秒内的快速分离污泥，污泥含水率低。该工艺占地少，工艺简单，管理方便。所开发的“红土”作为磁性接种的磁种，价格低廉、性能独特、大幅节省运行费，拓宽了该技术的应用范围。
+　　关键词：磁絮凝；磁性接种；磁分离；DZA；COD去除；悬浮胶状物
+　　中图分类号：X703　　文献标识码：A　　文章编号：1002-1264(1999)05-0008-03
+Study On Magnetic Flocculation 
+Method in DZA Organic Wastewater Treatment
+ZHENG Xue-hai,LI Si-ming
+(Tianjin Academy of Environmental Sciences,Tianjin 300191)
+Abstract：Magnetic flocculation and magnetic separation techno logy are introduced in the paper.The application of this technology could effic iently treat DZA organics with fast separation of sludge in several seconds and low water-content in the sludge.This technology has small space requirement,sim ple technological process and easy to manage.“Red-soil" developed in the study could be used as magnetic source with low price,specific characteristics and gre atly reduced operation cost.
+Key words：magnetic flocculation；　magnetic separation；　DZA ；　COD removal；　suspended colloid
+1　前言
+　　本文采用磁絮凝与磁分离技术处理有机废水取得独特效果。日资企业东海橡塑，在生产胶管过程中，使用的DZA构成排水中COD的主要来源，排水COD浓度1800　mg/L左右，DZA主要成份由聚烷撑，多胺基烷撑和氧化剂组成，废水处理的主要难点是：(1)经试验采用生物降解、超滤、电凝聚、氧化法等单一技术均难达标排放。(2)采用热解与絮凝混合反应,所形成的胶体颗粒产生热回流不易沉降分离。②EM在好氧条件下能显著或极显著提高污水NH4+-N的硝化程度，当EM加入量为5/1000时效果最好，增幅达37.62%；厌氧条件下，当加入量为1/10000-1/1000时，能极显著增强污水的反硝化作用，NO3--N的去除率约提高14%。(3)现日本小牧工场采用氧化、气浮、加生物处理的流程，工艺复杂，投资大。
+　　本研究通过对DZA的废水特征分析，磁性接种条件试验和絮凝剂筛选及条件控制的研究。
+1　材料和方法
+1.1　材料
+　　供试污水为中南林学院教工南区的生活污水（经化粪池预处理），污染特征见文献［2］。经二年运行均达标排放，本研究的磁絮凝技术及实例对多种工业废水处理也有广泛的应用与推广价值。
+2　磁絮凝处理DZA的研究
+　　经试验发现DZA在热态和碱性条件下具有不稳定性。同对照相比，随着污水中EM加入量的增加，曝气24　h后污水中的CODcr逐渐降低，特别是VEM/V污水的比值为5/10000和1/1000两个处理组的CODcr浓度与对照的差异达到了显著水平（相应的去除率分别达到59.99%和60.42%），表明EM中的有效菌能够促进污水中有机物的降解。如前所述，所形成胶状悬浮物用一般生物与物化方法难于处理达标，本研究采用了磁絮凝法。
+2.1　实验设计与方法
+　　为有效去除废水中DZA，实验方案主要包括：
+　　(1)生产实际状态排水的DZA配制，COD浓度控制在1800　mg/L；(2)最佳相变条件的筛选；(3)磁性接种与混凝反应的控制；(4)磁感应强度与分离效果的试验。
+　　以上条件试验的每个因素变化，均用重铬酸钾法测定COD变化过程。从图1(a)可以看出，不加EM的对照组的污水CODcr由处理前的453.79　mg/L降为220.66mg/L，去除率为51.37%。另外，EM加入后，立即密塞，保持厌氧24h。但是，它对污水中含氮、磷污染物的净化能力如何以及厌氧条件下是否也能起到同样的较好效果。
+3.2　镁离子用量的影响
+　　在实际生产中DZA用纯水配制，这种废水热凝后呈乳状液，不易聚结，但用自来水配制时效果很好。经分析比较后认为二者差异主要是硬度不同。因此在实验中加进微量MgSO4做添加剂，从而使磁絮凝顺利实现。出水清澈透明，COD达标。结果见表2
+表2　Mg2+对COD去除率的影响
+
+Fe3O4
+用量g/L10%NaOH
+用量ml/L聚铁
+mg/LPAM
+mg/LMg2+用量
+mg/L现象COD
+mg/LCOD
+去除率%
+-----原废水1849.5-
+1101026.7稍显浑浊83.495.4
+11010211.1较2#为清55.397
+11010222.1清晰55.397
+
+　　由表2可见在其它条件均相同时，增加Mg2+用量有利于COD去除率的增加。综合考虑，Mg2+用量11.1-22.2　mg/L为宜。
+3.3　磁种与用量的影响
+　　磁种的性质与价格是影响磁絮凝性能与运行费用的重要环节，国外为此采用磁种再生与回用装置而使投资增加。但是，当VEM/V污水比值达到5/1000时，处理后污水的CODcr与对照相差无几，这可能是因为EM本身含有一定量的CODcr（EM菌液中含有大量的糖蜜，据测定，EM菌液的CODcr浓度在30000-40000　mg/L），当污水中EM加入量较大时，必然会显著提高供试污水的原有浓度，而且其提高比例大于微生物数
+。有些制成复合絮凝剂而效果单一，有些带有有害金属成分。本研究所采用的原料是炼钢产生的烟尘，气溶胶凝聚物，总形态为较均匀的细粉，呈棕红色的“红土”。采用电子显微镜扫描，由形貌可见微粒形状以园球形为主，粒径谱分布主要集中在0.5　μm左右（市场产品0.8-1　μm）。其化学成份含铁量高，杂质少，主晶相为r―Fe3O4，有少量亚铁离子以FeO形态存在。见图2。
+
+
+图2　原料原状形貌
+　　FeO的磁化率在7200×10-6（293℃），Fe2O3磁化率在3586×10-6（103℃）。少量FeO存在不影响磁絮凝过程与吸着性能。经大量试验，使用“红土”与市售铁氧体磁粉作磁种，在磁絮凝与磁分离性能方面作平行比较的结果表明，在COD去除率、液体中SS残留、处理液透明度、在磁场吸着能力和使用量等方面“红土”与磁粉均无显著差别。结果见表3
+表3　磁粉与“红土”用量对COD、SS去除的比较
+
+添加量(g/L)COD去除率(%)
+磁粉红土SS去除
+0.596.995.6无色透明
+1.096.496.1无色透明
+
+　　由试验结果可表明：
+　　(1)用红土完全可以替代磁粉作磁种，它来源广、价格极低，仅0.03-0.05元/kg，而磁粉为3-6元/kg。红土的颗粒度与均匀性优于磁粉，经东海橡塑工程二年来使用证明，在制备与反应过程中表现了很好的分散性和稳定性。
+　　(2)实验结果表明，磁种添加量控制在0.5-1.0　g/L即可保证COD去除率及污泥的顺利分离，用量的增减仅影响磁分离机连续多级捕集的次数，不影响COD去除率。
+　　(3)由于红土不引入有害重金属，价格低廉因而无需增加回收再生装置。
+3.4　高分子助凝剂的选择
+　　在筛选与经验的基础上集中对三种助凝剂效果进行比较，实验条件是废水COD为1895　mg/L，聚铁用量10　mg/L，高分子助凝剂用量1.4　mg/L。结果见表4
+表4　高分子絮凝剂对去除率的影响
+
+高分子絮凝剂pH
+8-910-11
+出水
+COD（mg/L）COD
+去除率(%)出水
+COD（mg/L）COD
+去除率(%)
+26#　（阴）58.596.964.396.6
+37-6#　（非）66.396.566.396.5
+进口2540（阴）64.396.6
+
+　　结果表明：阴离子及非离子型高分子絮凝剂的去除率基本相同，国产高分子絮凝剂与进口高分子絮凝剂去除率基本相同。pH为8-9和pH为10-11时，去除率基本相同。从图1(a)可以看出，不加EM的对照组的污水CODcr由处理前的453.79　mg/L降为220.66mg/L，去除率为51.37%。
+3.5　磁感应强度与分离效果
+　　包裹磁种的絮绒体在不同磁场条件下，呈现不同行为，在均匀磁场中颗粒被磁化不易被捕集。要有效吸着捕集颗粒，磁路设计应呈现梯度磁场。磁感应强度的大小与悬浮物的去除率直接有关。由此提出，在处理污水时，应根据处理要求，选择适宜的EM加入量。一般在0.06-0.17　T，综合考虑价格、耐蚀性、刮泥效果等因素。选用钡、锶铁氧体，磁强范围在0.08-0.12　T为佳。
+　　(2)使用0.08-0.12　T的铁氧体所捕集的污泥含水率在85%-90%，且容易脱水。
+　　关键词：有效微生物群（EM）；生活污水；化学需氧量（CODcr）；氨氮（NH4+-N）；总磷（T-P）
+　　中图分类号：X172　　文献标识码：A　　文章编号：1002-1264(1999)05-0004-04
+A Systematic Study on the Effect of Effective Microorganisms(EM)
+on the Removal of Pollutants from Domestic Sewage
+MENG Fan-ping，LI Gui-fang，LI Ke-lin
+(College of Resources & Environment, Central South Forestry University, Zhuzhou 412006)
+Abstract：The effect of Effective Microorganisms(EM) on the re moval of three main kinds of pollutants from domestic sewage(DS) was studied by adding EM into DS. It showed that: ①In aerobic condition, EM addition (VEM/VDS) between 5/10000-1/1000 raised the removal rate of CODcr significantly with an increment of about 10%; however, in anaerobic condition, EM had no remarkable effect on CODcr remo val. ②5/1000 of EM addition could enhance the nitrification in DS significantly with a largest increment of 37.62% of NH4+-N removal rate; EM addition between 1/10000-1/1000 also promoted the denitrification with an increment of ab out 14% of NO3--N removal. ③Removal rate of phosphorus from DS was increased signif ican tly when EM addition surpassed 5/1000. Therefore, suitable EM addition need to be chosen to meet with different purposes of wastewater treatment.
+Key words：effective microorganisms(EM)；　domestic sewage；　 chemical oxygen demand(COD)；　ammonia nitrogen (NH4+-N)；　total phosphorus (T- P)
+　　有效微生物群（Effective Microorganisms，简称EM）自1978年问世以来，受到了许多行业专家、学者的青睐，并在饲料发酵、禽舍除臭等方面获得了极好的效果，它在环境污染治理方面也有独特的效果［1］。
+
+
+图4　DZA胶管废水处理工艺流程示意图
+　　经磁分离机处理后的废水可直接经放流池达标排放，当出现事故，应急高浓度时，进一步经砂滤池后排放。该工艺已完成设计并投入使用，工程实施二年来运行正常，废水达标排放。
+5　结论
+5.1　用磁絮凝与磁分离方法处理DZA有机废水，简单易行，经济有效。占地面积仅为沉降分离的1/3-1/5，能连续快速分离，污泥含水率低，脱水容易。
+5.2　本方法特别能分离用过滤、沉降等方法难于去除的悬浮物胶状颗粒。所开发的“红土”磁种性能与一般磁粉相同，价格为常规使用磁粉的1/60-1/100。
+　　EM与污水厌氧处理：方法与好氧处理类似，不同之处是处理组数为4组，即：VEM/V污水分别是0、1/10000、1/1000和1/100。开辟了工业废水治理的新途径。本文将就这些问题做详细的探讨。简化原日本工场的物化加生物的复杂工艺。这说明EM的确能提高生活污水中有机物的降解能力。
+作著简介　郑学海　男，56岁，1967年毕业于南开大学化学系，现任天津市环境保护科学研究院副院长。
+作者单位：天津市环境保护科学研究院，天津　300191
+参考文献
+［1］　《日》井出哲夫等编著.水处理工程理论与应用.中国建筑工业出版社，1986：46-47
+［2］　北京环境保护科学研究所编.水污染防治手册.上海：上海科学技术出版社，1989：350-352
+［3］　顾夏声等编.水处理工程.北京：清华大学出版社，1987：62-64

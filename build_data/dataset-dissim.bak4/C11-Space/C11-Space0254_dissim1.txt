@@ -1,0 +1,61 @@
+航空工程与维修
+A VIATION ENGINEERING & MAINTENANCE
+1999年 第3期 No.3　1999
+
+
+
+MD－82飞机APU故障分析
+周俭
+APU Trouble Analysis of MD-82
+　　作者结合实际工作经验，对平时维护工作中遇到的两则较为特殊的MD－82飞机APU故障进行分析，并给出排故措施。
+　　MD－82飞机APU在使用过程中，故障较多，给飞机的正常飞行带来了很大的不便，同时也影响服务质量，因而在维护中应予以高度重视。本文讨论在圆轨道中运行的带双侧挠性太阳帆板的航天器在万有引力矩作用下的姿态稳定性。
+　　1.APU起动后工作一段时间自动停车，再次起动时，APU无转速和排气温度，不能正常起动。
+　　重新起动APU时，将APU主电门保持在“起动”位，APU能起动进入工作状态。Ibrahim,Misra［3］通过理论和实验研究了航天器的天平动与太阳帆板的振动等诸因素的耦合作用对系统的稳定性影响。正常情况下，APU在“起动”位时，APU滑油压力低于45psi时，此灯才保持长亮。为主刚体连同变形后的挠性板相对质心O的惯性张量，忽略弹性变形引起系统主惯性矩A、B、C的附加惯性矩微小变化，则相对(O-xyz)的分量为
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(5)
+其中Jij为帆板弹性变形产生的惯性积
+　　　　　　　　　　
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(6)
+　　　　　　　　　　(6)
+为作用于系统的万有引力对O点的主矩，其相对(O-xyz)各轴的投影为
+　　　　　　　　　　　　　　　(7)
+将式(2)、(3)、(5)、(7)代入方程(4)，导出带双侧挠性帆板航天器姿态运动的动力学方程　　　　　　　　　　　　　　(8)
+　　　　　　　　　　
+　　3　帆板的振动方程
+　　为使方程组(8)封闭，考虑挠性帆板Bi(i=1,2)的强迫振动方程。所以，单从APU不能正常起动来看，故障可能出现在APU自动起动继电器上，但从APU自动停车和起动时“APU滑油压力低”灯在“起动”位时亮，不在“起动”位时不亮来看，该故障与APU自动起动继电器无关。建立带挠性帆板航天器的欧拉方程和帆板强迫振动方程。APU超速停车继电器不工作，一方面使“APU滑油压力低”灯在APU起动初期不亮，另一方面使该继电器不能自锁，造成APU主电门离开“起动”位后，“APU自动起动继电器”和“APU超速停车继电器”两继电器不工作，致使APU不能正常起动。APU自动停车，也是由于该继电器工作不稳定引起“APU燃油关断阀”断电不工作造成的。轨道坐标系以角速度ωc绕Z轴匀速转动，只保留θ、ψ、φ的一次项，主刚体角速度相对(O-xyz)各轴的投影为
+　　　　　　　　　　　　　　　　　　　(3)
+
+图2　参考坐标系
+　　利用系统相对质心O的动量矩定理，得到带太阳帆板航天器系统相对O点的欧拉方程
+　　　　　　　　
+　　　　　　　　　　　　　　　　　　　　　(4)
+其中“”表示相对浮动坐标系(O-xyz)的相对导数，γ为帆板的体密度。利用Galerkin方法对动力学方程离散化，利用Kelvin-Tait-Chetayev定理判断航天器在轨道坐标系内相对平衡的稳定性。挠性帆板Bi(i=1,2)为悬臂薄板结构，其长度、高度和厚度分别为a、b、h，中面固定端的中点O′距系统质心O的距离为r。(y,z,t)为惯性力和万有引力引起的沿x轴方向的分布载荷，分别记作和(i=1,2)，即
+　　　　　　　　　　　
+　　　　　　　　　　　　　　　　　(10)
+　　　　　　　　　　　
+其中μ为万有引力参数，、分别为帆板Bi中面上任意点Pi和质心O相对地心O0的矢径，
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(11)
+将式(2)、(3)、(11)代入式(10)，并注意，化简后得到
+　　　　　　　　　　　　　(12)
+将帆板Bi的强迫振动方程(9)中的分布载荷以式(12)代入，导出
+　　　　　　　　
+　　　　　　　　　　　(13)
+　　4　方程的离散化
+　　设挠性帆板B1和B2有相同的模态函数，利用迦辽金离散化方法，将惯性力和万有引力作用下的帆板Bi强迫振动特解ui(y,z,t)写成一端固定的悬臂板自由振动模态Φj(y,z),(j=1,…,N)的线性组合［6］
+　　　　　　　　　　　　　　　　　　　　　　　　　(14)
+其中qij(i=1,2,j=1,…,N)为帆板Bi各阶模态坐标。质量阵M的正定性条件通过初等变换整理为
+　　　　　　　　　　　　　　　　　　　　　(20)
+由于、、与挠性帆板的惯性矩同数量级，后者已包含于系统的总惯性矩A、B、C，因此惯量阵M必正定。
+　　以上分析说明存在两种故障情况，一是APU自动起动继电器故障，二是APU冲压门联锁电门或离心电门故障。
+　　主题词　姿态稳定性　挠性多体动力学　Kelvin-Tait-Chetayev定理
+ATTITUDE STABILITY OF SPACECRAFT 
+WITH TWO FLEXIBLE SOLAR ARRAYS 
+IN GRAVITATIONAL FIELD
+Ge Xinsheng
+(Beijing Institute of Machinery Industry.Beijing.100085)
+Liu Yanzhu
+(Shanghai Jiaotong University.Shanghai.200030)
+　　Abstract　The attitude motion of a spacecraft,composed of the main rigid body and two flexible solar arrays in gravitational field is discussed in the present paper.The Euler's equations of spacecraft with two flexible solar arrays and the equations of forced vibration are obtained.The dynamical equations are discretized vis use of Galerkin's method,and the stability of relative equilibrium of the spacecraft in the orbit frame is determined by Kelvin-Tait-Chetayev theorem.A sufficient condition of stability in analytical form for arbitrary number of modes is obtained.
+　　Key words　Attitude stability Flexible multibody dynamics Kelvin-Tait-Chatayev theorem
+　　1　引言
+　　自美国发射的探险者1号卫星失稳以后，关于挠性附件的弹性变形对航天器姿态稳定性的影响问题，引起了科技界的极大关注。利用人工方式开启APU冲压门联锁电门，测量插座内A、C两针是否相通，测量结果为通路，说明冲压门联锁电门无故障；将APU主电门放在“运转”位，测量APU冲压门插头内的A孔是否有28v直流电，结果发现A孔无直流电，说明离心电门的“35％以下”接触点工作不正常，导致电流不能通过离心电门的“5”、“7”号插针流入APU冲压门联锁电门插头的A孔；拆下APU离心电门插头，检查APU离心电门插座的“5”、“7”号插针，发现该两插针不构成通路，即APU离心电门故障。更换APU离心电门后，APU起动，工作正常。
+作者单位：东航安徽分公司

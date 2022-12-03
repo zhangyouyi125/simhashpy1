@@ -1,0 +1,115 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年4月  第19卷  第2期科技期刊
+
+
+一种采用自动筛选技术的
+鲁棒恒虚警检测器
+何 友 孟祥伟
+(海军航空工程学院电子工程系*烟台*264001)
+摘  要　　 本文基于有序统计(OS)和筛选平均(CM)提出了一种新的恒虚警
+检测器，它采用OS和CM方法来产生局部估计，再采用二者的平均值作为对杂
+波功率水平的估计，并应用了文献［5］提出的自动筛选技术，在SwerlingⅡ
+型目标假设下，本文推导出了它的Pfa、Pd和度量ADT的解析表达式，并与其
+它方案进行了比较。分析结果表明，它对均匀背景和多目标环境均具有适应
+性，尤其是在多目标引起的非均匀背景场合中，它呈现较好的锝棒性，它的
+性能与OS相比有较大的改善，并且它的样本排序时间不及OS、CM的一半。
+
+主题词  雷达  检测  恒虚警率   有序统计
+　
+A ROBUST CFAR DETECTOR WITH AUTOMATIC
+CENSORING TECHNIQUE
+He You Meng Xiangwei
+(Naval Aeronautical Engineering Academy*Yantai*264001)
+Abstract  In this paper a new CFAR detector(MOSCM)based on order statistics(OS)and 
+censored mean(CM)is proposed.It selects the mean value of OS and CM local estimations 
+as a globle noise power estimation for the detector,and it also uses the automatic censoring 
+technique proposed You He［5］.Under SwerlingⅡ assumption,the analytic expression 
+of Pfa,Pd and ADT of MOSCM are derived.By comparison with other schemes,the results 
+show that MOSCM-CFAR detector has an adaptability for both homogeneous background 
+and nonhomogeneous background caused by multiple interfering targets,particularly in 
+multiple target situations,it exhibits good robustness,the detection performance is improved,
+and its sample sorting time is less than half of that of OS,CM.
+
+Key words  Radar  Detection  CFAR  Order statistics
+
+1  前言
+
+　　雷达在噪声和其它干扰背景下检测目标，总是希望无论干扰电平如何变
+化，检测系统的虚警概率最好能维持不变，即使变化，也希望变化较小，这
+就需要采用恒虚警率(CFAR)处理技术。
+
+    令为确定性微分方程
+d=f(t,)dt+Budt,0=EX0
+(17)
+的解，且令X为随机微分方程
+dX=f(t,X)dt+Budt+ε1σ(t)dw,X(0)=X0
+(18)
+的真实解。
+文献［6］提出了基于有序统计(OS)和单元平均(CA)的恒虚警检测器(MOSCA)，
+但因检测概率Pd通常小于1，仍会有干扰目标进入后沿滑窗，会导致MOSCA的
+检测性能恶化。为些，本文基于有序统计(OS)和筛选平均(CM)提出了MOSCM-
+CFAR检测器，它的前沿滑窗和后沿滑窗分别采用OS和CM方法产生局部估计，
+再对二者平均来实现对杂波功率水平的估计，并应用了文献［5］提出的自动
+筛选技术，在SwerlingⅡ型目标假设下，本文推导出了它的Pfa、Pd和平均判
+决门限(ADT)的解析表达式，分析了它在均匀背景和多目标环境中的检测性能，
+并与其它方案进行了比较。当系统中存在确定性输入项，
+而且其功率远大于噪声功率时，就属这种情况。在被动制导条件下，
+导弹的机动飞行轨迹会对滤波器的性能产生直接影响［2］、［3］，因此在
+设计导引律时有必要考虑系统可观性指标。可得出检测单元的二
+元假设检验对为
+
+(2)
+其中a=1+λ，λ是信噪比，μ代表噪声强度。
+
+    只有当f和h都很接近于线性时，才能期望(15)―(16)的解接近于真值。为了证明这一点，我们把EKF和MEKF同时应用于被动制导问题，进
+行仿真研究。
+若Pfa=10-6，参考单元总数R=M+N=32，表1给出了MOSCM的部分门限参数T和
+ADT的值。从ADT的结果来看，MOSCM检测器在均匀背景中的性能是比较好的，
+例如，OS在R=32、k=27时的ADT最优值为19.025，GOSCA在M=N=16,k=l=14时
+的ADT最优值为18.919，而MOSCM在M=20,N=12,k=16,r=2时的ADT值为18.902。
+还可看出ADT对于k的变化是缓慢的，这意味着前沿滑窗可容纳较多的干扰目
+标，而不致使检测性能下降太多，对于r的变化反应要大一些，但由于采用
+了自动筛选技术，使得干扰目标进入后沿滑窗的机会变小，故只需筛选掉有
+限个样本即可，这时仍能在均匀背景中保持较好的检测性能。同理可求得速度估计量的均方根
+型误差的统计结果E［ev］以及目标加速度估计量的均方根型误差的统计结果
+E［ea］。表2给出了在SwerlingⅡ型目标条件下，几种检测器出现多目
+标时的CFAR损失。为了便于比较，使几种检测器至少具有容纳六个干扰目标
+的能力，MOSCM选取M=8,N=24,k=2,r=2，GOSCA选取M=8,N=24,k=2,l=22,OS选
+取R=32,k=26。
+
+    上述双重指标控制问题可以沿直角坐标系的x、y、z轴解耦成三个子问题，
+这样只需考虑求aMy使得在满足约束=Vy,y=aTy-aMy,Ty=-λaTy以及t0,y0,vy0,aTy0和tf的条
+件下，性能指标
+
+(11)
+最小。MOSCM检测器在均匀背景中的恒虚
+警损失比OS，CM多付出一些，在多目标情况下比OS有较大改善，并与CM相近，
+但它的样本排序时间不及OS、CM的一半，便于工程实现。因而，从总体上看，
+它是一种鲁棒型的恒虚警检测器。EKF和MEKF初始误差
+的均值设定为零，初始方差阵P(0)=0，系统动态噪声强度ε1=1m/s2，测量噪
+声强度ε2=10-3。为了提高系统的可观性，我们采用一种双重指标来设计最优导引律。
+
+
+图2 相对距离估计误差
+图3 相对速度估计误差
+图4 相标加速度估计误差
+6  结论
+
+    我们提出在导弹被动制导问题中采用改进的推广Kalman滤波器(MEKF)。虽然本文以SwerlingⅡ型目标为研究对象，由于恒虚警检测器对目标
+模型不敏感，所得结论也适用于其它Swerling目标模型情况。
+　
+参考文献
+1  Rohling H.Radar CFAR thresholding in clutter and multiple-target situations.IEEE 
+Trans.on AES,1983,19(4)：608-621
+2  Rickard J T,Dillard G M.Adaptive detection algorithms for multiple-target situations.
+IEEE Trans.on AES,1977,13(4)：338-343
+3  Gandhi P P,Kassam S A.Analysis of CFAR processors in nonhomogeneous background.
+IEEE Trans.AES,1988,24(4)：427-445
+4  何友，关键，Rohling H.一种基于排序和平均的新恒虚警检测器.现代雷
+达，1995，17(4)：32-36
+5  He You(何友).Performance of some generalised modified order statistics CFAR 
+detectors with automatic censoring technique in multiple target situations.IEE Proc.-F,Radar 
+and Signal Processing,1994,141(4)：205-212
+6  孟祥伟，何友.基于准最佳加权有序统计的最大选择CFAR检测算法.电子学
+报,1997,25(12):74-78 

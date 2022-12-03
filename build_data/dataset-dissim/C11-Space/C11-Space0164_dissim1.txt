@@ -1,0 +1,92 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年  第3期   No.3 May   1998
+科技期刊
+液体火箭发动机带有隔板和无隔板的
+两相冷态解数值模拟
+赵文涛
+(国防科技大学航天技术系*长沙*410073)
+聂万胜　庄逢辰
+(国防科工委指挥技术学院*北京*101407)
+　　摘　要　本文对液体火箭发动机燃烧室内带有隔板和无隔板的两种情况进行了两相冷态解数值模拟,气相控制方程用欧拉坐标系下的Navier-Stokes方程组描述,液相控制方程在Lagrangian坐标系下进行描述。
+2　基本变换公式推导
+　　考虑实测传递函数的离散时间序列h(n)由于阻尼比较小而可以正确地简化考虑为实数序列。
+　　主题词　冷态解　两相流　隔板　液体火箭发动机　燃烧室
+TWO PHASE COLD FLOW SIMULATION OF 
+WITH AND WITHOUT BAFFLES 
+IN LIQUID ROCKET ENGINE
+Zhao Wentao
+(National University of Defence Technology Hunan*Changsha*410073)
+Nie Wansheng　Zhuang Fengchen
+(Institute of Command and Technology*Beijing*101407)
+　　Abstract　The two phase cold solutions are simulated with numerical method in liquid rocket engine combustion chamber having baffles and no having baffle.The gas controlling equations are discribed under the Euler coordinate.The liquid phase controlling equations are discribed under the Lagrangian coordinate.The two phase influences of gas and liquid are through the sources of equations.The flow values of combustion chamber are compared while having baffles and no baffle.It is proved that the numerical treating method of baffle is successful to the two phase cold flow solution.
+　　Key words　Cold solution　Two phase flow　Baffle　Liquid rocket engine　Combustion chamber
+符号说明
+  　英文字母
+　　CD　液滴阻力系数                     ReReynold数
+　　d液滴直径(μm)                       T温度(K)
+　　dV控制容积(m3)                       u轴向速度(m/s)
+　　D扩散系数(m2/s)                      v横向速度(m/s)
+　　e总能量(J/kg)                        希腊字母
+　　E组合变量矢量                        λ导热系数(W/mk)
+　　F组合变量矢量                        μ粘性系数(kg/ms)
+　　H源项矢量                            ρ密度(kg/cm3)
+　　m蒸发速率(kg/s)                      脚注
+　　M摩尔质量(kg/mol)                    k第k组液滴
+　　n液滴数目个 /m3                         vap蒸发
+　　p压力(Pa)                            x轴向方向
+　　R气体常数(J/kgK)                     y横向方向
+　　1　引　言
+　　液体火箭发动机的冷态试车和热态试车是研制过程中所要采取的两个关键步骤。为改变燃烧室内部固有的声学频率,以避免燃烧室内出现高频不稳定燃烧现象,常在燃烧室喷注面板上装配有隔板。
+　　从80年代中期,出现了利用Hilbert变换进行非线性检测的研究。可以看出,它们由于与采样频率ωs相关是不便于实用的。
+2　控制方程组
+2.1　气相控制方程组
+　　气相用带有源项的Reynolds平均的Navier-Stokes方程组来描述。源项是由于气相和液相的相互作用而产生的。用矢量表示的二维控制方程组写成以下形式:
+
+(1)
+上式中Q是原始变量的矢量,E、F是表示成守恒形式的矢量,H是源项,这些矢量的表达式如下:
+
+H1和H2代表气相和液相的源项,总能量的表达式为
+2.2　液相控制方程组
+　　在Lagrangian坐标系下表示的液滴运动方程表示如下:
+r
+　　液滴运动阻力系数为:
+
+　　液滴蒸发速率
+
+(4)
+3　计算域网格的划分
+　　无隔板的计算域较为简单,网格划分如图1所示,在整个计算域内采用均分网格。按本文(12)式推导作该主频两侧的非线性检测如图4所示,看出FRF的实测数据与变换数据间已产生了明显的差异,从而验证了由主模态振型分析得出的结果。
+
+
+图1　无隔板时网格划分网
+
+
+图2　有隔板时网格划分图
+4　边界条件的确定
+　　无隔板和有隔板的人入口边界条件、出口边界条件以及上下表面的边界条件均相同。
+　　入口条件:给定人口流量,即人口密度ρ,人口速度u给定,v=0;其它流场参数的法向梯度为零;
+　　出口条件:各变量的法向导数为零,
+　　上下表面的边界条件:速度为零,即u=0,v=0;其它各变量的法向导数为零,
+　　当燃烧室喷注面板装配有隔板时,隔板体的边界条件是隔板面上的速度为零,即u=0,v=0,其它参数的法向导数为零,即
+5　计算结果及分析
+　　下表是三种情况的算例,人口总的流量均为20kg/s,对于第一种算例,入口氢气的流量为4kg/s,液氧的流量为16kg/s,由计算可看出对于有隔板的情况出口流量为20.23,误差为1.15%,对于无隔板的情况,出口流量为20.48,误差为2.2%;分析其它两种算例所得的结果可以看出,流量的误差均在5%范围以内。
+入口流量
+(kg/s)氢气:4氢气:16氢气:10
+液氧:16液氧:4液氧:10
+出口流量
+(计算值)有隔板20.2320.8920.45
+无隔板20.4820.7020.56
+误　差无隔板1.15%4.45%<2.25%<
+有隔板2.4%3.5%2.8%
+　　计算所得的结果如图所示。图3为有隔板时的氢气、蒸发出来的氧气以及混合气体的流量图,对于无化学反应的情况,氢气的流量在理论上应是保持不变,从实际的计算结果可以看出,氢气的入口流量为4kg/s,出口流量也基本上是4kg/s,误差很小;氧气的入口流量为零,这是由于在燃烧室入口处喷入的是液氧,随着液滴在燃烧室内不断地蒸发,氧气的流量也逐渐增加;气相在入口处为纯氢气,在液氧完全蒸发完毕后,气相的成分是氢气和氧气的混合物。该式在频域中的卷积求和则对应于HR(i)与ctg(πi)/(N)在时域中的乘积。
+　　图4为有隔板时燃烧室内部压力图,在燃烧室圆柱段,压力基本保持不变;由于液氧雾喷入燃烧室并且不断地蒸发使得混气的组成发生了改变,气体常数和比热比是蒸发出来的氧气和氢气的质量加权平均,这就导致压力在燃烧室头部附近略有降低。通过本文推导可以得出:结构在稳态正弦激励下的响应可以进行周期延拓,能够满足因果和稳定性要求。
+　　图6为无隔板时氧气密度的三维图,燃烧室入口处喷入的是液氧,所以在入口处氧气的密度为零,随着液氧的不断蒸发,氧气的密度也在不断地增加,氧气进入喷管后不断地膨胀,密度急剧下降,从三维图中可以看出这一变化规律。
+
+
+图5　发动机内部有隔板时混气速度图
+
+
+图6　无隔板时氧气密度变化图
+图7为无隔板时混合气体密度的三维图,沿燃烧室轴向方向第一个网格点处只有氢气,随着液氧雾的运动和蒸发,混气的密度不增加,进入喷管后,混气发生剧烈膨胀,密度下降。通过本文推导可以得出:结构在稳态正弦激励下的响应可以进行周期延拓,能够满足因果和稳定性要求。因此使用时应保证足够的采样长度以及尽可能减小边缘截断效应。
+　　从80年代中期,出现了利用Hilbert变换进行非线性检测的研究。变换对于每一个离散点都需要各进行N次余弦、减法和除法运算,对整个序列则要作3N2次运算,其运算大大多于FFT所需的2Nlog2N次运算耗时,这就限制了它的实时监测作用

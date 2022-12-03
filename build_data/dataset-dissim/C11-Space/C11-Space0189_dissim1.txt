@@ -1,0 +1,83 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+一类非线性控制器nPI及其在扫描镜
+精密伺服系统中的应用
+梁文宝
+(航天工业总公司三院三部*北京*100074)
+徐立新
+(北京理工大学*北京*100081)
+梅晓容　庄显义
+(哈尔滨工业大学*哈尔滨*150001)
+　　摘　要　本文给出一种非线性控制器,并将它应用于扫描镜精密伺服系统的校正。布朗运动F(x)的局部微发|F(x)-F(x+Δx)|/‖Δx‖H是一个高斯概率分布。
+　　主题词　非线性控制器　描述函数　扫描镜　伺服系统
+A KIND OF NONLINEAR CONTROLLER nPI 
+AND ITS APPLICATION IN SCANNING 
+MIRROR PRECISE SERVO SYSTEM
+Liang Wenbao
+(General Design Institute of The Third Research Academy of 
+China Aerospace Corporation*Beijing*100074)
+Xu Lixin
+(Beijing Institute of Technology*Beijing*100081)
+Mei Xiaorong　Zhuang Xianyi
+(Harbin Institute of Technology*Harbin*150001)
+　　Abstract　A kind of nonlinear controller nPI is presented and used to correct scanning mirror precise servo system in this paper.The theory analysis and experiment result prove that the nPI can improve control system characteristics obviously.
+　　Key words　Nonlinear controller　Description function　Scanning mirror　Servo
+1　引　言
+　　由于线性比例积分控制器(PI)既能保证系统具有较高的静态精度,又能兼顾系统具有良好的动态性能,因此它在控制系统的综合中获得了广泛的应用。
+5　仿真计算
+　　图1～2给出了一个尖形信号(二维图像边缘的一个剖面)的WTDF滤波结果,图1为原始信号和加有高斯白噪声(水平为0.3)的信号,图2为滤波后的重构结果。为此本文给出一种非线性比例积分控制器(nPI)。
+　　WTDF的一个基本出发点是:尖锐信号边缘的子波变换值在子波变换的各尺度上都有较大幅值且幅值变化不大(Mallat也指出这一性质),但噪声的子波变换幅值随着尺度的增加而快速减小。直接将信号子波变换值在几个相邻尺度上进行相关运算(记为Corr1(m,n)),可以相当准确地确定信号边缘或其他重要特征的位置。
+　　上述特性可以用来区分噪声和信号。利用式(1),经过推导得其描述函数为
+N(jω)=H(ω)ejφ(ω)
+(2)
+其中
+
+(3)
+
+(4)
+为了把nPI同PI进行比较,下面给出PI的幅频和相频特性
+
+(5)
+
+(6)
+　　可以看出,nPI和PI的幅频特性相似,并且对任意角频率ω,总有nPI的幅频增益大于PI的幅频增益,即H(ω)＞HL(ω)。这也就说明nPI和PI能更好地降低系统的稳态误差。即r＞0,F(x)与rHF(rH)是统计一致的,F(x)的一次实现在所有尺度和分辨率上看起来是相似的。
+3　nPI在扫描镜精密伺服系统中的应用
+3.1　扫描镜控制系统设计
+　　扫描镜实际上是一个微型二维转台,在光学成像制导和导弹半实物仿真中常有应用,是关键部件之一。直接将信号数据进行尺度空间相关,将锐化和增强主要边缘,同时噪声和小的边缘将受到压缩。如何实现扫描镜片高精度的方位和俯仰运动,有效地跟踪光路,是航天工程中迫切需要解决的问题。
+　　在经过电流环、速度环回路和系统解耦的设计与调试后,扫描镜系统等价成两个单变量系统――俯仰系统和方位系统。
+　　主题词　子波域滤波　阈值　子波分解与重构
+A THRESHOLD SELECTION METHOD 
+FOR WAVELET TRANSFORM DOMAIN FILTER
+Pan Quan　Dai Guanzhong　Zhang Hongcai
+(Dept.of Automatic Control Northwestern Polytechnical University*Xi'an*710072)
+　　Abstract　In this paper we describe the signal processing algorithms which use wavelet transform theory.Then a method to select threshold for wavelet transform domain filter(WTDF) is developed.The threshold selection method for WTDF brings the algorithm to completion.The simulation shows that the new algorithm is better than WTDF without the new threshold.
+　　Key words　Wavelet transform　Multiscale analysis　Threshold
+1　引　言
+　　信号处理是子波变换最重要的工程应用领域,是子波理论发展的最重要工程动力之一。
+
+(7)
+根据系统的技术要求,推得控制规律如下
+Gbc(S)=0.02S
+(8)
+
+(9)
+其中Gc(S),Gbc(S)分别为串联控制器及前馈环节的传递函数。直接将信号子波变换值在几个相邻尺度上进行相关运算(记为Corr1(m,n)),可以相当准确地确定信号边缘或其他重要特征的位置。其中采用PI校正时,系统超调量为36.4%,调节时间为230ms,而采用相同参数(KP;TI)的nPI校正时,系统阶跃响应的超调量为25.6%,调节时间为110ms;再看图3的正弦响应,采用nPI校正不仅具有较小的相位滞后,而且具有更高的跟踪精度。
+
+
+(a)线性校正的阶跃响应　　(b)非线性校正的阶跃响应
+图2　采用nPI与PI校正系统阶跃响应的比较
+
+
+(a)线性校正的正弦响应　　(b)非线性校正的正弦响应
+图3　采用nPI与PI校正系统正弦响应的比较
+4　结　论
+　　本文利用非线性积分器,构造一种非线性控制器nPI。具有理论阈值的WTDF的性能改善是显而易见的。另外,又将nPI成功地应用于扫描镜精密伺服系统,系统运行结果再次验证了nPI提高控制性能的有效性。
+参考文献
+  1　牛景汉.一类理想非线性积分器的研究.信息与控制,1986,15(1):1-7
+  2　庄显义等.红外目标背景仿真装置设计报告.哈尔滨工业大学仿真中心,1993
+  3　徐立新.扫描镜精密伺服系统的计算机解耦控制.基础自动化,1994,1(5):27-29
+  4　梁文宝.扫描镜精密伺服系统的计算机控制研究.哈尔滨工业大学硕士学位论文,1996,1　
+本文于1996年5月13日收
+　　*本课题获国防预研基金资助

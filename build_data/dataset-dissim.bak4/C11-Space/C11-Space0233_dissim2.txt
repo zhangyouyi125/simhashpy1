@@ -1,0 +1,99 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS
+1999年 第2期　No.2 1999
+
+
+
+桁架结构阻尼控制的绝对值模态应变能法
+吕　刚　陆　锋　张景绘
+　　摘　要　本文阐述了近似求解复特性值问题模态阻尼比的模态应变能法(MSE)和绝对值模态应变能法(AVMSE),分别用两种方法计算了空间桁架结构应用粘弹性阻尼器进行阻尼控制时结构的模态阻尼比。完成了空间桁架结构模型的粘弹性阻尼控制实验。理论分析与实验结果比较显示,当结构中粘弹性的成分较大时,AVMSE对复特征值问题中模态阻尼比的近似计算给出更准确的结果。
+　　主题词　粘弹性　模态　桁架　阻尼
+ABSOLUTE VALUE MODAL STRAIN ENERGY 
+METHOD FOR VISCOELASTIC DAMPING 
+CONTROL OF TRUSS STRUCTURE
+Lü Gang Lu Feng Zhang Jinghui
+(Xi'an Jiaotong University.Xi'an.710049)
+　　Abstract　The Modal Strain Energy Method(MSE) and Absolute Value Strain Energy Method(AVMSE) to solve the complex eigenvalue problems approximately are described briefly.The modal damping ratio of space truss structure with added viscoelastic dampers is calculated using both MSE and AVMSE methods for damping control of the structure.The experiment in damping control of a truss structure adding viscoelastic dampers is completed.The comparison between the analytical results and experimental results shows that the AVMSE method is more advanced and accurated than the MSE method while the effect of viscoelasticity to the structure is larger for calculating the modal damping ratio of the complex eigenvalue problems.
+　　Key words　Viscoelastic Mode Truss Damping
+1　前　言
+　　模态应变能法(MSE)已被广泛用于计算粘弹性阻尼结构的模态阻尼比［1,2］,这种方法简单、计算量小,可得到粘弹性结构模态阻尼比的近似值,在阻尼结构的动力分析和设计中被广泛采用。实验数据测量及采集系统包括贴于电机轴上的应变花和柔性梁上的应变片,动态应变仪,A/D数据采集卡和PC/XT微机。
+　　本文在模态应变能方法的基础上,通过考虑VED滞后特性对结构动力特性的影响,采用绝对值模态应变能(AVMSE)法来分析结构的阻尼特性。
+　　　　　
+图4　柔性梁端点振动位移实验结果曲线　　　图5　驱动力矩实验结果曲线　　
+　　根据作者在文献［4］中所形成的一致线性化柔性多体动力学建模理论及分析方法对该平面两杆机构进行动力学建模,以图5实测驱动力矩数据作为输入,进行动力学仿真计算,结果如图6。以安装剪切式VED的复合空间桁架为例,分别采用MSE法和AVMSE法来分析结构的阻尼特性,得出仿真结果,并与阻尼特性实验结果相比较,结果表明了AVMSE法是对MSE法的一种有效修正。
+　　本文阐述了AVMSE法对使用VED来控制结构被动阻尼和VED动力设计,以及对粘弹性复杂结构的动力分析提供了更为有效和准确的方法。图中含三阶频率成分,对应频率分别为1.5869、10.8238、31.2099Hz,其中一阶功率谱密度值较二、三阶的大许多,即系统以一阶基频振动为主,故在实验中完全有理由只考虑一阶模态振动,仅在梁上贴一组应变片。直流伺服电机控制系统由主控制器(上位机),位置控制器(下位机),光脉冲编码器及位置检测板,速度伺服单元以及上、下位机控制软件等组成。设解的形式为
+　　　　　　　　　　　　　　　　　　　　　　　　 (2)
+其中λ*r,Φ*r分别为第r阶复特征值和复特征向量,根据Rao的分析［4］
+　　　　　　　　　　　　　　　　　　　　　　 (3)
+其中ηr为第r阶模态损耗因子。求瑞利商
+　　　　　　　　　　　　　　　　　　　(4)
+这里,用M―KR的实特征向量Φr近似代替复特征向量Φ*r,则(4)式为
+　　　　　　　　　　　　　　　　　　(5)
+分别比较(3)、(5)的实部和虚部,得
+　　　　　　　　　　　　　　　　　　　　　　　　 (6)
+令
+　　　　　　K=KR+jKI=Ke+KdR+jKdI　　　　　　　　　　　　　　　(7)
+其中Ke为主结构系统弹性刚度,KdR、KdI为粘弹性刚度阵实部、虚部。
+当结构中只有一种粘弹性阻尼材料,且材料的损耗因子为ηv时
+　　　　　　KdI=ηvKdR　　　　　　　　　　　　　　　　　　　　(8)
+取立(6)、(7)、(8)并考虑到ζr=ηr/2得结构第r阶模态阻尼比ζr的近似表达式为
+　　　　　　　　　　　　　　　　　　 (9)
+2.2　AVMSE法:由MSE法推导可知,在(4)式实部虚部分离时,采取了用结构刚度阵的实部KR所求的特征向量替代结构复振型的近似处理,忽略了粘弹性滞后对结构振型的影响。考虑到当结构刚度阵中虚部较大时,用KR所求的特征向量替代结构振型误差较大,必须考虑虚刚度的影响。如用实验模态代入可得到更为准确的结果,但工作量过大,对阻尼结构的动态设计亦不现实。下面通过对复刚度取绝对值进行修正,用修正的刚度阵Ka计算得到的实模态来近似替代复合结构模态Φ*。取
+　　　　　　　　　　　　(10)
+式中,NE为单元数,ηj为j单元的材料损耗因子,KRj为j单元的储能刚度阵,NVE为粘弹性单元数,KdRj为第j个粘弹性单元刚度阵的实部。相应的特征值问题为
+　　　　　　　　　　　　　　　　　　　　　(11)
+用来近似替代(4)式中粘弹性复合结构的复特征向量Φ*,与MSE法类似,对只有一种阻尼材料的结构,则(9)式可相应写成
+　　　　　　　　　　　　　　　　　　(12)
+由(9)、(12)可知,当粘弹性构件特性已知时,则可计算出结构的模态阻尼比。反之,当确定所期望的结构模态阻尼比后,则可求得粘弹性构件的实刚度KdR,从而有了设计粘弹性阻尼构件的依据。
+3　数值仿真
+　　在空间桁架结构中安装VED来实现结构的被动阻尼控制,应预先按结构所要求的模态阻尼比设计阻尼器,根据粘弹性材料的剪切耗能原理,设计了一种圆柱形剪切式VED［5］。
+　　分别按MSE和AVMSE法计算图1所示空间桁架结构在安装VED后的第一阶模态阻尼比。共安装两个相同粘弹性材料制成的VED于如图1所示(2)、(6)杆位置,这是控制第一阶模态阻尼的最佳位置。在悬臂端的前三跨节点上附加集中质量块以降低结构的固有频率。计算时考虑了主结构具有结构阻尼C。桁架结构的几何尺寸和物理参数见表1。
+　　　　表1　桁架结构的几何尺寸,物理参数
+
+框数6附加质量0.16kg×16
+每框边长20×10-3m杆横截面积80×10-6m2
+总杆数N=78弹性模量7.2×104MPa
+节点数28　　
+
+
+图1　桁架结构示意图
+　　用(9)、(12)式来计算结构的模态阻尼比。文中介绍了实验系统的组成;阐述了基于应变法测量作大范围运动柔性梁弹性振动位移的原理;描述了包括模态分析和动力学响应实验在内的实验过程和结果,通过与相应仿真结果的对比分析证实了实验结果的准确性和可靠性。由图可见,MSE法比AVMSE法计算的模态阻尼比偏高。在阻尼器的动刚度较小时,这种差异不大,当阻尼器的动刚度增加时差异增大。文中简要介绍了本实验系统的组成;阐述了通过测量应变间接获得弹性位移广义坐标进而确定端点位移的原理和实验方案;给出了平面两杆机构的实验结果,并将实验结果与作者基于小变形假设的一致线性化动力学建模方法［4］所得到的柔性多体动力学仿真结果进行了对比分析。当k=0.4时,用MSE法比AVMSE法得到的第一阶模态阻尼比高出1.16倍,当k=0.8时,将高出1.26倍。从计算曲线还可看出,模态阻尼比的增加随阻尼器动刚度的变化关系为非线性,当阻尼器的动刚度增加到一定程度后,结构的模态阻尼比减小。这说明不能一味增加阻尼器的剪切面积来增大结构的模态阻尼比。
+
+图2　结构模态阻尼比与刚度关系曲线
+4　实　验
+4.1　实验概述:用合金角铝制做一空间桁架结构模型,几何尺寸、材料、附加质量和两个阻尼器安装位置同第3节所述。阻尼器剪切面积A=1.44×103mm2,粘弹性材料厚度h=2mm。
+　　作者单位：王建明　洪嘉振(上海交通大学工程力学系.上海.200030)；王示　周学军(山东建筑工程学院.济南.250014)
+参考文献
+　1　Chalhoub N G,Ulsoy A G.Control of a flexible robot arm:experiment and theoretical results.ASME Journal of Dynamic System,Measurement,and Control,1987,109:299-309
+　2　Fumitoshi M,Higenobu F.Feedback control of a flexible manipulator with a parallel drive mechanism.International Journal of Robotics Research,1987,6(4):76-84
+　3　费丛宇,邵成勋等.柔性机械臂点位控制逆运力学方法的实验研究.振动与冲击,1994,(2):1-6
+　4　王建明,刘又午等.动力刚化多体系统动力学.非线性动力学学报,1996,3(4):351-359
+　5　马良埕.应变电测与传感技术.北京:中国计量出版社,1993
+收稿日期:1998年5月20日,修回日期:1998年10月13日
+。
+
+图2　平面两杆机构简图
+4.2　模态实验及模型考证
+　　据上节应变法测量振动位移原理,需正确选择梁的振型函数和适当截取频率阶数,为此对该机构进行了模态实验分析。
+
+图3　实验装置照片
+4.2　实验结果:图4是环境温度为15℃时,相同激励条件下未安装阻尼器和安装阻尼后的前5阶实测频率响应函数。由图可见,阻尼器对增加结构的模态阻尼比,降低前5阶模态的峰值是十分有效。其中刚梁采用一矩形管铝合金型材,梁长30mm柔性梁为一不锈钢板条,长、宽、厚分别为661mm、61mm、1.2mm,弹性模量E=2.01×1011N/m2,密度ρ=7.8×103kg/m3;铰关节为一50×14规格的活页。而仅依赖于数值仿真算例缺乏实验研究验证其理论及程序的正确性和有效性,难以得出令人信服的结论。表2是实测模态阻尼比与分别用MSE,AVMSE法计算得到的第一阶模态阻尼比的比较。
+表2　第一阶模态阻尼比
+
+　理论计算值实验值(%)误　差(%)
+MSE法AVMSE法MSE法AVMSEE法
+模态阻尼比ζ(%)9.209.038.3310.48.4
+
+
+　　MSE法由于过分预估结构的模态运动,当粘弹性成为较大时,得到的模态阻尼比偏大。AVMSE法考虑了粘弹性对结构模态的影响,计算出的粘弹性复合结构模态阻尼比要比MSE法的结果更接近实验结值。这一结果与两种模态应变能法的物理概念分析是不矛盾的,从第一阶模态阻尼比提高的程度可知,两只VED的剪切耗能与结构的总模态应变能力比不可忽略,而AVMSE法正是考虑了这种不可忽略的粘弹性耗能因素。
+　　空间桁架模型结构的数值仿真和实验结果显示,在不增加计算工作量的条件下,AVMSE法考虑了粘弹性滞后特性对结构模态的影响,从而对粘弹性影响相对较大的结构可给出更接近实际的估计。
+　　用VED进行桁架结构阻尼控制,当VED的动刚度与主结构中桁架杆刚度之比大于0.25时,应采用AVMSE法计算模态阻尼比,若用MSE法来计算将带来工程上所不能容许的误差,这一结果与文献［3］的分析是一致的。
+　　作者单位：西安交通大学工程力学系.西安.710049
+参考文献
+　1　Chang K C.and Soong TT.etal.Viscoelastic Dampers as Energy Dissipation Devices for Seismic Application.Earthquake Spectra,1993,9(3)
+　2　Johnson CD.and Kienholz DA..Finite Element Predietion of Damping in Structure with Constrained Viscoelastic Layers.AIAA Journal,1982,20(9):1284-1290
+　3　田千里.具有离散阻尼器的结构动力分析.固体力学学报,1983,(2)186-196
+　4　Rao DK..Frequency and Loss Factors of Sandwich Beams Under Various Boundary Condition.Journal of Mechanical Engineering Science,1978,20:270-282
+　5　吕刚,陆锋,李俊宝,张景绘.桁架结构的阻尼设计.振动工程学报,1998,11(2):145-153
+　　本文为国家自然科学基金资助项目(19632001)
+收稿日期:1997年5月26日,修回日期:1998年7月15日

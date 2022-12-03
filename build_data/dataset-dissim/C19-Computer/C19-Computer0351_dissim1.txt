@@ -1,0 +1,84 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第9期 Vol.19 No.9 1999
+
+
+
+可以动态修改的数据库系统
+王臻
+　　摘　要　本文介绍了利用PowerBuilder6.0的动态（Dynamic）数据窗口(DataWindow)技术修改数据库的列属性名称，并且保存所做修改的办法。
+　　关键词　数据窗口，对象，数据库
+　　在实际的数据库开发中，用户往往会有这样的要求，他们希望能够根据企业（公司）环境的变化实时对数据库的列属性名称进行调整。选择一个Exchange Server接收器作为管理员邮箱，以便完成对Exchange Server影子邮局的管理。这就要求数据库系统有良好的灵活性和可扩充性。
+　　下面以PowerBuilder6.0为开发工具，介绍具体的实现方法。
+2.2　创建MS PC Mail邮局连接
+　　现在我们必须在MS Mail连接器中创建通向其它真正MS PC Mail邮局的连接。同时，定义一个附加的保存表，将这些列属性名称的修改信息保存在该表中。
+　　最后，运行NT控制面板的Service程序，查找新创建的MS Mail连接器MTA服务，单击“开始”按钮启动该服务。
+　　. 打开控制面板中的服务管理程序，暂停“Microsoft Exchange Directory Synchronization”服务。
+　　通过动态地创建数据窗口对象中的对象、设置数据窗口对象的属性以及数据窗口对象中对象的属性、访问数据窗口控制中的数据可以达到修改数据窗口外观的目的。
+　　程序中访问数据窗口对象的方法有两个：
+　　. 使用describe( )，modify( )函数
+　　下面语句获取数据窗口中name列背景颜色（background.color）属性值：
+　　dw―1.describe("name. Background.color")
+　　下面语句设置数据窗口中name列背景颜色为白色：
+　　dw―1.modify("name. Background.color=
+string(rgb(255,255,255))" )
+　　. 使用数据窗口表达式
+　　数据窗口表达式使用点操作符（.）来指示要访问的对象、对象中的对象、以及对象的属性。
+作者单位：山东工业大学计算机科学系　山东.济南（250061）
+参考文献
+［1］　Barry Gerber. Microsoft Exchange Server从入门到精通. 北京：电子工业出版社，1997
+［2］　Microsoft. Microsoft Exchange Server资源指南. 北京：科学出版社，1998
+［3］　Microsoft. Microsoft Mail Administrator′s Guide. Microsoft Corp， 1992
+收稿日期:1999-03-18
+。在相同的菜单上 (Config-DirSync-Requestor-Import)，点击“Import”并点击“Yes”确认。在相同的菜单上 (Config-DirSync-Requestor-Import)，点击“Import”并点击“Yes”确认。
+2.2　创建MS PC Mail邮局连接
+　　现在我们必须在MS Mail连接器中创建通向其它真正MS PC Mail邮局的连接。 
+　　. 为保存表（define）定义数据窗口对象d―define。在Microsoft PC Mail执行文件目录下运行Admin程序，以Admin权限的用户身份进行登入；创建新的外部邮局，输入Exchange Server影子邮局的网络名、邮局名、路由方式和连接类型；如果指定邮局的路由方式和连接类型是Direct和通过Async或X.25的，必须设置与Exchange Server影子邮局连接的端口、速率、登录识别符和口令信息。
+3.3.1　定义职员信息窗口
+　　. 定义职员信息窗口对象w―1；
+　　. 在窗口上放置数据窗口控件dw―1，并将之与数据窗口对象d―personnel相连接，dw―1的显示属性设置为visible；
+　　. 在窗口上放置数据窗口控件dw―2，并将之与数据窗口对象d―define相连接，在窗口画笔中将dw―2的显示属性设置为invisible。
+　　W―1的open事件的处理程序为：
+　　{ 
+dw―1.settransobject(sqlca)
+dw―2.settransobject(sqlca)
+//dw―2为隐藏的列属性名称的保存表
+dw―1.retrieve()
+dw―2.retrieve()
+dw―1.object.per―id―t.text=dw―2.getitemstring(1,1)
+dw―1.object.per―name―t.text=dw―2.getitemstring(1,2)} 
+dw―1.object.per―department―t.text=dw―2.getitemstring(1,3) 
+} 
+　　. 在窗口上放置按钮控件“修改列属性名称”（cb―1）
+　　cb―1的clicked 事件的处理程序为： 
+　　{ open(w―2) 
+// 用于弹出3.3.2中创建的列属性名称保存窗口w―2
+}
+　　w―1窗口的外观如图1。
+
+图1
+3.3.2　创建列属性名称保存窗口
+　　. 创建列属性名称保存窗口对象w―2；
+　　w―2的open事件的脚本程序为： 
+　　{ 
+dw―2.settransobject(sqlca)
+dw―1.retrieve()
+} 
+　　. 在窗口上放置数据窗口控件dw―1，并将之与数据窗口对象d―define相连接。
+　　. 在窗口上放置按钮控件“保存”（cb―1），cb―1的clicked事件的脚本程序为：
+　　{ 
+if update(dw―1)=1 then 
+commit ;
+messagebox("ok!","成功保存!")
+else 
+rollback ;
+messagebox("pity!","保存失败!")
+end if
+}
+　　w―2的外观如图2。
+
+图2
+　　本文中利用PowerBuilder6.0的动态数据窗口技术修改应用程序的外观，利用隐藏的数据窗口保存这些改动，满足了用户的需求；这种思路还可以推广到其他应用中。
+作者简介：王臻　硕士研究生。因为我们还没有实现Exchange Server 和MS PC Mail系统之间的目录同步，所以不能从地址表中选择地址，而必须手工输入它们。
+作者单位：中国科学院空间中心四室　北京（100080）
+收稿日期:1999-06-18

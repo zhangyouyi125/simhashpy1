@@ -1,0 +1,58 @@
+微型机与应用
+WEIXINGJI YU YINGYONG
+2000　Vol.19　No.5　P.31-32
+
+
+
+
+ASP的Session对象在网上购物系统中的应用
+林鹤鸣
+摘 要：ASP是近年来新兴的动态网页设计技术，Session对象在ASP编程技术中占有相当重的份量。本文通过网上购物系统的一个侧面，介绍Session 对象的应用。以下给出用VC编写的通信程序中用于产生各种波形的具体函数。一个网上购物系统的基本构架包括：
+　　（1）主页。提供可选择的购物分类，让用户进入自己感兴趣的购物区，即购物网页。
+1 串行DAC
+　　本文以MAX538／MAX539串行DAC为例进行讨论。具体硬件电路如图4所示。设有“放入购物袋”按钮，含有“查看购物袋”，“退回所有商品”，及各分类购物网页的连接。
+　　（3）查看购物袋网页。列出用户选择的所有商品，能更改所选某商品的数量，取消选中的某商品。
+　　（4）放入购物袋程序。把用户选择的所有商品记录在Session对象中。
+　　（5）退回所有商品程序。清除购物袋内容。
+　　由于ASP（Active Server Pages）的Session是某一连接者所有网页的共同对象，可以用它来记录用户在不同网页上选购的商品。本文介绍利用WIN95下的通信函数和PC机并行口（打印机口）的连接，通过VC编程，实现串行DAC与WIN95环境通信的方法。
+3 串行DAC与WIN95下的通信接口
+　　利用PC机并行口和＿outp函数，通过程序控制，可以方便地实现WIN95环境与串行DAC的通信接口。可以在数据表单内引入表格，结合复选框形式来展示数据库内各种商品，为方便起见，只列出商品编号、名称、单价、简介。表单设有“放入购物袋”按钮，当按下此按钮时指定服务器端执行放入购物袋程序。因此，该串行DAC不能直接接收串行口提供（经EIA到TTL电平转换）的串行数据。这样经Split处理后，Products就成为所选中商品编号的1个数组。
+4 结束语
+　　利用PC机并行口及VC＋＋提供的＿outp（）函数可以实现串行DAC与WIN95环境的通信。为了列出用户所选购的商品，必须：
+　　（1）把存储于Session（″ProductList″）中内容还原回来，使用以下命令：
+　　ProductList＝Session（″ProductList″）
+　　（2）建立连接对象，打开数据库，设定SQL命令，使用Execute命令执行访问数据库的操作。可应用于电池供电的测试仪器、数位偏移和增益调节器、成组操作或远程工业控制、计算机和移动控制装置、便携式电话等领域引脚如图1所示，引脚功能如表1所示。
+　　（3）利用数据表单引入表格来展示rs中数据记录，表头格式为：
+　　＜TR BGCOLOR＝＃00FFFF＞
+　　＜TD＞取消＜／TD＞＜TD＞商品编号＜／TD＞＜TD＞商品名称＜／TD＞＜TD＞单价＜／TD＞＜TD＞数量＜／TD＞＜TD＞总价＜／TD＞＜TD＞商品简介＜／TD＞＜／TR＞
+　　用以下代码列出rs中所有被选中的商品的记录：
+　　＜％
+　　　　While Not rs．EOF
+　　　　　Quatity＝CInt（Request（″Q＿″ ＆ rs（″ProductID″）） ）
+　　　　　If Quatity ＜＝ 0 Then
+　　　　　　Quatity＝CInt（ Session（rs（″ProductID″）） ）
+　　　　　　If Quatity ＜＝ 0 Then Quatity＝1
+　　　　End If
+　　　　Session（rs（″ProductID″））＝Quatity
+　　　　Sum＝Sum＋CDbl（rs（″Price″））＊ Quatity
+　　％＞
+　　＜TR＞
+　　＜TD Align＝Center＞
+　　＜Input Type＝CheckBox Name＝″ProductID″ Value＝
+　　　　　　　　　″＜％＝rs（″ProductID″）％＞″ Checked＞
+　　＜／TD＞
+　　＜TD＞＜％＝rs（″ProductID″）％＞＜／TD＞
+　　＜TD＞＜％＝rs（″ProductName″）％＞＜／TD＞
+　　＜TD Align＝Right＞＜％＝rs（″Price″）％＞＜／TD＞
+　　＜TD＞＜Input Type＝Text Name＝″＜％＝″Q＿″ ＆ rs（″Pro－
+　　　　ductID″）％＞″ Value＝＜％＝Quatity％＞ Size＝3＞＜／TD＞
+　　＜TD Align＝Right＞＜％＝CDbl（rs（″Price″））Quatity％＞＜／TD＞
+　　＜TD＞＜A HREF＝＜％＝rs（″Link″）％＞＞＜％＝rs（″Description″） 
+　　　　　　　％＞＜／A＞＜／TD＞
+　　＜／TR＞
+　　＜％
+　　　　　rs．MoveNext
+　　　　Wend
+　　％＞
+　　其中HTML代码部分为利用表格列出rs中所有被选中商品的记录。当为低时，数据在SCLK的上升沿被输入1个16位移位寄存器。
+　　为了更详细了解程序内容，请参阅参考文献1光盘。12位串行DAC由写入2个8位字编程，16位串行数据位被时钟依次输入DAC的高位到低位

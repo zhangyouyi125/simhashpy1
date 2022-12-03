@@ -1,0 +1,63 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+竞争学习模糊神经网络及在导弹
+故障诊断中的应用
+胡昌华　王青　陈新海
+　　摘　要　尽管基于解析冗余的故障诊断方法有许多突出的优点而越来越多地得到研究和应用，但它依赖于系统的模型，当系统存在非线性或不确定性时，存在难以建模的困难，模糊神经网络可以通过学习建立系统的模型，且模型参数有明确的物理意义，初始参数易于选择，成为解决这一问题的优选途径，作者通过把模糊神经网络的学习转化为竞争聚类和线性优化问题，基于竞争聚类和最小二乘原理，提出了一种模糊神经网络学习算法，并在某伺服机构上进行了学习和故障诊断的实验，获得了良好的实验结果。
+　　主题词　故障诊断　竞争学习　模糊神经网络
+FUZZY NEURAL NETWORK BASED ON COMPETITIVE 
+LEARNING AND ITS APPLICATION TO 
+FAULT DIAGNOSIS OF MISSILE
+Hu Changhua
+(Section 302,Xian Inst.Of Hi-tech,Hongqing town . Xi'an . 710025)
+Wang Qing
+(Department of Automation,Beijng University of Aeronautics and Astronautics . Beijing . 100084)
+Chen Xinhai
+(College of Aeronautic,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　The fault Diagnosis based on analytical redundancy depends on system's model,while it is difficult to get the system's model when the system is non-linear or uncertain time-varying,there are some difficulties to put this method into application of non-linear system.The fuzzy neural network can build the system's model by learning,and the model's parameter established by this method has clear mean,it provide an effective way to solve the above problem.The key of the Application of the fuzzy neural network is the determination of its parameters.Different from the other researchers,the authors convert the learning process to cluster and linear optimum,based on competitive learning and least-square error criterion,suggest a learning algorithm for the fuzzy neural network system,the experiment in certain servo-mechanism get very good result.
+　　Key words　Fault diagnosis Competitive learning　Fuzzy neural network
+1　引言
+　　对于导弹等大型复杂系统，对其可靠性提出了极高的要求，系统应具有故障诊断和容错能力，美国NASA就曾规定空间机器人应有一个故障诊断系统。基于解析冗余的故障诊断方法不需要增加硬件，利于减小系统的体积和重量，在航天器控制系统故障诊断和容错控制中得到了越来越多的研究和应用。因此,最终的故障源为A5,A4即运算放大器故障和三级管T1开路(图5)。采用显式格式求解时,出于稳定性上的考虑,必定要对时间步长Δτ提出制约条件,致使这种格式将只适宜于求解那些从一个工况迅速转变为另外一个工况的短暂过程,常见的换热器动态计算大多属于这一情况。
+
+
+图6　冷流体(氢)进出口温度曲线
+
+
+图7　换热器最高壁面温度曲线
+为了验证隐式方法的可靠性,用显式格式的差分方程作了对比计算。对D1的槽值进行搜索,顺序启动D1的报警规则库、诊断规则库、模型库及对策规则库。
+　　　(其中σ2为(x)的形状特征参数)。
+　　模糊规则库由一组模糊规则构成，模糊规则是通过(如果一则/IF-THEN)语言描述的，即：
+
+　　其中隶属函数式中★表示T算子，经常采用的T算子有“模糊交”和“代数乘”。在处理扩散项时,取th对x和tc对y为分段线性分布,在处理牛顿换热项时,认为流体温度随位置阶跃分布,其值等于两界面即控制容积进、出口位置温度的算术平均值。系统级故障树上的结点为分系统级的故障模式,零件级故障树上的结点为元件级的故障模式。(4)式的模糊神经网络用一条规则对应一组数据，Xjk为该组数据对应的输入模式的中心，如果固定σjk，则问题归结为如何确定Yk和Xjk，Xjk可由竞争学习方法确定。
+聚类中心的竞争学习算法：
+　　Step1　从第一个数据对开始，在X1上建立一个聚类中心，且令X1=X1,Y1=Y1，并选择一个聚类半径r。图5显示空气(热流体)出口诸通道平均温度的响应曲线,从这张图可以看出,从τ=0［s］到τ=1000［s］的时间间隔里,换热器大致可使空气降温Δt=30℃～120℃,效果明显,图6给出冷流体氢的动态温度变化状况,图7是换热器最高壁温(位于最末一根热空气通道入口和第一根氢通道出口的交界位置,参见文献［2］)随时间变化关系。
+　　首先根据传感器的实测数据启动系统级框架进行元级诊断推理,根据报警和分系统优先级依次启动相关各分系统框架;被启动的分系统框架进行元级推理,根据报警和部件优先级依次启动相关各部件级框架;被启动的部件级框架进行元级推理,根据报警和零件优先级依次启动相关各零件级框架。
+　　(a)计算
+　　　　　　　　　　　　　　　(5)
+　　　　　　　　　　(6)
+　　pt表示中心点Xt附近样本的密集程度，ni为Xi被选最近点的次数。本文对预冷换热器全工况工作特性展开分析,旨在求得其随时间或飞行M数而变的实际出口参数。
+　　用竞争学习方法确定聚类中心后，剩下的问题是如何确定Yk
+　　令
+　　　　　　　　　　则(4)式变为(8)式
+　　　　　　　　　　　　　　(8)
+hT(k)=［R1,R2,…,RM］,θ=［Y1,Y2,…,YM］T
+　　取性能指标为极小化J确定Yk，得
+］
+4　基于模糊神经网络的非线性系统故障诊断
+　　文［5］对基于观测器的故障诊断方法进行了深入的分析，由文［5］易得图1所示的用模糊神经网络作为观测器的故障诊断系统。
+
+图1　基于模糊神经网络的非线性系统故障诊断原理图
+　　利用系统正常工作的输入输出数据，用竞争学习算法建立模糊神经网络，使之与实际系统并行工作，当系统正常工作时，二者的残差比较小，一旦系统偏离正常工作状态或故障时，则二者的残差就比较大，据此借助一定的故障分离策略就可实现故障诊断，
+5　基于模糊神经网络的某导弹伺服机构故障诊断实验及结果分析
+　　导弹伺服机构是一个具有严重非线性的部件，采用机理建模的方法得到的模型很复杂而失去使用的价值，因此我们根据伺服机构的正常工作数据利用本文的方法建立模糊神经网络，并构造图1所示的诊断系统，考察这种模糊神经网络的非线性逼近能力和基于模型的故障诊断能力。
+　　实验方法：根据导弹的幅相频率特性和阶跃响应曲线选择合适的激励信号(本试验中激励信号选择为长度为64的逆M序列，Δt=0.01)，用该激励信号分别激励系统，我们共进行了伺服机构正常和存在反馈电位计接触不良故障等8种初始状态的实验，每种初始状态进行了5～10组实验。如果诊断规则库框架的启动无法给出确切诊断结果,则启动模型库框架产生诊断结果,再启动对策规则库框架给出故障排除的对策建议。从图6和图7可知,在τ=1000s即M=6时,氢的出口温度tc达到650K,已呈气态,而换热器的最高壁温此时大于1000℃,超出了高温不锈钢的安全使用范围。
+
+图2　伺服机构正常残差输出随时间变化曲线
+
+图3　存在反馈电位计接触不良故障情况下残差输出随时间变化曲线
+　　实验表明，基于竞争学习的模糊神经网络能以较高精度逼近具有严重非线性的系统，据此构造的故障诊断系统可以有效地进行故障检测与诊断。这种知识表示和知识组织形式可适应不同层次的诊断要求

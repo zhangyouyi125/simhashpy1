@@ -1,0 +1,296 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年4月  第19卷  第2期科技期刊
+
+10°尖锥气动特性边界层转捩
+诱导量的测定研究
+楼洪田
+(北京空气动力研究*所北京7201信箱1分箱*100074)
+摘  要　　本文用风洞实验的方法在国内外首次测出了10°尖锥气动特性的
+转捩诱导量，包括转捩诱导法向力及其作用点，转捩诱导俯仰力矩和尖锥压
+心的转捩诱导量。研究结果表明，这些转捩诱导量随Re数的变化趋势合理，
+具有确定的规律性。研究认为，这些转捩诱导量产生的原因是细长锥边界层
+转捩的不对称性。设计出的K-inf为二入二出8状态控制器，具体数值见文献［3］。此外，这个研究结果还有助于证明边界层转捩将影响
+物面的压力分布。
+　　以BTT导弹沿标准弹道飞行时主发动机停车点的俯仰-偏航通道的数学模型为标称设计模型，这时导弹的飞行高度h=9.05公里，马赫数M=3.72。
+
+主题词   细长锥　边界层转捩　雷诺数　气动特性　风洞试验
+
+
+
+MEASUREMENT STUDY OF TRANSITION INDUCED
+AERODYNAMICS ON 10° SHARP CONE
+Lou Hongtian
+(Beijing Institute of Aerodynamics*Beijing*100074)
+Abstract In this paper,the aerodynamics induced by boundary layer transition on sharp cone 
+were measured experimentally,on the condition when M=5,α=0°，θc=10° and ReL=
+(2.8~13.8)×106.Results show that,the asymmetric transition between leeward and windward 
+of 10° sharp cone will produce on the cone a transition induced normal force,whose direction 
+is in opposition with that of the normal force of non-viscous flow and its acting point is 
+allocated shortly behind the transitional belt.This induced normal force will cause obvious 
+variation of pressure center of the sharp cone along with Reynolds number,total amount of 
+movement can reach up to 3.2%.
+
+　In this paper,curves of aerodynamic coefficients of transition induced normal force to 
+Reynolds number are given out,such as its moment coefficients to cone nosetip,its acting 
+point and transition induced variation of pressure center,Also this paper proves that boundary 
+layer transition will cause pressure variation on body surface.
+
+　Key words  Slender cone   Boundary layer transition  Reynolds number  Aerodynamic 
+characteristics  Wind tunnel test
+
+1　引言
+
+　　边界层转捩对细长锥气动特性的影响一直是一个人们十分关注的课题。
+原因是多方面的。
+
+
+图1　标准H∞控制问题方块图
+2　H∞/加权混合灵敏度设计问题
+2.1　标准H∞控制问题
+　　H∞控制设计问题均可用图1所示的标准H∞控制问题表示。
+
+　　围绕这个课题国外已发表了大量的论文，主要涉及三个内容。一是细长
+锥边界层转捩的形态以及转捩位置随Re数的变化，证实了细长锥边界层的转
+捩是不对称的［2］；二是转捩对细长锥静、动稳定性和压心的影响，证实这
+种影响是显著的［3，4，5］；三是转捩对细长锥气动特性影响的机理，这方面
+的研究结果很少，只见到Ericsson提出的转捩诱导法向力的概念［3，4］，但
+未看到任何实验结果。
+　　设计指标为：上升到70%稳态值的时间tr为：
+tr0.2s　h＜12km
+0.35s　h12km，超调：σ10%
+(6)
+4　俯仰-偏航通道自动驾驶仪设计
+　　导弹与目标的最大斜距为50公里，弹道上导弹的速度V变化范围为554～1405米/秒，高度变化约17.5公里，动压头变化约7倍，可以看出导弹的作战空域较大。
+
+　　作者对这个问题在国内首先开展了长达18年的研究，获得了一系列的成
+果［6，7，8］。其中，转捩对细长锥静、动稳定性的影响的研究结果比国
+外的同类结果具有更好的规律性，并证实这种影响确是边界层的不对称转捩
+形成的；证明了静、动稳定性的转捩诱导量之间存在着负相关关系，而这些
+转捩诱导量又都可归纳为转捩诱导法向力的导出量。说明了应用H∞/加权混合灵敏度方法设计较大范围模型参数变化系统的鲁棒稳定性是可行的。
+
+　　为了用实验证实转捩诱导法向力的存在，并从粘性气动力中将它分离出
+来，作者及国内的其他研究人员曾做过努力，其结果见文献［9］。该结果表
+明，转捩诱导法向力是确实存在的，利用它能很好解释边界层的不对称转捩
+对细长锥气动特性的影响及其随Re数的变化规律，但是由于数据点少，分散
+度较大，因此难以把它从粘性气动力数据中分离出来。
+
+　　为了测定边界层转捩的诱导气动特性，包括转捩诱导法向力，它的作用
+点，转捩诱导俯仰力矩，转捩对压心的影响，作者设计了一个更精细的实验
+方案，并终于得到了满意的结果。图4为调试结果，图中虚线为γ=0.92时系统的代价函数的奇异值曲线。2  研究方案、实验设备与实验条件
+
+　　采用高速风洞实验研究的方法，名义M数为5；模型用半锥角为10°的尖
+锥，称10°尖锥，攻角α在0°附近。这样做的原因是在风洞条件下，M=5
+附近最容易实现转捩边界层；而这些实验条件又与国外的研究相同，实验结
+果便于比较。
+
+　　风洞选用北京空气动力研究所的FD-02风洞，该风洞M=3.5~8，风洞的
+总压可在0.3~8.0兆帕的范围内变化。风洞配有蓄热式加热器，可以保证风
+洞流场不发生冷凝，在本实验中，T0维持在373K。在M=3.5~6时，喷管的出
+口面积S=0.2m×0.2m,M=7与8的喷管，出口直径为φ0.25m。风洞通过改变
+前室总压改变流场Re数,在本实验中,以模型长为特征尺寸的自由流Re数为
+2.8×106~13.8×106。在较低的Re数下时，模型的底部附近锥面上，可出现转
+捩边界层；在较高的Re数下，转捩位置移到锥尖附近［10］。这样，可以观
+察细长锥的气动特性随转捩位置从锥底向锥尖移动时的变化情况。
+
+　　模型底径d为70mm，长l为198.4mm，是用合金铝制成的薄壁结构。
+
+　　天平为201A三分量气动天平，可以测出法向力、俯仰力矩、阻力并据此
+算出各气动力系数和压心位置。
+
+　　因转捩对气动特性的影响主要在0°攻角附近，所以实验时只需测定α=
+-2°~+2°的气动力随α的变化就够了。3  数据处理
+
+　　测得模型法向力N、轴向力A、绕天平力矩参考中心R的俯仰力矩MR和气流
+总压P0、底压Pb、总温T0和环境压力Pa后，即可算出气流动压q∞、静压P∞并
+按下列各式算出各气动系数：
+CN=N/q∞S
+
+(1)
+Cmr=MR/q∞Sd
+
+(2)
+CA=A/q∞S
+
+(3)
+CAf=CA-CAb
+
+(4)
+CAb=(P∞-Pb)/q∞
+
+(5)
+b=Pb/P∞
+
+(6)
+式中，CAf为前体轴向力系数，CAb为底部阻力系数。
+
+　　对α=-2°,-1°,0°,1°,2°的CN、Cmr值用最小二乘法拟合成直线并对攻角求导，
+得到α=0°的攻角导数CNα与(Cmα)r，并按下式算出粘性压心系数CP和相对锥尖
+的俯仰力矩系数的攻角导数CmαT。
+CP=XR/l-(Cmα)r/ηCNα
+(7)
+CmαT=-ηCPCNα
+(8)
+
+
+图1 从粘性测值中分离粘性诱导量 
+
+把上述CNα、CmαT与CP对ReL作图，并把最高实验Re数下的逼近值看做无粘量。
+由于粘性值为无粘量与粘性诱导量之和，即可根据上述曲线得到它们的粘性诱
+导量。
+　　在存在转捩流态的情况下，转捩的粘性效应显然要大大超过边界层厚度
+的单纯变化所产生的粘性效应。所以，可以把这时的粘性诱导量看作为转捩
+诱导量，即：
+CNα=(CNα)iv+(CNα)in≈(CNα)itr+(CNα)in
+(9)
+CNαT=(CmαT)iv+(CmαT)in≈(CmαT)itr+(CmαT)in
+(10)
+CP=(ΔCP)iv+(CP)in≈(ΔCP)itr+(CP)in
+(11)
+根据得到的(CmαT)itr和(CNα)itr，还可以得到转捩诱导法向力Nitr的作用点参数
+即转捩诱导压力的压力中心系数(CP)itr；
+(CP)itr=(CmαT)itr/η(CNα)itr
+(12)
+在上面各式中，上角标i表示诱导量，下角标v表示粘性，tr表示转捩条件，in表
+示无粘条件。
+2.2　加权混合灵敏度设计问题及其对应的标准H∞控制问题
+　　通常被控对象确定后，要设计一个满意的反馈控制系统，就要确定一个稳定的控制器使闭环系统满足一定的性能指标，尤其要求闭环系统具有一定的鲁棒稳定性和抗干扰能力，这些指标可通过合理地选择权函数使系统的灵敏度函数S及补灵敏度函数T按系统的性能要求“成形”实现，常称此问题为加权混合灵敏度设计问题。
+
+4  实验结果及分析
+
+
+图2 尖锥底压系数b随Re数的变化
+
+图2为尖锥底部压力系数b随Re数的变化曲线。b的这种变化趋势表明，在实验
+的Re数范围内，锥面边界层处于转捩状态，并在最高实验Re数附近，转捩已移
+近锥尖。因此，可以把高Re数测量值看作无粘值，较低Re数下的测量值与该值
+之差，即为转捩诱导量，并按图1把后者分离出来。图4为调试结果，图中虚线为γ=0.92时系统的代价函数的奇异值曲线。在该图中，(CNα)itr＜0，而(CmαT)itr＞0，说明
+转捩诱导法向力Nitr为负值矢量，其方向与无粘法向力Nin相反。
+
+　　从图可知，在最低实验Re数附近，(CNα)itr具有一个较小的值，而这时
+的(CP)itr≈1；随着Re数增加，转捩诱导法向力增大，作用点前移，并在ReL
+≈3.5×106时，(CNα)itr达到最大值。(CNα)itr最大值的绝对值，约为
+(CNα)in的10%；随着Re数进一步增加，转捩诱导法向力减小，作用点继续前
+移。当Re数足够大时，(CNα)itr→0，作用点靠近锥尖；作用点的推进，与转
+捩位置的推进，基本同步。以上事实说明：
+
+　　①转捩对物面压力是有影响的，但主要存在于转捩区及其稍后的地方；
+
+　　②在某一雷诺数下(如本研究中的ReL≈3.5×106)，转捩发生在后体锥面上
+的某一位置，这时转捩诱导法向力出现最大值，作用点在底部稍前的位置上。
+显然，这时的转捩影响区占有最大的锥面面积，所以其积分效应最大。
+
+    转捩诱导俯仰力矩的变化和转捩诱导法向力的变化相似，这是因为前者为
+后者的导出量，但是它们的符号相反。
+
+　　用上述方法从本实验结果中分离出来的无粘量(CNα)in与(CmαT)in分别为
+2.00和3.916，与牛顿无粘理论值1.94、3.78很接近，差别只有3%。这说明实验
+结果是可靠的。广义被控对象P(s)用状态方程描述为：
+(1)
+式中x∈Rn为广义被控对象的状态变量，广义被控对象P(s)的传递函数形式为：
+(2)
+从w到z的闭环系统传递函数为：
+z=Fl(P，K)w
+(3)
+其中，Fl(P，K)=P11+P12K(1-P22K)-1P21
+标准H∞控制问题：求取控制器K(s)使闭环系统内稳定，且使系统闭环传递函数Fl(P，K)满足：
+‖Fl(P，K)‖∞＜γ0
+(4)
+其中γ0为给定常数，不失一般性取γ0=1。
+　　主题词　BTT导弹　自动驾驶仪　H∞控制设计　鲁棒稳定性
+H∞/MIXED SENSITIVITY AUTOPILOT 
+DESIGN OF A BTT MISSILE
+Zheng Jianhua
+(The Center for Space Science and Applied Research,CAS,Beijing,100080,China)
+Yang Di　Shao Chengxun
+(Harbin Institute of Technology*Harbin*150001*China)
+　　Abstract　This paper gives the H∞/mixed sensitivity robust autopilot desing method to improve robustness of a BTT missile.Results declare that the robust autopilot designed with nominal mathematical model can control the BTT missile flying in a large airspace stably and accurately.
+　　Key words　BTT missile　Autopilot　H∞ design method　Robust Stability
+1　引言
+　　BTT导弹的特点决定了它是一个具有运动学耦合、惯性耦合、气动耦合和控制作用耦合的多变量系统，需用多变量控制方法设计其自动驾驶仪。
+5　仿真结果分析及结构
+
+
+a.过载命令nyc=1,nzc=0　　b.过载命令nyc=0,nzc=1
+图5　M=3.75和h=9.05时的单位阶跃响应曲线
+图5为标称设计点的线性仿真结果。
+
+图5为测得的前体轴向力系数随Re数的变化，可见粘性对轴向力的影响
+不大，这与预期结果是吻合的。
+
+
+图4 压心系数转捩诱导量随Re数的变化
+
+
+图5 前体轴向力系数随Re数的变化
+5  转捩诱导法向力形成机理分析
+
+　　边界层转捩如何引起诱导压力增量，在锥面上的转捩最终导致出现转捩
+诱导法向力的机理可以作如下解释，见图6。
+
+
+图6 转捩诱导法向力形成机理
+
+图6(a)所示平面流动，假定在A处发生转捩，则A点下游的边界层将局部隆起，
+并产生速度剖面的重建过程。目的是在满足一定的性能指标要求前提下，提高系统的鲁棒稳定性，实现用基于弹道上某特征点的数学模型设计的鲁棒自动驾驶仪控制导弹的全弹道飞行。设计出的K-inf为二入二出8状态控制器，具体数值见文献［3］。一直到B点，边界层才恢复到相应的正常紊流边界层的流态。
+在AB这个区域，由于流线的弯曲，必然对应着物面压力的某些增加，它就是
+转捩诱导压力，其积分作用可以用一个转捩诱导法向力Nitr来表示。
+
+    上面讨论的是平面流动边界层转捩形成转捩诱导法向力的机理。本研究
+的圆锥流动，可看作背风面流动与迎风面流动的合成，见图6(b)。P(s)代表广义被控对象，包括标称被控对象和权函数，K(s)为要设计的控制器。此外，
+背风面的边界层比迎风面的边界层要厚一些。因此，背风面的转捩诱导法向
+力(Nitr)L总是比迎风面的转捩诱导法向力(Nitr)w要大一些，方面相反。因此，
+锥面转捩影响的总的效果相当于存在一个与无粘法向力方向相反的转捩诱导
+法向力Nitr，它位于上下表面转捩起始位置的稍下游;一个转捩诱导轴向力Aitr,
+它是转捩诱导压力的轴向积分效应，但因θc很小，所以Aitr是个二阶小量，
+难以测量出来；也可能还有一个背风面与迎风面转捩诱导法向力异位而出现的
+纯力矩，但由于AW与AL很接近，这个纯力矩也一定是一个二阶小量。当雷诺数
+很高时，转捩发生在锥尖的紧下游，AW与AL十分靠近锥尖，量很小，所以，上
+述转捩诱导量都趋近于零。
+
+6  结  论
+
+　　从本实验研究的结果可以得出下列结论：
+
+　　①当细长锥处于转捩Re数条件下时，本实验测出了各气动特性的转捩诱
+导量，包括转捩诱导法向力及其作用点、转捩诱导俯仰力矩和压心系数的转
+捩诱导量，它们随Re数的变化趋势合理并呈现出明显的规律性；
+
+    ②上述转捩诱导量中，关键参数是转捩诱导法向力及其作用点的位置，
+它是细长锥边界层转捩的不对称性形成的，其他转捩诱导量都是导出量。由于H∞控制设计方法的两个代数Riccati方程算法定义在标准H∞控制问题框架下，需将式(5)的加权混合灵敏度设计问题转化为标准H∞控制问题，详细过程见文献［3］，称此时的H∞控制设计方法为H∞/加权混合灵敏度设计方法。
+转捩诱导法向力的最大值约为无粘法向力的10%，出现在ReL=3.5×106附近，
+这时转捩位置在尖锥底部稍前的物面上。转捩诱导法向力以及它的作用点位
+置的测定，在国内外还是首次。
+
+    ③由于转捩诱导法向力的出现，尖锥压心随Re数将产生显著的变化。与
+无粘压心相比，后体转捩的压心将前移，最大前移量约达2.7%；前体转捩，
+压心后移，最大后移量约0.5%。因此在实验的Re数范围内，压心总移动量可
+达3.2%。
+　　以BTT导弹沿标准弹道飞行时主发动机停车点的俯仰-偏航通道的数学模型为标称设计模型，这时导弹的飞行高度h=9.05公里，马赫数M=3.72。
+
+    ⑤转捩诱导法向力的存在，证实边界转捩会影响物面的压力分布，也就
+是说，会产生转捩诱导压力。
+
+
+本文于1995年10月11日收到
+参考文献
+1  Chrusciel G T.Analysis of Re-Entry Vehicle Behavior during Boundary-Layer 
+Transition.AIAA Journal,1975,13(2)
+2  Stetson K F.M=6 Wind Tunnel Experiments of Boundary Layer Transition on 
+a Cone at Angle of Attach.AIAA：81-1226
+3  Ericsson L E.Effect of Boundary Layer Transition on Vehicle Dynamics.AIAA：69-106
+4  Ericsson L E.Transition Effects on Slender Cone Pitch Damping.AIAA：87-493
+5  В．Н．Андреев，Аэродинамипеские　хар
+актеристпки　конусов　При　Малах　Ата
+ки　В　Условиях　Перехода　Подэграниц
+ного　Слоя，Механика　Жцдкости　И　Таэ
+а，1991.1
+6  Lou Hongtian.Transition Effects on Stability of a Slender Cone.Proceedings of the 
+Second Asia Congress of Fluid Mechanics,398-404,Science Press,Beijing,China,1983
+7  楼洪田.边界层转捩对细长锥静、动稳定性的影响.宇航学报，1985，6(1)：
+88-98
+8  楼洪田.粘性对再入锥气动静稳定性的影响.宇航学报,1995，16(4)：85-88
+9  楼洪田.转捩诱导法向力及其对细长锥气动特性的影响.宇航学报，1989，
+10(3)：54-64
+10  楼洪田.高超音速细长锥边界层转捩的油流显示.气动力学杂志，1984，4：
+77-79

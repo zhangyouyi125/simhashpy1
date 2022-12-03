@@ -1,0 +1,65 @@
+计算机工程
+Computer Engineering
+1999年　第25卷　第9期　Vol.25 No.9  1999
+
+
+
+用Windows Sockets实现全分布式系统的方法
+胡慧圣　谢晓方
+　　摘　要：简要介绍一种基于Windows NT对等网络的安全分布式系统的实现方法．该方法以Visual C++为开发平台，采用Windows Sockets网络编程技术，实现了系统的全分布式设计．
+　　关键词：网络编程；Visual C++；Windows Sockets；CSocket；Windows NT；全分布式系统
+Implementation of an Entirely Distributed System with Windows Socket
+Hu Huisheng Xie Xiaofang
+(Naval Aeronautical Engineering Academy, Yantai 264001)
+　　Abstract　This paper introduces a method to reaize an Entirely Distributed System based on Windows NT peer network system. Inis method realizes the distribution with Windows Sockets in Visual C++.
+　　Key words　Network programming; Visual C++; Windows Sockets; CSocket; Windows NT; Entirely distributed system
+　　在某新型全分布式舰艇指挥控制系统的设计中，需要实现图1所示的通信结构，图中的连线表示系统在工作过程中可能的连接，可在系统运行期间动态连接或断开。实现该系统的核心问题是设计一个具有一定通用性的通信接口模块。
+
+图1　全分布式系统通信结构示意图
+　　Windows NT提供了两种主要的网络编程接口：管道和Windows Sockets。其中Windows Sockets的目的是为了实现对网络细节的屏蔽，程序员不用关心网络的具体实现和具体协议。虽然Windows Socket只定义了对TCP/IP协议的抽象说明，但任何协议族都可以遵循Windows Sockets，只要它提供有关实现的动态链接库。这样可以保证对不同的域不同对待；让某性能好的机器作为综合管理器，可以充分发挥它的能力，减少管理器的个数，避免MOM-manager-domain的单调结构和"领导过多，机浮于事"的现象。但是在简单的网络环境中，集中式控制简洁有效。而这些网络功能是通过设计一个通信线程类来实现的。
+1 通信线程类CComThread类的实现
+　　在Visual C++的MFC中，CAsyncSocket类描述了基本的Windows Sockets编程接口， CSocket类是从CAsyncSocket类派生而来的，它是在更高层次上对套接字的抽象，并可使用MFC的CArchive类，使得进程间的通信类似于MFC中对文件的序列化。因此，使用CSocket类实现通信线程类。通信线程类从CWinThread类派生，以下简要论述其实现的基本步骤：
+1.1从CSocket类派生CListeningSocket类和
+　　CConnectedSocket类
+　　CListeningSocket类对象用于服务器侦听网络连接请求。其主要成员有通信线程的指针m_pComThread，在构造函数中赋值，用于向通信线程发送消息。
+3.2 DBHA体系结构模型
+　　DBHA体系结构支持3种结构方式：
+　　(1)标准方式：MOM-manager-domain的方式。
+　　CConnectedSocket类对象用于代理已建立连接的通信任务。其主要成员有：通信线程的指针和拥有该连接的本地窗口指针用于发送各种消息；套接字号用于在通信线程中标识已连接套接字；两个档案对象指针用于该通信连接的数据接收和发送。其主要方法有：初始化Init( )函数用于指定通信线程指针和本地窗口指针；重载基类OnReceive( )通知函数用于通知通信线程接收数据；重载基类OnClose( )函数用于通知通信线程连接或已经断开。
+2.1 域的定义
+　　域的定义：域表示一个范畴或区域，也是一个特殊的被管对象。其数据成员以消息名标识，而具体的数据消息类需要有自己要传输的数据成员。其方法为序列化函数，用于序列化消息名标识；而具体的数据消息类需要重载序列化函数，并在其中调用基类的序列化函数以及序列化其它需要传输的数据成员。
+　　CMsgHead类用于描述消息头类，通信线程在发送数据前都要先发送消息头对象，用以标识将要发送的数据消息类型。其成员和方法与CMsg类相近。一个管理者负责一个域，域的划分可以根据地理、组织结构或其它规则，因此这种方法非常适合多域网络。
+　　(4)综合管理器：综合管理器是一种特殊的MOM。
+1.4 CComThread类主要方法的实现
+　　CreateSocket( )创建套接字消息处理函数：在通信线程的用户希望成为服务器时，向通信线程发创建套接字消息，在该消息处理函数中，通信线程根据指定端口号构造m_pListeningSocket对象并开始侦听。
+　　ConnectSocket( )连接请求消息处理函数：客户窗口通过发送此消息向服务器发出连接请求。在该函数中，通信线程构造一个CConnectedSocket对象，并根据指定服务器地址和端口号发出连接请求，若连接成功则计数器计数，设定套接字号并将该套接字加入套接字链表，并通知客户窗口连接成功及该连接的套接字号。
+　　ProcessPendingAccept( )接受连接方法：当服务器的侦听套接字收到连接请求时调用该函数，其代码如下：
+　　CConnectedSocket* pSocket = new CConnectedSocket(this)；
+　　if (m_pListeningSocket->Accept(*pSocket))
+　　{
+　　　　　m_PipeNumber ++；
+　　　　　pSocket->Init(m_PipeNumber,m_SourceWnd)；
+　　　　　m_ConnectedSocketList.AddTail(pSocket)；
+　　　　　m_pWnd -> PostMessage( MM_LISTEN_ACCEPT, m_PipeNumber,NULL) ;
+　　}
+　　else delete pSocket；
+　　SendMsg( )发送数据消息处理函数：当通信的一方要发送数据时，向通信线程发出发送数据消息，传递消息对象指针和套接字号，消息处理函数代码如下：
+void CComThread::SendMsg(CMsg* pMsg,UINT nPipeID)
+{
+　　for(POSITIONpos=m_ConnectedSocketList.
+　　　GetHeadPosition( )；pos!
+1.1 集中式体系结构
+　　集中式体系结构(图1)是最常用的方式，它只有唯一的网络管理器负责整个网络的管理。该方法先调用：
+　　MsgHead.Serialize(*(pSocket->m_pArchiveIn))；
+　　读入消息头，并根据消息头中消息名构造消息类对象，再调用：m_pMsg->Serialize(*(pSocket->m_pArchiveIn))；
+　　读出消息对象，最后通过调用：
+　　pSocket->m_pWnd->PostMessage(MM_RECEIVE_MSG,(long)MsgName,(long)m_pMsg);
+通知数据传输目的窗口接收数据。MMOM可以管理多个管理器、多个综合管理器、多个MOM。
+1.4 网络式体系结构
+　　第四种体系结构将分布式体系结构和分层式体系结构的特点结合(图5)。以下4种较为流行：集中式体系结构, 分布式体系结构, 分层式体系结构, 分布式和分层式体系结构的结合[1]。
+作者简介：胡慧圣(1976～)，男，研究生，主要研究方向为C3I系统
+作者单位：海军航空工程学院，烟台　264001
+参考文献
+1 丁香荣.Microsoft Visual C++ 4.1编程技巧指南.西安：电子 科技大学出版社，1997
+2 Visual C++ 5.0 Books Online.Microsoft Corp.,1997
+收稿日期：1998-12-10

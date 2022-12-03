@@ -1,0 +1,121 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1999年 第14卷 第3期 Vol.14 No.3 1999
+
+
+
+构件振动可靠性设计方法初探
+田爱梅　王延荣
+　　【摘要】　本文提出一种进行构件振动可靠性设计的方法，建立了激振力频率与构件固有频率干涉的概率模型，并利用Goodman曲线，给出了将导致构件损坏的强迫共振响应的概率计算公式及其使用条件。
+2.2　发动机单个叶片无损检测的可靠性
+　　当采用第j种检测设备对第i级的一个叶片进行一次检测时，其大于规定尺寸的裂纹漏检概率Pij可由式（1）求得，当独立检测K次时，裂纹的漏检概率为：P1=PKij。
+　　主题词：结构构件　振动　可靠性　设计
+　　分类号：TB114.3
+PRELIMINARY RESEARCH ON RELIABILITY DESIGN METHOD OF MECHANICAL COMPONENT VIBRATION
+Tian Aimei and Wang Yanrong
+（4th Dept.Beijing University of Aeronautics and Astronautics,Beijing　100083）
+　　ABSTRACT　　A method is presented to evaluate the reliability of a mechanical component vibration.An interference reliability model for the exciting frequency and the natural frequency of the component has been established.The reliability computation formula has been deduced by use of Goodman curve and its application conditions for the forced resonant response that can damage the component.In general,this method can be applied to the components,for which the modal frequencies can be separated,such as the turbine blades.
+　　Key　Words　Mechanical component　Vibration　Reliability　Design
+1　引　言
+　　机械构件的疲劳失效相当大一部分是由其振动导致的，其中以强迫振动更为常见。若用q种不同的检测仪器分别进行Kj次独立检测时，那么该叶片的漏检概率P1为：
+　(2)
+Kj是第j种检测仪器的独立检测次数，j=1，…，2，q。如果叶片按损伤容限设计原则设计，那么当规定的裂纹尺寸取aNDT时，可取Pij=10%，式（2）成为：
+　(3)
+2.3　发动机某一级叶片的无损检测可靠性
+　　设发动机第i级共有n个叶片，对其全部进行无损探伤后，如果每个叶片的裂纹（缺陷）漏检概率相同，则该级叶片中大于规定尺寸的裂纹漏检概率P2i由下式计算：
+P2i＝1-(1-P1)n　(4)
+式中P1由式（2）确定。通常的做法是避开较大较危险的共振。尽管如此，经常有按传统设计方法制造的构件发生损坏的现象，且用传统设计方法也很难对这种损坏现象做出合理的解释。
+　　对于预先规定的裂纹漏检概率P*1，利用第j种检测设备，使第i级叶片中大于规定尺寸的缺陷漏检概率不超过P*1的独立检测次数为：
+　(9)
+　　若用q种不同的检测仪器分别进行独立检测时，第j种检测仪器应进行的独立检测次数Kj（j=1,2,…，q）由下式计算：
+　(10)
+其中满足条件的K1，K2，…，Kq有多种不同的组合，可根据具体情况取其中之一。
+3　发动机叶片裂纹（缺陷）漏检概率控制方法
+3.1　发动机单个叶片裂纹（缺陷）漏检概率控制
+　　从式（2）可以看出，通过增加检测设备的独立检测次数，可以明显地减少发动机叶片中缺陷的漏检概率。因此，研究构件振动可靠性设计方法以避开工作条件下的较危险的强迫共振就显得十分必要。
+2　强迫振动可靠性模型
+　　通常由于实际构件的几何形状、材料、制造工艺等均含有不确定的因素，导致其固有频率的不确定性，而外激振力的频率和幅值在一定程度上也存在不确定性，两者将共同导致构件的强迫振动响应的不确定性。对于构件的某一阶固有模态或单自由度系统的稳态强迫振动响应的放大因子为：
+
+式中，λ为频率比，ζ为临界阻尼比。
+　　现假设只有固有频率ω和激振力频率ωe具有不确定性，且其概率密度函数分别为g(ω)和ge(ωe)，则避开危险的强迫共振的可靠度R定义为放大因子β小于某个给定值βG的概率，其中βG由构件的Goodman曲线上的疲劳强度和激振力幅值确定。在给定βG和ζ的条件下，对应某一ωe，当ωe1＜ω＜ωe2时 ，则有放大因子β大于βG，与此对应的概率值即为强迫振动的不可靠度F，可以表达为：
+F＝P（ωe1＜ω＜ωe2）＝∫∞-∞ge（ωe）[∫ωe2ωe1g（ω）dω]dωe
+式中，ωe1和ωe2是依赖于ωe的两个参数。
+　　由上式可以看出，由于此模型适合于固有频率和激振力频率均为任意分布的情况，因此，要求出其解析解通常是很困难的，故一般宜采用数值积分法求解，且在实际计算中上式第一个积分号的上、下限不必取为无穷，应视其解有意义的具体情况而定。此外，本模型是根据单自由度系统建立的，原则上适合于模态不太密集的构件的任何一阶模态的共振情况；对于模态密集的构件，则应视ωe1和ωe2的具体情形而定。
+　　主题词：航空发动机　叶片　无损检验　缺陷　可靠性
+　　分类号：TB114.3
+RELIABILITY OF ENGINE BLADE NONDESTRUCTIVE TESTING
+Liu Dengdi and Fu Huimin
+（5th Dept.Beijing University of Aeronautics and Astronautics,Beijing　100083）
+　　ABSTRACT　　The attention has focused on quantifying the capability of nondestructive testing (NDT) system for guaranteeing structural safety through damage tolerance analysis.A method of reliability assessment for engine blades NDT is presented,which can determine exactly the probability of flaw detection（POD）and assess the probability of flaws missed（POM）in the engine blades,as well as control the largest size of the flaws missed at inspections with high probability of flaw detection and confidence level.This method also raises the flaw detection probability and prevents the flight accidents caused by the missed flaws in engine blades.
+　　Key　Words　Aircraft engine　Blades　Nondestructive tests　Flaw　Reliability
+1　引　言
+　　叶片中裂纹(缺陷)漏检是导致发动机损坏的主要原因之一。文献［3，4］的作者对此进行了研究，但本文仍将以叶片为例，说明本文方法的具体实施过程。
+　　一般情况下，涡轮机械叶片的模态相对来说是“分得开的”，即不太密集，这可由图1所示的叶片Campbell图看出。对此用本文方法进行可靠性预测是比较合适的。
+
+
+图1　典型的叶片Campb ell图
+　　首先，对叶片进行稳态静力分析，可采用计算或实验的方法确定叶片上各点的应力分布；确定激振力幅，并计算位移幅值，进而计算振动应力，通常这一步的计算是相当繁琐的，但是是可行的；而后是利用图2所示的Goodman曲线，考虑非零平均应力的影响，确定许用的振动应力，进而确定放大因子β。
+
+
+图2　构件的Goodman曲线
+　　然后，利用放大因子β，确定ωe1和ωe2。当然也可以通过构件的强迫振动响应计算直接得到ωe1和ωe2。
+3.3　发动机全部叶片的裂纹（缺陷）漏检概率控制
+　　欲使一台发动机全部m级叶片中大于规定尺寸的裂纹（缺陷）的漏检概率小于预先给定的P*3，则首先将P*3按每级叶片的重要程度进行分配，求得每级叶片应控制的缺陷漏检概率P*2i：
+P*2i＝ωix　(14)
+式中x由下式计算：
+　(15)
+式中ωi是第i级叶片的重要度，归一化处理后，满足条件。
+　　这里需要说明的是，常用的Goodman曲线是针对无限寿命设计（即循环次数等于或超过107）而绘制的，因此基于此曲线计算得到的可靠度是对应无限寿命的可靠度。这对航空发动机叶片来说通常是有实际意义的。当然利用基于有限循环次数绘制的Goodman曲线，通过上述方法也可以确定有限寿命的可靠度。这对充分挖掘按有限循环次数设计的构件的潜力是有益的。一个最小能检测到零点几毫米，甚至几个微米裂纹的无损检测设备，常常连几个毫米，甚至十几个毫米的裂纹也会漏检［1］。
+　　现以某一振动系统为例，设其给定阶模态的临界阻尼比ζ=0.01，放大因子β=20.0，激振力频率和固有模态频率的概率密度函数为三参数威布尔分布W（ω0，η，m）或正态分布N（ω0，σ），利用根据本文提出的概率模型计算公式编制的计算机程序，计算得到不同激振力频率分布和固有模态频率分布情况下的不可靠度F列于表1。
+表1　不同激振频率、固有频率分布情况下的不可靠度
+
+激振频率分布固有频率分布不可靠度F激振频率分布固有频率分布不可靠度F
+N(520，10)
+N(520，10)
+N(520，10)
+N(520，10)
+N(520，10)
+N(520，10)N(520，10)
+N(530，10)
+N(540，10)
+N(550，10)
+N(560，10)
+N(570，10)0.600748
+0.504117
+0.285392
+0.107835
+0.026765
+0.004296N(500，10)
+N(520，10)
+N(540，10)
+W(540，30，3)
+W(540，30，3)
+W(520，30，3)W(540，30，3)
+W(540，30，3)
+W(540，30，3)
+N(520，10)
+W(540，30，3)
+W(540，30，3)0.000016
+0.006063
+0.162209
+0.005201
+0.648270
+0.303206
+
+4　结　论
+　　本文提出的激振力频率与构件固有频率干涉的概率模型不同于通常采用的应力与强度干涉的模型，能从理论上更严格地回答避开较危险的强迫共振的概率，且其数值计算的实施也是可行的。
+。
+3.3　发动机全部叶片的裂纹（缺陷）漏检概率控制
+　　欲使一台发动机全部m级叶片中大于规定尺寸的裂纹（缺陷）的漏检概率小于预先给定的P*3，则首先将P*3按每级叶片的重要程度进行分配，求得每级叶片应控制的缺陷漏检概率P*2i：
+P*2i＝ωix　(14)
+式中x由下式计算：
+　(15)
+式中ωi是第i级叶片的重要度，归一化处理后，满足条件。
+作者简介：田爱梅撑　33岁　博士生　讲师　北京航空航天大学宇航学院　100083
+作者单位：北京航空航天大学
+参考文献
+　1　孔瑞莲等．航空发动机可靠性工程．北京：航空工业出版社，1996
+　2　史进渊．透平叶片疲劳强度可靠性设计的研究．航空动力学报，1992，7(1)：47-50
+　3　史进渊等．透平机械零件振动的可靠性设计．航空动力学报，1995，10(3)：263-266
+　4　欧阳德等．叶片振动可靠性评估方法研究．航空动力学报，1998，13(2)：161-164
+1998年9月收稿；1998年12月收到修改稿。

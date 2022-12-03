@@ -1,0 +1,97 @@
+航空动力学报
+
+
+图4　90°弯管几何形状及网格
+　　根据文献［7，8］，我们选定了一个来流速度为20 m/s，来流附面层厚度δ0=11.43 mm，来流湍流度Tu=0.02475的流动状态作为计算状态JOURNAL OF AEROSPACE POWER
+1999年 第14卷 第3期 Vol.14 No.3 1999
+
+
+
+转子密封系统反旋流抑振的数值模拟*
+何立东
+　　【摘要】　把研究物体在流场中振动时的受力和运动特性的非线性振子模型，推广到转子密封系统非线性动力学问题的研究中，突出了小间隙中非定常流对转子运动的影响，分析了反旋流抑制转子不平衡响应和密封流体激振的机理。对某转子密封系统的计算及其与实验数据的对比，证实了本文方法的有效性，为在工程实际中推广反旋流技术提供了一些理论依据。
+　　主题词：转子　密封　非线性振动　数据模拟
+　　分类号：O322　TH113.1
+NUMERICAL SIMULATION OF ANTI-SWIRL ARRANGEMENTS FOR SUPPRESSING ROTOR/SEAL INSTABILITY
+He Lidong
+(№703 Research Institute of China Shipbuilding Co.，Нarbin　150036)
+　　ABSTRACT　　A nonlinear oscillator model，which is usually used to study the dynamic characteristics of structures in flow，has been applied to the nonlinear dynamic characteristics of rotor／seal system.Emphasis is put on the effects of the nonlinear unsteady flow in the small clearance on the rotor dynamic characteristics.The mechanism of anti-swirl arrangements for suppressing rotor／seal instability is considered.The comparison between the theoretical and experimental results of a rotor／seal system is in a reasonable agreement and shows that this method provides a theoretical basis　for application of anti－swirl technique to engineering practices.
+　　Key　Words　Rotors　Sealing　Nonlinear vibration　Numerical simulation
+1　前　言
+　　随着透平机械负荷、转速及效率等参数的提高，密封流体激振导致转子失稳的问题，已引起广泛的关注。人们已经认识到，向密封间隙中喷入与转子旋转方向相反的流体，即反旋流主动控制方法，是抑制或减弱密封流体激振和转子不平衡响应的有效方法，并已在工程上得到了初步的应用。一般认为，反旋流可以增加系统的阻尼。但密封的流体阻尼是非线性的，是最难确定的一个参数。目前的研究多限于求解密封的线性阻尼，利用传统的八参数模型分析密封对转子的影响，但它在揭示流体力非线性特性时具有很大的局限性。为了加速收敛，计算中采用了当地时间步长，网格加密，隐式残余平均和焓阻尼等加速收敛技术。但是有一点是十分肯定的，即这类问题的实质是流固耦合问题。因此，描述流固耦合问题的非线性振子模型，在分析密封流体激励问题时，特别是在描述流体力的非线性特性时［1，2］，将发挥其特有的作用。
+　　本文把研究物体在流场中振动时的受力和运动特性的非线性振子模型，推广到转子密封系统非线性动力学问题的分析中。计算用网格比图示网格密4倍，其网格节点数为57×57×121，近壁网格y+在3～4之间。
+　　本文结合―转子振动反旋流主动控制的试验，分析了反旋流法抑制密封流体激振和转子不平衡响应的机理。数值计算结果与实验数据的对比，证实了本文方法的有效性，为工程中推广反旋流技术提供了一些理论分析方法。
+2　非线性振子模型
+　　气流振荡是小间隙中的非定常气流与转子相互作用的结果。转子的高速旋转和振动，造成了小间隙气流的脉动，形成了非定常气流；该非定常气流对转子运动产生激励。
+
+
+图1　K-ε模型计算平板附面层速度分布
+
+图2　K-τ模型计算平板附面层速度分布
+
+
+图3　K-ω模型计算平板附面层速度分布
+4　非均匀来流条件下90°弯管内高湍流度流场计算
+　　为了进一步检验上面提出的“双层”模型的有效性，我们分别用K-ε模型和“双层”K-ε模型计算了来流为非均匀且具有高湍流度的90°弯管内湍流流动。式(1)右端第一项为流体力项。
+
+
+图1　转子密封系统
+　　流体动力系数满足VanderPol型振子方程：
+　(2)
+式中各经验系数为α＝0.1，γ＝1／30，b＝0.52。
+2　湍流模型和数值方法
+　　本文计算采用可压流体质量加权平均N-S方程，Launder／Sharma的K-ε模型［3］，Speziale K-τ模型［4］和Wilcox K-ω模型［5］。
+ωs＝2πSU0／D　(3)
+其中S为Strouhal数，这里取S＝0.2。
+3　数值模拟及结果分析
+　　根据式(1)～(3)，利用MATLAB语言中的动态仿真工具SIMULINK，用Rung-Kutte方法，对转子密封系统反旋流主动控制过程进行数值模拟，并与试验结果进行比较。
+3.1　没有密封流体力参与的转子不平衡响应
+　　转子计算模型与试验转子一致(如图1)。结构参数：轮盘质量为4.22 kg，宽度为0.08 m，平均直径为0.108 m，质心偏心距为1.04×10-5 m。计算中我们还比较了横向二次涡及湍能K的分布，虽然“双层”K-ε模型的计算结果准确性略优于K-ε模型，但没有明显的优势。
+　　如果转子密封系统处于真空状态下，即没有密封流体力参与转子的不平衡响应，则计算模型式(1)中不含流体力项。然而工程计算中，近壁网格的y+=2～3，由图1和图2可以看出，此时用低雷诺数湍流模型求解的平板湍流附面层速度分布(图中棱形点)与经验分布(图中实线)相差较远。
+
+
+图2　真空状态下转子振动的数值模拟
+　　在真空箱中进行的试验表明，转子过临界转速时，园盘振动的峰―峰值为1.13×10-3 m。不含密封流体阻尼的转子系统阻尼比ξ为0.01。
+3.2　反旋流抑制转子不平衡响应
+　　为抑制转子的振动，应用了反旋流技术。由4个直径d0为Φ4 mm的喷嘴，沿与转子旋转方向相反的切线方向，以U2＝52 m／s的速度向密封腔中喷入气流。
+　　高速旋转的转子带动密封腔中的气体旋转，转子在临界转速时气体的平均周向速度可由下式近似得到：U1＝(1/2)πD(nc1／60)＝22.3 (m／s)
+　　于是，由动量守恒定理可近似求得喷入反旋流后，密封腔中的混合流平均周向速度：
+U0＝(m2U2－m1U1)／(m1＋m2)　(4)
+式中，m1为密封间隙的气体质量；m2为单位时间向密封间隙中喷入的气体质量。
+m1＝π｛［(D＋2Cr)／2］2－(D／2)2｝.L.ρ　(5)
+式中Cr为密封半径间隙，Cr＝0.9×10－3 m。
+　　所谓壁面函数法就是采用简化分析的方法或经验式，给出近壁网格内的速度分量与壁面应力的关系，近壁网格内温度与壁面温差同壁面热流通量的关系，近壁网格内湍流动能的产生率与耗散率。代入式(3)中，可得密封流体的脉动主频率ωs为594.3 rad／s。近壁区速度分布不准（作者用其他K-ε和K-τ模型进行了计算，结果也是如此）。
+
+
+图3　喷入反旋流后转子振动的数值模拟
+　　试验结果表明，喷入反旋流后，转子过临界转速时轮盘振动的峰―峰值为3.5×10-4 m，为真空状态下的31.1％。适当地通入反旋流气体，可以有效地抑制转子的不平衡响应。
+　　但是，如果密封腔气体的平均周向速度过大，则会增大流体力的幅值，不利于柔性较大的转子在亚临界转速下的稳定运行(见3.3)。因此一般都选用反旋流而不是正旋流，来抑制转子的不平衡响应，确保转子的稳定性。
+3.3　不恰当的反旋流导致转子失稳
+　　如果反旋流的流速、流量合适，反旋流可以抑制转子的不平衡响应；否则，反旋流也会导致转子振动失稳。目前反旋流技术并没有被广泛使用，原因之一即是用传统的8参数模型难以从理论上计算反旋流的流速、流量。本节将应用非线性振子模型，分析试验中发生的不恰当反旋流导致的转子失稳现象。
+　　将转子的轴颈由Φ22 mm减至Φ18 mm，其他结构参数不变，转子的第一阶临界转速nc1降为5818 r/min。应用反旋流时，由4只直径d0增大为Φ8 mm的喷嘴，沿与转子旋转方向相反的切线方向，以U2＝41 m/s的速度，向密封腔中喷入气流。旋转的转子带动密封腔中的气体旋转，在n=2870 r/min时气体的平均周向速度为：U1＝(1／2)(n／60)πD＝8.1 (m/s)
+
+
+图4　不恰当反旋流导致转子剧烈振动的数值模拟
+　　由式(4)、(5)及(6)可近似求得喷入反旋流后，密封腔中混合流的平均周向速度U0为40.7 m/s，代入式(3)中，可得流场脉动主频率为473.6 rad/s。于是由式(1)和(2)，可得转子在2870 r/min的数值模拟结果：圆盘振动峰峰值为4×10-3 m，远远大于密封间隙，必造成动静碰摩，如图4。K-ω模型无需进行低雷诺数修正可直接应用于求解粘性底层流动［5］。
+　　试验表明，转子轴颈减小，并用Φ8 mm的喷嘴喷入反旋流后，转子转速升到2870 r/min时，发生强烈振动，轮盘和静子碰摩，转子弯曲变形。不恰当的反旋流造成了转子振动失稳。
+4　结束语
+　　反旋流是抑制转子密封系统流体激振和不平衡响应的有效方法，但反旋流的流量和流速并不是越高越好，必须结合具体的转子进行理论和试验研究。
+　　转子在通过临界转速时，反旋流可以抑制转子的不平衡响应。
+。因为这样可以控制流体力的大小，保证柔性较高的转子在亚临界转速下的稳定性。
+　　主题词：湍流　建立模型　计算流体力学
+　　分类号：O357.5
+A CONSIDERATION OF TWO EQUATION TURBULENCE MODEL
+Liang Dewang and Lu Bing
+（2nd Dept.Nanjing University of Aeronautics and Astronautics,Nanjing　210016）
+　　ABSTRACT　　A concept of "two-layer" turbulence model is proposed which employs an algebraic turbulence model in near wall area and a two-equation turbulence model in outer area or far wall area.The flows over a flat plate with M=0.3 uniform inflow and in a 90°rectangular bent duct with non-uniform velocity and high turbulence inflow are calculated respectively by use of the "two layer" turbulence model and two equation turbulence model with low Reynolds number modification.The obtained results show that the "two layer" turbulence model can predict the distribution of velocity and wall stress for external flow and the boundary layer thickness and main velocity for internal flow more accurately than the two equation turbulence model.Therefore the "two layer" model is a powerful tool in engineering.
+　　Key　Words　Turbulence　Modelling　Computational fluid mechanics
+1　引　言
+　　在近壁区内，分子粘性对流动的影响相对增强，它不仅影响了平均流的输运，而且直接或间接地影响各种湍流过程，此外，湍流动能K的产生率及耗散率ε达到极大,近似处于局部平衡，平均流速度和温度的二阶导数大，即平均流参数的梯度变化大。
+致谢　本文引用的试验数据取自中国航空工业总公司第六O八研究所进行的转子振动反旋流主动控制试验。特此致谢!
+*本文系国家“九五”国防预研资助项目
+作者简介：何立东衬小36岁　博士　高级工程师　哈尔滨市中国船舶工业总公司第七O三研究所　150036
+作者单位：中国船舶工业总公司第七O三研究所
+参考文献
+　1　何立东.转子轴承密封系统若干非线性问题的研究.哈尔滨工业大学学报，1998，30(增刊)：14-17
+　2　崔尔杰.非定常流中若干非线性问题的分析与模拟：现代流体力学进展Ⅱ.北京：科学出版社，1993；72-88
+1998年8月收稿；1998年11月收到修改稿。

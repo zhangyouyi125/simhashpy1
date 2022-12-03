@@ -1,0 +1,71 @@
+计算机工程
+COMPUTER ENGINEERING
+1999年 第25卷 第8期 Vol.25 No.8 1999
+
+
+
+利用ARC/INFO制作彩色晕渲图
+黎弘，翟战强，唐树才
+摘要：在对HSV彩色视觉模型进行分析的基础上，构造了一组由地形高程、坡度及地表法线方向到HSV色彩空间分量的映射模型，并利用ARC/INFO的AML语言编程，在SGI工作站上实现了对DEM数据的晕渲处理。实验表明，该方法制作的晕渲图具有动态范围大、立体感强、色彩丰富的特点。诞生于１９６９年的互联
+网络，在最近几年得到异常迅速的发展，到１９９５年底，全球总共有近４０００万人
+使用互联网络。 
+　　地形晕渲处理包括 DEM 数据生成、晕渲处理建模、表面色彩分量计算等步骤。 DEM 数据生成一般是在矢量化等高线和离散高程点的基础上进行内插生成的，这方面的文献很多，本文不作讨论；晕渲处理建模的任务是，建立地表特征与视觉空间色彩激励分量之间的映射关系，常用的视觉空间色彩模型有 RGB 组合模型和 HSV 组合模型。文中重点讨论了基于 HSV 组合视觉模型的晕渲建模和色彩分量计算方法，并给出了在 ARC/INF°环境下实现这一过程的 AML 语言程序。据英国保险公司协会今年初透露，仅
+电脑网络犯罪每年给英国工商企业造成的损失就高达１０亿英镑。电子邮件地址是网络中计算机的“门牌号码”
+，现在它也像我们居住的地址一样，走上了主人的名片。互联网络出现“红灯区”。饱和度是指彩色光所呈现的深浅程度，对于同一色调的彩色光，其饱和度越高，说明它的颜色越深，饱和度越低颜色越淡。依据 Tektronix 彩色标准， hue 的值域范围为 0-360 °，其中 0 °为蓝色， 120°为红色， 180 °为黄色， 240 °为绿色；明亮度的范围从 0 到 100 依次表现为从黑到白的变化，饱和度从 0 到 100 表示颜色依次加浓。基于 Tektronix 彩色标准的基本颜色系可用图 1 所示的锥体表示，对于现实世界中的任意颜色，可用上述 3 个基本参量来描述，而在视景仿真中则可用这 3 个参量来合成地面景物的颜色。互联网络出现“红灯区”。根据上述 HSV 视觉模型，可以对数字地面高程模型 (DEM) 数据进行分类，分类可以依据 DEM 高程数据的多种统计特征值进行，然后将不同的分类结果映射到 HSV 视觉空间中的 H 、 S 、 V 分量，最后将这些分量合成，即可形成彩色图象。 
+　　(1) 建立映射模型 
+
+图2 色度（hue）与高程值之间的映射关系图3 饱和度与坡度的映射关系
+
+　　将高程影射到色调 h ，高程从高到低，对应的颜色由红到绿，即最高的山用红色表示，对应的 h 为 120 °，最低的山用绿色表示，对应的 h 为 240 ° ( 参见图 2) ；将地表坡度映射到饱和度 s ，坡度越大颜色越深，坡度越浅，颜色越淡 ( 参见图画 3) ；用考虑太阳光照射到地表后，在某一观测方位形成的该地表点的反射光强 I 映射成明亮度 v ，反射光越强，对应的亮度越强。
+    “电脑入了国际网，真是方便多了。 
+v = I*100/255　　(3) 
+I 是地形表面点法线方向的函数， I 的计算将在下面介绍。日前，《
+中华人民共和国计算机信息网络国际联网管理暂行规定》已颁布，将会有更多措施防止
+那些乱七八糟的东西打扰人们的生活。 
+　　(2) 地面坡度 α 的计算 
+　　坡度有两种表示方式，一种是百分比坡度 pα ，它是高度的增值与水平距离变化值之比；另一种是角度坡度 α ，即用坡面切线与水平面的夹角表示 ( 参见图 4) 。电脑网络黄毒虽已成“
+过街老鼠”，但要彻底加以扫除，仍将相当艰难。 
+　　(3) 阴影值 I 的计算 
+　　明亮度反映了彩色光照射到物体表面后反射到观察位置的能量的大小，明亮度与物体表面方向、观察者位置及材质等因素有关，在制作彩色晕渲图时我们忽略表面材质因素，假定光照和观察位置如图 6 所示， S 为入射光向量， N 为点 P 处表面法向量， R 为反射光向量， A 为观测向量。法国政府专门成立了一个电讯高级委员会，负责电脑网络设置与色情检查。 ARC/INF°的 TIN 和 GRID 模块均提供表面阴影计算命令 ( 函数 ) ，可以利用 TIN 提供的命令计算出地形表面每一点的阴影值，也可利用 GRID 提供的函数对式 (7) 编程，实现每一表面点亮度的计算。 
+3 结论
+　　ARC/INF°手册中给出了基于地形高程和坡度参数的等范围赋值映射方法，用该方法制作的图具有软表面 (Soft Surface) 的感觉。
+    然而，网络也给用户带来不少烦恼。利用上述 HSV 模型，我们在 SGI 工作站上制作了多幅地貌晕渲图，实验所用 DEM 数据是由 ARC/INF°的空间数据模型产生的。
+    “电脑入了国际网，真是方便多了。据了解，目前已经有邮电
+部门开设了电子邮件的发送业务，而且价格也相当便宜，发一次大约只需３块钱。 
+　　附 1 ：用本文方法制作 HSV 彩色晕渲图的 AML 程序： 
+　　/* 由 DEM 栅格数据制作晕渲地形图的 AML 程序 */ 
+　　/* Program Name: hsv.aml */ 
+　　/* Author: Grant Lee, Hai 6, QingHe Building , BeiJing 100085*/ 
+　　/* Input: DEM lattice ----%dgxlat% */ 
+　　/* Output: Composite map ----hsvmap */ 
+　　&getcover lattice %dgxlat% /* get lattice of elevation t°process 
+　　/* construct saturation component lattice ss 
+　　latticepoly %dgxlat% s_poly slope slope.lut /* slope.lut should create earlier in tables 
+　　latticereplace %dgxlat% s_poly ss 1.111 slope-code 
+　　kill s_poly /* kill temperary slope polygon coverage 
+　　/* construct hue lattice hh 
+　　grid /* use grid module t°process 
+　　disp 9999 3 
+　　&describe %dgxlat% 
+　　&s k = 120.0 / ln( %grd$zmax% - %grd$zmin%+1 ) 
+　　docell 
+　　　hh = 120 + %k% * ln( %dgxlat% - %grd$zmin% ) 
+　　end // end of hue lattice gereration 
+　　/* generate value lattice vv through hillshade 
+　　/* vv should be within the range of (0,99) 
+　　v = hillshade(%dgxlat%,#,#,#,#) /* 0 -- 255 */ 
+　　docell 
+　　　vv = v * 0.3922 /*vv: 0--99 */ 
+　　end 
+　　q 
+　　ap 
+　　map hsvmap 
+　　mape hh　　　　 /* set map extern */ 
+　　gridcomposite hsv hh ss vv linear /* show composite image 
+　　/* Add other map composite such as legend,tittle etc. here 
+　　map end 
+作者单位：第二炮兵第三研究所，北京 100085
+参考文献 
+1 Environmental Systems Research Institute, INC., Surface Model- ing with TIN TM 
+2 Edwards K,Davis P A.The Use of Intensity-Hue-Saturation Tran- sformation for Producing Color Shaded-Relief Images.Photogra- mmetric Engineering and Remote Sensing, 1994 ， 60(11) ： 1369- 1374 
+3 周新伦 . 数字图象处理 . 北京：国防工业出版社， 1988 

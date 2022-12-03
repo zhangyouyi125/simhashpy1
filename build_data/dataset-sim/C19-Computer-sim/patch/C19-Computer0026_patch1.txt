@@ -1,0 +1,23 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+用DEBUG检测BIOS“千年虫”
+　　美国国家软件测试实验室研制的2000.EXE是世界公认PC硬件千年虫标准测 试软件的测试软件 之一。它能准确地测试出PC硬件是否存在“千年虫”问题。
+三、应用方案构建
+　　基于安全电子交易协议的信息系统是上海大学与建设银行上海分行的一个合作课题？
+　　在这里，笔者介绍一个用DOS外部命令DEBUG.COM检测BIOS“千年虫”的简便方法。而顾客的身份鉴别则由结算银行完成，从而满足了身份可鉴别要求；顾客需提供其个人信息，由此保证了信息的不可否认性；SSL提供了信息摘要功能，防止了信息被篡改的情况。同理，我们以将起始日期和时间设置成02-28-2000和23:59，观其结 果 是否顺利过渡到2000年2月29日（DX应是“0229”）。其中安全性指的是信息在网上传输时的机密性，可鉴别性及一致性。
+　　如果存在BIOS“千年虫”，就要设法解决。
+　　.选择System DSN标签。这里必须指出一点：SET中商家对于每张信用卡都需要两张数字凭证。Applet与Application的优点已是众所周知的，而Servlet同样也具有强大的功能：它是用于互联网服务器上的Java程序，具有一种多线程机制，便于系统的维护和扩展，每个线程可以方便地处理各自的异常情况。
+关键词：Internet　Internet数据库连接器　电子论坛SQL语句
+Abstract：This paper describes the connection of a Web ser ver with a database system using the IDC technology of Microsoft Internet Inform ation Server (IIS). It presents in detail the programming method of complete bot tom-up implementation of electronic forums on Web sites. Users can exchange info rmation in real time on the browser in such a system.
+Keywords：Internet　Internet database connection　electronic forum SQL statement▲
+一、引言
+　　WWW技术的问世，给Internet带来了新的活力，使Internet的用户数有了爆炸性的增长，各企业纷纷建立企业内部网，拥有了自己的WEB站点。SET的另一个优点在于完整的认证体系：SET为各参与方都创建了等级不同的数字凭证，其中包括特卡人凭证，商家凭证及支付网关凭证等三类。
+　　.单击OK，完成设置。
+　　.单击Add…按钮，出现Create New Data Source对话框。
+　　有感兴趣者可与编辑部或本文作者直接联系。验证用户名是否唯一，二次输入的用户密码是否相同，并将之加入users表中。
+五、程序流程及实现
+　　图1为电子论坛程序流程图，图中每一个框代表一个网页，每条弧线代表要一个IDC文件来完成前一页的数据处理，收集下一页需显示的信息，虚线代表超级链接

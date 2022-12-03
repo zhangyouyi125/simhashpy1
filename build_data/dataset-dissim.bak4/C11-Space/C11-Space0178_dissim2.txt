@@ -1,0 +1,126 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+　弹性机翼对机载导弹子惯导系统
+导航精度的影响分析
+崔乃刚　林晓辉
+(哈尔滨工业大学345信箱*哈尔滨*150001)
+田鸿堂　徐伯夏
+(天津8357所*天津*300141)
+　　摘　要　弹性机翼的振动及杆臂效应会引起机载导弹加速度计输出中的附加干扰加速度,从而引起导弹子惯导系统的导航参数误差。本文通过建立机翼弹性振动模型及惯导误差传播模型,从理论上分析了机翼弹性振动及杆臂效应对子惯导系统导航精度的影响,并进行了计算机仿真研究。
+　　主题词　惯导系统　误差分析　弹性振动　杆臂效应
+ANALYSIS ON INFLUENCE OF ELASTIC WING 
+ON ACCURACY OF INERTIAL NAVIGATION 
+SUBSYSTEM IN AIRBORNE MISSILE
+Cui Naigang　Lin Xiaohui
+(Harbin Institute of Technology*Harbin*150001)
+Tian Hongtang　Xu Boxia
+(Tianjin 8357 Institute*Tianjin*300141)
+　　Abstract　The Vibration and lever arm effects of elastic wing cause an additional interference acceleration existed in the output of an accelerometer mounted in the airborne missile,and can lead to navigation errors of inertial subsystem.In this paper,by modelling the elastic-wing vibration and inertial navigation error transmission equations, the influence of vibration and lever arm effects of the elastic wing on the accuracy of inertial navigation subsystem is analysed theoretically.The simulation results are given.
+　　Key words　Inertial navigation system　Error analysis　Elastic vibration　Lever arm effect
+1　引　言
+　　惯导系统应用于空射战术导弹时,载机和导弹间存在多方面的信息交连。由于载机主惯导系统和弹上子惯导系统中各类误差的存在,特别是由于导弹悬挂在弹性机翼上,且挂弹点与载机质心间存在一定的距离,载机机翼的弹性振动及杆臂效应都将引起子惯导系统导航参数误差,从而严重影响载机与导弹间信息交连的数据精度。
+　　本文以歼击机加挂空地反辐射导弹为研究背景,通过建立歼击机机翼弹性振动模型和惯导系统误差传播模型,并通过计算机仿真研究,分析了机翼弹性振动及杆臂效应对子惯导系统导航参数的影响,为动基座惯导系统初始对准研究提供一定基础。
+2　惯导基本方程
+　　研究飞行器的运动首先需选定导弹坐标系,本文取东北天坐标系(指北方位系统),在该系内导航基本方程可写为［1］［2］:
+
+(1)
+
+(2)
+
+(3)
+　　式中的fdx、fdy、fdz为比力在导航坐标系中的分量;Vdx、Vdy、Vdz为载机速度矢量在导航坐标系中的分量;h为载机飞行高度;φ为载机质心处纬度角;Ω为地球自转角速度;Rm、Rn分别为子午面内和垂直于子午面的平面内的主曲率半径;g为重力加速度。
+　　为使结构控制能量最小,可选指标函数:
+C1=‖(［Uc］T［KWφ］［Kφφ］-1［Sa］)-1‖F→min
+(19)
+其中‖*‖F表示相应矩阵的Frobenius范数。
+3　惯导误差传播方程
+　　惯导系统导航参数误差包括:主、子惯导系统间的坐标方位失准角φx、φy、φz;速度误差δVdx、δVdy、δVdz及经纬度位置误差δλ、δφ,则惯导误差传播方程可写为［1］［2］:
+
+(7)
+(8)
+
+(9)
+(10)
+
+(11)
+
+(12)
+
+(13)
+
+(14)
+　　其中的比力fdx、fdy、fdz由惯导基本方程(1)～(3)式求取;δfdx、δfdy、δfdz为由各类误差源引起的比力误差在导航坐标系中的分量。目前,大多数文献如［5～7］均把桁架主动杆伸缩长度作为控制量来进行结构形状、振动控制以及主动杆件和被动阻尼杆件的最优配置研究,而没有考虑主动杆压电元件的机电耦合性质。
+　　设载机质心至挂弹点处的矢径为r,则有比力误差方程［2］:
+
+(15)
+　　式中的下标“b”代表载机机体坐标系;为机体坐标系相对于惯性参考系的旋转角速度。
+　　加速度,速度,矢径的变化均由机翼弹性振动引起,由于机翼振动造成的上述变化在机体坐标系y,x方向上很小,可忽略不计,而只考虑z向变化(因歼击机机翼为三角翼),则它们在机体坐标系中的分量可分别表示为(0,0,am)T,(0,0,Vm)T,(l,d,rm)T,其中的l为挂弹点至载机纵对称面的垂直距离;d为挂弹点至载机质心距离在载机纵轴方向上的分量,则(15)式最终可在机体坐标系中分解为:
+
+(16)
+式中的ωbIbx、ωbIby、ωbIbz为角速度分量,可表示为:
+(17)
+　　其中的Cbd(ψ,θ,γ)为导航坐标系到机体坐标系的坐标变换矩阵,θ,ψ,γ为姿态欧拉角。
+　　则最终比力误差在导航系中的分量为:
+
+(18)
+　　上述比力误差直接作用于惯导误差传播方程的(10)～(12)式,将直接或间接引起方位失准角、速度及经纬度位置误差。
+式中Cdb(ψ,θ,γ)=［(Cbd(ψ，θ，γ)］T,T代表矩阵转置。
+5　机翼弹性振动模型的建立
+　　歼击机机翼为三角型机翼,具有三个武器挂架、按从翼根至翼梢方向,分别加挂空空弹、反辐射弹及副油箱,在不加外挂的情况下经地面振动试验测得了前三阶振动频率及振型。
+　　本文建立机翼弹性振动模型的方法是:将机翼简化为具有变截面的悬臂梁,采用有限元方法建立悬臂梁的弹性振动方程,然后通过反复调整梁模型的力学性能参数,使梁模型的自振频率和振型向不加外挂机翼地面试验的实测值靠拢,二者符合一致后将外挂处理为集中质量加入梁模型之中。这样,尽管机翼模型的某些几何和力学参数与机翼的实际参数不同,但根据相似原理,只要各参数选择适当,它们表现出的振动特性可以达到相一致的目的。
+表1　结构参数列表
+
+参数ρ(kg/m3)A(m2)C33(N/m2)e33(C/m2)ε33(C/V*m)
+参数值76003.0×10-48.807×101018.625.92×10-9
+
+　　对考虑结构机电耦合效应与否两种情况进行动态分析,结构前三阶固有频率比较见表2,可知由于考虑了机电耦合效应,结构固有频率均有所增高,这样的模型更完整准确。
+　　梁单元的结构具有三个自由度,即
+di=［vi,θxi,θzi］T
+　　其中di代表第i个结点的节点位移,vi为节点在坐标系y向的位移,θxi为绕x轴的转角,θzi为绕Z轴的转角。
+参考文献
+1　Crawley E F.Intelligent Structures for Aerospace:A Technology Overview and Assessment.AIAA Journal,1994,32(8):1689-1699
+2　董聪,夏人伟.智能结构设计与控制中的若干核心技术问题.力学进展,1996,26(2):166-178
+3　Wada B K.Adaptive Structures:An Overview.Journal Spacecraft Rockets,1990,27(3):330-337
+4　Anderson E H,Moore D M,Fanson J L.Development of An Active Member Using Piezoelectric and Electrostrictive Actuation for Control of Precision Structures.AIAA paper 90-1085-CP
+5　Chen G S,Bruno R J,Salama M.Optimal Placement of Active/Passive Members in Truss Structures Using Simulated Annealing.AIAA Journal,1991,29(8):1327-1334
+6　Sun C T,Wang T.Damping Augmentation by Delayed Actuation in Adaptive Structures.AIAA paper 93-1692-CP
+7　Lu L Y,Utku S,Wada B K.Vibration Suppression for Large Scale Adaptive Truss Structures Using Direct Output Feedback Control.Journal of Intelligent Material Systems Structures,1993,4(3):385-397
+8　Lammering R,Jia J H,Rogers C A.Optimal Placement of Piezoelectric Actuators in Adaptive Ttruss Structures.Joumal of Sound and Vibration,1994,171(1):67-85
+9　王子才,赵长安.应用最优控制.哈尔滨:哈尔滨工业大学出版社,1989:152-212
+10　Anderson E H,Hagood N W.A Comparison of Algorithms for Placement of Passive and Active Dampers.AIAA paper 94-1656-CP
+11　胡毓达.实用多目标最优化.上海科学出版社,1990:40-64
+*国家教委博士点基金(批准号9521305)和国家自然科学基金(批准号19632001)资助项目
+本文于1996年7月11日收到
+。
+　　压电元件在机械和电载荷作用下,其机电耦合动力学方程可用Hamilton原理表述为:
+
+(3)
+
+
+
+图2　元件位移、电势分布示意图
+其中Ki、Ui和δ′Wi分别为薄片单元i的动能、势能及对应载荷所作虚功。对于简单的悬臂梁模型,可按以下规律进行单元阵的迭加。
+　　当外载q为零时,电势与元件相对变形成正比,从而可用来检测元件变形。
+　　在单元质量阵(22)式中先不计外挂集中质量,应用梁模型计算机翼的自振频率和振型,算例表明,在给定合适的Ei,ρi,Ai,Gi后,前三阶的计算频率与机翼不加外挂情况下的实测频率近似,误差分别为:一阶弯曲2.6%,一阶扭转3.7%,二阶弯曲4.2%,前三阶振动的节线位置也能较好符合。在此基础上计入外挂集中质量,可得有外挂情况下的机翼自振频率和振型的模拟计算值。设初始条件为结点A的y方向作用200N的力后无初速地释放,机械外载等于零。
+　　准确建模是压电桁架结构静/动态分析和控制的基础。
+6　算例及结论
+　　为分析机翼弹性振动及杆臂效应对机载导弹子惯导系统导航参数的影响,本文应用惯导基本方程、导航参数误差传播方程及所建立的机翼弹性振动方程,结合如下算例进行了仿真计算。
+　　对检测方程(8)作模态坐标变换可得:
+{φ}=［Kφφ］-1［KWφ］T［U］{y}
+(11)
+其中［U］为正则模态阵;{y}为模态坐标。初始经纬度λ0=118°,φ0=32°;飞行高度h=1000米;初始姿态角;转弯半径Rm=9174米;角加速度孤度/秒;载机纵向速度初值Vby(0)=200米/秒,
+　　加入随机变化的激振力作为外界激励,以强迫振动情况模拟机翼的振动,其中前50秒有激励作用,50秒后去掉激振力,由强迫振动转为有阻尼自由振动。为此,由方程(22)并注意到‖［A］‖F=‖［A］T‖F,可写出指标函数:
+C3=‖［Ur］T［KWφ］［Kφφ］-1［Sa］‖F/‖［Uc］T［KWφ］［Kφφ］-1［Sa］‖F→min
+(23)
+　　考虑到如上三方面的因素,结构主动杆件多目标最优配置问题可描述为:
+Vector-min［Sa］∈S{C1,C2,C3}
+(24)
+　　该多目标优化问题的设计变量［Sa］是离散的可能配置状态,即要从所有可能配置状态集S中选取一个最优状态,使各指标函数在综合意义下均接近最小。初始对准方法将在另文中研究。
+参考文献
+  1　任思聪.实用惯导系统原理.北京:宇航出版社,1988
+  2　何秀凤,袁信.平台惯导系统中杆臂效应误差的研究与分析.航天控制,1995,1
+  3　陈哲.捷联惯导系统原理:北京:宇航出版社,1986
+  4　王尚文.飞行器结构动力学.西安:西北工业大学出版社,1986
+　本文于1996年3月25日收到

@@ -1,0 +1,108 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+竞争学习模糊神经网络及在导弹
+故障诊断中的应用
+胡昌华　王青　陈新海
+　　摘　要　尽管基于解析冗余的故障诊断方法有许多突出的优点而越来越多地得到研究和应用，但它依赖于系统的模型，当系统存在非线性或不确定性时，存在难以建模的困难，模糊神经网络可以通过学习建立系统的模型，且模型参数有明确的物理意义，初始参数易于选择，成为解决这一问题的优选途径，作者通过把模糊神经网络的学习转化为竞争聚类和线性优化问题，基于竞争聚类和最小二乘原理，提出了一种模糊神经网络学习算法，并在某伺服机构上进行了学习和故障诊断的实验，获得了良好的实验结果。
+　　主题词　故障诊断　竞争学习　模糊神经网络
+FUZZY NEURAL NETWORK BASED ON COMPETITIVE 
+LEARNING AND ITS APPLICATION TO 
+FAULT DIAGNOSIS OF MISSILE
+Hu Changhua
+(Section 302,Xian Inst.Of Hi-tech,Hongqing town . Xi'an . 710025)
+Wang Qing
+(Department of Automation,Beijng University of Aeronautics and Astronautics . Beijing . 100084)
+Chen Xinhai
+(College of Aeronautic,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　The fault Diagnosis based on analytical redundancy depends on system's model,while it is difficult to get the system's model when the system is non-linear or uncertain time-varying,there are some difficulties to put this method into application of non-linear system.The fuzzy neural network can build the system's model by learning,and the model's parameter established by this method has clear mean,it provide an effective way to solve the above problem.The key of the Application of the fuzzy neural network is the determination of its parameters.Different from the other researchers,the authors convert the learning process to cluster and linear optimum,based on competitive learning and least-square error criterion,suggest a learning algorithm for the fuzzy neural network system,the experiment in certain servo-mechanism get very good result.
+　　Key words　Fault diagnosis Competitive learning　Fuzzy neural network
+1　引言
+　　对于导弹等大型复杂系统，对其可靠性提出了极高的要求，系统应具有故障诊断和容错能力，美国NASA就曾规定空间机器人应有一个故障诊断系统。基于解析冗余的故障诊断方法不需要增加硬件，利于减小系统的体积和重量，在航天器控制系统故障诊断和容错控制中得到了越来越多的研究和应用。
+作者简介:陈大港　24岁　男　博士研究生
+作者单位:电子科技大学自动化系，四川省成都市，610054
+参考文献
+　　1　陈光,李为民等.计算机辅助测试(CAT)工作站的实现.电子学报,1993,21(11)
+　　2　顾亚平.自动测试软件.北京:电子工业出版社,1990
+　　3　Hewlett-Packard,HPVEE Visual Engineering Envi-
+ronment Technical Data,1993
+　　4　James Truchard J.Software Technology for Automa-
+ted Measurements.IEEE Instrument and Measurement Tech Conference,1989
+　　5　Donald Zrudsky R and James Pickler M.Virtual Instrument for Instantaneous Power Measurement.IEEE Transaction on Instrumentation and Measurement,1992,41(4)
+1999-03-17收稿
+。本文基于竞争学习的原理提出了一种模糊神经网络的学习算法，以该模糊神经网络作为系统的建模工具，实现导弹伺服机构故障诊断，并进行了实际实验验证，实验获得了较好的结果。五次测量数据均方根值为1.718 μs，重复性为3.2％
+4　结论
+　　大量的实验证明：该测试系统的技术指标达到或超过了任务书的要求。
+1.2.3　噪声频谱法主要是噪声测量仪器的选用和外界干扰的排除
+1)频谱分析仪的选用
+　　红外探测器噪声是一随机量，它的幅度都比较小，不遵从确定的函数关系，用一般的频谱分析仪测量噪声时，由于其幅度检波器是包络检波，它必须假设被测的噪声是高斯分布，通过确定的函数关系转换成噪声的有效值，这样对未知函数分布的噪声测量，就不能准确地反映其噪声的平方根值。
+　　本装置采用的频谱分析仪(HP3589A)具有专用噪声测量的功能，比较好地解决了噪声幅度和噪声带宽的问题。
+　　模糊规则库由一组模糊规则构成，模糊规则是通过(如果一则/IF-THEN)语言描述的，即：
+
+　　其中隶属函数式中★表示T算子，经常采用的T算子有“模糊交”和“代数乘”。虚拟面板一般包括功能性面板和描述性面板两类。
+3　模糊神经网络的竞争学习算法
+　　类似文［1］，易证(4)式的模糊神经网络可以以任意精度逼近任意非线性函数。
+　　CAT工作站的控制核心为其软件部分――VATE，它是软件自动生成技术在测试上的具体运用，充分发挥了计算机的图形功能，将仪器控制、数据分析、分布式测试技术等均用可视化部件实现，提高了开发效率。
+聚类中心的竞争学习算法：
+　　Step1　从第一个数据对开始，在X1上建立一个聚类中心，且令X1=X1,Y1=Y1，并选择一个聚类半径r。
+　　Step2　对于第j对数据(Xj,Yj)(j=2,3，…)假定此时已有M个聚类，其聚类中心分别为Xk(k=1,2,…，M)，若‖Xj-Xl‖=mink‖Xj-Xl‖,则
+　　(1)若‖Xj-Xl‖＞r，则增加一新聚类XM+1=Xj,M=M+1,Yk=Yj。它的上层是一系列按功能分组的主／副软面板，每个软面板又由一些按键、旋钮等组合而成，每个控件都对应不同的功能，即其程控代码相异。流程设计方法则利用可视化功能部件以流程图的设计方式完成测试软件的编写工作，开发效率相对较高，且简单易用，HPVEE和LabView是其中的代表。
+　　(b)修正Xc
+　　　　　　　　　(7)
+　　使用pt‖X-Xt‖进行比较可使pt参与竞争，从而避免一般竞争学习算法中的死点问题，因为作为死点，它被选为中心Xt的次数几乎为零，引入pt后，意味着nt参与比较，使死点有机会参与竞争。
+作者简介:高业胜　30岁　男　工程师
+作者单位:华东电子测量仪器研究所青岛分所，山东省青岛市，266555
+参考文献
+　　1　汤定元,糜正瑜.光电器件概论.上海:上海科学技术文献出版社
+　　2　王清正,胡渝,林崇杰.光电探测技术.北京:电子工业出版社
+　　3　中华人民共和国国家标准GB／T13584-92红外探测器参数测试方法
+1998-12-01收稿
+。
+
+图1　基于模糊神经网络的非线性系统故障诊断原理图
+　　利用系统正常工作的输入输出数据，用竞争学习算法建立模糊神经网络，使之与实际系统并行工作，当系统正常工作时，二者的残差比较小，一旦系统偏离正常工作状态或故障时，则二者的残差就比较大，据此借助一定的故障分离策略就可实现故障诊断，
+5　基于模糊神经网络的某导弹伺服机构故障诊断实验及结果分析
+　　导弹伺服机构是一个具有严重非线性的部件，采用机理建模的方法得到的模型很复杂而失去使用的价值，因此我们根据伺服机构的正常工作数据利用本文的方法建立模糊神经网络，并构造图1所示的诊断系统，考察这种模糊神经网络的非线性逼近能力和基于模型的故障诊断能力。在该系统研制过程中发现，不仅屏蔽室要有良好的接地，而且被测探测器、低噪声前放和测量噪声用频谱仪等都必须有良好的接地、但有时重复接地又会带来不必要的串扰，通过理论分析和重复实验比较好地解决了接地问题。利用正常系统的输入输出测量数据建立模糊神经网络，以该模糊神经网络作为伺服机构的观测器，构造图1所示的基于模糊神经网络的故障诊断系统，观测残差的输出情况。具体分析如下：
+
+不确定度来源不确定度分类引入不确定度量
+幅度不稳定性B2.0％
+外电路的影响B2.0％
+取样误差A0.5％
+其它B1.0％
+重复性A3.4％
+不确定度合成4.6％
+
+2.2　频率响应法
+　　调制频率的准确度与不稳定直接影响测量结果，另外激光输出功率的稳定性、频谱仪读数的非线性也将对测量产生影响，具体分析如下：
+
+不确定度来源不确定度分类引入不确定度量
+光源幅度不稳定性B0.6％
+调制频率不稳定性B0.2％
+频谱仪读数的非线性B1.1％
+其它B0.5％
+重复性A2.0％
+不确定度合成2.4％
+
+2.3　噪声频谱法
+　　噪声频谱测量不确定度，主要来源于低噪声前置放大器和频谱分析仪的幅度非线性、测量系统的噪声带宽、替代不完全等效等，具体分析如下：
+
+不确定度来源不确定度分类标准替代法测量
+引入不确定度量
+前放＋频谱B1.1％
+替代不完全等效B1.0％
+噪声带宽B0.5％
+其它B1.0％
+重复性A2.8％
+不确定度合成3.4％
+
+3　不确定度的验证
+　　为验证系统的测量不确定度，用不同的红外探测器对不同的测量装置进行一系列的实验，具体结果见表1、表2、表3。
+
+图2　伺服机构正常残差输出随时间变化曲线
+
+图3　存在反馈电位计接触不良故障情况下残差输出随时间变化曲线
+　　实验表明，基于竞争学习的模糊神经网络能以较高精度逼近具有严重非线性的系统，据此构造的故障诊断系统可以有效地进行故障检测与诊断。它对测试工程师的编程水平要求较高，但使用较为灵活

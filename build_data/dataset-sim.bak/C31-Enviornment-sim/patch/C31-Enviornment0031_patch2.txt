@@ -1,0 +1,35 @@
+水土保持通报
+BULLETIN OF SOIL AND WATER CONSERVATION
+1999年 第19卷 第2期 No.2 Vol.19 1999
+
+
+
+一种新型果树滴灌装置的制做和使用方法
+　　这种有贮水功能的新型滴灌装置,结构简单、好操作、不堵塞,根治了传统滴灌堵塞、滴头滴水量不均的问题。利用贮水功能可以贮存果园的1a用水，还可以把天然降雨贮存，起到抗旱、排涝的作用。
+表1　SO２、NOx、TSP相对国家二级标准
+的超标倍数
+Table 1　The nonattaiment multiples of SO2,NOX and
+TSP in comparison with national second
+grade standard
+
+行政区SO2NOXTSP
+江岸0.400.501.06
+江汉1.401.121.18
+。贮水器用聚乙烯透明薄膜制作，顶部有注水口，底部联接4～8个联接盘，联接盘内孔插入导流管的一端，导流管上设有流量控制器和流量观察器。流量观察器包括滑轮和支架，该滑轮通过沿支架上的夹角导向槽往复滑动来挤压或放松导流管，以此控制滴水量。流量观察器为透明材料，其内腔与导流管相通，导流管的尾端埋入树冠半径2/3处，距地面20～30cm。
+　　据报道，镉对植物的毒害作用与其影响活性氧自由基的代谢平衡有关〔6，7〕。
+参考文献
+1　Barnes P W,S D Flint，M M Caldwell.Am. J. Bot.，1990，77:1354～1360
+2　Flint S D，M M Caldwell.Ecology,1984，65:792～795
+3　Caldwell M M，S D Flint.Solar ultraviolet radiation and ozone layer change:Implications for crop plants. In:Physiology and Determination of Crop Yield(American Society of Agronomy, Crop Science Society of American,Soil Society of American.eds.)，1994，487～507
+4　Chang D C N，W F Campbell.Environ. EXP. Bot.，1976，16:195～199
+5　Pfahler P L.Environ. Health. Perspect.1981，27:125～132
+6　Teramura A H，J H Sullivan.Environ. Pollut.，1988，53:466～468
+7　Flint S D，M M Caldwell.Am.J.Bot.，1983，70:1416～1419
+8　Jackson J F，H F Linskens.Molec. Gen. Genet.1979，176:11～16
+作者简介
+岳　明　男，1967年10月生。因此，腐殖酸与金属离子的沉淀反应可能成为天然水环境发生的重要地球化学过程之一。实验用水为除氯水，配制实验液时，要在电动搅拌机的快速搅拌下用移液管逐渐加入贮备液，务必使之混合均匀。
+　　当果树需要灌水时，利用贮水器与导流管出水口之间水位差的压力，根据灌水定额，通过流量观察器显示的滴数调整并固定好流量控制器，就能确定好一定时间内的定额灌水量。对于一片果园来讲，贮水器在单位面积内安装的数量可根据果树的种类、大小、密植度及自然降雨情况来确定。
+　　贮水器的制做机械用塑料热合机。把联接盘和注水口分别用热合机热合在指定位置，每个封头的底部应装2～4个联接盘，再将贮水器的2个封头对应地热合在筒体的两头，然后做注水试验，制作工艺完成。为加工方便，贮水器封头可做成方形。导流管、流量控制器、流量观察器可直接利用医用静脉注射器代替，导流管的长度可根据实际情况接长。土壤酸化是一个由多种因素造成的复杂过程。而1#SBR碱度持续下降，是由于有机负荷低，发生了硝化反应的原因。
+1.2　自由基的测定
+　　5％的HA溶液或1，4-萘醌溶液，用DMPO(氮酮类捕捉剂，对光不敏感)捕获短寿命自由基。
+(卞绍东.山东省莱州市科新实用技术开发部.261400)

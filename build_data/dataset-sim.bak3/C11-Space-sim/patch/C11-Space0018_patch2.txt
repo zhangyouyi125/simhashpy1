@@ -1,0 +1,76 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+星用非金属材料出气污染性质
+原位测试设备研制
+王先荣　柴强　曾克仁　王益
+　　摘　要　成功研制了星用非金属材料出气污染性质原位测试设备，可原位、连续、定量测试星用非金属材料出气可凝挥发物，给出全过程的出气数据。测试系统稳定、测试仪器灵敏、最小可检达4.4×10-8g/cm2。是我国目前唯一的多功位星用非金属材料出气污染高灵敏度原位测试设备。
+　　主题词　非金属材料　出气污染　测试设备
+A SIMULATION EQUIPMENT USED FOR DETERMING THE
+OUTGASSING AND CONTAMINATION PROPERTY 
+OF NON-METAL SPACECRAFT MATERIALS
+Wang Xianrong　Chai Qiang　Zeng Keren　Wang Yi
+(Lanzhou Institute of Physics . Lanzhou . 730000)
+　　Abstract　A simulation equipment used for determing the outgassing and contamination property of non-metal spacecraft materials has been built recently.It is used to measure Collected Volatile Condensable Materials(CVCM) in a simulated space vacuum environment and will give out all the CVCM data of the entire outgassing measuring process.The stability of temperature control system is ±0.1℃.Measure system consists with 4 QCM.The equipment resolution reaches the 4.4×108g/cm2.The main design is as same as the equipment type of NASA and ESA.So that the test and its data could be compared and exchanged internationally.
+　　Key words　Non-metal spacecraft materials　Outgassing contamination　Measurement equipment
+1　引言
+　　近十年来，中国长寿命、高可靠应用卫星的发展，使卫星在轨分子污染问题日益突显。有效预测、防护和控制分子污染危害的措施之一是执行航天工业部部标准《真空中材料挥发性能测试方法》QJ1558-88（参照采用ASTM E595［1］、ESA PSS-01-702［2］），该标准规定了真空环境下材料出气总质量损失（TML）、收集到的可凝挥发物（CVCM）标准测试方法［3］及相应的测试设备［4］。此项标准测试可给出卫星和其它航天器所用非金属材料在轨道真空环境和给定工况下24小时内的总质量损失及可凝挥发物数据（实验前后的称量数据），从而可对多种不同非金属材料的出气污染性质在地面模拟环境下进行测试比较，评价和筛选。进而根据规定指标淘汰出气量级大的材料，选择出气量级较低、污染危害较小的非金属材料初步入选。
+　　然而星用非金属材料的最终取舍除了要考虑上述测试、评价、筛选结果外，尚要综合考虑所用材料的用量、应用位置、相对敏感器件和表面的视角、材料本身的出气过程等多种因素。
+2.6　键盘及显示
+　　由于本系统所用按键不多，故我们采用了独立式按键。但上述异位测试设备不具备这种功能，只能提供实验测试前后的数据用作材料出气污染性质的评价和筛选，却不能提供有关材料出气污染过程的任何数据。A／D转换器我们选择了四位半双积分型的ICL7135，它具有抗干扰性强和精度高的特点，输入满度为±1.9999 V，把AD595的输出经过适当分压和滤波，送到ICL7135的输入端，电路如图2所示。单片机读到数值后，变换成对应的温度值显示出来，同时将该温度值与流程要求的设定值进行比较。从而实现了出气污染全过程的原位、连续、定量测试。之后继续在815 °C环境下灼绕，每隔20 min取出称重，直到重量变化小于0.001 g为止。这种设计处理使得原位设备与异位设备衔接一致并可与国际通用设备进行测试比较。从上表可以看出，千斤顶式飞机称重系统是非常优越的一种称重方式。设备由真空系统、温控系统和测试系统三大部分组成。
+作者简介：39岁　男　高级工程师
+作者单位：北京长城计量测试技术研究所，北京市，100095
+参考文献
+　1　何立民.MCS单片机应用系统设计.北京:北京航空航天大学出版社,1990
+　2　陆志方.电子秤、质量计量丛书.北京:中国计量出版社,1994
+　3　王洪业.传感器技术.湖南:湖南科学技术出版社,1985
+1998-12-01收稿
+。
+
+图1　系统构成示意图
+01　测试室　02　测试单元组件　03　高真空规　04　低真空规1　05　插板阀
+06　涡轮分泵　07　分子泵放气阀　08　波纹管　09　电磁隔断放气阀　10　旋片真空泵
+11　低真空规2　12　测试室放气阀　13　复合真空计　14　超级恒温器　15　控制电路
+16　温度电子调节器控温　17　温度电子调节器测温　18　石英晶体微量天平　19　升降机构　20　中频电源
+
+图2　设备测试单元示意图
+①真空系统
+　　真空系统由真空室、涡轮分子泵、旋片真空泵组成。
+2　AWS-3的工作原理
+　　AWS-3型飞机称重系统是由四只称重传感器和一台指示仪表构成。钟罩外装有水循环套以降低真空室内壁温度、沉积材料出气分子，从而减小交叉污染。整个钟罩部分由升降机构自动进行升降。涡轮分子泵采用FB-450型作为主泵。机械泵采用2XZ型，机械泵的出气口装有电磁隔断放气阀，以减少机械泵返油。
+
+
+图2　输入电路
+通常测温中，要求AD595置于热电偶冷端处，使之感受与测温热电偶冷端相同的温度，以达到正确的冷端温度补偿目的。其中一台用于测温，另一台用于控温。由于膜片的厚度只有0.33 mm左右，所以它对轴向力的影响量很小。这是因为传感器上部焊接密封的膜片除了起密封的作用外，更主要的还起抵抗侧向力的作用。
+
+
+图1　AWS-3型飞机称重系统原理框图
+　　从图1可以看出，仪表由高精度低漂移放大器、模拟开关、A／D及CPU电路组成。此自行研制的微量天平，采用特定切角、孪生晶片差频技术及特别装配工艺降低温漂，同时采用中规模CMOS数字电路检测显示，使微量天平整机具备温漂小、温区宽、功耗小、分辨率高等多项优良参数。
+3　设备功能及技术指标
+　　齐备功能：原位连续定量测试星用非金属材料出气可凝挥发物率
+　　设备技术指标：
+　　*真空度　　　　　　＜1×10-5Pa(空载)
+　　*控温精度±0.1℃
+　　*测量系统交叉干扰≤1Hz
+　　*测量温漂＜2Hz(4小时内)
+　　*可凝挥发物最小可检4.4×10-8克/cm2
+　　图3给出了某型号所用非金属材料经由设备原位连续定量测试给出的出气可凝挥发物、时间曲线。
+2.5　音乐提示
+　　当定时时间到时，不仅液晶显示给出文字提示，还应给出声音提示。
+
+图3　可凝挥发物原位测试：逸出量―时间曲线
+4　结束语
+　　星用非金属材料出气污染性质原位测试设备可测试空间材料在热真空条件下的出气总量TML、可凝挥发物CVCM、和水蒸气回吸量WVR三项指标，是用作航天器非金属材料出气分子污染测试、评估的高灵敏设备。
+　　该设备除了具备上述测试功能外，还具有材料出气机理的研究功能，有关这一方向的研究结果，将在以后的文章中陆续给出。
+作者单位：兰州物理研究所 . 兰州 . 730000
+参考文献
+1　ASTM Designation:E595-90.Standard Test Method for Totol Mass Loss and Collected volatile Condensable Materials from Outgassing in a vacuum Environment.Published April 1990
+2　ESA PSS-01-702 Issue 1.A Thermal Vacuum Test for the Screening of Space Materials. March 1983
+3　中华人民共和国航天工业部部标准：QJ1558-88.真空中材料挥发性能测试方法.1988-04-25发布
+4　薛大同，魏向荣，王先荣，等.空间材料出气筛选装置的研制与试验.中国空间科学技术，1993，13（2）：53
+收稿日期:1998年2月9日
+修回日期:1998年12月7日

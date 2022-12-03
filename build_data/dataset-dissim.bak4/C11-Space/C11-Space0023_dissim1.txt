@@ -1,0 +1,78 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+2D碳/碳复合材料CVI过程的
+数值模拟研究
+姜开宇　李贺军　李克智
+　　摘　要　本文根据2D碳/碳复合材料的结构特征及CVI工艺的特点建立了孔隙模型和动力学模型，并利用该模型对其CVI过程进行了模拟与分析。
+3　模糊神经网络的竞争学习算法
+　　类似文［1］，易证(4)式的模糊神经网络可以以任意精度逼近任意非线性函数。
+　　主题词　2D碳/碳复合材料　CVI　数值模拟　孔隙模型
+NUMERICAL SIMULATION OF CHEMICAL VAPOR INFILTRATION
+FOR 2D C/C COMPOSITES
+Jiang Kaiyu Li Hejun Li Kezhi
+(Institute of C/C Composites,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　According to structure feature of 2D C/C composites and the characteristics of CVI process,a porous model and dynamics model are established in this paper.The CVI Process of 2D C/C composites has been simulated and analyzed by the use of these models.It is evinced that these models are feasible by comparing the results of simulation and experiments.
+　　Key words　2D C/C composite CVI Numerical simulation Porous model
+1　引言
+　　化学气相渗透(CVI)工艺是制备碳/碳复合材料的主要工艺之一。该工艺能够避免常规工艺对纤维和基体的破坏，改善基体的微观组织结构，提高复合材料的性能，然而由于生产周期很长，成本很高，各种工艺参数如温度、压力、反应气的流动情况等对该工艺过程的影响也极为复杂，这都给CVI工艺参数的优化带来了很大的困难。
+
+图1　基于模糊神经网络的非线性系统故障诊断原理图
+　　利用系统正常工作的输入输出数据，用竞争学习算法建立模糊神经网络，使之与实际系统并行工作，当系统正常工作时，二者的残差比较小，一旦系统偏离正常工作状态或故障时，则二者的残差就比较大，据此借助一定的故障分离策略就可实现故障诊断，
+5　基于模糊神经网络的某导弹伺服机构故障诊断实验及结果分析
+　　导弹伺服机构是一个具有严重非线性的部件，采用机理建模的方法得到的模型很复杂而失去使用的价值，因此我们根据伺服机构的正常工作数据利用本文的方法建立模糊神经网络，并构造图1所示的诊断系统，考察这种模糊神经网络的非线性逼近能力和基于模型的故障诊断能力。问题是基于解析冗余的故障诊断和容错控制方法需要系统的精确数学模型，而对于具有不确定时变的系统或非线性系统，很难用机理分析的方法建立系统的数学模型，近年来，模糊神经网络的任意非线性函数逼近能力得到了广泛研究和证实，而与人工神经网络相比，模糊神经网络的参数有明确的物理意义，初始参数的选择有一定的依据，显示出更大的优越性。然而对于实际应用中使用较多的2D碳/碳复合材料(其预制体为2向碳布叠层)的CVI模拟，迄今为止国内尚未见公开发表的有关文章，国外也很少有资料报导［3，4］。对2D碳/碳复合材料CVI工艺进行数值模拟，有助于更好地将CVI传质的动力学理论与实际应用结合起来。本文所建立的孔隙模型及相关动力学模型可以作为碳/碳复合材料CVI模拟的基础，通过模拟结果与实验结果的比较，表明利用该模型来模拟碳/碳复合材料的CVI过程可以取得比较满意的结果。
+2　数学模型的建立
+　　碳/碳复合材料的CVI过程实质上是预制体的致密化过程。由于2D碳/碳复合材料的内部孔隙结构较为复杂，如何建立一个既能够较好地描述预制体内部孔隙结构及其变化的符合实际情况的结构模型，是模拟成功的关键。建模时应尽量使几何模型能够与预制体的实际结构相一致。然而过于追求这种一致性，将导致几何模型的过分复杂化，给以后的模拟计算带来很大的不便。而且由于变量的增加，将使迭代过程中产生的累积误差增加，影响计算精度，甚至无法得到收敛解。根据2D碳/碳复合材料的结构特点，可将其几何抽象成一个比较便于计算的结构模型――孔隙模型，来描述2D碳/碳复合材料预制体的致密化过程。
+　　图1为孔隙模型的示意图。该模型将预制体沿厚度方向均匀地划分成若干单元(单元的数量根据计算精度要求而定，一般可取为碳布层数)，单元上均匀分布着直径相等的圆柱形孔隙，孔隙半径r0取纤维束平均间隙的1/2(即r0=α/2)，根据预制体的孔隙率ε，由下式可确定单位面积上孔隙的数量n0：
+n0=ε/(π r20)　　　　　　　　　　　　　　　(1)
+
+图1　孔隙模型示意图
+　　预制体的致密化过程可通过孔隙半径的变化来描述。
+　　为求出孔隙半径的变化，必须建立一个动力学模型来达到这一目的。建模时需作如下假设：
+　　(1)反应气(C3H6)仅靠扩散作用向预制体内部渗透；
+　　(2)反应气的扩散速度远大于热解碳的沉积速度，因而该过程为一稳态过程；
+　　(3)C3H6的热解反应可认为是一级反应；
+　　对于盘状2D碳/碳复合材料预制体，当其直径D远大于其厚度h时(D＞h)时，反应气沿径向的扩散可忽略不计。因此该CVI的传质过程可认为是沿预制体厚度方向的一维传质过程。根据传质理论［5］可建立一维传质连续方程如下：
+　　　　　　　　　　　　(2)
+式中Deff为等效扩散系数，Ks为反应速率常数，S为预制体孔隙表面积，Ci为预制体内反应气浓度。
+　　由式(2)：
+　　　　　　　　　　　　　(3)
+即可求出预制体内反应气的浓度分布。式中C0为沉积炉内反应气浓度。
+　　Step2　对于第j对数据(Xj,Yj)(j=2,3，…)假定此时已有M个聚类，其聚类中心分别为Xk(k=1,2,…，M)，若‖Xj-Xl‖=mink‖Xj-Xl‖,则
+　　(1)若‖Xj-Xl‖＞r，则增加一新聚类XM+1=Xj,M=M+1,Yk=Yj。
+　　模糊推理机是利用模糊规则库中的模糊规则来完成由输入空间上的模糊集到输出空间的模糊集上的映射，设是输入空间上的任一模糊集，则每个模糊规则Rk确定了一个定义于输出空间的模糊集CA . Rk，其隶属函数为：
+CA . Rk=sup{A(X)★Rk(X,Y)}　　　　　　　　　　　　(1)
+　　反模糊化完成从输出空间上的模糊集到输出空间上的确定值的映射，反模糊化中比较多采用的方法为“中心平均”反模糊化方法，即
+　　　　　　　　　　　　　　　(2)
+　　隶属函数常用的形式有三角形、梯形、高斯型等几种形式，如果隶属函数为高斯型的隶属函数，则
+　　　　　　　　　　　　　(3)
+　　如果隶属函数取为高斯型的隶属函数，推理规则中的T算子取代数积，反模糊化取“中心平均”的方法，则得模糊神经网络的描述
+　　　　　　　　　　　(4)
+　　(4)式的模糊逻辑系统与归化的径向基网络(隶属函数为高斯型非常相似，因此可把(4)式描述的系统看成一种模糊神经网络。所需的相关参数取值见表1。(4)式的模糊神经网络用一条规则对应一组数据，Xjk为该组数据对应的输入模式的中心，如果固定σjk，则问题归结为如何确定Yk和Xjk，Xjk可由竞争学习方法确定。图2为不同温度下的预制体密度变化曲线。由该图可看出，沉积温度较高，预制体的致密化速度就越快。
+　　主题词　故障诊断　竞争学习　模糊神经网络
+FUZZY NEURAL NETWORK BASED ON COMPETITIVE 
+LEARNING AND ITS APPLICATION TO 
+FAULT DIAGNOSIS OF MISSILE
+Hu Changhua
+(Section 302,Xian Inst.Of Hi-tech,Hongqing town . Xi'an . 710025)
+Wang Qing
+(Department of Automation,Beijng University of Aeronautics and Astronautics . Beijing . 100084)
+Chen Xinhai
+(College of Aeronautic,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　The fault Diagnosis based on analytical redundancy depends on system's model,while it is difficult to get the system's model when the system is non-linear or uncertain time-varying,there are some difficulties to put this method into application of non-linear system.The fuzzy neural network can build the system's model by learning,and the model's parameter established by this method has clear mean,it provide an effective way to solve the above problem.The key of the Application of the fuzzy neural network is the determination of its parameters.Different from the other researchers,the authors convert the learning process to cluster and linear optimum,based on competitive learning and least-square error criterion,suggest a learning algorithm for the fuzzy neural network system,the experiment in certain servo-mechanism get very good result.
+　　Key words　Fault diagnosis Competitive learning　Fuzzy neural network
+1　引言
+　　对于导弹等大型复杂系统，对其可靠性提出了极高的要求，系统应具有故障诊断和容错能力，美国NASA就曾规定空间机器人应有一个故障诊断系统。这使得复合材料制作的最终密度有所降低。图3表明在其它工艺参数不变的情况下，沉积温度越高，制件最终孔隙率的分布就越不均匀。因此在制备2D碳/碳复合材料时，应根据实际要求选择合适的沉积温度，尽量用最短的时间得到符合要求的制件。基于解析冗余的故障诊断方法不需要增加硬件，利于减小系统的体积和重量，在航天器控制系统故障诊断和容错控制中得到了越来越多的研究和应用。实验中预制体由吉体碳素厂的3KPAN平纹碳布制成，采用等温CVI方法在沉积炉内进行沉积，沉积炉内温度为T(750℃＜T＜1000℃)。具体的模拟值与实验值见表2。曲线表明模拟预测值与实验值符合得较好，这说明本文所建立的2D碳/碳复合材料CVI工艺的数学模型是可行的。利用正常系统的输入输出测量数据建立模糊神经网络，以该模糊神经网络作为伺服机构的观测器，构造图1所示的基于模糊神经网络的故障诊断系统，观测残差的输出情况。
+表2　实验值与模拟值对照表
+时间050100150200250300350400450500
+模拟值0.8701.0241.1941.3441.4731.5811.6691.7371.7881.8241.849
+实验值0.871.021.141.301.371.421.571.621.701.751.78
+
+4　结论
+　　(1)本文根据2D碳/碳复合材料的结构特征及CVI工艺的特点建立了孔隙模型和动力学模型，该模型为2D碳/碳复合材料的CVI工艺数值模拟打下了理论基础；
+　　(2)实验结果与模拟结果的对比表明，用该模型模拟薄片状2D碳/碳复合材料制件的CVI过程可以取得比较满意的结果；
+　　(3)通过对2D碳/碳复合材料的CVI工艺的模拟，可以得到关于预制体内部孔隙率的分布、沉积温度及沉积时间等工艺参数对预制体致密化过程的影响等重要信息，便于对CVI工艺进行优化。本文基于竞争学习的原理提出了一种模糊神经网络的学习算法，以该模糊神经网络作为系统的建模工具，实现导弹伺服机构故障诊断，并进行了实际实验验证，实验获得了较好的结果

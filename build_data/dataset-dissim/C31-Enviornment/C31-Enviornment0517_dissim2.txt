@@ -1,0 +1,75 @@
+城市环境与城市生态
+URBAN ENVIRONMENT & URAN ECOLOGY
+1999年　第12卷　第1期　Vol.12　No.1　1999
+
+
+
+反渗透法处理土霉素结晶母液的研究
+王淑琴　李十中
+　　摘要　土霉素结晶母液经调节pH值后的水经预滤后进行反渗透处理，可使污染物去除率达99%以上，排放水CODcr　153　mg/L、BOD　107　mg/L水可以回用或达标排放。
+　　关键词　反渗透　土霉素结晶母液　废水处理
+Study on Treating the Mother Solution of Terramycin 
+Oxytetracycline Crystal with Reverse Osmosis Method
+　　Wang Shuqin
+　　(Tianjin Environmental Monitoring Centre,Tianjin 300191)
+　　Li Shizhong
+　　(Department of Chemical Enginerring, Tianjin University,Tianjin 300072)
+　　Abstract　After pH adjustment and pre-filtration,the mother solution of terramycin oxytetracycline could be treated by using reverse osmosis method.The COD and BOD5 of the treated wastewater reached 153mg/L and 107mg/L,respectively,with the pollutants removal rate over 99%,which can be reused or discharged.
+　　Key words　reverse osmosis　　mother solution of terramycin oxytet acycline crystal　　wastewater treatment
+　　抗生素生产过程的废水处理问题是目前水处理难题，其废水间歇排放，污染负荷高，成份复杂，难降解物质多，还含有抑菌作用的抗生素，使得传统的生化处理方法很难解决。特别是土霉素生产废水(主要为结晶母液)因其水量大，酸性高，就更加大了治理难度，单独处理此类废水未见报道。处理抗生素废水，国外主要采用物化与生化法相结合处理工艺，但操作成本高，过程复杂。国内从80年代初期开始了这方面的研究工作，对于四环素类抗生素的废水处理，有用厌氧―好氧工艺处理四环素结晶母液的试验报道，但其不能直接用生物法处理母液，而需先回收草酸后再稀释，才能进行处理CODcr去除率为93%，还有用反渗透法回收废水中金霉素的研究，其仅给出反渗透膜对金霉素的截留率为98%，而未报道污染负荷的去除率和金霉素被浓缩后的生物效价浓度及所回收金霉素产品的质量等相关数据，亦有从母液中回收草酸的研究成果［1］，但仅稍带部分降低了废水污染负荷。
+
+
+图4　活性污泥法处理出水COD去除率情况
+
+
+图5　加高效生物填料处理出水COD去除率情况
+　　两者以下各方面比较：
+表2　其他一些参数的对比
+
+　活性污泥法新型填料生物膜法
+排泥量多(需污泥回流)少(不需污泥回流)
+处理效果好时
+生物相赖皮虫多、其他少线虫、轮虫、钟虫、
+累枝虫等
+驯化时间(d)长(一般为9～11)短(一般为2～4)
+去除率(%)较高(75～82)很高(82～95)
+
+　　通过以上比较，可知：采用高效中空柱状填料，进行“悬浮―附着”生物处理模式，远优于单独的传统活性污泥法及生物膜法。
+2.4　处理实例
+　　对现行某厂污水处理工程的苯亚废水的生物处理试验过程作一个介绍：（苯亚废水BOD/COD≤0.15，属于难降解一类）
+　　1997年10月～1998年1月对苯亚废水分别作了活性污泥间歇运转小试试验及加中空柱状高效生物填料连续运转中试试验，污泥驯化过程中，采用的试验容器为：双级处理COD从300　mg/L逐渐上涨到800　mg/L，后COD控制在800　mg/L左右，出水到达二级出水标准之后就逐渐降低停留时间，24　h～18　h～12　h(其进出水COD、溶解氧、COD去除率、镜检略）。
+　　实验用反渗透设备为AMT公司提供的小型反渗透实验机，膜组件为卷式反渗透膜。
+1.2　水样及水量
+　　母液水样及水量采自土霉素生产厂提炼车间现场每次处理量60　L，试验机系统残留液体积为6　L，则每次试验体积浓度倍数约为10倍左右。活性污泥法处理技术的典型构筑物代表为曝气池，而生物膜法处理技术的典型构筑物代表为生物滤池和生物转盘。应用范围也逐步扩大到各种工业废水的处理工程。 
+表2　土霉素效价变化情况
+
+项　　目母　　液透过液
+透光率0.0980.05
+效价9100
+
+　　由表2结果可知，土霉素在透过液中为0则全部被反渗透膜所浓缩，故可以浓缩液中回收土霉素。显然，新型的填料的开发即成为热点。由于液体在膜表面的流动，使透水率衰减缓慢，又是在反渗透操作后期，由于浓缩液中溶质浓度增加，渗透压相应提高，同时浓差极化现象也趋严重，故透水速率衰减较大。
+2　新型填料的特性与试验
+　　针对于此，在国外研究的基础上，本文对高效柱状可移动填料工艺参数与配套技术研究及关键技术的引进、消化与吸收，开发出了高效柱状可移动填料。
+　　关键词　载体　生物处理技术　生物膜法　活性污泥　填料　去除率
+Application of Hollow Column Bio-film Packing in Industrial
+Wastewater Treatment Engineering
+Tang Chunpeng　Cai Ling　Tong Wenfeng　Kang Peisong
+（Tianjin Academy of Environmental Sciences ，Tianjin 300191）
+　　Abstract　A Newly-developed high-tech product used in wastewater treatment-high efficient bio-film is described in the paper.Through contrast studies,the characteristics of the material have been discovered which shows wide application prospect for such a kind of up-to-date science and technology.
+　　Key words　packing　　bio-treatment technology　　bio-film method　activated sludge　filter　　removal
+1　前言
+　　目前，污水的生物处理技术主要分为活性污泥法和生物膜法。
+
+
+图2　操作压力随时间变化图
+3.3　反渗透膜的清洗
+　　膜的清洗是膜分离技术的重要组成部分，而膜的清洗、再生往往是确定膜分离工艺可行性的重要因素。采用含次氯酸钠成分的碱性清洗剂，配制成0.8%浓度的清洗液循环清洗膜，然后用蒸馏水冲洗至中性，再以pH为3的酸性水溶液循环清洗。编号：973114210
+作者简介：汤纯鹏　男，54岁，1968年毕业于河北工业大学化学工程系，高级工程师，现任天津市环科院副院长。
+4　结论
+4.1　采用的反渗透法可去除土霉素结晶母液中的污染负荷99%以上，方法简捷，且水可以回用。应用范围也逐步扩大到各种工业废水的处理工程。
+作者简介：王淑琴　女，44岁，天津市环境监测中心水室工程师。自1987年从事水环境监测
+　　　　　科研工作。曾参加过“八五”科研攻关项目课题和环境影响评价等工作。
+
+
+图3　各种微生物处理法的BOD负荷比较
+　　对用新型填料法与活性污泥法的曝气池体积及面积进行比较，以食品工厂废水为例，废水量100　m3/d，废水的BOD浓度高达3500　mg/L，其比较结果如下所示

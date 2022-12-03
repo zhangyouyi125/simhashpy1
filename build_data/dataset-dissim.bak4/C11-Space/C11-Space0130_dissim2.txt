@@ -1,0 +1,151 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+基于神经网络在线建模的非线性动态
+系统中传感器故障检测方法
+钮永胜　赵新民
+(哈尔滨工业大学自动化测试与控制系*哈尔滨*150001)
+　　摘　要　本文提出一种基于神经网络在线建模的动态非线性系统中传感器故障检测方法,它首先利用神经网络在线建立动态非线性系统的超前一步预测模型,然后利用神经网络对传感器的预测输出和传感器实际输出之差与一预定阈值比较以检测传感器故障。本文的优点是可以检测多个传感器故障,同时由于采用在线学习方式,非常适于航天器自主系统传感器故障检测的需要。此外,故障检测阈值的选取也比较简单。
+参考文献
+  1　芮筱亭,隋文海,邵允中.刚体的场传递矩阵及其在多体动力学中的应用.宇航学报,1993,4:82-87
+  2　芮筱亭,陆毓琪.多体系统振动的传递矩阵法.宇航学报,1995,3:41-47
+  3　Stein E,Hang Y J,芮筱亭,陆毓琪,曾仕伦,刘正福.TraNSFER Matrix method of damping multibody systems vibration.宇航学报,1996,2:28-35
+  4　芮筱亭等.多体系统发射动力学.国防工业出版社,1995
+  5　芮筱亭,陆毓琪,付效山,俞占鸿.多体系统传递矩阵法.南京大学出版社,已付印
+  6　Yang B.Linear vibration of a compled spring-rigrdbar system,Proceedings of the International Conference on Vibration Engineering,International Acadlmic Publishers,1994
+  7　刘延柱等.多刚体系统动力学.高等教育出版社,1989
+  8　Witlenburg J.Dynamics of Systems of Rigid Bodies,B.G.Teubner,Stuttgart,1977(中译本:谢传锋译,多刚体动力学,北京航空学院出版社,1986)
+  9　И．М．Бабаков，Теория　копебаний，Гостехиздат,(中译本:振动理论,蔡承文等译,人民教育出版社,1963)
+。
+　　系统的边界条件为
+Z(L)=［y(L),θ(L),0,0］T(3.3)
+Z(-l)=［y(-l),θ(-l),0,0］T(3.4)
+　　将式(3.3)、(3.4)代入式(3.1)得频率方程
+U31U42-U32U41=0(3.5)
+解式(3.5),即可求得耦合系统的各阶固有频率。
+　　主题词　非线性系统　传感器故障　故障检测　神经网络　在线学习
+MULTIPLE SENSOR FAILURE DETECTION 
+IN NONLINEAR SYSTEM BASED 
+ON SYSTEM IDENTIFICATION METHOD 
+USING ON-LINE LEARNING NEURAL NETWORK
+Niu Yongsheng　Zhao Xinmin
+(Dept.of Automated Test,Measurement and Control.,
+Harbin Instiute of Technology*Harbin*150001)
+　　Abstract　This paper presents an innovative approach for multiple sensor failure detection in a nonlinear system based on system identification using an on-line learning neural network.The approach builds an one-step ahead prediction model for the nonlinear system using an on-line learning neural network firstly,and then the discprepancy between the on-line estimations of the sensors using the built neural system model and the actual values of them is compared with a predetermined threshold to detect sensor failures.One advantage of the approach is the ability to detect multiple sensor failures.Another advantage is that it may be suitably used in autonomous systems with the neural network learning and working on-line.The method is proved to be very effective by a simulation result of detecting two sensor failures for a space robot system.
+　　Key words　Nonlinear system　Sensor failure　Fault detection　Neural network　On-line learning
+1　引言
+　　随着科学技术的不断进步,高性能的航天器和空间站机器人需具备对传感器故障的容错能力。作为测量控制系统中诸参量的关键部件,如果传感器发生故障,包括硬故障和软故障,就会影响系统的运行。事实上,传感器是控制系统中比较容易损坏的器件［1］,因此控制系统需检测传感器是否发生故障,如果检测出传感器发生了故障,则报警,并调用备份传感器,或重构控制率以确保整个控制过程的顺利进行。美国NASA曾规定空间机器人控制系统应有一个故障诊断系统［1］。
+　　式(4.5)的解构成空间｜α｜的一个子空间,设Vj,VK为式(4.5)的对应于不同特征值ω2j,ω2K的特征矢量,则
+
+(4.7)
+〈KVj,VK〉=∫L0EIy(4)j(x)yK(x)dX+EI(y(3)j(0)yK(0)-y(2)j(0)y′K(0))
+=∫L0EIy(4)K(x)yj(x)dX+EI(y(3)K(0)yj(0)-y(2)K(0)y′j(0))=〈Vj,KVK〉(4.8)
+算子M和K在(4.5)的解空间上是自共轭的,(4.5)的增广特征矢量是正交的
+〈MVj,VK〉=δjKdK　(j,K=1,2,…)(4.9)
+〈KVj,VK〉=δjKω2KdK　(j,K=1,2,…)(4.10)
+(4.11)
+5　系统的响应
+　　使用增广表述后,原边值问题可表述为
+MWtt(x,t)+KW(x,t)=F(x,t)
+(5.1)
+W(x,0)=［U0(x),U0(0),U′0(0)］T(5.2)
+Wt(x,0)=［V0(x),V0(0),V′0(0)T(5.3)
+式中
+W(x,t)=［y(x,t),y(0,t),yx(0,t)］T(5.4)
+Wt(x,t)=［yt(x,t),yt(0,t),yxt(0,t)］T(5.5)
+F(x,t)=［f(x,t),F0(t),-τ0(t)+bF0(t)］T(5.6)
+U0(x)=y(x,0),U0(0)=y(0,0),U′0(0)=yx(0,0)(5.7)
+V0(x)=yt(x,0),V0(0)=yt(0,0),V′0(0)=yxt(0,0)(5.8)
+　　式(5.1～5.3)就是用增广表述法表示的多体系统的动力学方程,设其解为
+W(x,t)=∑∞K=1VK(x)qK(t)(5.9)
+代入(5.1),并与Vj(x)作内积得
+
+利用正交性可得
+(5.10)
+解方程(5.10)得
+(5.11)
+(5.12)
+把它们代入(5.9)就可得所需要的解。采用分析冗余方法需要系统的精确数学模型,所以这个方法难以应用于具有模型不确定性的系统和非线性系统。已有的应用神经网络检测传感器故障方法则存在以下缺点:1.难以检测多个传感器故障。2.仍需系统的数学模型来估计系统的状态矢量。3.只能完成静止映射,即神经网络输入和输出都是在同一时刻。4.没有考虑系统的输入量。为此本文提出采用神经网络建模的传感器故障检测方法。
+6　算例
+
+
+图6.1　梁中点的响应
+用上述方法求解某多体系统的响应,由电算得到梁中点前8秒时间的响应历程,如图6.1。此外,故障检测阈值的选取也比较简单。
+为系统固有振动频率。
+2　基于神经网络在线建模的传感器故障检测方法
+　　一个多输入多输出非线性动态系统:
+y(k+1)=F(y(k),…,y(k-m+1),u(k+1),…,u(k-n+1))(1)
+(u(k+1)是一p维输入矢量,y(k+1)是一q维输出矢量,n,m是输入和输出的最大延迟,对于线性系统n=m=1,F(…)代表一般的非线性函数)。可以用一个前馈神经网络和带延迟的输入、输出来表示［8］:
+(2)
+训练前准备好所有的输入输出数据,然后采取批处理训练方法建立系统的动态非线性数学模型,也可以采取在线递推方式建立,原理如图1所示,神经网络为多层感知器模型［3,8］,如图2所示,其中i,j,k分别表示输入、隐层、输出层,Wij,Wjk分别表示输入与隐层之间的权值和隐层与输出层之间的权值。
+
+
+图1　动态非线性系统模型在线辩识的神经网络方法和传感器故障检测原理
+
+
+图2　神经网络预测器结构
+在线建立神经网络预测模型和传感器故障检测的具体步骤是:
+　　(1)假设已经观测到k+1时刻的传感器正常输出样本y(k-m+1),…,y(k),y(k+1)和系统控制输入u(k-n+1,…,u(k),u(k+1),我们用k+1时刻以前的输入和k时刻以前的输出u(k-n+1),…,u(k),u(k+1),y(k-m+1),…y(k)作为网络的输入,用k+1时刻的输出y(k+1)作为神经网络的输出,应用误差反向传播算法(BP算法)迭代学习,直到一定迭代次数或一定的训练精度权值收敛。
+　　(2)数据向前递推一步,利用收敛后的神经网络连接权值,用k+2时刻以前的输入和k+1时刻以前的输出u(k-n+2),…u(k+1),u(k+2),y(k-m+2),…,y(k+1)作为网络的输入,预测k+2时刻的系统输出估计值
+　　(3)无传感器故障时y (k+2),十分接近,两者之差仅为递推误差和传感器输出噪声,而当传感器发生故障时,相应的残差分量将显著增大,所以如果传感器在k+2步的估计输出 和实际输出y(k+2)之差(残差)分量的绝对值｜y i (k+2)θ为一个事先确定的阈值,则可以判断第i个传感器发生故障。
+　　(4)如果传感器没有故障,即,则将k+2时刻以前的输入和k+1时刻以前的输出u(k-n+2),…,u(k+2),u(k+2),y(k-m+2),…,y(k+1)作为网络的输入,而将k+2步数据y(k+2)作为网络的输出再次学习直至网络权值收敛到一定的输出精度并返回第3步直至检测到传感器故障。
+　　由于神经网络每步只在线学习一组样本,而不是如离线方法那样学习所有的样本,所以收敛速度很快,可以保证实时检测故障的需要。
+　　用于建模的前馈神经网络结构常根据经验和试错方法选择。本文根据试验选择神经网络结构。阈值的选择在故障诊断领域是一个难点［1］,取得过小,当传感器输出噪声比较大时容易引起误报警,阈值取得过大,则难以检测小的传感器故障,引起漏报警。本文根据样本预测误差和噪声标准偏差的大小来确定阈值,即用样本预测误差Δ和3倍传感器输出噪声标准偏差σ之和Δ+3σ作为阈值。由于递推估计输出和传感器实际输出误差在各个采样点并不一样,所以本文用传感器输出最大斜率ρ和采样间隔Δt之积ρ×Δt作为最大预测误差Δ,事实上,预测误差的上限也就是这一数值。这样选择阈值消除了由输出噪声和学习误差引起的误报警,当然也有可能稍微选择偏大,从而难以检测小于阈值的传感器微小故障。如果多个残差分量发生显著变化,则可以断定多个传感器发生故障。
+3　仿真实例
+　　本文以工业机器人传感器故障的实时诊断仿真说明本文方法,且假定系统是正常的,即传感器是在系统正常条件下发生的。所用的机器人数学模型是一强耦合、非线性系统模型,经过离散化后为［1］:
+(3)
+式中
+D(k)=a1+a2cos(x4(k))
+E(k)=a3+a2cos(x4(k))/2
+A(k)=a2sin(x4(k))［x1(k)x2(k)+x22(k)/2］-a4cos(x3(k))
+-a5cos(x3(k)+x4(k))+u1(k)
+B(k)=-(a2sin(x4(k)))x21(k)/2-a5cos(x3(k)+x4(k))+u2(k)
+C(k)=(a1+a2cosx4(k))a3-(a3+a2cosx4(k)/2)2(4)
+其中
+u1(k)=125-5(1-exp(-0.2k))
+u1(k)=125-10(1-exp(-0.2k))(5)
+　　u1,u2为输入,e为零均值,方差为diag［0.00001,0.00001,0.00001,0.00001］的白噪声。
+　　y1,y2,y3,y4分别是测量机器人两个肘关节的角速度和角位移传感器。T为采样间隔,其值为0.001秒,共有100个采样点。
+　　主题词　耦合多体系统　算子　自共轭　正交
+DYNAMIC RESPONSE OF 
+THE COUPLED MULTIBODY SYSTEM
+Lu Yuqi　Rui Xiaoting　Liu Zhengfu　Huang Baohua
+(Nanjing University of Science and Technology*Naijing*210094)
+　　Abstract　The eigenvalue problem of coupled multibody system is not self-adjiont and the study of dynamic response of the system by classical modal analysis method is difficult because of the dynamic coupled action between tlastic bodies and rigid bodies.In this paper,we take a multibody system as example,the augmented formulas of eigenvalue and boundary value problem of the multibody system are developed.The general response of the system to arbitrary excitations is accurately represented by the orthogonal augmented eigenfunction series.
+　　Key words　Coupled multibody system　Operator　Selfadjoint　Orthogonal
+1　引言
+　　多体系统对任意激励的动力响应计算问题具有重要的理论意义和实用价值。根据作者以前的工作［2］,选择单个隐层的神经网络结构,神经网络的输入节点为8个,分别为y1(k),y2(k),y3(k),y4(k),u1(k),u2(k),u1(k+1),u2(k+1),神经网络的输出节点为4个分,分别是y1(k+1),y2(k+1),y3(k+1),y4(k+1),选择结构为8∶5∶4的网络在线建立机器人动态模型并用它检测传感器故障。本文假定角速度传感器y2和角度传感器y4在第50个采样点同时出现了速率较大的漂移故障如图3,5所示。
+4　增广特征矢量及其正交性关系
+　　设空间｜α｜=H(Ω)R2,其中H(Ω)为Hilbert空间,Ω为梁的定义域(0,L］,｜α｜中的任意元素U=［U(x),U1,U2］T,U(x)∈H(Ω),U1,U2为两个标量,在｜α｜上定义内积
+〈U,V〉=∫L0U(x)V(x)dx+U1V1+U2V2(4.1)
+　　定义增广算子
+(4.2)
+(4.3)
+其中,算子的定义域为空间｜α｜的子空间
+D={V｜V=［U(x),U(0),U′(0)］T,U″(L)=0,U(L)=0,U(x)∈H(Ω),
+且U(x)在Ω上有四阶导数}(4.4)
+则原来的特征值问题等价于
+ω2MV=KV,　V∈D(4.5)
+其中
+VK(x)=［yK(x),yK(x)｜x=0,y′K(x)｜x=0］T,(K=1,2,…)(4.6)
+我们称其为增广特征矢量。图4,6示出了在线学习神经网络预测模型预测两个传感器输出和它们实际输出的残差与检测阈值的关系,阈值分别为0.024,0.0182,从图中可以看出本文方法在第51个采样点检测出了两个传感器漂移故障。
+7　结论
+　　由上述可见:多体系统传递矩阵法为解决诸如航天、兵器等工程问题中的多体系统固有振动特性问题提供了方法;通过构造增广算子和增广特征矢量,建立其正交条件,使多体系统传递矩阵法可以解决多体系统动力响应的精确分析问题。
+　　近几年出现的多体系统传递矩阵法［1-5］,为解决上述第1个问题提供了一个简捷的方法。
+　　2.能够预报传感器是否发生故障,并可以检测多传感器故障。
+　　3.本文方法只能检测速率较大的漂移故障和突变类型故障。
+　　4.本文是在假定系统正常条件下研究传感器故障检测的,如果系统和传感器同时发生故障,则需进一步研究如何区分两类故障。事实上,有关这一问题在故障诊断领域仍是个难点,我们将另文讨论。设所得频率均为单根,即
+O=ω21＜ω22＜ω23＜……
+　　由式(3.1)得振型函数
+y(x)=C1U11+C2U12(3.6)
+式中,C1、C2为任意常数,并且
+C2/C1=-U31/U32=-U41/U42(3.7)
+上述各式中
+U11=S(λx)+mbω2U(λx)/(λ2EI)+mω2V(λx)/(λ3EI)
+U12=lS(λx)+T(λx)/λ+(mab-J*)ω2U(λx)/(λ2EI)+maω2V(λx)/(λ3EI)
+U31=λ2EIU(λL)+mbω2S(λL)+mω2T(λL)/λ
+U32=λ2EIlU(λL)+λEIV(λL)+(mab-J*)ω2S(λL)+maω2T(λL)/λ
+U41=λ3EIT(λL)+mbω2λV(λL)+mω2S(λL)
+U42=λ3EIlT(λL)+λ2EIU(λL)+λ(mab-J*)ω2V(λL)+maω2S(λL)(3.8)
+S(λx)、V(λx)、U(λx)、T(λx)为Крыдов函数［9］

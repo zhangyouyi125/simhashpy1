@@ -1,0 +1,29 @@
+水土保持通报
+BULLETIN OF SOIL AND WATER CONSERVATION
+1999年 第19卷 第2期 No.2 Vol.19 1999
+
+
+
+一种新型果树滴灌装置的制做和使用方法
+　　这种有贮水功能的新型滴灌装置,结构简单、好操作、不堵塞,根治了传统滴灌堵塞、滴头滴水量不均的问题。
+　　　　　　表2 土壤肥力各项指标权重值
+
+项目有机碳氮素磷素钾素MBCMBNIVACATPRA
+权重0.2720.2770.2480.2030.2580.2440.1740.1680.156
+
+　　其中B为生物综合管理指数，N为养分综合管理指数，×100是为了各指数间更好地比较。
+　　首先在果树的北侧筑起土床，土床的弧底高出自然地平10～20cm，弧度要和贮水器相吻合，土床上装贮水器。
+作者单位：沈宏　曹志洪　中国科学院南京土壤所开放室，南京210008
+　　　　　徐志红　澳大利亚林业研究所
+参考文献
+1 Dick R P. Soil enzyme activities as indicators of soil quality. In: Doran J W, Coleman D C, Bezdicek D F et al. (eds). Defining Soil Quality for A Sustainable Environment. Madison: SSSA, Spec Pub no 35, 1994. 167～186
+2 Trasar-Cepeda C, Seoane S. Towards a biochemical quality index for soils: An expression relating several biological and biochemical propeties. Biol Fertil Soils, 1998, 26: 100～106
+3 Elliott E T. The potential use of soil biotic activity as an indicator of productivity, sustainability and pollution. In: Pankhust C E, Boube B M, Gupta V V S R et al. (eds). Soil Biota: Management in Sustainable Farming Systems. Melbourne: CSIRO, 1994
+4 Blair G J, Lefroy R D B. Soil carbon fractions based on their degree of oxidation and the development of a carbon management index for agricutural systems. Aust J Agri Res, 1995, 46: 1459～1466
+收稿日期：1998-10-27
+。FM+NPK为FM和NPK处理各自施用量的一半。流量观察器为透明材料，其内腔与导流管相通，导流管的尾端埋入树冠半径2/3处，距地面20～30cm。关好流量控制器，利用各种水源过滤后给贮水器注满水备用。库区位于东经114°15′～114°50′，北纬23°40′～23°10′，西接博罗和新丰，北邻连平，东面和南面与河源接壤，水库大坝设在亚波山峡谷处，距河源市区约6 km。因此，为保证水库的饮用水源功能，必须坚持“环保至上”的原则，采取措施进行整个库区综合防治。但水库藻类中兰藻门、绿藻门、隐藻门、金藻门、黄藻门、甲藻门、硅藻门、鼓藻门均出现，未出现裸藻门，这说明新丰江水库水质比较适合于这些藻类的生长，另一方面说明库区水质较好，未构成单一或少数几种藻类占绝对优势。
+　　当果树需要灌水时，利用贮水器与导流管出水口之间水位差的压力，根据灌水定额，通过流量观察器显示的滴数调整并固定好流量控制器，就能确定好一定时间内的定额灌水量。对于一片果园来讲，贮水器在单位面积内安装的数量可根据果树的种类、大小、密植度及自然降雨情况来确定。与参比土壤相比，不施肥处理水稻土生物管理指数比养分指数下降快。
+3.3 正确引导库区水产资源开发
+　　新丰江水库有得天独厚的水产养殖条件，但在开发水产资源的同时，不宜带入大量氮磷污染物。同为绿肥处理，土壤肥力可持续性指数在水稻土中比红壤中上升快。导流管、流量控制器、流量观察器可直接利用医用静脉注射器代替，导流管的长度可根据实际情况接长。新丰江水库是重要的饮用水源，但同时又要担负养殖业、旅游业、运输业，甚至要接纳上游工厂排污。这可能与热带、亚热带不同的气候条件、土壤类型及基础肥力有关。
+　　总之，新丰江水库是水质清洁的大型深水水库，由于地势较高，可充分利用落差向珠江三角洲地区、香港等地供应饮用水，其社会效益与经济效益将十分巨大。
+(卞绍东.山东省莱州市科新实用技术开发部.261400)

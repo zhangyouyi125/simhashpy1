@@ -1,0 +1,202 @@
+产业与环境
+INDUSTRY AND ENVIRONMENT
+1998年 第20卷 第4期 Vol.20 No.4 1998科技期刊
+采矿与可持续发展：
+采矿工业协会的环境政策与计划
+C.George Miller,former President,Mining Association of Canada,1105-350 Sparks Street,Ottawa,Ontario K1R 7S8,Canada
+摘　要
+　　采矿工业政策与实践在环境领域已经得到迅速发展，最近在社会领域中也是如此。另外，较高的土温促进CH4
+从土壤向大气的传输，缩短了CH4在稻田氧化区域的停留时间，从而减少稻田CH4的氧化。这些协会为各公司提供机会，以使用协作思路来开发和运用改善的技术、系统和实践。
+　　采矿工业提供的金属及其它材料是全球经济必不可少的组成部分。然而，其环境影响和社会影响可能是严重的，除非采矿作业是精心设计和管理的。
+　　采矿技术的进展已经导致与环境保护有关的较高设计标准。不过，实现技术的充分效益需要环境管理政策与实践的平行发展。在管理采矿的社会影响和确保有关社区得到一份矿产开发效益方面，也已经有了进展。
+　　本文将描述采矿工业协会用来加速成员公司方面朝着改善环境实践和环境表现方向发展的趋势的一些方法。也提到了各协会为确保社会影响方面的改善而做出的努力。随着烤田的进行，土壤Eh越来越高，土壤CH4产生率越来越低，直至为零。
+　　也扼要地提到了国际金属与环境理事会(ICME)的活动。
+　　本文报告了各协会的政策与计划，涉及
+　　◆改善环境表现的管理思路：
+　　a.公司责任和实践规范；
+　　b.自愿的排放目标；
+　　c.关于公司环境表现的公开报告；
+　　◆专门环境问题：
+　　a.温室气体和能源使用；
+　　b.向海洋环境中的排放；
+　　c.跨边界问题，例如(可再循环或其它)废物的国际贸易；
+　　◆环境表现与社会表现的其它方面：
+　　a.研究与技术开发；
+　　b.建立在环境问题和社会问题上的共识。
+　　测定时，每处理取2个重复，测定完N2O后，土壤用于测定NH4+、NO3-、NO2-等。水稻品种为武育粳。
+　　近年来，大多数采矿公司已经采用了正式的环境管理体系，就如同它们有财务管理体系一样。这样得到4种具有不同石灰用量处理的红壤，其pH分别
+为4.4、5.2、6.7和8.1。另一些公司公布了关于其排放的详细数据。 这些方法都提供了推进环境保护的刺激和动力。
+　　此外，各采矿协会也会向会员公司提供一种协作行动载体，以加速有效管理思路的发展和实施。各协会使用机制可以包括政策与指导准则、实践规范、培训和技术转让活动、以及集体公开计划。
+　　a.公司责任和实践规范
+　　国家采矿协会制订的、最早的环境政策或实践规范，是1989年公布的“加拿大采矿协会(MAC)环境政策”。赞成这项“政策”，曾经是而且目前仍然是取得该协会会员资格的一个条件。此“政策”之后，1990年又公布一份“环境实践指南”。培养过程中共取样7次（分别为培养1、2、4、6、9、11、13d）。Ca（OH）2在磨成细末后与所试土壤充分拌
+匀，在饱和持水量条件下，置于30℃恒温箱中培养，其间间隙搅动并测定pH值。这个“MAC政策与环境管理框架”提出了充分实施环境管理体系(EMS)的原则和一般指导准则。该“政策”要由所有MAC会员实施，无论在加拿大还是在国外。在有效立法不存在的情况下，各会员公司同意用成本有效的措施提供高度的环境保护。土壤中主要的电子受体是NO3
+-、Mn4+、Fe3+和SO42-，而电子供体主要是易分解的有机碳。
+　　本研究重点观察在不增加土壤有机碳源的情况下，施用石灰改变土壤pH后对氮肥（包括NH4
++－N和NO3-－N）在好气和厌气条件下产生N2O的情况。该理事会也有关于具体环境问题的政策，其中包括多土地用途和贸易与环境。1996年12月推出了“澳大利亚材料工业环境管理规范”。它是迄今为止唯一呼吁公开环境表现和独立审计的国家采矿工业规范。此“规范”已经翻译成7种语言。通过比较相位可知较深土层土温变化与浅层土壤
+温度变化的滞后很少，各处理的CH4排放通量与不同深度土温相位上的差异都很小，尤其是与5～
+10cm深土温相位上几乎同步。该“规范”的采纳和履约是通过市场力得到鼓励的。已经有一批“规范”签约方把他们对该规范”的履约列为其环境诚意的指示。由于产生N2O的总量较少，pH改变对N2O生成的影响也就不很明显。
+2.3 烤田期间种稻土壤CH4排放规律
+　　图4为水稻生长中期烤田时CH4排放通量随时间的变化。土壤温度的变化是导致CH4排放日变
+化的主要因素。人们寄希望于寻求合适的水分管理措施来减少稻田CH4排放
+量。该规范的遵守对NMA会员公司不是强制性的，但要考虑同行压力，从而为各公司认同该规范提供显著的刺激。
+　　日本采矿工业协会(JMIA)没有独特的实践规范，但其会员公司自愿签署1991年的“经团联(经济团体联合会)全球环境宪章”和1996年的“经团联环境呼吁”。在施入氮肥前，土壤先在50％持水量的情况
+下培养2d，以促使微生物的正常活动。巴西采矿工业协会(IBRAM)有一项鼓励会员自愿签署的环境政策。土壤温度的变化是导致CH4排放日变
+化的主要因素。
+　　在墨西哥和津巴不韦，国家协会没有正式的环境政策或实践规范，但它们有与各自国家政府签署的协议来促进良好环境实践，也正在致力于制定所有采矿作业阶段管理的指导准则和技术标准。
+　　为完整起见，也必须提到国际金属与环境理事会(ICME)与公司责任和实践规范有关的工作。这些因素
+结合在一起造成土温较高时稻田土壤有较高的CH4排放量。
+2　结果与讨论
+2.1 种稻土壤CH4排放的日变化
+　　图1为晴好天气下“休闲晚”和“紫云英早”处理的CH4排放通量与5cm深度的土温的日变化。在其于1991年成立后不久，ICME制定了它的《环境宪章》，责成会员公司观察产品管理与环境管理这一对孪生领域中一批进步原则。NO3--N用硫酸亚铁－锌粉还原，NaOH蒸馏法。在高pH情况下，NO3-的减少量是相当明显的。各处理的CH4排放通量及不同深度土温余弦波拟合的a、b、c及r
+（相关系数）值见表1。一些国家协会已经编制了关于矿山设施的环境无害设计与运行的广泛技术手册。按前茬季节作物种植
+及稻草还田时间共分为4个处理：休闲（“休闲早”和“休闲晚”）；种植紫云英（“紫云英早”
+）及小麦（“小麦早”）。这些因素
+结合在一起造成土温较高时稻田土壤有较高的CH4排放量。在澳大利亚，MCA已经与国家政府的环境部门(澳大利亚的环境部)合作编制了“采矿中的最佳实践环境管理”模块。培养过程中共取样7次（分别为培养1、2、4、6、9、11、13d）。迄今为止，已经编制了13个模块和一套录像带。但就本试验而
+言，N2O积累最高量发生在pH6.7的情况下，而不在pH8.1时（见图2）。在加拿大，MAC在该协会的年度“环境进展报告”中提供了特定公司行动的短案例研究。
+　　必须指出的是，采矿公司已经实施了完全独立于其国家协会的、公司责任与环境保护的管理思路。采样时，将两通采
+样针一头插进安装于采气箱侧面的密封采样垫，另一头插进18ml真空气瓶瓶塞，气样即由采集箱
+内进入采气瓶，每隔10min采1次，共4次。很多采矿公司签署了国际商会的《环境宪章》，还有一些公司已经在非常急需的ISO14000环境管理标准之下获得承诺。
+　　b.自愿排放目标
+　　每个协会的几个会员公司自愿地确定了排放目标。此外，所用土壤多为酸性森林土
+壤，这种土壤常含有较丰富的有机质[3]。
+　　加拿大似乎是所调节的国家中有国家采矿协会实施协作排放削减计划的唯一国家。加拿大采矿协会(MAC)的会员公司90%以上已经自愿地签署了ARET(加速削减毒物排放量)计划。按ARET规定，参加公司要为117种规定的危险物质确定排放削减目标。采矿公司愿意从基准年(1988年)到2000年使12种适用的ARET物质的总排放量削减71%。然后，它们通过协会按年度报告它们的进展，并使每家公司的排放信息公开。施用石灰提高土
+壤pH后对土壤中N2O的形成是否有所影响以及影响程度有多大还很少有人加以研究。不同石灰施用量的土壤处理，N2O积累量的差异不明
+显。由于盆钵土壤温度比大田土壤温度能更快地随气温变化而变化，大
+田0～15cm深度土温间可存在1～4h的滞后，这样大田CH4排放通量更有可能与某特定深度土温密切
+相关。根据《澳大利亚矿产工业环境管理规范》的规定，要求签约公司公开其表现信息，它们各自单独地公开这种信息。
+　　在加拿大，采矿公司以两种方案报告排放量：上面提到的自愿ARET计划，和国家污染物释放总览(NPRI)――联邦政府的一项计划。加拿大采矿协会支持NPRI的编制，而且有一个数据完整委员会来确保其会员公司所报告排放量的精确度。对此，存在两种可能性。
+　　在日本，日本采矿工业协会(JMIA)汇编了各公司与环境表现有关的数据，并向经团联报告合计值。各家公司的数据是不公开的。所调查的其它协会没有涉及公司表现数据的公布。
+专门环境问题
+　　今天特别受关注的三个环境问题是：温室气体与能源；向海洋环境排放；和废物国际贸易等跨边界问题。
+表1　土壤温度及CH4排放通量日变化余弦拟合的以数和相关系数
+　abc相关系数
+土表温度3.89-15.4431.980.911**
+5cm深土温4.54-16.2833.180.936**
+10cm深土温4.70-16.3533.590.934**
+“休闲晚”5.66-15.9736.020.724**
+“紫云英早”6.25-16.5234.230.785**
+
+　　由于种稻土壤CH4排放日变化有近似余弦曲线的变化规律，最大和最小排放分别出现在下午4时
+和凌晨4时左右，所以日平均CH4排放出现在上午10时或晚上10时左右。从本试验看（表5），当pH从6.7增至8.1时，NO2-的积累量急剧上升。排放目标是各公司的一个问题。
+2.2 水稻生长期CH4排放通量的季节变化
+　　图2为CH4排放通量的季节变化。PH（H2O）浸提为6.3。这日益形成了公司环境报告中报告的一个更广泛环境表现子集(见以下)。
+　　在加拿大，MAC协调采矿工业节能特别工作组的运行。此外，该协会也协调采矿公司对“自愿挑战与登记”――联邦政府限制温室气体排放的一项计划――的参与。因此，矿质土壤中缺乏可降解有机物质可能是限制反硝化的最基本原因[22]。根据表中数据可以看出，随着石灰施用量的
+升高，NH4+－N在培养后降低幅度大。
+作者单位：扬州大学农学院，扬州 225009
+参考文献：
+　1　Duxbury J M. The significance of agricultural source of greenhouse gases[J]. Fertilizer Research, 1994, 
+38: 151～163
+　2　Banin A. Global budget of N2O: The role of soils and their change[J]. Sci Total Environ, 1986, 55: 27～
+383 
+　3　Burton D L, Beauchamp E G. Denitrification rate relationships with soil parameters in the field[J]. Commun 
+Soil Sci Plant Anal, 1985, 16: 539～549
+　4　中国科学院南京土壤研究所. 土壤理化分析[M]. 上海: 上海科学技术出版社，1978
+　5　Goodroad L L，Keeney D R. Nitrous oxide production in aerobic soils under varying pH, temperature and 
+water content[J]. Soil Biol Biochem, 1984, 16: 39～43
+　6　Sahrawat K L, Keeney D R, Adams S S. Rate of aerobic nitrogen transformations in six acid climax forest 
+soils and the effect of phosphorus and CaCO3[J]. Forest Sci, 1985, 31: 680～684
+　7　Anderson I C, Poth M, Homstead J, et al. A comparison of NO and N2O production by the autotrophic 
+nitrifier Nitrosomonas europaea and the heterotrophic nitrifier Alcaligenes faecalis[J]. Applied and environmental 
+microbiology, 1993, 59(11): 3525～3533
+　8　Papen H, Hellman B, Papke H, et al. Emission of N-oxides from acid irrigated and limed soils of a 
+coniferous forest in Bavaria[A]. In: Oremland R S, ed. Biogeochmistry of Global Change-Radiatively Active 
+Trace Gases[C]. New York: Chapman and Hall, 1993. 245～60
+　9　Duggin J A. Autotrophic and heterotrophic nitrification in response to clear-cutting northern hardwood 
+forest[J]. Soil Biol Biochem, 1991, 23: 779～787
+　10　Bremner J M, Shaw K. Denitrification in soil:Ⅱ. Factors affecting denitrificator[J]. J Agric Sci, 1958, 51: 
+40～52
+　11　Bryan B A. Physiology and biochemstry of denitrification[A]. In: Delwiche C C, ed. Denitrification, 
+Nitrification and Atmospheric N2O[C]. New York: John Wiley & Sons Ltd, 1981. 67～84
+　12　Weier K L, Gilliam J W. Effect of acidity on denitrification and nitrous-oxide evolution from Atlantic 
+coastal-plain soils[J]. Soil Sci Soc Am J, 1986, 50: 1202～1205
+　13　Bandibas J, Vermoesen A, DeGroot C J, et al. The effect of different moisture regimes and soil 
+characteristics on nitrous oxide emission and consumption by different soils[J]. Soil Sci, 1994, 158(2): 106～114
+　14　Koskinen W C, Keeney D R. Effect of pH on the rate gaseous products of denitrification in a silt loam soil
+[J]. Soil Sci Soc Am J, 1982, 46: 1165～1167
+　15　Minami K , Fukushi S. Emission of nitrous oxide from a well-aerated andosol treated with nitrite and 
+hydroxylamine[J]. Soil Sci Plant Nutr (Tokyo), 1986, 32: 233～237
+　16　Ellis S, Howe M T, Goulding K W T, et al. Carbon and nitrogen dynamics in a grassland soil with varying 
+pH: Effect of pH on the denitrification potential and dynamics of the reduction enzymes[J]. Soil Biol Biochem, 
+1998, 30(3): 359～367
+　17　Stevens R J, Laughlin R J, Malone J R. Soil pH affects the process reducing nitrate to nitrous oxide and 
+dinitrogen[J]. Soil Biol Biochem, 1998, 30(819): 1119～1126
+　18　Terry R E, Tate R L, Duxbury J M. The Effect of flooding on nitrous oxide emissions from an organic soil
+[J]. Soil Sci, 1981, 132(3): 228～232
+　19　Weier K L, Doran J W, Power J F, et al. Denitrfication and the dinitrogen/nitrous oxide ratio as affected 
+by soil water, available carbon, and nitrate[J]. Soil Sci Soc Am J, 1993, 57(1): 66～72
+　20　Bremner J M, Blackmer A M, Waring S A. Formation of nitrous oxide and dinitrogen by chemical 
+decomposition of hydroxylamine on soils[J]. Soil biol Biochem, 1980, 12: 263～269
+　21　Granli T, Bфckman O C. Nitrous oxide from agriculture. Norwegian J Agric Sci, 1994, 12: 57～61
+　22　McCarty G W, Bremner J M. Availability of organic carbon for denitrification of nitrate in subsoils[J]. Biol 
+Fertil Soils, 1992, 14: 219～222
+收稿日期：1999-02-04
+。对于铁-镍生产来说，目标是削减5%。
+　　在美国，若干家采矿公司在政府发起的自愿计划下报告二氧化碳排放量。
+　　b.向海洋环境排放
+　　所调查的协会中没有一个有专门涉及向海洋环境排放的计划：这被认为是一个属于其它环境问题的问题。一般来说，协会关于向海洋环境排放及任何其它环境管理问题的政策是，此类排放的可接受与否应当成为对此类排放和任何替代办法的风险进行科学上严格评价的课题。适用的法规或行为规范会以类似的基准为基础。
+　　MCA注意到，一些会员公司在海外国家中确实把尾矿和/或废物排入海洋环境中。有关公司广泛报告了其环境管理和此类排放的影响。
+　　在加拿大，一座钨矿在若干年内将其尾矿排入太平洋波浪作用带以下的一个深沟中。排放期间和以后的广泛监测显示，环境影响是局部的，且金属种或其它有害材料很少或没有迁移。类似地，有几座加拿大金属矿多年来一直向淡水湖泊中排放尾矿。对其中两个湖泊(一个深，一个浅)的详细的研究显示，排放期间有暂时性浑浊存在，但对水质和生物区系的持久影响微不足道。
+
+图3　水稻生长期土壤Eh的季节变化
+　　土壤Eh及其变异趋势受土壤中电子供体和电子受体丰度的控制。一座最近开发的矿山已经创造了一个人工湖来接纳新鲜、未风化的尾矿。结果证明了这种技术的价值。这些因素
+结合在一起造成土温较高时稻田土壤有较高的CH4排放量。
+表2　好气培养前后NH4+与NO3-的变化
+处理pHN形态N含量/(mg/kg)
+培养前培养后
+Ⅰ4.4NH4+218212
+NO3-3.87.4
+Ⅱ5.2NH4+215205
+NO3-5.114.4
+Ⅲ6.7NH4+215199
+NO3-6.218.3
+Ⅳ8.1NH4+213177
+NO3-7.127.5
+
+
+图1　施NH4+处理在不同pH条件下好气培养过程中NO2-N积累情况
+　　本试验中，施用石灰对NH4+硝化过程中N2O的产生影响不大，似乎可归结于土壤中起作用的微
+生物区系变化。烤田期间CH4的排放峰值出现在土壤呈微干松
+软状态时；烤田至土壤干裂时，CH4排放通量降至零。《巴塞尔公约》、《国际海事组织关于危险材料运载的公约》和《经合组织风险削减计划》是有关国际活动的实例。在这一方面，澳大利亚、巴西、加拿大、日本、墨西哥、南非和美国已经参加了包括废物运输在内的跨边界问题的政府与立法讨论。
+环境表现与社会表现的其它方面
+　　一个重要事实往往在环境辩论中被忽略，那就是变化中的技术的根本性影响。后继的每一代矿山或加工厂都比上一代更加高能效、更加环境友好、也更加成本有效。采矿公司及其协会可以对环境表现做出贡献的最强有力方式之一是帮助开发更有效的技术。近年来，环境目标作为革新的驱动器已经变得日益重要。
+　　类似地，可持续发展的定义本身不是静止的。目前，在很多场合下，都公认可持续发展有三个方面。使经济目标与环境目标一体化是不够的：也必须包括社会方面。也必须考虑采矿公司及其协会削减社会影响和推进社会进步的贡献。
+研究与技术开发
+　　总部设在世界上各大采矿国(如澳大利亚、巴西、加拿大、南非和美国)的较大型采矿和冶金公司，已经有强烈的技术取向。
+　　稻田土壤CH4排放是稻田土壤中CH4的产生、氧化以及向大气传输这3个过程的综合结果。
+　　在一些情况下，例如，在澳大利亚和南非，多年来通过协会进行的协作研究实力强大。在加拿大和美国(直到相对最近)重点一直是独立研究。Ca（OH）2在磨成细末后与所试土壤充分拌
+匀，在饱和持水量条件下，置于30℃恒温箱中培养，其间间隙搅动并测定pH值。
+　　在加拿大，MAC及其会员公司已经促进并支持了若干项有意义的环境研究计划。从1985年以来，该行业已经(与政府一起)支持了一项关于酸性岩石排水的合作研究计划，该计划成功地找到防止和管理酸性排水的有效途径。其它计划侧重于金属矿开采的水生效应和环境效应监测的方法论。最近，该协会推出了一项研究环境中金属的来源、途径、归宿和效应的多年合作计划。施用石灰提高土
+壤pH后对土壤中N2O的形成是否有所影响以及影响程度有多大还很少有人加以研究。
+建立在环境问题和社会问题上的共识
+　　社会问题在任何可持续发展研究中都是重要的。最近已经有作者把可持续发展描述为一张三条腿的板凳，由环境进展、经济进展和社会进展等同地支撑着。
+　　此外，社会朝可持续发展方向推进的能力的一种尺度是该社会不同成员分享必要价值的程度和在一个共同方向上一道工作的态度。表4的结果显示，
+随着pH增加，硝酸还原酶活性明显增加，这证实了pH升高有助于硝态氮的还原[12]?
+　　作为一个以与环境的密切关系运行的自然资源工业，采矿业已经吸引了其部分争论。在施入氮肥前，土壤先在50％持水量的情况
+下培养2d，以促使微生物的正常活动。
+作者单位：中国科学院南京土壤研究所，南京 210008
+参考文献：
+　1　Bouwman A F. Introduction. In: Bouwman A F, ed. Soils and the Greenhouse Effect[M]. Chichester: 
+John Wiley and Sons, 1990. 25～32
+　2　Sass R L, Fisher F M, Wang Y B, et al. Methane emission from rice fields: The effect of floodwater 
+management[J]. Global Bigeochem Cycles, 1992, 6: 249～262 
+　3　上官行健，王明星，沈壬兴. 温度对稻田CH4排放日变化及季节变化的影响[J]. 中国科学院
+研究生院学报，1994, 11(2): 214～223
+　4　Holzapfel-Pschorn A, Conrad R, Seiler W. Production, oxidation and emission of methane in rice paddies
+[J]. FEMS Microbiology Ecology, 1985, 31: 343～351
+　5　Denier van der Gon H A C, Van Breemen N, Neue H U, et al. Release of entrapped methane from 
+wetland rice fields upon soil drying[J]. Global Bigeochem Cycles, 1996, 10: 1～9
+收稿日期：1999-06-17
+。此外，采矿行政部门的观点与社会上其它人群的观点之间，有时也有实质性差距。
+　　采矿工业组织近年来已经做了一些尝试，以期在环境问题和社会问题上与其它人群达成共识。而只有掌握烤田期间CH4排放规律，才能对烤田是否能减少水稻田CH4排放量及其效率作出科学
+准确的判断。与联邦政府和各省政府合作，该行业促进并资助了一项为期两年的、关于与加拿大采矿有关的经济问题、社会问题和环境问题的国家咨询。上官行健等[3]在湖南和杭州观察到稻田CH4排放的日变化与土壤灌溉水温及土壤表层（小于
+2cm）温度之间的相关性最好；随着土壤深度的加深，土壤温度与CH4排放率的相关性越来越差。
+　　1994年，所有群体的代表之间就一项涉及一系列广泛问题的“协议”达成了共识。白马采矿举措领导理事会商定了16条大原则和70个目标，这些应能指导该行业的未来发展和支持“一个环境上、经济上和社会上可持续的和繁荣的、以社区和政治共识为基础的采矿工业”的设想。
+　　其它采矿协会及其会员公司也已冒险闯入社会共识与社会影响的领域。国际金属与环境理事会已经编制了一份“社区关注声明”作为其“环境宪章”的配套文件。一家澳大利亚公司已经制订了一项针对土著人的综合政策。在加拿大，采矿公司常规地与土著人社区签署“影响与效益协议”，按协议规定，它们同意限制对该社区的社会影响，并向该社区提供经济机会及其它效益。
+基金项目：联邦德国教育部和江苏省教委自然科学基金项目
+作者简介：封克(1955～)，男，博士，教授。
+结　语
+　　本文试图描绘采矿工业协会及其会员公司用来促进一种实现环境的、社会的和经济的可持续性的思路的一些手段。虽然不完全，但我们的调查已经提供了该行业为了对一个可持续的未来做出贡献而做出的颇多努力之一斑。
+　　在另一个实验中，我们曾对同样处理的土壤中硝酸还原酶活性进行了测定?因此，矿质土壤中缺乏可降解有机物质可能是限制反硝化的最基本原因[22]。一个强烈的长远趋势将是各家公司采用ISO14000标准，可能此前要更普遍地采取有行业特色的政策与规范。烤田是从下午2∶30开始的。我认为，在社会影响和社区关系领域，将发生甚至更剧烈的变化。要随时调整，以适应这种变化。
+　　欲了解进一步细节的读者，请与本文作者联系，地址是：George Miller,Partner,The Industry Government Relations Group,350 Sparks Street,Suite 1110,Ottawa,Ontario K1R 7S8,Canada。
+注　释
+　　1.收到的答卷来自澳大利亚矿产理事会(MCA)，巴西矿产协会(IBRAM)，加拿大采矿协会(MAC)，日本采矿工业协会(JMIA)，墨西哥矿产协会(CMM)，南非矿山协会(CMSA)，美国国家采矿协会(NMA)和津巴布韦矿山协会(CMZ)。

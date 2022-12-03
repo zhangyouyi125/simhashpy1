@@ -1,0 +1,116 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　Vol.19　No.6　P.38-40
+
+
+
+
+Java和JavaScript在WWW信息服务中的应用（二）
+刘东波
+摘要：JavaScript、Java applets和JavaBeans在WWW应用开发中的作用及其相互关系。
+关键词：Java语言 Java Applet Java Beans JavaScript WWW
+(接上期)
+3  用JavaScript和Java Applets开发WWW应用
+　　Java和JavaScript在开发交互式WWW应用时所起的作用既有差别，又互为补充。Netscape Navigator3以及更高版本的Web浏览器提供了一种称为LiveConnect的方法，用来实现JavaScript与Java applets之间的通信。因此，在必要时可以同时采用这二种语言来开发高效的Web应用。
+3.1 用JavaScript访问Java
+　　在JavaScript脚本中可以直接调用Java包中的Java方法。
+　　对于不同的应用程序，数据行中的数据个数及其类型都不相同，这里设定行数据中包含3个基本类型：int number，String name，double score!″)
+　　＜／SCRIPT＞
+　　以上JavaScript脚本执行的结果是在Java控制台窗口中显示字符串“Display a String in Java Console”。
+　　当然还可以在JavaScript脚本中访问Java applets方法和变量。′＼n′）
+　　｛temp.write（data）；data＝fin.read（）；｝
+　　temp.write（data）；temp.close（）；
+　　｝catch（FileNotFoundException e）｝
+　｝catch（IOException e）｛｝；
+　　try｛ ／／对行数据进行解析，刚建立的文件作为输入流
+　　FileInputStream temp＝new FileInputStream（new File
+　　　　　　　　　　　　　　　　　　　　　　（″temp.dat″））；
+　　StreamTokenizer st＝new StreamTokenizer）temp）；
+　　int ch＝′＼″′；st.quoteChar（ch）；／／定义串分隔符“″”
+　　int count＝0； ／／用于辨别数据的顺序
+　　／／存放结果的变量及正次序正确标记
+　　boolean flagn＝false，flags＝false，flagd＝false；
+　　int nn＝0；double dd＝0；String ss＝new String（″″）；
+　　while （st.nextToken（）：
+　　(1)声明公共类、方法和变量：要访问Java applet定义的方法和变量，必须通过public关键字把方法、变量以及它们所在的类都声明为公共的。
+　　(2)在CLASSPATH环境变量中指明Netscape java＿version：要使用LiveConnect，必须为applet提供适当的LiveConnect类，这些类定义在java＿version文件里，其中version指的是所用的Navigator版本号。
+2  关键问题的解决
+　　在进行数据的合法处理过程中，需要解决的关键问题有：行数据的正确接收；行数据中包含的数据分量及其类型的判定；解析结果与要求格式的比较；正确数据的文件写入等。
+　　(3)首先装载applet：要访问1个Java applet的变量和方法，必须首先完全装载applet。
+　　(4)通过applet对象访问Java applet：JavaScript通过它的applet对象来访问Java变量和方法。applet对象有NAME属性，但没有方法和事件处理器。事实上，applet对象是document对象的属性，可以通过名称来访问不同的Java applet。
+3.2 用Java Applet访问JavaScript
+　　LiveConnect同样提供了Java applet访问JavaScript对象和函数的方法。为此，应注意以下几点。
+　　(1)使用＜APPLET＞标记的MYSCRIPT属性：要使Java applet能够访问JavaScript脚本，必须在＜APPLET＞标记中设置MYSCRIPT属性。假如没有指定MYSCRIPT属性，当Java applet试图访问JavaScript时会产生异常，显示错误信息，并停止运行。
+　　(2)将netscape.javascript包导入Java applet：要使Java applet能够访问JavaScript对象和函数，必须把netscape.javascript包中的JSObject和JSException类导入Java applet中。
+　　(3)用JSObject类的getWindow（）方法创建JavaScript窗口句柄：要用Java applet访问JavaScript方法和函数，必须首先取得与加载当前Java applet窗口相关联的JavaScript Window对象的访问权，然后才可以访问Navigator层次结构中创建的其它对象。
+　　(4)通过JSObject类的getMember（）方法访问JavaScript对象：JSObject类的getMember（）方法用来访问作为JSO－bject对象属性的对象和数值。该方法取一个String类变元，表示要访问的对象或数值。同时对数据的输入做如下的要求：用“＠”字符作为流结束标志；用空格作为数据间的分隔符；字符串必须用双引号括起来，以允许串中含有空格。
+　　doc＝（JSObject）win.getMember（″document″）
+　　form＝（JSObject）doc.getMember（″form1″）
+　　text＝（JSObject）form.getMember（″text1″）
+　　注意doc、form和text必须事先声明为JSObject类型的变量。
+　　而语句：
+　　textvalue＝（String）text.getMember（″value″）
+则把HTML文本框中的值赋给Java的textvalue变量。
+　　(5)通过JSObject类的eval（）方法访问JavaScript方法：JSObject类的eval（）方法用来调用JavaScript对象的方法，并将该方法返回的值提供给Java变量。例如，下面的语句：
+　　win.eval（″alert（＼″这是一个从Java applet发出的警告！＼″）″）将显示1个警告对话框。
+吕海莲（河南平顶山师专计算机系467000）
+参考文献
+1，王克宏．JAVA语言编程技术．北京：清华大学出版社，1997
+2，王克宏．JAVA2核心类库详解．北京：清华大学出版社，1999
+3，美Heller P，Roberts S著．邱仲潘译．JAVA2高级开发指南． 北京：电子工业出版社，1998
+4，美Walsh A，Fronckowiak J．JAVA宝典．北京：电子工业 出版社，1998
+收稿日期：2000－01－04
+。
+3  程序设计主要流程
+　　根据程序的设计功能目标，图1对程序流程图进行了简单描述。编写JavaBeans与编写一般的Java对象并无多大差别。事实上，当一个Java对象的所有数据域都是私有的，并且只能通过所谓的访问者方法进行访问时，这个Java对象就是一个JavaBean。
+　　从编写Java对象到编写JavaBeans只有一步之遥。通过让Java和JVM自动处理复杂性，JavaBeans组件结构的设计显得非常简单。不过，JavaBeans必须支持如下功能：
+(1)属性：JavaBeans的属性相当于Java对象中的数据域，只是JavaBeans的属性必须声明为私有数据域，并且必须通过称为访问者方法的特殊公共方法进行访问。访问者方法又分为获取方法和设置方法，分别用来获取和设置JavaBeans的属性值。
+(2)事件：JavaBeans在内部使用Java事件模型，同时也使用事件与其它JavaBeans或应用程序进行通信。正是通过事件进行的通信，使得用户能够把相互独立的JavaBeans连接成应用程序。
+(3)内查：JavaBeans的内查(introspection)是外部对象分析JavaBeans，以展示其属性、公共方法和事件的功能。
+(4)定制：用户可通过定制功能来修改JavaBeans的属性。可以通过属性编辑器修改属性，也可以直接调用设置者方法修改属性。
+　(5)持续性：JavaBeans的属性值通常应该保持不变。只有通过定制机制显式地修改了属性值时才发生改变。
+　　编译JavaBeans与编译Java类的方式一样，所不同的是，作为JavaBean的字节代码及其数据文件需要压缩存储在1个JAR文件中。
+　　JavaSoft支持把已经编写好的所有Java applets转换为JavaBeans。下面以第3节的PicApplet.java为例来说明如何把一个Java applet转换为JavaBean。
+　　与PicApplet.java对应的JavaBean源程序清单（PicBean.java）如下：
+　　package ldb.applet；
+　　import java.awt.Graphics；
+　　import java.awt.Image；
+　　import java.net.URL；
+public class PicBean extends java.applet.Applet｛
+　　private Image imagePic；
+　　public void init（）｛
+　　　try｛
+　　　URL url＝new URL（getCodeBase（），″ldb／applet／picture.jpg″）；
+　　　imagePic＝getImage（url）；
+　　　｝
+　　catch（Exception e）｛
+　　　｝
+　　　｝
+　　public void paint（Graphics g）｛
+　　　g.drawImage（imagePic，0，0，this）；
+　　　｝
+　｝
+　　上述源程序经过编译即可得到字节代码PicBean.class。结合程序的目标及约定，用QuoteChar（′＼″′）方法定义双引号为串引用字符以辨别字符串；用成员变量st.ttype的值为TT＿NUMBER或者′＼″′来确认数据是数字型或者串型；用系统的默认记号分隔符空格来区别不同的数据；在数值类型上运用强制转换的方式实现了类型的容错处理；同时，结合数据出现的序号变量值及状态标志确认数据格式的合法性。
+　　PicApplet和PicBean除了前者是Java Applet，后者是JavaBean以外，还有2个主要差别：首先，PicApplet通过简单调用Applet类的getImage方法来加载图像，而PicBean必须设置getImage方法的参数以便在JAR中读取图像文件；其次，PicApplet缺少设置大小的方法。如第3节的picapplet.html源代码所示，applet的窗口大小在显示该applet的HTML代码中的＜APPLET＞标记中设置。同时采用行序号提示的方式便于数据行的准确录入。
+　　＜HTML＞
+　　＜HEAD＞
+　　＜TITLE＞JavaBean＜／TITLE＞
+　　＜／HEAD＞
+　　＜BODY＞
+　　＜APPLET CODE＝″ldb.applet.PicBeanclass″ ARCHIVE＝
+　　　　　　　　　　　　　　　　　　　　　　　picbean.jar
+　　WITH＝120 HEIGHT＝120＞
+　　＜／APPLET＞
+　　＜／BODY＞
+　　＜／HTML＞
+5  结束语
+　　仅仅能在Java与JavaScript之间交互是不够的，应该学会在什么场合选用什么工具。Java通常适用于以下场合：
+　　(1)当需要进行网络访问时，Java可以用多种协议工作，如HTTP、FTP等。但是，它没有提供直接处理从键盘上输入的基本数据类型的方法，只是把所有的输入信息作为流来处理。
+　　(2)当HTML、窗口和图像映像提供的交互能力不够时，Java可用于实现编辑器、电子表格、动画和图形操纵等工具。
+　　对于不同的应用程序，数据行中的数据个数及其类型都不相同，这里设定行数据中包含3个基本类型：int number，String name，double score。
+　　相比之下，JavaScript更适合于为网页元素（如Links、Forms、图像等）增加交互性。由于JavaScript能够直接访问HTML文档大部分元素的对象和方法，故适用于以下场合：
+　　(1)向窗口加入客户端的交互性。因此，对于更复杂的数据类型组合的解析实现有待进一步的讨论。而这恰恰是JavaScript的长处。
+　　(2)快速实现简单算法。同时采用行序号提示的方式便于数据行的准确录入。对格式不符的数据系统提示重输信息，屏蔽了错误数据格式引起的运行时例外而导致程序非正常退出的情况。不过，转换后的applets只能在Java1.1兼容的浏览器中运行。笔者认为，JavaBeans是今后Java程序设计的发展方向，新的浏览器几乎都兼容Java1.1，假如不需要花费太多精力，还是把applets转换为JavaBeans更好。
+― 全文完 ―  
+刘东波（中国电子设备系统工程公司研究所100039）
+收稿日期：1999－12－11

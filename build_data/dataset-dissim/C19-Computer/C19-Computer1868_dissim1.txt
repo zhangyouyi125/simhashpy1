@@ -1,0 +1,103 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000 Vol.19 No.3 P.41-42
+
+
+
+Java MPI的实现
+张晓军　杨灿群　黄春
+　　摘　要：用Java编写MPI应用程序,则应用程序不仅更易于在各种异构网络环境下运行,而且能充分发挥现有的网络资源的能力。本文主要介绍如何实现Java语言的MPI。针对当前企业级应用的特点,开发了基于JavaBeans组件模型的组件化分布式应用运行平台,为企业系统管理提供了一个灵活的、可扩展的、集成的分布式组件框架。
+2.2 分布式扩展实现
+　　在本系统,各分布结点在某一时刻代表着特定的用户身份,组件容器通过组件名和组件实例编号管理运行在该容器中的所有组件的实际句柄,并向其它分布结点提供名字服务,其它结点能够远程地访问容器中的任意组件。
+　　MPI与其它并行编程环境（如PVM,express等）相比,使用简单、编程方便。它具有以下主要特点:
+　　（1）通用性强,即适于TCP/IP网络,又适于MPP大规模并行系统;
+　　（2）系统规模小（约几兆字节）;
+　　（3）所有的现有并行机厂商都宣布支持MPI;
+　　（4）成熟度高;
+　　（5）使用简单,编程方便。
+　　由于以上原因,MPI已成为目前比较流行的网络并行编程环境。系统运行时刻,各功能组件通过各自的接口根据业务逻辑的描述进行交互,因此,各组件不依赖其它组件而存在,而且能够非常方便地被其它具有相同接口的组件所替换。从而导致它们不能很好地适应用户的各种异构型网络,特别是Internet网络。
+　　Java是一种新的面向对象的编程语言,它只有简单、面向对象、解释执行、坚固性、安全性等特色。特别是它支持网络的极具吸引力的特征。首先Java的源代码可以被编译成与机器平台无关的字节码形式,字节码对平台的独立性可以保证运行过程与平台的独立;其次,Java广泛的应用环境。而且,服务器作为本系统的控制中心需要管理整个分布式网络环境中的所有JavaBeans组件,包括组件监控、配置、访问控制和组件升级等,这些功能保证了整个企业应用具有良好的可管理性。这种特性为将可执行软件包传输给网络上的每个用户提供了一个简单、直接的方法。
+　　如果把Java语言和MPI结合起来,提供MPI对Java语言的支持。使用Java语言编写MPI应用程序将解决原有MPI应用程序的平台兼容问题。因而可充分利用Internet网络上的现有计算机资源,进行网络并行计算解决大型问题。
+　　本文将主要介绍怎样在MPI中提供对Java语言的支持,最后给出1个Java MPI应用程序的例子。
+1 实现原理
+　　MPI系统使用非常简单,它提供给用户的只是一组库程序（libmpi.a,libampi.a,libmpich.a等）。在业务逻辑的驱动下,运行于各地的分布组件在服务器与客户端之间建立的分布式总线上进行透明的互操作。以下是一个简单的用C语言编写的例子:
+　　#include ″mpi.h″
+　　main（argc,argv）
+　　int argc;
+　　char ＊＊argv;
+　　｛
+　　　　　char message20;
+　　　　　int myrank;
+　　　　　MPI_Status status;
+
+　　　　　MPI_Init（&argc,&argv）;
+　　　　　MPI_Comm_rank（MPI_COMM_WORLD,&myrank）;
+　　　　　if（myrank==0）｛ /＊ code for process zero ＊/
+　　　　　　　　strcpy（message,″Hello,there″）;
+　　　　　　　　　　　MPI_Send（message,strlen（message）,
+　　　　　　　　　　　　　　　　　　　　　　MPI_CHAR,1,99,
+　　　　″MPI_COMM_WORLD）;
+　　　　｝else ｛　　　/＊code for process one＊/
+　　　　　　MPI_Recv（message,20,MPI_CHAR,0,99,
+　　　　　　　　　　　MPI_COMM_WORLD,&status）;
+　　　　　　printf（″received:%s：\n″,message）;
+　　　　｝
+　　　　MPI_Finalize（）;
+　　｝
+　　在本例中,进程0 （rank=0）向进程1（rank=1）发消息串“Hello there”,进程1从进程0收消息,消息由消息信封标识。由于客户端中执行的组件是不可预知的,而且组件发出的事件各有不同,因此客户端的事件捕获功能必须具有通用性。
+　　以上介绍的组件运行平台为企业管理提供了一个开放的、集成的、灵活的、可扩展的分布式计算环境。然而,从头到尾用Java来编写1个jMPI类是没有必要的,可以利用Java的JNI技术,在编写jMPI的方法时通过调用相应的MPI C函数库来完成对应的Java MPI功能。
+　　JNI（Java Native Interface）是1个本地编程接口,它定义了一个标准的命名和调用协定,以允许运行在Java虚拟机中的Java代码与用其它语言（C,C++和汇编）写的应用程序和库进行交互。
+2 具体实现
+　　jMPI接口类中必须实现表1中所列的本地方法。
+表1 jMPI接口类中实现的接口方法
+分类本地方法名
+消息的发送和接收MPI_Send(),MPI_Recv(),MPI_sendrecv(),MPI_1send(),MPI_1recv(),
+MPI_Prob(),MPI_Wait(),MPI_Test(),MPI_Cancel
+用户自定义类型MPI_Type_contiguous(),MPI_Type_vector(),MPI_Type_hvector(),
+MPI_Type_indexed(),MPI_Type_hindexed(),MPI_Type_struct()
+使用用户自定义类型MPI_Type_commit(),MPI_Type_free(),MPI_Get_element(),
+MPI_Address(),MPI_Type_lb(),MPI_Type_ub()
+打包和解包MPI_Pack(),MPI_Unpack(),MPI_Pack_Size(),
+通信和组操作MPI_Group_size(),MPI_Group_rank(),MPI_Group_incl(),
+MPI_Group_excl(),MPI_Comm_size(),MPI_Comm_rank(),MPI_Comm_dup()
+环境管理MPI_Get_processor_name(),MPI_Wtime(),MPI_Init(),MPI_Finalize().
+MPI_Initialized(),MPI_Abort()
+错误信息处理MPI_Errhandler_create(),MPI_Errhandler_set,MPI_Errhandler_free(),
+MPI_Error_string()
+
+　　下面是用Java JNI编写jMPI类的过程。
+　　1.在C语言端,用C编写程序jMPIInterface.c,在程序中实现表1中的jMPI本地方法,该组本地方法通过调用相应的MPI C库函数来完成对应MPI系统接口的功能。下面列出在jMPIInterface.c中jMPI的spawn本地方法的实现代码。
+　　JNIEXPORT jint JNICALL Java_jMPI_Get_processor
+　　_name（JNIEnv env,jobject obj,jstring jname,jint jlen）
+　　｛
+　　　　char＊cName;
+　　　　jint＊jval;
+　　　　/＊Get string information＊/
+　　　　cName=（char＊）getJavaString（jName）;
+　　　/＊Call MPI routine＊/
+　　　jval=（jint）MPI_Get_processor_name（cName,jlen）;
+　　/＊Free memory＊/
+　　releaseJavaString（jName,cName）;
+　　return jval;
+　　2.在Java端,编写Java程序jMPI.java实现jMPI类。在该程序中用native关键字来声明在jMPIInterface.c中实现的本地方法。以下列出jMPI.java的部分代码:
+　　public abstract class jMPI
+　　｛
+　　　　　　　　　　　　　　┇
+　　　　　　　　　　　　　　┇
+　　　　public static native int MPI_Get_processor_name
+　　　　　　　　　　　　　　　（char ＊name,int ＊len）;
+　　　　public static native int MPI_Init（int ＊argc,char
+　　　　　　　　　　　　　　　　　　　　　　　　　＊＊argv）
+　　　　　　　　　　　　　　┇
+　　　　　　　　　　　　　　┇
+　　｝
+　　3.建立jMPI.h文件。
+　　5.事件的网络发布以及组件的远程操作都使用JavaRMI分布式对象技术实现,保证事件对象和方法调用参数通过分布式对象技术被正确地在分布式环境中传递,由于服务器端和客户端在交互中都具有主动性,双方都需实现为远程对象,供对方主动传送数据。过程如下:
+　　javac jMPI.java
+　　javah-jni jMPI
+　　4.编译jMPIInterface.c文件并把它生成动态链接库libjMPI.so。
+　　3.事件监听器的注册和注销。而且,服务器作为本系统的控制中心需要管理整个分布式网络环境中的所有JavaBeans组件,包括组件监控、配置、访问控制和组件升级等,这些功能保证了整个企业应用具有良好的可管理性。目前,基于消息传递的网络并行编程环境除了MPI支持Java语言编程外,PVM也支持Java语言编程,不久的将来,Express、Linda、P4、Zipcode、PARMACS等网络并行编程环境也将支持Java语言编程。
+张晓军（长沙国防科技大学计算机系410073）
+杨灿群（长沙国防科技大学计算机系410073）
+黄春（长沙国防科技大学计算机系410073）
+收稿日期：1999-09-20

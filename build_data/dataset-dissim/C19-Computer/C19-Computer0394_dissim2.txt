@@ -1,0 +1,157 @@
+信息与控制
+Information and Control
+1999年　第28卷　第4期　Vol.28　No.4　1999
+
+
+
+带神经网络补偿的极点配置广义
+最小方差自校正控制
+靳其兵　李鸿儒　顾树生
+
+　　摘　要： 首先用一个常规线性模型对被控对象进行辨识，再对线性模型辨识的余差用一个神 经网络进行补偿。线性模型和神经网络共同构成对象的辨识模型，并基于这一模型提出了一 种显式极点配置广义最小方差自校正控制。该方法适用于非线性对象，且具有较高精度和较 快的收敛速度，具有较强的鲁棒性。由于网络规模较大将会增加删除隐含节点的困难，所以惩罚项应该加到误差函数中以把知识汇集在最少隐含单元上，在文献[54]中采用由Chaulin建议的惩罚函数。[2]中提出了带神经网络补偿的预测控制，在用神经网络进行预测补偿时，要用到未来时刻的控制量输入，而未来时刻的控制量输入是未知的，通常采用的处理方法是将前一时刻的控制序列作为已知量加入。
+　　　　　袁曾任，男，64岁，教授.研究领域为智能控制和计算智能(人工神经网络，模糊逻辑、遗 传算法)及其应用.
+作者单位： 覃振兴:广西师范大学数学与计算机科学系, 清华大学计算机系智能技术与系统国家重点实验室客座；
+　　　　　　袁曾任: 清华大学计算机系　北京　100084
+参考文献
+1　 U M Fayyad, G Piatetsky-Shapiro, P Smyth. From Data Mining to Knowledge Discove ry : An Overview. In U.M.Fayyad, G. Piatetsky-Shapiro, P. Smyth, R U Uthurusamy , editors, Advances in Knowledge Discovery and Data Mining, AAAI/MIT Press, 1996 :83～115
+2 G Piatesky-Shapiro, W J Frawley. Knowkledge Discovery in Databases, AAAI/MI T Press, 1991
+3 U M Fayyad, G Piatetsky-Shapiro, P Smyth, R U Uthurusamy, editors, Advances in Knowledge Discovery and Data Mining, AAAI/MIT Press, 1996:83～115.
+4 R Agrawal, T Imielinski, A Swami. Mining Association Rules Between Sets of Items in Large Databases. Proceedings of ACM SIGMOD, May 1993:207～216
+5 R Agrawal, R Srikant. Fast Algorithms for Mining Association Rules in Large Databases. Proceedings of the 20th International Conference on Very Lage Data Bases, September 1994:478～499
+6 J Han, Y Fu. Discovery of Multiple-Level Association Rules from Large Databases. Proceedings of the 20th International Conference on Very lage Data B ases, September 1994:478～499
+7 H Mannila, H Toivonen, A Inkeri Verkamo. Efficient Algorithms for Disco vering Association Rules. Proceedings of AAAI Workshop on Knowledge Discovery in Databases, July, 1994:181～192
+8 J-S Park, M-S. Chen, P S Yu. An Effective Hash Bashed Algorithm for Minin g Association Rules. Proceedings of ACM SIGMOD, May 1993:175～186
+9 A Savasere, E Omiecinski, S Navathe. An Efficient Algorithm for Mining Assoc iation Rules in Large Databases. Proceedings of the 21th International Conferenc e on Very lage Data Bases, September 1995:432～444
+10 R Srikant, R Agrawal. Mining Generalized Association Rules. Proceedings of t he 21th International Conference on Very lage Data Bases, September 1995:407～41 9
+11 Srikant R, Agrawal R. 1996a. Mining Quantitative Association Rules in Large Relational Tables. In Proc. of the ACM SIGMOD Conference on Management of Data 
+12 Randy Kerber. Chimege: Discretization of Numeric Attributes. In Proceedings of the AAAI-92 workshop on KDD. 123～128
+13 H Tsukimoto. The Discovery of Logical Propositions in Numerical Data, AAAI'9 4 Workshop on Knowledge Discovery in Databases, 1994:205～216
+14 R Agrawal, JC Shafer. Parallel Mining of Association Rules IEEE Transation on Knowledge and Data Engineering, Dec 1996:962～969
+15 M Chen, J Han, P S Yu. Data Mining: An Overview from Database Perspective. I EEE Trans. Kjnowledge and Data Engineering, 1996,8:833～866
+16 A Fupta, V Harinarayan, D Quass. Aggregate-query Processing in Data Warehou sing Environment. In Proc. 21st Int. Conf. Very Large Data Bases, Pages, Zurich , Switzerland, Sept. 1995:358～369
+17 V Harinarayan, J D Ullman, A Rajaraman. Implementing Data Cubes Efficientl y. In Proc. of the ACM SIGMOD Conference on Management of Data
+18 J Widom. Reserch Problems in Data Warehousin. In Proc. 4th Int. Conf. on Information and Knowledge Management, Baltimore, Maryland, Nov. 1995:25～30
+19 W P Yan, P Larson. Eager Aggregation and Lazy Aggregation. In Proc 21st Int Conf Very Large Data Bases, Zurich, Switzerland, Sept. 1995:345～357
+20 J Han, Y Cai, N Cercone. Data-driven Discovery of Quantitative Rules in Re lational Databases. IEEE Trans. Knowledge and Data Engineering, 1993, 5:29～40
+21 J Han, Y Fu. Exploration of the Power of Attribute-oriented Induction in Da ta Mining. In U M Fayyad, G Piatetsky-Shapiro P Smyth, R U Uthurusamy, editors, Advances in Knowledge Discovery and Data Mining, AAAI/MIT Press, 1996:83～115
+22 J R Quinlan. Induction of Decision Trees. Machine Learning, 1986, 1:81～106
+23 J R Quinlan. C4.5: Programs for Machine Learning, Morgan Kaufmann, 1986
+24 R Agrawal, M Mehta, J Shafer, R Srikant, A Arning, T Bollinger. The Quest Data Mining System. In Proc. 1996 Int'l Conf. on Data Mining and Kno wledge Discovery (KDD'96), Portland, Oregon, August 1996
+25 M Mehta, R Agrawal, J Rissanen. SLIQ: A Fast Scalable Classifier for Data Mi ning. In Proc. 1996 Int. Conference on Extending Database Technology (EDBT'96), Avignon, France, March 1996
+26 J Shafer, R Agrawal, M Mehta. Fast Serial and Parallel Classification of V ery Large Data bases. In VLDB 96
+27 M S Chen, P S Yu. Using Multi-Attribute Predicates for Mining Classificati on Rules. IBM Research Report, 1995
+28 J Han, Y Fu, W Wang,etc. DBMiner: A System for Mining Knowledge in La rge Relational Databases. In KDD'96, Portland, Oregon, Augest 1996
+29 P Cheeseman, J Stutz. Bayesian Classificaton (AutoClass): Theory and Result s. In U M Fayyad, G Piatetsky-shapiro, P Smyth, R U Uthurusamy, Editors, Advanc es in Knowledge Discovery and Data Mining, AAAI/MIT Press, 1996:153～180
+30 J Elder IV, D Pregibon. A Statistical Perspective on Knowledge Discovery in Databases. In U M Fayyad, G Piatetsky-shapiro, P Smyth, R U Uthurusamy, Editors, Advances in Knowledge Discovery and Data Mining, AAAI/MIT Press, 1996 :83～115
+31 G Piatetsky-shapiro. Discovery, Analysis, and Presentation of Strong Rules. In G Piatetsky-shapiro, W J Frawley, Editors, Knowledge Discovery and Databases, AAAI/MIT Press, 1991:229～238
+32 W Ziarko. Rough Sets, Fuzzy Sets and Knowledge Discovery. Springer-verlag , 1994
+33 R Agrawal, S Ghosh, T Imielinski, B Iyer, A Swami. An Interval Classifier for Database Mining Applications. Proceedings of the 18th International Confere nce on Very lage Data Bases, August 1992:560～573
+34 H Lu, R Setiono, H Liu. Neurorule: A Connectionist Approach to Data Mining . Proceedings of the 21th International Conference on Very Lage Data Bases, September 1995:407～419
+35 A K J, R C Dubes. Algorithms for Clustering Data. Printice Hall, 1988
+36 D Fisher. Improving Inference Through Conceptual Clustering. In Proc. 1987 A AAI Cconf., Seattle, Washington, July 1987:461～465
+37 D Fisher. Optimization and Simplification of Hierarchical Clusterings. In Pr oc. 1st Int. Conf. on Knowledge Discovery and Data Minging (KDD'95), Montreal, C anada, Aug. 1995:118～123
+38 N Beckmann, H P Kriegel, R Schneider, B Seeger. The R*-tree: An Efficient and Robust Access Method for Points and Rectangles. In Proc. 1990 ACM-SIGMOD Int . Conf. Management of Data, Atlantic City, NJ, June 1990:322～331
+39 M Ester, H P Kriegel, X Xu. Knowledge Discovery in Large Spatial Databases: Focusing Techniques for Efficient Class Identification. In Proc. 4th Int. Symp. on Large Spatial Databases (SSD'95), Portland, Maine, August 1995:67～82
+40 R Ng, J Han. Efficient and Effective Clustering Method for Spatial Data Mini ng. In Proc. 1994 Int. Conf. Very Large Data Bases, Santiago,Chile,September 19 94:144～155
+41 W P Yan, P Larson. Eager Aggregation and Lazy Lazy Aggregation. In Proc. 21 th Int. Conf. Very Large Data Bases, Zurich, Switzerland, Sept. 1995:345～357
+42 HJ Lu, R Setiono, H Liu. Effective Data Mining using Neural Networks. IEEE Transactions on Knowledge and Data Engi
+50 Yoon Byungjoo, Lacher R C. Extraction Rules neering 8: 6 (DEC 1996) Page 957～961
+43 P K Chan, S J Stolfo. Learning Arbiter and Combiner Trees from Partitioned Data for Scaling Machine Learning. In KDD'95, August 1995:39～44
+44 周生炳，张钹. 不完全决策表及其化简. 软件学报 （将发表) 
+45 周生炳，张钹. RBAO方法的无回嗍算法. 计算机学报 （将发表)
+46 周生炳，张钹. 基于知识的KDD方法. 中国科学（E辑）（将发表）
+47 周生炳. 基于知识的KDD方法. 清华大学博士后出站报告, 北京: 1997,4
+48 Binaghi E. (1192), Empirical Learning for Fuzzy Knowledge Acquisition, Proc . 2nd Int. Conf. Fuzzy Logic & Neural Networks, IIZUKA'92, 1992
+49 Fu LiMin. Rule Generation from Neural Networks, IEEE Transactions on Systems , Man and Cybernetics, 1994, 24(8):1114～1124by Destructive Learning, IEEE, 1994:1766～1771
+51 Ishikawa M. Structural Learning and its Applications to Rule Extraction, IEEE,1994:354～359
+52 袁曾任，卢振中. 由神经网络提取规则的一种方法及其在气象云图中的应用. 1996 年中国智能自动化学术会议论文集(上册）180～186
+53 袁曾任，卢振中. 由神经网络提取规则的一种方法. 信息与控制, 1997,26(1):61～66
+54 Zhou yuanlui, Lu Yuchang. Shi Chunyi Using Neual Nework to Discover Knowled ge from Database (to be published)
+55 Zhaohui Zhang, Yuanhui Zhou, Yuchang Lu, Bo Zhang. Extracting Rules from a GA-Pruned Neual Network
+收稿日期：1998-02-09
+。本文提出了一种带神经网络补偿的极点配置广义最小方差自校正控制，该方法适用于非线性对象，且具有较高精度和较快的收敛速度，具有较强的鲁棒性。
+3.2.1 由神经元网络提取规则[48～53]。首先用如下常规线性模型对被控对象进行辨识
+y(k)=-a1y(k-1)-a2y(k-2)-…-any(k-n)+b0u(k-d)+b1u(k-d-1)　　　　　
++…bmu(k-d-m)+ξ(k)+clξ(k-1)+…+cncξ(k-nc)　　　　　　(2)
+辨识以后得到i(i=1,…,n),j(j=1,…,m),l(l=1,…,nc), 利用i、j、l就可以对k时刻的对象输出进行估计，估计值记为yL(k),则
+　(3)
+　　由于非线性、时变及未建模动态的影响，yL(k)和对象的实际输出y(k)将存在余差y(k)-yL(k)，这个余差可以用一个神经网络进行逼近，记神经网络的输出为yN(k), 则
+yN(k)=g1[y(k-1),y(k-2),…,y(k-n),u(k-d),…,u(k-d-m)]　　　　　(4)
+利用(1),将y(k-i)(i=1,2,…,d+1)依次代入(4)，并不考虑干扰的影响，得到
+yN(k)=g[y(k-d),y(k-d-1),…,y(k-d-n+1),u(k-d-1),…,u(k-2d-m+1)]　　　(5)
+对神经网络进行训练的目的是为了满足以下性能指标函数：
+J1=min|y(k)-yL(k)-yN(k)|
+从而可以得到：
+y(k)=yL(k)+yN(k)+e(k)　　　　　　　　　　　　　　(6)
+其中e(k)为最后的辨识误差，将(3)和(5)代入(6)，得到
+
+即　　　　　A(z-1)y(k)=z-dB(z-1)u(k)+C(z-1)ξ(k)+yN(k)+e(k)　　　　　　　　　　(7)
+　　　　　　　
+　　　　　　　
+　　　　　　　
+　　(7)即为本文所采用的辨识模型，仿真表明，这种结构对非线性、带随机干扰的对象具有很高的精度。在[2][3]也采用了相似的结构。
+　　神经网络可以采用前向神经网络，也可以采用动态递归神经网络，采用前向神经网络将具有 较多的输入个数，为了避免局部极小和提高权值的收敛速度，可以采用[4]中的权值训练方法。采用动态递归神经网络可以避免(5)中输入阶次的影响，大大减少网络的输入个数，采用[5]中提出的最优学习率进行仿真,我们得到了较好的效果。
+3　带神经网络补偿的极点配置广义最小方差自校正控制
+　　由于带神经网络补偿的模型结构的特殊性，就要求采用显式自适应控制，[6]提出了一种极点配置广义最小方差自校正显式控制算法，该算法能够保证全局的收敛性。于是一个新的研究领域―数据库中的知识发现（Knowledge Discovery in Databases简称KDD) 也就应运而生，而且在近几年里迅速发展起来。于是一个新的研究领域―数据库中的知识发现（Knowledge Discovery in Databases简称KDD) 也就应运而生，而且在近几年里迅速发展起来。
+　　引入下列Diophantine方程
+P(z-1)=A(z-1)E(z-1)+z-dG(z-1)　　　　　　　　　　(9)
+C(z-1)E(z-1)=F(z-1)+z-dN(z-1)　　　　　　　　　　(10)
+degE=d-1, degG=max(n-1,np-d), degF=d-1, degN=nc-1
+E=E0+E1z-1+…+Ed-1z-(d-1)
+用E乘(7)式两边并利用(9)，得(为了简化书写，以下将复杂表达式括号内的z-1忽略，如P(z-1)写成P)
+Py(k+d)=Gy(k)+BEu(k)+CEξ(k+d)+Eym(k+d)+Ee(k+d)
+　　再利用(10)式，得到
+Py(k+d)=Gy(k)+BEu(k)+Nξ(k)+EyN(k+d)　　　　　　　　　　　
++Fξ(k+d)+Ee(k+d)　　　　　　　　　　　　　　(11)
+(11)式等号右边的Fξ(k+d)、Ee(k+d)是和其余各项无关的量, 由(8)和(11)式，很容易得 到控制量u(k)由以下方程确定。
+　　　　　　　　　　　　Gy(k)+BEu(k)+Nξ(k)+EyN(k+d)=Rw(k)-Qu(k)
+即　　　　　　　　　　　(BE+Q)u(k)=Rw(k)-Gy(k)-Nξ(k)-EyN(k+d)　　　　　　　　　(12)
+　　将(12)式的控制量方程代入(7)式，得到对象的输出方程为
+　　　　(13)
+　　上式中yN(k)也可以看成可测干扰。 由(13)可见，虽然引入了具有非线性特性的神经网络进行补偿, 但系统的特征多项式仍为PB+AQ，和基于线性对象设计时是一致的。并且， 令yN(k)=0、e(k)=0,就可以得到线性设计时的对象输出方程。
+　　给定稳定的期望闭环极点多项式T(z-1),得到以下极点配置方程
+P(z-1)B(z-1)+A(z-1)Q(z-1)=T(z-1)　　　　　　　　　　(14)
+控制量u(k)由(12)决定, 但是k时刻(12)式中的yN(k+d-i)(i=0,1,…,d-1)未知。文［8］则引入并行算法以提高效率。D就是发掘关联规则的数据源。
+　　利用一阶Tayler展开，并定义
+　　
+　　得到
+yN(k+d)=g[y(k),…,y(k-n+1),u(k),u(k-1),…,u(k-d-m+1)]　　　　　　　
+≈g0+g1*[u(k)-u(k-1)]　　　　　　　　　　　　　　　(15)
+在K时刻，用u(k-1)取代加入经过训练的神经网络，神经网络的输出即为g0，g1的求取 对前向神经网络可参见[7], 对动态递归神经网络可参见[8]。
+　　将(15)代入(12), 得到
+　　　　　　　　(16)
+　　(16)即为本文控制量u(k)的实际求取方程。
+　　自适应控制的步骤如下：
+　　①给定期望的极点多项式T(z-1)。其主要思想是把不完全决策表与AO方法相结合，进一步改善AO 方法与 粗糙集方法的结果。
+　　具体是先采样进行学习得到一个决策树，然后对它进行检验，如果有些对象不满足于它，则把这些例外的对象加入样本中重新学习，直至得到一个准确的决策集。
+　　④利用(14)式求P(z-1)、Q(z-1)。
+　　⑤利用(9)、(10)式求E(z-1),G(z-1),N(z-1)。
+　　⑥用u(k-1)代替u(k)加入经过训练的神经网络得到g0；求取g1。
+　　⑦由(16)式求u(k)。
+　　⑧将u(k)加入实际对象和神经网络。
+　　⑨k=k+1, 转向步骤②。
+4　仿真研究
+　　所做的大量仿真实例都验证了本文所提出方法的正确性，下面仅以一例为证：
+
+　　辨识模型的线性部分取为二阶对象，神经网络采用一个三层对角递归网，隐层神经元个数为10，神经网络的输入单元数为2。在\间隔内产生2000个随机数加入仿真对象，利用产生的输入、输出数据对模型进行预训练。随机干扰的最大幅值为 0.2。研究领域为人工智能和KDD及Data Mining领域。采用极点配置广义自校正控制，而不进 行神经网络补偿，结果示于图1。采用带神经网络补偿的极点配置广义自校正控制的结果示 于图2。
+　　　　　　
+　　图1　极点配置广义自校正控制的结果　　　　图2　带神经网络补偿的极点配置广义自校正
+　　　　　　　　　　　　　　　　　　　　　　　　　控制的结果
+　　由仿真结果可以看出，本文所提出的方法是有效的，具有较快的响应速度。
+5　结论
+　　理论分析和仿真结果都表明了本文所提出的带神经网络补偿的极点配置广义最小方差自校正 控制方法是有效的，它比极点配置自校正控制具有更高的控制精度、更快的响应速度、更好 的鲁棒性，且适用于非线性对象。
+作者简介：靳其兵,男,27岁,博士生.研究领域为神经网络及模糊控制在多变量系统中的应用.
+　　　　　李鸿儒,男,30岁,博士生,讲师.研究领域为智能控制及其在多变量系统中的应用.
+　　　　　顾树生,男,59岁,博士生,教授,博士生导师,东北大学信息科学与工程学院院长.研究领域为 多变量控制理论及其应用、智能控制、交流调速系统等.
+作者单位：靳其兵：北京石油化工学院　102600;　
+　　　　　李鸿儒、顾树生：东北大学信息科学与工程学院　沈 阳　110006
+参考文献
+1　罗小青,孙优贤. 基于神经元网络的前馈学习控制器. 信息与控制, 1994,23(5):311～314
+2　李少远,刘浩,袁著祉. 基于神经网络误差修正的广义预测控制. 控制理论及应用, 1996, 13(5): 677～680
+3　Fuli Wang, Li Mingzhong, Yang yinghua. A Neural Network-based Adaptive Pole P lacement Controller for Nonlinear System. International Tournal of Systems Scien ce, 1997,28(4):415～421
+4　Robert S S, N Tepedelenliogln. A Fast New Algorithm for Training Feed Forward Neural Networks. IEEE Trans. on Signal Processing, 1992,40(1):202～2 10
+5　ChaoChee K, Y L Kwang. Diagonal Recurrent Neural Networks for Dynamic Syst ems Control. IEEE trans. on Neural Networks, 1994,6(1):144～156
+6　Tianyou Chai. An Indirect Stochastic Adaptive Scheme with On-Line Choice of W eighting Polynomials. IEEE Trans.on Automatic Control, 1990,35(1): 8 2～88
+7　谭永红. 基于BP神经网络的自适应控制. 控制理论及应用,1994,11(1):84～ 87
+8　Mingzhong Li, Fuli Wang. Adaptive Control of Black-Box Nonlinear Systems Usi ng Recurrent Neural Networks. 36th IEEE CDC, 1997,December: 10-12, California US A
+收稿日期:1998-06-15

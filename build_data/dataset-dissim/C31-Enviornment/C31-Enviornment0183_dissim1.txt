@@ -1,0 +1,46 @@
+土壤与环境
+SOIL AND ENVIRONMENTAL SCIENCES
+1999年　第4期　第8卷　Vol.8　No.4　1999
+
+
+
+几种改性磷肥肥效研究初报
+毛小云　吴平霄　廖宗文
+　　摘要：在与过磷酸钙生产类似的工艺条件下，在磷矿粉中加入一定比例的添加剂，研制出3种改性磷肥。化学分析结果表明，在改性磷肥有效磷中，水溶性磷比例下降。
+　　供试氮肥为尿素，设计施N 150、450和750 kg/hm2，折算成土柱施N 276、828和1380 mg，3次重复；土柱施肥覆土后，隔1个星期淋水70 mm，控制不产生泾流，依此间隔淋溶5次，这样施肥后35 d内共淋水350 mm，淋溶强度平均10 mm/d。
+　　关键词：改性磷肥；肥效；吸磷量；磷含量
+　　中图分类号：S143.2+2　文献标识码：A
+Preliminary Report on Efficiency of Modified Phosphorus Fertilizers 
+MAO Xiao-yun，WU Ping-xiao，LIAO Zong-wen 
+（College of Natural Resources and Environmental Science, South China Agricultural University, Guangzhou 510642, China）
+　　Abstract:　In the process similar to the production of superphosphate, different proportional additives were added to ground phosphate rock to produce three modified phosphorus fertilizers. The chemical analysis shows that the proportion of water-soluble phosphorus in available phosphorus in the modified phosphorus fertilizers has been decreased. Meanwhile the pot experiment shows that three modified phosphorus fertilizers have more positive effect on increasing biomass than that of ordinarily superphophate under the condition of equivalent mass. Moreover, phosphorus uptake by plant and phosphorus content of plant also increases remarkably. 
+　　Key words:　modified phosphorus fertilizers; fertilizer efficiency; phosphorus uptake; phosphorus content
+　　我国土壤缺磷现象十分普遍，特别是在南方红壤地区，由于土壤Fe、Al含量高，普通磷肥施入土壤极易被固定，有效性低，缺磷现象严重。在我国磷矿资源不足，品位较低的条件下，提高低品位磷矿粉中磷的释放，使它的肥效接近或高于同等量的化学磷肥，对于充分利用我国的磷矿资源具有重要的意义[1～2]。 
+　　土层深度对氮肥淋失量有较大的影响。我们仿照湿法过磷酸钙生产工艺，利用有机和无机（矿物）改性材料活化（促释）磷矿粉在实验室条件下，研制出3种新制备改性磷肥，其物理、化学性状均有较大的改变，在固磷性极强和有效磷含量极低的红壤上表现了较好的肥效，显示出良好的应用前景。
+1 材料与方法
+　　供试磷矿粉为云南昆阳磷矿粉，添加剂包括一种有机添加剂A，一种有机－无机复合添加剂B和一种无机添加剂C。还探讨了氮肥淋溶过程中的氮形态变化，以及施氮量和土层深度对氮肥淋溶损失的影响。后2次淋溶出现这种情况，可能与前期淋溶而吸附在20～60 cm土层中的氮素形态转化有关。
+　　改性磷肥的制作：取添加剂A 20 g与100 g磷矿粉混匀，加水100 ml，搅拌均匀，缓缓加入适量浓硫酸，边加边搅拌，风干即制得改性磷肥1。仿上法分别制得改性磷肥2和改性磷肥3，3种改性磷肥分别记为GX1、GX2、GX3，以不加添加剂的处理得酸处理磷肥，记为CKH。
+1 材料与方法 
+　　采用内径15.3 cm且底部有渗漏网的塑料管；研究对象为60 cm土体，同时为了获得20 cm和40 cm界面的淋溶信息，设计装填3种高度（0～20、0～40、0～60 cm）的土柱，土柱按田间体积质量及结构装填后加湿到田间持水量。
+　　盆栽试验：设5个处理，3次重复，每盆装风干土1.5 kg，N、K2O施肥量均为0.225 g/盆。自处理1至处理5分别施普通过磷酸钙CK1、CKH、GX1、GX2、GX3，施用量均为0.65 g/盆。盆栽玉米于1999年3月20日播种，每盆3株，1999年4月23日齐土剪下玉米苗，称鲜重，全生长期34 d。
+2 结果与分析
+2.1 改性磷肥中有效磷，水溶性磷含量
+　　过磷酸钙一般检检标准不仅要求其有效磷达到特定的指标（质量分数为0.12以上），而且要求水溶性磷占有效磷的质量分数超过0.8以上。在前3次淋溶，表现出20 cm土层界面淋失氮量明显高于40 cm和60 cm界面，表明肥料氮在20～60 cm土层有一定的吸附，此时，20 cm界面淋失N量达126.7 mg，而60 cm界面仅为55.5 mg，有71.2 mg N吸附在20～60 cm土层中；如以40～60 cm土层为淋失层，在淋水210 mm的条件下，仅有6.7％～10.3％的氮肥淋失。从图1可以看出，与CKH相比，3种改性磷肥水溶性磷有较大幅度的下降，质量分数分别降低0.051、0.165、0.158。而有效磷降低幅度不大（仅降低0.013、0.008和0.048）。产生这一结果可能存在三方面的原因：一是添加剂的加入使改性磷肥中磷的含量相对减少，全磷量降低；二是添加剂在反应过程中与磷结合，这种结合态水溶性弱但不失有效性；三是由于加入添加剂，使浓H2SO4与磷矿粉反应的量相对减少，以致转化的结果使游离H2PO4-等减少。
+
+图1　4种磷肥有效磷和水溶性磷含量
+2.2 盆栽试验结果
+2.2.1 各处理玉米生物量
+　　磷在土壤中极易被固定而无效，故一种磷肥的肥效并不决定于其本身的化学有效性而取决于其生物有效性。5种磷肥在赤红壤上的盆栽结果见图2（图中数据的多重比较采用SSR法，P＝0.05）。
+
+图2　5种磷肥盆栽生物量
+　　图2中，CKH较CK1生物量的质量分数增加0.0922，3种改性磷肥较CKH增加0.20以上，较CK1增加0.30以上，说明改性磷肥中的磷具有极高的生物有效性。
+2.2.2 各处理玉米地上部吸磷量
+　　图3、图4为各处理的玉米地上部植株磷含量及其吸磷量（图中数据的多重比较采用SSR法，P＝0.05）。从表中可以看出，处理GX2植株含磷量和吸磷量均为最高；其次为处理GX3和处理GX1。而施用普通过磷酸钙的处理SP（CK1），地上部植株磷含量和吸磷量均为最低。
+
+图3　各处理玉米植株含磷量
+
+图4　各处理玉米地上部吸磷量
+3 讨论
+　　图2中CKH较CK1生物量增加也许与二者有效磷含量不同有关，3种改性磷肥处理较CKH处理的生物量有较大幅度的增加，显然不能简单地用化学有效性解释。施肥后21 d内淋水210 mm，氮肥淋失率只有6.8％～10.4％；而在施肥28 d后，保持同样的淋溶强度，氮肥的淋失率迅速提高。后2次淋溶出现这种情况，可能与前期淋溶而吸附在20～60 cm土层中的氮素形态转化有关。
+2.2 不同施氮量的氮肥淋溶损失
+　　随着施氮量增加，每次淋溶均表现出氮的淋失量增加，但淋失率却下降。在三种改性磷肥中，H2PO4-、HPO42-离子可能通过Ca2+与添加剂形成多元络（螯）合物，或通过表面吸附及包被作用减少了其有效磷在土壤中的固定，从而大大增加了其生物有效性。每次测量淋溶盛接到的渗漏水的体积，用FeSO4－Zn粉还原、加碱蒸馏的方法测定氮含量[1]，计算结果减去对照土柱的淋失方为氮肥的淋失

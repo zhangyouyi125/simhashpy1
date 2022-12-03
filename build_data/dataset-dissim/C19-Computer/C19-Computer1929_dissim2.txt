@@ -1,0 +1,78 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　Vol.19　No.6　P.36-37
+
+
+
+
+标准数据类型的JAVA容错解析
+吕海莲
+摘要：JAVA语言环境中标准类型数据的批量输入及类型自动判定功能的设计思想和程序实现。
+关键词：数据类型 容错解析 Java语言
+1  问题的提出
+　　JAVA语言是一种跨平台的网络编程语言，它提供了极其丰富的接口、类以及相应的方法，使用户能实现友好界面和强大的程序功能。NAT已经录下这对映射：（D＝202.202.202.202：80，S＝192.168.1.2：1030）（D＝202.202.202：80，S＝200.200.200.200：1330）。所以，对于用户从键盘上提供的非字符流信息，就需要自己对输入流进行恰当的处理。而JAVA对数据类型之间的转换没有提供容错机制，即一旦数据格式不符就会产生例外而退出，因此对于批量数据的键盘输入来说，希望程序具有能够判断类型不符并提示重新输入的容错机制。针对这种要求，本文结合JAVA语言的编程环境，提供了一种实现这种功能的程序模型，采用流处理的方式加上一些处理技巧，使程序能够实现以下功能：
+　　(1)接收从键盘上输入的多个数据行，1行中可含多个基本数据类型。
+　　(2)对数据行信息进行类型解析。TCP把端点（endpoint）定义为一对整数（host，port），因此可以将1条TCP连接用1个4元组（Source address：source port；destination address：destination port）来定义，这样的一个连接抽象允许多个连接共享1个端点，例如2条连接（192.168.1.1：1184；192.168.1.3：80）、（192.168.1.2：1184；192.168.1.3：80）共享同1个端点（192.168.1.3：80），但又并不会引起歧义，从而可以看出这种基于连接的抽象为利用1个IP地址进行外部世界的访问提供了基础。
+　　(4)以当前输入的合法数据为新的数据源保存到一个随机文件中，以备重复运用。
+　　对于不同的应用程序，数据行中的数据个数及其类型都不相同，这里设定行数据中包含3个基本类型：int number，String name，double score。当TCP的1次连接关闭时，NAT会释放分配给这条连接的端口，以便以后的连接可以继续使用。当内部网络中的1台主机(例如A)要访问Internet上的Web服务器X（主机地址为202.202.202.202），那么首先A要与X建立TCP连接，设定主机A为此次连接分配的TCP端口为1030，此时主机A将IP数据包（D＝202.202.202.202：80，S＝192.168.1.2：1030）发向NAT网关，当NAT接受到数据包后，会动态地分配1个未用TCP端口，例如1330，然后修改数据包中的地址为（D＝202.202.202：80，S＝200.200.200.200：1330），计算数据包的校验和后发向Internet。由于开始设计Internet网的时候并没有考虑到这么大的规模，所以分组的地址选择了32位，它可以使分组的格式很好地对齐，但Internet网面临着B类地址耗尽、路由表爆炸和整个地址耗尽的危机。同时采用行序号提示的方式便于数据行的准确录入。另外当端口地址在NAT内动态分配时，使得外部攻击者对NAT域中的一个特定主机的攻击更加困难。更为重要的是需要为每一种应用都编写特定的代理服务器，使得系统的扩展性不是很好。当内部网络中的1台主机(例如A)要访问Internet上的Web服务器X（主机地址为202.202.202.202），那么首先A要与X建立TCP连接，设定主机A为此次连接分配的TCP端口为1030，此时主机A将IP数据包（D＝202.202.202.202：80，S＝192.168.1.2：1030）发向NAT网关，当NAT接受到数据包后，会动态地分配1个未用TCP端口，例如1330，然后修改数据包中的地址为（D＝202.202.202：80，S＝200.200.200.200：1330），计算数据包的校验和后发向Internet。对格式不符的数据系统提示重输信息，屏蔽了错误数据格式引起的运行时例外而导致程序非正常退出的情况。
+户现锋（上海同济大学计算机系200092）
+张大陆（上海同济大学计算机系200092）
+参考文献
+1，Egevang R．Francis P．The IP Network Address Translator（NAT）．RFC1631，1994；（5）
+2，Srisuresh P，Holdrege M．IP Network Address Translator（NAT）Terminology and Considerations．RFC2663，1999；（8）
+3，Rent S，Atkinson R．Security Architecture for the Internet Protocol RFC2401，1998；（11）
+4，IETF．Security L2TP using．IPSEC，1999
+5，Netscape Communication Corp．The SSL protocol Version 3．0，1996
+6，Tanenbaum AS．Computer Networks．Third Edition． Prentice－Hall，1996
+7，Huitema C．Routing in the Internet．北京：清华大学出 版社，1998
+8，DOUGLAS E．COMER．Internetworking with TCP／IP（Vol 1）．北京：电子工业出版社，1998
+9，Slattery T，Burton W．Advanced IP Routing in Cisco Networks．北京：机械工业出版社，1999；（6）
+收稿日期：1999－12－23
+。同时在程序中对所有的文件都要进行FileNotFoundException和IOException例外的捕获。
+3  程序设计主要流程
+　　根据程序的设计功能目标，图1对程序流程图进行了简单描述。
+
+图1  程序设计的主要流程
+4  程序实现
+import java.io.*；
+public class Jx{
+public static void main(String args[])
+　{int numrec＝1；  ／／行数据序号
+　　　try{ ／／定义输入流及随机文件
+　　FileInputStream fin＝new FileInputStream(FileDescrip－
+　　　tor.in）；
+　　File file＝new File（″filerd dat″）；
+　　If（file.exists（））file.delete（）；／／重建文件
+　　RandomAccessFile rfile＝new RandomAccessFile（″fil－
+　　　　　　　　　　　　　　erd.dat″，″rw″）；
+　　int data；data＝fin.read（）；
+　　System.out.print（″record″＋numrec＋″：″）；   ／／正确数据
+　　　　　　　　　　　　　　　　　　　　　　　　　　　／／的行号提示
+　　data＝fin.read（）；
+　　while（data!＝′＠′）
+　　｛try｛
+　　　／／定义存放行数据的临时文件
+　　　FileOutputStream temp＝new FileOutputStream
+　　　　　　　　　　　　　　new File(″temp.dat″))；
+　　while（data!′＼n′）
+　　｛temp.write（data）；data＝fin.read（）；｝
+　　temp.write（data）；temp.close（）；
+　　｝catch（FileNotFoundException e）｝
+　｝catch（IOException e）｛｝；
+　　try｛ ／／对行数据进行解析，刚建立的文件作为输入流
+　　FileInputStream temp＝new FileInputStream（new File
+　　　　　　　　　　　　　　　　　　　　　　（″temp.dat″））；
+　　StreamTokenizer st＝new StreamTokenizer）temp）；
+　　int ch＝′＼″′；st.quoteChar（ch）；／／定义串分隔符“″”
+　　int count＝0； ／／用于辨别数据的顺序
+　　／／存放结果的变量及正次序正确标记
+　　boolean flagn＝false，flags＝false，flagd＝false；
+　　int nn＝0；double dd＝0；String ss＝new String（″″）；
+　　while （st.nextToken（）！当外网的主机要主动访问内网的主机时，一般情况下要首先与内网中的某台主机建立连接（多数内网不允许从外部发起连接），但是，它不知道内网主机的IP地址（由前面的分析可知，在Internet传输的IP数据报并没有含有内部网络地址的私有信息，这样，内网中的主机对于外部主机是不可见的，它们被NAT保护起来了），其次内网主机地址一般是内部保留地址，不允许在Internet上传输，再次NAT内部的记录表中也没有与这个外部来的连接的表项，因此不允许连接的请求通过NAT，这样就起到了防火墙安全防护的作用。因此，对于更复杂的数据类型组合的解析实现有待进一步的讨论。
+吕海莲（河南平顶山师专计算机系467000）
+参考文献
+1，王克宏．JAVA语言编程技术．北京：清华大学出版社，1997
+2，王克宏．JAVA2核心类库详解．北京：清华大学出版社，1999
+3，美Heller P，Roberts S著．邱仲潘译．JAVA2高级开发指南． 北京：电子工业出版社，1998
+4，美Walsh A，Fronckowiak J．JAVA宝典．北京：电子工业 出版社，1998
+收稿日期：2000－01－04

@@ -1,0 +1,57 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1999年　第14卷　第2期　Vol.14　No.2　1999
+
+
+
+直接根据性能指标进行航空发动机
+LQG/LTR控制器设计
+陶涛**　阎文博
+　　【摘要】　本文提出了一种根据性能指标要求设计航空发动机LQG/LTR控制器的方法。
+1．4　基本方程组求解过程
+　　用差分法求解非线性椭圆型偏微分雷诺方程和径向轴承弹性薄片系弹性变形方程组。随后的仿真结果表明，所设计的控制系统具有较好的稳定鲁棒性及较好的动态性能。
+作者简介:**男　38岁　博士　研究员　湖北襄樊中国航空附件研究所　441052
+作者单位：中国航空附件研究所
+参考文献
+　　1　陈铁云，陈伯真，弹性薄壳力学，华中工学院出版社，1981
+　　2　钱传衢，金文荣，陈兰芳, 悬臂型弹性薄片动压气体轴颈轴承的应用研究，第四届全国摩擦学学术会议，1987
+　　3　Gray S,Heshmat H,Bhusham B.Technology Progress on Compliant Foil Air Bearing System for Commercial Applications.8th International Gas Bearing Symposium,Apirl,1981
+　　4　Emerson T.The Application of Foil Air Bearing Turbomachinery in Aircraft Environmental Control Systems.ASME paper 78-ENAS-18，April 1978
+　　5　Oh K P,Rohde S M.A Theoretical Investigation of the Multileaf Journal Bearing.ASME J. of Apllied Mechanics，Vol. 43, No.2, Jan.,1976
+　　6　Arakere K,Nelson H D.An Analysis of Gas-Lubricated Foil Journal Bearings.STLE Trans,1992,35:1-10
+　　7　Agarwal G L.Stability of Rotors in Compressible fluid Bearings.ASME J. of Propulsion,1988,4(5):437-444
+（责任编辑　王震华）
+1998年6月收稿；1999年2月收到修改稿。由于该方法概念简单，很快在工程中得以应用于航空发动机控制领域［2～5］。
+考虑对象为：
+其中：w和v为白噪音且协方差E｛wwT｝=W≥0，E｛vvT｝=V＞0，E｛wvT｝=0，u为控制信号，y为测量输出，x为状态量。
+
+
+图1　LQG补偿器结构
+　　LQG问题的解决采用所谓的分离原理［6］，即可将状态调节器与卡尔曼滤波器的设计分开独立进行，然后将两部分组合在一起以形成整个系统。图1表明了这种控制器的结构。计算分析了设计的悬臂式薄片气体动压径向轴承的静特性和动特性。而轴承中的最小气膜厚度随转速升高而增大。本文对研制的航空涡轮冷却器用悬臂式挠性薄片气体动压径向轴承进行了理论分析研究。
+2　在航空发动机控制中Γ阵的选取
+　　对于卡尔曼滤波器，由图1，Kf输入端的回比为：
+-Hf(s)＝-Cag(sI-Aag)-1Kf
+令　　　　　　　　　　　　　　Gf(s)＝Cag(sI-Aag)-1Γ
+可以证明［6］：I+Hf(s)］V［I+Hf(-s)］T＝V+Gf(s)WGTf(-s)
+(1)
+　　以下讨论发动机输出端LTR控制设计。对于所有的偏心率范围和可能的运行转速范围内，轴承均是恒定稳定的，其高速特性好。这意味着，当经过LTR步骤后，发动机控制系统对指令信号r必定是解耦的。
+　　图6表明相当刚度随Keq增大而增大，临界涡动比的平方始终为负值，不存在失稳转速，即轴承在任何偏心下均是恒定稳定的。给出了径向轴承刚度、阻尼的计算方法和稳定性计算方法。
+由(3)式及(4)式可得：hi＝1／（τis）　，　hi+1＝（τis+1）／（τis）
+(5)
+　　设gi(s)为Gf(s)主对角线上第i个元素，由(2)式得：
+［hi(s)+1］［hi(-s)+1］＝［1+β／αgi(s)gi(-s)］
+　　将(5)式代入上式，于是：
+
+可令：　　　　　　　
+(6)
+从而　　　　　
+(7)
+其中：m为对象输出量的个数。
+　　航空发动机线性状态空间模型可描述如下［7］：
+＝Aagx+Bagu　　　，　　　y＝Cagx
+(8)
+其中：　　　　　　
+(9)
+其中，各向量的含义如下：
+其中：u1和u2为控制量。和分别为某双转子发动机低，高压转子转速，燃烧室出口总温，主供油量及尾喷口面积。
+　　图5是直接刚度系数和阻尼系数等八个轴承动特性系数的变化

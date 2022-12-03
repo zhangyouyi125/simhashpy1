@@ -1,0 +1,26 @@
+航空计测技术
+ METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+提高小管径频差法超声波
+精度的数理分析
+富　强　梁青阳
+　　摘　要　小管径频差法超声波流量计的测量精度受各种因素的影响，因而获得较高精度比较困难。。在此基础上结合多年研制该流量计的实际经验，提高测量精度的措施及其。
+　　关键词　小管径　超声波流量计　精度　误差
+Mathematical Analysis of Increasing
+Measurement  of  Flowmeter
+with Small Tube Diameter and Frequency Difference 
+ ,Liang Qingyang
+　　Abstract　The precision of the ultraso flowmeter with small tube diameter and frequency difference method is affected by several factors,so to gain more  is difficult.In this paper many factors affecting the precision of measurement with the ultrasonic flowmeter with small tube diameter and frequency difference method are analyzed mathematically.Being  on that and combining with the practical experence of developing this flowmeter for several years,the measure and method for increasing precision of measurement have been proposed.
+　　ey words　Small tube diameter,Ultrasonic flowmeter,Precision,Error
+
+1　频差法超声波流量计的数学模型
+　　超声波测量基本原理如图1所示。。则超声波在顺流和逆流方向上的、T2分别为
+T1＝D／cosθ／(C＋Vsinθ)＋τ(1)
+T2＝D／cosθ／(C－Vsinθ)＋τ(2)
+
+其中，D为管道；C为被测流体的声速；V为流体的流速；τ为信号传播的附加时间(包括在声和中传播时间及电路中的延迟时间，即声波被测流体中的传播时间)。。。测得流量Q的相对误差应为
+Q／Q＝Q／K.δK／Q＋Q／D.δD／Q＋
+Q／

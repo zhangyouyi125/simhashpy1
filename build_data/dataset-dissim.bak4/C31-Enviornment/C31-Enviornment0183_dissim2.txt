@@ -1,0 +1,48 @@
+土壤与环境
+SOIL AND ENVIRONMENTAL SCIENCES
+1999年　第4期　第8卷　Vol.8　No.4　1999
+
+
+
+几种改性磷肥肥效研究初报
+毛小云　吴平霄　廖宗文
+　　摘要：在与过磷酸钙生产类似的工艺条件下，在磷矿粉中加入一定比例的添加剂，研制出3种改性磷肥。实验表明，用酸性灰改良钠质土、盐碱土，用碱性灰改良红壤等酸性土壤，都有良好的效果[2]。盆栽试验结果显示，在等质量施肥条件下，3种改性磷肥均有较大幅度的增产，且植株吸磷量和磷含量有显著的增加。
+　　关键词：改性磷肥；肥效；吸磷量；磷含量
+　　中图分类号：S143.2+2　文献标识码：A
+Preliminary Report on Efficiency of Modified Phosphorus Fertilizers 
+MAO Xiao-yun，WU Ping-xiao，LIAO Zong-wen 
+（College of Natural Resources and Environmental Science, South China Agricultural University, Guangzhou 510642, China）
+　　Abstract:　In the process similar to the production of superphosphate, different proportional additives were added to ground phosphate rock to produce three modified phosphorus fertilizers. The chemical analysis shows that the proportion of water-soluble phosphorus in available phosphorus in the modified phosphorus fertilizers has been decreased. Meanwhile the pot experiment shows that three modified phosphorus fertilizers have more positive effect on increasing biomass than that of ordinarily superphophate under the condition of equivalent mass. Moreover, phosphorus uptake by plant and phosphorus content of plant also increases remarkably. 
+　　Key words:　modified phosphorus fertilizers; fertilizer efficiency; phosphorus uptake; phosphorus content
+　　我国土壤缺磷现象十分普遍，特别是在南方红壤地区，由于土壤Fe、Al含量高，普通磷肥施入土壤极易被固定，有效性低，缺磷现象严重。另外，经磁化的粉煤灰中的铁磁性颗粒强烈地发生磁化，在其周围形成一个附加的局部磁场，使土壤颗粒发生“磁性活化”而逐步团聚化，使大于5 mm的水稳性团聚体（实际为僵硬的大土块）减少，而5～1 mm和0.5～0.25 mm这两级微团聚体的总和有所增加，改善了土壤结构性和通气透水性[3]。很多研究者认为，在农田里能否成功地利用粉煤灰，主要是看硼的质量分数。我们仿照湿法过磷酸钙生产工艺，利用有机和无机（矿物）改性材料活化（促释）磷矿粉在实验室条件下，研制出3种新制备改性磷肥，其物理、化学性状均有较大的改变，在固磷性极强和有效磷含量极低的红壤上表现了较好的肥效，显示出良好的应用前景。由于此类肥料和改良剂的高pH值、高盐度和有毒元素的存在，在连续施用或一次大量施用时有可能产生土壤污染的问题。供试玉米品种为超甜43号。供试土壤为花岗岩母质发育的旱地赤红壤，其有机质的质量分数为1.37×10-3，全磷（P2O5）为7.1×10-4，速效磷（P2O5）为3.5×10-6。
+　　改性磷肥的制作：取添加剂A 20 g与100 g磷矿粉混匀，加水100 ml，搅拌均匀，缓缓加入适量浓硫酸，边加边搅拌，风干即制得改性磷肥1。仿上法分别制得改性磷肥2和改性磷肥3，3种改性磷肥分别记为GX1、GX2、GX3，以不加添加剂的处理得酸处理磷肥，记为CKH。4种磷肥经20 d后熟期后取样分析。
+　　盆栽试验：设5个处理，3次重复，每盆装风干土1.5 kg，N、K2O施肥量均为0.225 g/盆。自处理1至处理5分别施普通过磷酸钙CK1、CKH、GX1、GX2、GX3，施用量均为0.65 g/盆。适合施用粉煤灰的土壤主要是过酸过碱或过砂过粘的低产田。
+2 结果与分析
+2.1 改性磷肥中有效磷，水溶性磷含量
+　　过磷酸钙一般检检标准不仅要求其有效磷达到特定的指标（质量分数为0.12以上），而且要求水溶性磷占有效磷的质量分数超过0.8以上。我们研制的3种改性磷肥及对照酸处理磷肥的有效磷和水溶性磷含量见图1（图中数据的多重比较采用SSR法，P＝0.05）。从图1可以看出，与CKH相比，3种改性磷肥水溶性磷有较大幅度的下降，质量分数分别降低0.051、0.165、0.158。其中磁性矿物的铁是最活跃的组分。产生这一结果可能存在三方面的原因：一是添加剂的加入使改性磷肥中磷的含量相对减少，全磷量降低；二是添加剂在反应过程中与磷结合，这种结合态水溶性弱但不失有效性；三是由于加入添加剂，使浓H2SO4与磷矿粉反应的量相对减少，以致转化的结果使游离H2PO4-等减少。
+
+图1　4种磷肥有效磷和水溶性磷含量
+2.2 盆栽试验结果
+2.2.1 各处理玉米生物量
+　　磷在土壤中极易被固定而无效，故一种磷肥的肥效并不决定于其本身的化学有效性而取决于其生物有效性。另外，粉煤灰经淋溶、磁化或调节pH值等处理后，粉煤灰的高pH值、高盐度及有毒元素的质量分数等皆可降低[6]。
+
+图2　5种磷肥盆栽生物量
+　　图2中，CKH较CK1生物量的质量分数增加0.0922，3种改性磷肥较CKH增加0.20以上，较CK1增加0.30以上，说明改性磷肥中的磷具有极高的生物有效性。
+2.2.2 各处理玉米地上部吸磷量
+　　图3、图4为各处理的玉米地上部植株磷含量及其吸磷量（图中数据的多重比较采用SSR法，P＝0.05）。从表中可以看出，处理GX2植株含磷量和吸磷量均为最高；其次为处理GX3和处理GX1。粉煤灰磁化后，1.5～7.5 t/hm2的施用量即可达到最佳的改土增产效果。
+
+图3　各处理玉米植株含磷量
+
+图4　各处理玉米地上部吸磷量
+3 讨论
+　　图2中CKH较CK1生物量增加也许与二者有效磷含量不同有关，3种改性磷肥处理较CKH处理的生物量有较大幅度的增加，显然不能简单地用化学有效性解释。图3中，3种改性磷肥处理较CKH处理中植株磷含量及其吸磷量也有较大幅度的增加，说明在改性磷肥中，磷的生物有效性有较大的提高。不同形态的磷在土壤中被固定的速度是不同的。从化学分析和晶体结构分析可以看出[3]，酸处理磷肥的有效磷中游离H2PO4-离子含量高，施入土壤后与Fe、Al等易迅速反应产生沉淀而固定快。
+　　关键词：粉煤灰；土壤；作物
+　　中图分类号：X53；X705；S141.8 文献标识码：A
+Effects of Fly Ash on Soil and the Growth of Crop
+WANG Hai-zhen，XU Jian-ming，XIE Zheng-miao，YU Jinyan
+( Department of Soil Science and Agricultural Chemistry, Zhejiang University, Hangzhou 310029, China )
+　　Abstract:　Fly ash does not cause soil and grain pollution when its application rate ranges from 60 to 600 t/hm2. Results show that fly ash may improve the physical, chemical and biological properties of soil, promote the transformation of nutrients in soil, and creat a better soil environment for crop growth. After fly ash is magnetized, the best effect on soil amelioration and crop yield can be achieved by applying 1.5 to 7.5 t/hm2 fly ash into soil. The effects of fly ash on soil and crop growth are discussed based on its physical and chemical properties. The method of applying fly ash in agriculture and of reducing the adverse effects of the toxic substances in fly ash on soil and crop is proposed.
+　　Key words:　fly ash; soil; crop
+　　粉煤灰是燃煤工厂排放的废弃物，也是一种有待开发利用的潜在资源。
+3 粉煤灰对作物生长的影响
+　　粉煤灰，尤其是磁化粉煤灰的磁效应对作物品质和产量有促进作用

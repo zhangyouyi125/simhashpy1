@@ -1,0 +1,125 @@
+计算机应用
+Computer Applications
+1999年 第19卷 第7期  Vol.19 No.7 1999
+
+
+
+IP与ATM的集成技术
+黎　静
+　　摘　要　本文讨论了三种IP与ATM集成的思路，以及与之有关的各种实现方法，从而揭示了ATM网络技术发展的趋势。
+　　关键词　IP，ATM，MPOA，路由
+　　
+THE INTEGRATION OF IP AND ATM
+
+Li Jing
+Computer College, Southwest Jiaotong University, Sichuan*Chengdu 610031
+
+　　Abstract　Because Internet protocol(IP)has used widely with the growth of Internet, various proposals are suggested to support IP over ATM. This article discusses three kinds of idea to integrate IP and ATM and some proposals.
+　　Keywords　ATM, IP, MPOA, Routing
+
+　　由于 ATM是面向连接的技术，它与现有的网络技术，尤其是非面向连接的网络技术相结合是ATM应用的一个关键问题。随着Internet的发展，TCP/IP协议已成为业界事实上的网络标准。而新一代I nternetⅡ将 以高速宽带的网络特征，促使电子商务、数字图书馆、虚拟实验室和远程网教育等实用化和 普及化。许多著名的网络公司，如3Com、Cisco、Ipsilon等也提出了自己的解决方案。 
+表2
+
+T(s)0.51.02.02.53.03.5
+ITAE0.0582430.3361280.8427341.8274281.7906251.425724
+IACRE0.582430.3039140.8589640.9028810.9035550.921909
+T(s)4.04.55.05.56.06.5
+ITAE0.8329520.3038020.1508290.3685610.8635731.482154
+IACRE0.9299300.9331270.9524560.9606890.9681290.987869
+
+　　例3对系统I/S2(0.1S+1)若输入R=15，a=0.1332,b=0.8668，步长为0.05，交叉概率PC=0.8，变异概率PM=0.05。后PC时代正在到来，其特点表现为：信息数字化、电脑信息化、家庭网络化和网络全球化，后PC时代人们将生活在全新的数字化生活环境中，这预示着IT产业和家电产业将面临新的巨大的发展机遇。应广大读者要求，自1999年起本刊已改为月刊，以便更及时地为广大科技工 作者和计算机用户提供最新的计算机应用科技成果，研究热点及发展趋势等最新信息，更好地为社会服务。如借助ATM的信元交换技术，将IP路由技术与ATM交换技术结合在一起，解决IP路由“瓶颈”问题，或提出一种新的网络体系结构以适应未来通信的需要。　　
+1　Classical IP Over ATM
+　　IETF制定了两种RFC标准，说明了如何将IP报文和ARP请求直接装入协议数据单元，并转换为ATM信元。其中，RFC 1483（Encapsulation Rules for ATM）定义了IP数据报的封装格式，RFC 1577（Classical IP and ARP over ATM）则说明了IP在ATM网络上的操作，以及IP地址和ATM地址的解析。
+1. 1　Classical IP Over ATM地址解析
+　　RFC 1577采用了IP在以太网上传输的思想，只简单地将ATM看作数据链路层，为IP提供第二层的传送服务。需要传送的IP报文都采用RFC 1483中定义的IEEE 802.2 LLC/SNAP格式，即在IP报文前加一个LLC/SNAP头域，被封装在AAL5的协议数据单元（PDU）中，通过ATM网络传输。
+　　在ATM网络中使用逻辑IP子网（LIS）（如图1）的概念，在逻辑上对网络进行划分。同一LIS内的成员必须采用相同的IP网络号、子网号以及子网掩码，可通过ATM网络直接通信，而不同LIS上的成员，即使在同一ATM网上，也要通过路由器进行通信。　　
+
+
+图1　Logical IP subnets（LISs）
+
+　　每一个连接到ATM网络的主机都至少具有一个ATM地址和一个IP地址，类似于IP 在以太网上运行时需进行IP地址与MAC地址的解析，Classical IP Over ATM也提供IP地址与ATM地址的解析。现在模糊控制已从狭义上的单纯模糊控制器发展成为广义上的模糊控制技术，也就是说已进入了高性能模糊控制阶段，包括调节器和自适应模糊控制器等。三网融合(电话网、有线电视网和计算机网络)和3C技术(计算机Computer、通信Communication和消费产品Consumer Products)交融汇聚所带来的信息家电革命已拉开序幕。
+关键词：模糊控制　遗传算法　自寻优　目标函数
+Abstract：This paper gives a brief introduction to genetic algorithms and self-optimizing fuzzy control, and then describes the method of applying genetic algorithms for self-optimizing fuzzy control. Using simulation examples, it compares the effects of different objective functions on using gene tic algorithms for self-optimizing fuzzy control.Conclusions are given in the end. 
+Keywords：fuzzy control　genetic algorithms　self-optimizi ng objective function▲
+一、概述
+　　模糊控制技术从其产生到现在，已经在非常广泛的领域内得到了应用，并且不乏成功的例子。通过采用GA对系数a进行寻优，构成可自寻优的Fuzzy控制系统。■ 
+作者单位：王日宏(青岛筑工程学院计算机系 266033)
+参考文献：
+［1］D.A.Linkens H.O.Nyongesa Genetic algorithms for fuzzy control IEE Proc-control Theory NO.3 1995
+［2］龙升照　汪培庄　控制规则的自调整问题　模糊教学　1982 NO.3
+［3］王日宏　基于GA的Fuzzy控制规则自寻优仿真研究　待发表
+［4］王　磊　王为民　模糊控制理论及应用　国防工业出版社　1997.3　第一版
+收稿日期：1999-07-09
+。例如，在ATM层已经定义了QoS，IP层又重新定义；IP路由不考虑ATM虚通路等。而Classical IP Over ATM最大的缺陷是不能在不同LIS的成员间建立直接的ATM连接，不同LIS的成员间只能通过路由器进行通信。三网融合(电话网、有线电视网和计算机网络)和3C技术(计算机Computer、通信Communication和消费产品Consumer Products)交融汇聚所带来的信息家电革命已拉开序幕。IP与ATM的结合，着重要解决IP路由的性能，在整个ATM环境中，尽量避免不必要的第三层操作，提供端―端QoS支持。为达到这一目的，有两种解决方法：
+　　第一种解决方法　借助ATM端―端通信的优势，突破传统的IP Hop-by-hop 路由，在不同IP子网的主机之间建立直接的端―端的VC或捷径路由（shortcut routing），而避免通过IP路由器。
+　　世纪之交，回眸历史，我们深为20世纪人类的三大发现：相对论、量子论和量子力学、DNA分子模型而感到豪情满怀；更为继农业革命和工业革命之后出现的人类社会第三次技术经济革命――信息革命而感到欢欣鼓舞。捷径路由不同于传统的Hop-by-hop路由，它可以不考虑网络路由边界，通过数据链路层直接转发网络层的报文，如图2所示。　　
+
+
+
+图2　Hop-by-hop 路由与捷径路由
+　　第二种解决方法　努力将IP路由计算的灵活性和强大功能以及ATM在数据转发方面的高效性结合起来，设计新型的交换―路由设备。Ipsilon公司的IP Switching、Cisco公司的Tag switching 以及IEFT起草的MPLS，都采取了这种思想。　　
+3　Multiprotocol over ATM（MPOA）
+　　MPOA模型是ATM 论坛以LANE和IETF制定的Next Hop Resolution Protocol（NHRP）为主要元素提出的。MPOA的目标是在ATM主干网上结合路由和桥接技术，支持现有的第三层协议，如IP、IPX等。那时，人们才真正置身于信息社会和网络时代之中。遗传算法作为模仿自然界生物进化思想而得出的一种全局优化算法，它同模糊控制理论相结合，形成了遗传基因模糊控制技术，用遗传算法进行寻优克服了传统寻优技术中许多缺陷，目前受到逐渐重视。而新一代I nternetⅡ将 以高速宽带的网络特征，促使电子商务、数字图书馆、虚拟实验室和远程网教育等实用化和 普及化。NBMA是指不支持广播操作的非广播子网。建设信 息港、数字城、智慧岛等已成为国际大都市发展的战略目标。
+　　如果目的主机直接连接在源主机所在的NBMA上，NHRP就向源主机提供目的主机的NBMA地址，如MAC地址、ATM地址等；如果目的主机并非直接连接在该NBMA上，NHRP提供连接目的主机的出口路由器的NBMA地址。■ 
+作者单位：王日宏(青岛筑工程学院计算机系 266033)
+参考文献：
+［1］D.A.Linkens H.O.Nyongesa Genetic algorithms for fuzzy control IEE Proc-control Theory NO.3 1995
+［2］龙升照　汪培庄　控制规则的自调整问题　模糊教学　1982 NO.3
+［3］王日宏　基于GA的Fuzzy控制规则自寻优仿真研究　待发表
+［4］王　磊　王为民　模糊控制理论及应用　国防工业出版社　1997.3　第一版
+收稿日期：1999-07-09
+。通过捷径路由可以在任意两个NBMA节点之间建立直接连接，如图3所示。　
+
+
+图3　Next Hop Resolution Protocol(NHRP)
+3.2　MPOA结构
+　　与其它与ATM有关的协议一样，MPOA也采用客户/服务器结构。MPOA客户（MPOA Client，MPC）和MPOA服务器（MPOA Server，MPS）通过ELAN相互连接。MPC的主要功能是进行网络层的数据传送，但并不进行网络层的路由计算。MPS负责响应MPC的MPOA请求，在MPC之间建立直接虚电路。通常，MPC包含在边缘设备和MPOA主机中，MPS包含在路由服务器中。MPOA系统的设备包括：
+　　边缘设备(edge device) 它使用目标地址或MAC地址在传统的LAN网段与ATM接口之间传送信息包；
+　　MPOA主机 指能够实现MPOA功能的ATM主机。20世纪是一个充满奇迹的伟大世纪。 
+表3
+
+T(s)0.51.01.52.02.53.0
+ITAE1.2381945.9592513.30230621.60070028.47390032.381531
+IACRE0.5751292.2336433.9703166.9694729.56591612.084765
+T(s)3.54.04.55.05.5　
+ITAE32.65532329.454022.34172113.0658223.802271　
+IACRE13.88050914.99119515.24638915.05916415.009595　
+
+　　本文通过对用GA寻优Fuzzy控制规则的简单介绍，及其仿真实验，说明不同的目标函数对寻优结果有很大的影响，所以在应用遗传算法寻优模糊控制规则时，应注意目标函数的选择，通过比较我们可以看到用IACRE作为遗传算法寻优模糊控制规则的目标函数是合适的。 
+表2
+
+T(s)0.51.02.02.53.03.5
+ITAE0.0582430.3361280.8427341.8274281.7906251.425724
+IACRE0.582430.3039140.8589640.9028810.9035550.921909
+T(s)4.04.55.05.56.06.5
+ITAE0.8329520.3038020.1508290.3685610.8635731.482154
+IACRE0.9299300.9331270.9524560.9606890.9681290.987869
+
+　　例3对系统I/S2(0.1S+1)若输入R=15，a=0.1332,b=0.8668，步长为0.05，交叉概率PC=0.8，变异概率PM=0.05。
+　　MPOA支持虚拟路由（virtual routing）的概念，即把路由计算与报文转发分开。在MPOA系统中，边缘设备和MPOA主机负责数据转发，却不进行路由计算；路由计算和路由信息维护的功能集中在路由服务器中。可将MPOA系统视为一个虚拟路由器，即运行于ATM上并能提供类似于多协议路由器的一组MPOA设备。MPOA边缘设备类似于路由器的接口卡；ATM交换机构类似于路由器背板，连接各种MPOA设备；路由服务器类似于路由器的控制处理器，维护路由信息。
+　　
+4　IP Switching
+　　IP Switching是Ipsilon公司提出的IP与ATM的集成方案。它提供一种新的路由―交换结构，将路由技术的智能与ATM的高速转发性能结合在一起，利用快速处理器，在ATM硬件的基础上运行IP路由软件，用软、硬件结合的方法处理IP报文转发，以减少IP报文通过路由器的延迟。CIMS (Computer Integrated Manufacture System)/CIPS(Computer Integrated Production Syste m)与智能化大厦技术，为企业的综合信息化、智能化、集成化，提供了强有力的理论和应用工具 。IP switch 控制器的功能与普通IP路由器相似。它通过General Switch Management Protocol（GSMP）协议控制ATM硬件，负责从相邻的IP switch获取路由信息，构造IP路由表，运行标准路由协议。现在模糊控制已从狭义上的单纯模糊控制器发展成为广义上的模糊控制技术，也就是说已进入了高性能模糊控制阶段，包括调节器和自适应模糊控制器等。CIMS (Computer Integrated Manufacture System)/CIPS(Computer Integrated Production Syste m)与智能化大厦技术，为企业的综合信息化、智能化、集成化，提供了强有力的理论和应用工具 。封装在ATM信元中的IP数据包到达IP switch后，被重新组装成IP数据包送往IP switch 控制器，IP switch 控制器检查IP报头，如果IP switch 控制器认为有必要对IP数据包进行硬件交换，就建立从源端到目的端的连接，并用Ipsilon Flow Management Protocol（IFMP）协议通知相邻的IP switch。以后的信元就不必再组装成数据包，而直接以信元的方式，通过ATM switch进行转发。对于数据量小的数据流，由于建立交换链路只会增加延迟，不能有效提高转发效率，仍采用传统的存储―转发的路由。
+4．2　IP switching与MPOA比较
+　　MPOA 旨在ATM主干网上运行多种协议，不仅支持各种采用路由技术的协议，如IP、IPX等，而且桥接 Netbios、SNA等不可路由的协议。MPOA本身需要多种技术的支持，实现方法复杂。■ 
+作者单位：王日宏(青岛筑工程学院计算机系 266033)
+参考文献：
+［1］D.A.Linkens H.O.Nyongesa Genetic algorithms for fuzzy control IEE Proc-control Theory NO.3 1995
+［2］龙升照　汪培庄　控制规则的自调整问题　模糊教学　1982 NO.3
+［3］王日宏　基于GA的Fuzzy控制规则自寻优仿真研究　待发表
+［4］王　磊　王为民　模糊控制理论及应用　国防工业出版社　1997.3　第一版
+收稿日期：1999-07-09
+。
+　　IP switching是用ATM交换机充当IP路由器，IP地址直接映射到下层ATM硬件，实现方法简单，现有的路由协议，如OSPF、BGP等都不需要修改。IP switching只支持IP协议，但其它协议的数据包可封装在IP数据包中传送。
+　　在建立连接方面，IP switching根据第一个数据包的报头建立连接，而MPOA采用一种特殊的数据包“信令连接请求”，当连接建立后，开始传送IP数据包。“三S”技术(遥感RS、全球定位系统GPS和地理信息系统GIS)，为发展空间信息系统技术，开辟了极其广阔的天地。它类似于IP Switching,也采用了路由―交换技术，不同在于Tag Switching通过标记支持多种协议，在IP环境下Tag Switching也即IP switching。
+　　在以上所讨论的路由―交换结构基础之上，
+IETF提出了MPLS(Multi-Protocol Label Switching)。［1］
+　　由表1可见用ITAE作为评价函数时，系统I/S(S+1)对阶跃响应有严重超调，在1.2S时，超调44.2%，而且经过两次振荡在4S时才趋于稳定，而且IACRE作为评价函数效果相当好，没有超调，系统在2S时就可稳定，且稳态精度较高。它由美国学者Holland于1975年提出。未来的解决方案必将在与现有网络技术兼容的基础上，充分发挥ATM的高速传输、QoS支持等特性。
+　　
+　　黎　静　硕士研究生。研究方向：计算机网络。
+　　作者单位：黎　静（西南交通大学计算机与通信工程学院　四川．成都610031）
+参考文献
+［1］　Eugenio Guaarene. IP and ATM Integration Perspective.IEEE Communication Magazine ，1998;(1)
+［2］　Philip Dumortier. Toward a New IP over ATM Routing Paradigm. IEEE Communication Magazine ，1998;(1)
+［3］　Nyless Black. Internet working with ATM. 北京:清华大学出版社，1998,5
+收稿日期:1999-04-01(修改稿)

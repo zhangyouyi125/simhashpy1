@@ -1,0 +1,97 @@
+航空公司计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+网带炉及运行的方法
+田应斌
+　　摘　要　网带炉在静态不充气、充气及动态充气等状态下,的量测方法；并就冷态空载、负载运行时间及加热空载、负载运行时间的测量进行讨论和分析。前者还可通过同时调速、调温进行调节。由五个加热区(段)、五台测温仪表及控制设备组成测控系统。其工艺参数除通常的“环境温度准确度、梯度、波动”三特性外，还有一个行程时间、充气状态(保护气体影响)、运转过程中温场的变化等；所以测量参数多，步骤复杂。
+　　网带炉用于质轻、体小、量大的关键小工件的淬火。。可见对于网带炉，时间同温度一样重要。若网带无调速机构时，可通过调节进口段的控温仪器的温度高低来达到保温目的。
+1　时间测量
+　　网带炉的主视剖面图如图1所示。箭头是网带1及3的运行方向。设进口端的O为网带上运动质点n的参照点，网带在传动装置轮的作用下，不断地循环运转，并带着n由O出发沿→OB方向前进，经B到B，再达O回到O，即完成一个周期的行程，需时约30 min。工件由O出发B即下落，所以OB段为工件的行程。由O至B所需的时间为工件淬火时间。
+
+图1　网带炉主视图
+A―进口；B―；n―运动质点(或工件)；1―网带；2―加热丝；3―传动轮；4―保温层；5―档板
+1.1　行程时间测量
+　　用分度的钢卷尺测量OB的宽度，然后在不加热的情况下开动网带，于进口端置一物品，当其经过O的一瞬间，启动秒表计时，执表者走向出口端。待物品从出口端B垂直掉下发出声音的瞬间，停止计时，重复三次取其平均值，即为行程OB所需的时间t1。在保证不超过工艺温度情况下，温度调高，相当于调慢带速，增加行程；温度调低，相当于调快带速，缩短行程。考虑到两者之和与行程时间相比极小,不足以对工件淬火质量造成影响而忽略。测得时间t1＝11 min54 s。
+1.2　冷态负载时间测量　
+　　空载时间测量完毕，紧接着测量负载时间。机器的负载能力是用户所关心的，功率小，负荷增加，将减缓运行速度,因此负载时间测量是重要的。。重复三次，取其平均值，即负载运行时间t2。测得t2＝12 min9 s。。分别测得加热空载时间eukaryotic＝12 min；加热负载时间t4＝12 min16 s。。本文就静态不充气、充气、动态充气加热工作等状态介绍对温度参数的测量方法。
+2.1　静态不充气和充气温度测量
+　　网带炉有效加热区为：宽×长×高＝300 mm×4700 mm×50 mm;因为50 mm不需要测量垂直温场，仅测水平温场足够。测得Oa′＝380 mm，始点温度为881 °C(静态充气为887 °C)
+2.2.2　出口端温场延伸距离的测量
+　　当进口端温场压缩距离测量完毕，接着将同一套测量装置转至出口端，将热电偶的工作端自下方伸至出口端与B平行的位置，在B至挡板的150 mm间等间距测三点，即B、挡板和75 mm处。
+　　对在轨航天器结构的动力学实验表明,连接结构是结构非线性和无源被动阻尼的主要构成部分［1］,在轨航天器中连接结构所产生的阻尼和结构非线性比其他因素(诸如材料结构阻尼与刚度,几何大变形等)所产生的阻尼与非线性高出一至二个数量级。这些热电偶的准确位置靠两根钢条固定后,再平行(其间距为260 mm)置于炉内。参考端从进口处引出。具体布置如图2所示。为了比较静态、动态温场间的变化，静态温场长度的测量是不可缺少的。在出口端，由于与网带前进方向并距B端面150 mm处有一挡板，除了下方冷空气上浮至此对温度有影响外，不会有因空气流动造成像进口端那样使均匀温场向内推移现象。。实际均匀温场自始点到B端的长度不等于OB长度，它略短于OB，即AB＜OB。均匀温场的长度至关重要，它涉及工件的保温时间，尤其是动态温场与实际需要极其相关。
+　　在进口端， 由于有气流流动， 端口OO′的温度并不是均匀温场的温度，而是向内有一段距离(在AA′位置)方可达到均匀温场的温度。静态情况下，测得均匀温场的始点在OA′＝284 mm处，所以静态温场的长度
+
+图　2
+1，2，…，12为测量温度时热电偶工作端位置及编号；K为热电偶型号；K′为补偿导线;L、L′为钢条
+A′B′＝OB′－OA′＝4700－284＝4416 mm
+　　测量静态温度使用的测量仪器、感温元件以及转换开关的连接和测量步骤、计算方法请参考“工业井式炉温度测量与修正方法”(《航空计测技术》1996年第2期)。不同之处在于测量完毕再加保护气体后，重复上述测量。注意:保护气体对热电偶寿命有影响，应尽量延长测量时间。
+2.2　负载充气温度测量
+　　待炉温冷却后取出所有热电偶。负载工作时运转的网带不断将工件从炉口送入炉内，经过有效加热区,使工件加热、保温到工艺规定时间后至出口处,掉入机油(或室温)淬火，这时的温场与静态有所不同。因为网带炉负载运转时有三个因素使进口端静态温场发生变化：①网带的高温恒温段AB不断由低温状态下的其它段循环替代；②低温工件源源不断进入炉内；③冷空气随着网带和工件的运行而进入的量大于静态。
+
+图3　温场曲线及投影(长度)
+　　此三种处于低温状态下的物体不断进入炉内，当其温度未与温场建立平衡前，温场要供给进入物体以热量，从而吸收炉温使其下降。
+表1　　测量结果°C
+
+
+序号123456789101112
+实测温度
+(不充气)888.4892.6889.1895.9894.5895.4890.2894.0888.9886.0882.1882.3
+充气890.4893.7890.5894.7893.4894.6892.9894.0889.9891.1885.4888.7
+最大温差13.8(不充气)9.2(充气)
+
+
+　　图3中三条曲线(CD、AB、ab)都未超出±10 °C的温差规定，淬火要求。可见进口端附近是在压缩静态温场的长度和降低温度的基础上建立起动态温场的。3.连接结构的参数辨识问题始终是连接结构动力学问题中的一个焦点。由于大量的热分子不断带向出口端，使出口端温场发生三个变化：①靠近出口端温度逐渐升高(略高于静态温场)；②温场的均匀段向炉外延伸。延伸长度受两个因素控制：出口处距端面BB′为150 mm处有一工件挡板;下方有冷空气上浮至出口位置，限制了延伸长度；因此，只要测出进口端因进入物质压缩的动态温场始端长度和末端延伸长度，同时测出各自的温度即获动态温场。
+　　关键词　网带炉　及时间　测量方法
+Temperature ad Ru偶数ning Time Measurement of Net Belt Furnace
+
+Tian Yingdin
+　　Abstract　The measuring method of the temperature field of the net belt furnace during static non-gas loading,gas loading and dynamic gas loading states is described.The running time measurement during both cold and hot states,non-loading and loading states are discussed and analyzed.
+　　Key words　Net belt furnace,Temperature and time,Measuring method
+
+　　RCG9―30××5―YDB型网带炉的工作室长4700 mm，宽300 mm、高50 mm。动态与此不同，出口端为898 °C，进口端为881 °C。另一人测量和读取与热电偶的参考端连接的数表显示值。将这段距离作为考察动态温场进口始点的依据。在网带前进方向与每一加热区中心线垂直的各布一支热电偶(工作端固定位置)，又因网带炉出口端温度为淬火瞬间温度;所以，在出口端也应放置两支热电偶。实际测得延伸长度为B′b′＝120 mm。以美国“自由号”空间站为例(Space Station Freedom),其主框架结构为桁架结构,结构中有大量的连接件存在,其结构动力学问题有着很广泛的内容,目前有许多研究以其为背景。动态高于静态6 °C。由于以上原因,连接结构的动力学特性不能完全用理论分析方法确定。
+图3中，曲线CD由测量结果表示充气的一组数据(888.7＋885.4)／2、(891.1＋889.9)／2、…的平均值绘成；曲线AB由另一组数据的平均值绘成；曲线ab由动态进出口端测量的温度与CD组合而成。其投影分别为A′B′，a′b′；A′a′为压缩段投影，B′b′为延伸段投影;动态温场长度为
+a′b′＝A′B′－A′a′＋B′b′(1)
+因为A′B′＝4416 mm　　B′b′＝120 mm
+A′a′＝Oa′－OA′＝380－284＝96 mm
+
+将其代入(1)式，计算得a′b′＝4440 mm。这就是动态温场的长度。。
+3.3　测量值的温度计算
+　　测量值成温度是众所周知，为了减少篇幅，计算从略,仅将测量结果列于表1。表中序号即热电偶编号,和测量顺序吻合。3.连接结构的参数辨识问题始终是连接结构动力学问题中的一个焦点。
+4　分析
+　　表1中序号与图2中序号对应，从进口看，奇数在炉的右边，偶数在左边。1(2)、3(4)…11(12)是从出口到进口方向排列的在静态情况,温度是中间段高，两端低,最低点在进口端11(12)，平均温度不充气为882.2 °C(充气为887.0 °C); 出口端略高， 不充气平均温度为890.5 °C(充气为892.0°C),不充气最高达895.0°C(充气为894.0 °C)。
+　　具体研究内容包括:1.建立复杂航天器的结构动力学模型,各子结构系统可以用线性模型,而连接结构的模型应当选择能够反映该结构的主要动力学特性的线性或非线性模型。前者比静态充气高6 °C，后者低6 °C。随着物质逐渐深入炉内，温度逐步增高，到了一定时间、适当距离，物质温度与温场建立起了平衡，动态温场与静态温场一致。并在这些模型的基础上进行连接结构的动力学分析与实验,以及含连接结构的整体结构动力学特性和连接结构物理参数辨识方法与实验等方面的研究。。
+　　从淬火行程时间看，动态温场的长度短于静态温场的长度，静态温场长度又短于电炉全长，由此缩短了行程时间，使工件保温时间少了24.6 s，小于工艺规定的±60 s，符合工艺指标。。反之，应调慢网带速度。
+参考文献
+1　Edward F.Crawldy.Nonlinear Characteristics of Uniteds as Elements of Multi-body Dynamic Engines,N89-24668
+2　李效韩等.结构振动中的连接子结构.《宇航学报》,1987,8(1):7-15
+3　胡海岩.分段线性系统动力学的非光滑分析.力学学报,1996,28(4):483-488
+4　Ren Y et al..An Iterative FRF Joint Identification Technique.Proceedings.of 11-th IMAC,1502-1507
+5　Moon F C.et al..Experimental Study of Chaotic Vibrations in A Pin-jointed Space Truss Structure.Montrevault Journal,1990,28(5):915-921
+6　Bullock S J et al..Identification of Nonlinear Micron-Level Mechanisc for A Precision Deployable Joint.Proceedings of 35th AIAA/ASME/ASCE/AHS/ASC Mechanics,Structural Dynamics and Materials Conference,AIAA-94-1347-CP,331-338
+7　Junjiro Onoda et al..Passive Damping of Truss Vibration Using Preloaded Joint Backlash.AIAA Journal,1995,33(7):1335-1341
+8　Mary Bowden et al..Joint Damping and Nonlinearity in Dynamics of Space Structures.AIAA Journal,1990,28(4):740-749
+9　Hsu S T et al..How Gravity and Joint Scaling impaired Dynamic Response.AIAA Journal,1989,27(9):1280-1287
+10　Shi G et al..Nonlinear Dynamic Response of Frame-Type Structures with Hysteretic Damping at the Joints.AIAA Journal,1992,30(1):234-240
+11　Crawley.E F.et al..Force-State Mapping Identification of Nonlinear Joints.AIAA Journal,1987,25(7):1003-1010
+12　Masters Brett P.et al..Multiple Degree-of-Freedom Force-State Component Identification.AIAA Journal,1994,32(11):2276-2285
+13　Ajjan AL-Hadid M.et all..Developments in the Force-State Mapping Technique For Nonlinear Systems and the Extension to the Location of Nonlinear Elements in A Lumpe-Parameter System.Mechanical Systems and Signal Processing,1989,3(3):269-290
+14　Worden K..Data Processing and Experiment Design for the Restoring Force Surface method,Part I.Mechanical System and Signal Processing,1990,4(4):295-319
+15　Worden K..Data Processing and Experiment Design for the Restoring Force Surface Method,Part I.Mechanical System and Signal Processing,1990,4(4):321-344
+16　Lar S.L.et al..Nonlinear Vibrations of Piecewise-Linear Systems by Incremental Harmonic Balance Method.Journal of Applied Mechanics,1992,59(1):153-160
+17　Friswell,M.I..Using Linear Model Reduction to Investigate the Dynamics of Structures with Local Nonlinearities.Mechanical Systems and Signal Processing,1995,9(3):317-328
+18　Masri S.F.et al..Identification of Nonlinear Vibrating Structures:Part I-Formulation.Journal of Applied Mechanics,1987,54(4):918-922
+19　Masri F.et al..Identification of Nonlinear Vibrating Structures:Part I-Applications.Journal of Applied Mechanics,1987,54(4):923-929
+20　Wang H.et al..Experimental Identification of Mechanical Joint Parameters.Journal of Vibration and Acoustics,1991,113(1):28-36
+21　Tzou S.et al..Contace Dynamics of a Spherical Joint and a Jointed Truss-Cell System.AIAA Journal,1991,29(1):81-88
+22　Won-Jin Kim et al..Nonlinear Joint Parameter Identification by Applying the Force-State Mapping Technique in the Frequency Domain.Mechanical Systems and Signal Processing,1994,8(5):519-529
+。当温度确定之后，行程时间过长，将使小零件过烧，导致烧结而脱炭；时间过短，淬火温度，使工件的机械性能、金相结构不合格。
+2.2.1　进口端温场压缩距离及温度测量
+　　负载情况下，网带载着工件运转，如果仍像静态时将热电偶布于炉内测量温度，有可能热电偶被卷入网带的某部位而导致测量设备和被测设备的损坏。从理论讲，这段时间要扣除物品自出口到地面段的自由落体时间和听到其触地时发出的声音的声速行程时间。
+　　本文介绍的测量是一种介于静态和动态之间的在静态充气时的温场测量，在动态充气时测量两端的温场压缩和延伸长度及下降温度(压缩端)和上升温度(延伸端)，以此来替代动态温场,因此，实际动态温场与此是有差别的。每个工件进入炉内，在运转中前进，将导致工件的疏密不一及重叠，热量交换有所不同，因此与静态也有区别。。不过在实际生产中，合格率达95％就是可喜的结果，达98％则更难得了。
+　　从测量数据看,电炉的负载能力亦是符合要求的。因为冷态空负载时,△t12＝t2－t1＝15 s；热态空负载时△t34＝t4－t3＝16 s，都在±60 s以内。
+57岁　男　高级工程师　读者服务卡索引号： 111
+作者单位：长安汽车责任有限公司，重庆市，630023
+1998-03-09收稿

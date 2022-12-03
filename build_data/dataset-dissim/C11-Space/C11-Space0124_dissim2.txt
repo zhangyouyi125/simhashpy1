@@ -1,0 +1,134 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+一类挠性航天器的变结构控制
+李　勇　吴宏鑫
+(北京控制工程研究所*北京2729信箱*100080)
+　　摘　要　本文研究在控制器能量受限条件下,一类挠性航天器的姿态控制问题。考虑刚性主体上带有挠性梁的航天器,并假定系统在一平面内作旋转运动。针对航天控制工程中执行机构的工作模式,基于系统的无穷维模型,本文设计了简单易行的变结构控制方案,并证明了相应的闭环系统的渐近稳定性。数值仿真和物理实验结果显示了所设计的控制算法的有效性。
+　　主题词　挠性航天器　变结构控制
+VARIABLE STRUCTURE CONTROL OF
+A FLEXIBLE SPACECRAFT
+Li Yong　Wu Hongxin
+(Beijing Institute of Control Engineering,P.O.Box 2729*Beijing*100080)
+　　Abstract　This paper deals with the attitude control problem of a flexible spacecraft with control being constrained.The spacecraft,consisting of a rigid central body and a flexible beam,is assumed to perform planar motion.In accordance with the acting mode of the actuator in aerospace control engineering,and based on infinite dimensional model of the system,a kind of simple and easily implemented variable structure control law is presented.It is shown that implementation of the control algorithm results in saymptotic stability of the closed-loop system.Some computer simulation and physical experimental results are presented,showing the effectness of the control algorithm designed in this paper.
+　　Key words　Flexible spacecraft　Variable structure control
+1　引言
+　　随着航天科技的迅速发展,挠性航天器的控制问题成为空间高科技研究领域中的重要课题。根据所承担的任务,这类航天器刚性主体上常带有各种挠性附件,如大型抛物面天线、太阳帆板、空间机械臂等,其动力学模型是由一组常微和偏微耦合的方程构成的无穷维系统。对于这样一种复杂系统的控制问题,在以往的大量研究中常见的处理方法是根据系统的主要特征,用有穷维模型近似无穷维模型,然后运用集中参数控制系统理论,设计各种控制方案,如:最优控制［1］,自适应控制［2］,鲁棒控制［3］,变结构控制［4］等。进行了算例分析与比较,得到了令人比较满意的结果。近年来,基于无穷维模型、简单易行的控制方案的设计问题引起人们广泛的重视,Luo［5］提出直接应力反馈控制,Morgül［6］提出并置边界反馈控制等。但是,在实际控制工程中,控制器的能量总是受限的,因此,［5,6］中提出的线性反馈控制方案不能直接应用到控制工程中。S1为自由液面，S2为贮箱刚性壁。考虑刚性主体上带有挠性梁的航天器,并假定系统在一平面内作旋转运动,基于航天控制工程中的“喷气-飞轮”执行机构工作模式,我们设计了简单易行的变结构控制方案,然后运用无穷维系统的LaSalle不变原理,证明了相应闭环系统的渐近稳定性。最后,我们给出数值仿真和物理实验结果,以验证理论分析结果的正确性和所设计的控制算法的有效性。
+2　动力学模型与控制目的
+　　考虑如图1所示的挠性航天器,它是由刚体R和固连在刚体上长度为l的均匀挠性梁E构成的系统。假设刚体的转动惯量为Jm,质心为O,其质量远大于挠性梁的质量,刚体R被限定只能绕通过O点的垂直轴作旋转运动,挠性梁E在水平面内运动。把ALE有限元方法的思想应用到边界元方法中,得到了ALE边界元方法。　　
+
+
+　
+图1　挠性航天器的构形
+设挠性梁的质量密度为ρ,抗弯刚度为EI。忽略各种阻尼效应和质心到刚挠体固连处Q的距离,可知系统的运动是由下面的一组常微和偏微耦合的方程来描述:
+
+(1)
+其中,u(x,t)表示挠性梁在坐标系OX1Y1Z1中x处,t时刻的弹性位移,θ(t)表示刚体在OX0Y0平面内绕Z0轴的转角,τ(t)是作用在刚体上的控制力矩。这里和今后点和撇分别表示相对时间和空间变量的导数。
+　　根据所承担的任务,挠性多体航天器姿态控制系统的控制方案设计有下列三种目的:
+　　目的1-姿态镇定　考虑由(1)描述的系统,设计τ(t),使得
+(2)
+
+(3)
+　　目的2-姿态机动　考虑由(1)描述的系统,初始状态为
+
+对于给定的θm∈(-π,π］,θm≠0,设计τ(t),使得(2)-(3)成立,且
+limt→∞θ(t)=θm
+(4)
+　　目的-3姿态跟踪　考虑由(1)描述的系统,初始状态为
+
+对于给定的满足,设计τ(t),使得(2)成立,且
+(5)
+　　在下面的控制方案设计和稳定性分析中,我们以目的-2姿态机动为控制设计的目的,对于其它两类问题可以类似地解决。
+3　变结构控制方案
+　　变结构控制是一种非线性控制的设计方法,具有易于工程实现,可靠性强,适应于各种摄动和可以充分发挥控制器潜力等特点,近年来已开始被应用来解决复杂的控制工程问题(参见［7］)。
+　　针对控制器能量受限条件,即已知｜τ(t)｜≤Tj,其中Tj是喷气执行机构产生的恒幅值力矩,只利用对刚体旋转角的测量数据,以目的2-姿态机动问题为控制设计的目的,对于给定的θm∈(-π,π］,我们设计变结构控制:
+(6)
+其中θe(t)=θ(t)-θm,c(t)＞0将根据我们的需要进行设计,c(t)恒为常值时为定切换平面情形;反之则为变切换平面情形。符号函数sgn{}定义为
+
+这样,(6)定义了一个以s=0为切换条件的继电型控制律。但是在实际应用中,如果切换开关不理想,存在时间滞后和空间滞后等,它就必然会导致高频颤动(见［7］)。这种颤动在系统中形成干扰,增加控制器的负担,使控制系统难以维持长时间的正常工作,所以应对控制律(6)进行修正,以消除或极大减弱高频颤动的影响。为此,基于航天控制工程中的“喷气-飞轮”执行机构工作模式,我们设计在s=0附近进行平滑修正的变结构控制:
+(7)
+其中s如(6)中所定义,Tf是飞轮产生的力矩的最大幅值,kδ=Tf。ax（t）为一水平加速度激励。为了便于在抽象空间中讨论系统的稳定性问题,引入如下函数空间
+
+其中,函数空间L2和Hk0分别定义为
+L2={f∶［0,l］→R｜∫l0f2dx＜∞},
+Hk0={f∈L2｜f,f′,…,f(k)∈L2,f(0)=f′(0)=0},k＞0
+　　在中赋予能量内积
+〈(φ1(x),ψ1(x),a1,b1)τ,(φ2(x),ψ2(x),a2,b2)τ〉
+
+则　成为一个Hilbert空间(参见［8］)。分别对强迫振动和自由振动进行了数值计算,所得结果和有关文献比较基本吻合。推导了系统非线性方程的预测-多次校正法迭代格式。将它代入（9）中，由分离变量法可得u(x,t)=0,(t)=0,即使 （t)=0的系统（9）的古典解必为零解。
+由于f()关于s在｜s｜≠δ处是连续可微的,我们可以在｜s｜=δ附近充分小的邻域中取f()的具有适当光滑性的近似函数,在这样的邻域外仍取f(*),得到一个在(-∞,∞)上连续可微的函数f1()。运用与［6］中定理2的证明类似的方法,我们可以得到算子AL=A+B:D(A)∈　→在　中生成一个C0半群T(t);当z(0)∈D(A)时,与f1()相应的闭环系统的古典解存在唯一,它在　中是预紧的。若将邻域取得足够小,则可将与f1()相应的闭环系统的古典解近似视为(9)的古典解。
+　　由以上分析,运用LaSalle不变原理(［9］)可得,对z(0)=(0,0,-θm,0)τ∈D(A),沿着方程(9)的解有
+limt→∞V(t)=0
+这时,有limt→∞｜θe(t)｜=0,这与t0=∞是矛盾的。因此,有t0＜∞,且
+
+即E(t0)有界。
+　　下面我们证明当t≥t0,能量函数E(t)沿着系统(9)的解是时间的非增函数。
+3　ALE网格速度的确定与网格更新
+　　在ALE描述下,网格可以按任意合适的方式进行设计,但为了能够达到跟踪边界尤其是流体晃动时的自由面,其上的网格点必须永远在边界上,这样网格点的速度设计就受到限制即速度的约束条件。因此,可定义
+t1=sup{t≥t0∶c1｜θe(t)｜＜δ}
+(16)
+则t1=∞。实际上,假设t1＜∞,那么由于系统(9)的古典解关于t是连续的,可得
+c1｜θe(t1)｜=δ
+(17)
+　　由(7)、(14)和(16),可得对于t0≤t≤t1,有c1｜θe(t)｜≤δ,且
+i)当｜s｜≤δ时,则有
+
+ii)当｜s｜＞δ时,则有
+
+由以上　可得，对任意的t [t0,t1],(t)≤0。因此有,
+
+再由c1＜(δ2)/(θ2mc0),可得
+c1｜θe(t1)｜＜δ
+这与(17)矛盾。因此,我们有t1=∞。
+　由t=∝和    　,可得   (t)≤0,  t≥t0,即当t≥t0,能量函数E(t)沿着系统(9)的古典解是时间的非增函数。
+　　采用与上面的分析中类似的方法,可证得
+limt→∞E(t)=0
+(18)
+即在变切换平面的变结构控制作用下,姿态机动问题得以解决。假设边界面(或线)的方程为:
+F(x,t)=0(4)
+由于流体质点和网格点始终在边界上即永远满足方程(4)式,所以有:
+(DF)/(Dt)=0;(dF)/(dt)=0
+从而有关系:,而边界面方程函数的梯度方向即边界面的法线方向,则可得
+v*n=w*n(5)
+在满足上式的条件下,自由液面上的网格点的移动速度可按如下及种方式设计。边界元方法以有限元方法为基础,突出优点是可将求解空间降低一维,80年代以来用以求解带有自由液面的晃动问题［3］取得了极大进展。利用振型分析方法,用有穷维模型近似无穷维模型(1)。
+　　主题词　液体晃动　边界元法　ALE边界元方法
+THE ALE BOUNDARY ELEMENT METHODS IN 
+SOLVING NONLINEAR SHOSHING PROBLEMS
+Yue Baozeng　Wang Zhaolin　Kuang Jinlu
+(Department of Engineering Mechanics,Tsinghua Univerity,Beijing*100084*China)
+　　Abstract　The ALE(Arbitrary Lagrange-Euler)boundary element method is used for dealing with nonlinear sloshing problem(nonlinear oscillations of a liquid in a container subjected to forced oscillation).The ALE boundary element methods is derived by applying the idea of ALE finite element method.The dynamic boundary condition is redused to a weighted residual equation by employing the Galerkin nethod.Due to the nonlinearity of the problem,a general corrective procedure is used for the numerical analysis.The system equation is discretized by the use of Newmark Method timewise and the predict-multi corrective steps method is used in iteration procedure.At last,computation example and computed result is given.
+　　Key words　Fluid sloshing　Boundary element method　ALE boundary element method
+　1　引言
+　　液体的晃动问题在航天、航空、大型化工设备等许多方面都有研究的背景。仿真结果表明控制算法主要激励了挠性梁的一阶模态的振动并最终有效地消除了它,姿态机动的目的得以实现,且机动过程具有良好的性能(机动过程快,振动消除快)。
+　　我们在如照片1所示的单轴气浮台挠性卫星物理仿真实验装置上,进行物理仿真实验,以验证理论分析结果的正确性和所设计的控制方案的有效性。该系统的执行机构采用“飞轮-喷气”组合方式,飞轮输了的最大力矩为0.07Nm;喷气输出常值力矩,正向和反向分别为0.47N*m和0.34Nm,为了适应这一条件,我们将控制算法(7)中的f()换为下面定义的f2(),
+
+
+照片1　单轴气浮台挠性卫星物理仿真实验装置
+
+及t0换为t1
+
+其它物理参数为:EI=15.52N*m2,ρ=0.81kg/m,l=1.8m,Jm=13.35kg*m2。
+　　我们用变切换平面的变结构控制算法进行机动角度为θm=60deg的仿真实验,其中参数k=1.4,δ=0.05,c0=1,c1=0.1,仿真结果如图2-图4所示。从中可见,所设计的变结构控制算法使姿态机动的控制目的得以实现,且机动过程具有较好的性能(机动过程快,超调量小)。时参考坐标取为物质坐标,网格跟随物质质点,变为Lagrange描述。由(5)式,自由液面上网格结点移动的速度为:
+　　　　　　　　　　　(6)
+　　　　　　　　　(7)
+在求解过程中,每一时间步网格需要更新一次,对于tn+1时刻,网格结点的坐标可按下式计算:
+xn+1i=xni+∫tn+1tnwidt　　　　　　　(8)
+4　数学模型
+　　本文以流体的不可压缩,无粘,非定常无旋理论为基础,物理模型如图2
+　　控制方程为:
+　　                                                     (9)
+　
+
+
+图2　物理模型
+　　其中：F（x，y，z）=0为自由液面方程，μφ项是反应流体粘度阻尼效应的所谓Rayleigh阻尼项。研究表明,所设计的变结构控制方案使得姿态控制的目的得以实现。
+参考文献
+  1　Cannon R H,et.al.Initial experiments on the end-point control of a Flexible                                             2　Bar-Kana I,Kaufman H.Simple adaptive control of large flexible space structures,IEEE Trans.on aerospace and eletronic systems,1993,29(4):1137-1149
+  3　Bortsema J,et.al.Robust control of flexible systems:a case study,Automatica,1988,24:177-186
+  4　高为炳,程勉,曾文陵.柔性空间飞行器的变结构控制,航空学报1988,5:274-280
+  5　Luo Z H.Direct Strain feedback control of flexible robot arms:new theoretical and experimental results,IEEE Trans.Autom.Contr.,1993,38(11):1610-1662
+  6　Morgl .Orientation and stabilization of a flexible beam attached to a rigid body planar motion,IEEE trans.on AC,1991,36(8):953-962
+  7　高为炳.变结构控制理论基础,中国科学技术出版社,1990
+  8　Chen G.al.,Modelling,stabilization and control of a serially connected beams SIAM J.Contr.Optimiz.,1987,25:526-546
+  9　Hale J K.Dynamical systems and stability,J.Math.Anal.Appl.,1969,26:39-59

@@ -1,0 +1,125 @@
+计算机应用
+Computer Applications
+1999年 第19卷 第7期  Vol.19 No.7 1999
+
+
+
+集散式能源测控系统的实现
+吴　琳　李　锐　谭南邻　韩　松
+
+　　摘　要　本文结合一个卷烟厂电力监控系统的具体实例，说明能源测控系统的整体设计思想与实现方法，详细描述了系统的集散式体系结构，概括了系统通信网络的设计思想和系统可靠性的实现策略。
+　　关键词　能源测控,集散系统,体系结构,可靠性
+
+　　典型的卷烟企业是连续制造流程型传统产业，其生产流程耗气和耗水量较大，用量波动也较大，而生产设备对供电质量有越来越高的要求。能源测控系统针对企业的上述情况，从能源站、生产车间到主要设备进行能耗的多级管理，通过对能源的合理调度和主要指标的控制，达到稳定生产工艺、规范管理、节能降耗的效果。
+　　根据对能源测控系统用户需求的分析，制定了分散控制、集中操作、分级管理、综合协调的设计原则，它应具有典型集散式系统的体系结构特征。在具体设计中，考虑在线实时检测与控制的可靠性和稳定性，我们运用了工控机与可编程控制器相结合的方式。实际运行的系统效果良好，保障了企业的生产和产品质量创造了显著的效益。
+
+图2　直流传动控制系统简化主电路
+　　由图2知，系统测量是给定输入ud0(k)、电机电枢电压ud(k)、电枢电流id(k)和速度n(k)，且是经过归一化处理后的标称值，按百分数表达，100%分别代表电流是2000A、电压是2000V、速度是200km/h。
+　　本文以一个卷烟厂电力监控系统为例，介绍集散式能源测控和管理系统实现的要点。
+　　(6) 建造作业分系统在一期工程侧重于分厂生产管理子系统的应用开发，利用BAAN软件开发分厂计划管理和综合统计。因此，本文提出一种新的鲁棒故障检测策略，其结构如图1所示。
+　　在本系统设计中，考虑能源系统要易于扩展和升级的需求，在集散系统的总体结构上兼具分布式的特征。即把对对象的认识过程交给人工神经网络的学习训练算法中。
+1.1　现场控制级
+　　现场控制级是能源测控系统的基础，具体承担现场各类模拟信号、开关信号和脉冲信号的输入、变换、运算和输出。
+　　在能源系统中，由于需要处理的数据量大，涉及的信号种类多，因此，在系统构造时采取的是分散和集中处理相结合的设计思想。1#和2#智能工作站处理精度要求较高的电度累计脉冲信号，3#智能工作站单独处理开关量和瞬时模拟信号。拼接系统具有图灵机同样的通用计算能力[25, 35]。该设计在实际应用中取得了非常好的效果，兼顾了系统的可扩展性和可维护性。
+1.2　控制管理级
+　　能源测控系统中的主要功能如流程显示、控制调节、数据存储、报表打印、报警提示、趋势分析、数据通信、系统维护等均在控制管理级实现，因此该级是测控管理的中心环节，也是系统网络的核心部分。
+　　为保证24小时不间断运行中的系统可靠性，采取了双机热备份的系统结构。慢速的信息进化与此相反。因此许多在常规并行计算中的技术目前还不能用于DNA计算。实际编程中经过不断的优化和测试，数据的一致性问题得到了圆满的解决。
+1.3　系统管理级
+　　现场控制级和控制管理级实现了能源信号的实时采集、参数与状态的优化控制和集中的操作，而系统管理级则使企业决策者远程了解能源系统的运行状况，查询各级设备状态和能耗数据，从而实施实时指挥调度的中心。
+　　系统管理级通过网络接口与全厂的企业内部网相连，成为企业管理信息系统的一个节点，又是全厂CMIS中能源部分的一个基础组成。
+2　系统的通信网络
+　　通信网络将物理上分散配置的现场控制单元、智能I/O站、控制管理计算机和系统管理计算机通过高速数据线连接起来，构成完整的运行体系，它是集散式能源测控系统的神经中枢。
+　　工业测控系统中通信网络主要要求实时性和可靠性，为此，在设计该电力监控系统时，上层网络选用标准以太网（Ethernet），而其底层网络则采用了国际标准中具有更高可靠性的工业现场总线――控制器局域网CAN（Controller Area Network）组网技术。
+　　将系统管理级和控制管理级通过Ethernet网连接，使用了三个SN2000以太网卡和同轴电缆，控制管理级的两台工控机和系统管理级主微机构成一个小型以太网(Ethernet)，采用总线型结构。在控制管理级和系统管理级微机上均采用了Windows 95操作系统，其本身提供标准IEEE 802.3协议的Ethernet网络支持，同时也支持目前Internet中应用最为广泛的TCP/IP协议。利用Delphi3.0软件开发平台中提供的网络构件，可以很容易地实现这一层的数据通信。
+　　第一步，给定试验次数(后面称群体规模)m,寻找比m小的整数h，且使(m,h)=1,符合这些条件的正整数组成一个生成向量H=(h1,h2,…,hn);
+　　第二步，均匀表的第j列由下面方法产生
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(2)
+这里，[mod m]表示同余运算。
+　　在集散式系统中，控制管理级和现场控制级之间的数据通信是一个需要认真解决的难题，以往曾采用过RS-485协议和其他总线技术，在工业现场实际运行中其抗干扰能力和数据速率、数据误码率等主要指标均难以满足要求，本系统采用CAN总线技术。CAN是一种多主总线，具有简化的网络结构和开放性、实时性的特点，是一种有效支持分布式控制或实时控制的串行通信网络。在本系统的应用中，着重对其应用层作了必要扩充，具体特点将另文介绍。ΔI表示整个迭代过程中信息调整总量。
+3　系统可靠性设计
+　　能源测控系统在国民经济和企业应用中的重要性不言而喻，但一个系统能否充分发挥其实际作用取决于多方面的因素。
+　　文章中所用采掘算法是由训练、删枝、提取和后处理四个模块组成。引入新的性能指标
+　　　　　(10)
+设ξ为独立于r(k)的随机噪声，其均值为E{ξ}=M，方差为则
+　　　　　　　　　　　　　　　　(11)
+极小化式（11）的性能指标，等价于在残差样本输入端加入噪声后，仍采用BP算法进行训练，可保证该神经网络故障模式分类的鲁棒性。均匀设计的核心思想是用确定性方法寻找空间中均匀分布的点集来替代Monte Carlo中的随机数，因而属于Monte Carlo的范畴，可看成是统计抽样，这些都是我们引入GA并改进之的依据。
+　　　　　袁曾任，男，64岁，教授.研究领域为智能控制和计算智能(人工神经网络，模糊逻辑、遗 传算法)及其应用.
+作者单位： 覃振兴:广西师范大学数学与计算机科学系, 清华大学计算机系智能技术与系统国家重点实验室客座；
+　　　　　　袁曾任: 清华大学计算机系　北京　100084
+参考文献
+1　 U M Fayyad, G Piatetsky-Shapiro, P Smyth. From Data Mining to Knowledge Discove ry : An Overview. In U.M.Fayyad, G. Piatetsky-Shapiro, P. Smyth, R U Uthurusamy , editors, Advances in Knowledge Discovery and Data Mining, AAAI/MIT Press, 1996 :83～115
+2 G Piatesky-Shapiro, W J Frawley. Knowkledge Discovery in Databases, AAAI/MI T Press, 1991
+3 U M Fayyad, G Piatetsky-Shapiro, P Smyth, R U Uthurusamy, editors, Advances in Knowledge Discovery and Data Mining, AAAI/MIT Press, 1996:83～115.
+4 R Agrawal, T Imielinski, A Swami. Mining Association Rules Between Sets of Items in Large Databases. Proceedings of ACM SIGMOD, May 1993:207～216
+5 R Agrawal, R Srikant. Fast Algorithms for Mining Association Rules in Large Databases. Proceedings of the 20th International Conference on Very Lage Data Bases, September 1994:478～499
+6 J Han, Y Fu. Discovery of Multiple-Level Association Rules from Large Databases. Proceedings of the 20th International Conference on Very lage Data B ases, September 1994:478～499
+7 H Mannila, H Toivonen, A Inkeri Verkamo. Efficient Algorithms for Disco vering Association Rules. Proceedings of AAAI Workshop on Knowledge Discovery in Databases, July, 1994:181～192
+8 J-S Park, M-S. Chen, P S Yu. An Effective Hash Bashed Algorithm for Minin g Association Rules. Proceedings of ACM SIGMOD, May 1993:175～186
+9 A Savasere, E Omiecinski, S Navathe. An Efficient Algorithm for Mining Assoc iation Rules in Large Databases. Proceedings of the 21th International Conferenc e on Very lage Data Bases, September 1995:432～444
+10 R Srikant, R Agrawal. Mining Generalized Association Rules. Proceedings of t he 21th International Conference on Very lage Data Bases, September 1995:407～41 9
+11 Srikant R, Agrawal R. 1996a. Mining Quantitative Association Rules in Large Relational Tables. In Proc. of the ACM SIGMOD Conference on Management of Data 
+12 Randy Kerber. Chimege: Discretization of Numeric Attributes. In Proceedings of the AAAI-92 workshop on KDD. 123～128
+13 H Tsukimoto. The Discovery of Logical Propositions in Numerical Data, AAAI'9 4 Workshop on Knowledge Discovery in Databases, 1994:205～216
+14 R Agrawal, JC Shafer. Parallel Mining of Association Rules IEEE Transation on Knowledge and Data Engineering, Dec 1996:962～969
+15 M Chen, J Han, P S Yu. Data Mining: An Overview from Database Perspective. I EEE Trans. Kjnowledge and Data Engineering, 1996,8:833～866
+16 A Fupta, V Harinarayan, D Quass. Aggregate-query Processing in Data Warehou sing Environment. In Proc. 21st Int. Conf. Very Large Data Bases, Pages, Zurich , Switzerland, Sept. 1995:358～369
+17 V Harinarayan, J D Ullman, A Rajaraman. Implementing Data Cubes Efficientl y. In Proc. of the ACM SIGMOD Conference on Management of Data
+18 J Widom. Reserch Problems in Data Warehousin. In Proc. 4th Int. Conf. on Information and Knowledge Management, Baltimore, Maryland, Nov. 1995:25～30
+19 W P Yan, P Larson. Eager Aggregation and Lazy Aggregation. In Proc 21st Int Conf Very Large Data Bases, Zurich, Switzerland, Sept. 1995:345～357
+20 J Han, Y Cai, N Cercone. Data-driven Discovery of Quantitative Rules in Re lational Databases. IEEE Trans. Knowledge and Data Engineering, 1993, 5:29～40
+21 J Han, Y Fu. Exploration of the Power of Attribute-oriented Induction in Da ta Mining. In U M Fayyad, G Piatetsky-Shapiro P Smyth, R U Uthurusamy, editors, Advances in Knowledge Discovery and Data Mining, AAAI/MIT Press, 1996:83～115
+22 J R Quinlan. Induction of Decision Trees. Machine Learning, 1986, 1:81～106
+23 J R Quinlan. C4.5: Programs for Machine Learning, Morgan Kaufmann, 1986
+24 R Agrawal, M Mehta, J Shafer, R Srikant, A Arning, T Bollinger. The Quest Data Mining System. In Proc. 1996 Int'l Conf. on Data Mining and Kno wledge Discovery (KDD'96), Portland, Oregon, August 1996
+25 M Mehta, R Agrawal, J Rissanen. SLIQ: A Fast Scalable Classifier for Data Mi ning. In Proc. 1996 Int. Conference on Extending Database Technology (EDBT'96), Avignon, France, March 1996
+26 J Shafer, R Agrawal, M Mehta. Fast Serial and Parallel Classification of V ery Large Data bases. In VLDB 96
+27 M S Chen, P S Yu. Using Multi-Attribute Predicates for Mining Classificati on Rules. IBM Research Report, 1995
+28 J Han, Y Fu, W Wang,etc. DBMiner: A System for Mining Knowledge in La rge Relational Databases. In KDD'96, Portland, Oregon, Augest 1996
+29 P Cheeseman, J Stutz. Bayesian Classificaton (AutoClass): Theory and Result s. In U M Fayyad, G Piatetsky-shapiro, P Smyth, R U Uthurusamy, Editors, Advanc es in Knowledge Discovery and Data Mining, AAAI/MIT Press, 1996:153～180
+30 J Elder IV, D Pregibon. A Statistical Perspective on Knowledge Discovery in Databases. In U M Fayyad, G Piatetsky-shapiro, P Smyth, R U Uthurusamy, Editors, Advances in Knowledge Discovery and Data Mining, AAAI/MIT Press, 1996 :83～115
+31 G Piatetsky-shapiro. Discovery, Analysis, and Presentation of Strong Rules. In G Piatetsky-shapiro, W J Frawley, Editors, Knowledge Discovery and Databases, AAAI/MIT Press, 1991:229～238
+32 W Ziarko. Rough Sets, Fuzzy Sets and Knowledge Discovery. Springer-verlag , 1994
+33 R Agrawal, S Ghosh, T Imielinski, B Iyer, A Swami. An Interval Classifier for Database Mining Applications. Proceedings of the 18th International Confere nce on Very lage Data Bases, August 1992:560～573
+34 H Lu, R Setiono, H Liu. Neurorule: A Connectionist Approach to Data Mining . Proceedings of the 21th International Conference on Very Lage Data Bases, September 1995:407～419
+35 A K J, R C Dubes. Algorithms for Clustering Data. Printice Hall, 1988
+36 D Fisher. Improving Inference Through Conceptual Clustering. In Proc. 1987 A AAI Cconf., Seattle, Washington, July 1987:461～465
+37 D Fisher. Optimization and Simplification of Hierarchical Clusterings. In Pr oc. 1st Int. Conf. on Knowledge Discovery and Data Minging (KDD'95), Montreal, C anada, Aug. 1995:118～123
+38 N Beckmann, H P Kriegel, R Schneider, B Seeger. The R*-tree: An Efficient and Robust Access Method for Points and Rectangles. In Proc. 1990 ACM-SIGMOD Int . Conf. Management of Data, Atlantic City, NJ, June 1990:322～331
+39 M Ester, H P Kriegel, X Xu. Knowledge Discovery in Large Spatial Databases: Focusing Techniques for Efficient Class Identification. In Proc. 4th Int. Symp. on Large Spatial Databases (SSD'95), Portland, Maine, August 1995:67～82
+40 R Ng, J Han. Efficient and Effective Clustering Method for Spatial Data Mini ng. In Proc. 1994 Int. Conf. Very Large Data Bases, Santiago,Chile,September 19 94:144～155
+41 W P Yan, P Larson. Eager Aggregation and Lazy Lazy Aggregation. In Proc. 21 th Int. Conf. Very Large Data Bases, Zurich, Switzerland, Sept. 1995:345～357
+42 HJ Lu, R Setiono, H Liu. Effective Data Mining using Neural Networks. IEEE Transactions on Knowledge and Data Engi
+50 Yoon Byungjoo, Lacher R C. Extraction Rules neering 8: 6 (DEC 1996) Page 957～961
+43 P K Chan, S J Stolfo. Learning Arbiter and Combiner Trees from Partitioned Data for Scaling Machine Learning. In KDD'95, August 1995:39～44
+44 周生炳，张钹. 不完全决策表及其化简. 软件学报 （将发表) 
+45 周生炳，张钹. RBAO方法的无回嗍算法. 计算机学报 （将发表)
+46 周生炳，张钹. 基于知识的KDD方法. 中国科学（E辑）（将发表）
+47 周生炳. 基于知识的KDD方法. 清华大学博士后出站报告, 北京: 1997,4
+48 Binaghi E. (1192), Empirical Learning for Fuzzy Knowledge Acquisition, Proc . 2nd Int. Conf. Fuzzy Logic & Neural Networks, IIZUKA'92, 1992
+49 Fu LiMin. Rule Generation from Neural Networks, IEEE Transactions on Systems , Man and Cybernetics, 1994, 24(8):1114～1124by Destructive Learning, IEEE, 1994:1766～1771
+51 Ishikawa M. Structural Learning and its Applications to Rule Extraction, IEEE,1994:354～359
+52 袁曾任，卢振中. 由神经网络提取规则的一种方法及其在气象云图中的应用. 1996 年中国智能自动化学术会议论文集(上册）180～186
+53 袁曾任，卢振中. 由神经网络提取规则的一种方法. 信息与控制, 1997,26(1):61～66
+54 Zhou yuanlui, Lu Yuchang. Shi Chunyi Using Neual Nework to Discover Knowled ge from Database (to be published)
+55 Zhaohui Zhang, Yuanhui Zhou, Yuchang Lu, Bo Zhang. Extracting Rules from a GA-Pruned Neual Network
+收稿日期：1998-02-09
+。
+　　* 模拟信号转换为数字信号后，均经过一级软件滤波，从信号源头保证模/数转换的正确性，并进一步提高信号传输信噪比。
+　　* 模拟信号、变送器信号采用RVV双绞屏蔽线敷设，屏蔽层单端接地。
+3.2　供电系统的净化
+　　能源测控系统使用不间断的，独立的供电系统，设置可切换的双稳压电源，其中一台工作，另一台备用。选用有高频滤波、稳压、隔离、无触点切换等措施的UPS，以确保在外围电网有事故发生瞬间系统仍能有效地监测。
+3.3　提高系统级可靠性
+　　在集散式测控系统中，各单元部件的高可靠性是整个系统可靠性的前提，但是如果只注重单元的可靠性是不够的，必须采用系统工程的方法，从整个系统的角度进行可靠性分析和设计。我们在该系统中采用多级的冗余与容错措施，取得了明显效果。
+　　现场控制级，智能工作站1# 和2# 同时采集功率变送器输出的脉冲信号，即使其中一台工作站出现故障，另一台仍能保证累计数据的准确不丢失。
+　　同理，在控制管理级采用了双机热备份系统，两台工控机执行相同的程序从现场控制级读取数据，最上层的系统管理级只需从其中一台工控机采数，若提供数据的工控机发生故障，则切换到另一台工控机采数。双机在工作过程中，定时比较本地硬盘与网络硬盘上参数文件的时标，并以最新时标的文件覆盖本地硬盘上的文件。
+　　船研所微机网已完成大楼结构化布线工程，配置了微机服务器和微机，目前也已形成基于PC服务器的Windows NT局域网。
+　　综上所述，将集散式体系结构具体应用在能源测控与管理系统的设计与构建，它使该系统在各层次上形成开放系统，实现了企业能源的集中管理、准确计量和合理调度，它将为保障企业生产运行，稳定产品质量产生显著的效益和长远的影响。
+　　吴　琳　工程师。从事工业控制和计算机应用开发工作。
+　　李　锐　硕士研究生。主要研究方向：工业控制，管理信息系统。
+　　作者单位：吴　琳　李　锐（中国科学院成都计算机应用研究所　四川．成都610041）
+　　　　　　　谭南邻　韩　松（成都卷烟厂设备动力部　四川．成都　610061）
+参考文献
+［1］　邱公伟,赵祥元,巫淑萍.实时控制与智能仪表多微机系统的通信技术.北京：清华大学出版社，1996
+［2］　邱公伟.集散系统实时性与存取控制方式的关系.工业控制计算机，1990;(3)
+［3］　王常力,廖道文.集散型控制系统的设计与应用.北京：清华大学出版社，1993 
+　收稿日期:1999-01-28(修改稿)

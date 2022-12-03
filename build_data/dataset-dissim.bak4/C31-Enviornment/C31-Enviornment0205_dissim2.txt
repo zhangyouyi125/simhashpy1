@@ -1,0 +1,129 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第1期 No.1 Vol.18 1998
+科技期刊
+
+液膜法从工业废水中提取J酸的研究
+朱亦仁　潘碌亭　(阜阳师范学院化学系,阜阳 236032)
+魏凤玉　邓传芸　(合肥工业大学化工学院，合肥 230009)
+沈章平　闻治宇　(南京化工厂，南京 210038)
+文　摘　利用以LMS-2为表面活性剂，三辛胺为载体，煤油为溶剂，NaOH溶液为膜内相所组成的乳状液膜体系，从含J酸的工业废水中提取J酸。研究了各种因素对J酸提取率的影响，提出了较适宜的工艺条件。实验结果表明，该乳状液膜体系对废水中的J酸有较高的提取率。油相经破乳后多次重复使用，其提取率基本不变，J酸的提取率可达96%。武汉市每年排放的废气总量超过1000亿标准立方米，其中城区就占80%以上，对大气环境造成严重污染。J酸废液因酸性极强，采用中和法、生化法以及蒸馏法处理均不能取得满意的效果。因此，寻求一种快速、经济的方法处理该废水已成为重要的研究课题。
+关键词　武汉市城区　大气环境质量　模糊聚类　 大气扩散　等维灰数递补预测
+Study on the present situation and tendency of atmospheric environmental quality in Wuhan city proper.Hong Song,Wang Shaoping,Wu Shengjun,Zheng Zehou(Institute of Ecology,Hubei University,Wuhan 430062)；Tian Xianmin(Wuhan Institute of Environmental Protection Science,Wuhan 430015)；Wang Wenge(Bureau of Environmental Protection in Hubei Province,Wuhan 430072).China Environmental Science.1998,18(1)：76～82
+Abstract―We analyzed and assessed the atmospheric environmental quality in Wuhan city proper and also calculated perennial average ground level concentration during 1991～1995 by model.On the basis of aforementioned works,we used Grey System theory to forecast concentration changes in later years of 3 major pollutants:SO2,NOX and TSP.The result of our research shows that the SO2 concentration in Wuhan proper’s atmosphere tend to descend year after year,and the TSP concentration will have no changes approximately.So,the coal smoke pollution in Wuhan will improve somewhat.But NOX,which is exhausted chiefly by automobiles,will have a outstanding increase.To sum up,the whole atmospheric environmental quality still tend to decline.
+Key words：Wuhan city proper　atmospheric environmental quality　fuzzy classify　atmospheric diffusion　grey forecasting
+　　武汉市为华中第一大城市和最大工商业中心，其城区主要特点是人口密集，工、商业分布相对集中。本实验应用液膜法处理J酸工业废水，同时回收了J酸，达到消除污染和回收资源的双重目的。青山、。但石油燃料燃烧排放的NOX将有显著增加，整个大气环境质量仍呈下降趋势。
+1.2　实验方法
+　　将LMS-2、TOA、煤油按一定比例加入组织捣碎机，先低速混合均匀，然后加入氢氧化钠溶液，高速搅拌（3000r/min）3min即可制得稳定的乳状液。将乳状液按一定乳水比Rew（乳液体积Ve和废水体积Vw之比）加入到废水中，慢速搅拌（300r/min）使其充分接触，静置分离后乳液进
+入破乳器，经破乳后静置分层即可获得J酸盐溶液（浓缩水相）和油相，油相可用于重新制乳。
+1.3　城区大气质量综合评价
+　　模糊聚类分析结果与指数分析结论一致，江汉区的三项指标均超过国家二级标准，属中度污染型。故本实验在搅拌转速为300r/min时可得到最高分离效率。
+
+图1　搅拌速度对J酸提取率的影响
+Fig.1　The effect of stirring speed on extracting
+rate of J-acid
+2.2　乳水比（Rew）对提取率的影响〔7〕
+　　对于液膜分离过程来说，乳水比Rew越大，渗透过程的传质面积越大，从而加速了料液的分离，使分离效率提高；但此时乳状液消耗多，处理成本高。因此在满足有较高分离效率的前提下，乳水比越低越好。
+2.1.3　混合层高度　根据武汉市的实测资料，大气不稳定(A～C)类混合层高度为982m，中性(D)类为814m，稳定(E～F)类为435m。
+
+图2　乳水比对J酸提取率的影响
+Fig.2　The effect of Rew on extracting rate 
+of J-acid 
+2.3　油内比（Roi）对提取率的影响〔7〕
+　　油内比（Roi）是制备乳状液膜时油相与内水相体积比，当Roi较大时，乳状液膜厚度增大，液膜不易破裂，但传质速率下降。反之当Roi较小时，乳状液膜较薄，传质速度加快，但液膜不稳定易破裂〔2〕，Roi对分离效率的影响见图3，由图3可见，当Roi为 1∶1时J酸的提取率较高且所制得的乳化液膜也较为稳定。
+
+图3　油内比对J酸提取率的影响
+Fig.3　The effect of Roi on extracting rate
+of J-acid
+2.4　载体浓度对提取率的影响〔8〕
+　　载体浓度的影响如图4所示，随着载体TOA浓度的增加，分离效率也增加；以TOA作载体提取废水中的J酸外相萃取反应可用下式表示：
+
+
+　　由上式可知，增大TOA的浓度，反应向右进行，即迁移速率快，膜的分离效率上升；但TOA用量过多，又会使膜相粘度增大，膜增厚，使迁移速率下降；另外载体用量大，成本高，不利于工业化生产，故本实验选择载体浓度为3mL TOA/100mL煤油为宜。
+
+图4　载体浓度对J酸提取率的影响
+Fig.4　The effect of carrier contents on extracting 
+rate of J-acid
+2.5　破乳与油相的回用
+　　本实验采用低电压电破乳，即在常温、常压、电压为100V下进行破乳，破乳不产生絮状中间层，对表面活性剂和载体损害较小，回收油相的含水率小于1%。油相重复使用的结果见表1。由表1可见，油相连续使用10次时，分离效率基本不变，表明低电压电破乳是完全可行的。
+表1　油相的重复使用情况
+Table 1　The situation of oil phase being reused
+
+序号油相回用次数J酸提取率(%)
+1新制乳液　96.5
+2破乳1次　95.9
+3破乳2次　96
+4破乳3次　96.2
+5破乳4次　95.8
+6破乳5次　95.5
+7破乳6次　95
+8破乳7次　96.4
+9破乳8次　96.3
+10破乳9次　96.1
+
+2.6　废水在最佳条件下分离情况
+　　实验操作的条件及结果如表2所示
+表2　液膜法提取J酸操作数据
+Table 2　The operation date of ertracting J-acid 
+by liquid membrane 
+
+　　项　　目操作数据
+废水硫酸含量(g/L)550
+废水J酸含量(g/L)6.5
+搅拌速度(r/min)300
+乳水比(Rew)1∶5
+油内比(Roi)1∶1
+混合时间(min)15
+内相含J酸浓度(g/L)39
+处理后水相J酸浓度(g/L)≤0.2
+处理后水相硫酸含量(g/L)≥500
+J酸提取率(%)≥96
+
+　　从表2可以看出，料液经液膜分离后，J酸可以进入内水相而得到富集，处理后的水相J酸含量小于0.2 g/L，可做为稀硫酸回收使用。
+2.3.2　源强　将全城区进行2×2km网格划分，分别统计70个高架点源(源高≥50m)及所有面源1991～1995年的平均源强。
+表3　液膜法分离J酸的经济效益分析
+Table 3　The economic analyse of extracting J-acid 
+by liquid membrane
+
+项　　目支　出收　入
+用量(kg)　费用(元)产量(kg)费用(元)
+表面活性剂LMS-2151500
+载体TOA　　　1215000
+煤油(含损耗)　404808
+氢氧化钠(10%)50150
+电费　　　　　50(kWh)50
+综合折旧费　　　100
+人工　　　　　　50
+稀硫酸　　　　　　7500075000
+J酸　　　　　　　32016000
+总计　　　　　　17658　23500
+盈利　　　　　　　　5842
+
+　　由此可见，如果每天处理50 t的废水则可获纯利5892元，经济效益十分可观。
+3　结论
+　　采用液膜法处理含J酸工业废水在本实验所确定的条件下，J酸提取率可达96%左右，处理后的废水J酸含量小于0.2 g/L，硫酸含量大于500 g/L，可做为稀酸回收利用。就整个城区大气质量平均状况而言，属于轻度污染型。处理后的油相可重复使用且分离效率基本不变，不会产生二次污染，社会和经济效益明显。
+参考文献
+1　N N Li.US.Patent.3410794,1968
+2　邵　刚.膜分离科学与技术，1982，2（2）∶ 57
+3　金桃根.膜分离科学与技术，1982，2（2）∶ 20
+4　王学松.化工进展，1990，（6）∶ 1～6
+5　刘　杰等.工业水处理，1994，14（3）∶ 20～23
+6　沈力人等.膜科学与技术，1997，17（1）∶ 25
+7　万印华等.水处理技术，1991，17（4）∶ 222～224
+8　李思芽等.膜科学与技术，1995，15（2）∶ 22～24
+作者简介
+朱亦仁　男，1946年2月生。1197662315817(0)2739714488
+汉阳677172683803(1)2698534228
+武昌1031443641544(0)646866119
+青山57333669905352(18)　1851883928494
+洪山918683668851(1)2888773155
+阳逻电厂――1(1)15166844908
+
+　　　　　　注：()内为源高≥100m的点源数目
+2.4　污染物扩散模式〔4，5〕
+2.4.1　武汉高架点源扩散模式　SO2扩散模式
+
+式中：
+
+Cj(x,y,Hi)为第i个源对接受点j的地面浓度贡献(mg/标m3)；Qi为第i个源的源强(mg/s)；σy、σz分别为y,z方向的扩散参数(m)；为排放口高度处的平均风速(m/s)；Hi为第i个源的有效排放高度(m)；L为混合层高度(m)；n为混合层顶对烟云的反射次数(本计算中取5)；β为SO2转化率。在R*λ=0.97中第1，3，4，5，6行一样，故划为一类，而第2行(江汉区)，第7行(洪山区)各为一类，共分为三类。
+收稿日期：1997-01-08

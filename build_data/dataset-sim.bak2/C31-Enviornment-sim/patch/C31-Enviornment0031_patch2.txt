@@ -1,0 +1,38 @@
+水土保持通报
+BULLETIN OF SOIL AND WATER CONSERVATION
+1999年 第19卷 第2期 No.2 Vol.19 1999
+
+
+
+一种新型果树滴灌装置的制做和使用方法
+　　这种有贮水功能的新型滴灌装置,结构简单、好操作、不堵塞,根治了传统滴灌堵塞、滴头滴水量不均的问题。
+　　水库的总氮或总磷负荷可根据氮磷平均浓度、水库平均深度、平均表面积、停留时间等参数计算，目前新丰江水库的总氮总磷负荷分别为：1029.5 t/a，78.733 t/a，即2828 mg/(m2・a)，216 mg/(m2・a)。新丰江水库属“低氮高磷”性质，氮不成为库区主要污染物，而我国太湖、玄武湖等淡水湖泊均为氮污染，磷污染情况少见。各监测点硝态氮、亚硝态氮、氨氮含量均低于GB 3838-88Ⅰ类水质标准，总磷则接近或高于GB 3838-88Ⅱ类水质标准（湖库为0.02 mg/L）。单施化肥促进土壤磷、钾管理指数的上升。流量观察器为透明材料，其内腔与导流管相通，导流管的尾端埋入树冠半径2/3处，距地面20～30cm。
+关键词 富营养化；水污染；综合防治；新丰江水库
+The Current Eutrophication Status of Xinfengjiang Reservoir and Its Comprehensive Control Countermeasure.
+Li Fangbai, Wan Hongfu, Li Dingqiang, He Jianghua, Ma Beiyan and Wang Jizeng (Guangdong Institute of Eco-Environment and Soil Sciences, Guangzhou 510650). Soil & Environ Sci, 1999, 8(1): 26～30
+Water quality of Xinfengjiang reservoir can meet the demands of the second level of GB 3838-88. Its trophic level was in the oligo-mesotrophic status. Phosphorus was a key pollutant. Pollution load of nitrogen and phosphorus were all more than their acceptable pollution load. Some proposals were put forward to efficiently control the process of eutrophication of Xinfengjiang reservoir.
+Key words eutrophication; water pollution; comprehensive control; Xinfengjiang reservoir
+　　富营养化是湖泊、水库最突出的问题之一。调整导流管，使其畅通，将流量观察器立直，以便观察。导流管的尾端埋入指定位置，四周用粗砂或带有小通孔的管子包裹，保证水流畅通。目前新丰江水库水质可以达到GB 3838-88Ⅱ类，甚至Ⅰ类标准，但水库仍然面临着富营养化问题。
+　　当果树需要灌水时，利用贮水器与导流管出水口之间水位差的压力，根据灌水定额，通过流量观察器显示的滴数调整并固定好流量控制器，就能确定好一定时间内的定额灌水量。土壤活性碳的测定如下：称取2 g风干土壤样品(其中含C 15～3 mg)，于100 ml塑料瓶内，加入333 mmol/L的高锰酸钾溶液25 ml，振荡1h。
+　　贮水器的制做机械用塑料热合机。把联接盘和注水口分别用热合机热合在指定位置，每个封头的底部应装2～4个联接盘，再将贮水器的2个封头对应地热合在筒体的两头，然后做注水试验，制作工艺完成。
+1.2 计算方法
+1.2.1 土壤养分管理指数计算方法[4]
+　　养分指数(NI)=样品全量养分÷参比土壤全量养分;
+　　养分活度(A)=有效养分÷全量养分;
+　　活度指数(AI)=样品养分活度÷参比土壤养分活度;
+　　养分管理指数(NMI)=养分指数×活度指数=NI×AI;
+　　土壤养分综合管理指数为：
+　　N=∑(NMI)i(I，为养分权重)。单施化学肥料增加土壤磷、钾管理指数。我国湖泊、水库富营养化问题十分突出，太湖、东湖、西湖、玄武湖水质均为富营养化，甚至极度富营养化[1]。
+关键词 生物管理指数；养分管理指数；肥力可持续性指数
+Soil Biological and Biochemical Properties Are highly Sensitive to Environmental Stress and thus Can Be Used to Assess the Sustainability of Soil Fertility. 
+Shen Hong1, Xu Zhihong2 and Cao Zhihong1 (1: Nanjing Institute of Soil Science, Chinese Academy of Sciences, Nanjing 210008; 2: Australia Forestry Institute). Soil & Environ Sci, 1999, 8(1): 31～35
+The sustainable fertility index (SFI) in different agroecosystems was discussed by integrating soil nutrients and biological indices. Results indicated that fertilization had great influences on SFI. Organic manure enhanced soil C, N and biological management indices, while chemical fertilizer increased soil P, K management indices. Farmyard manure was better than green manure in raising management index of soil carbon, nitrogen and biology. Compared with the reference, chemical fertilizer enhanced SFI annually 5.63 in red soil, 5.8 in paddy soil and 4.83 in meadow soil, while SFI under the check decreased annually 5.6 in red soil, 6.58 in paddy soil and 4.56 in meadw soil respectively. The order of SFI influenced by different treatments was manure, manure combination chemical fertilizer>chemical fertilizer>reference>check.
+Key words biological management index; nutrient management index; sustainable fertility index
+　　促进和维持土壤肥力是现代农业可持续发展和满足日益增长人口所需要粮食的根本保障。
+　　　　　　表2 土壤肥力各项指标权重值
+
+项目有机碳氮素磷素钾素MBCMBNIVACATPRA
+权重0.2720.2770.2480.2030.2580.2440.1740.1680.156
+
+　　其中B为生物综合管理指数，N为养分综合管理指数，×100是为了各指数间更好地比较。
+(卞绍东.山东省莱州市科新实用技术开发部.261400)

@@ -1,0 +1,165 @@
+计算机应用
+Computer Applications
+1999年 第19卷　第8期 Vol.19　No.8 1999
+
+
+
+基于Petri网的超媒体模型HPN*
+张　苓
+　　摘　要　本文提出一个基于Petri网的超媒体形式化模型HPN。它采用层次组织，各层由一个扩展Petri网、若干对象以及Petri网与对象之间的映射表示，通过Petri网结构和执行语义说明超媒体的链接机制、浏览和媒体表现，具有刻画超媒体主要性质的能力。文中给出了HPN模型的形式化定义并举例说明其用途。
+　　关键词　超媒体，形式化模型，Petri网，令牌
+A PETRI NET FORMAL MODEL OF HYPERMEDIA（HPN）
+Zhang Ling
+College of Computer Science and Technology, Wuhan University, Hubei.Wuhan 430072
+　　Abstract　This paper presents HPN, a Petri-net formal model of hypermedia. It has three layers, each is represented with an augmented Petri net , several sets of objects and the mapping of the Petri net and the objects. HPN use the structure of Petri net and execution semantics to specify the linking, browsing and rendering of hypermedia. It has the ability to describe the main properties of hypermedia systems. We mainly give the formal definition of the model and an illustration.
+　　Keywords　Hypermedia, Formal model , Petri net, Token
+1　引言
+　　超媒体系统是一种新型的复杂信息管理系统，它将多媒体信息组织成非线性、非顺序的结构，提供比传统系统更加直观、灵活和快速的信息访问与查询。超媒体形式化模型是对超媒体系统的抽象，从本质上刻画超媒体，得到独立于应用的、统一的超媒体抽象机制，为系统的设计、分析和比较提供基础。
+　　基于Petri网理论［1］的模型在超媒体系统的描述方面具有广泛的前景。
+　　关键词　模糊控制系统，模糊控制器，智能积分
+THE APPLICATION OF FUZZY CONTROL
+IN THE CONTROL SYSTEM OF FLAVORING CUT TOBACCO
+Ma Tiejun
+Chengdu Institute of Computer Application, 
+The Chinese Academy of Sciences, Sichuan．Chengdu 610041
+　　Abstract　This paper introduces the design and realization of the fuzzy control system of flavoring cut tobacco. Based on the analysis of the features of PID control and fuzzy control, the paper deals with the specific conditions of flavoring cut tobacco, and proposes a new system design which includes a fuzzy controller with changeable gain and integration. The paper also discusses about reducing error in stable condition by intelligent integration.
+　　Keywords　Fuzzy control system, Fuzzy controller, Intelligent integration
+1　概述
+　　烟丝加香是卷烟厂烟丝制造生产线(简称制丝线)的三大工艺环节之一，烟丝加香控制就是根据制丝线上烟丝流量的变化，实现按设定加香比均匀喷香。而且Petri网具有说明基于严格同步关系的实时进程交互的能力，满足描述多媒体表现的需要［2］。
+　　超媒体又称作多媒体超文本，从某种意义上说是多媒体与超文本的综合。在基于Petri网的超文本和多媒体建模方面，Trellis［3］是典型的超文本形式化模型，OCPN［2］很好地刻画了多媒体的表现时序，两者在某种程度上存在着性能上的互补，可以结合起来统一刻画超媒体。超媒体系统具有较大的规模和众多的相关因素，在一个Petri网中表达往往使网络变得十分庞大，超媒体文档结构及各成员的关系含混复杂，给浏览语义的说明以及系统的分析和验证带来相当的难度。
+　　根据以上考虑，本文提出一个基于Petri网的超媒体形式化模型HPN。
+2　HPN模型
+2.1　HPN模型的形式化定义
+　　HPN模型分为三层：顶层的链接层，中间的复合层和底层的原子层。复合层中的每一个Petri子网都对应于链接层Petri网中的库所，复合层Petri网中的每一个库所则与底层的Petri子网相关联。工控机控制D/A板输出0～5V信号控制变频调速器，以改变三相交流电机转速，最终控制加香泵输出香料。其中，
+CPN = < CPN1，CPN2，…，CPNn> 
+是LPN的子网的集合。由于多级内码的编码特殊优点，所以在MMC为基础的CTI中，不必预先录制发音信息，可直接按照多级内码的编码方式播放，大大减少了信息的维护量，节省了系统的存储空间和处理时间；又由于采用ODBC技术，可对任意种类的数据源进行处理，使其可方便灵活地对现有的信息进行处理，大大增强了系统的通用性。
+　　链接层定义超媒体文档的链接结构。通过软件和语音卡的配合，实现信令处理、流程控制、业务处理以及结束呼叫处理和系统退出等过程。)
+4.2　数据的实时更新
+　　服务器上存放着数据源的一个映像库。链接层Petri网（LPN）的形式化定义为：
+定义2.　LPN=<PL,TL,FL,ML0,N,CN,I,L,W,ALl>
+其中，
+(1) PL：库所的有限集，PL={PL1，PL2，PL3 }；
+　　PL1：抽象库所集，抽象库所对应复合层中的CPN网，类型为空；
+
+
+　　图1
+PL2：导航控制库所集，包含历史、索引两种类型的库所，分别与历史、索引节点相对应；
+PL3：存取控制库所集，，p0用于存取控制或版本管理［3］。
+(2) TL：变迁的有限集，TL={TL1，TL2，TL3，TL4，TL5}；
+(3) FL：库所与变迁之间的流关系集合，FL={FL1，FL2，FL3，FL4，FL5}；
+：普通流关系；
+，
+：同一存取库所间以及与其余库所的关系；
+，
+：导航控制库所与其余库所的关系；
+(4) ML0：PL→N+为LPN的初始标识；
+标识表示超媒体浏览时的状态，不同的状态转换代表不同的浏览路径。
+　　质检席(班长席)的设置　作为为社会公众服务的信息查询系统，同样涉及到服务质量的问题。可做一个监控程序，对日志文件进行监控，提取有关信息，让处理机对映像库进行实时更新。函数APLl建立库所与节点对象和复合节点对象的映射；ATLl建立链对象和输入对象与变迁的映射；WLl将每一个抽象库所映射到一个逻辑窗口。
+　　复合层描述复合节点内的节点间或节点内成员间的链接结构，该层库所可以是原子或复合类型，即库所可以与同层的子网相关联，描述复合节点的层次组成。复合层Petri网（CPN）形式化定义为：
+定义3.　CPNi = <PC，TC，FC，MC0，MB，L，I，R，ACl >。反射式红外传感器用于检测生产线上是否有烟丝，输出触点信号，送光隔I/O状态采集板。
+(2) MC0：PC→N+为CPN的初始标识。模糊控制无须建立被控对象的精确数学模型，且具有鲁棒特性好和响应速度快的优点，但用常规模糊控制方法实现高精度控制，会导致控制规则复杂，实现困难。
+　　原子层定义各成员内部媒体间的时序关系，库所类型与所包含媒体的类型一致，每一个库所与一个实数相联（演播时间），变迁表示同步点。本文介绍了多级内码的分词方法的应用，以及信息服务系统的组成和功能，说明了系统的发展前景。其中，
+(1) PB：库所的有限集，PB = { PB1，PB2}，这里，
+PB1：媒体库所集，库所类型与其中媒体类型一致；
+PB2：同步库所，类型为空，不包含媒体内容，仅用于同步；
+(2) TB：变迁的有限集；
+(3) FB：库所与变迁之间的流关系集合；
+(4) MB0：PB → N+为BPN网的初始标识，当库所中有令牌时，表示该库所有资源，该库所中的内容被装载。
+(5) B={B1，B2，…，Bn }(n≥0)为块对象的集合；
+(6) S={S1，S2，…，Sm }(m≥0)为同步对象的集合；
+(7) T是库所到实数（时间延迟）的映射。
+(8) La是窗口内层的集合；
+(9) ABl是BPN的逻辑联系，ABl=<APBl,TBl,LaBl>，这里，
+
+函数APBl建立库所与块对象和同步对象的联系；TBl将库所映射到实数，表示库所令牌在库所中的滞留时间；LaBl将库所映射到窗口某区域的层次。
+2.2　变迁点火
+　　变迁的点火由点火规则控制。在定义各层次Petri网的点火规则之前，我们引入激活集和开始/结束变迁两个概念。
+定义5.　设集合SP1，SP2，…，SPn，若i∈n：SPi*T且SPi∩SPj=I(i≠j)，则称SP1，SP2，…，Spn是变迁T的激活集。烟丝称重皮带称输出脉冲信号，每一脉冲表示相应重量的烟丝，光隔计数板对该脉冲进行计数。
+定义6.　若*T=I，则称变迁T为开始变迁，记作Tstart；若T*=I，则称变迁T为结束变迁,记作Tend。
+　　下面具体给出HPN模型中各层Petri网的点火规则：
+　　. 原子层Petri网的点火规则
+　　若BPNi被激活，则开始变迁Tstart立即点火，生成与所联库所数目相等的令牌。但随着卷烟市场向中高档香烟转移，新的工艺要求与原有的控制手段形成一对矛盾。
+　　对于小型数据库应用程序，可以有两种方法：首先，有些比较正规的应用程序都有用户自己开发的日志文件，处理方法等同于大型数据库的处理方法；其次，若没有用户自己开发的日志文件，由于数据量一般不多，可以在数据源端开发一个监控程序，用逐个检测的方法解决。
+　　接到令牌后，库所Pi在规定时间内处于激活状态，相应的媒体内容被演播，这期间令牌被加锁，直至表现结束，令牌被解锁。
+　　若Tend点火，则收回子网中所有令牌。
+　　. 复合层Petri 网的点火规则
+　　若CPNi被激活，则开始变迁Tstart立即点火，生成与所联库所数目相等的令牌。
+　　对于其余变迁Ti，当某一激活集中所有库所包含令牌时，若发生输入事件，并且输入事件与变迁中链对象的条件相匹配，则点火执行。
+　　点火后，变迁Ti将其前集中所有令牌移走，收回它们对应子网中的所有令牌，所有输出库所获得令牌。获得令牌之后，库所Pi被激活，所对应的BPN子网被激活。
+　　若Tend点火，则收回子网中所有令牌。主要从事计算机检测及智能控制的研究。
+　　点火时，变迁Ti将其前集中令牌移出，所有输出库所获得令牌。
+
+
+图2　变增益积分模糊控制系统原理框图
+　　加香比控制过渡过程曲线见图3，图中b为设定加香比，b+Δ～b-Δ为加香比误差较小区。
+3　HPN模型对超媒体性质的刻画
+3.1　静态结构
+　　超媒体系统有三种静态结构：语义结构(Semantic Structure)、逻辑结构(Logical Structure)和时序结构 (Temporal Structure)［4］。
+　　语义结构定义超媒体成员之间的语义联系（链接）。超媒体系统中常用的链分为两类，一类属于显式链，包括基本链、交叉索引链和节点内注释链；一类属于隐式链如组织链、缩放链、执行链等等。在HPN模型中，显式链通过复合层和链接层的变迁说明，变迁点火意味着链接成立。基于多级内码的语音处理技术恰好解决了分词方面的问题，该技术与数据库处理平台相结合，使得数据库文本信息的语音服务成为现实。下图给出HPN模型对历史链的刻画，其余隐式链的刻画与此类似。
+
+
+图2　HPN对历史链的描述
+　　超媒体系统的逻辑结构体现在节点和复合节点的构造。
+4　数据库处理平台
+　　数据库处理平台是一个处理软件，它运行于处理机上。这样，库所的内容可以不仅仅是简单的信息，可以包含另一个超媒体文档。复合库所与对应子网之间不仅结构相等，而且时序一致。
+　　超媒体的时序结构说明媒体的表现时间以及媒体之间的同步。双模PID控制是常用的高精度控制方法，但必须建立在精确的数学模型基础上，因此无法直接应用于加香控制。用户可以利用系统的回放功能收听上述信息。并且给定任意媒体对象和时间关系，都有唯一的BPN表示与它相对应。也就是说根据HPN模型构造的超媒体的表现和同步不会有冲突和死锁产生。
+3.2　动态特征
+　　HPN模型不仅能够表达超媒体文档的静态结构，而且还能够通过Petri网的执行语义刻画超媒体的动态行为：浏览和表现。
+　　对链接层中的LPN网，标识代表超媒体浏览时的状态，库所中有令牌表示相应的节点或复合节点被访问，其内容显示在屏幕上。初始标识M0表示浏览的初始状态，开始浏览时，初始标识中具有令牌的库所的内容被显示。随着令牌在网络中运动，标识不断变换。当库所获得令牌时，对应的CPN子网被激活，相联的内容映射到显示设备；当令牌移出库所时，其内容从显示设备移出。
+　　下面介绍图2中的常规模糊控制器设计。令牌的流动由变迁控制，如果在状态M时没有被激活的变迁，则浏览终止。
+　　复合层中子网CPN的初始状态由开始变迁确定。库所中有令牌表示相应的内容能够被显示。　吴胜远　教授,硕士生导师。令牌的移动由变迁控制，表示当前表现内容的变化。模糊控制无须建立被控对象的精确数学模型，且具有鲁棒特性好和响应速度快的优点，但用常规模糊控制方法实现高精度控制，会导致控制规则复杂，实现困难。录音和人工方式一直是信息台不可逾越的障碍。当结束变迁点火之后相联的成员表现结束。
+　　总之，LPN网中的标识表示浏览中哪些节点（复合节点）是可见的；CPN子网中的标识表示节点的哪些成员是正在表现的；BPN子网中的标识表示成员中当前的表现媒体。点火CPN网中的变迁将改变表现的内容，点火LPN网中的变迁将改变浏览的内容。(如果万一有含有歧义的句子，在信息的自动化处理阶段，可以标记而等到人工后期的检测处理阶段。
+4　超媒体应用的HPN模型的例子
+　　考虑下面有关超媒体教学应用的描述。首先一行文字邀请用户启动超媒体演播。如果用户激活了与此相联的按钮，那么计算机屏幕上显示有关电脑介绍的媒体信息。
+　　加香比为喷加香料流量与烟丝流量的千分比，在实际应用中，加香比误差e*和加香比误差变化ec*按表1转换为论域［-6，+6］上的离散量e和ec，输出电压变化u的离散论域为［-7，+7］。有二条链与该多媒体信息相关联：一条称作“重复”，允许用户重新浏览多媒体信息，它能够在多媒体信息显示完后的任意时刻触发；第二条称作“视频”，屏幕上演播相关的视频信息，必须在文字等信息表现完之后触发。语音卡直接插在计算机的扩展槽上，占用一个中断地址。但随着卷烟市场向中高档香烟转移，新的工艺要求与原有的控制手段形成一对矛盾。其图形表示如图3。
+　　关键词　模糊控制系统，模糊控制器，智能积分
+THE APPLICATION OF FUZZY CONTROL
+IN THE CONTROL SYSTEM OF FLAVORING CUT TOBACCO
+Ma Tiejun
+Chengdu Institute of Computer Application, 
+The Chinese Academy of Sciences, Sichuan．Chengdu 610041
+　　Abstract　This paper introduces the design and realization of the fuzzy control system of flavoring cut tobacco. Based on the analysis of the features of PID control and fuzzy control, the paper deals with the specific conditions of flavoring cut tobacco, and proposes a new system design which includes a fuzzy controller with changeable gain and integration. The paper also discusses about reducing error in stable condition by intelligent integration.
+　　Keywords　Fuzzy control system, Fuzzy controller, Intelligent integration
+1　概述
+　　烟丝加香是卷烟厂烟丝制造生产线(简称制丝线)的三大工艺环节之一，烟丝加香控制就是根据制丝线上烟丝流量的变化，实现按设定加香比均匀喷香。
+　　考虑到多级内码存储量小（人以正常语速一秒所描述的信息，以多级内码格式存储，仅仅需要几个字节。
+
+
+
+图3　超媒体应用的HPN模型的例子
+　　链接层中的库所card1与复合层子网相对应。当card1获得令牌时，Tstart立即点火，库所ITS获得令牌，与该库所相联的多媒体信息被演播。若变迁T21点火，结束当前演播，库所VIDEO获得令牌，与它相联的视频信息被显示。反射式红外传感器用于检测生产线上是否有烟丝，输出触点信号，送光隔I/O状态采集板。它的功能主要有：
+　　电话公告功能　该功能可以将公告文本转换成正确的语音流，供电话用户查询信息。研究方向：中文信息处理、计算
+　　　　　机电话集成技术。ITS有三个组成库所：IMAGE，TEXT和SOUND，它们根据同步关系合成为BPN子网。该系统的作用就是在企业和客户之间架起连接的桥梁，使企业为客户提供上乘服务。演播完毕后，库所中的令牌被解锁，变迁T31点火。与它相连的两个库所获得令牌，相应的媒体信息被显示。误差e*(连续量)、误差变化ec*(连续量)分别通过量化因子GE、GEC量化并求出量化等级量e和ec，经模糊化处理得模糊量E、EC，再由模糊控制规则及模糊推理求得控制输出等级量u，经比例因子（增益）GU得精确量u*，u*与积分量Kl×e*的和Δv作为控制增量控制变频调速器调节加香电机转速。
+表2　模糊控制规则表
+
+ECUEPBPMPSONSNMNB
+PBPBPBPBPBPMOO
+PMPBPBPBPBPMOO
+PSPMPMPMPMONSNS
+POPMPMPSONSNMNM
+NOPMPMPSONSNMNM
+NSPSPSONMNMNMNM
+NMOONMNBNBNBNB
+NBOONMNBNBNBNB
+
+表3　模糊控制决策表
+
+ECUE-6-5-4-3-2-10+1+2+3+4+5+6
+-6-7-6-7-6-7-7-7-4-4-2000
+-5-6-6-6-6-6-6-6-4-4-2000
+-4-7-6-7-6-7-7-7-4-4-2000
+-3-7-6-6-6-6-6-6-3-20111
+-2-4-4-4-5-4-4-4-100111
+-1-4-4-4-5-4-4-1000321
+-0-4-4-4-5-1-10111444
++0-4-4-4-5-1-10111444
++1-2-2-2-2001443444
++2-1-2-1-2004443444
++30000336666666
++40002447776767
++50002446666666
++60002447776767
+
+4　实际运行测试
+　　现场应用证明，采用变增益积分模糊控制器的烟丝加香控制系统，可以满足高档香烟的加香工艺要求，加香比控制精度误差由原来离散变增益控制的±5%提高为±3%，超调量由14.1%降低为8.7%。
+　　在HPN形式化模型基础上我们开发了一个超媒体演播系统原型，它是在Windows环境下采用BC++ 4.5语言及OWL工具实现，是超媒体应用的开发引擎，能够满足当前超媒体应用开发的主要要求。反射式红外传感器用于检测生产线上是否有烟丝，输出触点信号，送光隔I/O状态采集板。基于多级内码的语音处理技术恰好解决了分词方面的问题，该技术与数据库处理平台相结合，使得数据库文本信息的语音服务成为现实。主要研究领域为分布并行处理、超媒体。检测设备有：烟丝称重皮带称、香料流量检测电磁流量计、反射式红外传感器

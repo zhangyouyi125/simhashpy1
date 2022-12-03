@@ -1,0 +1,123 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+一种软件结构复杂度度量模型及其自动实现
+王小明
+　　摘　要　本文对软件结构中扇入/扇出对软件复杂度的影响进行分析,研究探讨了一种基于扇入/扇出的软件结构复杂度度量模型，给出了自动实现算法。该模型在结构化、软构件和基于组件的系统设计分析中具有较高的应用价值。 Previes 模式的显示速度慢，该显示模式所支持的视频采集格式为 RGB 格式。各子系统之间通过控制流与数据流相关联。完成视频帧到文件的存储可以利用相应的宏实现，如 capCaptureSequence 宏将捕获帧存储到指定的文件。从软件设计的角度来看，这种控制流与数据流即是模块间的扇入与扇出。 
+　　2) Preview 模式：在该模式下显示要占用 CPU 资源，视频帧由系统调用 GDI 函数在捕获窗中显示。结构复杂度度量主要是对软件中的控制流和数据流以及模块间的接口复杂程度等进行度量。 
+　　(3) 阴影值 I 的计算 
+　　明亮度反映了彩色光照射到物体表面后反射到观察位置的能量的大小，明亮度与物体表面方向、观察者位置及材质等因素有关，在制作彩色晕渲图时我们忽略表面材质因素，假定光照和观察位置如图 6 所示， S 为入射光向量， N 为点 P 处表面法向量， R 为反射光向量， A 为观测向量。文中重点讨论了基于 HSV 组合视觉模型的晕渲建模和色彩分量计算方法，并给出了在 ARC/INF°环境下实现这一过程的 AML 语言程序。软件结构的复杂度可表示为对应模块或子系统的扇入与扇出乘积的平方。一个模块应追求高扇入，使得该模块具有较高的可重用性；追求低扇出(扇出数小于8)，使得模块间藕合度较低。结构复杂度度量力求反映模块内部结构的复杂度以及模块间接口的复杂度，进而反映整个软件系统的结构复杂度。实验表明，用本文的方法绘制的晕渲图比 ARC/INF°手册上介绍的方法建立的晕渲图具有颜色动态范围大、立体感强、色彩也更丰富的特点，可以更好地反映地形形态的变化。本文在研究结构化系统设计与程序设计的基础上，将扇入/扇出对模块的复杂度影响分别讨论，给出了基于扇入/扇出的模块和系统结构复杂度定量度量的数学模型。使用这些模型可以在软件系统模块结构设计完成之后，对系统结构与模块的复杂程度作出定量度量，以便在祥细设计开始之前对复杂度过高的模块重新划分；对复杂度不合理的系统结构进行重新构建；对不同的系统结构方案进行复杂度比较，从中选择最优方案。
+2　软件结构复杂度建模
+2.1　软件工程若干准则
+　　文献［2］［4］［5］［6］［7］中有关系统结构和模块复杂度理论可归纳如下：
+　　准则1：结构化程序(系统)总是可以层次化的。
+　　准则2：任一程序中，分枝结构比序列结构复杂；循环结构比分枝结构复杂。
+　　准则3：任一程序中，隔层调用比逐层调用复杂；模块间自底向上调用(构成循环结构)比自顶向下调用复杂。
+　　准则4：系统模块越多系统越复杂；中间层模块越多系统越复杂；模块层数越多系统越复杂。
+　　准则5： 嵌套深度越大，程序越复杂；越靠近入口或出口的模块，复杂度越低。
+2.2　若干概念
+　　为了将扇入/扇出对模块(系统)结构复杂度的影响分开来讨论，以建立新的结构复杂度度量模型，引入如下几个概念。它是通过 capCreate-CaptureWindow 函数创建的。
+关键词：可视化；数字高程模型；晕渲图
+Making Terrain Shading Map with ARC/INFO
+Li Hong,Zhai Zhanqiang,Tang Shucai
+(The Third Institute of the Second Artillery Army,Beijing 100085)
+【Abstract】This paper presents a set of model for mapping DEM data t°HSV color space,experiment is programmed with AML supported by ARC/INF°software on the SGI workstation.The shaded image with the method described in the paper is colorful and shows wide dynamic range.
+【Key words】DEM;Visualization;Shading map
+　　在地图制图中，经常利用地面对高程的晕渲处理来表现地表的高程分布、起伏状况及坡度变化等；在作战模拟与飞行视景仿真中，地形晕渲处理可应用于对战场地理环境的可视化。
+　　模块总数(m)：系统中模块总个数。
+　　深度层号：指软件结构从入口到出口各层次的顺序编号。
+　　对称层号：当系统模块总层数n为奇数时，自顶(入口)向下(出口)各层对称层号依次为1，2，…，,…,2，1；当n为偶数时，自顶(入口)向下(出口)各层对称层号依次为1,2,…,,,…,2,1。 
+　　附 1 ：用本文方法制作 HSV 彩色晕渲图的 AML 程序： 
+　　/* 由 DEM 栅格数据制作晕渲地形图的 AML 程序 */ 
+　　/* Program Name: hsv.aml */ 
+　　/* Author: Grant Lee, Hai 6, QingHe Building , BeiJing 100085*/ 
+　　/* Input: DEM lattice ----%dgxlat% */ 
+　　/* Output: Composite map ----hsvmap */ 
+　　&getcover lattice %dgxlat% /* get lattice of elevation t°process 
+　　/* construct saturation component lattice ss 
+　　latticepoly %dgxlat% s_poly slope slope.lut /* slope.lut should create earlier in tables 
+　　latticereplace %dgxlat% s_poly ss 1.111 slope-code 
+　　kill s_poly /* kill temperary slope polygon coverage 
+　　/* construct hue lattice hh 
+　　grid /* use grid module t°process 
+　　disp 9999 3 
+　　&describe %dgxlat% 
+　　&s k = 120.0 / ln( %grd$zmax% - %grd$zmin%+1 ) 
+　　docell 
+　　　hh = 120 + %k% * ln( %dgxlat% - %grd$zmin% ) 
+　　end // end of hue lattice gereration 
+　　/* generate value lattice vv through hillshade 
+　　/* vv should be within the range of (0,99) 
+　　v = hillshade(%dgxlat%,#,#,#,#) /* 0 -- 255 */ 
+　　docell 
+　　　vv = v * 0.3922 /*vv: 0--99 */ 
+　　end 
+　　q 
+　　ap 
+　　map hsvmap 
+　　mape hh　　　　 /* set map extern */ 
+　　gridcomposite hsv hh ss vv linear /* show composite image 
+　　/* Add other map composite such as legend,tittle etc. here 
+　　map end 
+作者单位：第二炮兵第三研究所，北京 100085
+参考文献 
+1 Environmental Systems Research Institute, INC., Surface Model- ing with TIN TM 
+2 Edwards K,Davis P A.The Use of Intensity-Hue-Saturation Tran- sformation for Producing Color Shaded-Relief Images.Photogra- mmetric Engineering and Remote Sensing, 1994 ， 60(11) ： 1369- 1374 
+3 周新伦 . 数字图象处理 . 北京：国防工业出版社， 1988 
+。一个模块的扇入影响其本身的结构复杂度，并使其本身的结构复杂度按e(e=2.71828)的指数增长。该类函数在使用之前需要先由用户设定函数的内容，然后将其注册到系统中，判断调用条件是否满足以及对该函数的调用则都由系统自动完成，不需要显式的调用命令。对于某一模块，只要有一个扇入或扇出复杂度较高，那么该模块仍然复杂度较高。
+　　定义1:　由m个子模块构成的软件系统P,其子模块的结构复杂度定义为：
+　　模块j的扇入复杂度:
+Rj=m×hj×e｜j 模块深度层号-扇入i起点深度层号-1｜　　　　　　　　　　　(1)　
+　　（q为j模块扇入总数, 1≤j≤m，m为模块总数，以下同）
+　　模块j的扇出复杂度：
+Cj=m×hj×2｜j 模块深度层号-扇入i终点深度层号+1｜　　　　　　　　　　　(2)　
+　　（p为j模块扇出总数）
+　　模块j的总复杂度:
+　　　　　　　　　　　　　　(3)　
+　　系统模块的平均复杂度：
+　　　　　　　　　　　　　　(4)　
+　　模块j的总复杂度相对于系统模块的平均复杂度的偏差：
+　　　　　　　　　　　　　　　(5)　
+　　依据软件工程理论，一个软件系统最优，不是某几个模块最优，而应该是所有模块优度均衡，从而使系统最优。所以，可根据系统乘法原理［7］定义软件系统的结构复杂度。通过 capOverlay 宏完成。
+3　结构复杂度度量的自动实现
+　　定义3： 系统中模块所在层深度编号构成的行向量定义为：X=［x1,x2,x3,…,xm］。
+　　定义4： 系统中模块集合S=(p1,p2,p3,…,pm),扇入矩阵Am×m定义为:
+　　
+　　事实上，扇入矩阵和扇出矩阵互为转置矩阵，即扇出矩阵Bm×m=Am×mT令矩阵Nm×m为：
+　　
+　　令矩阵Wm×m为：
+　　
+　　其中，e=2.71828
+　　定义5： 系统中模块的对称层权值(y1,y2,y3,…,ym)构成的对角矩阵Hm×m定义为:
+　　hij=yi；当j≠i时，hij=0
+　　令对角矩阵Wm×m为：
+　　dii=m×nij
+　　当j≠i时，dij=0
+　　则，模块的扇入复杂度对角矩阵
+　　Rm×m为：R=D×H同理，令对角矩阵Gm×m为：
+　　gii=m×wij；当j≠i时，gij=0
+　　模块的扇出复杂度对角矩阵Cm×m为：C=G×H
+　　系统模块的总复杂度对角矩阵Fm×m为：
+　　
+当j≠i时，fij=0
+　　系统模块的平均复杂度：
+　　系统模块的平均复杂度偏差对角矩阵Km×m为：;当j≠i时，kij=0
+　　软件系统的结构复杂度：Z=Fii
+4　结束语
+　　(1)基于扇入/扇出的软件结构复杂度定量度量方法使用简单方便，在繁杂的程序设计开始之前就能对系统各模块以及整个系统的结构复杂度进行有效的度量分析，从而对不同的系统设计方案进行比较，评价，选优;对不合理的模块和控制流进行重新划分和调整，使系统复杂度达到整体上的优化。基于 Tektronix 彩色标准的基本颜色系可用图 1 所示的锥体表示，对于现实世界中的任意颜色，可用上述 3 个基本参量来描述，而在视景仿真中则可用这 3 个参量来合成地面景物的颜色。笔者构造了100多种不同规模的软件系统结构模型，并对实际使用中的10种大型管理信息系统使用C语言实现该算法，对系统模块和系统结构复杂度进行了自动度量分析；对同一系统的不同系统结构方案进行了度量分析比较,其结果比较理想。
+注：本项目受正林集团技术创新基金资助(No.980530)。
+作者简介：王小明　副教授。主要研究方向：软件工程、管理信息系统、数据库的教学和研究。
+作者单位：甘肃省经济管理学院计算机中心　甘肃.兰州(730070)
+参考文献
+［1］　Tom DeMarco.Structured Analysis and System Specification.Yourdon inc,1979
+［2］　Roger S. Pressman, Software Engineering:A practitioner′s Approach,McGraw-HillBook Company,1982
+［3］　Elism B. & Susan U. Object-Oriented Methodologies and Systems, 1994
+［4］　Hausi A.M.&Rounald J.N.,The 17th IWCASE,1995
+［5］　张海藩.软件工程导论.北京:清华大学出版社,1998
+［6］　汤　庸.软件工程方法学及应用.北京:中国三峡出版社,1998
+［7］　孙　凌.计算机信息系统分析与设计.武汉:武汉大学出版社,1994
+［8］　杨士尧.系统科学导论.北京:农业出版社,1986
+收稿日期:1999-03-09(修改稿)

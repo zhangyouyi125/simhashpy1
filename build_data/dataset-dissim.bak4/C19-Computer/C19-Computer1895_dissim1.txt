@@ -1,0 +1,131 @@
+微型机与应用
+WEIXINGJI YU YINGYONG
+2000　Vol.19　No.5　P.7-8,27
+
+
+
+
+用VRML实现网上动画的方法
+林冬梅　王东　朱丽清
+摘 要：用VRML生成网上动画的几种常用方法，说明了每种方法的工作原理及主要部分编码实现，并对这几种方法进行了比较。
+关键词：VRML工具 Internet 3D图形
+　　Internet技术发展到今天，网页设计和制作得到了极大的丰富和发展。为了提高网页质量、增强浏览效果，许多网页设计人员采用了动画技术。在VRML规范确立以前，人们主要采用GIF、Java等制作动画，采用这些技术的前提是：首先制作预播放的各幅静态图像，然后按指定的顺序逐次播放。其弊端是设计工作量大、直观效果不好、交互性较差。VRML的出现解决了上述问题。
+　　VRML是在WWW上创建3D图形的工具，其主要特点是描述动态运动的实体，即动画。但在使用XML文档全部应用中，用来组成XML处理器的难点在于代价过高。
+表1 XML发展项目
+　
+发展范围项目名称项目概况参加单位
+企业间电子商务ICE信息和内容交换因特网交换发送新闻协议美CNET，SaveDevice
+OBI开放因特网因特网商品调度协议美OBI主导，Office
+PIP合作接口处理PC机业务界流通供应链协议美Zatanet主导，CompUSA等
+面向消费者电子商务IOTP因特网开放贸易协议企业消费者间信息交换协议美OTP主导，AT&T等
+OFX开放金融交换金融企业消费者间信息协议美Microsoft等
+P3P专用保密平台个人交换信息协议美Microsoft等
+机器控制BS数字广播卫星数字广播格式协议日本广播协会
+UpnP通用即插即用家电产品网络互联协议美Microsoft等
+
+　　（2）开发以XML为核心技术的初期产品实现企业间数据交换的核心技术是XML。
+1 相关术语
+　　（1）插值器：插值器节点由4个域组成，即：关键码、关键码值、eventIn（扇入）事件、eventOut扇出事件。关键码就是一系列值，关键码值是一系列用于插值的值，当插值器收到eventIn事件时，就依次将关键码对应的关键码值通过eventOut发送出去。
+　　（2）化身：当采用步行界面在三维世界漫步时，事实上已将自己嵌入到三维世界中，这称为化身。
+　　（3）绑定：VRML提供了能够控制用户的化身并带领用户在世界中漫游的机制，此机制称为绑定。
+　　（4）路由：使动画和用户交互成为可能的路线，在VRML中用ROUTE实现。使用ROUTE时，必须具备1个EventIn（结点接收的事件）和EventOut（结点发送的事件）。使用个人微系统的有关公司也都组成了RosettaNet组织，其目标是优化企业间信息交换的处理效率，构筑采用XML数据格式的巨大供应链。ViewPoint节点为所有这些变量提供初始值。当进入一个世界后，把化身放在文件中遇到的第1个ViewPoint节点中。由于绑定的存在，可以通过将能够控制用户视点的事件发送给ViewPoint。随着视点的变化，化身的位置也发生变化，因此观察到的场景也不断变化，从而实现了动画。由于原有的HTML应用的限制，使XML成为大势所趋。建立的主要路由如下：
+　　ROUTE Time．fraction＿changed TO P．set＿fraction
+　　ROUTE Time．fraction＿changed TO O．set＿fraction
+　　ROUTE P．value＿changed TO VP．set＿position
+　　ROUTE O．value＿changed TO VP．set＿orientation
+　　这里用OrientationInterPolator和PositionInterPolator共同工作，使得当化身绕对象转身时，保证化身始终面对它们。
+　　通过在服务器中生成画面数据的方式，将使用XSL处理器生成的HTML文档存在WWW服务器中，用户可以用现有的浏览器进行查阅，如图5所示。
+2．2 视点不变
+　　景物移动这是一种与视点有关的实现动画的方法，它将用户绑定到固定的视点，通过物理对象位置的移动或旋转实现动画。位置移动的对象定义在Transform（T）节点中。为实现对象的移动或旋转，也需定义OrientationInterPolator（O）或PositionInterPolator以及TimeSensor（Time）节点。建立的主要路由如下：
+　　ROUTE Time．fraction＿changed TO O．set＿fraction
+　　ROUTE O．value＿changed TO T．set＿rotation
+　　这种实现动画的方法，比较适合动画中包含的立体景物较少的情况，如球体的转动等。
+
+图3 XML文档的树结构
+　　从图3可知，存在着包容子结构的元素树结构本身，能以从父元素派生出的子节点来表示。在XML文档的开始标记中也规定了可指定几种属性的要求。
+　　另外一种方法是：通过TextureCoordinate节点在1个形状的每一个顶点控制s和t坐标。XML采用PIP来定义和处理标记交换的所有数据。这些形状中的每一个顶点都有1个texCoord域，其中可放入TextureCoordinate节点。TextureCoordinate节点定义如下：
+　　TextureCoordinate｛
+　　　 ExposedField MFVec2f Point［］
+　　　　｝
+　　point域中的值是在每一个坐标处使用的s和t值。如果使用1个路由到set＿point eventIn的插值器，便可以选择纹理坐标。这个EventIn是1个MFVec2f。VRML并没有1个内部节点用于执行这种插值，因此，只能用Script节点完成。下面是实现水上波纹动画的程序清单：
+　　Group｛
+　　　children Shape｛
+　　　　appearance Appearance｛
+　　　　　texture ImageTexture｛ur1″Water．gif″｝
+　　　｝
+　　　geometry IndexedFaceSet｛
+　　　　coord DEF C Coordinate｛
+　　　　　point［－5 －9 1，5 －9 1，5 3 1，－5 3 1］
+　　　｝
+　　　coordIndex［0，1，2，3］
+　　　texCoord DEF TT TextureCoordinate｛｝
+　　｝
+　｝
+｝
+DEF TS TimeSensor｛
+　　cycleInterval 15
+　　stopTime －1
+　　loop TRUE
+｝
+DEF S Script｛
+　eventIn SFFloat fraction
+　eventOut MFVec2f translation
+　field SFVec2f tt1 0 0
+　field SFVec2f tt2 0 0
+　field SFVec2f tt3 0 0
+　field SFVec2f tt4 0 0
+　url″vrmlscript：
+　　function fraction（value）｛
+　　　tt1［1］＝9*value；
+　　　tt2［1］＝6*value；
+　　　tt3［1］＝3*value；
+　　　tt4［1］＝1*value；
+　　　translation［0］＝tt1；
+　　　translation［1］＝tt2；
+　　　translation［2］＝tt3；
+　　　translation［3］＝tt4；
+　　｝″
+　｝
+　ROUTE TS．fraction＿changed TO S．fraction
+　ROUTE S．translation TO TT．set＿point
+　　可以用类似的方法使用TextureTransform节点，模拟具有纹理的瀑布。
+2．4 使用BackGround节点创建动画
+　　VRML中的Background（B）节点为虚拟世界提供背景颜色或图像。通过颜色插值器ColorInterpolator（CI）在1组颜色关键码值之间进行插值，产生value＿changed事件，将变化后的颜色路由到BackGround节点的skyColor或groundColor域，形成动画效果。
+　　为了接收颜色插值器value＿changed事件产生的颜色值，定义1个Script节点如下：
+　　DEF S Script｛
+　　EventIn SFFloat fraction
+　　EventOut MFColor color
+　　Field SFNode CI USE CI
+　　url ″vrmlscript：
+　　　function fraction（）｛
+　　　　color［0］＝CI．value＿changed；
+　　　　color［1］＝CI．value＿changed； 
+　　｝″｝
+　　ROUTE TS．fraction＿changed TO CI．set＿fraction
+　　ROUTE TS．fraction＿changed TO S．fraction
+　　ROUTE S．color TO B．set＿skyColor
+2．5 帧动画
+　　利用VRML中的角色（1个平坦的始终面向用户的图像）和Switch节点便可在VRML中实现帧动画。具体做法为首先创建一系列图像；用它们制作一些角色，使这些角色成为Switch的子节点；当在这些子节点之间快速切换时，便形成动画。
+　　XML的文档类型以标记集合来定义。例如：要播放由10个角色组成的动画，所需定义的Script节点如下：
+　　DEF Myscript Script｛
+　　　eventIn SFFloat fraction
+　　　eventOut SFInt32 whichChoice
+　　　url″vrmlscript：
+　　　function fractionvalue（）｛
+　　　whichChoice＝value ＊9； 
+　　　｝″
+　　｝
+　　然后通过如下路由实现动画： 
+　　ROUTE TS．touchTime TO Time．startTime
+　　ROUTE Time．fraction＿changed TO MyScript．fraction
+　　ROUTE MyScript．whichChoice TO MySwitch．whichChoice
+　　其中的MySwitch定义了包括各个角色的Switch节点。
+3 几种方法的比较
+　　上面介绍了用VRML生成动画的几种方法，由于它们的工作机理不同，因而应用环境也略有不同。
+　　视点移动、景物不变这种实现动画的方法，实质上是通过化身位置的改变，从而使周围世界景物的位置相对的发生了变化，所以对动画中包含的立体景物较多时适用。
+　　视点不变、景物移动这种实现动画的方法是化身不动，物理对象的位置发生改变，因而对动画中包含的立体景物较少时适用。目前出台的IE 5．0即已是具有XML文档显示功能的浏览器，但作为WWW页面标记语言的HTML要考虑全部可换为XML。
+　　以上3种方法应用范围较广，而使用纹理坐标的动画和使用BackGround节点创建动画相对来讲适用的场合较少，只有当动画与纹理或背景有关时，才能分别用到它们。
+林冬梅（黑龙江省安达市大庆石油学院计算机科学系151400）
+王东（黑龙江省安达市大庆石油学院计算机科学系151400）
+朱丽清（黑龙江省大庆石油管理局采油三厂地质大队）
+收稿日期：1999－12－10

@@ -1,0 +1,116 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+空间辐射散热器含液滴介质的
+辐射特性和辐射传热
+橙盍⒚鳌√负推健⊥跗窖簟×趿只　夏新林
+　　摘　要　本文从米氏电磁散射理论出发，计算了含液滴介质的辐射特性。考察了各向同性散射能量传递份额的再分配，导出了吸收、发射、各向同性散射介质的辐射传递系数。计算了空间辐射散热器液滴层瞬态辐射换热，经与文献［4，5］的比较表明，本文所导出的辐射传递系数计算方法正确，精度高。用计算机辅助实验，分析液滴发生器产生粒子的大小、粒径分布对瞬态辐射换热的影响，可减少空间辐射散热器设计过程中的实验次数。
+　　主题词　空间辐射散热器　液滴层　米氏电磁散射理论　辐射换热　辐射传递系数
+RADIATIVE PROPERTIES AND HEAT TRANSFER OF A
+DROPLET-FILLED LAYER IN SPACE RADIATOR
+Ruan Liming Tan Heping Wang Pingyang Liu Linhua Xia Xinlin
+(School of Energy Science and Engineering,Harbin Institute of Technology . Harbin . 150001)
+　　Abstract　The radiative properties of a droplet-filled layer are calculated by using the Mie scattering theory in this paper.The redistribution of radiative energy in the case of isotropic scattering is investigated,and the radiative transfer coefficient (RTC) in an absorbing,emitting and isotropic scattering medium is derived.The transient radiative heat transfer of a droplet-filled layer in space radiator is solved.Then the validity and high precision of the formula for the RTC are confirmed by comparing with references ［4,5］.Finally,the effects of size or size distribution of droplet,which are created by generator,on the transient coupled heat transfer are analyzed by means of computer aided experiment,so the numbers of experiment can be reduced in design of space radiator.
+　　Key words　Space radiator Droplet layer Mie scattering theory Radiative heat transfer Radiative transfer coefficient
+1　引言
+　　空间轨道发电装置的废热在空间的散逸需要使用散热器。
+　　(4)将报告存在磁盘上。
+　　基于规则的调度方法通常被用来实现有限能力调度。文献［4］假设沿液滴层厚度方向温度是均匀的，由此得到了简化结果。文献［5］对沿液滴层厚度方向温度不均匀的冷却效果进行了数值模拟。本文导出两侧均为半透明界面下一维吸收、发射、各向同性散射介质的辐射传递系数；对空间辐射散热器喷洒的液滴层的散热过程进行了数值模拟，并与文［4，5］的计算结果进行了比较。
+2　空间辐射散热器含液滴介质的计算模型
+　　如图1所示，液滴层由液滴发生器喷出，以匀速穿过空间，它具有不变的厚度L。在垂直于X-Y平面方向的范围相对L要大得多，因此在该方向的变化可忽略。液滴层在Y=0的截面上温度均匀为Ti，由于液滴层向空间散热冷却，因此液滴层的温度T=f(x,y)。液滴层由许多个半径为5-100μm的液滴组成，发射、吸收和散射辐射能。ZrO2的αs初值小，空间的稳定性较好，但其密度大，不易分散，俄罗斯方面看来已经掌握了其分散技术 。由于液滴在X向的运动速度v等于零，且时间t=y/u，因此：
+C(T/t)=-(q/x+q/y)　　　T(x,y=0)=Ti　　　　　　　　　　　　　　(2)
+　　通常，空间液滴发生器喷口与液滴接受器的距离Y＞10L，并且在X方向两侧的辐射边界条件相同，液滴层向两侧环境辐射散热，因此在X方向上的光学厚度τxo=κL/2(κ为介质的衰减系数)。
+　　对于负责全面服务的维修中心来说，必须控制好材料、人员、设备的有效使用，而工时成本是其中最大的一项，如果不能很好管理，赢利就成为问题。
+　　(8)加强对前货舱中天线上方区域地板的清洁工作，及时清除污水和其他腐蚀物质，一旦发现地板受损，应及时修补。则冷却液滴层的能量控制方程为：
+C(T/t)=-(q/x)　　　T(x,y=0)=Ti　　　　　　　　　　　　　　　(3)
+　　液滴层位于两个代表环境的黑表面S-∞和S+∞之间，其温度分别为TS-∞和TS+∞。沿液滴层厚度方向分成NM个节点(控制体)，用结点i表示。在时间间隔t(=mΔt)到t+Δt(=［m+1］Δt)内，离散化方程为
+C(Tm+1i-Tmi)/Δt=Φr,m+1i/Δx　　　　　　　　　　　　(4)
+　　液滴层与环境的交界面为半透明界面(在某些波段热射线可以穿透界面)。考虑介质对辐射的选择性，介质衰减系数κ、吸收系数α、散射系数σs、折射率n、表面反射率ρ随波长的变化用一组矩型谱带表示，共分NB个谱带，下角标k表示谱带模型k区域。
+
+图2　ACMS超限报告使用数据链进行反应
+2.作为飞机排故的手段
+　　飞机各系统传输到ACMS核心组件的参数有700多个，维护人员通过显示组件可以很方便的调出各系统的有关数据。上角标s表示镜反射，下角标t-t表示半透明介质的两侧均为半透明界面。［ViVj］k，［ViSj］k(Sj=S-∞,S+∞)分别为吸收―发射―各向同性散射性介质内，控制体与控制体、控制体与表面间的单色辐射传递系数。求解(4)式的关键是求辐射源项式(5)，求辐射源项的关键是求单色辐射传递系数。求单色辐射传递系数的前提是必须了解含液滴介质层的辐射特性。
+3　含液滴介质辐射特性计算
+3.1　粒子系的辐射特性
+　　具有某种粒径分布的粒子系的单色辐射特性参数由下试计算
+　　　　　　　(6)
+式中：κη,λ,p分别为粒子系单色衰减、散射及吸收系数；相应Qη,λ为单个粒子的单色衰减、散射和吸收因子。粒子系粒子半径范围［rmin,rmax］；P(r)为粒径分布函数［cm-3 μm-1］，定义为单位容积内半径为r→r+dr的粒子数。当粒子复折射率已知时，单个球形粒子辐射特性可以利用米氏散射电磁理论计算；当粒子尺度参数β=2πr/λ1时，粒子散射较弱，可以利用简化的Rayleigh散射电磁理论计算；当粒子尺度参数β1时，可以利用几何光学理论简化计算。ФЛ―5246牌号用泰氟隆树脂作粘料，由于飞行实验结果不理想，该牌号没有被采用。通常粒子系是由不同粒径的粒子组成，其散射反照率各不相同，因此必须计算平均散射反照率λ
+　　　　(7)
+　　本文假定散射是各向同性的。
+3.2　液滴层的辐射特性计算
+　　如果液滴层为液滴与其它吸收性(非散射性)介质所组成，则液滴层的单色衰减系数κtot,λ
+κtot,λ=κext,λ,p+(1-Fv) . κabs,λ,m
+　　式中：κabs,λ,m为吸收性介质的吸收系数；Fv为液滴体积浓度，由下式直接计算得到：
+
+　　空间液滴层由液滴与空气组成，空气吸收系数为零。因此，粒子系衰减系数即为液滴层的衰减系数。液滴层的液滴粒径分布由液滴发生器确定。设计液滴发生器应遵循：(1)液滴回收率高，损耗小；则液滴粒径的分布范围不宜太宽。(2)冷却效果好。作为计算机辅助实验，本文对Modifided gamma粒径分布函数进行了数值模拟。Modifided gamma分布函数为：P(r)=p1 . rp2 . exp(-p3 . r)粒子半径范围为0.5～25μm。p1,p2,p3为三个常量，分别取下列三组数据。分布曲线见图2。
+
+图2　符合Modifided gamma分布的非均匀粒径粒子系的粒径分布曲线
+　　　　casel:p1=1000,p2=2,p3=0.3;相应Fv=5.230E-4 (cm3/cm3)
+　　　　case2:p1=1000,p2=2,p3=0.4;相应Fv=1.144E-4 (cm3/cm3)
+　　　　case3:p1=1000,p2=2,p3=0.5;相应Fv=3.169E-5 (cm3/cm3)
+　　已知粒子复折射率(水的复折射率见表1)，给定粒径和波长范围，则单色衰减、散射、吸收因子及单色散射反照率可用Mie散射理论计算程序求出［7］。将单色衰减、散射、吸收因子及粒径分布函数代入式(6)及(7)，得到液滴层辐射特性参数(见表1)。
+表1　符合Modifided gamma分布的含液滴介质的单色衰减系数κtot,λ(cm-1)
+及平均散射反照率λ
+λ水的复折射率case1case2case3
+nλkλκtot,λλκtot,λλκtot,λλ
+2.01.3060.00110.5870.9200.1580.9320.0540.942
+3.51.40.00940.6300.7310.1740.7660.0610.797
+5.01.3250.01240.6610.7480.1830.7850.0640.818
+8.01.2910.03430.6880.6640.1900.7080.0650.745
+10.01.2180.05080.6890.6590.1720.6730.0520.677
+12.01.1110.1990.5130.4200.1270.3950.0400.367
+13.01.1460.3050.5610.4360.1430.4130.0460.388
+14.01.2100.3700.5940.4460.1530.4260.0500.404
+
+4　辐射传递系数
+　　已知含液滴介质层的辐射特性，则可求出单色辐射传递系数。镜反射下吸收、发射性介质的辐射传递系数(ViVj)k,(ViSj)k的推导过程及表达式请参阅文献［8，9］。因此，在日常维护工作中应注意：
+　　(1)加强机组人员与维护人员之间的联系。采用Windows NT ServerRAS建立远程访问服务器，对于一些距离较远的客户端，可以通过MODEM联入系统。
+　　有散射时，衰减系数κk=αk+σs,k。
+　　这个市场的发展看来将更多地受到飞机供应商利益的驱动而不是航空公司的，因为历来大的航空公司不卷入全面保障市场，只是小公司有这方面的兴趣。为书写方便，下列各式略去下角标k；用下角标a表示辐射传递系数所表示的能量传递份额中被吸收的部分。根据维修方案，PW127F发动机累计飞行3000h做热检，但根据监控综合分析结果，这台发动机在使用到2599h后被提前吊下。注意：散射性介质是介质散射，界面只反射，不散射。则考虑第n+1次吸收和散射后［10］：
+　　　　(8a)
+　　　　　(8b)
+5　计算结果及验证
+　　在外层空间中，废热从液滴(含微粒)介质层中的散逸只能靠热辐射方式。其物理模型第一步可简化为：半透明界面下一维等温吸收、发射、各向同性散射的灰介质与周围环境的辐射换热。系统使用PC服务器，Windows NT Server操作系统，Oracle 7.3 for NT网络数据库，PowerBuilder6.0前端开发工具。则无因次辐射热流为：
+　　　　　(9)
+文［4］对等温灰介质，并令nm=1，采用了积分方程的数值解。本文在计算中节点数(控制体数)NM取：20/单位光学厚度。计算结果与文［4］的比较见表2。从表中可以看出，结果非常理想。
+表2　半透明界面下一维等温各向同性散射灰介质的无因次辐射热流
+τxo散射反照率ω=0.00散射反照率ω=0.30散射反照率ω=0.60
+文［4］本文计算结果文［4］本文计算结果文［4］本文计算结果
+0.50.557NM=10　0.5567910.449NM=10　0.4492460.303NM=10　0.303137
+10.781NM=20　0.7806160.667NM=20　0.6668720.490NM=20　0.490198
+101.000NM=200　0.999930.993NM=200　0.9256080.808NM=200　0.805340
+τxo散射反照率ω=0.80散射反照率ω=0.90散射反照率ω=0.95
+文［4］本文计算结果文［4］本文计算结果文［4］本文计算结果
+0.50.172NM=10　0.1724180.0926NM=10　0.0925890.0481NM=10　0.048075
+10.304NM=20　0.3036280.173NM=20　0.1725510.0926NM=20　0.092624
+100.659NM=200　0.6576290.518NM=200　0.5182600.389NM=200　0.389426
+
+　　在上例中，如果考虑液滴介质层的冷却过程，并与文［5］比较，用其算例：nm=1，灰介质；定义介质层的发射率=q(τxo,t)/［σT4m(t)］,其中Tm为介质层的积分平均温度；收敛性条件为：
+|{(TNM/2-T1)/T1}m+1-{(TNM/2-T1)/T1}m|≤EPS2　　　　　　　　　　　(10)
+　　　　　　　(11)
+本文的计算结果与文［5］的比较见表3。上述几种方法以不同形式应用于制造系统中，尽管如此，通过纯理论的方法产生可接受的调度的前景仍相当暗淡。因此在地面上进行实验研究，模拟太空环境是非常困难的，特别是模拟无重力下的射流。文献［4，5］在NASA的资助下，对空间辐射散热器液滴层的辐射换热进行了数值模拟，建立了合理的数学模型。
+　　本文从米氏电磁散射理论出发，计算了含液滴介质的辐射特性；考察了各向同性散射时的能量传递份额的再分配，导出了吸收、发射、各向同性散射介质的辐射传递系数。选用文献［4，5］的数学模型，计算了空间辐射散热器液滴层瞬态辐射换热，经与文献［4，5］的比较表明，本文所导出的辐射传递系数计算方法正确，精度高。
+
+图2　高压涡轮导向器
+总结
+1.监控工具的联系与区别
+　　PW127F发动机性能监控的三大工具ECTM、PAC及发动机孔探报告都能从自身的特点反映发动机的性能，它们之间是相互联系、相互映证的，但这三个工具在人员和物质消耗上又各自不同。在已知介质复折射率的前提下，也可对采用其它工质的空间辐射散热器进行数值模拟。
+*国家杰出青年科学基金(59725617)及国家自然科学基金(59706008)资助项目
+作者单位：哈尔滨工业大学能源科学与工程学院 . 哈尔滨 . 150001
+参考文献
+1　T Mattick A,Hertzberg A.Liquid droplet radiators for heat rejection in space.Journal of Energy,1981,5:387-393
+2　Presler A F,Coles C E,Diem-Kirsop P S,White K A.Liquid droplet radiator program at the NASA lewis researchcenter.ASME paper,1986,86-HT-15
+3　Taussig R T,Mattick A T.Droplet rediator systems for spacecraft thermal control.Journal of Spacecraft Rockets,1986,23:10-17
+4　Siegel R.Transient radiative cooling of a droplet-filled layer.Journal of Heat Transfer,1987,109(1):159-164
+5　Siegel R.Separation of variables solution for non-linear radiative cooling.Int.J.Heat Mass Trans.,1987,30(5):959-965
+6　余其铮，马国强，刘晓彦.Mie散射程序的改进.哈尔滨工业大学学报，1987，(4)：21-26
+7　谈和平，余其铮，阮立明.线性辐射反演确定液滴粒径的分布.工程热物理学报，1992，13(3)：314-317
+8　谈和平，余其铮，Lallemand M.高温下半透明介质内辐射与导热的非稳态复合换热.工程热物理学报，1989，10(3)：295-300
+9　Tan H P,Lallemand M.Transient radiative conductive heat transfer in flat glasses submitted to temperature,flux and mixed boundary conditions.Int.J.Heat Mass Transfer,1989,32(5):795-810
+10　Tan H P,Ruan L M,Xia X L,Yu Q Z,Tong T W.Transient coupled radiative and conductive heat transfer in an absorbing,emitting and scattering medium.Int.J.Heat Mass Transfer,1999,42(15):2967-2980
+收稿日期:1998年4月20日
+修回日期:1998年10月19日

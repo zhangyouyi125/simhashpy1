@@ -1,0 +1,100 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+使用VxD实现Windows95的中断处理
+王勇　盖江南　付长冬
+　　摘　要　本文主要说明在Windows 95系统平台下虚拟设备驱动程序（VxD）如何处理中断，包括申请、占有、释放，并给出VxD处理中断的流程和具体实例。
+　　关键词　VxD，硬件中断，VPICD，VMM，虚拟设备
+　　在某些系统的开发中，常需实时采集一些状态信息，将信号通过接口板传送给主机，主机则通过中断方式接收数据来实现实时的测量和控制。在相同的菜单上 (Config-DirSync-Requestor-Import)，点击“Import”并点击“Yes”确认。
+1　Windows 95的中断原理
+　　Intel的80X86 CPU系列芯片规定了0、1、2和3四个级别的执行代码可信度，Windows 95中只用到了0级和3级。国家教育部将我国绝大多数大学的校园网连接起来，构成中国教育科研计算机网（CERNET）。而应用程序的代码只在可信度最低的第3级内执行，其访问硬件和接触自身进程空间以外的内存的能力受到限制。
+　　在Windows 95下可以用两种方法实现中断，一种是编写DLL程序，另一种是使用虚拟设备驱动程序（VxD）。两者的区别在于：VxD是作为操作系统的组件运行于第0级的，而DLL程序却运行于第3级。
+　　. 查询条件录入的实现：
+　　查询条件录入页面如下图所示：
+
+　　该页面主要用FrontPage 98制作，页面主要包含一个表单。VMM的任务是将构成系统的硬件虚拟化，分配应用程序执行的时间片并管理虚拟内存的内务，对用户而言是不可见的。硬件设备在数据准备好之后就发中断信号，但VxD并不直接截获这些中断，而是依赖于虚拟可编程中断控制器（VPICD）来处理硬件中断。
+　　VPICD虚拟化可编程中断控制器（PIC）硬件，允许其它VxD支持自己的硬件设备，譬如磁盘驱动器和通信端口，它们使用硬件中断去通知主机输入数据或状态的改变。VPICD可以映象硬件中断到其它设备，向其它设备提供一些服务，通过这些服务允许虚拟设备请求中断，并可在虚拟机中模拟硬件中断，称为虚拟中断。并且它还可以处理PIC硬件的I/O操作。它的处理结构图如图1所示。
+
+图1　VPICD的处理结构图
+　　VPICD提供的基本服务如下：
+　　（1） VPICD―Vrtualize―IRQ
+　　（2） VPICD―Set―Int―Request
+　　（3） VPICD―Phys―EOI
+　　（4） VPICD―Virtual―EOI
+　　（5） VPICD―Clear―Int―Request
+　　（6） VPICD―Force―Default―Behavior
+　　（7） VPICD―Force―Default―Owner
+　　VPICD―Virtualze―IRQ负责向VMM申请硬件中断IRQ。如果此IRQ没有被其它硬件所占用，则得到一个中断句柄，可以设置新的中断处理程序，并清除进位寄存器。","保存失败。
+　　VPICD―Set―Int―Request设置一个指定的中断和虚拟机的虚拟中断请求，导致虚拟机系统产生一个虚拟中断。
+　　VPICD―Clear―Int―Request则消除在指定虚拟机中设置的虚拟中断。
+　　VPICD―Pyhs―EOI结束一个硬件中断，允许下一次的硬件中断。
+　　VPICD―Virtual―EOI允许其它的VxD向VPICD发送虚拟EOI命令，结束一个虚拟中断。
+　　VPICD―Force―Default―Behavior释放此设备向VMM申请的IRQ，允许其它设备占用此IRQ。VPICD―Force―Default―Owner则重新设置此IRQ对应的默认的中断处理程序。
+2　虚拟设备的中断控制
+　　在阐述虚拟设备的中断控制前，首先说明一个非常关键的数据结构，定义如下：
+　VPICD―IRQ―Descriptor STRUC
+　　　VID―IRQ―Number　　　　dw　？
+　　　VID―Optionsdw0
+　　　VID―Hw―Int―Procdd？
+　　　VID―Virt―Int―Procdd0
+　　　VID―EOI―Procdd0
+　　　VID―Mask―Change―Procdd0
+　　　VID―Iret―Procdd0
+　　　VID―IRET―Time―Outdd500
+　　　VID―Hw―Int―Refdd？
+　　　VPICD―IRQ―Descriptor　　ENDS
+　　此数据结构中的域含义如下：VID―IRQ―Number定义虚拟设备申请的IRQ数，VID―Options必须为0，VID―Hw―Int―Proc是用户中断处理程序的地址，在虚拟化成功后，它将替代系统默认的中断处理程序地址。以上三个域是必须填写的。
+　　VID―Virt―Int―Proc是虚拟中断处理程序地址，而VID―EOI―Proc是物理中断结束后调用函数的指针。
+　　虚拟设备中断控制的处理过程如下：（1） 当用户通过CreateFile()函数装载VxD时，系统向VxD发送DEVICE―DYNAMIC―INIT消息，VxD消息控制处理程序调用对应的初始化程序。在此程序中如下处理：
+　　MOV EDI，OFFSET32 VID
+VxDCall VPICD―Virtualize―IRQ
+　　而VID可以如下定义：(假设申请IRQ 为9，中断处理程序为hw―int―proc)
+　VID VPICD―IRQ―Descriptor <9，0，hw―int―proc，>
+　　（2） 中断处理程序在处理中断时必须按以下的步骤进行：
+　　. 调用VPICD―Pyhs―EOI结束物理中断。
+　　注 2.1　控制器中的加权矩阵R直接与矩阵L，F，H，D以及E 有关.若时滞控制输入项u(t-h)前的系统矩阵充分小(相对于矩阵范数)，则矩阵不等式(5)等价于
+I+L+LT＞0
+这与文献［5，4］中的情形相同.此时系统(1)的鲁棒镇定问题完全由下列不确定线性系统的 鲁棒镇定问题的解确定.
+(t)＝(A+ΔA)x(t)+(B+ΔB)u(t)
+根据文献［6，7］选取R，即R-1＝ηI，其中选取η满足 ，并且
+
+若条件(5)成立，则有β＞0. 注意到(5)中参数ε＞0的引进较取ε＝1更具有一般性。
+　　（3） 在虚拟中断处理程序中作如下处理：
+　　. 真正的中断处理。
+　　. 调用VPICD―Clear―Int―Request清除虚拟中断。
+　　. 调用VPICD―Virtual―EOI结束虚拟中断。
+　　（4） 当用户通过CLOSEHANDLE函数卸载VxD时，系统向VxD发送DEVICE―DYNAMIC―EXIT消息，VxD消息控制处理程序调用对应的退出处理程序。在此程序中作如下处理：
+　MOV EDI，IRQHANDLE
+VxDCALL VPICD―Force―Default―Behavior
+VxDCALL VPICD―Force―Default―Owner
+3　VxD实现中断处理的实例
+　　本节以一个具体实例说明VxD中如何处理中断，给出的实例略有删节。
+　　优点：
+　　通过对传统的路由器进行配置构造VPN，实现简便，思路清晰。
+　　(1) 模糊Flow-shop问题的染色体编码
+　　对模糊Flow-shop问题，就一次具体的排序而言，工件的加工顺序是确定的，因而我们 采用与一般Flow-shop问题相同的编码形式，如3 2 7 8 6 5 4 1，各基因码表示加工的零件号?　　　　　　　　　　　　　　　　　　　　//具体的中断处理应在此处理
+mov eax，irqhandle
+VxDcall VPICD―Clear―Int―Request　　　　　　　　　　　//消除指定虚拟机中的虚拟中断
+VxDcall VPICD―Virtual―EOI　　　　　　　　　　　　　　　　　　　　//发送虚拟EOI命令
+sti　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//开中断
+clc　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//清除进位标志
+ret
+EndProc CVXD―VIRT
+VxD―LOCKED―CODE―ENDS
+END
+4　结束语
+　　从以上的分析和实例可以看出，使用虚拟设备驱动程序实现Windows 95的中断处理，可靠性更高，速度也更快，一般比使用DLL程序快2―3倍，并且在每秒8000次中断的情况下也能可靠稳定地运行，确实给开发Windows 95下的中断程序带来了极大的方便。
+作者简介：王勇　助理讲师。主要从事技术开发、系统管理与维护等工作。
+盖江南　硕士研究生。研究方向：计算机图形图像处理。
+　　采用上述方法，我们为大型制药企业设计和开发了基于广域网的MIS的会计信息系统，在面向对象分析和实现以及会计信息系统的应用方面做了大量的工作，已取得了令人满意的效果。研究方向：操作系统的设计与实现。
+作者单位：总装备部指挥技术学院　北京（101416）
+参考文献
+［1］　A.Baker.Windows NT设备驱动程序设计指南.北京:机械工业出版社,1996
+［2］　A.King.Windows 95 技术内幕.北京:清华大学出版社,1995
+［3］　H.Cluster.Windows NT技术内幕.北京:清华大学出版社,1996
+［4］　木　子,等.UNIX设备驱动程序.北京:学苑出版社,1993
+［5］　彭向东,等.使用VtoolsD开发Windows95中断程序.电脑与信息技术,1998;(5)
+收稿日期:1998-12-04(修改稿)

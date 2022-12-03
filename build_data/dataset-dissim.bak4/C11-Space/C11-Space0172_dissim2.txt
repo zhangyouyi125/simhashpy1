@@ -1,0 +1,60 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年  第3期   No.3 May   1998
+科技期刊
+航天器柔性伸展附件非线性
+振动稳定性研究*
+
+李俊峰　王照林
+(清华大学工程力学系*北京*100084)
+　　摘　要　研究由中心刚体和柔性伸展附件组成的非线性刚柔耦合系统,假设附件为有限变形梁,但本构方程是线性的。利用能量积分构造Lyapunov函数,根据部分变量稳定性定理,证明了当中心刚体无控制力矩,附件驱动力为零时,梁在等速伸展或收缩时的横向非线性振动是稳定的。
+　　主题词　伸展柔性梁　刚柔耦合系统　部分变量稳定性
+STUDY ON THE STABILITY OF NONLINEAR 
+VIBRATIONS OF A DEPLOYING FLEXIBLE 
+APPENDAGE OF A SPACECRAFT
+
+Li Junfeng　Wang Zhaolin
+(Department of Engineering Mechanics,Tsinghua University*Beijing*100084)
+　　Abstract　Consider a rigid-flexible coupled system which consists of a central rigid body deploying a flexible appendage.The appendage is modeled as a finite deflection beam having linear constitutive equations.By taking the energy integral as Lyapunov function,it is proved that nonlinear transverse vibrations of the beam undergoing uniform extension or retrieval are stable when there are not controlling moment in the central rigid body and driving force on the beam,according to the partial stable theorem.
+　　Key words　Deploying flexible beam　Rigid-fiexible coupled system　Partial stability
+1　引　言
+　　近年来,航天器的柔性附件(梁、板等)在伸展过程中的振动得到了广泛的关注［1-4］。目前的研究都假设附件的柔性变形是小变形,将梁的横向位移按照梁的振型展开成无究级数并进行模态截断,然后利用数值积分方法或者渐近方法求解线性化的时变常微分方程组。二者的偏差归零过程如图1所示。它可以在系统运行的不同阶段,选用合适的控制律,组合简单的控制方法实现高品质控制。这两个结论有差异的原因在于对系统模型的简化程度不同。文［1］假设航天器中心刚体的运动与附件的伸展和振动不耦合,所得渐进分析解适用于中心刚体固定不动的情况。文［2］考虑了刚体运动和附件运动的耦合,但是基于小变形假设对系统运动方程进行了线性化处理,所以耦合仅限于线性耦合。
+　　由于现代航天器的附件具有尺寸大、重量轻、柔性大等特点,小变形假设已经不再适用。切换时两个重要因素是切换条件的选取和进入新的控制模态时控制器的初始状态设置。这类系统的特点是动特性好,对速度环的输入进行限幅后,可调整电机的最高转速。CX0Y0是惯性坐标系,而OXY是描述梁伸展运动和变形运动的固联于中心刚体O点的动坐标系。设OX轴相对惯性坐标系的转角为α(t)。梁未变形状态的自然位置沿OX轴方向,长度为L(t)。
+　　PD测速反馈系统:
+　　这种系统的设计思想是用测速反馈构成宽频带的速度环来抑制干扰,用窄频带的位置环实现位置跟踪。因此,切换后Ⅲ型系统的能量应尽可能小,我们以二次型性能指标:(Q为正定实对称阵)来表示能量,可以计算当XG(0)已知时,为使J达到极小,控制器初始状态Xc(0)的值。
+则Q点向径为
+
+Q点的绝对速度为
+
+Q点的绝对加速度为
+
+梁对固定点C的动量矩为
+
+其中ρ为梁的密度,A为横截面面积。
+设梁为不可伸长的,等截面的转动惯量为I,则系统的运动方程为［5］
+
+
+式中E为弹性模量,Ic和Mc(t)分别为中心刚体的转动惯量和控制力矩。M(x,t),P(x,t),S(x,t)分别是梁的弯矩、轴向力和剪力,连界条件为
+
+式中F(t)为梁的伸展驱动力。在实际工作中,切换都是在小偏差时进行,快速性已有保证。
+3　稳定性分析
+　　为研究特解的稳定性,取如下扰动变量:
+
+代入系统运动方程(1)-(7)得扰动方程
+
+系统的动能为
+
+系统的势能为
+
+当Mc(t)=0,F(t)=0时,系统有能量积分
+H=T+V=const
+(10)
+将扰动表达式代入得
+
+(11)
+显然,H≥0,从H的表达式(11)可知,只有
+
+(12)
+时,H才可能取零值。本文讨论了最优切换状态设置问题及切换条件的选取,并针对某型转台伺服系统数字控制器介绍了实际的算法及实验结果。
+4　结　论
+　　可定轴转动的中心刚体和安装在其上柔性附件组成一个刚柔耦合系统。假设附件为有限变形梁,则系统的运动微分程是非线性的。但由于系统有-270°的初始相角,补偿后其动态特性不会很好。可见前者的超调量明显减小,实现了无超调归零,只是过渡过程时间略大些

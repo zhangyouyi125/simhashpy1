@@ -1,0 +1,17 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第2期 No.2 Vol.18 1998
+科技期刊
+
+经合组织发表报告批评西班牙环境保护不力
+　　一份经合组织(OECD)评论西班牙环境状况的报告虽然肯定了某些方面取得的进步，但较尖锐地批评了西班牙的环境保护实践。报告坚持要求西班牙作出更大努力。
+　　报告批评的主要目标是水和废物管理。在大气污染方面，报告赞扬了西班牙二氧化硫排放有所减少和努力建立一套监测大气质量的系统，但认为还要作努力，因为西班牙仍是欧洲联盟内继德国和英国之后的第三大二氧化硫排放大户，如按人均计算，则比OECD欧洲国家的平均值高得多。
+收稿日期：1997-04-15
+。
+关键词　反硝化菌　废水生物脱氮　固定化细胞技术
+Denitrification characters of denitrifying bacteria immobilized by polyvinyl alcohol(PVA).Yuan Linjiang(Department of Environmental Engineering,Xi'an University of Architecture and Technology,Xi'an 710055) .China Environmental Science.1998,18(2):189～191
+Abstract― The denitrification characters of denitrifying bacteria immobilized by PVA were studied in this paper,compared with that of free bacteria. It's showed that the optimum pH value and temperature of immobilized denitrifying bacteria were 8 and 30℃ respectively.They are as same as that of free bacteria.When it was not in optimum condition, immobilized denitrifying bacteria's activity was greater than that of free bacteria.Immobilized denitrifying bacteria had more resistance to low temperature(10℃),DO low concentration and NH+４ high concentration than that of free bacteria.
+Key words: denitrifying bacteria　N-removal of wastewater　Immobilization cell technology
+　　 固定化微生物技术是目前各国污水生物处理领域竞相研究开发的内容之一，具有广阔的应用前景〔1〕。挥发性有机化合物总计120万t，45%来自移动源，55%来自固定源。固定源中使用各类溶剂是最大排放源。　 
+1.3　试验方法
+　　分别称取适量包埋菌和相当的未包埋反硝化菌放入人工合成废水中（含NO-3=50mg/L，PO3-４=3mg/L,COD/TN=20）,磁力搅拌，液面用液体石腊密封。OECD报告认为西班牙应加强环境保护法规和执法，并明确中央和地方政府的职责。紫外分光光度法测定NO-3浓度

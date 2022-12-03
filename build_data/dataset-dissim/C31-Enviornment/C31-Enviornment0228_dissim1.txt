@@ -1,0 +1,43 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第2期 No.2 Vol.18 1998
+科技期刊
+
+南极麦克斯韦尔海湾阴离子洗涤剂污染研究*
+袁峻峰　（上海师范大学生物系，上海200234）
+陈浩文　吴宝玲　(国家海洋局第一海洋研究所,青岛 266003)
+李永祺　(青岛海洋大学海洋生命学院,青岛 266003)
+　　文　摘　 首次报道了南极麦克斯韦尔海湾海域阴离子洗涤剂污染的变化和分布状况。
+1.2　分析方法
+　　TCE的浓度采用气相色谱（上海分析仪器厂100型，配热导检测器）进行分析，色谱柱为3mm×1m不锈钢柱；固定相采用Porapak-Q(日本岛津公司提供)；柱温165℃；检测器温度180℃； 载气为H2，25mL/min。主要污染源是各考察站的生活污水。
+　　关键词　南极麦克斯韦尔湾　阴离子洗涤剂污染
+The anion detergent pollution of antarctic Maxwell Bay and its adjacent sea areas.Yuan Junfeng(Department of Biology,Shanghai Normal University,Shanghai 200234);Chen Haowen,Wu Baoling(First Institute of Oceangraphy,State Oceanic Administration 266003);Li Yongqi(College of Marine Biology,Ocean University of Qingdao,Qingdao 266003).China Environmental Science.1998,18(2):151～153
+Abstract―The change and distribution of anion detergent pollution in the antarctic Maxwell Bay and its adjacent sea areas were reported for the first time.During the summer of antarctic in 1993～1994,the concentration of the detergent was varied from 0.148 to 0.997 mg/L with 30% super standardized.This pollution comes from these stations.
+Key words:Antarctic Maxwell Bay　anion detergent pollution
+　　南极麦克斯韦尔海湾是南极考察最活跃的区域,仅乔治王岛无冰区就有智利、阿根廷、波兰、前苏联、巴西、乌拉圭、韩国、秘鲁、 中国等国家的考察站及众多的避难所。
+1.2　分析方法
+　　TCE的浓度采用气相色谱（上海分析仪器厂100型，配热导检测器）进行分析，色谱柱为3mm×1m不锈钢柱；固定相采用Porapak-Q(日本岛津公司提供)；柱温165℃；检测器温度180℃； 载气为H2，25mL/min。
+　　TiO2使用前，150℃下烘1h。
+　　阴离子洗涤剂中十二烷基磺酸钠（LAS）是最常用的成分，本文是“南极长城站重点地区生态系统研究” 课题组在1993年12月～1994年3 月南极夏季对中国长城站及邻近海域中阴离子洗涤剂的分布及变化研究结果， 对该海域的污染问题进行了探讨。
+1　研究海域概况
+　　本研究区域包括了麦克斯韦尔湾及其附属海湾(见图1)。
+2　材料与方法
+　　测站站位见图1。
+　　用采样器采取表层0.5m处海水，带回实验室进行分析。
+　　1994年2月4日在15个站位;1994年2月26日,对6个站位采集了水样, 回实验室进行了阴离子洗涤剂分析,所有水样采回后按《海洋监测规范》(国家海洋局1991年发布)进行处理，测定分析方法采用亚甲基蓝分光光度法。
+　　由于TiO2对TCE有吸附能力，为消除其对实验结果的影响，先将反应气在黑暗条件下流经反应管30min，待气相色谱分析结果显示TCE浓度不变后，打开紫外灯光照。TCE的浓度与其光催化降解反应的初始速率的关系见图4。
+　　此次研究的阴离子洗涤剂测值介于0.148～0.997 mg/L之间,最低值是湾内8 号站(1994年2月4日),最高是乌拉圭站。光源为15W主波长为254nm的紫外线杀菌灯。Dibble等〔5,6〕最早报道了采用气相光催化法降解TCE。
+　　阴离子洗涤剂是海域尤其是人类生活区附近重要的环境污染物质, 生活废水中阴离子洗涤剂来源于洗涤剂的使用，据作者统计,长城站各种洗涤剂的月使用总量约在30包以上,总计约15kg， 按阴离子洗涤剂中十二烷基磺酸钠含量10%计，每月有 1.5×106mg十二烷基磺酸钠进入长城湾，整个夏季的输入达到4.5×106mg（45 kg），海域的阴离子洗涤剂污染是不小的。Rajeshwar〔4〕指出，许多气态污染物都可以借助光催化法在气相中直接处理或与液相分离后再进行氧化降解。
+　　阴离子洗涤剂主要的毒害作用是影响鱼卵的正常发育〔2〕，鳕鱼卵比真鲷卵对十二烷基磺酸钠(LAS)更敏感,尤其在胚胎闭孔前是敏感时期,当LAS含量为0.02mg/L时，鳕鱼卵的孵化率下降40%，且66%的初孵仔鱼脊椎骨畸形。产物的鉴定方法如下：HCl，在TCE光催化反应后的尾气中通入AgNO3，有不溶于稀HNO3的白色沉淀出现，说明光催化反应产物中有可溶性氯化物存在；反应尾气通入蒸馏水中吸收，测得吸收液的pH值在1.15～4.50之间。
+参考文献
+1　李永祺，姚乔尔，吴宝铃等.南极研究, 1992,4: 91～94
+2　孙　耀，陈　超，刘忠强.海洋环境科学, 1993, 5(12):18～21
+3　黄风鹏，丁美丽.南极研究 ,1992,4(4):84～87
+4　黄风鹏，吴宝铃，李永祺.南极研究，1992,4(4):88～90
+5　Railsback S F.Polarrec.，1992,28(165): 149～154
+6　Enzenbacher D J.Mar.Pollut Bull.，1992，25(9～12): 258～265
+7　Howington J P，Mcfeters G A，Barry J P.Mar.Pollut.Bull.，1992，25(9～12)324～327
+作者简介
+袁峻峰　男，1965年8月生。现为上海师范大学生物系副教授。青岛海洋大学理学博士。主要从事水域生态学和水环境科学研究。结果发现，Cl-浓度与H+浓度基本相等。发表论文6篇。
+收稿日期：1997-04-19
+*国家“八*五”重大课题资助项目

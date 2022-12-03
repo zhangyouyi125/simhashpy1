@@ -1,0 +1,97 @@
+计算机应用
+Computer Applications
+1999年 第19卷　第8期 Vol.19　No.8 1999
+
+
+
+VB中用DAO创建各种数据格式的数据库
+陈勇孝　李学相　郎　洪
+　　摘　要　本文讨论了使用数据库访问接口工具DAO(数据访问对象)创建各种数据格式的数据库的一般方法。
+　　关键词　数据访问，对象，数据库
+1　VB的数据库接口
+　　VB中提供的操作数据库的接口工具是DC(数据控件)、DAO(数据访问对象)、RDC(远程数据控件)、RDO(远程数据访问对象)、ODBC(开放数据库连接)、ODBC API(通过Windows数据库函数API访问数据库)。
+　　其中DC最简单，配合数据绑定(Bounding)控件，通过JET达到不用编写任何代码即可实现显示或更新数据库的目的，但在功能上受到很大限制，比如不能用程序进行控制、信息的检索无法实现等，一般情况下仅适用于初级人员使用。
+　　使用RDC，也可在不用编制程序代码的情况下，使客户机能操作服务器中数据库。
+　　DAO比DC要复杂得多，编程中需用到大量的集合和对象的概念，每个对象包括有自己的属性及方法，而且很多属性本身又可成为对象，常使VB初学者无从下手，但是由于它是用编写程序的方式访问数据库的，因此灵活性大，在实际开发程序的过程中，常用来写出高效率的操作数据库的应用程序。
+2　JET与DAO
+2.1　JET
+　　JET引擎为VB与数据库的接口提供基本方法，功能有创建、修改和删除表、索引、查询，验证数据的完整性，支持SQL(查询语言)，数据库的修复、压缩及重新索引。这样可解决多分支的问题；起始点确定的方法：由于每个高层值要当场输入，最好的方法是采用人机交互的方法输入高层值。与VB 5.0一起发行的Jet为3.5版本，加强了对ODBC 数据源处理的功能。
+　　网格点三维坐标生成：由用户输入网格大小，由图形左上点向右下点对网格结点进行线性插值，插值时从等高线数据文件中搜索距离此点最近等高线的坐标值和高层值，并对当前网格点进行线性插值，将X、Y、Z值写入点数据文件。
+　　c) 细线化(将线段变为单位线宽)，将二值图像中很粗的线段全部转化为单位线宽的线段，采用基于轮廓搜索的方法。
+　　ODBC就不要求另一端服务器中数据库的类型，可以是FoxPro，也可以是Oracle驱动程序。
+2.2　DAO
+　　DAO可以让用户方便地访问数据库中的实际数据信息，即是说VB通过一系列DAO来访问JET的功能。DAO结构如图2。
+
+
+图2
+　　DAO和DC都是运用JET引擎，以简单的VB命令操作数据资源。
+3.2　电子沙盘
+　　大坝一旦建成，对于它的许多结构，水利专家和旅游者只能进行远观，无法看清楚具体的构造，比如大坝的表、中、底孔及大坝内部的一些结构等。鉴于虚拟现实的强大优势，我们便将其首次应用于国内水利系统中，在SGI工作站上实现了二滩水坝的整个枢纽布置及其周围地理环境的虚拟环境，使得用户能够运用小小的鼠标突破物理、空间、时间的限制，充分领略作为中国第一高、世界第三高的二滩大坝的雄伟风姿，轻松徜徉于高240米、底宽56米、顶宽10米的大坝的任意一个部位。
+　　在DataBases之上还有两个DBEngine和WorkSpaces对象，即JET引擎，包含一个集合对象WorkSpaces；WorkSpaces对象包含一个数据库集合对象DataBases，Databases集合由Database对象组成。
+　　Database对象是在创建或打开数据库时产生的，其中的Connect属性指定了创建或打开数据库类型或格式，即链接字符串，如Access,等数据库；Name属性包含完整的数据库路径或文件名，对于Access为完整的数据库路径及文件名，对于FoxPro2.5,dBaseⅢ为完整的子目录路径，每一个.DBF文件为一个表。
+　　它的CreateTableDef方法用于添加TableDef表对象，OpenRecordSet方法用于建立一个RecordSet记录集对象，可以是DynaSet动态集、Snapshot快照、Table表类型。
+　　TableDef对象包含实际的数据内容，一个数据库可有多个表，使用CreateField方法可以建立新的Field对象，也可用OpenRecordSet方法来建立RecordSet对象，VB中在建立RecordSet对象时应指定具体的类型。
+3　使用DAO创建数据库
+3.1　创建数据库
+　　包括定义数据库对象变量，建立一个数据库，把创建的数据库对象赋给数据库对象变量。
+Dim DataBaseObjVar As Database
+′定义对象变量DataBaseObjVar
+Set DataBaseObjVar=CreateDataBase(DataBaseName)
+′数据库对象赋给数据库对象变量
+　　DataBaseObjVar为用于访问要创建数据的对象变量，Database为数据库对象，参数DataBaseName为要创建的数据库名，含路径和盘符。
+　　当所有网格点三维坐标生成完毕后，则根据网格点坐标生成网格面坐标，并进一步生成asc三维空间网格文件。在计算机进行模拟建造的投资与大坝实际建造的投资相比是微不足道的，但却能取得很好的经济效益。
+3.2　创建表
+　　包括定义表对象变量，创建表对象，把数据库中的表对象赋给表对象变量，将表添加到表集合中，一个数据库可有多个表。
+Dim TableObjVar As TableDef
+′定义表对象变量
+Set TableObjVar=DataBaseObjVar.CreateTableDef(TableName)
+′创建表，并赋给表对象变量
+DatabaseObjVar.TableDefs.Append TableObjVar 
+′将表添加到表集合中
+　　TableObjVar为访问创建表的对象变量，TableName为创建的表名，TableDef为表对象，CreateTableDef为创建表的方法，Append为添加表到表集合中的方法，使建立的表成为数据库中的一员。
+　　b) 预处理和阀值化(去噪音，改善图像质量并转化为二值图象)，将扫入的图像采用基于图像的边缘检测的“最近有效灰度阀值平均法”对图纸进行净化，尽量除去图中的噪音并且保持图形的原貌。下面的语句用于创建第一个字段(索引为0)。
+Dim FieldObjVar() As Field
+′定义字段变量
+SetFieldObjVar(0)=TableObjVar.CreateField(FieldName,FieldType,FieldLength)
+′指定字段的名称，类型，长度
+DataBaseObjVar.TableObjVar.Fields.Append FieldObjVar(0)
+′添加字段到字段集合中
+　　重复上述两条语句，可定义其它字段。FieldObjVar为访问创建字段的对象变量，可用数组表示，因一个表可有多个字段；数值0为第一个字段，字段的索引值从0开始；FieldNName为字段名，FieldType为该字段的类型(如整型、字符型)；FieldLength为该字段的长度。
+　　使用Append方法，添加创建的字段到字段集合中，不能省略。
+3.4　创建索引
+　　数据库中一个表可有一个或多个索引，也可没有索引。创建索引时，包括索引对象变量，设置主索引及唯一性，创建索引的字段，最后将索引字段和索引分别添加到字段集合和索引集合中。
+Dim IndexObjVar As Index
+′定义索引对象变量
+Set IndexObjVar=DataBaseObjVar.TableObjVar(0).
+CreateIndex(IndexField Name)
+′在某个已经创建的表中建立索引对象，并赋给索引对象变量
+IndexObjVar.Primary=True
+′主索引
+IndexObjVar.Uinque=True
+′唯一性
+Dime IndexFieldObjVar As Field
+′定义索引字段对象变量
+Set IndexFieldObjVar=IndexObjVar.CreateField(IndexFieldName)
+′建立索引字段对象，并赋给字段对象变量
+IndexObjVar.Fields.Append IndexFieldObjVar
+′索引字段添加到字段集合中
+DataBaeObjVar.TableObjVar(0).Inedxes.Append IndexObjVar
+′建立的索引对象添加到索引集合中
+　　重复上面的语句，则可创建其它表的索引。
+　　使用Inedx对象的CreateField方法所建立的索引字段，必须是TableDef对象中已存在的字段。
+3.5　创建记录集
+　　多数情况下，操作数据库时不外乎是记录的插入、删除与修改，因此在数据库、表、字段及索引等诸对象建立完毕后，最后要创建记录集对象。模型抽取工作分为以下几个步骤：
+　　a) 图纸的扫描(将图纸以256灰度方式扫入)，如果一开始就以二值图像方式扫入，效果会很差，甚至面目全非。
+Dim RecordSetObjVar As RecordSet
+′定义记录集对象变量
+SQLVar="Select（字段表）From（表格清单）Where（表达式）
+′查询语句
+Set RecordSetObjVar=DataBaseObjVar.OpenRecod et(SQLVar)
+　　关于SQL请参考相应资料。
+　　到此为止，数据库结构基本上建立好了，以后可使用RecordSet对象的MoveFirst，MoveLast，MovePrevious，MoveNext，FindFirst，FindLast，FindPrevious，FindNext等方法访问数据库了。
+4　结束语
+　　从创建数据库的过程可以看出，在VB中用户可根据需要来创建多种类型数据库，非常灵活，不象其它对象那样局限于特定类型的数据格式，一旦建立完毕，访问不同数据格式的数据库的方法是完全一样的。
+　　周围地形模型的抽取　由于二滩周围的地形勘探较早，只有依据航空拍摄人工描出的几张工程蓝图。 
+作者简介:陈孝勇　讲师。
+作者单位:陈勇孝　李学相　郎　洪　郑州工业大学　河南.郑州（450002)
+收稿日期:1999-04-30(修改稿)

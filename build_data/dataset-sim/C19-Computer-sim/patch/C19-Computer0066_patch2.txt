@@ -1,0 +1,89 @@
+计算机应用
+Computer Applications
+1999年 第19卷　第8期 Vol.19　No.8 1999
+
+
+
+分布式对象在软件系统集成中的应用
+郑无疾　张建军　朱山风
+　　摘　要　分布对象是一些灵敏的软件模块，它们可以位置透明，语言独立和平台独立地相互发送消息。设整个网络的输入输出映射为e=f(r,W)，其中输入残差样本r=[r1,…,rp]T,输出的故障模式样本e=[e1,…,eq]T,权值W=[wij]，且f为非线性向量函数，p,q分别为网络输入、输出节点个数。
+　　关键词　分布式对象，系统集成，组件
+DISTRIBUTED OBJECT TECHNIQUES
+IN SOFTWARE SYSTEM INTEGRATION
+Zheng Wuji　Zhang Jianjun　Zhu Shanfeng
+School of Computer Scinece, Wuhan University，Hubei.Wuhan 430072
+　　Abstract　Distributed objects are intelligent software models. They can send messages to each other transparently with location language and platform. In this paper, we focus on the questions and solutions related to distributed object technology.
+　　Keywords　Distributed object, System integration, Component
+1　背景
+　　传统的Client/Server结构对Client和Server的角色划分相当清晰，将整块软件切分为二：一部分运行在Client端，一部分运行在Server端，通过如远程过程调用（RPC）机制来实行简单的互操作，协同工作完成任务。
+　　随着计算机网络技术的飞速发展，特别是Internet/Intranet爆炸式的规模扩充，各种业务开始在Internet上进行。
+　　证明　若令为网络新的输入样本点，其中为独立于r(k)的随机干扰向量，且其均值为E{d}=m，方差为E(ddT}=σ2I。
+2　分布式对象
+　　第一代的Client/Server系统多是针对局域网的。在更大的环境中，系统的可伸缩性，异构配置管理和网络监控变得至为重要。由于对象技术有处理复杂系统的能力，人们将对象技术引入了分布环境以解决面临的这些问题［1］。
+　　传统的对象可以被看作是封装了数据和作用于这些数据的操作的自包含的实体。这些对象支持的操作（又称为方法）是依赖于对象的内部状态的。
+　　2　问题描述
+　　考虑如下仿射非线性动态系统
+　　　　　　　　　　　　　　　　　(1)
+其中，为有界故障向量，即为连续可微向量或矩阵函数。
+　　5　仿真算例
+　　某歼击机纵向运动方程在平飞平衡点进行小扰动线性化后，可得
+
+　　为了对该歼击机的结构故障进行检测与隔离，首先要设计一个稳定的非线性状态观测器，其增益矩阵L可通过配置(A-LC)的闭环极点为[-2, -5, -4, -6]来产生，由此可得L=[1.9418, -0.1710, 0; -0.3030, 0, 1.1090; -0.0715, 0, 3.0530; 0, 6.00, 1.00]3×4.
+　　歼击机动力学方程的高阶非线性项ψ(x, u, t)可由RBF神经网络估计器逼近，RBF神经网络的结构选为6-8-4。与此不同的是，分布式对象可以驻留在一个网络的任何地方，作为一个物理上独立的实体存在并可以被其它对象远程调用。
+
+
+图1　特征值对迭代收敛性的影响
+
+图2　信息进化示意图
+　　另外，与特征值相对应的特征向量则定量地描述了耦合活动间相互作用的程度，即各耦合活动在收敛迭代过程中对信息进化的一种影响率。这样的对象框架保证了分布对象间的高度透明的互操作性。
+　　分布对象是一些灵敏的软件模块，它们可以位置透明，语言独立和平台独立地相互发送消息，实现请求服务。我们称这些独立的对象模块为组件。在分布对象系统中，分布、协作的单位就是这些对象组件。这些对象组件成分可以是由一些不同的开发者相互独立地使用不同的语言或工具构造的。
+3　组件模型
+　　组件是自包含，紧包装的软件对象模块。组件用于实施应用领域内的一些有限的服务，它可以和其它组件一起构成完整的应用。由向量与矩阵收敛理论有
+　　　　　　　　　　　　　　　　　　　(13)
+　　若Max(λ1,…,λi,…,λn)＜1, 其中λi为C的特征值，则有[8]
+(E为单位矩阵)　　　　　　　　　　　　　　　　　　　　　　　　　(14)
+　　由（13）、（14）式可知，耦合迭代过程只有当信息进化矩阵的所有特征值均小于1时才会收敛；否则，若有λmax＞1，则说明在耦合迭代过程中会因为信息调整总量的不断递增而造成迭代过程的不收敛。在实际设计过程中，设计活动间的依赖程度有强、有弱，程度不尽相同，而且具有一定的模糊性。
+　　信息进化矩阵的特征值对应了耦合活动间相互作用的一种作用方式，特征值的大小定性反映了信息调整总量收敛的趋势［7］，也反映了信息进化的速度快慢。CORBA是对象管理集团(Object Management Group, OMG)在其对象管理结构(OMA)框架之下以对象请求代理(ORB)为核心制定的分布对象标准。它定义了对象之间通过ORB透明地发送请求和接收响应的机制，保证了在分布异构环境下对象之间的互操作性［2］［3］［4］。
+
+
+图1　CORBA 结构
+　　微软提出DCOM作为未来的Internet计算的模型。DCOM中主要使用ActiveX组件作为其对象。在将来，Java对象也可能会被作为其对象。对于歼击机的纵向运动，主要考虑左右平尾的卡死或损伤故障。可知网络输出的变化为δe(k)=f(r(k)+d)-f(r(k))≈
+　　定义网络输出变化δe(k)对干扰输入项d的灵敏度函数为
+
+考虑到，则有
+　　　　　　　　　　　　　(9)
+显然R(W)越小，网络输出对输入干扰的灵敏度越低。
+　　关键词：并行设计，信息进化，耦合
+　　中图分类号：TP14　　　　　　文献标识码：B
+A RESEARCH ON CONCURRENT DESIGN BASED ON
+INFORMATION EVOLUTION
+TANG Dunbing　LI Dongbo　ZHANG Shiqi
+(School of Manufacturing Engineering , Nanjing University of Science & Technology, Nanjing 210094)
+　　Abstract　The view of information evolution in concurrent design process is put forward in this paper. Based on the information evolution matrix, the information evolution model in concurrent design process is established. And the convergence law of coupled activities in concurrent design process is presented by analyzing the information evolution matrix, which can give theory guidance to control and plan the concurrent design
+　　Key words　concurrent design, information evolution, coupling
+　　1　引言
+　　产品设计从根本上决定着产品的内在质量和生产成本，研究者们一直没有停止对新的、有效的设计理论和方法学的探索。
+4　软件系统集成
+　　根据应用需求，将若干软件系统集成在一起协同工作。如此形成的集成软件系统称之为集成环境，而组成此集成软件的各部分软件系统称之为部分软件，或软部件。以上两种组件标准的提出，为软件系统的集成提供了必要的条件。
+　　由于计算机应用软件系统的规模越来越大，复杂性越来越高，从零开始开发这样的软件系统显得很不现实。在组件标准的支持下，我们可以充分利用已有的可用软件资源，包括自己本地开发的，市场上可以买到的以及其它公用软件资源作为软部件进行系统集成，也就是要将这些软件进行“粘结”，实现它们之间的互用和互操作，实现客户化，满足应用要求。随着软件产品市场上各种各样的商品软件的出现和接口的标准化，用系统集成的方法开发应用软件已显得越来越重要了。
+　　系统集成涉及到软件系统结构、技术和市场等诸多因素。相比于单纯地为客户进行定制式软件开发，系统集成对软件开发人员的经验和技术有更高的要求。
+　　与传统的定制式应用软件开发相比，软件系统集成的人员结构亦将发生新的变化。软件开发人员将分化两部分，一部分是软组件/部件制作人员，另一部分是应用系统分析和装配人员。应用开发人员结构的演变如图3所示。
+
+
+图3　应用开发人员结构演变
+　　目前，在软件工程的各个方面正发生巨大的变化。在可以预见的将来，软件自动化也将对软件的生产过程产生巨大的影响。
+　　软件系统集成将面向对象技术作为其基础。但是，软件系统集成的要求更高。如何在已经成为事实的组件标准上建立一个实用的软件系统集成开发流程，在这一方面的作者试图提出一些方法［2］。但是，他们的方法都存在以下方面的不足：
+　　只覆盖了整个软件生命周期的部分阶段；
+　　没有充分发挥分布对象技术的特点，或不适合于分布对象技术。 
+5　下一步的工作
+　　建立一个覆盖整个软件生命周期的以分布对象技术为基础的软件系统集成开发模式；
+　　根据这一软件系统集成开发模式，对现有的软件开发集成环境结构进行调整。对已有的软部件进行有效管理。
+　　CSCW(Computer Supported Cooperative Work)是当前计算机研究中的一个热点。目前，此类工具多用在非计算机领域的创作、研究和开发工作中。由（一）、（二）两点可知，信息进化矩阵特征值中的实数部分定性地描述了信息调整量的影响（见图1），实数部分增大，信息调整量增大，则迭代过程收敛减慢，其中最大特征值的作用尤为显著。
+作者简介：郑无疾　张建军　朱山风　均为硕士研究生。研究方向：分布并行处理系统。
+作者单位：郑无疾　张建军　朱山风　武汉大学计算机科学与技术学院　湖北.武汉（430072）
+参考文献
+　［1］　Scoff.M.Lewandowski. Frameworks for Component-Based Client/Server Computing. ACM Computing Surveys, 1998;30(1)
+　［2］　P.J.Houston, F.G.Wilkie, T.J.Anderson. Component-based development. CORBA and RM-ODP. IEE Proceedings Software, 1998；145(1)
+　［3］　陈　滢,樊惠娟,王能斌. 分布对象技术综述. 计算机科学, 1997;24(3)
+　［4］　汪　芸,兑继英,顾冠群.开放分布式处理的新发展-CORBA规范,计算机科学, 1997;24(3)
+　　收稿日期:1999-02-08

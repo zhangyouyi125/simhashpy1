@@ -1,0 +1,103 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年　第19卷　第6期　Vol.19　No.6　1999
+
+
+
+晶振式非接触表面轮廓传感器的动态特性
+缪戎　马骊群
+　　摘要　从理论上对线性伸展模式的石英振子的动态特性进行了分析，讨论了在近场效应作用下，影响晶振品质因数的各种阻尼，并将所获得的解析模型与实验结果进行了比较。
+　　关键词　表面轮廓传感器　动态特性　分析　讨论
+Dynamic Characteristic of Crystal Vibration Non-contact Type
+Surface Profile Transducer
+Miao Rong,Ma Liqun
+　　Abstract　The dynamic characteristic of quartz linear extensional-mode oscillator has been analyzed theoritically and various damps affecting quality of the quartz oscilator under near field have been discussed.The obtained analytic model has been compared with the experiment result.
+　　Key words　Surface profile transducer,Quartz oscillator,Dynamic characteristic,Analysis,Discussion
+　　前言
+　　晶振式非接触表面轮廓传感器利用了谐振石英与被测表面之间的流体摩擦效应。当它们的间距很小时，其摩擦作用显著增加，这种摩擦效应的增加引起振动石英传感器的阻尼增加，从而改变了石英的电学参数，石英传感器尖端与被测表面之间的距离就可以通过振子的电学参数信息反映出来。晶振的电学和机械特性受周围的气体环境、气体压力及与样品表面的距离的影响。文章中给出的解析模型可解释传感器与周围气体的相互作用关系，并近似给出衰减因子。
+1　理论分析
+　　如图1所示是一个典型的石英传感器[1]，谐振频率1 MHz，两个长1330 μm的悬臂梁以反向位产生谐振(Z向切型)，下面以单个悬臂梁为例进行分析(见图2)。
+
+
+
+图1　晶振式非接触表面轮廓传感器测量原理图
+
+
+图2　一端固定的振动梁
+　
+　　设悬臂梁长为L，横截面积为A，谐振频率为ω，增益a(t)＝a0sinωt。若梁置于粘性介质中，根据能量守恒定律，有
+Ekin＋Epot－Wsurf－Wtip－Wsound
+－Wnear－Wrefl－Wquartz＝const
+(1)
+　　下面考虑每个振荡周期T＝2 π／ω内，梁的平均储能及各项损耗。
+　　7)由于每个模块上有两组RS485接线端子，组网时可根据实际情况进行串／并联连接。
+　　每个振荡周期内，梁表面的平均粘滞损耗由气体密度ρ、粘滞系数η、石英梁的宽度b和厚度d决定
+
+(3)
+　　设梁的尖端近似为一球形，振动石英所发出的声音的速度为c。当梁尖端的尺寸远小于振动石英的振动声波波长时，则尖端可视为一个物点(见图3)，且在粘性介质中的摩擦损耗可忽略。由点声源发出的振动波可用球形波描述。所以，梁的尖端可假设成脉冲球，面积仍为A(见图3)，最大振动位移为a0。由于脉冲球的应力为[5]
+
+
+图3　当梁的尖端尺寸小于梁的振动声波波长时，其尖端模型可认为是一发射球形波的脉冲球
+
+(4)
+其中，rk为脉冲球半径，rk＝(A／(4π))1／2＝(bd／(4π))1／2
+因此，声波扩散的损耗能为
+
+(5)
+当梁的尖端纵向移向被测表面时，入射波与表面的反射波将产生干涉现象。这种干涉现象可用一个虚拟的点声源与实际的点声源的相互作用来描述，虚拟点源相对于被测表面对称于实际点源(见图4)。梁的衰减损耗由干涉声波的总强度决定，声波的干涉强度为[4]
+
+
+图4　梁顶端所发声波与物体表面的反射波产生干涉，并
+根据距离h的大小，形成不同程度的衰减
+
+(6)
+当梁的顶端距被测表面的距离h很大时，Irefl决定了衰减损耗能的大小。
+　　IMP3595系列数据采集器的主要特点：
+　　1)测量精度高
+　　IMP内的模数转换器为16位，采用施伦伯杰公司的专利技术脉冲调宽模／数转换，具有很高的测量精度。若被测表面是高密度和高反射率的，则当h＜5～10 μm时，refl项可以忽略。故仅当h值较大时，才考虑refl项。
+　　当晶振梁的顶端快要靠近被测表面时，尖端的振动会带来另一项损耗near，它是距离h的函数。损耗能near是由梁的顶端在运动时，梁顶端与被测表面之间的气体产生的动态摩擦造成的，称之为近场效应(见图5)。若将梁顶端的矩形截面用一半径为R的圆形截面来代替，且面积不变，则作用在梁顶端的粘滞摩擦力Fz(t)可用Navier-Stokes公式求出[4～5]。该摩擦力引起了损耗能near，它是距离h和顶端速度u(t)∝a(t)ω的函数：
+
+
+图5　下行石英顶端与被测面间的气流
+
+(7)
+其中ηh为粘滞系数。
+　　4)功耗低、效率高
+　　每块IMP的功耗仅为600 mW，如直接由微机经通讯电缆向IMP供电，一台微机可驱动5块IMP(相当于100个采集通道)，若用外接电源向IMP供电，每台微机可挂30块IMP，实现600个通道的数据采集，若采用DEC公司总线接口板，并配接U-PDP系列计算机时，系统可支持50块IMP，并在1 s内完成1000个通道的检测。当h＜时，ηh是距离h的函数。
+　　2)数据采集器的设计分为测量模块和扫描块两部分，所以在网络设计上就更加灵活。
+　　3)DATASCAN7000具有多主机通讯功能，这些主机不但具有与测量前端直接通讯的能力，而且可以相互通讯。因此，它可直接放在发电机旁、化工厂管道附近，甚至矿山和井下。
+
+
+图6　标准大气压下在氮气中粘滞系数与距离的变化趋势
+　　最后，讨论每个振荡周期内石英晶振的固有能量损耗quartz。该项损耗可通过真空条件下石英的品质因数Qvac来确定，其中Qvac可利用等效电路参数求解[4]。quartz的表达式如下
+
+(9)
+　　值得注意的是上面的分析中，谐振频率被设定为常数。实验表明，在阻尼条件下(1000 mbar氮气)的谐振频率与在真空条件下的谐振频率之比仅为0.0001％.所以，上述假设是成立的。
+　　通过上面的分析，可以求出粘性介质中晶振的品质因数
+
+(10)
+将单项表达式带入上式，可以看出石英振动的幅值a0对晶振的品质因数没有影响。这就意味着石英阻尼与幅值无关，从而表明传感器的驱动水平不影响传感器的测试水平。
+2　讨论
+　　图7给出了谐振频率为1 MHz的晶振在粘滞压力范围内(p≥10 mbar)且无近场效应的情况下，不同气体中，晶振品质因数的测量值与计算值(根据公式10)的比较。
+　　5)安装方便、使用灵活
+　　IMP体积小，对环境要求不高，可平置或悬挂在任何地方，十分适于工业现场。
+
+
+图8　石英晶振品质因数测量值与计算值的比较(在分子压力范围内)
+　　图9显示的是距离h＜500 μm情况下，测量值与计算值的比较结果(氮气,Qvac＝2×105，p＝1000 mbar),可以看出两者吻合的依然很好。在小于10 μm的近场范围内，理论分析图形与测量结果之间的差距较大(见图10，氮气，p＝1000 mbar)。从理论分析可以看出，当h→0时，品质因数也趋于零，而实际测得的结果是Q因数趋于一定值(见图11)。
+　　7)由于每个模块上有两组RS485接线端子，组网时可根据实际情况进行串／并联连接。EtherNet通讯作为可选功能，可以使用TCP／IP协议，以自身IP地址，进行数据传输。但是在近场情况下，只有与被测表面相互作用的梁受到了阻尼，另一个梁却无阻尼影响，所以两个梁所受的阻尼不对称，要想获得近场情况下阻尼变化的精确解析描述很困难。
+3　结论
+　　上面的讨论结果证明：可以用解析式来描述外延型晶振传感器近场的动态特性；在无任何近场效应的情况下，起主要作用的是表面摩擦损耗和声波发射损耗。
+　　8)系统允许同步进行测量、功能转换、报警控制及通讯，以获取最好的操作性能。进一步而言，这里少考虑了一项能量损耗，即受近场效应影响，石英体内部经由梁的单边负载下支撑体的声波发射损耗。这也说明采用这种只考虑一个梁的动态特性的方法不能描述这种极近状态，所以，在极接近物体表面时，传感器的动态过程无法用解析式表达，其近场效应需用有限元法求解。
+作者简介:缪戎　32岁　男　工程师
+作者单位:北京长城计量测试技术研究所，北京市1066信箱，100095
+参考文献
+　　1　Giousouf M,Weinman N,Scheerer W,Assmus F and Mnch W v.Dynamic behaviour of a quartz extensional-mode non-tactile profile sensor.Sensor and Actuators A,1997,(61):287～292
+　　2　Weinmann M,Radius R,M W Engelhardt and Assmus F.Measuring profile and position by vibrating quartz resonators used as tactile and non-tactile sensors.Sensor and Actuators A,1993,(37～38):715～722
+　　3　Weinmann M and Assmus F.Akustische Flachenpro-
+filerfassung unter Verwendung von Schwingquarzen als Sensoren.VDI-Berichte 939,VDI,Dusseldorf,1992,453
+　　4　Giousouf M Weinmann M. Forschungsberichte aus Fein-und Mikrotechnik.IZFM,HSIFZ,1994,(8):53～101
+　　5　Landau L D.Lifschitz E M.Lehrbuch der Theoreti-
+schen Physik Hydrodynamik,Akademic Verlag,5th edn.Berlin:1991,6
+　　6　Hund.Theoretische Physik.Teubner,Stuttgart,1996,3:203
+1999-06-16收稿

@@ -1,0 +1,92 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+智能结构及其控制系统集成优化设计
+惩踔叶　袁国良　陈塑寰
+　　摘　要　将智能结构的振动控制性能指标和集成结构的质量作为目标函数，结构尺寸参数和控制系统的控制参数同时作为独立的设计变量，并施加约束条件，从而将智能结构及其控制系统集成优化设计问题转化为多目标数学规化问题。数值结果表明，利用本文方法设计出的智能结构及其控制系统，能极大地抑制系统的振动。
+　　主题词　智能结构　控制系统　集成优化设计　压电传感元件和执行元件
+THE INTEGRATED OPTIMIZATION OF INTELLIGENT
+STRUCTURES AND CONTROL SYSTEMS
+Wang Zhongdong Yuan Guoliang
+(Department of Agronomy and Agricultural Machinery Agriculture 
+and Animal University of PLA . Changchun . 130062)
+Chen Suhuan
+(Department of Mechanics Jilin University of Technology . Changchun . 130022))
+　　Abstract　Conventional structural sizing variables and elements of the feedback gain matrix are both treated as the independet design variables,the performance index of vibration control and the mass of the integrated structure are chosen as objective functions,and some constraints are included in the optimization.Then,the integrated optimization of intelligent structures and control systems is converted into multiobjective optimization.The numerical results show that the in telligent structure and the control system designed by the present method can greatly suppress the vibration of the structure.
+　　Key words　Intelligent structure Control system Integrated optimization Piezodelectric sensor and actuator
+1　引言
+　　近十年来，常规结构及其控制系统集成优化设计问题吸引了很多国内外研究者，并发表了多篇有关这方面的论文［1-5］。本文针对压电类智能结构的特点，提出了结构及其控制系统集成优化设计的一种新方法。
+4　其它应用
+　　若将上述装置中的平面镜换成硅油，将俯仰轴的棱体变成安装在地基上的平面镜(如图2示)，则可以用上述方法来监测转台地基的变化情况。另一不同之处是复合调整管的复合电流单独用一组电源供给，提高了主电源的负载能力。
+　　设［M］=［Ms］+［Mp］、［K］=［Kuus］+［Kuup］+［Kuv］［Kvv］-1［Kvu］，则式(1)简化为
+［M］{}+［Cs］{}+［K］{u}=［D］{uc}　　　　　　　　　　(2)
+取前nc个正规化的模态矩阵［Φ］∈Rn×nc，由展开定理得
+　　　　　　　　　　　　　　(3)
+式中{q}为模态坐标
+将式(3)代入式(2)并进行正交变换，则有
+　　　　　　　(4)
+式中［ξ］=diag［ξ1　ξ2　…　ξnc］和［Ω］2=diag［ω21　ω22　…　ω2nc］分别为结构的模态阻尼比对角阵和特征值对角阵,{fmc}为模态控制力。
+当采用独立模态控制法［7］控制模态时，方程(4)可由nc个下面的一阶方程代替
+i+2ξiωii+ω2iqi=fmci　i=1,2,…,nc　　　　　　　　　　　(5)
+引进{zi}={qi　i}T和{umci}=fmci，式(5)可转化为状态空间方程形式
+{i}=［Ami］{zi}+［Bmi］{umci}　　　　　　　　　　　　(6)
+式中
+
+此时对应第i模态的控制力为
+{umci}=-［Gmpi　Gmvi］{zi}　　　　　　　　　　　　(7)
+式中Gmpi和Gmvi为第i个模态增益。然后再将BG7集电极连线接入，拆除负载，调节RW3，电压表有0～50V指示，说明BG7完好，否则BG7损坏，按原型号或用3DD12B、3DD15D替换后，在DC接线柱端接入负载，电流表应有1A左右电流指示，若电流表指示大于1.5A或超过，说明C22被击穿,有严重漏电现象，应更换50V／1000μF的电解电容。
+根据最优控制规律，第i个最优模态控制力可表示为
+{umci}=-［Ri］-1［Bmi］T［Pi］{zi}　　　　　　　　　　(10)
+式中［Pi］为2×2阶加权阵，它满足2×2阶Riccati方程
+［Pi］［Ami］+［Ami］T［Pi］+［Qmi］-［Pi］［Bmi］［Ri］-1［Bmi］T［Pi］=0　(11)
+联合求解式(7)、(10)和(11)，整理得
+　　　　　　　　　　　　(12a)
+　　　　　　　　　(12b)
+3　智能结构及其控制系统的集成优化设计
+　　在智能结构及其控制系统集成优化设计中，将主结构的尺寸参数{Vs}和控制系统的控制参数{Vc}同时作为独立的设计变量，结构振动控制性能指标J及集成结构的质量作为目标函数，并施加以下约束：(1)闭环特征值的实部；(2)闭环阻尼频率；(3)瞬时控制力。为了减小该点的瞬时mA／Ω值及Rw4开路的故障率，如图2所示，可串联一只R0为100Ω,0.5W的电阻，同时注意关机操作时，缓慢调节速度。用8 h或24 h连续测量的方法来检测这一指标是不现实的。当电源输出电压上升到(UDC－Uc14)＞9.3V时，BG11,BG12又由截止转化到饱和导通状态，而当UDC下降到低于UDe1＝7.3V时，BG11、BG12又由导通转化到截止状态，UDe1又上升到9.3V，如此周而复始，使恒流比较放大器和复和调整管电路工作在递增振荡状态。J越小，结构振动被抑制的效果越好。
+在模态空间中，J表示为
+　　　　　　　　　　　　　(14)
+式中{w}=({q}　{})T,［Qm］=diag(［Ω］2［I］)。
+　　关键词　转台　慢爬　指标　测试方法
+Detecting Method of Crawl Index of Table's Axis 
+Peng Jun　He Qun　Xue Yabing　Guo Lizhong
+　　Abstract　A method of detecting a slow-acting angle of axis being located at the locating position situation is introduced.With this method,we can eliminate the drift of the instrument and the effect of the ground change on the measurement result.It can also be used to detect the small angle change for a long time in other engineering situation.
+　　Key words　Test table,Crawl,Index,Test method
+　　转台作为惯性测试设备，对各轴的方位指标要求较高。则初始模态位移和速度为
+{q(0+)}={0}　　{(0+)}=［Φ］T{F0}δ(t)=［Φ］T{0}　　　　　(19)
+将式(19)代入式(15)，则结构振动控制性能指标可简化为
+　　　　　(20)
+式中为向量{}=［Φ］T{0}中第i个元素。
+3.2　闭环特征值实部及闭环阻尼频率
+　　智能结构对应第i个模态的闭环系统的复特征值可表示为
+λi=σi+jωdi　　　　　　　　　　　　　　　　　　　(21)
+式中σi为复特征值的实部，ωdi为阻尼频率。
+1.1　恒流比较放大基准电压电路电源故障
+　　如图1所示，恒流比较放大电路由恒流源管BG14、输入限压保护管D20、D21、对管BG11、BG12及偏置元件、R25、R26、R27、R29、RW2、DW3所组成。
+由式(4)有
+{uc}=(［Φ］T［D］)-1{fmc}　　　　　　　　　　　　　(25)
+采用状态反馈控制，模态控制力表示为
+{fmc}=-［Gm］{w}=-(［Gmp］　［Gmv］){w}　　　　　　　　　(26)
+式中，［Gm］为模态反馈增益阵，［Gmp］和［Gmv］分别为［Gm］中对应于模态位移和速度的矩阵。
+将式(26)代入式(25)，并考虑式(19)关系，则t=0时，瞬时控制力的峰值表示为
+{uc(0+)}=-(［Φ］T［D］)-1［Gmv］{F0}　　　　　　　　　　(27)
+4　数值示例及讨论
+　　如图1所示为一压悬臂梁结构。由于整个测试过程中始终以平面镜反射光为基准，有效地去除了光管的时漂对测试结果的影响。在振动控制中，主结构上表面的压电材料层充当分布的执行元件，下表面的压电材料层充当分布的传感元件。主结构及压电材料的材料性质如表1所示。由于作为基准的平面镜的反射是随地基变化而变化的，每次测量前以此为基准来校准光管，这样就在整个测试过程中去除了地基变化的影响及光管漂移的影响。必须更换新的PR25＝(1／4～1／2)W的同值金属膜电阻。
+　　利用优化准则法进行优化设计，得到的数值结果如表2、表3所示。对三种方法设计出来的结构，采用闭环控制后，进行了瞬态位移响应计算，其结果如图2所示。本文提出一种方法，这种方法可有效地去除测试仪器的漂移及地基的变化对这一指标检测的影响。并且，经过控制后，位移衰减速度最快。这些结果表明，此时的智能结构及其控制系统，其抑制自身振动的效果最好，整个系统更易于控制。表3表明，按文中方法设计出的结构，其结构体积与按方法2设计出的结构体积非常接近。这个结果说明，此时的结构尺寸接近最优尺寸。以上的数值结果说明，采用文中的方法对智能结构及其控制系统进行集成优化设计后，不仅改善了结构振动控制性能及控制系统的性能，而且降低了结构的尺寸，达到了同时优化控制系统，又优化结构尺寸的目的。
+*国家自然科学基金资助项目
+作者单位：王忠东　袁国良：解放军农牧大学农学农机系 . 长春 . 130062
+　　　　　陈塑寰：吉林工业大学力学系 . 长春 . 130022
+参考文献
+1　Hale A L,Lisoeski R J,Dah1 W E.Optimal Simultaneous Structural and Control Design of Manoeuring Flexible Spacecraft.Journal of Guidance,Control,and Dynamics,1984,8(1):86-93
+2　Salama M,Udwadia F.Simultaneous Optimization of Controlled Structures.Computational Mechanics,1988,3:275-282
+3　Miller D F,Shim.J.Gradient-Based Combined Structural and Control Optimization.Journal of Guidance,Control adn Dynamics,1987,10(3):291-298
+4　Mclaren M D,Stater G L.A Covariance Approach to Integrated Structure/Control Optimization.Proceedings of AIAA Dynamics Specialist Conference,Long Beach,CA,1990,189-205
+5　Kajiwarn I,Nagamatsu A.Approach for Simultaneous Optimization of A Structure and Control System.AIAA Journal,1994,32(4):866-872
+6　Suhuan Chen,Zhongdong Wang.Active Vibration Control and Suppression for Intelligent Structures.Journal of Sound and Vibration,1997,200(2):167-177
+7　Thoms H L,Schmit L A.Control Augmented System Synthesis with Dynamic Stability Constraints.AIAA Journal,1991,29(4):619-626
+收稿日期:1998年2月24日
+修回日期:1998年7月15日

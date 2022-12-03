@@ -1,0 +1,230 @@
+信息与控制
+Information and Control
+1999年　第28卷　第1期　Vol.28　No.1　1999
+
+
+
+PDM系统中人员模型的建立
+杨　进　游绣华　张永清　张秋英
+
+　　摘　要　 针对上海家化产品包装部PDM系统的实施，对包装部人员的组成和职责进行了分析，并在此 基础上建立了人员模型。通过人员模型的建立，明确了信息流动的方向和各级站点，建立了 有序的产品信息流程，规范了各级人员的职责和权限，为工作流程和产品模型的建立提供了 有效的支持。
+　　关键词　PDM, 人员模型
+THE ESTABLISHMENT OF THE PERSONNEL
+PATTERN IN A PDM SYSTEM
+YANG Jin　YOU Xiuhua　ZHANG Yongqing
+(Department of Plasticity Engineering, Shanghai JiaoTong Universi ty, 20030)
+ZHANG Qiuying
+(CIMS Insititute, Shanghai JiaoTong University, Shanghai 2 00030)
+Abstract　In this paper, in view of carrying out a PDM system in Packing Department of Shanghai Jiahua Corporation, we analyse the compositio n and the duty of the personnel in this department, on the basis of which we est ablish the personnel pattern. By establishing the personnel pattern, we make cle ar the direction and stations at different level of the information flow; we set up the process of product information in perfect order; we standardize the duty and authority of all personnel . All of these provide effective support for the establishment of work process and product model.
+Key words　PDM(Product data management), personnel pattern
+
+1　前言
+　　产品数据管理系统(Product Data Management)是当今计算机应用领域中人们谈论的热 门话题之一, PDM技术正在以前所未有的来势冲击着计算机集成制造业, 并给企业带来 自CAD/CAM技术以来最非凡的成就。CAD/CAM技术的发展和应用为企业产品的发展提 供了可靠和高效的设计工具, 无论是二维绘图还是三维产品造型, 将产品设计工程师从落后 的图板工作以及复杂的三维想象中解放出来。 上海家化有限公司产品包装部承担了家化产 品的包装设计、开发试制等任务。那时，尚无人知道训练由多层阈值逻辑单元(TLUs)组成的多层机的实用方法。但与此同时，设计数据和技术文档的管理和查询、各 类报表的生成以及设计开发的审批流程等问题又成为该部发展的一个“瓶颈”。因此，上海 家化的各级领导和技术人员都认识到了产品数据管理的重要性。如，在一方阵中含几千个光敏单元的VLSI芯片，它是以人的 视网膜中锥体细胞的方式来连接一块VLSI芯片。实施PDM系统时，人员模型是首先要考虑的基础模型，然后在此 基础上进一步建立工作流程和产品模型，以进行信息的集成和共享，逐步实现文档管理、报 表生成、流程管理等，最终实现和公司生产部门的MRPII以及其他相关部门进行信息沟 通，使企业走向计算机集成信息管理。
+2　上海家化包装部人员模型分析
+2.1　人员组成结构
+　　构造PDM系统时需将有关人员进行重组划分，或者说这些人员将分别以不同的角色在P DM中承担不同的职责，同时每个角色只在PDM实施流程控制中某个或几个或整个阶段 参与。有关人员角色的定义牵涉的方面很多，但首先必须考虑人员承担的任务和相应的权限 。各个角色的权限应根据实际使用的需要进行适当的调整。
+　　1954年生理学家Eccles提出了真实突触的分流模型［8］，并通过突触的电生理实验得到证实。 
+
+
+图1　家化包装部人员组织表
+
+2.2　与人员模型相关的文档类型及说明
+　　在整个信息流中，除了图档信息外，还有很多信息是以文档形式存在的。尤其是视觉计算方面会得到充分地发展。
+　　B. 供应商管理类
+　　供应商启用申请表等。
+　　C. 开发进度管理类
+　　开发任务书、开发进度明细表和开发进度备忘录等。
+　　神经计算机的主要特征是具有并行分布式处理、学习功能，这是一种提高计算性能的有效途 径，使计算机的功能向智能化发展，与人的大脑的功能相似，并具有专家的特点，比普通人 的反应更敏捷，思考更周密。
+　　E. 科研、开发成本管理类
+　　部件成本汇总表等。
+　　90年代以来，人们较多地关注非线性系统的控制问题，通过神经网络方法来解决这类问题 ，已取得了突出的成果，它是一个重要的研究领域。发现在实际生产中，这些人员的 职责和任务还有不明确之处，这使得生产数据的流向产生混乱，不利于数据管理和提高生产 率。为此，我们结合家化包装部的实际情况，首先明确和规范了各级人员所承担的任务及其 所接触到的数据类型，然后在此基础上建立了一个人员模型。
+作者单位：武汉工业大学自动化系　武汉　430070
+参考文献
+1　McCulloch W S, Pitts W. A Logical Calculus of the Ideas Immanent in Nervous 
+　　Activity, Bulletin of Mathematical Biophysics, 1943, (5):115～133
+2　N.维纳著，郝季仁译，控制论，科学出版，1985
+3　Von Neumann J. The General and Logical Theory of Automata, Cerebral Mechanisms in
+　　Behavior; The Hixon Sympsium, 1951
+4　Turing A M. On Computable Numbers, with an Application to the Entscheidungs 
+　　problem, Proc. London Math. Soc., 1936, 2(42):230～265; (43):544～546 
+5　Turing A M. Systems of Logic Based on Ordinals, Proc. London Math. Soc., 19 39,2
+　　(45):161～228
+6　Post E L. Finite Combinatory Process-formulation I, J.Symbolic Logic, 1936, 
+　　(1):103～105
+7　Hebb D O. The Organization of Behavior, New York:Wiley, 1949
+8　Eccles J C. Cholinergic and Inhibitory Synapses in A Pathway from Motor-axon 
+　　Collaterals to Motorneurones, J.Physiol., 1954,(126):524
+9　Rosenblatt, F., The Perceptron: A Probabilistic Model for Information storage 
+　　and Organization in The Brain. Psychological Review, 1958, (65):386～408 
+10　Widrow B, M E Hoff. Adaptive Switching Circuits. 1960 IRE WESCON con vertion 
+　　record: part 4. computers: Man-machine Systems, Los Angeles:96～104
+11　Rosenblatt F. Principles of Neurody Namics: Perceptrons and The Theory of Brain 
+　　Mechanisms, Spartan, New York, 1962
+12　Grossberg S. On the Serial Learning of Lists, Math. Biosci., 1969,(4):201～253
+13　Grossberg S. Some Networks that Can Lean, Remenber, and Reproduce any Number of
+　　Compialted Space-time Patterns, Ⅱ, stud. Appl. Math. 1970,(49):135～166
+14　Willshaw D J, Buneman O P. Longuest-higgins, H.C Nature 1969,(222):960
+15　Nilsson N J. Learning Machines: Foundations of Trainuble Pattern Classifying 
+　　Systems, McGraw-hill, New York,1965
+16　Holland J H. Genetic Algorithms and the Optimal Allocations of Trials, SIAM 
+　　Journal of Computing, 1973,(2):88～105
+17　Holland J H. Adaptation in Natural and Artificial Systems, Ann Arbor: The 
+　　University of Michigan Press, 1975
+18　Stein R B, Leung K V, Mangeron D, Oguztoreli M N. Improved Neuronal Model s for 
+　　Studying Neural Networks, Kybernetik, 1974,(15):1～9
+19　Heiden U. an der, Existence of Periodic Solutions of a Nerve Equation, Biol . 
+　　Cybern., 1976,(21):37～39
+20　Grossberg S. Aaptive Pattern Classification and Universal Recoding: Part I : 
+　　Parallel Development and Coding of Neural Feature Detectors, Biological Cybern 
+　　etics, 1976,(23):121～134
+21　Werbos P. Beyond Regression: New Tools for Prediction and Analysis in the 
+　　Behavioral Sciences. Ph D Dissertation, Harvard University,1974
+22　Fukushima K. Neocognitron: A Self-organizing Multilayered Neural Network. 
+　　Biological Cybernetics, 1980,(36):193～202
+23　Amari. S-I., Characteristics of Random Nets of Analog Neuron-like Elements , 
+　　IEEE Transactions on Systems, Man and Cybernetics, 1972a, SMC-2:643～657
+24　Kohonen T. Automatic Formation of Topological Maps in Self-orgnizing Systems: 
+　　Proceedings of the 2nd Scandinavian Conf. on Image Analysis, 1981:214～220
+25　Kohonen T. Self-organizing Formation of Topologically Correct Feature Maps , 
+　　Biol. Cybern. 1982,(43):59～69
+26　Kohonen T. Self-organization and Associative Memory. Berlin: Springer-Verlag,
+　　1984
+27　Hopfield J J. Neural Networks and Physical Systems with Emergent Collective 
+　　Computational Abilities, Proc. Natl. Acad. Sci., USA, 1982,(79):2254～2558
+28　Marr D. Vision, San Francisco: W.H.Freeman, 1982
+29　Hopfield J J. Neurons with Graded Respone have Collective Computational Pr 
+　　operties Like those of Twostate Neurons, Proc. Natl, Acad. Sci., 1984,(81):3088
+　　～3092
+30　Hopfield J J, Tank D W. Neural Computation of Decisions in Optimization Prob
+　　lems, Biol. Cybern. 1985,(52):141～152
+31　Hopfield J J, Tank D W. Computing with Neural Circuits: A Model, Scien ce, 1986,
+　　(233):625～633
+32　Lee Y C. Physica 22D, 1986,86.,276
+33　Lapedes A. Physica 22D,1986,247
+34　Kirkpatrick S, Gellat Jr C D, Veechi M P. Optimization by Simulated An nealing.
+　　Science, 1983,220(4598):671～681
+35　Hinton G E, Sejuowski T J, Ackley D H. Boltzmann Machiues: Cotraint Satisfaction
+　　Networks that Learn, Carnegie-Mellon University, Tech, Report CMU-CS -84-119, 
+　　1984
+36　Ackley D, Hinton G, Sejnowski T. A Learning Algorithm for Boltzmann machines. 
+　　Cognitive Science, 1985,(9):147～169
+37　Sejnowski T. Higher Order Boltzmann Machines. In: Denker J ed. AIP Conf 
+　　Prpoceeding 151:Neural Networks for Comptuing, New Youk: American Institute of 
+　　Phys ics, 1986,398～403
+38　Poggio T, et al. An analog model of Computation for Ill-posed Problems of Early 
+　　Vision. Artif Intell Lab Memo, 783,MIT, 1984
+39　Poggio T, et al. Computational Vision and Regularization Theory. Neture (Lond), 
+　　1985,(3):314～319
+40　Hecht-Nielsen, R., The Theory of Backpropagation Neural Network, In Review, 1988
+41　钱学森 (主编)， 关于思维科学，上海人民出版社，1986
+42　姚国正，汪云九，神经网络的集合运算，信息与控制，1989，18(2)：31 ～40
+43　斯华龄［美］，电脑人脑化：神经网络―第六代计算机(普及本)，北京大学出版社，19 92
+44　Chua L O, Yang L. Cellular Neural Networks: Theory. IEEE Transactions on 
+　　Circuits and Systems, 1988,(35):1257～1272
+45　Chua L O, Yang L. Cellular Neural Networks: Application, IEEE Transactions on 
+　　Circuits and Systems 1988, (35):1273～1290
+46　Kosko B. Adaptive Bidirectional Associative Memories, Appl. Opt., 1987,26
+　　(23):4947～4860
+47　Kosko B. Constructing an Associative Memory, Byte, 1987,12(10):1 37～144
+48　Kosko B. Bidirectional Associative Memories, IEEE Trans. on Man, Systems and 
+　　Cybernitics, 1988,(18):49～59
+49　Muhlenbein H. Parallel Genetic Algorithms, Population Genetics and Combina 
+　　torial Optimization, in J.D.Schaffer, Ed. Proceedings of the Third International
+　　Conference on Genetic Algorithms (ICGA), 1989,416～421
+50　Muhlenbein H. Limitations of Multi-layer Perceptron Networks-steps Towards 
+　　Genetic Neural Networks, Parallel Computing, 1990,(14):249～260
+51　Aleksander I. The Logic of Connectionist Systems, Neural Computing Archite 
+　　ctures, MIT Press, 1989
+52　廖晓昕. 细胞神经网络的数学理论(Ⅰ)、(Ⅱ),中国科学(A辑)，1994，24 (9)：902～910；
+　　24(10)：1037～1046
+53　Jenkins B K, A R Tanguay. Jr. Optical Architectures for Neural Network 
+　　Implementation, Handbook of Neural Computing and Neural Networks, MIT Press, 
+　　Bosto n, 1995:673～677
+54　McAulay A D, Wang J, Ma C. Optical Heteroassociative Memory Using Spatial Light 
+　　Rebroadcasters. Appl, Opt., 1990,29(14):2067～2073
+55　Jewel J L, Lee Y H, Scherer A, et al. Surface Emitting Microlasers for Photonic 
+　　Switching and Interclip Connection. Opt. Eng., 1990,29(3):2 10～214
+56　阮昊，陈述春，戴凤妹，千福熹. 利用电子俘获材料实现光学IPA神经网络模型，光学学报,
+　　1997，17(6)：766～771
+57　申金媛，常胜江，张延火斤，母国光. 基于联想存储级 联WTA模型的旋转不变识别，光学学
+　　报，1997，17(10)：1352～1356
+58　吴佑寿，赵明生，丁晓青. 一种激励函数可调的新人工神经网络及应用，中国科学(E辑)，
+　　1997，27(1)：55～60
+59　郝红卫，戴汝为. 集成手写汉字识别方法与系统，中国科学(E辑)， 1997，27(16)：556～
+　　559
+60　Narendra K, Parthasarathy K. Identification and Control of Dynamical Systems 
+　　Using Neural Networks. IEEE Trans on Neural Networks, Mar.1990,1(1):4～27
+61　戴先中，刘军，冯纯伯. 连续非线性系统的神经网络α阶逆系统控制方法，自动化学报 ，
+　　1998，24(4)：463～468
+62　Miller W T. Real-time Application of Neural Networks for Sensor-based Control 
+　　of Robots. with Vision, IEEE, Trans. Syst., Man, Cybern., 1989,(19):825～831 
+63　Miller T W, et al. (Eds), Neural Networks for Control, Cambridge, MA, MIT Press,
+　　1990
+64　Lane S　H, et al. Theory and Development of Higher Order CMAC Neural Ne tworks, 
+　　in Special Issue on Neural Networks in Control Systems, (Antsaklis, P.J. ,Ed.), 
+　　IEEE Control Systems Magazine 1992,12(2):23～30
+65　Bnlsari A. Some Analytical Solutions to the General Approximation Problem for 
+　　Feedforward Neural Networks. Neural Networks 1993,(6):991～996
+66　朱文革. 广义小波变换及其在人工神经网络中的应用，应用数学学报，1997，20 (2)
+67　罗忠，谢永斌，朱重光. CMAC学习过程收敛性研究，自动化学报，1997，23(4)：455～461
+68　蔚承建，姚更生更生，何振 亚. 改进的进化计算及其应用，自动化学报，1998，24(2)：
+　　262～265
+69　张讲社，徐宗本，梁怡. 整体退火遗传算法及其收敛充要条件，中国科学(E辑)，1997 ，
+　　　27(2)：154～164
+70　Hertz J, et al. Introduction to Theory of Neural Compution. Sant Fee Complexity 
+　　Science Series, 1991:156
+71　Anthony M, Biggs N. Computational Learning Theory. Combridge University Press, 
+　　1992
+72　阎平凡. 人工神经网络的容量、学习与计算复杂性，电子学报，1995，23 (4)：63～67
+73　钟义信，杨义先. 中国神经网络首届学术大会论文集，北京，1990
+74　焦李成. 神经网络计算，西安电子科技大学出版社，1993
+75　史忠植. 神经计算，电子工业出版社，1993
+收稿日期：1998-08-12
+。
+　　部门经理：下达产品开发和改进任务表；审批包装部件、启用和改进移交申请表；批准包装 测试申请；审核新产品科研开发试样；审核新产品首批投产备忘录；审核新产品启用生产模 具；审核供应商启用表。
+　　各科室主任：负责工业造型设计；负责印刷制稿、运输包装设计制稿；填写和确认包装部件 明细表；确认试样和模型。他引发学术界的争议，导致对人工智能投资的增加。
+　　材料室开发人员：负责研制出样；试样调整移交；确认包装部件明细表；提出包装部件、启 用和改进移交申请表 ；提出技术文件更改、包装测试申请；提出开发试样、启用生产 模具申请。
+　　测试室测试人员：负责测试评估；负责编制技术文件；审查包装部件明细表（法规审查）。 
+　　可见，在开发设计的审批发放过程中还包含了一些生产信息，而且中间夹有来回反复的过程 ，直到各方面都满意才能通过。另一方面，产品的设计任务是由部门经理发放给各室主任，再由各室主任将具体任务分配到各有关技术人员。其中并无一个具体的“项目”这一概念， 因为同时可能有几十个甚至几百个包装品开发任务，这也是家化包装部的一个不同之处。某个具体的技术人员可能同时从属于多个项目，扮演多个角色。其主要贡献在于，结点的并行计算能力很强，为计算神经行为的某此方面提供了可能性 ，从而开创了神经网络的研究。
+　　根据以上各级人员的职责和任务，我们可以绘制一个简单的任务发放流程图如图2所示。
+
+图2　任务发放流程图
+
+3　包装部PDM中人员模型的建立
+3.1　角色的建立及其权限
+　　在包装部PDM中建立以下角色：科研总监，部门经理，美工室主任，结构室主任，材料 室主任，测试（评估）室主任，美工室设计人员，结构室设计人员，材料室开发人员，测 试室测试人员和系统管理员。
+　　各角色将按行政职能分组，在PDM系统中均能施行以下权利：
+　　. 查看个人电子邮件；
+　　. 向系统中任何个人发电子邮件；
+　　. 将邮箱中的内容拷贝或移动到其他的文件夹中；
+　　. 删除本人邮箱中的内容；
+　　. 查看自己拥有的文档的状态；
+　　. 在拥有权限的情况下，用文档所对应的应用程序对该文档进行操作；
+　　. 在拥有权限的情况下，根据属性的内容查寻文档；
+　　. 按规定的流程，提交、发放、审批相应的文档。
+　　同时，不同的角色完成不同的任务，有不同的权利。包括系统管理员在内，各角色不能实施 权限以外的操作。具体原则如下：
+　　. 所有资料炮状包装部内人员均只读；
+　　. 图纸、黑稿、供应商信息、明细表、部件信息、技术文件等，组内响应开发人员可读可 写，其余人员只读；
+　　. 上一条中的资料组外人员只读；
+　　. 进度报表，各室主任可读可写，其余人员只读；
+　　. 部门人员信息，系统管理员可读可写。Nilsson对多层机，即具有隐层的广义认 知机作了精辟论述［15］，他认为网络计算过程实质上是一种坐标变换或是一种映射。
+　　. 部门经理：发放“产品开发和改进任务表”；审批“包装部件启用和改进移交申请表” ；查阅并审批“包装测试申请表”等。
+　　. 各科室主任：指定某设计员执行某任务；读写“产品开发进度明细表”；审阅设计数据 ；审核“装测试申请表”；读写“装部件成本汇总表”；审批“技术文件更改申请表”等。 
+　　. 美工室设计人员：读写和审阅“包装部件明细表”；将本人的设计数据提交审批等。
+　　. 结构室设计人员：读写本人负责的结构设计和图纸等数据；审阅“包装部件明细表”； 将本人的设计数据提交审批等。
+　　. 材料室开发人员：提交试样到测试室；“包装部件”；“包装部件启用申请表”； 读写并提交“技术文件更改申请表”等。
+　　. 测试室测试人员：本人负责的测试数据；读写相应的技术文件；审阅“包装部件明细表 ”等。人们关心的问题是产生回响的条件，网络的参数对回响的周期、幅度等性质的影响，以及 如何通过外部来控制回响波。
+3.2　人员培训
+　　建立了人员模型之后，为了进一步实施后续项目（包括工作流程和产品模型的建立） 以及整个PDM系统的实施完成，必须对人员模型中所涉及到的相关人员进行培训。这样 就可以把所涉及到的人员的个体行为纳入到PDM管理体系之中。因此，对人员的培训也 将成为重要的内容，培训对象及内容如下：
+　　高层领导〔包括总经理、副总经理、总工程师等〕：所需决策信息的获取和查询；
+　　中层领导〔包括科研总监和各科室主任〕：PDM系统的管理方式和操作使用；
+　　一般使用人员：PDM系统的管理方式和正常操作；
+　　系统管理员：人员定义、权限管理、数据备份等。
+4　结束语
+　　本文针对上海家化产品包装部PDM系统的实施，对包装部人员的组成和职责进行了分析 ，并在此基础上建立了人员模型。Rosenblatt之举激发了许多学者对神经网络研究的极大兴趣。在人员模型建立的过程中，或许有考虑不周全之处，敬请广大读 者批评指正。
+作者简介：杨　进，25岁，硕士生。研究领域为PDM系统及其在企业中的实施，模具计算机辅助设计/辅助制造。
+作者单位：杨进、游绣华、张永清：上海交通大学塑性成形工程系　上海　200030
+　　　　　张秋英：上海交通大学CIMS所　上海　200030
+参考文献
+1　陈宏亮。产品数据管理―PDM简介，计算机辅助设计与制造，1997，10：2 3～26
+收稿日期：1998-06-30

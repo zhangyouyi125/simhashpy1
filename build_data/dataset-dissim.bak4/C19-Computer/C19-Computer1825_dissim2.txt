@@ -1,0 +1,52 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000 Vol.19 No.2 P.9-10
+
+
+
+
+AutoCAD系统的ActiveX控制技术
+刘刚　汪新庆
+摘 要： 讨论了对著名的AutoCAD R14软件系统进行ActiveX Automation控制的基本原理和方法，具体说明了其实现途径。
+关键词： ActiveX控制 AutoCAD软件 二次开发 系统集成
+　　ActiveX控制是指基于ActiveX Automation技术的一套对软件系统进行交互控制和集成的技术方法。AutoCAD R14软件系统全面支持面向对象的ActiveX Automation技术，提供了更多的系统和图形对象的交互能力，使得用户可利用支持ActiveX Automation的多种高级语言如VB 5．0，VC＋＋ 5．0和DELPHI等对AutoCAD软件系统进行二次开发和集成。本文针对如何有效地对AutoCAD软件系统实现ActiveX控制进行了探讨。
+1 电子商务数据交换的标准XML
+　　XML是由W3C组织于1997年制定的标准，并获得IBM、Microsoft、Sun、Microsystems、HP、Adobe等厂商的共同支持，XML是一种“可扩展的标识语言”（eXtensible Markup Language），有别于目前广泛使用的HTML，XML可自行定义“标识”（Tag），各行业都可运用XML自行定义所使用的文件类型。OLE构件对象通过ActiveX自动化（ActiveX Automation）提供了一组可被外部访问的接口，各类不同工具可通过该接口访问构件对象。这里讨论的是程序一级的对象集成。在ActiveX Automation中服务器方对象（ActiveX Automation Server）实现客户方（ActiveX Automation Container）发出的服务请求。图1给出了ActiveX Automation技术的应用模型。本文讨论的系统中AutoCAD为服务器方，而开发的应用程序为客户方。注意此技术与DDE方式不同，ActiveX服务器方是以对象个体作为通信的主体，而不是以整个应用程序作为通信的主体。
+1．2 AutoCAD软件系统的二次开发
+　　AutoCAD的二次开发体系包括其内部三代开发环境和外部应用程序开发，如图2所示。对于各种开发环境的优劣比较在此不作详述，但需要指出的是利用基于进程通信的ActiveX Automation开发技术的好处在于：①开发语言多样化。在支持此技术的各种语言和开发环境中，可以选择自己最熟悉的语言进行开发，例如Visual Basic、Visual C＋＋以及Visual FoxPro等等。②程序编制自由。用此方法编制程序不必在给定的二次开发环境中受到语言和接口的约束，而可用自己的风格自由编写，开发效率高。③可充分利用已有资源。以AutoCAD为对象的开发程序，既可直接调用任何AutoLISP命令，又可直接调用其它方法程序开发的命令。同时原有的计算分析等模块可重复利用。④可移植性强。此方法开发的程序有较强的可移植性，当主服务软件的版本升级时，一般只需做少量改动或不作任何改动。⑤系统安全性好。与AutoLISP等程序相比，系统的安全性更易于保证，也可进行加密。⑥效率较高。与DDE方式相比，用ActiveX访问AutoCAD编程更简单，效率高而性能佳。
+
+图1 ActiveX Automation技术的应用模型
+
+图2 AutoCAD的二次开发工具与ActiveX程序接口
+2 ActiveX自动控制的实现
+2．1 AutoCAD的ActiveX对象模型
+　　此对象模型基本继承结构如图3所示。高性能的Borland SQL Link驱动程序提供访问Oracle 8i、Sybase 11．5、Informix 9、Microsoft SQL Server 7、DB／2 Universal Server和InterBase的能力，而Borland DataBase Engine提供快速访问Micrisoft Access、FoxPro、dBASE、Paradox等单机个人数据库或任何支持ODBC规范的数据库。位于根部的是Application对象，从根对象出发可到达其它AutoCAD对象并利用它们的属性和方法。
+
+图3 AutoCAD的ActiveX对象模型
+　　值得注意的是在ActiveX对象模型中，AutoCAD环境中的许多部件或特定概念被确定为模型对象。
+2 运用XML的InternetExpress技术
+　　Delphi 5 Enterprise的InternetExpress技术帮助用户建立基于Web浏览器的瘦客户端应用程序，全新HTML／XML Web Page编辑器以可视化方式设计客户端应用程序，并将运用标准XML传送数据，与符合业界标准COM、CORBA、MTS的MIDAS多级分布式构架相结合，使现有系统平滑地导入电子商务和Internet相关应用。
+　　关于ActiveX对象模型的使用方法在AutoCAD的在线帮助文件和参考文档中均有详细解释，本文不再赘叙。作为应用者要确定好使用何种支持ActiveX Automation的程序开发语言或环境。
+2．2 实现AutoCAD的ActiveX调用
+　　在实际应用中，要正确和流畅地实现ActiveX调用，关键在于如何有效地启动和切换AutoCAD窗口。
+10 远端调试能力
+　　针对分布式系统开发人员对多级分布式开发环境的需求，Delphi提供了远端调试能力，让开发人员透过网络直接对远端的CORBA、COM组件进行调试，使复杂的多级应用系统调试变得容易。Delphi 5 Enterprise中提供了ADOExpress以支持Microsoft Universal Data Access构架，能够运用Microsoft ActiveX Data Object（ADO）以及OLEDB驱动程序，配合Delphi 5各种便利的数据感知组件访问传统的关系型数据和非关系型数据，例如电子邮件系统和文件系统等多样化数据，此外Delphi 5 Enterprise中也支持Micrisoft Remote Data Services（RDS），以建立不需要状态设置的瘦客户端应用程序。
+　　2．获得AutoCAD文档、模型空间和视图的对象。
+6 访问不同类型数据资源
+　　今天IT部门所面临的数据来源已不仅仅是关系型数据库。 
+　　　Set acadDoc＝acadApp．ActiveDocument 
+　　　Set moSpace＝acadDoc．ModelSpace 
+　　　Set retVport＝acadDoc．ActiveViewport 
+　　　acadApp．Visible＝True
+　　　3．获得AutoCAD窗口句柄。
+11 将企业数据转化为决策信息
+　　BusinessInsight技术，包括DecisionCube提供交叉分析表，帮助用户分析多维数据。调用如下函数： 
+　　Call GetHwnd（Acadhwnd，″AUTOCAD″，″AUTOCAD －″）
+　　其主要思想是通过AUTOCAD窗口标题获得AUTOCAD窗口句柄Acadhwnd。
+　　4．应用Windows API函数切换AUTOCAD窗口，使其正确显示和拥有输入焦点。语句如下：　　　SetWindowPos Acadhwnd，HWND＿TOP，0，0，Screen．Width，
+　　　 Screen．Height，SWP＿NOMOVE
+　　ShowWindow Acadhwnd，SW＿SHOWMAXIMIZED
+　　SetFocus Acadhwnd
+　　通过以上处理，用户可以使用各种方法进行高效图形绘制和交互处理。若要退出AutoCAD系统，可使用语句acadApp．Quit，调用Application对象的Quit方法。
+7 全面支持Oracle 8对象关联扩展功能
+　　Delphi 5 Enterprise针对Oracle 8对象关联扩展功能，如Abstract Data Types、Nested Tables、Variable Length Arrays、Object Pointers（REFs）和External File References等提供最全面的支持。AutoCAD R14系统全面支持此技术，使得应用程序模块与其有机集成和充分共享成为可能，同时使应用程序的开发更具有多样性、界面独特性、保密性和可靠性等特点，能加快开发进度。与DDE相比，外部应用程序通过DDE同AutoCAD通信过程较繁且效率低下。ActiveX自动控制在进行对象处理时比原有嵌入式AutoLISP速度要快得多。欲获得Delphi 5的更详细信息，可拨打电话01068915794／95／96／97。Team Source版本管理系统也可以支持PVCS及其它源代码管理系统引擎，帮助用户精确控制开发团队的程序代码版本

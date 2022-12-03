@@ -1,0 +1,162 @@
+航空计测技术
+AVIATION METROLOGY &
+MEASUREMENT TECHNOLOGY
+1999年 第2期 No.2 1999
+
+
+
+可控高温管式检定炉的设计及制造
+潘书军
+
+　　摘　要　介绍了高温管式检定炉的设计、制造过程及其控制方法，并给出了系统调校的过程及相关的实验参数。
+　　关键词　检定炉　温度控制器　调校
+Design and manufacture of Controllable High Temperature Tube Calibration Furnace
+Pan Shujun
+　　Abstract　The design and manufacture processes and control method of the high temperature tube calibration furnace are presented.The adjustment and calibration processes and experiment parameter have been given.
+　　Key words　Calibration furnace,Temperature controller,Adjustment and calibration
+
+　　随着科学技术的发展和ITS―90温标在国内的全面推广实行，温度计量变得越来越重要，而其技术要求也越来越高。对合成孔径雷达,这一条件通常能满足。目前对这一随机过程的性态还没有详尽的了解。
+2　结构系统机电耦合动力学建模
+
+
+
+图1　压电元件及其薄片单元简图
+轴向伸缩压电元件及其薄片单元如图1所示,各单元极化沿轴向厚度方向,在准静态电场条件下,其等效线性压电本构方程可写为:
+D3=e33S3+ε33E3
+(1)
+T3=c33S3-e33E3
+(2)
+　　方程(1)、(2)分别描述材料正、逆压电效应,其中D3、E3分别为电位移(C/m2)和电场强度(N/C或V/m)轴向分量;S3、T3分别为轴向应变和应力(N/m2)分量;e33、ε33及c33分别为材料等效压电系数(C/m2)、介电系数(C/m*V)和弹性刚度系数(N/m2)。
+　　当外载q为零时,电势与元件相对变形成正比,从而可用来检测元件变形。
+5　结束语
+　　本文我们提出了一种估计多普勒质心的方法,并用Seasat-A数据进行了验证,结果证明了我们的分析的正确性。进一步考察式(6)知,MA(1)序列的谱峰位于ω=φb1处,换算成线性频率为
+
+(7)
+这里PRF表示合成孔径雷达的脉冲重复频率,这也就是说,欲通过一回波序列估计多普勒质心,只要估计出MA(1)模型的系数,然后通过上式就能得到相应的结果。
+表3　结构电势模态列表
+
+{φ}φ1φ2φ3φ4φ5φ6φ7φ8φ9φ10φ11φ12
+第一阶0.624-0.375-0.3380.2420.351-0.309-0.1160.1630.119-0.150-0.0030.039
+第二阶-0.1240.549-0.463-0.2110.2790.007-0.4010.1130.262-0.306-0.0610.083
+第三阶0.3820.2540.572-0.1450.4550.0990.342-0.0140.290-0.0660.1330.019
+
+　　分别控制结构前一、二、三阶模态振动时,设主动杆数与待控模态数相等。
+参考文献
+1　Crawley E F.Intelligent Structures for Aerospace:A Technology Overview and Assessment.AIAA Journal,1994,32(8):1689-1699
+2　董聪,夏人伟.智能结构设计与控制中的若干核心技术问题.力学进展,1996,26(2):166-178
+3　Wada B K.Adaptive Structures:An Overview.Journal Spacecraft Rockets,1990,27(3):330-337
+4　Anderson E H,Moore D M,Fanson J L.Development of An Active Member Using Piezoelectric and Electrostrictive Actuation for Control of Precision Structures.AIAA paper 90-1085-CP
+5　Chen G S,Bruno R J,Salama M.Optimal Placement of Active/Passive Members in Truss Structures Using Simulated Annealing.AIAA Journal,1991,29(8):1327-1334
+6　Sun C T,Wang T.Damping Augmentation by Delayed Actuation in Adaptive Structures.AIAA paper 93-1692-CP
+7　Lu L Y,Utku S,Wada B K.Vibration Suppression for Large Scale Adaptive Truss Structures Using Direct Output Feedback Control.Journal of Intelligent Material Systems Structures,1993,4(3):385-397
+8　Lammering R,Jia J H,Rogers C A.Optimal Placement of Piezoelectric Actuators in Adaptive Ttruss Structures.Joumal of Sound and Vibration,1994,171(1):67-85
+9　王子才,赵长安.应用最优控制.哈尔滨:哈尔滨工业大学出版社,1989:152-212
+10　Anderson E H,Hagood N W.A Comparison of Algorithms for Placement of Passive and Active Dampers.AIAA paper 94-1656-CP
+11　胡毓达.实用多目标最优化.上海科学出版社,1990:40-64
+*国家教委博士点基金(批准号9521305)和国家自然科学基金(批准号19632001)资助项目
+本文于1996年7月11日收到
+。
+　　现假定炉子的设计功率为1500 W
+　　2)电阻计算
+　　假设PtRh30丝通过的最大允许电流为13 A,则采用并联绕法，电路的最大允许电流为Imax＝26 A
+　　由于炉子有效温场仅限于炉体空腔中心一小段范围内，炉体的两头温度较低，所以，最高温度为1800 °C时，平均温度大致为1500 °C
+　　由公式P＝I2.R(式中P为功率,I为电流，R为电阻)可得温度为1500 °C时的电阻值R1500，示意电路见图1。
+
+
+
+图　1
+R1500＝P/I2max＝1500／242＝2.604 Ω
+所以
+R＝2.R1500＝5.208 Ω
+20 °C时PtRh30丝的电阻率为19.0×10－8 Ω.m
+从而可求得20 °C时每米的电阻为
+R20＝ρ.l／s＝ρ.l／(π.r2)
+＝19.0×10－8.l／(3.14×(0.8／1000)2)
+＝0.378 Ω (1)
+由于标准化热电极材料的电阻比R′t／R0与温度的关系对于PtRh30来说为
+R20／R0＝1.03　　(2)
+R1500／R0＝2.73　　(3)
+所以
+R1500／R20＝2.65　　(4)
+将(1)式代入(4)式得
+R1500＝2.65 Ω　R20＝1.002 Ω
+所以单根长度为
+l1＝l2＝R／R1500＝5.208／1.002＝5.198 m
+L′＝l1＋l2＝10.4 m
+两端引线2 m
+L＝12.4 m(L为所需材料的总长度)
+　　3)20 °C时PtRh30丝的密度为17600 kg／m3
+　　可求得20 °C时每米的质量为
+M＝ρ.π.r2.l＝17600×3.14×(0.4／1000)2
+×1＝8.84×10-3 kg
+2　温度控制器
+　　由上述方法设计制造的炉子热惯性较小，在高温段使用时由于散热较快，不易稳定。
+4　计算结果
+　　为了检验本文算法的性能,我们选取了Seasat-A的一块数据,然后分别采用上述两个算法对多普勒质心进行估计,得到一系列的数据结果,将它们分别列表与表1和表2中,表中第一行行为模型阶数,第一列为模型拟合时采用的序列长度。
+
+
+
+图4　6＃杆控制电压时间历程曲线
+
+
+图5　结点A、y方向位移响应历程曲线
+由图5可见,控制使振动很快衰减,由于响应溢出很小,同待控模态响应迭加后其影响也非常小,只是在振动控制末期才可从衰减曲线上看出溢出效应的存在和影响。
+
+
+图　2
+3　系统调校
+　　因为本系统控温对象为一大电流低电压的管式炉，所以必须限制可控硅的输出电压幅值。
+　　实际的回波数据并没有这样的理想特性。
+　　对于新制的炉子，其控制品质不易确定，所以可先以FP21的手动方式，描绘出炉子的温升曲线，确定PID上限幅值，然后再初步编制出运行曲线，以自整定方式运行一遍,得出一组PID参数。在此基础之上，进行参数的手工整定，待整个系统的所有参数调整完成后，进行一段时期的稳定性考察，即可交付使用。
+　　以上述设计的管式炉为控温对象，所得系统参数如下：
+　　1)曲线拟合表如表1所示。
+　　表　1
+
+步段号SV值/°CPID号时间/min
+11350120
+1255028
+13950320
+14110047
+151100540
+16120045
+171200540
+18130045
+191300640
+21140045
+221400640
+23150045
+241500740
+25160045
+261600840
+27170045
+281700940
+
+
+　　2)PID参数表如表2所示
+表　2
+
+PID号P/％I/sD/sPID OH/％
+12030010021
+22030010025
+32030010030
+42030010035
+55.5272935
+67.0272035
+78.5271935
+810.5262835
+911.0262835
+
+　　3)控温仪的其它部分设置
+　　a.控温热电偶
+　　TC　 RANGE　b.曲线连接形式
+　　LINK　FORMAT　[12　]
+　　LINK　EXEC：　1
+　　c.曲线起始步段号及起始温度值
+　　PTN1：　START　　0°C
+　　END　STEP 　　9
+　　PTN2：　START 　　1400°C
+　　END STEP 　　 8
+　　PV　 START 　　
+4　结束语
+　　本系统的设计方法同样适用于其它退火炉、清洗炉以及电阻炉等。
+　　准确建模是压电桁架结构静/动态分析和控制的基础

@@ -1,0 +1,53 @@
+计算机工程
+COMPUTER ENGINEERING
+1999年  第25卷 第7期 Vol.25 No.5 1999
+
+
+
+Jasmine在网上商场中的应用
+何武
+摘要　Jasmine是纯面积对象型多媒体数据库，它采用WebLink工具，实现从WWW直接对Jasmine数据库中动态、交互式信息的存取。讨论Jasmine在网上商场中的应用。
+关键词　模板Weblink开放数据库查询语言
+Jasmine’s Application in Online Shopping
+He Wu
+Est-China Research Institute of Computer Technology Shanghai 200233
+Abstract：Jasmine is and object-oriented multimedia database.It realizes access to dynamic and interactive information in Jasmine database by WebLink tool.The article discussed Jasmine's application in online shopping
+Key words：Template;WebLink;ODQL
+　　近年来,随着以计算机网络为核心的信息技术的迅速发展及国际互连网在全球的日益普及和应用,电子商务已成为网络技术应用新的发展方向。电子商务作为一种新型的商业模式，必将对未来商业的发展产生深远影响。网上商场就是电子商务的典型例子，呈现出蓬勃的发展前景。作者前不久参与了上海市首家网上商场购物系统的设计与开发，该系统采用美国CA公司最新推出的面向对象数据库技术Jasmine，利用其适合开发电子商务应用环境和对多媒体数据进行有效管理的特色，通过三维虚拟空间、逼真的实物模型、精美的图片信息，为顾客营造了一个网上购物的环境。顾客足不出户，在家中或办公室的电脑上轻点鼠标，便可逛商场、选商品，进行实时的网上订购并由商家送货上门。由于视频数据库是一个较新的领域，其索引方法有待进一步研究。
+　　* 本文受国家电力公司计算机应用重点学科专项基金的资助。
+　　Jasmine采用纯粹的面向对象技术，可以存储多种数据类型，包括图形图象、文本、声音、视频片段等多媒体数据，并且对各类数据的处理方法也与相应的数据相关联，因而数据库的建立和维护都非常方便。由于用Jasmine构筑的应用具有真正的面向对象的特征，因此它不仅易于增强和易于添加新特性，而且以后的维护也将更简单。基于Jasmine的Web应用被建造在一个安全的、强大的、分布式的和规模可变的架构上。有了镜头库后，我们就可根据应用的需要建立视频文档库，形成用户视图。在Jasmine应用开发中,很多地方都有OOD的杰作，特别是其中的类和继承性。我们把视频数据库系统看成是由存储的媒体段、镜头和视频文档三个层次组成。例如该购物系统确定了商品、服装、西服、食品、家电等类。
+　　2) 定义类层次关系  类被组织为层次关系以表示具有特殊性和一般性的自然关系。层次越低越具有特殊性。
+　　作者单位：郑　鹏　李订方　刘海青（武汉水利电力大学计算机科学与技术系　湖北．武汉430072）
+参考文献
+［1］　Arun Hampapur. Design Video Data Management System. Ph.D thesis, 1995
+［2］　L.A.Rowe, J.S.Boreczky，C.A.Eads. Indexes for User Access to Large Video Databases. In Proceedings of the IS&T/SPIE Symposium on Electronic Imaging Science and Technology, Conference on Storage and Retrieval for Image and Video DatabasesⅡ, San Jose,CA,February 1994
+［3］　Rune Hjelsvold. Sharing and Reuse of Video Information. In Proceedings of the ACM Multimedia′94 Conference Workshop on Multimedia Database Management Systems,San Francisco, California, October 1994
+收稿日期:1999-01-22
+。注释就是与特定视频段相关的语义属性集。例如商品类是服装等其它所有类的超类，服装等其它所有类是商品类的子类；服装类是西服类的直接超类，西服类是服装类的直接子类。
+　　3) 定义属性 在定义属性时，应当充分利用继承性。比如商品类定义有品名、品牌等属性，服装类则只需要定义颜色、材料等商品类所没有定义的属性，品名、品牌等属性已经自动继承了。从(1)式可以看出视频流区间可以是相关视频存储段的一部分或全部。
+2　WebLink介绍
+　　WebLink是一种工具，它是Internet与Jasmine数据库之间的接口。通过使用WebLink，能用客户端的浏览器在Internet上访问存储在Jasmine数据库中的信息，包括多媒体数据。WebLink能够创建HTML文件，该文件的数据取自于Jasmine数据库。当该数据库中的数据变化时，HTML文件中的数据也随之自动更新。我们采用面向对象的方法，把每一类信息都定义成对象，相同类型的对象构成一个集合，几个集合的集合就构成视频数据库。
+
+图1 WebLink与Internet和Jasmine的连接
+　　WebLink支持以下的功能来连接WWW浏览器与Jasmine数据库：
+　　・访问数据库 WebLink使用包含在模板中的ODQL(Open Database Query Language--Jasmine提供的数据库编程语言)命令来访问本地和远程的Jasmine数据库。这些命令可以是查询、修改，以及其它的数据库操作。
+　　・显示查询结果 WebLink的模板被存储在Jasmine数据库中,通过ODQL语句从Jasmine数据库中检索数据。
+　　・管理数据库流程 流程是指来自同一个浏览器的一系列信息。通过执行一个WebLink命令,WebLink流程被激活。一旦被激活，WebLink流程就能够连续地接收查询请求，直到数据库的流程被关闭。
+　　应用模板是WebLink应用开发的一大特色。对视频区间的注释依赖于上下文。借助于模板，可以方便地进一步定制所需的应用。WebLink考虑了Web环境的需要,提供了一个实例，其中包括了一些简单的模板，对用户很有帮助。有了镜头库后，我们就可根据应用的需要建立视频文档库，形成用户视图。一般采取以下方法：
+　　在操作系统中以文本文件的形式来开发模板。在使用一个模板之前，必须先把该模板存储在WebLink对象数据库中。通过使用createTemplate()这个方法来实现。
+　　视频文档中的每一段和每一个镜头都称为视频流区间(StreamInt)，所有的视频流区间构成视频流区间集(StreamInt―Set)。每个模板都有唯一的名字。必须为每一个包含数据库信息的HTML输出页都定义一个模板。
+　　WebLink中常用的命令有以下几个：
+　　odb_login命令用来连接数据库。
+　　odb_get命令用来对数据库进行查询，显示Jasmine数据库中的对象。它具有返回多结果集的能力。
+　　odb_logout命令用来关闭数据库连接。
+　　WebLink具体工作过程如下：
+　　1) 首先用户在客户机的浏览器上发出请求。请求命令嵌在客户端的HTML文本中。该请求通过使用HTTP协议被传送到Web服务器上的WebLink。
+　　2) WebLink收到请求后，将查询提交给Jasmine数据库服务器。查询命令用的是ODQL语言。
+　　3) 查询返回结果替代指定模板中的<!这种方法的主要缺点是特征缺乏语义信息，例如一些用统计矩表示的特征，使得用户在对视频数据库查询时感到不便。
+　　4) 带有最终数据的HTML文件送回用户的浏览器。像其它的HTML文件一样，浏览器把符合查询条件的数据库中的数据在屏幕上显示出来。对一个具体的视频文档进行的描述称为初级上下文。有兴趣者，可访问网址URL:http://billion.commerce.sh.cn。
+作者简介：何武 男，23岁，助理工程师，主攻方向；分布式计算、系统管理和数据库
+作者单位：华东计算机研究所总体预研部上海200233
+参考文献
+1　Jasmine Reference.CA公司,1998
+2　WebLink Manual.CA公司,1998
+收稿日期：1998-12-17

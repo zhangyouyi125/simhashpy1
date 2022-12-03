@@ -1,0 +1,120 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第5期 No.5 Vol.18 1998
+科技期刊
+
+应用四膜虫刺泡发射试验方法评价金属离子的毒性*
+王永兴1　吴庆龙2　王晓蓉1　王连生1　(1.污染控制与资源化研究国家重点实验室，南京大学环境科学与工程系，南京210093；2.中国科学院南京地理与湖泊研究所，南京 210008)
+文　摘　应用致突变阴性、阳性对照(Cu2+, Cr2O2-４, Cd2+, 丝裂霉素MMC, 环磷酰胺CP，秋水仙素Colchicine)评价四膜虫刺泡发射实验方法的可行性，并应用该方法检测稀土金属离子La3+,Ce3+, Sm3+, Y3+, Gd3+对四膜虫刺泡发射的影响效应。植物生理功能增强，无疑有益于植物抗逆性提高，进而增加植物对Cd胁迫的耐受性；一些学者认为，氧化胁迫可启动钙信使系统(Ca2+*CaM)激活自由基生成酶类(如磷脂酶A2)产生大量自由基〔15〕，加剧膜脂过氧化。 以喷等量蒸馏水为对照。稀土金属离子La3+，Ce3+，Sm3+，Y3+，Gd3+处理四膜虫的刺泡发射率同样具有随浓度升高而增加的趋势，但在低浓度处理组各检测时间内四膜虫刺泡发射率低于对照组，该结果与稀土低浓度时的刺激效应和抗突变性不无相关。
+关键词　四膜虫　金属离子　刺泡发射试验　毒性
+Toxicity of metal ions evaluated with tricocyst test of Tetrahymena pyriformis.Wang Yongxing1,Wu Qinglong2，Wang Xiaorong1, Wang Liansheng1(State Key Laboratory of Pollution Control and Resource Reuse, Department of Environmental Science and Engineering, Nanjing University, Nanjing 210093；2.Nanjing Institute of Geography and Limnology,Chinese Academy of Science,Nanjing 210008). China Environmental Science. 1998,18(5):446～449
+Abstract―Feasibility of tricocyst test with Tetrahymena pyriformis were evaluated by serial chemicals (Cu2+, Cr2O2-４,Cd2+,MMC, CP, Colchicine). There is no significant difference between control and treated groups with negative chemical (Cu2+). Except at the highest concentration the frequency of tricocyst decrease for the cytotoxicity, it shows good relations to the concentrations of positive chemicals (Cr2O2-, Cd2+, MMC, CP). The results show that tricocyst test of Tetrahymena pyriformis is a recommendable, handy, and reliable method for biomonitoring with freshwater species. After treated with the REE ions La3+, Ce3+, Sm3+, Y3+, Gd3+, the frequency of tricocyst also become higher as the cocentrations higher. But at low concentrations, the lower frequency than control are observed.It is considered that this effect concerned with the stimulation growth response at low REE concentrations.
+Key words:Tetrahymena pyriformis　metal ions　tricocyst test　toxicity
+　　梨形四膜虫(Tetrahymena pyriformis)是原生动物的代表种之一，广泛分布于世界各地的淡水中，在无菌条件下可以形成无性生殖克隆(clone)，易于建立全微生物化培养，保证试验工作的连续性，是水环境污染监测一种较理想的试验生物。
+2.6　La对Cd胁迫下大豆幼苗Cd含量影响
+　　处于Cd胁迫下的大豆幼苗，体内Cd含量明显高于对照植株，其中枝叶Cd含量相对值高于根部的事实，验证了Cd在植物体内迁移性强的观点。从已有的资料及本文研究结果看，Cd毒致伤害的部分原因在于：Cd抑制叶绿体光合系统Ⅱ活力〔11〕，降低叶绿素含量，从而阻碍光合作用；Cd降低硝酸还原酶与脱氢酶活性，继而干扰氮代谢与能量代谢正常进行；Cd减少抗坏血酸含量〔2〕，增加过氧化氢酶活性与质膜透性，暗示Cd参与自由基反应，这与Hendny等关于Cd对植物的毒害是由于Cd诱发高活性自由基的观点〔12〕及黄玉山等报道的实验结果〔13〕相符。人为的刺激方式如化学物质、电刺激、机械作用等均可诱发刺泡发射。Pollack〔1〕确认由基因控制，6个基因作用在9个遗传位点上，因此作为一种快速、简便的试验方法，将四膜虫刺泡发射试验应用于化学品的毒性或致突变性的筛检和评价，具有良好前景。本文用致突变阳性和阴性物(Cu2+, Cr2O2-４,Cd2+,丝裂霉素MMC, 环磷酰胺CP，秋水仙素Colchicine)检测四膜虫刺泡发射试验方法的可行性，同时评价La3+，Ce3+，Sm3+，Y3+，Gd3+等稀土金属离子对四膜虫刺泡发射的影响效应。
+1　材料与方法
+1.1　试验材料
+　　试验用四膜虫：纯培养的S1上海梨形四膜虫(Tetrahymena pyriformis shanghaiensis s1)无性生殖克隆，由无锡淡水渔业研究中心提供。培养液：胰蛋白胨(Tryptone，OXOID 英国产)20g，葡萄糖(A.R)5g，蒸馏水加至1000 mL后，5%NaHCO3溶液调pH=7.2，经2.28kg 15min高压蒸汽灭菌后，置冰箱4℃备用。
+表1　LaCl3对大豆幼苗光合速率与质膜透性的影响
+Table 1　Effect of LaCl3 on photosynthetic rate and 
+plasmolemma of Glycine max seedling 
+
+浓度
+(mg/L)光合速率*
+(μmol/g*min)相对值质膜透性
+(%)差值
+01.31±0.04100.019.84±1.89-
+101.52±0.06116.012.91±1.10-6.93
+301.67±0.10127.58.48±0.57-11.36
+501.44±0.08109.910.27±1.05-9.57
+
+　　　　注：* 以叶片单位时间、鲜重下放O2量表示
+表2　La对Cd胁迫下大豆幼苗生长的影响*
+Table 2　Effect of La on the growth of Glycine max seedling under Cd stress
+
+处理株高　　
+(cm)　　叶片数　
+(片)　叶面积　
+(cm2)　主根长　　
+(cm)　　侧根数　　
+(条)　　根体积　
+(cm3)　
+028.20±2.511.0±0　191.62±13.6518.2±1.890.3±12.63.817±0.265
+　(100.0)(100.0)　(100.0)(100.0)(100.0)(100.0)
+Cd22.7±2.78.0±0.4　102.19±9.9213.5±1.450.8±7.32.207±0.098
+　( 80.5)( 72.7)　( 53.33)( 74.2)( 56.3)( 57.82)
+La+Cd25.4±2.611.0±0　147.84±10.7816.4±1.980.3±10.53.062±0.197
+　( 90.1)(100.0)　( 77.15)( 90.1)( 88.9)( 80.22)
+
+　　　　注：* 括号内为相对值；叶片数、叶面积、侧根数以株为单位
+表3　La对Cd胁迫下大豆幼苗干重、鲜重的影响
+Table 3　Effect of La on dry weight and fresh weight
+from Glycine max seedling under Cd stress
+
+处　理地上部(g/株)地下部(g/株)
+鲜重相对值干重相对值鲜重相对值干重相对值
+05.70±1.14100.0　1.12±0.13100.0　1.98±0.30100.0　0.31±0.02100.0　
+Cd3.81±0.8266.80.61±0.0454.21.49±0.1875.30.19±0.0161.3
+La+Cd4.88±1.2085.60.79±0.0770.21.75±0.3588.40.24±0.0177.4
+
+2.3　La对Cd胁迫下大豆幼苗光合作用的影响
+　　表4数据指出，受Cd污染的大豆植株，光合速率与叶绿素含量分别比对照植株下降31.3%和23.6%，与文献〔2〕在小白菜上实验的结果相符。
+表4　La对Cd胁迫下大豆幼苗光合速率与叶绿素含量的影响
+Table 4　Effect of La on photosynthetic rate and chlorophyll content fromGlycine max seedling under Cd stress 
+
+处　理光合速率
+(μmol/g*min)相对值叶绿素含量*
+(mg/g)相对值
+01.31±0.24100.0　1.63±0.16100.0　
+Cd0.90±0.0568.701.25±0.0976.4
+La+Cd1.09±0.1183.211.49±0.1291.4
+
+　　　　注：* 以叶片单位鲜重表示
+表5　La对Cd胁迫下大豆幼苗NR活性与TTC还原力的影响
+Table 5　Effect of La on NR activity and TTC reduction ability fromGlycine max seedling under Cd stress
+
+处　理NR活性*
+(μmol/g*h)相对值TTC还原力
+OD530相对值
+06.52±0.48100.0　0.3819±0.043100.0　
+Cd3.83±0.3558.70.2757±0.02372.2
+La+Cd5.17±0.4779.30.3375±0.02988.4
+
+　　　　注：* 以叶片单位时间、鲜重下NO－２形成量表示
+2.5　La对Cd胁迫下大豆幼苗CAT与质膜透性影响
+　　过氧化氢酶(CAT)具有清除植物体内活性氧、维持膜稳定性的功能， 质膜透性是反映植物逆境胁迫伤害程度的重要指标。
+1.2.2　刺泡发射试验　受试化合物培养液配成
+5个浓度系列，每个化合物同时作1个去离子水空白对照，每个处理浓度设3个平行比色管。将预培养处于对数生长期(18h)的四膜虫0.1mL接种已加入9.9mL含受试化合物培养液的比色管中，维持起始细胞为10个/mL，置27℃恒温箱内无菌培养。每隔一定时间24，48，72，96h，每个比色管中计数2次，每次移取0.1 mL于0.1mL浮游生物计数框上，滴加Lugol's液固定细胞并染色，在显微镜下计数出现刺泡发射的细胞数，得到不同时刻的刺泡发射频率。
+关键词　大豆幼苗　Cd伤害　生态生理作用
+Ecophysiological effect of La on Glycine max seedling under Cd stress.Zhou Qing, Huang Xiaohua, Tu Kungang,Huang Gangye, Zhang Jianhua, Cao Yuhua(Suzhou Railway Normal College,Suzhou 215009).China Environmental Science.1998,18(5):442～445
+Abstract―Mitigative effect of La on Glycine max seedling under Cd stress was studied with pot culture experiment. The results show that the growth and metabolism of Glycine max seedling are inhibited by 500 mg/L CdCl2, when 30 mg/L LaCl3 is used to spray Glycine max seedling one time, the damage effect of Cd is reduced. The experiment proves this effect being related to that La raises photosynthetic rate, chlorophyll content and activity of nitrate reductase, reduces cell membrane permeability and Cd content,keeps TTC reduction ability of Glycine max seedling.
+Key words:Glycine max seedling　Cd harmed　ecophysiological effect
+　　关于Cd污染对植物表观特征的影响与内部生理代谢的伤害已积累了较多资料〔1～3〕，这为Cd污染地区抗逆减灾的生态防护技术研究提供了条件。
+2　结果与讨论
+2.1　刺泡自发射频率
+　　为检测四膜虫刺泡的自发射频率，进行20次测定，每次计数1000个细胞，结果表明自发射频率为2.55 ± 0.23%，95%置信限为2.06～3.03。由此可见在标准培养条件下(温度，pH值，培养基组成等)，梨形四膜虫的刺泡自发射频率是比较低的。
+2.2　对照组刺泡发射结果
+　　阴性对照Cu2+，阳性对照Cr2O2-４，Cd2+，MMC，CP以及细胞分裂阻断剂秋水仙素(Colchicine)，稀土金属离子La3+，Ce3+，Sm3+，Y3+，Gd3+致四膜虫刺泡发射的结果见图1。将处理组与对照组刺泡发射频率进行统计分析(Dunnet's t-test)可以发现：
+2.2.1　阴性对照Cu2+各浓度处理组与对照组差异不显著(P>0.05)。
+2.2.2　阳性对照Cr2O2-４ 0.1, 1, 10, 100mg/L处理组的刺泡发射率在各检测时间与对照组差异显著(P<0.05,P<0.01)，而且随作用浓度的增加四膜虫细胞的刺泡发射率随浓度的增加而升高，将刺泡发射率与对数浓度进行回归分析，发现相关性良好，相关方程分别为24h Y=4.08+0.71(X+0.5) (r=0.998, n=4)，48h Y=8.70+1.16(X+0.5) (r=0.999, n=4)，72h Y=11.08+2.55(X+0.5) (r=0.998, n=4)，96h Y=5.93+1.05(X+0.5) (r=0.980, n=4)，而150mg/L组的刺泡发射率明显低于以上各处理组。Cd2+在0.01, 0.1, 1mg/L组与对应具显著差异(P<0.05,P<0.01)，其相关方程分别为24h Y=2.17+0.81(X+1.0) (r=0.952, n=3)，48h Y=9.80+2.80(X+1.0) (r=0.983, n=3)，72h Y=1.90+0.50(X+1.0) (r=0.988, n=3)，96h Y=1.27+0.60(X+1.0) (r=0.961, n=3)，在10mg/L组刺泡发射率显著降低，50mg/L组Cd2+的毒性导致细胞死亡，无法得到有关刺泡发射率数据。MMC在各处理组均与对照差异显著(P<0.05,P<0.01)，相关方程为24h Y=0.62+0.19(X+2.5) (r=0.930, n=5)，48h Y=2.34+1.08(X+2.0) (r=0.989, n=5)，72h Y=4.8+1.18(X+2.0) (r=0.989,n=5)，96h Y=3.92+0.39(X+2.0) (r=0.961, n=5)。CP在25, 50，100mg/L和48，72h与对照组差异显著(P<0.05,P<0.01)，在各浓度组96h均无影响效应，值得注意的是在1, 10, 25mg/L处理组各检测时间有的四膜虫刺泡发射率甚至低于对照组。但是在24, 48, 72h同样表现出剂量―效应关系，相关方程分别为24h Y=2.05+1.30(X+0.5) (r=0.840, n=4)，48h Y=3.68+0.83(X+0.5) (r=0.999, n=4)，72h Y=1.91+0.34(X+0.5) (r=0.998, n=4)。
+2.2.3　细胞分裂阻断剂秋水仙素(Colchicine)在24, 48, 72h各处理组均与对照组差异显著(P<0.05,P<0.01)，96h无明显影响效应，相关方程为24h Y=2.70+1.16(X+0.06) (r=0.841, n=5)，48h Y=5.86+1.70(X+0.06) (r=0.937, n=5)，72h Y=1.56+0.28(X+0.06) (r=0.840, n=5)。上述各阳性对照物均为常见的致突变物，表明刺泡发射试验方法与致突变试验方法具共同之处。修瑞琴等人〔2〕的研究也表明该方法与Ames试验、微核试验等短测方法具良好一致性。Cohen认为外源物质导致与质膜生理功能相关的基因产生突变，进而影响到刺泡的发射〔3〕，因此该方法是致突变筛检系统一个很有价值的补充。上述结果在处理浓度与刺泡发射率之间呈现良好相关性，表明方法的可行性。最高浓度时四膜虫细胞刺泡发射率显著降低现象，认为是由于阳性物在高浓度处理时表现出的毒性效应，进而降低了刺泡的发射频率，这与Cohen应用EMS检测时的结果一致〔4〕。
+
+图1　不同浓度Cu2+,Cr2O2-４，Cd2+MMC，CP，Colchicine,La3+，Ce3+，Sm3+，Y3+，Gd3+对四膜虫刺泡发射百分率的影响 
+Fig.1　Effect on percent of tricocyst by Cu2+,Cr2O2-４，Cd2+ Colchicine,La3+，Ce3+，Sm3+，Y3+，Gd3+ in Tetrahymena pyriformis
+2.3　稀土金属离子处理组刺泡发射结果
+　　稀土金属离子La3+，Ce3+，Sm3+，Y3+，Gd3+处理四膜虫后刺泡发射率同样具有随浓度升高而增加的趋势，在最高浓度组均较前一浓度降低。稀土金属离子表现出与CP相似的结果，在较低浓度处理组各检测时间四膜虫刺泡发射率甚至低于对照组。在进行四膜虫生长试验时发现，低浓度处理时稀土表现出刺激四膜虫生长的效应，也有文献证实稀土具抗突变作用〔5〕，显然刺泡发射率的降低与刺激效应和抗突变性相关，这也从另一角度说明刺泡发射率作为检测毒性影响的生物指标具有实用价值。
+2.4　讨论
+　　在以上应用阳性对照及稀土金属离子的试验中，24～96h之间同一物质引起的刺泡发射率不同。有的在48h最大，有的在72h最大。其原因可能是：(1)细胞数目的增加与刺泡发射细胞增加不同步；(2)在诱发过程中基因突变得到修复。在稀土处理组，一般重稀土的最大刺泡发射率出现在48h，而轻稀土的最大刺泡发射率出现在72h，这与重稀土(Y3+，Gd3+)对四膜虫的毒性大于轻稀土(La3+，Ce3+，Sm3+)的结果一致。很有必要进行试验探讨。从已有的资料及本文研究结果看，Cd毒致伤害的部分原因在于：Cd抑制叶绿体光合系统Ⅱ活力〔11〕，降低叶绿素含量，从而阻碍光合作用；Cd降低硝酸还原酶与脱氢酶活性，继而干扰氮代谢与能量代谢正常进行；Cd减少抗坏血酸含量〔2〕，增加过氧化氢酶活性与质膜透性，暗示Cd参与自由基反应，这与Hendny等关于Cd对植物的毒害是由于Cd诱发高活性自由基的观点〔12〕及黄玉山等报道的实验结果〔13〕相符。由于四膜虫体内具有与动物细胞近似的酶系统，试验不需加活化酶，是一个快速、简便、可靠的短期测试法。
+3.2　应用四膜虫刺泡发射试验检测稀土金属离子的毒性，稀土在低浓度由于刺激效应而表现为刺泡发射率降低，随浓度的增高而呈阳性反应，重稀土(Y3+，Gd3+)对刺泡发射的影响大于轻稀土(La3+，Ce3+，Sm3+)。
+参考文献
+1　Pollack S.Mutations affecting the tricocysts in Paramecium tetraurelia ( morphology and description of the mutants. J. Protozool，1974, 21(2): 352～363
+2　修瑞琴, 高世荣, 李连元.原生动物致突变试验方法研究. 卫生研究, 1984, 13(4): 20～23
+3　Cohen J,Beisson J. Genetic analysis of the relationships between the cell surface and the nuclei in Paramecium tetraurelia. Genetics, 1980, 95: 797～818
+4　Cohen J. Cytotoxic versus mutagenic effect of ethyl methanesulfonate on Paramecium tetraurelia. Mut. Res., 1980, 70: 251～254
+5　崔明珍,肖　白,蔡　丽等.有机稀土化合物抗诱变性研究初探. 稀土, 1992, 13(3): 51～54
+
+作者简介
+王永兴　男，1971年9月生。南京大学环境化学专业博士生。董慕新等报道〔4〕，外施适宜浓度的Zn可降低水稻植株Cd含量，贾棚等〔5〕研究也证明，稀土微肥能减轻Hg,Cr,Cd等重金属对甘蓝产量和品质的影响。 喷施La的大豆幼苗， Cd伤害的程度减轻， 反映出La对Cd危害大豆幼苗具有一定的缓解作用(表2)。发表论文5篇。
+收稿日期：1997-12-23
+* 国家自然科学基金资助项目(29677006)
