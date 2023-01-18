@@ -1,0 +1,50 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　Vol.19　No.6　P.34-35
+
+
+
+
+Novell NetWare 5．0网络组建中的一些问题
+黄穗
+摘要：在组建NetWare 5．0网络中，网络管理和工作站设置方面的新特点，分析存在的问题及其处理方法。
+关键词：开放数据链路接口　Novell可加载模块　NetWare 5．0
+　　Novell网络曾经以其在文件与打印服务方面的出色表现赢得过众多的网络用户，成为DOS工作站时代的主流网络操作系统。但随着工作站平台从DOS向Windows 95／98的转变以及Internet应用的迅速普及，不论是NetWare 3.XX还是4.XX在支持图形化操作以及开拓Internet应用方面都呈现出一些不足。为此，Novell公司在1998年8月推出了NetWare 5.0，它保持了原有的文件与打印服务的优势，在图形化操作以及基于TCP／IP的网络服务方面进行了较大的改进。下面从实际应用的角度分析NetWare 5.0的一些新特点及其对组网的影响。
+1  管理问题
+　　在NetWare 4.XX以前，网络管理可以分别在DOS、Win3.X以及Win95／98环境下进行。在DOS下的工具是SYSCON（3.XX）和NETADMIN（4.XX）；在Win3.X下是NWADMN3X；在Win95／98下是NWADMIN。但NetWare 5.0本身不再提供DOS或Win3.X下的管理工具，而是新增加了基于服务器和基于浏览器的管理工具，更新了Win95／98／NT下的管理工具。也就是说，除非是从原来的3.XX或4.XX升级至5.0，否则将无法在DOS或Win3.X下进行网络管理。如果坚持要在DOS或Win3.X下进行管理工作，可以找1台正常运行的NetWare 4.XX服务器，将其中SYS：PUBLIC下与NETADMIN相关的文件或与NWADMN3X相关的文件复制到NetWare 5.0服务器SYS卷一个独立的目录中（不要覆盖5.0下SYS：PUBLIC目录中的文件）。它也可以运用到网络管理中去，缓解集中式网络管理的压力，在时间、空间上分布网管活动，增强网络管理的灵活性和可缩放性。
+　　服务器上的管理工具是ConsoleOne，这是一个基于Java虚拟机的图形化管理工具，解决了以往服务器运行时除了监视外无事可做的情况。可以在图形化的操作界面下进行创建NDS的Organization、Organization Unit、Group和User对象、管理这些对象的部分属性以及对服务器的卷、目录和文件进行管理的工作。但ConsoleOne还存在以下问题：(1)由于Java虚拟机的运行效率问题，它不仅占用内存多（要占用25MB），而且运行速度慢（CPU在200MHz以上才不明显）。(2)对组和用户的访问权限控制、目录与文件的共享等操作都不能完成。(3)它对于服务器卷、目录和文件的浏览和管理并不像对NDS对象那样要先进行用户的认证才允许操作，安全性不设防。由于系统安装后ConsoleOne是设成自动加载的，为解决上述问题，可用控制台命令nwconfig修改autoexec.ncf文件，将其中加载ConsoleOne的命令startx.ncf去掉，需要时再用控制台命令startx加载。网管应用由多个移动Agent分工协作完成，形成了一个可缩放的群体计算模式，整个网络管理系统也更加灵活、伸缩方便。
+李天剑（深圳中兴通讯公司上海二所　200233）
+曾文方（四川大学计算机系）
+李天翼（四川大学计算机系）
+参考文献
+1，Harrison C G．Mobile AgentAre they a good ideat．IBM research report RC19887，1995
+2，Genesereth M R．Software Agent．Communications of ACM 37（7），1994
+3，陶先平，吕建．流动Agent：一种未来的分布计算模式．计 算机科学，1999；26（2）
+4，胡谷雨．现代通信网和计算机网管理．北京：电子工业出版 社，1996
+收稿日期：1999－12－22
+。靠Windows 95／98／NT本身的NetWare客户程序虽然能够访问NetWare 5.0服务器上的文件，但不能进行网络管理，也不能进行Novell的NDS操作。因此，必须选择1台Windows 95／98／NT安装Novell提供的专用客户程序使其成为Novell工作站，再通过该工作站的管理请求程序（Requester）远程运行位于NetWare 5.0服务器上的管理工具。
+3  使用移动Agent的网络管理
+　　在使用移动Agent的网络管理（network management by mobile agent，NMbMA）系统中，每个网管应用由1个或多个MA组成，MA从网管工作站或代理池（agent repository）迁移到支持移动Agent系统（MAS）的被管理设备中进行工作。
+　　基于Web浏览器的管理方式是Novell最新开发的一种基于Internet网络的管理方案，但目前的版本功能还不及ConsoleOne，只能进行有限的创建、管理NDS对象的操作，对浏览器和服务器还有一些特殊的要求。
+　　(2)安全模块：提供身份验证、访问控制等安全服务。
+
+图2  移动Agent概念示意图
+　　利用MA技术可以通过向1个或者多个节点分配任务而实现动态的、并行的计算。用IPX／NETX方式上网将不能获得Novell的NDS服务，性能大打折扣；16位ODI方式中如果不加载NDS模块（在Net.cfg文件中设置加载NDS.VLM）其效果与IPX／NETX方式相近（除ODI方式支持不同帧以外），而且这2种上网方式都还存在一个共同的问题，那就是不论用什么用户上网，其映射的网络盘都一样（只映射SYS：、SYS：PUBLIC：和SYS：SYSTEM3个盘），也就是说用户的注册脚本失效。只有用16位带NDS模块的ODI方式上网或者32位ODI方式上网，才能避免出现上述问题，享受Novell的NDS访问权利与服务。32位ODI方式以NetWare I／O Subsystem（NIOS.EXE）为引导程序，通过加载网络连接、网卡驱动和网络协议的可安装模块（.NLM）实现连网和多重网络协议支持，其中NBIC32.NLM、LSLC32.NLM、CMSM.NLM、ETHERISM.NLM、TRANNTA.NLM和CLIENT32.NLM是必须加载的模块，IPX.NLM是支持IPX协议用的，TCPIP.NLM是支持TCP／IP协议的，而SPX＿SKTS.NLM是Winsock for SPX／IPX模块，这些协议模块可根据DOS工作站连网后的应用需要加以选用。
+3  使用移动Agent的网络管理
+　　在使用移动Agent的网络管理（network management by mobile agent，NMbMA）系统中，每个网管应用由1个或多个MA组成，MA从网管工作站或代理池（agent repository）迁移到支持移动Agent系统（MAS）的被管理设备中进行工作。此外，32位连网方式突破了1个工作站最大连接数的限制（NETX的8，VLM的50），连接数仅受内存大小的限制，变静态连接为动态连接，为应用程序提供了更大的扩展空间。但是，要采用32位ODI方式上网，网络卡必须支持32位NDIS工作方式并具备相应的驱动程序（*.lan）。另外，目前的32位可加载模块不支持无盘启动，即使在工作站内存上开设1个虚拟盘将启动文件全部复制进去也不能启动，加载至Client32.NLM模块时即死机。
+　　对于Windows 95／98／NT工作站，首先要安装客户端软件Novell Client for Windows 95／98／NT。由于Windows 95／98／NT本身的NetWare网络客户、IPX／SPX兼容协议、文件及打印机共享程序与Novell工作站的要求不完全兼容，系统的拨号网络、DCOM95、MFC42.DLL以及部分内置音频／视频驱动程序也可能与Novell工作站程序不兼容，所以，如果冒然安装Novell客户软件，很可能会造成系统网络功能失效，严重时还会导致不能启动。
+　　一个MA就是一个独立的应用程序，它可以自主地在异构网络环境中按照一定的规程迁移，寻找合适的计算资源和信息资源，并对这些资源进行处理，以完成用户指定的任务。从客户软件的安装过程可以看到，安装时首先是将现有的不兼容协议删除，然后再安装Novell自己的工作站程序。因此，如果只有早期的客户软件，也可以手工先删除会造成冲突的NetWare协议和驱动程序。一旦安装后不能正常启动，可以用安全模式进入，将安装客户软件时加进去的网络协议（尤其是32位支持协议）去掉。必要时可将网卡去掉，以彻底清除造成冲突的协议或驱动程序。Novell客户软件除了带来对NetWare服务器访问和管理的功能外，也会对系统产生一些其它的影响，首先是启动登录，每次系统启动时都会要求与NetWare的服务器连接和登录。代理池保存有MA的备份，可以在应用出现异常时进行恢复工作。如果要去掉启动时自动登录，可以按以下方法修改系统的注册表：找到注册表项HKEY＿LOCAL＿MACHINE＼SOFTWARE＼Microsoft＼Windows＼CurrentVersion＼Network＼Real Mode Net，在它下面创建新项AutoLogon，类型选Binary，值设为0（如设为1则为自动登录）。
+
+图1  传统的网络管理系统
+　　传统的网络管理系统采用集中式的管理模式，网管应用在管理工作站上完成，因此对工作站的处理能力要求很高，而整个系统的扩展性较差。其次是对应用程序的影响，这些影响集中体现在客户端的参数设置上，比如对加锁文件的处理、数据包间隔的设置、对各个网络时限的设置等等。代理池保存有MA的备份，可以在应用出现异常时进行恢复工作。具体设置路线是：进入控制面板→网络→Novell NetWare Client→属性→Advanced Settings，共有70多个设置项目。
+3  系统升级
+　　如前面所述，无论是工作站程序还是服务器程序都有其适用范围和缺陷，服务器的补丁程序（Service Pack）也越来越大，SP2是65MB，SP3A是95MB。值得注意的是各种程序的匹配性，工作站程序除了注重改进对本地操作系统的适应性以外，对服务器程序也提出了相应的要求，比如，利用Internet浏览器对服务器进行网络管理，不仅要求浏览器要安装相应版本的Java虚拟机，还要求服务器安装最新版的补丁程序。服务器升级的步骤是：
+　(1)将补丁程序(自解压程序包)从工作站复制到SYS卷的目录下，如SYS：UPDATES，运行、解开程序包；
+　(2)让所有工作站断开与服务器的连接，停止其它应用程序(Java虚拟机、Web服务器等)；
+　(3)在控制台打入NWCONFIG(不能在ConsoleOne 中做)；
+　(4)按Product Options－＞Install a Product Not Listed －＞F3键－＞输入SYS：UPDATES＼NW5SPXX开始安装(nw5spxx是补丁程序解开时自动生成的目录名)。
+　　其间可以选择是否备份原来的系统文件。还有一部分补丁要手工进行复制，即解开程序包中MISC目录下的程序，如WAN、Trivoli、GroupWise、CD Tower，如果安装了相应的软件则要用新的文件覆盖SYS卷下原来的文件。
+参考文献
+1，Kelly J，Lindberg P著．Novell NetWare 5网络管理员手 册．北京：电子工业出版社，1999
+2，肖薇，陈剑辉，裴植．探索NetWare 5的奥秘―基础篇．北京：人民邮电出版社，1999
+收稿日期：2000－01－20

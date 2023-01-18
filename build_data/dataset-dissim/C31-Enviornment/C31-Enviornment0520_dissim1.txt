@@ -1,0 +1,29 @@
+城市环境与城市生态
+URBAN ENVIRONMENT & URBAN ECOLOGY
+1999年 第12卷 第4期 Vol.12 No.4 1999
+
+
+
+城市污水处理厂出水生态渠回用方案实证研究
+马　红　龙泽波　孙孝然
+　　摘要：本文结合天津经济技术开发区(TEDA)污水回用，在研究回用规模、深度处理工艺以及生态渠的挖掘的基础上，从技术经济分析的角度对方案的可行性进行了探讨。在超临界条件下（P=30MPa，T=400℃，440℃，480℃，520℃）进行超临界水氧化实验。
+　　关键词：生态渠；污水回用；技术经济分析；TEDA
+　　中图分类号：X703　　文献标识码：A　　文章编号：1002-1264(1999)04-0004-03
+A Case Study on the Eco-ditch Reclamation Plan for the 
+Effluent from the Municipal Sewage Treatment Plant
+MA Hong1
+(1.TEDA Environmental Protection Bureau,Tianjin 300456)
+LONG Ze-bo2，SUN Xiao-ran2
+(2.Tianjin Academy of Environmental Sciences, Tianjin 300191)
+Abstract：Based on the example of wastewater reuse in Tianjin Economic & Technological Development Area,some concerning processes(e.g.the reclamation scale,the advanced treatment technology and the dredging of the Eco-ditch)were discussed in the paper.Furthermore,the plan feasibility was proposed through technical and economic analysis.It can be seen from the results that the plan is scientific and reasonable
+Key words：　eco-ditch；　wastewater reclamation；　 technical and economic analysis；　TEDA
+　　城市污水被公认为是重要的可利用水源之一。城市污水稳定可靠，通过城市污水处理厂达标处理后，其可利用程度更高。世界上许多国家或地区，如美国、日本、德国、以色列、南非等，都早已开始实施污水回用，在获得大量水资源的同时取得了可观的经济效益，为其工农业的稳定发展提供了水资源保证［1］。反应的实验活化能为171.7kJ/mol，前置因子A为2.99×1011。通过高温高压下的自由基氧化反应，有机物能快速氧化为CO2、H2O和N2等。结果表明，TOC去除速率在氧化剂过量10倍的情况下，对TOC是2.15级反应。城市污水处理厂出水生态渠回用方案以城市污水处理厂出水为水源，通过适当的深度处理之后，将其出水输送至生态渠(生态渠为环绕或贯穿某地区的输水渠道)后就近进行回用。动力学的研究大部分集中在有机组分消失动力学。
+　　超临界水氧化过程的开发以及设计、优化控制和评价都需要相关的动力学知识。
+1　回用规模
+　　TEDA开发区生态渠渠水主要用作绿化用水(包括洗盐及灌溉等)和景观湖泊的补充水。渠水的蒸发与渗透也会消耗部分渠水；渠水的主要来源是回用水，降雨也是渠水的来源之一，只是所占的比例很小。开发区土壤粘性比较大，渗透性能不好，渗透水量可以不予考虑。回用水量、降雨量以及渠水的消耗量应该形成长期的动态的平衡，由此可以粗略地估算出开发区生态渠回用方案的规模。超临界水氧化技术是在不产生有害副产物的情况下彻底有效降解有毒有机污染物的一种新方法。在超临界条件下（P=30MPa，T=400℃，440℃，480℃，520℃）进行超临界水氧化实验。
+表1　开发区生态渠回用方案水量估算结果
+
+项目面积(hm2)年耗水量万(t)日平均耗水量(t)
+绿化已建2002005479
+未建81381322274
+湖泊</t

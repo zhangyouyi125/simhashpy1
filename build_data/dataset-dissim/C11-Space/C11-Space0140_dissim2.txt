@@ -1,0 +1,200 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年4月  第19卷  第2期科技期刊
+
+改进的推广KALMAN滤波器
+在导弹被动制导中的应用*
+周 荻
+(清华大学自动化系*北京*100084)
+胡恒章 杨旭东
+(哈尔滨工业大学航天学院*哈尔滨*150001)
+摘  要　　本文研究将改进的推广Kalman滤波器(MEKF)应用于导弹被动制导
+问题。为了提高系统的可观性，我们采用一种双重指标来设计最优导引律。
+仿真结果表明，如果系统状态的均值较高，波动较小，那么MEKF的估计精度
+明显优于推广Kalman滤波器(EKF)。这一模型的特点是模型的所有状态变量在工程上可测量，在后面的设计中可以看出该模型为自动驾驶仪设计带来的极大便利。仅有角度测量的导弹
+制导问题又称被动制导问题。可以看出在远大于系统带宽的频带内，代价函数的最大奇异值近似为1，此时闭环系统具有全通特性，即实现了H∞控制设计的目标。在被动制导条件下，
+导弹的机动飞行轨迹会对滤波器的性能产生直接影响［2］、［3］，因此在
+设计导引律时有必要考虑系统可观性指标。
+
+　　被动制导问题中常用的非线性滤波方法是推广Kalman滤波(EKF)。然而，
+只有当系统的动态模型和观测模型都很接近于线性时，EKF的估计结果才有
+可能接近于真值。一种改进的推广Kalman滤波器［4］(MEKF)可以克服这一
+约束，因此我们提出在导弹被动制导中应用MEKF进行目标状态估计。
+
+2  直角坐标系中被动制导问题的描述
+
+图1 导弹与目标相对运动关系在仿真时，导弹和目标都可以用质点来表示(见
+图1)。设目标加速度用一个Gauss-Markov随机过程描述。系统动态模型
+为
+dX=AXdt+bdt+wdt
+(1)
+其中X=［x y z vx vy vz aTx aTy aTz］T，前三个变量代表目标与导弹之间的
+相对位置，中间的三个变量代表相对速度，后三个变量代表目标加速度；b=
+［0 0 0 -aMx -aMy -aMz 0 0 0］T是控制向量，aMx、aMy、aMz代表导弹加速度；
+w=［0 0 0 0 0 0 wTx wTy wTz］T是噪声向量。另外，
+
+
+
+系统观测模型为
+dY=h(x)dt+vdt
+(2)
+其中h(x)=［tan-1y/x  tan-1-z/(x2+y2)1/2］T，v代表观测噪声。
+w和v都是均值为零的高斯白色随机向量，且w和v相互独立。
+4.1　设计内反馈回路控制器K-LQR
+　　由于模型的状态变量均可测，因此可方便地用线性二次调节器LQR方法设计内回路控制器K-LQR，通过调节代价函数
+J=(1)/(2)∫(xTQx+uTRu)dt
+(7)
+的状态权系数Q和控制权系数R，相应改变K-LQR，最后使得弹道上所有特征点的等效输出端乘型不确定性的最大奇异值不大于1，即使得内回路的所有特征点的等效输出端乘型不确定性在单位球内变化，最后求得K-LQR为：
+K-LQR=.0028ωx-.7910.5.13ωx-38.7-.056ωx
+.84.02ωx-.17ωx11.3.23ωx-57.2(8)
+4.2　设计外回路控制K-inf
+
+
+图3　W2(s)和(Gmoi)的Bode图
+
+图4　H∞自动驾驶仪调试结果
+从系统的响应速度要求和被控对象的特性等几方面考虑，先取系统的带宽ωc≈10rad/s，图3示出了的奇异值Bode图(0db线以下的曲线)。
+参考文献
+  1　Reichert R T.Homing Performance Comparison of Selected Airframe Configuration Using Skid-to-Turn and Bank-to-Turn Steering Policies.NASA-CR-3420，1981
+  2　Zames G,Feedback and Optimal Sensintivity:Model Reference Transformations,Multiplicative Seminorms,and Approximate Inverse.IEEE Trans.Automatic Control,1981,AC-26,p.301-320
+  3　郑建华.鲁棒控制理论及其在BTT导弹中的应用.哈尔滨工业大学工学博士学位论文，1996年1月
+  4　Doyle J C,Glover K,Hargoneger P K and Francis B A.State-Space Solution to Standard H2 and H∞ Control Problem.Proceeding of the American Control Conference,Atlanta,1988,1691-1696
+。当以输出端乘型不确定性等效表示模型的高频未建模动态特性和模型参数的不确定性时，加权混合灵敏度问题表示为：
+W1S
+W2T∞＜1
+(5)
+这里W1(s)为性能权函数，反映出对灵敏度函数S的形状要求；W2(s)为不确定性权函数，由被控对象的模型不确定性决定? h/?xT,S和N是正定对角加权矩阵，tr表示矩阵的迹。
+令
+
+
+s1,s2,s3是非负常数，时变矩阵
+
+
+其中q1=(x2+y２)(x2+y2+z2)/［2(x2+y2+z2)］。利用矩阵迹的性质，(6)式可
+以写作
+
+(7)
+把H,N,Φ，S按定义代入(7)式可得
+
+(8)
+当只考虑位置信息时，令s1=1,s2=s3=0,则(8)式化为
+
+(9)
+综合(5)、(9)两式，设双重性能指标为
+
+(10)
+其中c和s是大于零的常数。
+
+    上述双重指标控制问题可以沿直角坐标系的x、y、z轴解耦成三个子问题，
+这样只需考虑求aMy使得在满足约束=Vy,y=aTy-aMy,Ty=-λaTy以及t0,y0,vy0,aTy0和tf的条
+件下，性能指标
+
+(11)
+最小。
+
+    应用最优控制理论可以求得
+aMy=c1y+c2vy+c3aTy
+(12)
+其中
+c1=Λ21Γ11+Λ22Γ21+Λ23Γ31
+c2=Λ21Γ12+Λ22Γ22+Λ23Γ32
+c3=Λ21Γ13+Λ22Γ23+Λ23Γ33
+
+矩阵Λ和Γ的定义和解法较繁琐，这里不
+再详述，读者可参阅文献［3］中的附录。4  改进的推广Kalman滤波器(MEKF)
+
+    考虑非线性系统
+dX=f(t,X)dt+Budt+ε1σ(t)dw,X(0)=X0,t≥0
+(13)
+dY=h(t,X)dt+ε2σ0(t)dv,Y0=0,t≥0
+(14)
+其中状态X∈Rn，观测Y∈Rm，控制u∈Rl，随机过程w、v是两个相互独立的布朗
+运动，它们的维数分别是n1和m1，ε1、ε2是大于零的常数，B是n×l矩阵，
+σ(t)是n×n1矩阵，σ0(t)是m×m1矩阵，h：［0,∞)×Rn→Rm,f：［0,∞)×Rn→Rn,
+X0是L可测向量，它具有有限的二次矩且独立于w和v。
+
+    利用Taylor级数围绕条件均值X^展开可得EKF方程
+
+(15)
+
+(16)
+其中A(t,X)和H(t,X)代表Hessian矩阵fX和hX。
+
+    只有当f和h都很接近于线性时，才能期望(15)―(16)的解接近于真值。
+为了克服这一约束，我们将f和h围绕已知量进行线性化而不是围绕被估计量
+进行线性化可得一种改进的推广Kalman滤波器(MEKF)。
+
+    令为确定性微分方程
+d=f(t,)dt+Budt,0=EX0
+(17)
+的解，且令X为随机微分方程
+dX=f(t,X)dt+Budt+ε1σ(t)dw,X(0)=X0
+(18)
+的真实解。定义X~为围绕确定流X-的波动，从而有X=-+X~。把f和h围绕进行
+Taylor展开可以推出MEKF方程，X-是(17)式的精确解。
+
+    设A(t,)=fX-,H(t,)=hX-，那么
+f(t,)=f(t,-)+A(t,)X~+0(X~)
+(19)
+h(t,)=h(t,)+H(t,)X~+0(X~)
+(20)
+把(19)―(20)式代入(13)―(14)式可得波动量的动态方程和观测方程
+dX~=A(t,)X~dt+ε1σ(t)dw,X~0=0
+(21)
+dY=［h(t,)+H(t,)X~］dt+ε2σ0(t)dv,Y(0)=0
+(22)
+　　这样，滤波问题被解耦成两个子问题。第一个子问题是由初值问题(17)
+所决定的确定性问题；第二个子问题是由波动量方程(21)―(22)所确定的随
+机性问题。可以看出在远大于系统带宽的频带内，代价函数的最大奇异值近似为1，此时闭环系统具有全通特性，即实现了H∞控制设计的目标。定义X~的最小方差无偏估计为^=E{X~/Yt}，误差协方差矩阵为P=E{(X
+~-^)(X~-^)T/Yt}，其中Yt代表直至t时刻,过程Y所产生的最小σ―代数。应
+用线性系统的Kalman-Bucy理论，模型(21)―(22)的最优估计器为
+
+初始条件为^0=0,P(0)=0。传统的多变量控制设计方法要求依据导弹的飞行状态逐段切换驾驶仪的增益，下面利用H∞/加权混合灵敏度方法设计导弹的鲁棒自动驾驶仪。
+在MEKF中，联立解(17)、(21)、(22)可得估计值X^=X-+X~。
+　　　　致谢：本文的工作得到了中科院空间中心胡行毅研究员的大力支持，特此感谢。由此可知，如果系统状态均值较高，波动较小，那么
+由这种方法得到的估值可能具有相当高的精度。当系统中存在确定性输入项，
+而且其功率远大于噪声功率时，就属这种情况。在被动制导问题中，系统中
+的确定性输入项b是导弹的加速度项，它的功率远大于系统中的噪声项w的功
+率。另外，系统的动态模型(1)式是线性的，当初值较准确时，容易求得它的
+精确解。基于以上两个原因，在被动制导中应用MEKF必然可得高精度的状态
+估计值。为了证明这一点，我们把EKF和MEKF同时应用于被动制导问题，进
+行仿真研究。由文献［3，4］知，当广义被控对象P(s)满足6个假设条件，且当标准H∞控制问题的等效条件成立时，即可利用两个代数Riccati方程算法求取H∞鲁棒控制器，详细内容见文献［3，4］。
+参考文献
+  1　Reichert R T.Homing Performance Comparison of Selected Airframe Configuration Using Skid-to-Turn and Bank-to-Turn Steering Policies.NASA-CR-3420，1981
+  2　Zames G,Feedback and Optimal Sensintivity:Model Reference Transformations,Multiplicative Seminorms,and Approximate Inverse.IEEE Trans.Automatic Control,1981,AC-26,p.301-320
+  3　郑建华.鲁棒控制理论及其在BTT导弹中的应用.哈尔滨工业大学工学博士学位论文，1996年1月
+  4　Doyle J C,Glover K,Hargoneger P K and Francis B A.State-Space Solution to Standard H2 and H∞ Control Problem.Proceeding of the American Control Conference,Atlanta,1988,1691-1696
+。经过50次Monte-Carlo仿真所得到的滤波器估计误差的统计
+结果如图1―图3所示。图1中，在某一时刻t，相对距离估计误差利用公式
+
+
+求得，其中E［ex］代表x的估计误差的均值。
+　　在应用H∞/加权混合灵敏度方法设计大范围模型参数变化系统的鲁棒控制器时，很关键的问题是权函数的选取方法和大范围模型参数变化系统的模型不确定性限定问题，文献［3］从工程应用角度给出了问题的解决方案。图1―3中的仿真结果表明，MEKF的估计精度明显高于EKF。
+
+
+图2 相对距离估计误差
+图3 相对速度估计误差
+图4 相标加速度估计误差
+6  结论
+
+    我们提出在导弹被动制导问题中采用改进的推广Kalman滤波器(MEKF)。
+为了提高系统的可观性，我们用一种双重指标来设计最优导引规律。仿真结
+果表明，MEKF的精度明显高于推广Kalman滤波器(EKF)。
+
+
+本文于1995年12月18日收到
+
+*本文得到国家教委博士点基金资助
+
+参考文献
+1  Balakrishnan S N.Extention to Modified Polar Coordinates and Application with 
+Passive Measurements.Journal of Guidance,Control,and Dynamics,1989,12(6):906-912
+2  Nardone S C,Aidala V J.Observability Criteria for Bearing-only Target Motion 
+Analysis.IEEE Transactions on Aerospace and Electronic Systems,1981,AES-17(2):162-166
+3  Hull D G,Speyer J L,Burris D B.Linear Quadratic Guidance Law for Dual Control of 
+Homing Missiles.Journal of Guidance,Control and Dynamics,1990,13(1):137-144
+4  Ahmed N U,Radaideh S M.Modified Extended Kalman Filtering.IEEE Transactions 
+on Automatic Control 1994,39(6):1322-1326
+5  Song T L,Speyer J L.A Stochastic Analysis of Modified Gain Extended Kalman Filter 
+with Applications to Estimation with Bearings Only Measutements.IEEE Transactions on 
+Automatic Control,1985,AC-30(10):940-949

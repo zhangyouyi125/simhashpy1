@@ -1,0 +1,89 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+一种用于热校准风洞的
+数据采集系统集成及软件设计
+张　强
+摘　要　简要介绍了研华ADAM4000系列模块的性能及其特点，并详细阐述了利用该系列模块组成一种用于热校准风洞的数据采集系统以及LABTECH CONTROL组态软件包在整个系统中的应用。
+关键词　模块　组态软件包　热校准风洞
+A Data Aquisition System Integration and
+Design of Software Used in Thermal-Tunnel
+Zhang Qiang
+　　Abstract　This article describes briefly the performance and the characteristics of ADVANTECH's modules of ADAM4000 series,and demonstrates in details how to construct a data acquisition system used in Thermal-Tunnel as well as the application of the LABTECH CONTROL configuration software package in the whole system.
+　　Key words　Data acquisition system,Module,Configuration software package,Thermal-Tunnel
+
+　　概述
+　　热校准风洞的测试参数包含许多种，如温度、压力、电压、电流、电阻、流量等，整个试验过程比较烦琐，为了提高动态测试的精度以及减少信号在传输过程中的损失，在选择数据采集系统时要仔细考虑。目前，数据采集系统的种类多种多样，普通的数据采集系统采用板卡结构，传感器信号直接与板卡相联，通过计算机控制板卡的数据采集，这就存在一个问题：传感器信号在传输过程中很容易受到外界的干扰，引起测量数据的不准确。另外，还有一种数据采集系统，它采用的是模块化设计，根据不同的测试参数设计出不同的模块，这种模块便于现场采集数据，抗干扰能力比较强，传感器信号通过模块内部将模拟信号转换成数字信号再传给计算机，由于数字信号不受外界环境的干扰，被测数据的准确度大大增加。在用矩量法求解上述方程时，首先用N个三角形平面面元模拟导体表面；选择适当的面元电流基函数，将表面电流写成的形式，并代入上述公式；然后用适当的检验函数（本文选基函数作为检验函数）对公式两边作内积运算，从而把矢量方程简化为矩阵方程：
+　　TM：
+［Z］［I］=［V］
+（6）　　TE：
+［B］［I］=［T］
+（7）　　各已知矩阵的阵元表达式如下：zmn=Lmjω(8)
+(9)
+
+　　(10)
+(11)
+　　其中：m=1,2,3……N;　n=1,2,3……，N
+　　式中式中是入射场，上标加、减号分别代表一对相邻面元的两侧；Lm是相邻面元的公共边长，c表示面元重心矢径，是公共边对应顶点至重心的矢径。一是采用传统的软件开发工具如C++等开发自己的应用程序，但是开发周期长、困难多，且在今后的维护工作存在着问题;二是采用组态软件包开发，组态软件开发周期短、易维护、易扩展，因而值得推广。
+1　数据采集系统――ADAM4000系列模块
+　　台湾研华公司生产的ADAM4000系列数据采集模块是一种模块内内置微控制器，传感器到计算机接口的智能设备。该系列模块提供信号调理、隔离、调整量程、A/D和D/A转换、数据比较及数据通讯功能，某些模块还可以数字量I/O控制继电器及TTL器件。ADAM模块能连接到计算机并与之通讯。采用RS―485传输标准，并用ASCII式通讯。RS―485 网络提供较低噪声传感器读入，主计算机通过ADAM RS―232/RS―485转换器,用一个COM通讯端口连到RS―485网络。
+　　模拟量输入模块采用微处理器控制的集成A/D转换器，将传感器电压、电流、热电偶或RTD信号转换成数字量。然后根据模块的配置将数字量变换成工程单位、十六进制表示的二进制补码或满量程的百分数。计算条件为：入射波长λ=1米，俯仰角为0°（即θ=90°），方位观察角Φ从0°至+90°变化；正轴线方向为x轴。模拟量输入模块提供信号调理、A/D转换、调整量程及RS―485接口的通讯功能。通过提供A/D输入的光电耦隔离和变压器隔离，转换器的隔离电压达500 V DC，该系列模块能防止电源对地干扰和电源浪涌。RS―485网络仅需两根线：DATA+和DATA-，通过低廉的屏蔽双绞线连接。
+　　在“热校准风洞”的数据采集系统中,主要用到的是模拟量输入模块和通讯模块，模拟量输入模块主要包括：ADAM―4011、ADAM―4012、ADAM―4013、ADAM―4017、ADAM―4018;通讯模块包括：ADAM―4510、ADAM―4520。
+1.1　模拟量输入模块
+　　1) ADAM―4011接收的模拟量输入有
+　　a.J、K、T、E、R、S和B型热电偶
+　　b.毫伏级电压输入：±15 mV，±50 mV，±100 mV，±500 mV
+　　c.伏级电压输入：±1 V，±2.5 V
+　　d.电流输入：±20 mA
+　　并提供一个热电偶输入通道和一个模拟量输入通道。
+　　2)ADAM―4012接收
+　　a.毫伏级电压输入：±150 mV，±500 mV
+　　b.伏级电压输入：±1 V，±5 V，±10 V
+　　c.电流输入：±20 mA
+　　并提供一个模拟量输入通道。
+　　3) ADAM―4013接收来自铂、镍RTD（电阻式温度探测器）的输入,并提供一个模拟量输入通道。
+　　主题词　地形辅助导航　仿真　评估　卡尔曼滤波　坡度标准差　地理信息系统　圆概率误差
+POSITIONING ACCURACY EVALUATION OF 
+A TERRAIN-AIDED NAVIGATION SYSTEM 
+UNDER DIFFERENT TYPES OF TERRAIN
+Su Kang　Guan Shiyi
+(The 3rd Research Academy,CASC*Beijing*100074)
+Liu Jian　Zhang Jixian
+(Institute of Image Recognition & AI,HUST*Wuhan*430074)
+　　Abstract　How to select appropriate type of terrain for a terrain-aided navigation system using continuous Kalman updating technique is a complicated problem encountered in practical applications.The system simulation models have been built,then terrain data analysis has been carried out on the ARC/INFO GIS software platform.Finally,the system performance under different types of terrain has been evaluated by a large number of computer simulations.The criterion for selection of terrain required for good navigation performance can be derived from the valuation results.
+　　Key words　Terrain-aided navigation Simulation　Evaluation Kalman filtering　Standard variance of slope　Geographical Information System(GIS)　Circular error probable(CEP)
+1　引言
+　　地形辅助导航(Terrain-aided Navigation(TAN))系统是近十几年出现的一种新型的导航系统，其主要功能是利用地形的特征信息实现飞行器自主、隐蔽、连续、全天候的精确导航，因此，该系统在无人和有人驾驶飞行器上得到实际的应用。
+　　为了得到系统的卡尔曼滤波递推公式，提出以下假设条件：
+　　(1)雷达高度表测量噪声序列Vk、气压高度表测量噪声序列V′k、拟合噪声序列εk、动态噪声序列Wk是互不相关、均值为0的高斯白噪声序列，即
+E［Vk］=0(2.1-8)
+E［VkVTj］=Rkδk,j(2.1-9)
+E［V′k］=0(2.1-10)
+E［V′kV′Tj］=R′kδk,j(2.1-11)
+E［εk］=0(2.1-12)
+E［εkεTj］=RFkδk,j(2.1-13)
+E［Wk］=0(2.1-14)
+E［WkWTj］=Qkδk,j(2.1-15)
+　　(2)Vk、V′k、εk和Wk彼此之间相互独立。本文将上述两类问题抽象成对柱状体的散射分析问题，因为普通飞机机身、导弹、航炮及空速管等突起物从宏观上都与柱体接近。如果没有RS―485接口，就可以用ADAM―4520将计算机的RS―232转换成RS―485。
+　　2)ADAM―4510
+　　ADAM―4510是RS―485中继器，有两种情况需要使用中继器：
+　　a.连接的模块数超过16个;
+　　b.接到模块的连接线太长。在此基础上，通过大量的计算机仿真试验，对卡尔曼连续修正的地形辅助导航系统在不同地形条件下的定位精度进行了评估。通过采用中继器，连接模块的数量最多可以达到256个，而网络的跨度可以延伸1200 m。由于ADAM4000系列模块是通过RS―485协议进行通讯，数据是通过数字量进行传输，这样就避免了信号在传输过程中的干扰和损失。另外，还有一个好处是ADAM4000系列模块可以放在现场进行采集，安装也非常方便，灵活性、机动性非常好。其外形及尺寸如图1示。现在，为了方便开发计算机应用系统，有很多菜单驱动的具有通用性的组态软件问世。我们所用的LABTECH CONTROL组态软件包（以下简称LT）就是其中之一，LT软件包是美国的LABTECH公司生产的，该软件功能强、组态灵活,在实时性和通用性等方面都优于一般的软件，该软件包括DOS和WINDOWS两种版本，在功能上两种版本是一样的，这里以介绍WINDOWS版本为主。由于地形的多样性、复杂性和差异性，因此，如何选择适合辅助导航的地形是实际应用中碰到的难题。LT按照菜单中的组态条件规定的采样频率,从I/O设备通道中读取数据，并存于RAM缓冲区。如果有控制输出，则处理后的输出数据放于相应的内存，然后按照组态条件规定的采样频率向I/O设备送出。当处理器在两次从I/O采样之间有间隙时，LT出空RAM缓冲区将数据写入磁盘;当处理器在I/O采样和写盘之间有间隙时，LT刷新屏幕显示。
+2.3　LT的菜单登录功能
+　　LT的所有软件皆是菜单驱动软件，都有一套完整、灵活、容易掌握的菜单系统。用户不必掌握专门的命令，通过菜单就可以生成应用系统，并且执行数据采集和过程控制，也可以通过菜单驱动新的硬件设备，设置软件环境以及在线数据分析。用户通过光标键和回车键选择命令，在任何一级菜单，一按ESC键就回到它的上级菜单。本文首先建立系统仿真模型，然后利用ARC/INFO地理信息系统软件进行地形分析。本文在建立系统数学模型的基础上，用真实的数字地图，通过大量的计算机仿真试验，得到了系统在不同地形条件下的定位精度。
+3.1　硬件配置时容易出现的问题
+3.1.1　关于ADAM4000系列模块的接口问题
+　　ADAM4000系列模块在投入使用之前,必须通过一个初始化程序（ADAM）对其进行初始化配置，内容包括模块的地址、量程等。初始化之后，再在LT软件中对ADAM4000系列模块进行硬件安装，在安装时需要注意的是bass address一定要设置对，对于ADAM4000系列模块,其bass address 对应的是它与计算机连接的串口号码。如果ADAM4000系列模块与计算机的COM1相连，则bass address即为1;如果ADAM4000系列模块与计算机的COM2相连，则bass address即为2。而在光学区各散射中心可看作相互独立的。
+3.1.2　模块采样速度的设置
+　　对于ADAM4000系列模块由于其硬件本身最高采样频率是10 Hz，所以尽管计算机的主频率很高，但对于ADAM4000系列模块只能在它所允许的范围内设置采样频率，也就是说,10 Hz是ADAM4000系列模块的采样极限，如果一个系统配置了n个该系列模块，则采样频率为10/n Hz。
+　　LT软件包的组态功能较为强大，它的各个功能软件的开发应用，都能基于下拉式菜单或弹出式菜单以及填充方块、功能键的选择，组态功能使得监控管理对象的增加、修改、删除变得很简单，对今后非开发人员的维护工作提供了极大的便利。
+3.2　使用LT软件包时容易遇到的问题
+　　使用Replay块（重现块）时，所需重现点数不能超过数据文件长度。在使用某些计算块时，需要注意的是模块号码，如使用SUM（X…Y）计算块时，X…Y表示的是从X块到Y块所有模块的值相加，也就是说从X块到Y块必须是连续的。另外，在使用X…Y计算块时,要注意该菜单页X、Y的顺序;某些计算块需使用参数r，r值一定要设置对。组态功能使得在试验过程中，有时需要观察移测偶在核心区的曲线分布。LT 软件包中TRACES菜单里包含有各种跟踪类型，如：T vs.Y、X vs.Y水平条、垂直条、数字表等，可以根据不同的需要选择不同的跟踪类型。
+　　总之，使用ADAM4000系列模块和LT软件包能够方便地组成一套功能较齐全、使用方便的数据采集系统，特别是避免了数据在传输过程中受到干扰。软件的组态功能为工作人员的维护工作提供了便利。
+
+
+图1　四种物体的简图
+计算表面电流时结点的数量根据物体形状及表面积的大小确定，本例中结点取150～300之间

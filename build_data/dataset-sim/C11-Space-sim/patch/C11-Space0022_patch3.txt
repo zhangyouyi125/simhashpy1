@@ -1,0 +1,82 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+竞争学习模糊神经网络及在导弹
+故障诊断中的应用
+胡昌华　王青　陈新海
+　　摘　要　尽管基于解析冗余的故障诊断方法有许多突出的优点而越来越多地得到研究和应用，但它依赖于系统的模型，当系统存在非线性或不确定性时，存在难以建模的困难，模糊神经网络可以通过学习建立系统的模型，且模型参数有明确的物理意义，初始参数易于选择，成为解决这一问题的优选途径，作者通过把模糊神经网络的学习转化为竞争聚类和线性优化问题，基于竞争聚类和最小二乘原理，提出了一种模糊神经网络学习算法，并在某伺服机构上进行了学习和故障诊断的实验，获得了良好的实验结果。
+　　主题词　故障诊断　竞争学习　模糊神经网络
+FUZZY NEURAL NETWORK BASED ON COMPETITIVE 
+LEARNING AND ITS APPLICATION TO 
+FAULT DIAGNOSIS OF MISSILE
+Hu Changhua
+(Section 302,Xian Inst.Of Hi-tech,Hongqing town . Xi'an . 710025)
+Wang Qing
+(Department of Automation,Beijng University of Aeronautics and Astronautics . Beijing . 100084)
+Chen Xinhai
+(College of Aeronautic,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　The fault Diagnosis based on analytical redundancy depends on system's model,while it is difficult to get the system's model when the system is non-linear or uncertain time-varying,there are some difficulties to put this method into application of non-linear system.The fuzzy neural network can build the system's model by learning,and the model's parameter established by this method has clear mean,it provide an effective way to solve the above problem.The key of the Application of the fuzzy neural network is the determination of its parameters.Different from the other researchers,the authors convert the learning process to cluster and linear optimum,based on competitive learning and least-square error criterion,suggest a learning algorithm for the fuzzy neural network system,the experiment in certain servo-mechanism get very good result.
+　　Key words　Fault diagnosis Competitive learning　Fuzzy neural network
+1　引言
+　　对于导弹等大型复杂系统，对其可靠性提出了极高的要求，系统应具有故障诊断和容错能力，美国NASA就曾规定空间机器人应有一个故障诊断系统。
+　　一般飞机分为三点支撑和四点支撑两种(见图2、图3)。其水平重心计算方法分别为：
+X＝(E(ch0＋ch1)＋ch2L)／(ch0＋ch1＋ch2)
+Y＝R(ch0－ch2)／(ch0＋ch1＋ch2)
+X＝(L(ch2＋ch3)－F(ch0＋ch1))／(ch0＋ch1＋ch2＋ch3)
+Y＝R((ch1＋ch3)－(ch2＋ch0))／(ch0＋ch1＋ch2＋ch3)
+
+
+图2　三点支撑平面图
+
+
+图3　四点支撑平面图
+4　飞机的姿态称重
+　　飞机在做姿态称重时由于需要将飞机的机头顶起300～400 mm，所以顶窝之间的水平距离会有20～30 mm的变化，如果不在千斤顶下面放上水平滑动的平台，将会在传感器上作用一个很大的侧向力，势必影响到称重的准确度。本文基于竞争学习的原理提出了一种模糊神经网络的学习算法，以该模糊神经网络作为系统的建模工具，实现导弹伺服机构故障诊断，并进行了实际实验验证，实验获得了较好的结果。
+2　自适应模糊逻辑系统――一种模糊神经网络
+　　模糊神经网络由四部分组成：模糊化，模糊规则库，模糊推理机和反模糊化。应用结果表明，仪器的各项指标均满足国标GB212-77。
+
+
+图1　AWS-3型飞机称重系统原理框图
+　　从图1可以看出，仪表由高精度低漂移放大器、模拟开关、A／D及CPU电路组成。其间，液晶显示会提示工作于哪一个流程，当前流程进行到哪一步以及所用的时间，下一步应干什么等。
+其中，高电平时间，T1＝0.7．(RA＋RB)．CT
+　　　低电平时间，T2＝0.7．RB．CT
+
+
+图4　1 min定时电路
+　　继电器用来控制定时的开始。
+　　一般飞机分为三点支撑和四点支撑两种(见图2、图3)。(4)式的模糊神经网络用一条规则对应一组数据，Xjk为该组数据对应的输入模式的中心，如果固定σjk，则问题归结为如何确定Yk和Xjk，Xjk可由竞争学习方法确定。
+聚类中心的竞争学习算法：
+　　Step1　从第一个数据对开始，在X1上建立一个聚类中心，且令X1=X1,Y1=Y1，并选择一个聚类半径r。但为了解决触发电路和主回路的同步与隔离而使整个电路过于复杂，若采用同步变压器则会使体积庞大。美国MOTOROLA公司生产的光耦晶闸管MOC3061内部具有过零检测电路，可以很好地解决同步与隔离问题。
+　　(a)计算
+　　　　　　　　　　　　　　　(5)
+　　　　　　　　　　(6)
+　　pt表示中心点Xt附近样本的密集程度，ni为Xi被选最近点的次数。
+　　(b)修正Xc
+　　　　　　　　　(7)
+　　使用pt‖X-Xt‖进行比较可使pt参与竞争，从而避免一般竞争学习算法中的死点问题，因为作为死点，它被选为中心Xt的次数几乎为零，引入pt后，意味着nt参与比较，使死点有机会参与竞争。
+　　用竞争学习方法确定聚类中心后，剩下的问题是如何确定Yk
+　　令
+　　　　　　　　　　则(4)式变为(8)式
+　　　　　　　　　　　　　　(8)
+hT(k)=［R1,R2,…,RM］,θ=［Y1,Y2,…,YM］T
+　　取性能指标为极小化J确定Yk，得
+］
+4　基于模糊神经网络的非线性系统故障诊断
+　　文［5］对基于观测器的故障诊断方法进行了深入的分析，由文［5］易得图1所示的用模糊神经网络作为观测器的故障诊断系统。
+
+图1　基于模糊神经网络的非线性系统故障诊断原理图
+　　利用系统正常工作的输入输出数据，用竞争学习算法建立模糊神经网络，使之与实际系统并行工作，当系统正常工作时，二者的残差比较小，一旦系统偏离正常工作状态或故障时，则二者的残差就比较大，据此借助一定的故障分离策略就可实现故障诊断，
+5　基于模糊神经网络的某导弹伺服机构故障诊断实验及结果分析
+　　导弹伺服机构是一个具有严重非线性的部件，采用机理建模的方法得到的模型很复杂而失去使用的价值，因此我们根据伺服机构的正常工作数据利用本文的方法建立模糊神经网络，并构造图1所示的诊断系统，考察这种模糊神经网络的非线性逼近能力和基于模型的故障诊断能力。
+　　实验方法：根据导弹的幅相频率特性和阶跃响应曲线选择合适的激励信号(本试验中激励信号选择为长度为64的逆M序列，Δt=0.01)，用该激励信号分别激励系统，我们共进行了伺服机构正常和存在反馈电位计接触不良故障等8种初始状态的实验，每种初始状态进行了5～10组实验。对于温度量，推荐值为15～20 s左右。
+　　实验结果及结果分析：从实验结果中选择两个比较有代表性的结果来说明问题，图2和图3分别为伺服机构正常和存在反馈电位计接触不良故障情况下残差输出随时间变化曲线，图中横坐标为时间，纵坐标为残差幅值，从图2可以看出当系统处于正常工作状态时残差很小，表明模糊神经系统以较高精度逼近系统，由图3见，当系统发生故障时，残差的值较大，残差能够真实的反映系统的故障状态，依据残差可以实现故障诊断。
+6　结束语
+　　这种新研制的便携式飞机称重仪已在南昌飞机制造公司、深圳中海直公司、新乡陆航维修大队、珠海直升机公司、通县陆航飞行团等单位使用，均得到了较好的评价。
+
+
+图4　姿态称重示意图
+　　由于在称重传感器上采用了如图5所示的全焊接密封传感器，使得传感器自身的抗侧向力能力大大增强

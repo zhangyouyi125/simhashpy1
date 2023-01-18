@@ -1,0 +1,194 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　No.19　No.1　P.10，36
+
+
+
+
+用VRML语言构造动态虚拟现实模型
+张宁　袁宏春
+摘 要： 用VRML2．0语言构造动态虚拟现实模型的几种方法，针对每种方法给出了VRML语法实例，并着重介绍了插值器在制作对象动画中的重要作用。EasyPack/S 8052F仿真器继续支持8051系列的处理器，并在此基础上扩展了Bank Switch功能。VRML（Virtual Reality Markup Language）语言就是为了在WWW上构造虚拟现实模型而诞生的，它是1个3D Web标准。
+3 视窗版EasyPack/SLD源程序调试软件
+　　1.视窗风格界面
+　　（1）可在WindoWS 3.1和Win95下运行;
+　　（2）用户可重组工具条按钮;
+　　（3）工具条可移至任意地方;
+　　（4）按钮功能帮助;
+　　（5）按右键提供局部菜单;
+　　（6）在线帮助。这2个版本最大的不同在于，VRML 1．0没有包括高级交互和动画性能，因此它展现的仍然是一个静态的世界，而VRML2．0在这方面获得了重大突破，它把目前为止的各项多媒体技术融合进去，使构造出的三维虚拟世界具有声音、动画、人机交互等功能，从而使计算机生动逼真地模拟了真实的世界。VRML2．0提供了多种构造动态虚拟现实模型的方法，以下将予以介绍。（在实现中所举例子读者可以在机器上自己实验，可用如Microsoft的WordPad编辑器创建VRML文件，文件必须以．wrl作为扩展名，只要所用浏览器Netscape Navigator或Internet Explorer安装了VRML的插件，双击自己的文件，就能显示出所构造的虚拟现实环境）。
+　　2.高性能仿真存储器
+　　（1）最高到320kb仿真存储器，128b的映射分辨率;
+　　（2）映射属性:O/OR（仿真存储器或只读）、T/TR（目标RAM或只读）、G（不存在）、C（混合模式）和CR（混合只读）;
+　　（3）仿真CPU可仿真到所有存储器和I/O空间;
+　　3.实时追踪存储器
+　　（1）追踪存储器为32k帧深度，每帧40位宽度，包括16位地址，8位数据，3位状态，5位trace bit和8位并口;
+　　（2）可选择打开或关闭追踪功能;
+　　（3）仿真CPU全速运行的同时可访问追踪存储器;
+　　（4）追踪过滤器:可指定地址，数据范围和状态信息来选择性地记录追踪存储器内容
+　　4.实时硬件断点
+　　（1）最高到256k个硬件断点，覆盖所有程序空间;
+　　（2）总线断点（EV1和EV2）提供地址、数据的多种设定;
+　　（3）外部触发断点（EV3）。另外，ScalarInterpolator是1个基本的构造模块，由它可以建造其它许多插值。使用插值器改变对象的原理大致是相同的，这里以OrientationInterpolator节点实现旋转对象为例。
+　　下面是OrientationInterpolator节点的定义：
+　　OrientationInterpolator｛
+　　eventIn　　　　SFFloat　　　　set_fraction
+　　exposedField　MFFloat　　　key　　　　　　　[]
+exposedField　MFRotation　keyValue　[]
+　　eventOut　　　SFRotation　value_changed
+　　｝
+　　它通常路由到1个Transform节点的rotation exposedField。EasyPack/S 8052F仿真器继续支持8051系列的处理器，并在此基础上扩展了Bank Switch功能。
+　　在驱动插值器过程中，由TimeSensor节点随时间的流逝产生0～1之间递增的SFFloat值，每产生1个值，经过路由，OrientationInterpolator节点接收这个值，并把它的值与关键码进行匹配，一旦匹配成功，则对应于这个关键码（key）的关键码值（keyValue）被发送出去，如果这个值处于2个相邻的关键码之间，则产生1个在与2个关键码相对应的关键码值之间进行插值的事件，得到的关键码值又通过第2条路由，使Transform节点接收到这个值，从而改变立体的位置。
+　　简单地讲，使用插值器改变对象形成动画，用户只需给出一系列运动轨迹的中间态势，由VRML解释器自动平滑对象在这些中间态势间的过渡，从而得到使对象按所给路线变化的动态效果。
+　　2．在对象上包装电影文件
+　　把电影作为一个移动的纹理施加到对象上，能使虚拟世界呈现一种动态效果。例如在1个虚拟房间中放置了1台电视机，当漫游者进入房间时，看见电视机屏幕上正在放映电视或电影，而并非一副静止死板的图像，显然就大大地增强了虚拟世界的逼真程度。
+表1 EasyPack/S 8052F与
+EasyPack 8052F比较表
+
+　Bank Switch仿真存储器硬件断点
+EasyPack/S 8052F2或4个Bank最大320kb(程序256kb和数据64kb)256k
+EasyPack 8052F无128kb(程序64kb和数据64kb)64k
+
+1 EasyPack/S 8052F主模块
+　　EasyPack和EasyPack/S 主模块适用目前所有的EasyPack ICE cable仿真头。
+　　3．使用角色进行对象切换来构造动画效果
+　　所谓角色是指1个平坦的始终面向阅读器的图像，它是一种在虚拟世界中的2D对象，可以渲染得更快，但它是平面的，如果从侧面看，它们就会消失掉，为了得到满意的效果，角色需要始终面向观众。
+　　角色的切换是由MySwitch节点完成的，该节点可以根据变化的whichchoice的值选择相应的节点显示。
+　　7.强大的存储器访问功能
+　　（1）可打开3个存储器窗口分别访问程序、数据和片内RAM区域;
+　　（2）可在位窗口访问位寻址区域。
+　　4．视点动画
+　　假想用户站在铁路旁，用户看到的路边的房子是静止的，当用户跳上火车，火车开动后，用户发现路边的房子开始运动起来，这是因为用户的视点不断移动的原因。由于VRML提供视点Viewpoint节点，这个节点允许为用户设置1个有趣的理想点的位置和方向，通过不断改变视点的位置和方向可以达到和不断改变对象位置和方向相似的动画效果。
+　　8.实时追踪存储器
+　　（1）仿真CPU全速运行的同时可访问追踪存储器
+　　9.软件效率分析
+　　（1）Module Analysis可为每个程序模块分析进入次数;
+　　（2）Time Analysis可分析每个程序模块的执行时间;
+　　（3）code coverage可区分程序指令是否被执行，并点亮被执行过的程序指令
+4　EasyPack/S 8052F型号
+　　EasyPack/S 8052F各型号如表2所示。
+　　5．使用纹理坐标的动画
+　　如果把1幅二维图像包裹在对象上来进行着色，就如同在墙上贴墙纸一样，也能得到很好的效果，这种二维图像叫做纹理。节点ImageTexture负责添加纹理，纹理图像一般是JPEG文件，有时也可以是GIF文件。
+　　假设要虚拟1个瀑布，可以在1个几何体上施加一种水的纹理，但是这种纹理是静止的，要让它动起来，有一种比较简单的方法：设置对纹理与对象之间的映射所进行的变换，即通过TextureTransform节点移动或旋转纹理，以产生动画效果。在水的纹理变换上，可以使纹理在纵向坐标上按时间循环地移动，用户就会看到瀑布落水的动画了。
+2 VRML构造动态虚拟现实模型的实现
+　　以下给出几种构造动态虚拟现实模型方法的实例。
+　　1．完整的“T”形立体旋转落下的动画代码。
+　　＃VRML V2．0 utf8
+　　DEF T Transform｛
+　　center 0－2 0
+　　children [
+　　　　Shape｛
+　　　　　　geometry Box ｛size 1 4 1 ｝
+　　　　　　appearance Appearance｛
+　　　　　　　　material Material｛
+　　　　　　　　　　diffuseColor 1 0 0
+　　　　　　　｝
+　　　　　　 ｝
+　　　　｝
+　　　　Transform｛
+　　　　　　translation 0 2 0
+　　　　　　children [
+　　　　　　　　Shape｛
+　　　　　　　　　　geometry Box ｛size 3 1 1｝
+　　　　　　　　　　appearance Appearance ｛
+　　　　　　　　　　　　material Material ｛
+　　　　　　　　　　　　　　diffuseColor 1 0 0
+　　　　　　　　　　　｝
+　　　　　　　　　 ｝
+　　　　　　　 ｝
+　　　　　]
+　　　｝
+　　]
+　　｝
+　　DEF P OrientationInterpolator｛
+　　key [0，0．5，0．8 1]
+　　keyValue [0 1 0 0，0 1 0 1.57 0.577 0.577－0.577 2.07，0.577 0.577 －0.577 2.07]
+　　DEF TS TimeSensor
+　　stopTime －1
+　　loop TRUE
+　　cycleInterval 5
+　　｝
+　　ROUTE TS．fraction_changed TO P．set_
+　　ROUTE P．value_changed TO T．set_rotation
+　　本例中，立体从位置0 1 0 0开始启动，当时间达到一半的时候（0．5），立体完成绕Y轴逆时针90°旋转（0 1 0 1．57），当时间达到0．8处的时候，立体完成绕Z轴顺时针90°旋转（0．577 0．577 －0．577 2．07），然后稳定到时间满（1），其中整个过程所用时间由TimeSensor节点中的cycleInterval的值来控制，本例中整个旋转倒下过程耗时为5s。
+　　2．在1个简单的立方体上放映一段电影。
+　　Shape｛
+　　　　Appearance Appearance｛
+　　　　　　Material Material｛ ｝
+　　　　texture DEF M MovieTexture｛
+　　　　　　url ″test．mpg″
+　　　　　　stopTime －1
+　　　　　　loop TRUE
+　　　　　　｝
+　　｝
+　　geometry Box
+｝
+　　3．以视觉游戏DOOM中的1个怪物为例，当用鼠标点击它（代表用枪击中它时，怪物进入1个动画的死去序列过程，最后再也看不到它。整个动画由12幅静态图片构成，每个图片是1个角色。
+3 视窗版EasyPack/SLD源程序调试软件
+　　1.视窗风格界面
+　　（1）可在WindoWS 3.1和Win95下运行;
+　　（2）用户可重组工具条按钮;
+　　（3）工具条可移至任意地方;
+　　（4）按钮功能帮助;
+　　（5）按右键提供局部菜单;
+　　（6）在线帮助。VRML文件代码如下：
+　　DEF TS TouchSensor
+　　DEF MySwitch Swich
+　　　　whichChoice 0
+　　　　choice [
+　　　　　　　　Shape ｛
+　　　　　　　　　Appearance Appearance ｛
+　　　　　　　　　texture ImageTexture ｛
+　　　　　　　　　　　url ″monsterl．gif″
+　　　　　　　　　　　｝
+　　　　　　　　　　｝
+　　　　　　　　　　geometry DEF IFS IndexedFaceSet ｛
+　　　　　　　　　　coord Coordinate ｛
+　　　　　　　　　　　　　point [－1 －1 0，1 －1 0，1 1 0，－1 1 0]
+　　　　　　　　　　｝
+　　　　　　　　　　coordIndex [0，1，2，3]
+　　　　　　　　　｝
+　　　　　　　　｝
+　　　　　　　　………………（同上Shape节点，url域依次为其它图片文件monster2．gif到monster12．gif）………………
+　　　　　　]
+　　｝
+　　DEF Time TimeSensor ｛
+　　　　cycleInterval　　　　　　0.7
+　　｝
+　　DEF MyScript Script ｛
+　　eventIn SFFloat fraction
+　　eventOut SFInt32 whichChoice
+　　url ″vrmlscript：
+　　　　　　function fraction（value） ｛
+　　　　　　　　　whichChoice＝value * 8；
+　　　　　　｝″
+　　｝
+　　ROUTE TS．touchTime TO Time．startTime
+　　ROUTE Time．fraction_changed TO MyScript．fraction
+　　ROUTE MyScript．whichChoice TO MySwich．whichChoice
+　　4．使用纹理虚拟瀑布的简单的框架代码
+　　Group ｛
+ 　　clildren Shape ｛
+　　　　　　appearance Appearance ｛
+　　　　　　　　texture ImageTexture ｛ url ″water．jpg″｝
+　　　　　　　　textureTransform DEF TT Texture－
+　　　　　　　　　　　　　　Transform ｛…………｝
+　　　　　　｝
+　　　　　　geometry Extrusion ｛……｝
+　　　　｝
+　　｝
+　　DEF TS TimeSensor ｛ ｝
+　　DEF S Script ｛…………｝
+　　ROUTE TS．fraction_changed TO S．fraction
+　　ROUTE S．translation TO TT．set_translation
+3 结束语
+　　VRML2．0提供的几种构造动态虚拟模型的方法，分别适用于不同场合，例如在漫游时使用视点移动来产生动态效果；在绘制波光粼粼的湖面时用纹理坐标的移动来虚拟现实等。
+　　5.执行时间测量
+　　可用内带的计时器记录程序执行时间（以毫秒为单位，最长可连续记录36.4小时）
+　　6.复杂事件/触发
+　　（1）2个层次的事件/触发，每层可设置单独事件或事件组合;
+　　（2）事件计数器可设置事件满足次数;
+　　（3）可将触发断点设在追踪存储器的任意位置;
+　　（4）提供外部触发输入输出，以便与其它仪器同步。而对象动画的轨迹是由插值器来决定的，无论是对象移动还是视点移动（其中在对象上包装电影、使用角色进行场景切换、纹理坐标动画这3种仅仅是使虚拟世界具有动态效果，而并非真实的对象位置变换）。其比较数据如表1所示。
+张宁（成都电子科技大学微型机研究所610054）
+袁宏春（成都电子科技大学微型机研究所610054）
+收稿日期：1999－07－06

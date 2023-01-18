@@ -1,0 +1,82 @@
+　宇航学报
+JOURNAL OF ASTRONAUTICS
+1999年 第20卷 第3期 vol.20 No.3 1999
+
+
+
+　　卫星群分离控制方法研究
+郭振云　任　萱
+　　摘　要　根据星群分离控制的一般要求，本文研究了卫星群的相对运动方程，分析了其相对运动特性。在合理的近似假设下以Hill方程为出发点，研究了各卫星相对距离限制下的分离控制方法。最后对精确方程与近似方程的仿真比较，表明所设计的分离控制方法是可行的，其结果是可信的。
+　　主题词　卫星群　Hill方程　卫星分离
+SEPARATING CONTROL METHOD OF 
+SATELLITE GROUP 
+Guo Zhenyun Ren Xuan
+(National University of Defence Technology.Changsha.410073)
+　　Abstract　In the paper the relative motion equation of satellites' group is studied,and the motion characteristic is analyzed.In a range of time after satellites separated,the relative distances shoule be larger than a given value ρ.One control method is designed.With the simulation of accurate equation,the comparison of results descripted that the method is feasible and the approximation result is dependable.
+　　Key words　Satellite group Hill equation Satellite separate
+　　1　引言
+　　现代小卫星都采用一箭多星发射技术。通常卫星群的分离控制采用一次冲量方式，将小卫星从运载器中弹出，改变其初始速度。这显然不可能。此时，进入圆内的卫星数为J-1，跑出圆外的卫星数至少为J-1，因而进入圆内的卫星数不会大于跑出圆外的卫星数。
+　　设运载器运行在一圆形轨道上，卫星分离时同时施加轨道面内的速度冲量，冲量方向可调。假设地球为不旋转的均质圆球，不考虑各种摄动力和其他外力。
+　　充分性。此坐标系即为Hill坐标系。
+
+　图1　轨道坐标系示意图
+　　2　相对运动分析
+　　根据所给卫星受力假设，可得到小卫星相对于运载器的运动方程如下：
+　　　　　　　　　　　　　　　　　　　(1)
+其中
+
+　　rC,rT为小卫星和运载器的地心距，W，ω为卫星和运载器的轨道角速度。
+　　在Hill坐标系分解有：
+　　　　　　　　　　　　　　　　　　　　　　(2)
+　　假设卫星分离时所施加的速度冲量为小量，分离后相对距离较小，则忽略相对距离的高阶项影响，只考虑其线性项，则方程(2)即为Clohessy-Wiltshire方程：
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　(3)
+　　由于采用轨道面内分离，则轨道面外无运动，轨道面内的相对位置参数为
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　(4)
+其中
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(5)
+由方程(4)可知卫星相对运动有如下特征：
+　　轨道面内的相对位置y是周期性变化的，而x是由周期项和线性项合成的，其线性项仅与分离速度有关。当分离速度=0时，卫星会与运载器周期性相遇，因而分离时必须保证分离速度≠0。
+　　令
+　　　　　　　　　　　　　　
+　　　　　　　　　　　　　　　　　　　　　　　　　(6)
+则有
+　　　　
+　　　　　　　　　(7)
+上式用于计算卫星之间的位置参数，其形式与(4)一致，因此可用方程(4)作为计算相对位置的通式。类似的，绕AB旋转使半径变大至碰上第一颗星为止。
+　　3　分离速度冲量控制方法
+　　令，则由方程(4)有飞行器之间相对距离表达式
+　　　　　　　　　　　　　　　　　(8)
+其中参数a、b和c为时间的函数。这是因为整个星座的星下点构成一个球面的内接凸多面体。
+　　.若D＞0，则有
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　(11)
+而速度分量比值ξ不能始终保证ρ≥ρ*，其取值范围为
+　　　　　　　　　　　　或　　　　　　　　　　　(12)
+说明较小时，必须有相应的y轴向速度分量来补偿，否则无法保证ρ≥ρ*。
+　　(2)若ξ给定，参数F(t,ξ)是时间的单变量函数，与分离速度分量无关。因此可以通过对时间的搜索求得参数F(t,ξ)最小值Fmin(ξ*)，如果有
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(13)
+则对于任意时刻相对距离总满足ρ≥ρ场
+　　设参数F(t,ξ)取最小值的时刻为tmin，则有ρ(tmin)=ρmin，因此只需考虑不同ξ下的时间tmin，通过对此时刻的相对距离进行控制，使其大于要求值，则在所给定的时间域内始终有ρ≥ρ*，从而得到满意的卫星群分布特性。
+这M颗星可分成两部分，圆内X颗，圆上Y(Y≥3)颗。这样，一个点是否可见可描述为：对给定的轨道高度h，该点到卫星的仰角是否大于最小仰角。
+　　由上述分析可知，如果取
+　　　　　　　　　　　　　　　　　　　　　　　　(17)
+则有
+　　　　　　　　　　　　　　　　　　　　　　　　　　　(18)
+
+图3　分离速度椭圆
+　　4　动力学仿真与比较
+　　设运载器携有五颗小卫星，安装在纵轴侧向，在零时刻同时释放。本文将先证明另一个定理2的充要性，然后证明定理1和定理2的条件是等价的。1)单重覆盖。
+表1
+
+卫　星　对0-10-30-41-52-4
+最小距离(m)303.7308.3301.2557.6840.3
+时　间(s)t1
+精确解(m)303.7308.3301.2557.7840.7
+
+可以看出，依据近似公式得到的控制方案是完全可以满足控制要求的，与精确仿真结果相比，相对距离差别较小，而时间是一致的。这一过程一直到碰上第一颗星(或同时几颗)为止。
+作者单位：国防科技大学自动控制系.湖南长沙.410073
+参考文献
+　　1　Clohessy W H,Wiltshire R S.Terminal Guidance System for Satellite Rendezvous.J.Aerospace Sci.27,1960.
+　　2　Maurice L A,Frank T S.Rendezvous Problem for Nearly Circlar Orbit.AIAA J.3,1965.
+　　3　James R W,Wiley J L.Space Mission Analysis and Design.Kluwer Academic Publisher,1991.
+　　4　任萱.人造地球卫星轨道力学.长沙：国防科技大学出版社，1988.
+收稿日期:1997年2月24日,修回日期:1998年3月23日

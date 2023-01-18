@@ -1,0 +1,190 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第5期 No.5 Vol.18 1998
+科技期刊
+
+长波紫外线对M13mp2噬菌体的致突变作用* 
+郝卫东　尚兰琴　郑　妤　金庆中　（北京医科大学公共卫生学院，北京100083）
+文　摘　以野生型大肠菌CSH50及mutM缺陷的大肠菌MF67为宿主，检测了长波紫外线（UVA）对M13mp2噬菌体单链DNA lacZα基因区域的致突变能力。结果显示，UVA照射可引起噬菌体lacZα基因区域的突变，在mutM缺陷的宿主中，UVA照射的致突变作用更明显。
+2.3.2　自然资源的指标　土地利用率、人均耕地面积、森林覆盖率、人均森林面积、水资源开发利用率、总供给与总需求。说明UVA照射具有致突变作用，这种作用可能与DNA的氧化损伤有关。
+关键词　长波紫外线　致突变作用　DNA氧化损伤
+Mutagenesis of M13mp2 phage by near-ultraviolet light. Hao Weidong,Shang Lanqin,Zheng Yu,Jin Qingzhong (School of Public Health, Beijing Medical University, Beijing 100083).China Environmental Science.1998,18(5):472～475
+Abstract―The mutagenic potential of UVA (ultraviolet A) on the lacZα region of M13mp2 phage was observed in wild-type CSH50 and mutM-deficient (MF67) E.coli.The results showed that UVA induced mutations at lacZα region of phage and the mutation frequency was significantly higher in MF67 than in CSH50. The effect of free radical scavanger (mannitol) on mutagenesis by UVA was also investigated. The mutagenesis was inhibited in part by 0.1mol/L of mannitol. These results indicate that UVA can cause mutation in phage and its mutagenic effect can be ascribed to oxidative damage of DNA.
+Key words:ultraviolet A　mutagenesis　DNA oxidative damage
+　　太阳光照射被认为是皮肤癌发生的原因之一，但其确切机理还不清楚〔1〕。一般认为，紫外线，尤其是中波紫外线（ultraviolet B, UVB, 290～320nm波长）是太阳光中的主要致癌成分。
+2　可持续发展城市指标体系设计框架
+　　可持续发展城市指标体系根据国际上通用的压力―状态―响应概念框架〔1〕，引出评价对象、压力指标、状态指标、响应指标。但是，用M13mp2噬菌体的lacZα基因区域进行的太阳光和UVB诱发基因突变碱基特异性分析的研究结果显示，UVB与太阳光诱发的突变类型存在明显差异，在太阳光照射诱发的噬菌体单链DNA的突变中，80％是鸟嘌呤（G）的颠换，尤其是G→C的颠换；而UVB照射则诱发以C→T转换为主的突变。为了实现这一目标，研究实施这一目标的环境经济政策是十分重要的，首先必须研究可持续发展城市指标体系。为了探讨UVA在太阳光诱变作用中的地位及DNA氧化损伤在致突变中的作用，本研究以含单链DNA的M13mp2噬菌体的lacZα基因区域为致突变作用的靶，分析UVA的致突变能力，并观察MutM 蛋白、宿主细胞的SOS修复功能和抗氧化剂对UVA致突变作用的影响。
+　　根据协同论得知：系统处于稳定状态时，状态方程为线性；势函数的极值点是系统稳定区域的临界点；慢弛豫变量在系统稳定状态时也有量的变化，这种量的变化对系统有序度有两种功效：一种是正功效，即慢弛豫变量的增大，系统有序度趋势增大；另一种是负功效，即慢弛豫变量增大，系统有序度趋势减小。mutM基因缺陷的E.coli MF67是以P1转导（P1 trans-duction）的方法，以 E.coli YG5113 〔ara-, △(gpt-lac),mutM::cat/F'(lacI378,lacZ461,proAB)〕为转导基因的供体，E.coli CSH50为受体，进行基因转导及克隆选择而构建〔6〕。该菌株mutM基因缺陷，不能编码产生MutM蛋白，而野生型CSH50菌株可编码产生MutM蛋白。
+1.2　样品的照射处理
+　　UVA照射光源为三支金羚牌YZ15W黑光灯管（北京电光源研究所，光谱范围310～440nm，峰值365nm）。将以M9缓冲液稀释的M13mp2噬菌体溶液加入玻璃平皿中，平皿用保鲜膜覆盖，并置于冰上。保鲜膜对波长为290、320、365、400nm的光线透过率分别为89.6％、90.8％、91.9％和91.6％。为阻挡UVA光源的发射光中存在的少量波长小于320nm的光成分， 在UVA光源与照射样品之间放置一块4mm厚的窗玻璃，该玻璃对波长为320、350、360及380nm的光线透过率分别为0.1%、47.8%、73.8%和76.7％，对小于320 nm的光线透过率小于 0.1%。照射过程中，样品持续振荡。样品表面所受照射强度为4.7～7.0 J／m2*s。将含有同样噬菌体溶液的平皿以锡铂纸覆盖，作为对照。
+　　UVB照射光源为一支青靛牌BE15W灯管（北京电光源研究所，波谱范围285～385nm，峰值312nm），照射强度1.43 J／m2*s。
+1.3　宿主菌SOS功能的诱导
+　　依据文献〔7〕方法，宿主菌经142J/m2剂量的杀菌紫外线照射，在使用前避光培养45min。
+1.4　甘露醇处理噬菌体
+　　配制1mol/L的甘露醇溶液，使用时，取1/10体积的甘露醇溶液加到噬菌体溶液中，使甘露醇的最终浓度为0.1mol/L。出版专著10本，发表论文160多篇。经37℃培养一夜后，计数总的噬菌斑及突变噬菌斑数。噬菌体在lacZα基因区域发生突变而不能发生α-互补（α-comlementation），β-半乳糖苷酶活性缺失，形成的噬菌斑呈无色或淡蓝色。野生株形成的噬菌斑则为蓝色。
+1.6　统计分析
+　　使用KASTENBAUM-BOWMAN统计表〔8〕，对处理样品与对照样品突变率的差别进行显著性检验。这种方法是对可持续发展进行度量的一种比较好的方法，但是权重的取值人为因素太大；另外，可持续发展的指标取向也应有代表性。
+表1　UVA 照射对M13mp2 噬菌体生存率和突变率的影响
+Table 1　Survival and mutation frequency of UVA-exposed M13mp2 phage
+
+照射剂量
+(kJ/m2) 生存率　
+(%)　 E.coli CSH50 (mutM+)E.coli MF67 (mutM-)
+计数噬菌
+斑总数突变噬
+菌斑数 突变率
+(×10-4) 计数噬菌
+斑总数突变噬
+菌斑数 突变率
+(×10-4) 
+0100.0 34 157 10 2.93 33 423 6 1.80
+50 43.7 11 800 5 4.24 12 085 6 4.96
+160 24.4 11 300 11 9.73** 12 00012 10.00*
+320 15.0 11 20010 8.93* 12 200 14 11.48**
+430 8.4 16 300 16 9.82**17 000 29 17.06**
+
+　　　　　　注：* 与对照 (0kJ/m2) 比较, P<0.05　** 与对照 (0kJ/m2) 比较, P<0.01
+　　UVA照射处理引起噬菌体存活率随照射剂量增加而下降。大于160 kJ/m2剂量的UVA照射处理在两种宿主中都显示了突变率的增加，430 kJ/m2剂量照射时，在MF67宿主中的突变率明显高于CSH50中的突变率。
+　　以诱导SOS功能的细胞作为宿主，进行了UVA致突变作用的检测，此时，嘧啶二聚体损伤可有效地引起突变。结果显示，在诱发SOS功能的宿主中，自发突变率及诱发突变率均明显高于未诱发SOS功能宿主中的突变率。在SOS功能存在的情况下，mutM-宿主中的突变率仍然高于mutM+宿主中的突变率（P<0.01）（表2）。
+表2　宿主菌的SOS修复功能对UVA照射致噬菌体M13mp2突变作用的影响
+Table 2　The effect of SOS function on mutagenesis of UVA-exposed M13mp2 phage
+
+处　理宿主菌
+E.coli 诱导SOS修复功能未诱导SOS修复功能
+计数噬菌　
+斑总数　突变噬
+菌斑数 突变率
+(×10-4) 计数噬菌
+斑总数突变噬
+菌斑数 突变率
+(×10-4) 
+对照CSH50 11 60010 8.62* 15 170 4 2.60
+UVA照射** CSH50 15 270 58 37.98* 16 835 16 9.50
+对照MF67 10 920 10 9.16* 33 423 6 1.80
+UVA照射** MF67 14 050 72 51.24* 14 450 18 12.46　
+
+　　　　　　注：* 与未诱导SOS功能比较, P<0.01　** UVA照射剂量为360 kJ/m2
+　　 UVB的致突变能力明显强于UVA。为了排除UVA光源中混杂的少量UVB成分（少于UVA剂量率的0.4％）的影响，在与UVA照射条件完全相同的情况下，以2.57 kJ/m2发射剂量的UVB照射处理M13mp2噬菌体。该发射剂量基本相当于UVA照射处理最大剂量时，其光源中发射出的UVB剂量。UVB照射处理未引起噬菌体存活率及突变率的明显变化（表3）。
+表3　UVB照射处理对 M13mp2 噬菌体生存率及突变率的影响
+Table 3　Survival and mutation frequency of UVB-exposed M13mp2 phage
+
+处　理生存率
+(%)E.coli CSH50 (mutM+)E.coli MF67 (mutM-)
+计数噬菌
+斑总数突变噬
+菌斑数 突变率
+(×10-4) 计数噬菌
+斑总数突变噬
+菌斑数 突变率
+(×10-4) 
+未诱导SOS功能
+对照－ 20 850 6 2.88 24 800 5 2.02
+UVB照射* 100.010 0002 2.00 12 000 3 2.50
+诱导SOS功能
+对 照 － 8 980 12 13.36
+UVB照射* 76.4 12 000 16 13.33
+
+　　　　　注：*光源发射UVB剂量为 2.57kJ/m2,样品以保鲜膜覆盖，置于4mm厚玻璃下
+表4　甘露醇对UVA照射致噬菌体M13mp2突变作用的影响#
+Table 4　The effect of mannitol on the inactivation and 
+mutagenesis of UVA-exposed M13mp2 phase#
+
+处　理 生存率
+（％）计数噬菌
+斑总数突变噬 
+菌斑数 突变率
+(×10-4)
+对照 － 10 920 10 9.15
+甘露醇** 92.8 13 00011 8.46
+UVA照射*** 19.8 14 800 57 38.51 
+UVA照射+甘露醇 42.610 150 24 23.64*
+
+　注：# 以诱导SOS功能的 E.coli MF67 为宿主　* 与UVA 照射组比较 P<0.05　** 甘露醇浓度为0.1mol/L　*** UVA 照射剂量为 320 kJ/m2
+　　为分析自由基在UVA诱发噬菌体突变中的作用，在M13mp2噬菌体溶液中加入0.1mol/L的甘露醇（自由基捕获剂）。结果显示，加入甘露醇可以提高UVA照射处理噬菌体的存活率，降低突变率（P<0.05）（表4）。
+3　讨论
+　　观察UVA照射的致突变作用。
+2.2.3　卫生与体育的指标　每千人口医生数、每千人口医院床位数、全民健身达标率。
+3.1　UVA的致突变作用和致癌作用已有报道〔9，10〕。根据北纬30°太阳光辐射光谱的年平均量，UVA在太阳光致癌作用中的贡献在20％以上〔11〕。
+表1　威海市可持续发展指标统计*
+Table 1　Statistic Indicators of Sustainable Development in Weihai City
+
+项　目1988年1989年1990年1991年1992年1993年1994年1995年1996年
+煤炭（万t）　　7676868592105168194205
+钢材（t）　　　958048220277571106841154331166513133948184231175618
+石油（t）　　　2939548393362014116443255780456274692690114693
+铜（t）　　　　632523141508600397763476686
+水泥（t）　　　211451145150109692190044307642400225258163204451184385
+木材（m3）　　　599076321253676589407887462676502894668640524
+橡胶（t）　　　161402085624368298383767533894428014857660251
+塑料（t）　　　140301374318100178241805017800169001535211500
+人均国民　　216024353041367953327342117051388616720
+生产总值（元/人）
+平均寿命（岁）74.574.674.774.774.874.975.075.075.1
+教育投入（万元）7154786610528120451941125341324863493042147
+其中：工资(万元)345539534511502869168776139431400619490
+基建(万元)　　120713421071216255724528477149727110
+卫生投入（万元）46014001851169117522503242340814552
+SO2年日均值　　　　　0.0190.0200.0180.021
+（mg/m3)
+氮氧化物年日均值　　　　　0.0200.0170.0190.020
+（mg/m3)
+TSP年日均值　　　　　0.1470.1430.1560.184
+（mg/m3）
+
+　　注：* 由威海市统计局提供
+3.3　复合价值
+　　可持续发展程度的判定关键在于考虑环境成本。在以前的研究中发现，太阳光照射引起M13mp2噬菌体以鸟嘌呤颠换为主的突变，推测鸟嘌呤的氧化损伤可能与这种颠换的发生有关；而UVB则引发以 C→T转换为主的突变，与太阳光引发突变类型存在明显的差异，这种差异的一种可能原因是，在太阳光诱变作用中，除UVB外，其它成分如UVA，也发挥一定的作用〔4，5〕。
+2.2.2　教育与文化的指标　人口平均受教育程度、教育经费占GDP比重、每万人口大专生数、广播电视人均覆盖率、文化支出占消费总额比重。
+3.2　MutM蛋白可去除DNA上的氧化损伤，如8-羟基鸟苷。如果噬菌体的突变与DNA的氧化损伤有关，在mutM缺陷的宿主菌内，其突变率应该增高。高剂量UVA照射处理时，在E.coli MF67（mutM-）宿主中噬菌体的突变率高于在E.coli CSH50（mutM+）中的突变率，提示UVA的致突变作用可能涉及DNA的氧化损伤。自由基捕获剂甘露醇对UVA致突变作用的抑制，说明自由基在UVA致突变中发挥作用。
+3.3　Brandenburger 和 LeClerc的研究显示，紫外线对M13噬菌体的致突变作用只有在存在SOS修复功能的宿主菌中才能观察到〔13，14〕。但在以前的研究中曾观察到，在缺乏SOS功能的宿主中，太阳光照射3h可使M13mp2噬菌体的突变率增加10倍；UVB照射30s可使突变率增加约4倍〔4，5〕。承担过的主要项目有“国外环境质量保证工作进展与对策研究”（获得国家科委科技成果二等奖）、“PE管废水处理技术”和“中国环保专家信息管理系统”（获国家环保局科技进步二等奖）、“国外环境发展战略研究”（获国家科委科技信息成果二等奖）、“环境科学叙词表编制”（获国家环保局科技进步二等奖）、“全球向可持续发展方向转变”（获国家科委科技信息成果二等奖）、“环境与贸易的应急研究”（获国家科委科技信息成果三等奖）。
+2.1　经济可持续发展指标体系〔2〕
+2.1.1　经济发展总体水平的指标　GDP增长率、人均GDP、三次产业比例、综合经济效益指数。
+参考文献
+1　Bridges B. Sunlight, DNA damage and skin cancer: a new perspective. Jpn. J. Cancer Res., 1990, 81:105～107
+2　Larue L, Dougherty N， Mintz B. Genetic predisposition of transgenic mouse melanocytes to melanoma results in malignant melanoma after exposure to a low ultraviolet B intensity nontumorigenic for normal melanocytes. Proc. Natl. Acad. Sci.USA,
+1992, 89:9534～9538
+3　Clingen P H, Arlett C F, Roza L，et al. Induction of cyclobu-tane pyrimidine dimers, pyrimidine (6～4) pyrimidone photo-products, and dewar valence isomers by natural sunlight in nor-mal human mononuclear cells. Cancer Res., 1995, 55:2245～2248
+4　Negishi K，Hao W. Spectrum of mutations in single-stranded DNA phage M13mp2 exposed to sunlight: predominance of G-to-C transversion. Carcinogenesis, 1992, 13:1615～1618
+5　郝卫东，根岸和雄. 太阳光及紫外线B诱发基因突变的碱基特异性. 北京医科大学学报, 1997, 29:121～123
+6　Fujiwara M, Honda Y, Inoue H，et al. Mutations and oxidative DNA damage in phage M13mp2 exposed to N-nitrosomorpholine plus near-ultraviolet light. Carcinogenesis, 1996, 17:213～218
+7　Kunkel T A. Mutation specificity of depurination. Proc. Natl. Acad. Sci. USA, 1984, 81:1494～1498
+8　Kastenbaum M A，Bowman K O. Tables for determining the statistical significance of mutation frequencies. Mutation Res., 1970, 9:527～549
+9　Drobetsky E A, Turcotte J，Chateauneuf A. A role for ultraviolet A in solar mutagenesis. Proc. Natl. Acad. Sci. USA, 1995, 92:2350～2354
+10　Setlow R B, Grist E, Thompson K，et al. Wavelengths effective in induction of malignant melanoma. Proc. Natl. Acad. Sci. USA, 1993, 90:6666～6670
+11　Kelfkens G, de Gruijl F R，van der Leun J C. Ozone depletion and increase in annual carcinogenic UV dose. Photochem. Photobiol., 1990, 52:819～823
+12　Berg R J W, de Laat A, Roza L,et al. Substitution of equally carcinogenic UV-A for UV-B irradiations lowers epidermal thymine dimer levels during skin cancer induction in hairless mice. Carcinogenesis, 1995, 16:2455～2459
+13　Brandenburger A, Godson G N, Radman M，et al. Radiation-induced base substitution mutagenesis in single-stranded DNA phage M13. Nature, 1981, 294:180～182
+14　LeClerc J E，Istock N L. Specificity of UV mutagenesis in the lac promoter of M13 lac hybrid phage DNA. Nature, 1982, 297:596～598
+作者简介
+郝卫东　男，1963年7月生。北京医科大学卫生毒理学教研室副主任、副教授。
+表1　威海市可持续发展指标统计*
+Table 1　Statistic Indicators of Sustainable Development in Weihai City
+
+项　目1988年1989年1990年1991年1992年1993年1994年1995年1996年
+煤炭（万t）　　7676868592105168194205
+钢材（t）　　　958048220277571106841154331166513133948184231175618
+石油（t）　　　2939548393362014116443255780456274692690114693
+铜（t）　　　　632523141508600397763476686
+水泥（t）　　　211451145150109692190044307642400225258163204451184385
+木材（m3）　　　599076321253676589407887462676502894668640524
+橡胶（t）　　　161402085624368298383767533894428014857660251
+塑料（t）　　　140301374318100178241805017800169001535211500
+人均国民　　216024353041367953327342117051388616720
+生产总值（元/人）
+平均寿命（岁）74.574.674.774.774.874.975.075.075.1
+教育投入（万元）7154786610528120451941125341324863493042147
+其中：工资(万元)345539534511502869168776139431400619490
+基建(万元)　　120713421071216255724528477149727110
+卫生投入（万元）46014001851169117522503242340814552
+SO2年日均值　　　　　0.0190.0200.0180.021
+（mg/m3)
+氮氧化物年日均值　　　　　0.0200.0170.0190.020
+（mg/m3)
+TSP年日均值　　　　　0.1470.1430.1560.184
+（mg/m3）
+
+　　注：* 由威海市统计局提供
+3.3　复合价值
+　　可持续发展程度的判定关键在于考虑环境成本。在国内外共发表论文20篇。
+收稿日期：1998-01-19
+* 国家自然科学基金资助项目（39700123）

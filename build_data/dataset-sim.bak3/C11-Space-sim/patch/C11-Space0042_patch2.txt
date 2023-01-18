@@ -1,0 +1,119 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+薄膜膜系计算的计算机程序设计
+马　前
+　　摘　要　根据膜堆的特征矩阵，求出单层膜的光学导纳，在单层膜的基础上，进行层层递推，叠加起来，求出膜堆的等效导纳，计算振幅反射系数，最后求出整个膜系的反射率、透射率。
+　　关键词　膜堆特征矩阵　振幅反射系数　光学导纳　反射率　透射率
+Computer Program Design of Calibrating Film System of Thin Film
+Ma Qian
+　　Abstract　The optical admittance of a single-layer film is derived from the characteristic matrix of the film pile.Based on the single-layer,recurring layer by layer,supercomposing one by one,deriving the equivalent admittance of the film pile and calculating the reflect coefficient of the amplitude,the reflectivity and transmissivity of hte whole film system is derived at last.
+　　Key words　Characteristic matrix of film pile,Reflect coeffient of the amplitude,Optical admittance,Reflectivity,Transmissivity
+
+　　薄膜膜系是指由不同的材料的膜层与基底所构成的整体。
+
+2.1  地心惯性坐标系OＸｇＹｇＺｇ
+
+　　坐标系原点O选为地心，OYｇ轴垂直于地球赤道平面，OZｇ轴指向春分点，
+OXg轴与OYｇ、OZ ｇ构成右手直角坐标系。人们利用不同的材料沉积在不同的基底上，从而改变这种基底的物理化学性质。
+
+　
+参考文献
+1  Farshad Khorrami,Shihua Zheng.Vibration Control of Flexible-link Manipulators.
+Proc.American Control Conf.,1990:175-180
+2  W.Yim.End-Point Trajectory Control,Stabilization and Zero Dynamics of a Three-
+Link Flexible Manjpulator.Proc.of IEEE Conf.on Robotics and Automation,1993:468-473
+3  Dong Soo Kwon and Wayne.J.Book.An Inverse Dynamic Method Yielding Flexible 
+Manipulator State Trajectories.Proc.American Control Conf.,1990:186-193
+4  F.Xi,R.G.Fenton.A Sequential Integration Method for Inverse Dynamic Analysis of 
+Flexible Link Manipulators.Proc of IEEE Conf.on Robotics and Automation,1993:743-748.
+5  丁希仑.空间机器人柔性臂动力学与控制的研究.哈尔滨工业大学博士学位
+论文，1996
+。
+
+主题词  逆动力学  柔性臂  仿真
+　
+SIMULATION STUDY ON INVERSE DYNAMICS OF
+THE SPACE ROBOT WITH FLEXIBLE LINKS
+Wang Shuguo Ding Xilun Cai Hegao
+(Robot Research Institute of Harbin Institute of Technology
+*Harbin*150001)
+Abstract  In this paper,the dynamic model of the space robot arm is obtained by the 
+formula of Lagrange,under the condition of the links with flexibility.On the base of the 
+optimal theory,the problems of inverse dynamics and the vibration control of the arm 
+are studied using the methods of Treanor and Shooting on the nonlinear model given 
+above.And then the inverse dynamic method is simulated with a two-link planar 
+flexible robot arm as an example,the simulation results convinced the method is very 
+good.
+
+Key words  Inverse dynamics  Flexible arm  Simulation
+1  引言
+
+　　用于建造宇宙空间站和抓取卫星的机器人一般具有手臂长、负载大、质
+量轻等特点，因此，考虑臂杆柔性的空间机器人动力学问题的研究是非常必
+要的，近年来已经引起了许多研究者的注目［１］－［４］。为了达到某种反射率和透射率，怎样确定沉积材料及厚度，正是我们所要研究的问题。
+　　在实际工作中，所遇到的各种技术要求各不相同，如果对于每项技术要求都通过实验来确定膜系，无疑是人力物力的浪费。ａTＸ１、ａTY１、ａTZ１是目标的机动加速度在体坐标系各轴上的投
+影。因为在实际操作中，来自于设备、仪表、环境及操作经验等因素的影响较多。单靠测量值往往不能反映出人为及环境产生的误差影响。本文通过
+调节视线角速度的方法来设计末制导律，它考虑了模型的非线性，是对以往
+最优制导律的进一步改进。运动过
+程中，取臂杆为常量lｉ，不考虑重力。由麦克斯韦方程推导出光波入射到两个光学性质不同的介质界面上时，入射波、反射波及透射波的电矢量分别为
+E(i)＝E(i)0exp(i(ω(i)t－2πn0／λ.(Xsinθ0＋Zcosθ0)))
+E(r)＝E(r)0exp(i(ω(r)t－2πn0／λ.(αrX＋βrY＋γrZ)))
+E(t)＝E(t)1exp(i(ω(t)t－2πno／λ.(αtX＋βtY＋γtZ)))
+菲涅尔把电失量分解为振动方向平行于入射面与垂直于入射面的两个分量，即P分量和S分量两个方向的偏振光。实际上，光波在薄膜上的形状，是光波在分层介质的各个界面上菲涅尔系数相互叠加的结果。利用边界条件的连续性，考虑到相位因子，推导出光束在具有两种不同偏振状态的反射光和透射光能量公式
+E(r)0P＝
+E(r)0S＝
+E(t)1P＝
+E(t)1S＝(n0cosθt－n1cosθi)／(n1cosθi＋n0cosθt).E(i)0P
+(n0cosθi－n1cosθt)／(n0cosθi＋n1cosθt).E(i)0S
+2n1cosθi／(n1cosθi＋n0cosθt).E(i)0P
+2n0cosθi／(n0cosθi＋n1cosθt).E(i)0S
+
+单层膜的反射率公式为
+R＝r.r*＝(r21＋r22＋r1r2cos2δ)／(1＋r21r22＋2r1r2cos2δ)
+其中菲涅尔系数为
+r1＝
+ηP1＝
+ηS1＝
+r2＝
+η2＝
+ηS2＝(η0－η1)／(η0＋η1)
+n0／cosθi
+n0.cosθi
+(η1－η2)／(η1＋η2)
+n1／cosθi
+n1.cosθi
+
+把菲涅尔系数带入反射率公式得到
+R＝((η0－η2)2cos2δ1＋
+(η0η2／η1－η1)2.
+sin2δ1)／((η0＋η2)2
+cos2δ1＋(η0η2／η1－
+η1)2sin2δ1)
+
+其中位相差
+δ＝2π／λ.ndcosθi
+可见单层反射率、透射率取决于入射介质折射率、膜层材料折射率、基底材料折射率、入射角、膜层厚度、光波长及膜层数。
+
+　　本文是在最优控制理论的基础上，利用Treanor方法结合打靶法来求解
+柔性臂的逆动力学问题，得到了大质量负载下柔性臂的最优驱动力矩。利用菲涅尔系数矩阵法来计算多层膜的分光特性，它的膜堆特征矩阵表示为
+
+膜堆的光学导纳Y为
+Y＝C／B＝(η2cosδ1＋iη1sinδ1)／(cosδ1＋iη2／(η1sinδ1))
+反射系数：　r＝(η0－Y)／(η0＋Y)
+反射率：　R＝r.r*
+透射率：　T＝1－R
+　　计算程序是根据膜堆的特征矩阵基本公式编写的，求出一层界面上的等效导纳Y，再求出振幅反射系数，叠加起来，最后求出整个膜系的反射率。
+　　程序框图如图1所示。λ的绝对值越大，导弹与目标的视线角速度被调节为aT/（2x２ｂ)
+的时间越短。
+
+图　1
+　　计算程序的使用，给计算薄膜的反射率和透射率带来了很大方便。随机给定七个参数，即,材料的高折射率、低折射率、基底折射率、膜层厚度、入射波长、入射角度、膜层数。从运算结果就可以看出反射率和透射率值。如图1所示，其具体的动力
+学模型参见文献［５］。根据现有的材料，可以先把不同层数膜系的反射率和透射值算出来。在工作中，需要确定某一膜系时，查阅一下便能知道用什么材料、镀多少层合适。例如：有一要求镀反射、透射比为中性的分光镜，查出用硫化锌、氟化镁两种材料，镀四层合适，每层厚度为1／4波长。镀完后测试的结果，理想情况下和理论值差不多(考虑到玻璃吸收)；但有时出入比较大，原因是操作过程中误差影响造成的。主要是仪器、仪表的精度，施加电压、电流是否合适，材料纯度，工件表面清洁度，观察仪表读数的准确性，关闭挡板的速度等等。如果是棱镜，光束入射时要考虑角度。设导弹发动机停控时导
+弹与目标的相对运动状态为ｘｂ＝〔ｘ１ｂ  ｘ２ｂ   ｘ３ｂ〕Ｔ，导弹停控时
+刻为ｔｂ，经时间t后导弹与目标相对距离为R。否则按式
+(3.7)迭代计算ｓ（ｉ＋１），返回步骤(1)。如果工艺操作中出现误差，马上能够显露出来;如果测量结果和理论值有一定的差距，在确定使用什么材料，镀多少层时，修改工艺方便，速度快，提高了工作效率和精度，从理论和实践两方面保证产品更加可靠和完善。在末制导中，在建立目标的运动模型时，一般认为目标沿轴向加速度和
+侧向加速度相比很小，可以忽略不计，因而ａＴＸ１＝0

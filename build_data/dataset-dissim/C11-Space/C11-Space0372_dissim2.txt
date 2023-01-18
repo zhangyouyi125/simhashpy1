@@ -1,0 +1,87 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1999年　第14卷　第1期　VOL.14　No.1　1999
+
+
+
+非线性不平衡转子轴承系统周期解的预测
+　　刘　恒秤荨×摇⌒挥寻亍∫ΩＩ
+摘要：本文提出一种对非线性不平衡转子轴承系统周期解进行预测的新型算法，它利用系统周期解的稳态及瞬态信息，反解雅可比矩阵，实现对系统周期解的预测追踪，并利用反解得出的雅可比矩阵，求得系统周期解的Floquet乘子以判别其非线性稳定性。当转子两端的轴承同时发生不良润滑，造成转子两端同时与轴承接触，产生圆柱形碰摩运动，给出了发生圆柱形碰摩运动时系统的稳定范围，讨论了摩擦系数、轴承径向间隙、碰摩发生时的初始角度与失稳涡动角速度的关系。
+主题词：转子　轴承　非线性　周期解　预测
+分类号：O317.2
+PREDICTION FOR NONLINEAR PERIODIC SOLUTIONS
+OF UNBALANCED ROTOR BEARING SYSTEM
+Liu Heng，Yu Lie，Xie Youbai
+（Lubrication Theory and Bearing Institute,Xi'an Jiaotong University,Xi'an　710048）
+Yao Fusheng
+（Ministry of Mechanical Engineering,Beijing　100823）
+ABSTRACT　A new prediction method for periodic solutions of unbalanced bearing rotor system is provided,which uses the steady state and transient state information of the periodic solutions to solve Jacobi matrix.Then this method can predict and trace the periodic solution of the system.At the same time,the Floquet multiplier of the periodic solution can be obtained from Jacobi matrix to judge its nonlinear stability.Because the steady state and transient state information of the periodic solution can be observed in practice,the method would be used widely.A rigid unbalanced bearing rotor system is taken as an example,the T periodic solution of this system is predicted and traced.
+Key　Words　Rotors　Bearings nonlinearity　Periodic solutions　Prediction
+1　引　言
+　　转子轴承系统是一类重要的非线性动力系统，广泛应用于工业实际。在一定的摩擦系数μ下，刚性转子碰摩的失稳涡动角速度0随轴承间隙c0的增加而减小，随碰摩发生时的初始角度φ0的增加而减小。它是一个非线性方程，可令y=2通过常微分方程的方法进行求解得：
+　(5)
+这里c是一积分常数，它的值可由初始条件决定。不同与其它追踪算法［1～3］，它利用系统周期解的稳态及瞬态信息，反解雅可比矩阵，实现对系统周期解的预测追踪，并利用反解得出的雅可比矩阵，求得系统周期解的Floquet乘子以判别系统的稳定性。由于此算法的实施仅利用了可观测得出的系统周期解稳态及瞬态信息，因而可望应用于实际。
+2　预测方法
+　　不平衡转子轴承系统可表示为如下单参数周期性非自治的非线性动力系统
+　　Φl：du/dt=f(t，μ，u)=f(t+T，μ，u)　　　　(t，μ，u)∈R×R×Rn　(1)
+式中：t表示时间，μ为外参数，u为系统的状态向量。如果把时间表示成显状态变量，则可以以付出增加一维的代价将其改写成自治系统［4］：
+du/dt=f(θ，μ，u)　，　dθ／dt=1　　［t，μ，（θ，u）］∈R×R×S1×Rn　(2)
+相空间是流形S1×Rn，这里圆分量S=R(modT)反映了矢量场f对变量θ的周期性依赖。
+外参数μ为一定值μm时，定义一个全局横截面：
+叮剑（θ，u）∈S1×Rn｜θ=θ0｝　(3)
+作为Poincaré截面，则利用Poincaré映射的思想，可以将(1)式转化为渡系牡阌成湎低常
+u(k+1)=P（u(k)，μm）　　　k∈Z　(4)
+其中P（q，μm）=u（θ0+T，q，μm）　(5)
+因此，求系统(1)式周期解的问题可以转化为求解非线性方程：
+G（u，μ）＝u-P（u，μ）＝0　　或　　u=P（u，μ）　(6)
+的问题。
+　　刚体转子绕O点的角速度为：。这里如何求得系统在μ=μn时稳态解的雅可比矩阵G′u(un，μn)（简记为G′un）及其对参数μ的偏导数G′μ（un，μn）（简记为G′μn）是预测实施的关键。现有的方法［1-3］通常采用将式(6a)直接对u和μ求偏导来得到G′un和G′μn，然而当实际系统中G不能解析表达， G′un和G′μn往往难以直接求得。为解决了这一问题，本文采用可观测得出的系统周期解稳态及瞬态信息反解雅可比矩阵，下面具体介绍之。
+雅可比矩阵的反解方法：由(6)式可知：　　G′u＝I-P′u　(9)
+其中I为单位矩阵，因此求出Poincaré映射Pu在un处的雅可比矩阵G′un，即可根据(9)式方便地得到，反之亦然。图2和3给出了数值算例。选取oxyz为静坐标系，oξηζ为固连于刚体上的动坐标系。这种方法本文将其称为反解雅可比矩阵法。
+　　偏导数G′μn的反解法：若已测得μ=μn时系统的稳态周期解un，则可用差分方法得出：在系统位于其稳态周期解在Poincaré截面上的穿越点un时，给μn施加小扰动△μ，即μ=μn+△μ，考察一个周期后系统轨迹再次经过Poincaré截面时的穿越点n，则偏导数G′μn为：
+G′μn＝（n-un）／△μ　(14)
+　　上述差分方法中n难以在实际条件下得出，故可用上述方法求得了μ=μn-1时的雅可比矩阵P′un-1和Bn-1，且μn-1在μn的邻域内，△μ=μn-1-μn，则：
+n≈P′un-1*un+Bn-1　　(15)
+于是有：G′μn＝（P′un-1*un+Bn-1-un）／（μn-1-μn）　(16)
+　　至此，可以看出：通过对系统第n-1步（μ=μn-1）及第n步（μ=μn）的稳态周期解及其受扰运动的观测，然后从观测数据中得出系统稳态周期解穿过选定的Poincaré截面时留下的穿越点un，及其受扰运动穿过此Poincaré截面时留下的一系列映射点u(k)（k=1，2，…，m+1）后，即可利用(13)及(16)两式求得雅可比矩阵P′un（或G′un）与偏导数G′μ（un，μn），进而利用(8)式实现对第n+1步（μ=μn+1）系统周期解的预测。
+　　同时，根据Floquet理论，求得的雅可比矩阵P′un的特征值中，模最大的特征值λ被称为Floquet乘子，其模的大小反应了周期解稳定性的大小：小于1时周期解稳定，大于1时周期解发散，模越小周期解越稳定，模越大周期解越不稳定，因此反解得出的雅可比矩阵P′un也可用于周期解稳定性的即时判别。本文给出了对称刚性转子碰摩运动的稳定性分析，分析了发生圆柱形碰摩运动时系统的稳定范围；对于圆锥形碰摩运动，给出了其涡动角速度的表达式。
+　　这样就完成了这一步的预测追踪，不断重复这一过程便可完成对系统周期解在整个研究范围内的预测追踪，上述方法本文称之为周期解的反解型预测追踪算法。下面以不平衡刚性转子轴承系统为例，给出此方法的一个应用实例，由于诣在说明算法的可行性，因此算例中算法实施所需要的系统稳态周期解及其受扰运动的观测数据采用数值方法模拟给出。当转子两端的轴承同时发生不良润滑，造成转子两端同时与轴承接触，产生圆柱形碰摩运动，给出了发生圆柱形碰摩运动时系统的稳定范围，讨论了摩擦系数、轴承径向间隙、碰摩发生时的初始角度与失稳涡动角速度的关系。取相对于平衡位置的扰动角y=θ-θ0作广义坐标，代入得：-μa2+μaω+(mgl2/2Jdc0)siny＝0　(11)
+(11)式是一非线性方程，令T=ωt，c=mgl2/2Jdc0ω，引入小参数ε=1/ω则上式变为：
+-μa2+μa+εcsiny＝0　(12)
+令　　y=y0+εy1+ε2y2+…　(13)
+　　采用多尺度方法分析(12)式，将(13)式代入(12)式，并比较ε的同次幂的系数项得：
+ε0：D20y0-μa(D0y0)2+μa(D0y0)＝0　(14)
+ε1：D20y1+2D0D1y0-2μa(D0y0)(D0y1)-2μa(D0y0)(D0y1)
++μa(D0y1)+μa(D1y0)+csiny0＝0　(15)
+令　ω0=D0y0，(14)式变为：　　　　D0ω0-μaω20+μaω0＝0　(16)
+(16)式的定常解为：=1.0，或=0。
+　　对S=1.0，e=0.1的系统，工频振动周期解在转速ω=2.12745处经倍周期分岔产生2T周期解。本文选取系统转速ω=1.40至ω=2.15的范围，取步长△ω=0.03，将其等分为26个工作点，对此系统工频振动对应的周期稳态解进行了预测追踪及稳定性判别。张文［9］给出几种碰摩的稳定性分析。
+　　图2(a)及(b)分别给出了在τ=0这一Poincaré超截面上周期解穿越点的位移和速度的预测值与真实值，可以看出：从第一个预测点ω=1.46至到倍周期分岔后的预测点ω=2.15，用本文算法得到的预测值与打靶法求出的真实值均具有很好的一致性。
+
+
+图2　ω=1.46～2.15范围内，Poincaré超截面τ=0上周期解穿越点的预测值与真实值的对比
+　　为进一步看清此处系统周期解随ω的演化规律，图3给出了ω=1.46，ω=1.84及ω=2.15三个典型转速下的系统周期解轨迹。可以看出：它们穿越Poincaré截面τ=0时的穿越点（用×表示）与预测值一致，从而验证了算法的正确性及有效性。
+
+
+图3　若干典型转速下系统周期解轨迹及其在　图4　系统转速ω=1.40至ω=2.15的范围　Poincaré超截面τ=0上穿越点与预测值的对比　内，Floquet乘子模的反解值与差分法求出真实值的对比
+　　为判别周期解的稳定性，对在每一个转速点用前述反解方法求出的雅可比矩阵求解特征值问题，得到特征值模的最大值即为Floquet乘子，同时，这里将用传统的数值差分方法求得雅可比矩阵G′un求解特征值问题后，得到特征值模的最大值作为Floquet乘子的真实值。图4给出的就是系统转速ω=1.40至ω=2.15的范围内，用上述反解法求出的Floquet乘子模与传统的差分法求出的Floquet乘子模（这里称之为真实值）的对比图示。可以看出：反解法求出的Floquet乘子相当准确，可以实用。
+4　结　论
+　　(1)本文提出的反解型预测追踪算法，由于它仅利用系统周期解的稳态及瞬态信息，就可有效地对不平衡转子轴承系统这类单参数周期性非自治系统的周期解进行预测及追踪，因而具有广泛的适用性；
+　　(2)算法实施中，反解得出的雅可比矩阵的模的最大值（即系统周期解的Floquet乘子）可用于判别系统周期解的稳定性；
+　　(3)从理论上讲，本算法可仅利用对实际系统的观测信息实现，因而有希望在实际不平衡轴承转子系统状态监测预警及稳定性实时判别中得到应用。
+本文系西安交通大学博士基金资助项目，编号：97
+作者简介：刘　恒　男　28岁　博士生　西安交通大学润滑理论及轴承研究所　710049
+作者单位：　刘　恒秤荨×摇⌒挥寻亍∥靼步煌ù笱
+　　　　　　姚福生　机械工业部
+参考文献
+［1］　P Sundararajan P,Noah S T.Dynamics of Forced Nonlinear Systems Using Shooting/Arclength Continuation Method-Application to Rotor System.ASME Journal of Vibration and Acoustics, 1997,119
+［2］　季海波，武际可，胡海昌．分叉问题的几何描述及其计算方法．中国科学(A)，1991：947-854
+［3］　R H B Fey,D H van Campen,A de Kraker.Long Term Structural Dynamics of Mechanical Systems with Local Nonlineariyies", ASME Journal of Vibration and Acoustics, 1996,118:
+［4］　Iooss G,Joseph D D.Elementary stability and Bifuroation Theory.Springer-Verlag, New York Inc. 1980
+［5］　凌复华．非线性振动系统周期解的数值分析．应用数学和力学，1983.7,4(4):
+［6］　刘铁牛，王伟．非线性系统周期解不动点迭代法．应用数学和力学，1987， 8（3）：
+［7］　Nataraj C,Nelson H D.Periodic Solution in Rotordynamic Systems with Nonlinear Supports.ASME Journal of Vibration and Acoustics,1989,111:
+［8］　Thompson J M T,Stewart H B.Nonlinear Dynamics and Chaos.John Wiley & Sons Ltd., New York 1986
+收稿：1998年2月
+修稿：1998年4月
+责任编辑：王震华

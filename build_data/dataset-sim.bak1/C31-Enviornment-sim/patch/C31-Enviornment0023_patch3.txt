@@ -1,0 +1,147 @@
+水土保持通报
+BULLETIN OF SOIL AND WATER CONSERVATION
+1999年 第19卷 第2期 No.2 Vol.19 1999
+
+
+
+不同土壤大气湿度组合下玉米生长
+及水分光合特性反应
+李秧秧　黄占斌　黄少燕
+摘　要　通过对不同土壤大气湿度组合下玉米生长、水分及光合特性的研究，认为土壤水分亏缺对玉米的影响要超过大气干旱。冲湖积平原的生态环境质量最差，地下水不足，地表水水质差，土地退
+化严重，特别是盐碱化和沙化作用强烈，地方病多发，自然灾害频繁。农村集体经济收入几乎为零，每年要靠国家的财政补助过日子。短期干旱过程中各处理的干物质仍持续增加。
+关键词　土壤大气湿度组合　玉米　生长　水分　光合
+文献标识码：A　　　文章编号：1000-288X(1999)02-0023-04　　　中图分类号：S513.07
+Response of Maize Growth and Water-Photosynthesis Characteristic to Different Combination of Air Humidity with Soil Moisture
+LI Yang-yang　HUANG Zhan-bin　HUANG Shao-yan
+(Institute of Soil and Water Conservation, Chinese Academy of Sciences and Ministry of Water Resources, Yangling District, Shaanxi Province, 712100, PRC)
+Abstract　Through the research of growth, water and photosynthesis characteristic of maize under different combination of air humidity with soil moisture, the results showed the harm of soil water deficit exceeded that of air drought, water status and physiological activities were mainly decided by soil moisture. Short-term drought made photosynthetic rate decrease. For soil dry treatments, the main reason was nonstomatal limitation, but for air-dry-soil-wet treatment, stomatal limitation at first but nonstomatal limitation later. Dry matter continued to increase during the period of short-term drought.
+Keywords: combination of air and soil water; maize; growth; water; photosynthesis
+　　土壤和大气是植物赖以生存的两大媒介，其水分状况的变化直接影响着植物的水分状况及其蒸腾作用的强弱。在我国北方旱地农业生产实践中，土壤和大气干旱经常发生，其水分组合可大致概括为气湿土湿、气湿土干、气干土湿和气干土干4种类型。由于大气湿度难以控制，因而有关它与土壤水分的耦合机制研究不多。一些研究表明，大气湿度直接影响着植物气孔的反应［1，2］，高大气湿度可缓解作物的光合午休现象［3］，但对其机理并不清楚。土壤和大气干旱诱导的干旱信号产生的原初部位不同，其生理作用结果是否一样仍需进一步研究。为此，该文借助于人工生长箱，试图通过对不同土壤大气湿度组合下作物的水分、光合、生长特性的分析，从生理生态角度揭示不同组合的反应机理，为旱地农业提供理论参考。
+1　供试材料与方法
+　　供试材料为玉米(陕单9号)。土培试验。
+　　丰顺县土壤微量元素含量缺乏，作物施用微肥增产效果显著，为了使作物高产、稳产和品质优良，建议各乡镇积极开展微肥的试验、示范、推广工作，把施用微肥作为一项重要的生产措施来抓。他们把这种增溶现
+象归结为表面活性剂稀溶液中存在类似于“分配”的非极性物含量的增加。评价不同地域生态系统的类型、分布格局、植被的状态、生态敏感
+性特征以及对海南生物多样性保护、水源涵养、水土保持的作用。人工生长箱光照为250μmol/(m2.s)，温度为25℃，白天照光12h，夜间黑暗。
+　　试验分4个处理：气湿土湿、气湿土干、气干土湿和气干土干。同时，坡度大于25°的坡地为不适宜区。
+　　干物重为70℃烘干后称重；叶面积用直尺测量长与宽后乘以系数并用晒图法校正；叶水势用3005型压力室测定；光合气体交换参数及叶温用ADC便携式光合系统测定。
+2　结果与分析
+2.1　干物重和绿色叶面积变化
+　　干物重是衡量作物生物产量的重要指标，它反映了作物生长的强弱。绿色叶面积的大小直接反映了植株的同化能力。整个干旱过程中，各处理干物重一直在持续增加(图1，图2)。
+基金项目：吉林省科委重点攻关项目(980400-2)
+作者简介：张殿发(1964～)，男，博士，讲师。前2个处理的绿色叶面积一直在增加，而后二者从第11d起则持续下降(图1，图2)，这可能与干旱导致的叶衰老有关。
+
+图1　不同处理干物重变化
+
+图2　不同处理绿色叶面积变化
+　　以气湿土湿处理为对照，比较气干土湿和气湿土干处理干物重和绿色叶面积的下降幅度，发现土壤干旱导致的干物质和绿色叶面积减少明显超过大气干旱(图1，图2)。这些基地要求具有岭南特色，科技含量高。以处理后第13d为例。
+
+
+
+
+土壤类型
+1-黑土；2-暗棕壤；3-棕壤；4-淋溶褐土；5-黄棕壤；6-黄壤；7-红壤；8-赤红壤；9-砖红壤
+图2　中国东部玄武岩上的土壤表层元素含量与下伏母岩中的含量比值λ的变化曲线
+　　（1）大多数微量元素含量和λ值由北向南呈增加趋势，并多在红壤中达到峰值；而As和F的含量呈减少趋势，但λ值仍呈增加趋势；Hg含量的变化趋势不明显，λ值呈减少趋势。良好的土壤水分可在很大程度上缓解大气干旱对玉米生长的威胁。同样，高大气湿度也可在一定程度上缓解土壤干旱对作物的伤害。大气干旱和土壤干旱间存在一定的交互作用，且随干旱程度加剧变得越来越大。
+作者单位：南京大学环境科学与工程系，污染控制与资源化国家重点实验室，南京210093
+参考文献：
+　1　Edwards D A, Luthy R G, Liu Z. Solubilization of polycyclic aromatic hydrocarbons in micellar nonionic 
+surfactant solutions[J]. Environ Sci Technol, 1991, 25: 127 
+　2　Diallo M S, Abriola L M, Weber W J Jr. Solubilization of non-aqueous phase liquid hydrocarbons in 
+micellar solutions of dodecyl alcohol ethoxylates[J]. Environ Sci Technol, 1994, 28: 1829
+　3　Kile D E, Chiou C T. Water solubility enhancements of DDT and trichlorobenzene by some surfactants 
+below and above the critical micelle concentration[J]. Environ Sci Technol, 1989, 23: 832
+　4　Abdul A S, Gibson T L, Rai D N. Selection of surfactant for the removal of petroleum products from 
+shallow sandy aquifers[J]. Ground Water, 1990, 28: 920
+　5　Pennell K D, Abriola L M, Weber W J. Surfactant enhanced solubilization of residual dodecane in soil 
+columns:.Experiment investigation[J]. Environ Sci Technol, 1993, 27: 2332
+　6　Jafvert C T, Van Hoof P L, Heath J K. Solubilization of non-polar compounds by non-ionic surfactant 
+micelles[J]. Wat Res, 1994, 28(5): 1009
+　7　Pennell K D, Adnofli A M, Abriola L M, et al. Solubilization of dodecane, tetrachloroethylene, and 1, 2
+-dichlorobenzene in micellar solutions of ethoxylated nonionic surfactants[J]. Environ Sci Technol, 1997, 31(5): 
+1382
+　8　Grimberg S I, Nagel J, Aitken M D. Kinetics of Phenanthrene dssolution into water in the presence of 
+nonionic surfactants[J]. Environ Sci Technol, 1995, 29(6): 1480
+　9　Guha S, Jaffe P R, Peters C A. Solubilization of PAH mixtures by a nonionic surfactant[J]. Environ Sci 
+Technol, 1998, 32(7): 930
+　10　Deitsch J J, Smith J A. Effect of triton X-100 on the rate of trichloroethene desorption from soil to water
+[J]. Environ Sci Technol, 1995, 29(4): 1069
+　11　Sahoo D, Smith J A. Enhanced trichloroethene desorption from long-term contaminated soil using triton 
+X-100 and phenomenon Increases[J]. Environ Sci Technol, 1997, 31(7): 1910
+　12　Imhoff P T, Arthur M H, Miller C T. Complete dissolution of trichloroethylene in saturated porous media
+[J]. Environ Sci Technol, 1998, 32(16): 2417
+　13　Kommalapati R R, Valsaraj K T, Constant W D, et al. Aqueous solubility enhancement and desorption of 
+hexachlorobenzene from Soil using a plant-based surfactant[J]. Wat Res, 1997, 31 (9): 2161
+　14　Grimberg S J, Miller C T, Aitken M D. Surfactant-enhanced dissolution of phenanthrene into water for 
+laminar flow conditions[J]. Environ Sci Technol, 1996, 30(10): 2967
+　15　Sahoo D, Smith J A, Imbrigiotta, et al. Surfactant-enhanced remediation of a 
+trichloroethene-contaminated aquifer 2: Tranport of TCE[J]. Environ Sci Technol, 1998, 32(11): 1686
+　16　Okuda I, McBride J F, Gleyzer S N, et al. Physicochemical transport processes affecting the removal of 
+residual DNAPL by nonionic surfactant solutions[J]. Environ Sci Technol, 1996, 30(6): 1852
+　17　Jafvert C T. Sediment-and saturated-soil-associated reactions involving an anionic surfactant 
+(dodecylsulfate): Partion of PAH compounds among phases[J]. Environ Sci Technol, 1991, 25: 1039
+收稿日期：1999-06-13
+。从图3可看出，整个处理过程中，气湿土湿和气干土湿处理的叶水势稍有下降，这可能与叶片老化有关。而气湿土干和气干土干处理的叶水势下降幅度很大。相比之下，土壤干旱导致的叶水势降低幅度明显高于大气干旱，说明叶水势主要决定于土壤水分状况。当土壤干旱时，高大气湿度可在一定程度上改善叶片水分状况，使叶水势上升。
+
+图3　不同处理叶水势的变化
+2.3　光合气体交换参数的变化
+2.3.1　净光合速率(Pn)　从表1可看出，气湿土湿处理的Pn逐渐增大，而其它3个处理的Pn均下降。处理第13d和第3d相比，气湿土干、气干土湿和气干土干处理的pn分别下降了19.45%，7.30%和51.40%，说明气干土干处理的光合机构受损伤最大，其次为气湿土干处理和气干土湿处理。
+1 土壤微量元素含量状况
+　　根据丰顺县土壤类型，重点分析了花岗岩发育的土壤。处理第13d时，气干土干处理的Ci最大，其次为气干土湿和气湿土干处理。这也表明气干土干处理的光合机构受损伤程度最大。
+　　利用Farquhar和Sharkey(1982)［4］的公式计算气孔限制值LS，即LS＝1－Ci/Ca。式中Ca为大气CO2浓度。
+2.3.1 调整作物结构
+　　农作物的种植结构与单位土地面积的经济效益密切相关；农作物结构调整得好，单位面积的
+经济效益就会有较大的提高。从表1可看出，气湿土干和气干土干处理的Pn逐渐下降，Ci逐渐增加，气孔限制值LS逐渐减少，表明这2个处理引起Pn下降的主要原因是非气孔限制，而气干土湿处理虽Pn一直在下降，但Ci先下降然后上升，Ls表现出相反的趋势，说明该处理过程中存在一个非气孔限制向气孔限制的转变。
+表1　各处理干旱过程中Pn，Ci，LS的变化
+处理项目371113处理项目371113
+气湿土湿Pn/(μmol.m-2.s-1)
+Ci/(mg.kg-1)
+LS/%6．37
+273
+28．166．07
+275
+27．638．20
+270
+28．958．00
+278
+26．84气湿土干Pn(μmol.m-2.s-1)
+Ci/(mg.kg-1)
+LS/%5．5
+256
+32．635．23
+270
+28．955．13
+281
+26．054．43
+318
+16．32
+气干土湿Pn/(μmol.m-2.s-1)
+Ci/(mg.kg-1)
+LS/%5．07
+312
+17．895．77
+288
+24．215．60
+351
+7．634．7
+354
+6．84气干土干Pn(μmol.m-2.s-1)
+Ci/(mg.kg-1)
+LS/%5．70
+256
+32．635．37
+281
+26．054．13
+351
+7．632．77
+410
+－
+
+2.4　叶温
+　　叶温是环境与植物内部因素共同影响叶片能量平衡的结果。当植物受到干旱胁迫时，气孔关闭，植物不能进行正常的蒸腾活动来释放热，就会造成温度的升高。图4表明，气干土干处理的叶温一直维持在最高，气湿土干和气干土湿处理次之，而气湿土湿处理的叶温则最低。无论是土壤处于正常水分还是干旱时、处理过程中叶温的大小一直为气干处理大于气湿处理，说明气干处理的危害大于气湿处理。
+
+图4　不同处理叶温的变化
+3　小　结
+　　(1) 虽然短期干旱使叶水势下降，光合速率降低，细胞内CO2浓度和叶温上升，绿色叶面积减少，但并未使生长停止。同化过程积累的干物质一直大于呼吸消耗的干物质，因而干物质积累一直在增加。
+　　(2) 从干物质、叶面积、叶水势、净光合速率、细胞内CO2浓度、叶温的变化看，气干土湿处理所受干旱伤害远小于气湿土干处理。土壤水分亏缺对作物的影响要超过大气干旱。作物的水分状况及生理活性主要决定于土壤的水分条件。
+　　(3) 气干土干、气湿土干处理Pn下降的主要原因是非气孔限制，而气干土湿处理的Pn下降在胁迫初期(7d前)主要为气孔限制，而胁迫后期则是由于非气孔限制。在气干土干、气湿土干处理上所得结论与一般认为胁迫初期引起光合降低主要是气孔因素，而后期则主要为非气孔因素［5，6］不太一致，这可能与土壤水分胁迫程度及生长箱内弱光强有关。
+　　此外，广东省还提出要完善五大体系建设，保证绿色食品的健康发展。为了尽可能消除母岩的影响，我们计算了各类土壤表层元素含量与母岩中该元素含量的比值λ，并依此绘出曲线（图1）

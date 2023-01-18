@@ -1,0 +1,65 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+薄膜膜系计算的计算机程序设计
+马　前
+　　摘　要　根据膜堆的特征矩阵，求出单层膜的光学导纳，在单层膜的基础上，进行层层递推，叠加起来，求出膜堆的等效导纳，计算振幅反射系数，最后求出整个膜系的反射率、透射率。
+　　关键词　膜堆特征矩阵　振幅反射系数　光学导纳　反射率　透射率
+Computer Program Design of Calibrating Film System of Thin Film
+Ma Qian
+　　Abstract　The optical admittance of a single-layer film is derived from the characteristic matrix of the film pile.Based on the single-layer,recurring layer by layer,supercomposing one by one,deriving the equivalent admittance of the film pile and calculating the reflect coefficient of the amplitude,the reflectivity and transmissivity of hte whole film system is derived at last.
+　　Key words　Characteristic matrix of film pile,Reflect coeffient of the amplitude,Optical admittance,Reflectivity,Transmissivity
+
+　　薄膜膜系是指由不同的材料的膜层与基底所构成的整体。当一束光入射到膜层的表面时，在每一层膜的表面，光都对它们发生作用。人们利用不同的材料沉积在不同的基底上，从而改变这种基底的物理化学性质。
+　　2　概述
+　　在超音速或者是高超音速流动下，气流在趋近压缩拐角附近时，先发生滞止，同时伴随激波的出现，然后部分地分离，最后在再附区达到最大的压缩。在实际工作中，正是运用了这一方法来满足各种不同的透射率和反射率的要求。为了达到某种反射率和透射率，怎样确定沉积材料及厚度，正是我们所要研究的问题。
+　　在实际工作中，所遇到的各种技术要求各不相同，如果对于每项技术要求都通过实验来确定膜系，无疑是人力物力的浪费。其中图5.a为nyc=1和nzc=0时ny和nz的响应曲线，可以看出实线ny上升到70%稳态值的时间tr≈0.15s且无超调，虚线nz=0说明对标称控制模型，闭环反馈控制系统的俯仰-偏航通道完全解耦，图5.b为nyc=0和nzc=1时ny和nz的响应曲线，可见对标称控制模型，系统的时域响应性能良好。
+　　主题词　BTT导弹　自动驾驶仪　H∞控制设计　鲁棒稳定性
+H∞/MIXED SENSITIVITY AUTOPILOT 
+DESIGN OF A BTT MISSILE
+Zheng Jianhua
+(The Center for Space Science and Applied Research,CAS,Beijing,100080,China)
+Yang Di　Shao Chengxun
+(Harbin Institute of Technology*Harbin*150001*China)
+　　Abstract　This paper gives the H∞/mixed sensitivity robust autopilot desing method to improve robustness of a BTT missile.Results declare that the robust autopilot designed with nominal mathematical model can control the BTT missile flying in a large airspace stably and accurately.
+　　Key words　BTT missile　Autopilot　H∞ design method　Robust Stability
+1　引言
+　　BTT导弹的特点决定了它是一个具有运动学耦合、惯性耦合、气动耦合和控制作用耦合的多变量系统，需用多变量控制方法设计其自动驾驶仪。
+
+
+图1　标准H∞控制问题方块图
+2　H∞/加权混合灵敏度设计问题
+2.1　标准H∞控制问题
+　　H∞控制设计问题均可用图1所示的标准H∞控制问题表示。图中2区和3区的流动参数由斜激波理论和经验公式计算得出。光波是一种电磁波，光波在界面上反映出的光学性质，是通过电磁波在介质中传播的普遍性质推导而来的。由麦克斯韦方程推导出光波入射到两个光学性质不同的介质界面上时，入射波、反射波及透射波的电矢量分别为
+E(i)＝E(i)0exp(i(ω(i)t－2πn0／λ.(Xsinθ0＋Zcosθ0)))
+E(r)＝E(r)0exp(i(ω(r)t－2πn0／λ.(αrX＋βrY＋γrZ)))
+E(t)＝E(t)1exp(i(ω(t)t－2πno／λ.(αtX＋βtY＋γtZ)))
+菲涅尔把电失量分解为振动方向平行于入射面与垂直于入射面的两个分量，即P分量和S分量两个方向的偏振光。实际上，光波在薄膜上的形状，是光波在分层介质的各个界面上菲涅尔系数相互叠加的结果。有压缩拐角区域的一类突起物，局部气动加热特征表现为流动的分离和分离之后的再附。两层以上的光学薄膜为多层膜，计算方法可以在单层膜的基础上加以推广，进行层层递推，求出整体膜系的计算结果。利用菲涅尔系数矩阵法来计算多层膜的分光特性，它的膜堆特征矩阵表示为
+
+膜堆的光学导纳Y为
+Y＝C／B＝(η2cosδ1＋iη1sinδ1)／(cosδ1＋iη2／(η1sinδ1))
+反射系数：　r＝(η0－Y)／(η0＋Y)
+反射率：　R＝r.r*
+透射率：　T＝1－R
+　　计算程序是根据膜堆的特征矩阵基本公式编写的，求出一层界面上的等效导纳Y，再求出振幅反射系数，叠加起来，最后求出整个膜系的反射率。
+　　程序框图如图1所示。图1中,n0―入射介质(空气)折射率；ni―材料折射率，i＝1,…,K；θ0―空气中入射角；θi―各层介质中入射角，i＝1,…,K。
+
+图　1
+　　计算程序的使用，给计算薄膜的反射率和透射率带来了很大方便。随机给定七个参数，即,材料的高折射率、低折射率、基底折射率、膜层厚度、入射波长、入射角度、膜层数。从运算结果就可以看出反射率和透射率值。
+　　分离流线与壁面的夹角称为起始分离角，起始分离角用θd表示。根据现有的材料，可以先把不同层数膜系的反射率和透射值算出来。在工作中，需要确定某一膜系时，查阅一下便能知道用什么材料、镀多少层合适。例如：有一要求镀反射、透射比为中性的分光镜，查出用硫化锌、氟化镁两种材料，镀四层合适，每层厚度为1／4波长。
+参考文献
+  1　Reichert R T.Homing Performance Comparison of Selected Airframe Configuration Using Skid-to-Turn and Bank-to-Turn Steering Policies.NASA-CR-3420，1981
+  2　Zames G,Feedback and Optimal Sensintivity:Model Reference Transformations,Multiplicative Seminorms,and Approximate Inverse.IEEE Trans.Automatic Control,1981,AC-26,p.301-320
+  3　郑建华.鲁棒控制理论及其在BTT导弹中的应用.哈尔滨工业大学工学博士学位论文，1996年1月
+  4　Doyle J C,Glover K,Hargoneger P K and Francis B A.State-Space Solution to Standard H2 and H∞ Control Problem.Proceeding of the American Control Conference,Atlanta,1988,1691-1696
+。主要是仪器、仪表的精度，施加电压、电流是否合适，材料纯度，工件表面清洁度，观察仪表读数的准确性，关闭挡板的速度等等。
+5　仿真结果分析及结构
+
+
+a.过载命令nyc=1,nzc=0　　b.过载命令nyc=0,nzc=1
+图5　M=3.75和h=9.05时的单位阶跃响应曲线
+图5为标称设计点的线性仿真结果。
+　　通过薄膜的光学计算来反映它的光学性质，是一种精确可靠的方法。在分离流线之外，边界层与来流相交之处，产生一道分离激波，经过分离激波之后，流体压力升高并呈现平台压力分布，平台压力通常可以用经验公式给出。由于在工程上要精确测量模型的攻角α和侧滑角β比较困难，因此文献［3］从自动驾驶仪设计的简便性出发，结合鲁棒设计方法的特点进行模型的可行性论证，提出了以导弹的法向过载ny、nz代替攻角α和侧滑角β作为模型的状态变量。流体经过再附激波之后得到进一步的压缩，压力升高并达到峰值压力，同时气动加热热流密度也达到峰值

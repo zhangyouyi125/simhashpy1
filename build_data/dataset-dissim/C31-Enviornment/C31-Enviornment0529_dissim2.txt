@@ -1,0 +1,65 @@
+城市环境与城市生态
+URBAN ENVIRONMENT & URBAN ECOLOGY
+1999年 第12卷 第4期 Vol.12 No.4 1999
+
+
+
+于桥水库网箱养鱼对水质影响分析
+李万庆　李金中　吴　雷　郑洪起　于秀玲　朱　琳
+　　摘要：本文通过采样监测分析了网箱养鱼对水质的影响。分析结果表明，网箱养鱼明显增加了水库水体中藻类密度、COD、TP、TN的含量，并引起水温上升，溶解氧减少，促进水库富营养化进程，是水质恶化的重要原因之一。同时，残余饵料和粪便的沉积，增加了底质中的有机质、TP和TN，造成水库水体的二次污染。
+　　关键词：网箱养鱼；水库；水质
+　　中图分类号：X524　　文献标识码：A　　文章编号：1002-1264(1999)04-0033-03
+The Effect of Fish-Flue on Waterquality in Yuqiao Reservoir
+LI Wan-qing1,LI Jin-zhong1,WU Lei1,ZHENG Hong-qi1,YU Xiu-ling1，ZHU Lin2
+(1.Tianjin Academy of Environmental Science,Tianjin 300191)
+(2.Nankai University,Tianjin 300071)
+Abstract：The effect of fish-flue on Water-quality in Yuqiao reservoir was studied by sampling and analyses.The results showed that the fish-flue,is one of the reasons resulting in increasing of the algae density,COD,total phosphate,total nitrogen,thereby the higher water-temperature and lower DO of the reservoir,is an important cause of the eutrophication and water quality deterioration.At the same time, the sediment of residue pastry and the fish excrement increase the content of organic matter,total phosphate and total nitrogen within the substrate,which leads to secondary-pollution of the water body of the reservoir.
+Key words：fish-flue;reservoir;water-quality
+1　引言
+　　1998年夏季，于桥水库水体中pH、非离子氨、COD、TP等因子严重超标，藻类数最大值达到6000万个/L，超过常规自来水处理工艺的极限。自来水厂投加混凝剂(FeCl3)的最大值已达到74mg/L，才使出厂水质的浊度、余氯、细菌总数、大肠菌群等项指标符合国家规定的饮用水标准。但由于投加大量的铁盐混凝剂，致使出厂水中Fe离子偏高，pH下降(最小值6.4)。弱酸性水进入供水管网腐蚀管壁，又使供水中的Fe含量增大(最大值10mg/L)导致色度升高、沉淀物增加。为尽快解决，进行了调查并提出相应措施，确保全市人民的身心健康。为组织专家开展《于桥水库网箱及周边养鱼对水质影响》的论证工作提供技术资料，为保护好于桥水库水质提供科学依据；同时，也为其它缺水城市的水资源保护提供科学借鉴［1，2］。
+2　研究方法
+2.1　概况
+　　于桥水库位于天津北部蓟县城东4　km处，东经117°25′，北纬40°02′，库区位于燕山山脉边缘地带的州河盆地，是一座山谷形、水浅且开阔的富营养型水库。水库坝高28.72m，正常蓄水水位21.16m，库容为3.85亿m3，整个库区由东向西倾斜。地表汇水是于桥水库来水的主要途径。状态方程一般表达式为：
+
+　　其差分形式为：X(t+Δt)=x(t)+f(Ri、Ai、Xi、Pi)×Δt其中X为状态变量，A是辅助变量，R为流率变量，P是参数，t为仿真时间，Δt是仿真步长。
+　　到目前为止，于桥水库网箱养鱼面积1.80　hm2，共722箱，养殖方式和品种上，主要是草鱼、鲢鱼、鳙鱼和鲤鱼。
+　　本文应用系统动力学的原理与方法开展了吉林西部平原重点农业区乾安县水资源可持续利用系统仿真研究，建立了该区水资源可持续利用系统动力学仿真模型，经过政策模拟对比，提出符合本区经济发展最佳方案。
+
+
+图1　网箱养鱼对水环境中营养物质的贡献示意图
+　　根据1993-1998年于桥水库常规监测结果表明：于桥水库中pH、COD、BOD、非离子氨、亚硝酸盐、TP每年均有超标现象。其中非离子氨、亚硝酸盐，年均值分别相当于Ⅲ类标准的5倍与6.6倍。在一年之中一、二、四季度水质尚可，第三季度污染严重。它以现实存在的系统为前提，根据历史数据、实践经验和系统内在的机制关系建立起动态仿真模型，对各种影响因素可能引起的系统变化进行实验，从而寻求改善系统行为的机会和途径。分别在草鱼网箱、鲤鱼网箱及距网箱较远的对照点各设一个监测站位，每个站位分别采取水样和底泥进行分析，水样分析项目有：藻类密度、溶解氧、总磷、总氮和水温。底泥分析项目有有机质、总磷和总氮。同时，本文还在距草鱼网箱不同距离的位置布设四个监测点，即分别为网箱内、距网箱100m、300m、500m各设一个站位，每个站位分别采水样和底泥，分析网箱养鱼对不同距离水质的影响，水样分析项目有藻类密度、总磷和总氮，底泥分析项目为主要来自生物沉积部分的腐殖酸。监测时间为1998年10月。
+3　结果与分析
+　　根据上述方法，不同养鱼种类的网箱对水质及底泥的影响调查结果见表1。所以必须针对研究问题的需要，根据系统结构由远及近地先对系统，然后对各子系统一一进行系统边界的确定，基本原则是：将直接参与或对农业自然资源环境系统有直接影响的因素划分在边界之内。底泥中的有机质、TP、TN含量也是鲤鱼网箱区＞草鱼网箱区，说明网箱养鱼会增大水体中藻类密度、TN、TP的含量，使水温上升，水中溶解氧减少，同时增大了底泥中的有机质、TP、TN含量，使水体受底泥二次污染的可能性增大。
+2.2　变量集及系统因果关系图的确定
+　　针对研究问题的需要及系统的结构，涉及到的变量有：
+　　状态变量　农业用水量，工业用水量，农业生产总值，工业生产总值等。
+　　对草鱼网箱不同距离的水质分析，分析项目有藻类密度、TP、TN。分析结果见表2及图2-图4。因此，明确了系统边界之后，还需确定系统的构成单元和影响因素，然后确定各子系统的接口。
+　　根据国内外网箱养鱼的资料可知，网箱养鱼不仅直接对水质产生污染，而且由于增大了底泥中的营养物质，会对水体产生二次污染。因此，本次分析也对距草鱼网箱不同距离的底泥污染进行分析，其结果见表3及图5。
+　　由表3及图5可以看出底质中的腐殖酸随着距网箱距离的增大而明显减少。
+
+
+图5　距网箱不同距离底质中的腐殖酸
+表3　网箱对不同距离的底泥影响
+
+项目距离(m)
+0100300
+腐殖酸(%)0.800.550.28
+
+4　小结
+　　1998年11月12-13日，经有关单位的专家对《于桥水库网箱及周边养鱼对水质影响》论证。对于桥水库网箱养鱼状况进行了现场考察，听取了市环科院有关于桥水库网箱养鱼对水质影响的背景资料的介绍，经认真讨论研究，认为：
+　　①目前于桥水库水质污染严重，呈现明显的富营养化状态。网箱养鱼是进一步恶化水质，促使水体富营养化的原因之一。从国家颁布的法律、法规、环境质量标准及国内外对网箱养鱼的管理规定等方面综合分析，应立即禁止网箱养鱼。
+　　目标变量　农业供水量，工业供水量，供水紧张程度，环境经济损失等。水资源量，地下水允许开采量，降雨量，每亩耕地实际用水量等。该方法是在总结运筹学的基础上，综合系统理论、控制论、信息反馈理论、决策理论、系统力学、仿真与计算机科学等基础上形成的崭新的学科［1］。
+　　关键词：水资源；可持续发展；系统动力学
+　　中图分类号：X143　　文献标识码：A　　文章编号：1002-1264(1999)04-0026-04
+Research of System Dynamic Model for 
+Sustainable Utilization of Water Resource
+YANG Jian-qiang，LUO Xian-xiang
+(Changchun University of Science and Technology,Changchun 130026)
+Abstract：Taking Qianan county in the west plain of Jilin as an example,the author made a thorough study of system dynamic mode for sustainable utilization of water resource.As a result of policy simulating and contrasting the optimal plan is put forward that is favorable to economic development in Qianan country.
+Key words：water resource;　sustainable development;　system dynamics 
+　　水资源的开发利用与城市环境、经济的发展息息相关，由于水资源短缺和不合理开发利用已带来许多城市环境问题，严重阻碍了经济的发展和人民生活水平的提高，因而，研究如何使水资源可持续利用，在当前显得尤为重要。曾参加国家“六五”、“七五”、“八五”科技攻关课题；国家科委主持的《长江三峡大坝对环境的影响评价与对策研究》课题；长江委员会主持的《南水北调中线工程环保初设科研项目》，以及环境评价、规划、污水土地处理工程等几十项环境管理与工程项目，获省部级科技进步二等奖三项，已发表论文及专著共30余篇。
+作者单位：李万庆　李金中　吴　雷　郑洪起　于秀玲　天津市环境保护科学研究院，天津　300191
+　　　　　朱　琳　南开大学，天津　300071
+参考文献
+［1］　彭近新、陈慧君.水质富营养化防治.北京：中国环境科学出版社.1988
+［2］　施铭、刘宏纲.淀山湖网箱养鱼及其对水质的影响.农业生态环境.1993；3

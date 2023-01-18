@@ -1,0 +1,58 @@
+比如商品类定义有品名、品牌等属性，服装类则只需要定义颜色、材料等商品类所没有定义的属性，品名、品牌等属性已经手动继承了计算机工程
+COMPUTER ENGINEERING
+1999年  第25卷 第7期 Vol.25 No.5 1999
+
+
+
+Japmine在网上商场之之中的应用
+何武
+摘要　Elena是纯面积对象型多媒体数据库，它采用工具，实现从WWW直接对Jasmine数据库中动态、交互式信息的存取。讨论Jasmine在网上商场中的应用。
+关键词　模版weblink开放数据库查询语言
+Jasmine’s Application in Online Shopping
+He Wu
+Est-China Research Institute of Computer Technology Shanghai 200233
+Abstract：Jasmine is and object-oriented multime database.It realizes access to dynamic and interactive information in Jasmine database by WebLink tool.The article frequently Jasmine's application in online shopping
+Key words：Template;WebLink;
+　　近年来,随着以计算机网络为核心的信息技术的迅速发展及国际互连网在全球的日益普及和应用,已成为网络技术应用新的发展方向。。像其它的HTML文件一样，浏览器把符合查询条件的数据库中的数据在屏幕上显示出来。作者前不久了上海市首家网上商场购物系统的设计与开发，该系统采用美国CA公司最新推出的面向对象数据库技术Jasmine，利用其适合开发电子商务应用环境和对多媒体数据进行有效的，通过三维虚拟空间、逼真的实物模型、精美的图片信息，为顾客营造了一个网上购物的环境。顾客足不出户，在或办公室的电脑上轻点鼠标，便可逛商场、选商品，进行实时的网上订购并由商家送货上门。。在该协议中，客户机首先拨号到拨号服务器，与拨号服务器建立基于V.X Modem协议的链路层连接；拨号服务器识别该连接请求后，根据其上的配置建立与远端的TCP服务器之间的L2TP隧道，然后在此隧道上，客户机与远端L2TP服务器之间进行PPP连接，成功后，L2TP服务器为客户机分配一个VPN内部IP门牌号。。由于用Jasmine构筑的应用具有真正的面向对象的特征，因此它不仅易于增强和易于添加新特性，而且以后的维护也将更简单。基于Jasmine的Web应用被建造在一个安全的、强大的、分布式的和规模可变的架构上。
+　　作为面向对象数据库，Jasmine数据库的设计和创建采用的是面向对象的设计方式(Object-Oriented Design ,OOD)。在Jasmine应用开发中,很多地方都有OOD的杰作，特别是其中的类和继承性。过程如下：
+　　1) 确定类 在对确定的主要商业对象进行需求分析时，利用抽象和分解的方法来确定Jasmine类。例如该购物系统确定了商品、服装、西装、食品、家电等类。WebLink考虑了Web环境的需要,提供了一个实例，其中包括了一些简单的模板，对用户很有帮助。层次越低越具有特殊性。位于一个类上层的类称为该类的超类，位于一个类下层的类称为该类的子类。直接位于一个给定类上层的类称为该类的直接超类，直接位于一个给定类下层的类称为该类的直接子类。例如商品类是服装等其它所有类的超类，服装等其它所有类是商品类的子类；服装类是西服类的直接超类，西服类是服装类的直接子类。
+　　3) 定义属性 在定义属性时，应当充分利用继承性。。原因在于服装类是商品类的子类，子类自动继承父类的属性。
+2　WebLink介绍
+　　WebLink是一种工具，它是Internet与Jasmine数据库之间的接口。该请求通过使用HTTP协议被传送到Web服务器上的WebLink。WebLink能够创建HTML文件，该文件的数据取自于Jasmine数据库。通过使用WebLink，能用客户端的浏览器在Internet上访问存储在Jasmine数据库中的信息，包括多媒体数据。我们把这种设计用来包含数据库中输出数据的HTML文件叫做模板。
+
+图1 WebLink与Internet和Jasmine的连接
+　　WebLink支持以下的功能来连接WWW浏览器与Jasmine数据库：
+　　访问数据库 WebLink使用包含在模板中的ODQL(Open Database Query Language--Jasmine的数据库编程语言)命令来访问本地和远程的Jasmine数据库。
+　　odb_get命令用来对数据库进行查询，显示Jasmine数据库中的对象。
+　　应用模板是WebLink应用开发的一大特色。
+　　・管理数据库 流程是指来自同一个浏览器的一系列信息。通过执行一个WebLink命令,WebLink流程被激活。一旦被激活，WebLink流程就能够连续地接收查询请求，直到数据库的流程被关闭。
+　　・显示查询结果 WebLink的模板被存储在Jasmine数据库中,通过ODQL语句从Jasmine数据库中检索数据。使用模板可以节省大量的开发时间和调试时间。这样，Exchange Server和MS PC Mail用户在编写报文时，就能够从地址表中选择其它系统的地址，如同自己系统的地址一样。
+　　2) 定义类层次关系  类被组织为层次关系以表示具有局限性和形式化的自然关系。用户可以参照设计。
+　　4) 带有最终数据的HTML文件送回用户的浏览器。在使用一个模板之前，必须先把该模板存储在WebLink对象数据库中。通过使用createTemplate()这个方法来实现。。每个模板都有唯一的名字。必须为每一个包含数据库信息的HTML输出页都定义一个模板。
+　　WebLink中常用的命令有以下几个：
+　　odb_login命令用来连接数据库。这些命令可以是查询、修改，以及其它的数据库操作。它具有返回多结果集的能力。
+　　odb_logout命令用来关闭数据库连接。
+　　WebLink具体工作过程如下：
+　　1) 首先用户在客户机的浏览器上发出请求。请求命令在客户端的HTML文本中。")
+else 
+rollback ;
+messagebox("pity。
+　　2) WebLink收到请求后，将查询提交给Jasmine数据库服务器。查询命令用的是ODQL语言。
+　　3) 查询返回结果替代指定模板中的<!Replace>标记，从而使模板能显示数据库数据。一般采取以下方法：
+　　在操作系统中以文本文件的形式来开发模板。5,16。
+3　网上商场购物系统
+　　(1)系统运行环境
+　　服务器端软件环境为：
+　　・操作系统:Windows NT 4.0
+　　・数据库管理系统：Jasmine 1.2
+　　・Web服务器：IIS3.0
+　　・数据库模板：用ODQL、HTML语言编写
+　　硬件环境为：华胜Pentium/350
+　　(2)网上商场购物系统的运行
+　　用鼠标点取商品图标，或输入查询条件执行，获得输出界面。有兴趣者，可访问网址URL:http://billion.commerce.sh.cn。
+作者简介：何武 男，23岁，助理工程师，主攻方向；分布式计算、系统管理和数据库
+作者机关：华东计算机研究所总体预研部上海200233
+参考文献
+1　Jasmine Reference.CA公司,1998
+2　WebLink Manual.CA公司,1998
+收稿日期：1998-12-17

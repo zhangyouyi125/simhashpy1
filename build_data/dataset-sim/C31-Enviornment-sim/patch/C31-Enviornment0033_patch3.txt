@@ -1,0 +1,213 @@
+产业与环境
+Lndustry and Environment
+1998年 第20卷 第3期科技期刊
+
+事实与数字
+工业事故：每天都在发生
+随着技术的发展，也就有了与其相联系的风险。在工业中，在有大量能源转化成热或用来驱动有潜在危险的机械的地方，以及在有固有危险物质贮存、混合和用于一整套工艺过程中的地方，风险往往扩展到远远超出工厂本身的边界。在这一方面，已经有一些陆标式事件，例如1984年博帕尔(印度)的有毒气体释放暂时性地把公众注意力集中到工业的危险上。然而，在博帕尔发生的事件之所以特别，是由于后果骇人听闻的规模，而不是由于事故的类型。施用铁肥也能显著降低植物对锰的吸收[3, 4]。也有由于工业活动、运输及其它原因造成的火灾、爆炸和这两者的组合。
+  　重大工业危险一般是与爆炸、火灾、或有毒物质释放与扩散的可能性相联系的，而且有一些装置兼备这些威胁中的几种或全部。
+爆　炸
+　　“爆炸”一词用来覆盖物质(通常大部分由热气体组成)从一点向外突然流动所表征的所有过程。因这种向外流动的原因而异，有两种主要的爆炸类型：因物理过程而产生的爆炸，和因化学反应而产生的爆炸。因物理过程而产生的爆炸包括压力容器的水蒸汽爆炸；因化学反应而产生的爆炸是当放热(产生热的)反应为该流动提供能量时发生的。爆炸可以呈或者爆燃或者爆轰的形式发生。爆燃是当燃烧速度相当慢――约1米/秒(m/s)时发生的。当爆轰发生时，火焰速度非常高(典型地是2000―3000m/s)。供试8个果园土壤的N、P、K、Ca、Mg、S，其缺素处理平均相对干物产量分别为39.7%、34.7%、70.5%、53.8%、66.5%、82.1%。
+　　爆炸的特征是产生一种冲击波，从而会造成建筑物损坏和把抛射物抛射到远距离以外。
+　　（2）为使龙眼丰产稳产，必须加强土壤培肥管理，制定施肥措施应综合考虑土壤中大、中、微量各元素养分的均衡供应，才能达到预期的效果。
+
+粉尘爆炸与释放
+　　爆炸的一个共同原因，以及尤其农产食品加工业中多年来一直引起问题的一个原因，就是粉尘。当可燃固体材料与空气充分混合时，粉尘爆炸就会发生。爆炸通常在一个引发事件如明火或造成已沉降粉末飞扬的小爆炸之后发生。当该粉尘与空气混合时，便发生第二次爆炸，然后又造成第三次爆炸，依此类推。后果会是极其严重的。
+表4 锰毒土壤不同处理对油菜幼苗中营养元素影响
+
+处理植株干重
+(g/株)整株含量吸收量/株
+MnBCaMgKPMn
+(mg)B
+(m g)CaMgKP
+mg/kgg/kgmg
+S110.21535904.213.22.8357.719.90.770.92.80.6312.44.3
+S122.66110033.928.52.5055.010.62.6710.475.86.65146.428.2
+S131.8766242.334.82.8552.59.61.204.365.65.2698.017.8
+S141.5506221.233.22.8352.910.40.961.951.54.3982.016.1
+S210.297312310.722.63.2358.716.40.933.26.70.9617.44.9
+S223.1679805.932.52.8155.712.03.1018.7102.98.90176.438.0
+S232.4835644.933.43.0050.413.01.4012.283.97.45125.132.2
+S242.3326023.636.43.0853.612.21.408.484.87.18125.028.5
+
+作者单位：华中农业大学资源环境与农业化学系，武汉 430070
+参考文献
+1 刘铮. 土壤与植物中锰的研究进展. 土壤学进展，1991, 19(6): 1～10
+2 Davis J G. Soil pH and magnesium effects on manganese toxicity in peanuts. J Plant Nutr, 1996, 19(3&4): 535～550
+3 Roomzadeh S, Karimian N. Manganese-iron relationship in soybean grown in calcareous soils. J Plant Nutr, 1996，19(2): 297～406
+4 陆申年. 菠萝的铁锰平衡和铁肥施用. 见: 国际平衡施肥学术讨论会论文集. 北京: 农业出版社，1989. 376
+5 Lehto, Jarja. Effects of liming and boron fertilization on boron uptake of Picea abies, Plant Soil, 1994, 163(1): 55～64
+6 李酉开. 土壤农业化学常规分析方法. 北京: 科学出版社，1984
+7 Fageria N K. Lime and phosphorous interactions on growth and nutrient uptake by upland rice, wheat, common bean，and corn in an oxisal. J Plant Nutr, 1995, 18(11): 2519～2532
+收稿日期：1998-08-12
+。近年来粉尘爆炸的研究表明，损害往往局限于工厂，而不危及居住在它周围的人们。即使在没有发生爆炸时，若粉尘呈云状释放，尤其若它含有有毒物质，则它仍然会有风险。表1列出了最近一些涉及粉尘的事故的细节。
+火　灾
+　　火是“燃料”(即被燃烧的物质)氧化期间能量的释放，这种能量大部分呈热量形式。工业中比爆炸更常发生的火灾可能有若干种类型，包括喷射火、池火、闪火和沸腾液体膨胀蒸气爆炸(BLEVEs)。
+表4 锰毒土壤不同处理对油菜幼苗中营养元素影响
+
+处理植株干重
+(g/株)整株含量吸收量/株
+MnBCaMgKPMn
+(mg)B
+(m g)CaMgKP
+mg/kgg/kgmg
+S110.21535904.213.22.8357.719.90.770.92.80.6312.44.3
+S122.66110033.928.52.5055.010.62.6710.475.86.65146.428.2
+S131.8766242.334.82.8552.59.61.204.365.65.2698.017.8
+S141.5506221.233.22.8352.910.40.961.951.54.3982.016.1
+S210.297312310.722.63.2358.716.40.933.26.70.9617.44.9
+S223.1679805.932.52.8155.712.03.1018.7102.98.90176.438.0
+S232.4835644.933.43.0050.413.01.4012.283.97.45125.132.2
+S242.3326023.636.43.0853.612.21.408.484.87.18125.028.5
+
+作者单位：华中农业大学资源环境与农业化学系，武汉 430070
+参考文献
+1 刘铮. 土壤与植物中锰的研究进展. 土壤学进展，1991, 19(6): 1～10
+2 Davis J G. Soil pH and magnesium effects on manganese toxicity in peanuts. J Plant Nutr, 1996, 19(3&4): 535～550
+3 Roomzadeh S, Karimian N. Manganese-iron relationship in soybean grown in calcareous soils. J Plant Nutr, 1996，19(2): 297～406
+4 陆申年. 菠萝的铁锰平衡和铁肥施用. 见: 国际平衡施肥学术讨论会论文集. 北京: 农业出版社，1989. 376
+5 Lehto, Jarja. Effects of liming and boron fertilization on boron uptake of Picea abies, Plant Soil, 1994, 163(1): 55～64
+6 李酉开. 土壤农业化学常规分析方法. 北京: 科学出版社，1984
+7 Fageria N K. Lime and phosphorous interactions on growth and nutrient uptake by upland rice, wheat, common bean，and corn in an oxisal. J Plant Nutr, 1995, 18(11): 2519～2532
+收稿日期：1998-08-12
+。池火是石油或其它可燃物质溢漏点燃造成的。当逸散气体到达火源并迅速燃回释放点时，闪火便发生。涉及剧烈爆炸、迅速膨胀热气体云和火灾的组合的BLEVEs，在整个工业中由于使用和运输大量液体与气体而时常发生。方框1给出关于BLEVEs的进一步信息，包括人体代价的某种想法。一次BLEVE(火球)的后果通常远比其它类型火灾的后果更为严重。
+有毒释放
+　　有毒释放是一种对财产或环境有毒或有害的物质的不受控释放。随着碳酸钙施用量的提高，土壤pH、有效钙随之上升。必须极其小心才能确保这些物质的容纳。一旦它们被释放，受纳介质(空气、水、土壤等)就会把它们输送到很远的地方去。以这种方式释放和分散的有毒物质可能是发病率和死亡的一个主要来源。
+　　一种物质的毒性是根据对涉及该物质的事件的研究、流行病学研究、动物实验和微生物试验来确定的。然而，还必须考虑其它因素，例如，暴露个体的年龄、性别、遗传背景、营养、疲劳和对有协同效应的其它物质的暴露。
+　　很多物质没有毒性数据可供利用。然而，对于氯(经常以有重大风险的数量操作的化学品之一)这样的物质，这类数据的确存在。氯暴露了5―10分钟的致死浓度为100―150ppm。也已知，10吨氯的瞬时释放会在源下风向2公里以内的距离造成140ppm(致死区间内)的浓度。
+表1　涉及粉尘的事故
+
+年地点工厂类型物质描述
+1995德国化工厂萘酚爆炸：在着色剂生产期间，一位雇员敲击萘酚混合机以排除阻塞。
+萘酚开始非常迅速地流动，所形成的尘云被静电点着。
+在所形成的爆燃中，两名雇员受3度烧伤。
+1995美国化工厂铝粉和亚硫酸
+氢钠爆炸：净化水从一根堵塞管道中事故性流进一个盛有铝粉和亚硫酸氢钠
+的反应器中，引起硫化氢释放。可见N、P、K仍为丘陵坡地龙眼园土壤主要的养分限制因子，而中量元素Mg的缺乏也相当普遍，已成为主要的产量限制因子之一。人们不得不从工厂周围疏散。
+1996年西班牙筒仓大豆尘云：在巴塞罗那港大豆卸货期间，粉尘从正在向其中转移大豆的筒仓
+中逸出。不利的大气条件造成尘云笼罩在该市上空。很多人突发哮喘，
+30人被送进医院，2人死亡。为此，我们对我省龙眼主要分布地带之一的粤东地区部分龙眼园进行实地调查，根据“土壤养分状况系统研究法”[1]采集土样并进行了大、中、微量元素速效养分含量测定、养分元素吸附试验和盆栽生物诊断试验，旨在探明龙眼立地土壤主要养分限制因子及其缺乏程度，为制定合理的土壤管理制度及施肥措施提供科学依据。工作人员使用
+不适用CO2灭火器的行动，引起了炽热颗粒的分散和火灾的蔓延。火灾最终
+由消防队加以控制。
+资料来源：SEI/BARPI ARIA database,Ministry of Environment France
+
+
+　　其它物质是远远更毒的，使用和控制时必须特别小心。施用铁肥也能显著降低植物对锰的吸收[3, 4]。为了对其毒性有一个概念，已为瑞典废物焚烧炉确定的标准是最大0。1ng/m3，即排放至少100亿立方米烟道气中最多1克二口　恶口　英。
+　　工业和贸易中危险化学品用量的迅速增长，已经带来涉及这些化学品的事故可能危害其生命的人员(包括工人和广大公众成员)数目的非常显著增加。
+表3 锰毒土壤不同处理对土壤pH和营养有效性的影响
+
+处理pH值有效性锰有效性钙有效性镁盐酸羟胺硼热水溶性硼速效磷速效钾
+mg/kg
+S114.61144.86961030.3230.268116.8347.5
+S126.20125.919121040.3330.363106.2218.9
+S137.13104.328091170.3960.238112.4229.7
+S147.3691.934851140.4690.241115.6299.7
+S214.68144.48011051.2031.693103.5322.6
+S226.25123.319761252.8353.31098.1126.3
+S237.1498.328121163.0181.178103.7213.6
+S247.3694.735121233.2201.547109.0253.1
+
+2.3 施碳酸钙和碳酸钙－硼配施对油菜幼苗营养元素含量的影响
+　　表4的数据说明，施用碳酸钙不仅能有效地降低供试土壤中Mn2+的浓度，缓解过量锰对油菜的毒害，还能降低植株硼浓度。由于供试土壤pH由原来的5.5下降到现在的4.6，作物生长发生失调，1995年施入的磷酸二氢钙未得到充分利用，故现在土壤交换性钙，速效磷明显偏高。在锰毒土壤上施用过量碳酸钙引起油菜幼苗生物学产量下降的结果再次表明，在酸性土壤中应避免过量施用石灰[7]。换言之，在世界各地重复着相同的人类错误方式、缺乏安全管理人员和保养不充分。现代技术正在阔步前进，但它留给人类的是随之而来的悲剧和环境损害。
+事故分析和风险评价
+　　作为人类，我们能从我们过去的错误中学习，也能学会规避那些过去危害我们的东西。在历史上，这一直是减少事故的直观思路。当有许多伤害或死亡发生时，几乎总是有人呼吁增加控制，以确保这样一种事件“永远不会再发生”，而且往往为此而引进一些措施。植物磷用硫酸-过氧化氢湿灰化法消化，植物钾、钙、镁、锰用1 mol/L HCl浸提，再用常规方法测定。
+１ 材料与方法
+1.1 供试土壤
+　　供试土壤采自湖北省咸宁市贺胜桥镇，为第四纪红色粘土发育的棕红壤，通过种植4茬作物后，其基本性状为pH(H2O) 4.6，有机质12.4 g/kg， 速效磷、速效钾、交换性钙、交换性锰、易还原性锰和热水溶性硼分别为75.7、227、2 640、152、290和0.37 mg/kg。4人
+死亡，16人受伤。在施用碳酸钙基础上配施硼素，可使油菜生物学产量进一步提高，相应的土壤环境得到更好的改善，施硼可以降低锰毒植株磷的浓缩效应和提高营养元素的利用效率。
+2.3　龙眼立地土壤的养分限制因子
+　　盆栽试验中缺素处理的相对干物产量可以用来估计供试土壤中该元素缺乏的严重程度[3]。
+1996孟买
+(印度)散货
+码头硫磺火灾：当传送带上的硫磺着火时，贾瓦哈拉尔*尼赫鲁港的一场
+重大火灾开始了。散货搬运，包括食用谷物进口的搬运，受到了
+严重影响。
+1996保加
+利亚炼油厂液化石油气火灾：一个周末，港口装置附近的一座炼油厂中爆发了火灾。3名
+雇员死亡，另9名雇员蒙受严重烧伤。可疑原因是一条有缺陷的液
+化石油气(LPG)管线泄漏。
+1997梅明根
+(德国)化工厂有毒气体火灾：一场工厂火灾把据认为含有痕量氰化物和氨的气体云送到
+市中心。试验结果(表3)表明，以最佳处理的干物产量为100%，不施肥(CK)处理的相对干物产量最高32.9%，最低仅为4.7%，平均为22.5%，说明龙眼立地土壤的基础生产力极低。怀疑有人纵火。其中速效P、K、Cu、Fe、Mn、Zn用国际农化服务中心(ASI)的联合浸提剂(0.25 mol/L NaHCO3-0.01 mol/L EDTA-0.01 mol/L NH4F)同时浸提；速效S和B用0.08 mol/L的Ca3(PO4)2溶液浸提；NH4-N和速效Ca、Mg用1 mol/L KCl浸提。苯、丙烯及其它轻馏分在这场火灾中化为乌有。施硼能使有效锰的浓度降低1/3[5]。有机质含量在各果园之间差别较大，范围在5.0～17.5 g/kg，平均为9.3 g/kg。
+1997哈巴罗
+夫斯克
+(俄罗斯)化工厂氯气爆炸：一个氯气罐在焊接期间爆炸，并点着了这家工厂。在一定量的土样中加入各营养元素的吸附处理溶液[1]，然后测定土壤中各营养元素的可浸提量，计算土壤对养分的吸附率。从表3还可以看出，基础地力产量越低，养分限制因子则越多。此次
+事故之所以发生，是由于一个流量计没有得到充分保养，此事一直没
+有引起注意。全部供试土壤的速效态Cu、Zn、B含量都普遍偏低，分别有8、7、6个土壤低于临界值。
+1997印度炼油厂　爆炸：一次爆炸致死18人，要求15000人疏散。很多人受伤，包括31名
+雇员。
+关键词 土壤；锰毒；油菜；碳酸钙；硼
+The Detoxification of Calcium Carbonate and Boron to Manganese Toxicity of Rape Crop in Acid Brown Red Soil. 
+Zhu Duanwei，Cheng Dongsheng，Cheng Ruixi，Geng Mingjian and Liu Wuding (Department of Resources，Environment and Agrochemistry，Huazhong Agricultural University，Wuhan 430070). Soil & Environ Sci，1999, 8(1): 36～39
+The study on the detoxification to manganese toxicity of rape crop grown on an acid brown soil has been conducted. The application of calcium carbonate could raise pH of the tested soil and decrease its exchangeable Mn. Hence，this practice improved the nutrition condition of the soil. Among the treatments of applying CaCO3，0.5% CaCO3 had the best effect，for example，availability of soil boron was high and soil available phosphorous or potassium were used more. It made a maximum absorption of nutrients by the crop，the biological weight of rape seedling was the highest. In the application of 0.5% CaCO3　 to the brown red soil，its acidity would return to normal，but when it was added more CaCO3 than 0.5% level，its nutrition dislocated and the biological yield of rape seedling decreased again. The application of CaCO3 with boron improved the nutrient environment more effectively，and made the seedling yield of rape enhance further. Boron would decrease the enriched effect of nutrient in rape plant in the soil of excessive manganese and improve the utilization ratio of nutrient elements. Therefore, the application of CaCO3 with B is an important role in the detoxification of manganese toxicity of rape crop in the brown red soil.
+Key words soil; nanganese toxicity; rape; calcium carbonate; boron
+　　锰是植物必需的微量元素，然而在锰活性高的酸性土壤中，过量锰会对作物产生毒害，成为农业生产的障碍因子，我国对此研究还刚起步[1]。
+1997土耳其批发站气雾剂爆炸：气雾剂灌装厂一次断电之后，电力供应恢复引起一个火花，进而引发一批气雾剂罐爆炸。未能恰当作出反应导致火灾和BLEVE。
+资料来源：Hazardous Cargo Bulletin,BARPI and UNEP Consultants。
+
+
+图2　ALARP三角(英国使用的)
+　　事故分析已经显示，它们是一连串事件的结果，往往始于一次相当轻微的事故，这(要么由于它没有引起人们注意，要么由于回应不当)引发了一个会迅速导致灾难的连锁反应。对此类事件链的考察提供了宝贵的教训，而且当前生效的许多安全立法和很多标准是以事故调查结果为依据的。在制订以避开事故的规则(即通过一种规定性思路)方面，风险评价和管理在现行法规中在一定程序上是不明确的。有5个土壤表现缺Cu，有4个土壤表现缺B。
+1.2 土壤样品采集方法
+　　每片龙眼园选代表性龙眼树8～10株，于每株树冠滴水线附近挖两个方向相对的取土点，采集0～30 cm土层的土壤，每片果园采16～20点共采土70 kg，经充分混合后再从中多点选取1.5 kg样品(余下供盆栽试验用)，风干后通过2 mm筛，供分析用。图1显示一个适应于作为决策助手的风险排序的风险矩阵实例。
+表2 处理间生物量差异显著性比较
+
+处理
+(1)平均鲜重
+(g/株)多重比较处理
+(2)平均鲜重
+(g/株)多重比较(2)与(1)差值(g/株)
+t检验
+S110.22- 　　S210.30- 　　0.08*
+S122.662.44**- 　S223.172.87**- 　0.51*
+S131.871.66**-0.79*- S232.482.18**-0.69**- 0.61*
+S141.551.33**-1.11**-0.32S242.332.03**-0.84**-0.150.78**
+
+* 5%显著水平；* * 1%显著水平
+2.2 施碳酸钙和碳酸钙－硼配施对锰毒土壤营养元素有效性的影响
+　　耕作土壤经较长时间风干后，土壤交换性锰增加明显。澳大利亚、荷兰和英国等国正日益增多地使用数值基准来评价安全方面的风险可接受性。英国使用的一种思路是ALARP(低达合理实用的)三角，其中确定了一个不要被超过的上限和一个可忽略的风险下限。除N、P、K大量元素外，中、微量元素如Mg、Ca、S、B的缺乏问题也相当普遍。图2显示ALARP三角和英国使用的数值。多重比较表明：施用碳酸钙对棕红壤上油菜锰毒的缓解作用非常显著，各施碳酸钙处理与对照相比较，其生物量差异都达到极显著水平，0.5%碳酸钙处理的生物量最高，再施用更多的碳酸钙，油菜幼苗生物量又下降，它们与最高产量之间的差异达到5%或1%水准。这里给出的实例只是很多不同思路和系统中的两个。
+　　人们一直在试图从最早的时间预报和最大限度减少灾害。施硼还可减少过量施用碳酸钙的不利影响，例如，在施0.0%，0.5%，1.0%，1.5%碳酸钙水平上施用5 mg/kg硼，油菜生物量比单施碳酸钙分别增加36%，19%，33%和50%。正如五世纪希腊诗人Pindaros所说：“盲目的是我们筹划未来的思想。供试8个果园土壤的N、P、K、Ca、Mg、S，其缺素处理平均相对干物产量分别为39.7%、34.7%、70.5%、53.8%、66.5%、82.1%。”从事风险评价的科学家会同意他的说法。更无诗意地说，它们告诉我们根本就没有“零风险”这样的东西。拌匀，加水使土体全部润湿进行培养。
+方框1
+沸腾液体膨胀蒸气爆炸(BLEVEs)
+　　很多技术事故的一个特色是，它们的后果在远超出事故发生的工厂或装置边界以外的地方也能感受到。在缺素土壤中若不配施这些元素，指示作物(高粱)的干物产量分别下降N 60.3%，P 65.3%，K 29.5%，Ca 46.2%，Mg 33.5%，Cu 19.3%，S 17.9%，B 15.5%。施硼能使有效锰的浓度降低1/3[5]。但调查的兴宁2片龙眼园土壤则属于紫色土。如果一个压力容器由于其结构薄弱的结果而破裂，其内容物就会在瞬间释放而成为一种湍动的液体-气体混合物，并在空气中迅速膨胀和分散而成为一种云。当这种云点火时，火球就会发生，在少数几秒钟内产生巨大的热辐射强度。有5个土壤表现缺Cu，有4个土壤表现缺B。
+　　引起BLEVE的，可能是诸如来自涉及公路或铁路槽车的交通事故对业已受到过高应力或损坏的容器或贮罐的物理冲击，也可能是冲击或吞没一个容器从而使其结构变得薄弱的火灾。植物磷用硫酸-过氧化氢湿灰化法消化，植物钾、钙、镁、锰用1 mol/L HCl浸提，再用常规方法测定。速效Fe的含量均高于临界值。如果土壤中某种营养元素的有效态含量已达到或超过其临界值3倍时，则不施入该营养元素，而另设置最佳处理加该元素的处理；如果最佳处理处理中已经加入了某营养元素，则加设一个最佳处理减去该营养元素的处理作缺素处理。
+　　BLEVE造成严重损害和悲剧的有记载的最坏事故之一，是1984年在圣胡安伊克斯华特佩克(墨西哥)的一座化工厂中发生的。综合各营养元素的施肥效应和缺乏的普遍性，认为粤东龙眼立地土壤养分限制因子排序为：N>P>Mg>K>Ca>Cu>S>B，碱性紫色土则富Ca。除2个碱性紫色土外，其余供试土壤(赤红壤)对阴离子如P、S的吸附率一般大于对阳离子如K、Zn的吸附率。在下一段中，受害者之一回顾了他自己的故事。
+　　“我在早上5∶30去市场给我的商店开门。几分钟后，传来一种可怕的噪音，随后是地动山摇，所有东西都摇晃起来。进一步提高碳酸钙施用量，营养元素的吸收量逐渐下降。碳酸钙处理于1997年1月底提前施入碳酸钙。
+表4 锰毒土壤不同处理对油菜幼苗中营养元素影响
+
+处理植株干重
+(g/株)整株含量吸收量/株
+MnBCaMgKPMn
+(mg)B
+(m g)CaMgKP
+mg/kgg/kgmg
+S110.21535904.213.22.8357.719.90.770.92.80.6312.44.3
+S122.66110033.928.52.5055.010.62.6710.475.86.65146.428.2
+S131.8766242.334.82.8552.59.61.204.365.65.2698.017.8
+S141.5506221.233.22.8352.910.40.961.951.54.3982.016.1
+S210.297312310.722.63.2358.716.40.933.26.70.9617.44.9
+S223.1679805.932.52.8155.712.03.1018.7102.98.90176.438.0
+S232.4835644.933.43.0050.413.01.4012.283.97.45125.132.2
+S242.3326023.636.43.0853.612.21.408.484.87.18125.028.5
+
+作者单位：华中农业大学资源环境与农业化学系，武汉 430070
+参考文献
+1 刘铮. 土壤与植物中锰的研究进展. 土壤学进展，1991, 19(6): 1～10
+2 Davis J G. Soil pH and magnesium effects on manganese toxicity in peanuts. J Plant Nutr, 1996, 19(3&4): 535～550
+3 Roomzadeh S, Karimian N. Manganese-iron relationship in soybean grown in calcareous soils. J Plant Nutr, 1996，19(2): 297～406
+4 陆申年. 菠萝的铁锰平衡和铁肥施用. 见: 国际平衡施肥学术讨论会论文集. 北京: 农业出版社，1989. 376
+5 Lehto, Jarja. Effects of liming and boron fertilization on boron uptake of Picea abies, Plant Soil, 1994, 163(1): 55～64
+6 李酉开. 土壤农业化学常规分析方法. 北京: 科学出版社，1984
+7 Fageria N K. Lime and phosphorous interactions on growth and nutrient uptake by upland rice, wheat, common bean，and corn in an oxisal. J Plant Nutr, 1995, 18(11): 2519～2532
+收稿日期：1998-08-12
+。有几幢房子着火了，狗吠个不停、到处乱跑。
+　　（2）为使龙眼丰产稳产，必须加强土壤培肥管理，制定施肥措施应综合考虑土壤中大、中、微量各元素养分的均衡供应，才能达到预期的效果。为此，我们对我省龙眼主要分布地带之一的粤东地区部分龙眼园进行实地调查，根据“土壤养分状况系统研究法”[1]采集土样并进行了大、中、微量元素速效养分含量测定、养分元素吸附试验和盆栽生物诊断试验，旨在探明龙眼立地土壤主要养分限制因子及其缺乏程度，为制定合理的土壤管理制度及施肥措施提供科学依据。我抓住一只桶向房上泼水。一旦我设法扑灭了火，我就冲进去找我烧焦的家。”相对而言，不施碳酸钙的土壤，植株对硼、磷等阴离子养分具有明显的浓缩效应。这是因为酸性土壤施用过量石灰，再度造成元素平衡失调，影响到作物的生长。
+城市规划和事故预防
+　　建筑物告诉工厂是大量伤亡的主要原因之一。随着碳酸钙施用量的提高，土壤pH、有效钙随之上升。(2)“-”表示该元素化学测定值大于其3倍临界值，最佳处理中未加入该元素(示该元素供应充足)。(3)“减产”表示各缺素处理与最佳处理比较，差异达1%显著水平。
+关键词 土壤；锰毒；油菜；碳酸钙；硼
+The Detoxification of Calcium Carbonate and Boron to Manganese Toxicity of Rape Crop in Acid Brown Red Soil. 
+Zhu Duanwei，Cheng Dongsheng，Cheng Ruixi，Geng Mingjian and Liu Wuding (Department of Resources，Environment and Agrochemistry，Huazhong Agricultural University，Wuhan 430070). Soil & Environ Sci，1999, 8(1): 36～39
+The study on the detoxification to manganese toxicity of rape crop grown on an acid brown soil has been conducted. The application of calcium carbonate could raise pH of the tested soil and decrease its exchangeable Mn. Hence，this practice improved the nutrition condition of the soil. Among the treatments of applying CaCO3，0.5% CaCO3 had the best effect，for example，availability of soil boron was high and soil available phosphorous or potassium were used more. It made a maximum absorption of nutrients by the crop，the biological weight of rape seedling was the highest. In the application of 0.5% CaCO3　 to the brown red soil，its acidity would return to normal，but when it was added more CaCO3 than 0.5% level，its nutrition dislocated and the biological yield of rape seedling decreased again. The application of CaCO3 with boron improved the nutrient environment more effectively，and made the seedling yield of rape enhance further. Boron would decrease the enriched effect of nutrient in rape plant in the soil of excessive manganese and improve the utilization ratio of nutrient elements. Therefore, the application of CaCO3 with B is an important role in the detoxification of manganese toxicity of rape crop in the brown red soil.
+Key words soil; nanganese toxicity; rape; calcium carbonate; boron
+　　锰是植物必需的微量元素，然而在锰活性高的酸性土壤中，过量锰会对作物产生毒害，成为农业生产的障碍因子，我国对此研究还刚起步[1]。
+　　虽然难以设定一个安全距离极限，但若要防止这样的悲剧的发生，就必须考虑像BLEVE这样的现象。

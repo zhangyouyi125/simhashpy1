@@ -1,0 +1,128 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+智能结构及其控制系统集成优化设计
+惩踔叶　袁国良　陈塑寰
+　　摘　要　将智能结构的振动控制性能指标和集成结构的质量作为目标函数，结构尺寸参数和控制系统的控制参数同时作为独立的设计变量，并施加约束条件，从而将智能结构及其控制系统集成优化设计问题转化为多目标数学规化问题。
+　　由频谱图和贝塞尔函数比值图可以根据公式(10)
+
+图6　ν＝π时的时域波形图和频谱图
+
+图7　ν＝2π时的时域波形图和频谱图
+分析得到宗量ν的值。
+　　主题词　智能结构　控制系统　集成优化设计　压电传感元件和执行元件
+THE INTEGRATED OPTIMIZATION OF INTELLIGENT
+STRUCTURES AND CONTROL SYSTEMS
+Wang Zhongdong Yuan Guoliang
+(Department of Agronomy and Agricultural Machinery Agriculture 
+and Animal University of PLA . Changchun . 130062)
+Chen Suhuan
+(Department of Mechanics Jilin University of Technology . Changchun . 130022))
+　　Abstract　Conventional structural sizing variables and elements of the feedback gain matrix are both treated as the independet design variables,the performance index of vibration control and the mass of the integrated structure are chosen as objective functions,and some constraints are included in the optimization.Then,the integrated optimization of intelligent structures and control systems is converted into multiobjective optimization.The numerical results show that the in telligent structure and the control system designed by the present method can greatly suppress the vibration of the structure.
+　　Key words　Intelligent structure Control system Integrated optimization Piezodelectric sensor and actuator
+1　引言
+　　近十年来，常规结构及其控制系统集成优化设计问题吸引了很多国内外研究者，并发表了多篇有关这方面的论文［1-5］。本文针对压电类智能结构的特点，提出了结构及其控制系统集成优化设计的一种新方法。板级BIT的基本测试原理是：板上测试机产生IEEE1149.1测试总线信号，将测试码以串行扫描方式由TDI输入至BSC，然后通过TMS发送测试控制命令，经TAP控制器控制BSC完成测试码的加载和测试响应的采集，最后测试响应以串行扫描方式由TDO送到测试机分析处理。
+2　模态空间最优控制系统设计
+压电类智能结构的运动方程表示为［6］
+　　　　　　　(1)
+式中［Ms］、［Mp］、［Kuus］和［Kuup］分别为主结构和压电传感元件及执行元件的质量阵和机械刚度阵，［Kuv］和［Kuu］为主结构和压电材料区的机电耦合刚度阵，［Kvv］为压电材料区的压电刚度阵，［Cs］为系统的结构阻尼阵，［D］为控制力分布阵，{}、{}和{u}分别为结构节点加速度、速度和位移向量，{uc}为控制力向量。
+　　设［M］=［Ms］+［Mp］、［K］=［Kuus］+［Kuup］+［Kuv］［Kvv］-1［Kvu］，则式(1)简化为
+［M］{}+［Cs］{}+［K］{u}=［D］{uc}　　　　　　　　　　(2)
+取前nc个正规化的模态矩阵［Φ］∈Rn×nc，由展开定理得
+　　　　　　　　　　　　　　(3)
+式中{q}为模态坐标
+将式(3)代入式(2)并进行正交变换，则有
+　　　　　　　(4)
+式中［ξ］=diag［ξ1　ξ2　…　ξnc］和［Ω］2=diag［ω21　ω22　…　ω2nc］分别为结构的模态阻尼比对角阵和特征值对角阵,{fmc}为模态控制力。
+当采用独立模态控制法［7］控制模态时，方程(4)可由nc个下面的一阶方程代替
+i+2ξiωii+ω2iqi=fmci　i=1,2,…,nc　　　　　　　　　　　(5)
+引进{zi}={qi　i}T和{umci}=fmci，式(5)可转化为状态空间方程形式
+{i}=［Ami］{zi}+［Bmi］{umci}　　　　　　　　　　　　(6)
+式中
+
+此时对应第i模态的控制力为
+{umci}=-［Gmpi　Gmvi］{zi}　　　　　　　　　　　　(7)
+式中Gmpi和Gmvi为第i个模态增益。
+将式(7)代入式(6)可得对应第i模态的闭环状态空间方程
+{i}=［Amci］{zi}　　　　　　　　　　　　　(8)
+式中
+
+相应于第i模态的控制系统性能指标表示为
+　　　　　　　　(9)
+其中［Qmi］=diag［ω2i　1］和［Ri］=［ri］分别为第i模态向量{zi}和模态控制力向量{umci}的加权阵。
+根据最优控制规律，第i个最优模态控制力可表示为
+{umci}=-［Ri］-1［Bmi］T［Pi］{zi}　　　　　　　　　　(10)
+式中［Pi］为2×2阶加权阵，它满足2×2阶Riccati方程
+［Pi］［Ami］+［Ami］T［Pi］+［Qmi］-［Pi］［Bmi］［Ri］-1［Bmi］T［Pi］=0　(11)
+联合求解式(7)、(10)和(11)，整理得
+　　　　　　　　　　　　(12a)
+　　　　　　　　　(12b)
+3　智能结构及其控制系统的集成优化设计
+　　在智能结构及其控制系统集成优化设计中，将主结构的尺寸参数{Vs}和控制系统的控制参数{Vc}同时作为独立的设计变量，结构振动控制性能指标J及集成结构的质量作为目标函数，并施加以下约束：(1)闭环特征值的实部；(2)闭环阻尼频率；(3)瞬时控制力。
+1　LXJ―40离心机光栅测速系统
+　　光栅测速系统是LXJ―40精密离心机的一个重要组成部分，它由光栅光学系统、光电转换器、信号放大器和整形电路组成(见图1)。它们既有相似之处，又有不同之处，有时会产生混淆。
+3.1　结构振动控制性能指标
+　　将贮存在结构中总能量从初始时间到无穷时间的积分J定义为结构振动控制性能指标。J越小，结构振动被抑制的效果越好。
+在模态空间中，J表示为
+　　　　　　　　　　　　　(14)
+式中{w}=({q}　{})T,［Qm］=diag(［Ω］2［I］)。
+根据Lyapunov方法，式(14)可以表示为
+　　(15)
+第i个模态振动控制性能指标表示为
+　　　　　　　　　　　　　(16)
+同样利用Lyapunov方法，式(16)简化为
+　　　　　　　　　　　(17)
+式中为矩阵［O］的对角分块阵，并且［Oi］满足Lyapunov方程
+［Qmi］+［Amci］［Qi］+［Oi］［Amci］=［0］　　　　　　　　(18)
+解之可得出［Oi］
+　　设一脉冲力{F}={F0}δ(t)作用在智能结构上，δ(t)为狄拉克函数。大家知道，表征受照面的明亮程度的量，称为光照度A，这就是投射在受照面上的光通量\%d\%F与该元面积\%d\%s的比值，即\$\$A＝\%d\%F／\%d\%S (12)\$\$照度在数值上等于投射在单位面积上的光通量。
+3.2　闭环特征值实部及闭环阻尼频率
+　　智能结构对应第i个模态的闭环系统的复特征值可表示为
+λi=σi+jωdi　　　　　　　　　　　　　　　　　　　(21)
+式中σi为复特征值的实部，ωdi为阻尼频率。这里要说明的是，由于被测激光器本身的质量、输出功率的不稳定性，也会给测量结果带来一定的误差。
+由式(4)有
+{uc}=(［Φ］T［D］)-1{fmc}　　　　　　　　　　　　　(25)
+采用状态反馈控制，模态控制力表示为
+{fmc}=-［Gm］{w}=-(［Gmp］　［Gmv］){w}　　　　　　　　　(26)
+式中，［Gm］为模态反馈增益阵，［Gmp］和［Gmv］分别为［Gm］中对应于模态位移和速度的矩阵。
+将式(26)代入式(25)，并考虑式(19)关系，则t=0时，瞬时控制力的峰值表示为
+{uc(0+)}=-(［Φ］T［D］)-1［Gmv］{F0}　　　　　　　　　　(27)
+4　数值示例及讨论
+　　如图1所示为一压悬臂梁结构。
+4　结束语
+　　通过对LXJ―40精密离心机原有光栅测速系统进行分析，针对它设计中的不足之处，进行改进。这样，可以把真实圆与理想圆围成的面积当作真实圆与理想圆之间的偏离程度的一种表示。主结构及压电材料的材料性质如表1所示。
+
+图1　压电悬臂梁
+表1　主结构及压电材料的材料性质
+材料性质压电材料主结构
+E0.2×1010N/m20.73×1011N/m2
+e310.046c/m20.0
+ξ330.1062F/m0.0
+ρ0.18×104kg/m30.275×1044kg/m3
+
+　　按三种方法研究这个实例：(1)在初始结构上进行最优控制系统设计，(2)在优化设计后的主结构上进行最优控制系统设计，(3)按文中方法对主结构和控制系统同时进行优化设计。按K型热电偶分度表换算或电势值为0.798mV，另从仪表和热电偶的检定证书中查出检测仪表及热电偶各检测点的误差修正值，对检测仪表及热电偶进行修正，经修正后检测结果见表2。
+表 1
+
+　ν／rad
+预置值分析值
+零差3.143.14
+6.286.28
+外差3.143.14
+6.286.28
+
+4.2　实物试验
+　　某推挽式干涉型零差光纤水听器，工作频率5 kHz。对三种方法设计出来的结构，采用闭环控制后，进行了瞬态位移响应计算，其结果如图2所示。据Schlumberger公司Wigley预言，今后五年内，多于50％的半导体器件将包含边界扫描结构。并且，经过控制后，位移衰减速度最快。
+1　测试前的准备工作
+　　测量炉温均匀性前的准备工作包括以下几方面的内容：
+　　1)根据所测电阻炉炉膛大小确定有效加热区。他们对于右手坐标系是右旋，对于左手坐标系为左旋。这个结果说明，此时的结构尺寸接近最优尺寸。以上的数值结果说明，采用文中的方法对智能结构及其控制系统进行集成优化设计后，不仅改善了结构振动控制性能及控制系统的性能，而且降低了结构的尺寸，达到了同时优化控制系统，又优化结构尺寸的目的。
+关键词　圆度　圆度评定　面积法
+　Area Method of Roundness Evaluation 
+Jin Yonghong,Xu Kewei,Zhu Xunsheng
+Abstract　Applying area method,a auxiliary index of roundness evaluation is put forward to compensate the deficit of the current roundness allowance evaluation and then this auxiliary index is applied to the measurement experiment of roundness allowance.
+Key words　Roundness,Roundness evaluation,Area method 
+前言
+　　在通常的生产实践中，对圆度的评定是借助于圆度公差这个概念来进行的

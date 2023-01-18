@@ -1,0 +1,120 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+远程教学的Agent模型
+蔡洪斌　周明天　杨国纬
+　　摘　要　利用网络进行远程教学有很多优点。打开远程启动管理器，检查配置文件，更新数据库，添加新的配置文件。在多Agent通信语言KQML的基础上，提出了远程教学的Agent模型，设计了Agent的能力编码，通过对搜索教师Agent算法的时间复杂度分析，说明在该模型中搜索教师Agent是可行的和有效的。
+　　tpNormal：正常优先级。最后启动远程工作站。Agent是一个具有自治性、可移动性、自适应性和智能性的软件实体，能代表用户或其它程序，以主动服务的方式完成一组工作。使用Agent技术可以建立虚拟教师、虚拟实验室和虚拟图书馆等，从而增加教学内容的趣味性和人性化色彩，改善教学效果。文中对Agent技术在远程教学的应用进行了初步的探索，提出了远程教学的Agent模型，在模型中使用线性表与层次结构相结合的Agent连接方式，能有效地降低搜索教师Agent的时间开销。Delphi3.0充分利用了Windows95的多线程机制而提供了对线程编程的支持，这也是Delphi3.0与Delphi1.0的重大区别之一。
+2　Agent通信语言
+　　远程教学涉及教学的各个环节，是一个多Agent合作的网络社会。DARPA致力于多Agent间的通信研究，提出了ACL（Agent Communication Language)语言。
+　　既然多个线程可以并发地执行于同一进程中，那么协调线程间的执行顺序，以避免对临界资源的使用而引起冲突就十分重要。在设计多Agent时，要求使用KQML语言，而关于词汇表和KIF只是推荐使用，因为KQML对知识的内部表示并不关心，即使用任何方法表示的知识都可以使用KQML语言在多Agent之间共享。
+　　tpLowest：该优先级比正常优先级（tpNormal）低2个点。其基本设计思想包括以下几个部分：
+　　. 体系结构假设　Agent的运行空间可以是相同的地址空间，也可以是处于不同机器上的Agent合作。
+　　既然多个线程可以并发地执行于同一进程中，那么协调线程间的执行顺序，以避免对临界资源的使用而引起冲突就十分重要。
+　　. 通信模式　支持多种通信方式，如点对点通信、多址通信和广播通信，支持同步通信和异步通信。
+　　. 语法和语义　定义信息的表示方法及含义。
+　　. 层次结构　KQML表示的信息可以用三个层次来描述：内容层、消息层和通信层。
+　　内容层是使用某种语言的表达式，是共享知识的编码。表达式的格式对KQML来说并不重要，KQML对它进行原样打包，形成消息层使用的数据。
+　　Teuminated特性：布尔型，且是受保护的(Protected)，只读。这些特征有助于信息的正确传递和接收者进行数据分析。
+　　RetuinValue特性：整数类型，受保护特性
+　　（Protected），该特性指示线程的执行成功与否。
+　　NetWare Windows95无盘工作站的安装
+　　与NT的Windows95无盘站相比，有许多相同之处：比如硬软件要求相同，都需要安装共享目录和文件，配置安装脚本和Machines.ini文件。
+　　Synchronize过程　在Delphi3.0的多线程编程中，各种VCL构件都是临界资源，只能由主线程使用，其它的线程要使用这些VCL构件，必须使用Synchronize方法，避免多线程与VCL构件的冲突，该过程带一个TThreadMethod类型的参数。声明消息用于登记Agent能提供的服务或登记Agent需要的服务。Execute方法必须周期性地检测Teiminate特性，该特性一旦为True，Execute必须立即返回。其二，线程被创建后，处于挂起状态，而不被立即执行，要想执行，必须调用线程的Resume方法。
+　　. 安全　在分布环境中，准许一个Agent检查另一个Agent是否具有合法的操作权限。至于为什么会挂起，与它的构造函数有关。因此在教学、培训、游戏网等场合用途很大。为此，进行如下假设：
+　　⑴ 多Agent简化，只考虑三类Agent，即教师Agent、学生Agent和Facilitator；
+　　⑵ 一个教师Agent具有有限类的相关教学知识。
+3.1　逻辑结构
+　　远程教学的Agent模型应该体现Agent的自治性，其自治性的一个方面就是学生Agent能够为用户搜索合适的教师Agent。在文献［2］中，提出了多Agent的网状结构，在这种结构中搜索一个合适的教师Agent非常困难。
+　　针对远程教学，我们提出线性表与层次结构相结合的模型。此步骤使PWIN95S中的文件具有网络安装功能。整个远程教学系统设置调度Facilitator，负责全局搜索教师Agent时，指明当前搜索线性表。见图1。
+　　⑵ 层次结构按教学内容对教师Agent进行逐级分类，见图1中对一个区域Facilitator的示意部分。这种分类的层次结构用树形图表示，教师Agent是叶子结点，Facilitator是中间结点，学生结点也是叶子结点，但它不具有分类属性。逐级分类时，一级分类（如数学、语言学、计算机等）对应的Facilitator与区域Facilitator相连；下一级Facilitator对应较详细的分类，如数学包括：几何、代数等，逐级细分。
+　　在分类层次结构中，教师Agent可以根据教学内容与相应的Facilitator相连。若NT 下无盘95安装成功，参照着安装NOVELL无盘95就容易一些。
+
+F ― Facilitator　　　A ― Agent
+每个区域Facilitator所辖范围具有相同的层次结构，图中只给出了其中一个的图示
+图1　Agent的连接方式示意图
+3.2　Agent的作用
+　　在远程教学中有三类Agent，其作用分别为：
+　　⑴ 教师Agent：向Facilitator声明教学内容；为学生Agent提供教学服务，根据教学要求发送教材；实时回答学生Agent的提问等。
+　　⑵ 学生Agent：向Facilitator请求某类知识的教师；与教师Agent建立连接；维护用户界面；向教师提问等。
+　　⑶ Facilitator：调度Facilitator管理线性表，提供全网搜索信息；区域Facilitator为所辖范围的社区Facilitator提供跨类的搜索信息；社区Facilitator负责与教师Agent及学生Agent通信，为学生Agent提供搜索教师Agent的服务。
+3.3　能力编码
+　　Agent的能力指能够为其它Agent提供的服务。为了节省存储空间，对Agent的能力描述，用能力编码进行区分。能力编码是Facilitator搜索教师的依据，它由四部分组成：线性表标志、Agent类型标志、分类标志、教师编号。线性表标志包括线性表名及所属区域Facilitator名；Agent类型标志指出该Agent属于教师Agent、学生Agent、区域Facilitator或社区Facilitator。
+　　tpLowest：该优先级比正常优先级（tpNormal）低2个点。线程对象（TThread)提供了许多特性和方法（成员函数），只要根据需要对这些函数和方法重写，就可以在程序中实现多线程机制。统一编码是在建立远程教学系统时统一规定的分类编码。 
+4.3　线程的挂起和恢复
+　　在线程的执行当中，我们可以通过调用Suspend方法或设置Suspended特性为True而暂停线程的执行，节约的CPU时间以加其它线程的执行，当我们调用线程的Resume方法时，它又恢复线程的执行。
+　　．　在服务器上准备文件
+　　设NT安装在 E:\WINNT下,所用网卡为TE2008B,因该卡与NE2000网卡兼容，故可直接用E:\WINNT\RPL\BBLOCK\NDIS下的NE2000.dos和E:\WINNT\RPL\BBLOCK\NETBEUI\NE2000目录下的dosbb.cnf和protocol.ini文件，此外将dosbb.cnf文件中“EXE BBLOCK\I13.COM ～ ～ ～”一行改为“EXE BBLOCK\W95I13.COM ～ ～ ～”并另存为W95BB.CNF文件,以备启动WIN95时使用。一般ISA卡I/O Base为300h，中断为3，BootRom基址选为C8000。
+　　tpHigher：该优先级比正常优先级高一个点。在远程教学中具有相同能力的教师Agent不是唯一的，但是它们的能力编码是唯一的，这种唯一性使学生Agent也可以根据需要选择最优秀的教师Agent。
+　　远程教学中的Agent能力编码的声明及插入知识库的请求，大致相同，在此仅举一例：
+(advertise
+:sender　　　　　facilitator
+:receiver教师A
+:reply-withid1
+:languageKQML
+:ontology远程教学
+:content(insert
+:sender　　　　教师A
+:receiverfacilitator
+:in-reply-toid1
+:languageKIF
+:ontology远程教学
+:content"能力编码"))
+(insert
+　 　　　:sender　　　　教师A
+:receiverfacilitator
+:in-reply-toid1
+:reply-withid2
+:languageKIF
+:ontology远程教学
+:content"能力编码")
+　　调度Facilitator没有能力编码，其知识库包括线性表名及区域Facilitator名，为全网搜索提供信息。
+　　区域Facilitator的能力编码用第一、二部分表示，负责向调度Facilitator声明其所在线性表和自己的名称。区域Facilitator使用的知识库反映其所辖范围下一级分类信息，如是否具有关于数学的教师Agent等。在KQML最新提案中［1］，Facilitator不使用advertise，但在远程教学模型中，必须使用advertise，才能让其它Facilitator了解自己的能力，这样有利于搜索教师Agent。
+　　社区Facilitator的能力编码用前三个部分表示，负责向上级Facilitator声明自己的能力编码，其知识库包含下级Facilitator、相应教师Agent的能力编码及相连的学生Agent。
+　　教师Agent的能力编码用四个部分表示，且主动请求相应的Facilitator将能力编码插入到该Facilitator的知识库中。若“Network Configuration”对话框中未出现相应网卡名，可运行infinst.exe（与Netsetup.exe在同一目录下）将一些外部组件（网卡）添加到网络安装树，这时可以选择该网卡继续安装，否则会出现Setupx.dll保护模式错。学生Agent能够根据用户的要求生成教师Agent的能力编码。线程是进程的一个执行流，多个线程可以并发地执行于同一个进程中。
+3.4　搜索教师的过程
+　　图2表明了学生Agent搜索教师Agent的过程，图中针对在另外一个社区找到教师Agent的情况，其它情况与该图类似。整个过程由学生 A开始，它向本社区的Facilitator F1提出请求，F1分析能力编码，判断被请求的教师是否在本社区，如果不在本社区，则向上级Facilitator前传学生的请求，上级Facilitator进行与F1类似的处理，直到某个Facilitator如F2能确定教师B，并且把B的地址回传给A，A在获得教师B的地址后，直接向B发出学习请求，B给予响应，开始学习，学习过程中不再需要其它Facilitator介入。
+
+图2　搜索教师的过程示意图
+3.5　搜索算法的时间复杂度分析
+　　要分析搜索教师Agent的时间复杂度，首先要确定搜索策略。当Facilitator接收到一个搜索请求后，首先分析搜索请求中包含的教师Agent的分类信息，再根据分类信息进行搜索，搜索包含如下几种情况：
+　　① 教师Agent的能力编码表明在本社区，则在本社区内搜索教师Agent；
+　　② 教师Agent不在本社区，则逐级向上级Facilitator发出搜索请求；
+　　③ 在区域Facilitator所辖范围搜索失败，则请求调度Facilitator，调度Facilitator根据一定的原则，指明下一个搜索的区域Facilitator；
+　　④ 在同一线性表的区域Facilitator搜索失败，由调度Facilitator指明另一搜索线性表，直到所有线性表搜索完毕。
+　　在上述搜索策略中，任何一步搜索成功都不再进行其后的搜索。例如:WS2，\\NTSR\RPL95\CLIENT2,\\NTS4\RPL95\CLIENT1,继续完成以后安装。
+　　为了分析搜索算法的时间复杂度，需要进一步的合理简化。重新启动工作站，完成安装。
+　　搜索叶子结点的算法可以描述如下：
+　　while(有线性表?){
+取一线性表；
+while(线性表中有结点?) {
+搜索树的叶子结点；
+if(搜索成功?
+　　tpTimeCritical：线程的最高优先级。
+　　．　安装其他Windows95工作站
+　　安装其他Windows 95无盘工作站时，先启动一台DOS无盘工作站。在控制面板―服务中启动远程启动服务，并设为自动启动。为计算平均比较次数，设x在L中的概率为q，且假设x在L中每个位置出现的概率相同，则
+p(Ii) = q/n　(1≤i≤n),　p(In+1) = 1 - q。
+作者简介：杨艺山　副教授，主要从事网络技术，多媒体技术等领域的研究。由于每层结点对应教学内容的分类，因此，可以组织成一个有序的线性表，如果使用二分搜索方法，则平均性能为：
+A(ki)=log ki - 1。　刘明春　博士研
+　　　　　究生。使用按教学内容分类的方式，在树内的搜索能够在一个时间上限T内完成。所以，影响搜索时间的主要因素应该是线性表的结点数，线性表的结点数也是整个模型中唯一可能出现较大幅度增加的部分，因此，可以认为实际应用中，其搜索的时间复杂度与线性表同为O(n)。回到根目录,执行XCOPY /E C:\Windows C:\WKSTA.PRO\WIN以后，所有以此profile登录的工作站都可以共享Windows3.2了，一般此步骤可省，因为现在几乎不用Windows3.2了。
+　　在实际应用中，还可以进行优化。在相同的线性表内，区域Facilitator可以按优先级顺序排列，不同的线性表也可以按优先级顺序排列。这样，搜索策略可进行如下调整：当在本区域Facilitator搜索失败后，调度Facilitator在同一线性表中，按优先级从高到低的顺序选择区域Facilitator；如果在线性表中搜索失败，则也按优先级的原则选择线性表。
+4　余论
+　　Agent在远程教学中的应用，现在国内外还很少有人涉足。本文从远程教学的初期工作开始，为它建立一个线性表与树形结合的结构模型，该模型的建立有利于以后对远程教学进行深入细致的研究。需要说明一点：在搜索目的Agent时，本文没有考虑指定目的地址的情况，如果能确定连接的目的地址，将使问题更加简化，但削弱了Agent的自治性。
+作者简介：蔡洪斌　博士研究生。若网卡不与E:\WINNT\RPL\BBLOCK\NETBEUI\下的任一网卡兼容，就必须将其DOS驱动程序复制到E:\WINNT\RPL\BBLOCK\NDIS目录下,一般其扩展名为.DOS,如PCIND.dos( TE3500N型PCI网卡)。
+周明天　教授,博士导师。研究方向：网络计算、开放分布式系统、并行处理与系统集成。
+杨国纬　教授。研究方向：操作系统、数据库。
+作者单位：电子科技大学信息中心　四川.成都(610054)
+参考文献
+［1］　Yannis Labrou, Tim Finin. A Proposal for a new KQML Specification,Feb 3, 1997,http://www.cs.umbc.edu/kqml/
+［2］　Tim Finin, Rich Fritzson, Don Mckay. A Language and Protocol to Support Intelligent Agent Interoperability, April 1992, http://www.cs.umbc.edu/kqml/papers/
+［3］　Michael R. Genesereth, Steven P. Ketchpel. Software Agents. Communications of the ACM, 1994；37（7）：48-53
+［4］　Pattic Macs. Agents that Reduce Work and information Overload. Communications of the ACM, 1994;37(7):31-40
+［5］　Tim Finin, Rich Fritzson. KQML C A Language and Protocol for Knowledge and Information Exchange, http://www.cs.umbc.edu/kqml/papers/
+［6］　Chuen-Tsai Sun, Chien Chou. Experiencing CORAL: Design a nd Implementation of Distance Cooperative Learning, IEEE Transactions on Education, 1996;39(3)
+［7］　Irene Grrif. Desktop Agents in Group-Enabled Products. Communications of the ACM, 1994;37(7):100-105
+［8］　Yoav Shoham. Agent-oriented Programming. Artificial Inte lligence , 1993;60:51-92
+［9］　Kazuo Watabe, Matti Hamalainen, Andrew B. Whinston. An Internet Based Collaborative Distance Learning System: CODILESS. Computer Educ, 1995;3(24):141-155
+收稿日期:1998-12-25

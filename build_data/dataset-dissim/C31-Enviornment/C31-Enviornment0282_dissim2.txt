@@ -1,0 +1,57 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第3期 No.3 Vol.18 1998
+科技期刊
+
+美国环保局将推出新的测量系统
+　　为了使各有关单位在规定的环境监测方面有更多灵活性。发表论文20余篇。
+表2　上海南汇淤泥质潮滩表层沉积物中多环芳烃（PAHs）（μg/g）
+Table 2　Contents of PAHs in surface sediments of tidal mud flat from Nanhui,Shanghai (μg/g)
+
+序号化合物名称分子式分子量6S16S26S38S18S28S3检测线
+1三甲基苯C9H121200.618<0.0030.751<0.003<0.003<0.0030.003
+2萘C10H8128<0.003<0.003<0.003<0.003<0.003<0.0030.003
+3甲基萘C11H101420.0390.0400.0120.0150.0370.0460.003
+4甲基萘C11H101420.0140.0150.0050.0040.0140.0150.003
+5苊C12H8152<0.003<0.003<0.003<0.003<0.003<0.0030.003
+6二氢苊C12H10154<0.003<0.003<0.003<0.003<0.003<0.0030.003
+7芴C13H10166<0.003<0.003<0.003<0.003<0.003<0.0030.003
+8菲C14H10178<0.003<0.003<0.003<0.003<0.003<0.0030.003
+9蒽C14H10178<0.003<0.003<0.003<0.003<0.003<0.0030.003
+10芘C16H102020.0340.0300.0130.0090.0250.0370.003
+11荧蒽C16H102020.0340.0280.0110.0080.0270.0390.003
+12苯并(a)蒽C18H12228<0.01<0.01<0.01<0.01<0.01<0.010.01
+13C18H12228<0.01<0.01<0.01<0.01<0.01<0.010.01
+14苯并(b)荧蒽C20H12252<0.01<0.01<0.01<0.01<0.01<0.010.01
+15苯并(k)荧蒽C20H12252<0.01<0.01<0.01<0.01<0.01<0.010.01
+16苯并(a)芘C20H122520.0660.0710.0370.0310.0550.1090.01
+17茚并(1,2,3-cd)芘C22H12276<0.01<0.01<0.01<0.01<0.01<0.010.01
+18二苯并(a,h)蒽C22H14278<0.01<0.01<0.01<0.01<0.01<0.010.01
+19苯并(ghi)C22H12276<0.01<0.01<0.01<0.01<0.01<0.010.01
+　PAHs　　0.8060.1740.8290.0570.1680.245
+
+　　　　　注：6S1、6S2、6S3及8S1、8S2、8S3分别为6月份和8月份高、中、低潮滩表层样品
+表3　夏秋季节不同地貌单元多环芳烃主要分子占PAHs总浓度的百分含量（%）
+Table 3　Percent contents of main elements in total PAHs from diferent 
+geomorphical units in summer and fall（%）
+
+组分特征6月8月
+低潮滩中潮滩高潮滩低潮滩中潮滩高潮滩
+荧蒽/PAHs4.216.11.314　16.115.9
+芘/PAHs4.217.21.5715.815　15.1
+苯并(a)芘/PAHs8.241　4.554.432.744.5
+
+3　结语
+　　上海南汇淤泥质潮滩中鉴定出的毒害有机物多环芳烃，说明上海市滨岸环境已受到不同程度的有机毒害物质多环芳烃的污染。
+　　进样口温度为270℃，接口温度260℃；柱温程序：初温为35℃，保持5min；以8℃/min升至270℃，保持17min；进样量1μL;进样方式Grob型不分馏进样。现行的EPA项目规定必须用指定的测试方法分析环境样品。电离源EI，70eV；发射电流0.5mA；质量范围40～400amu;扫描速度0.5s/Scan;倍增器电压：1450 V。
+　　约在7年前EPA的环境监测管理委员会(EMMC)为对工业界的抱怨作出反应，而开始开发以实践为基础的测量系统。多环芳烃分别以1，4-二氯苯-D4、萘-D8和蒽-D10为内标，测得目标物的特征离子峰面积和相邻内标的特征离子峰面积之比求得其含量。
+1　实验部分
+1.1　采样
+　　在上海南汇淤泥质潮滩区于1996年6月和8月分低、中和高潮滩分别采集表层沉积物（0～3cm）样品，将采集的样品用聚乙烯塑料袋包装后，再放入冷冻箱保存，然后在低温下烘烤待测。
+关键词　表层沉积物　多环芳烃　淤泥质潮滩　上海南汇
+The polycyclic aromatic hydrocarbons in surface sediments of tidal mud flat from Nanhui,Shanghai.Liu Min, Xu Shiyuan，Chen Zhenlou(Department of Geography, East China Normal University,Shanghai 200062).China Environmental Science.1998,18(3):284～288
+Abstract―The results of qualitative and quantitative analyses on the Polycyclic Aromatic Hydrocarbons (PAHs) in surface sediments of tidal mud flat in the summer and the fall from Nanhui,Shanghai, show that the total PAHs concentration is up to 0.829μg/g.The individual component concentration is 3～7 times more than the monitoring limit and there is high content and percentage in total PAHs in the fall tidal flat and the summer mid-tidal flat,thus becoming PAHs polltants of the high sediment concentration levers in this region.
+Key words: surface sediments　PAHs　tidal mud flat　Nanhui of Shanghai
+　　近年来，国外已在河口湾〔1～3〕 ,现代湖泊〔4〕、海湾和土壤〔5〕、海岸带〔6，7〕等近代沉积物及大气颗粒〔8〕等环境介质中进行多环芳烃（PAHs）的调查和研究，对PAHs在环境介质中的行为及生态效应研究等方面已积累了较丰富的资料。
+　　季节性变化及在不同地貌单元中的分布特征显示，芘在6月份相对较低（表3），而且中潮滩较高，浓度含量0.030μg/g，占PAHs总浓度的17.2%，其它上和下潮滩则较低，含量为0.034和0.013μg/g，占PAHs浓度总量分别为4.2%和1.57%。美国环保局(EPA)计划于1997年底推出以实践为基础(Performance based)的测量系统。将在EPA的所有管理项目中实施。按照这一测量系统，符合EPA法规的可以使用能满足所需基准的任何分析测试方法，而不是只用EPA指定的方法。现行的EPA项目规定必须用指定的测试方法分析环境样品。要申请许可用另外的方法或修改的过程通常很长，常常要花几年时间才能被批准。
+　　约在7年前EPA的环境监测管理委员会(EMMC)为对工业界的抱怨作出反应，而开始开发以实践为基础的测量系统。EMMC定义该系统为“一套过程，其中规定一个项目的数据质量需要、指令或限制，用作以经济有效(Cost-effective)的方式选择合适方法满足需要的基准”。按这一系统，EPA将鉴定分析方法的有关实施特征，为每一特征规定量的实施基准而不指定具体步骤、技术或仪器。EPA指望通过该系统便于批准新的技术，使监测费用降低，并最终改进数据质量和鼓励分析技术的进步。8月份芘含量较高，但上、中和下潮滩浓度含量分别为0.009、0.025和0.037μg/g，在PAHs总浓度所占百分含量差别较小，在15%左右；苯并(a)芘季节变化不太明显，6月份以中潮滩最高，浓度含量为0.071μg/g，占PAHs总浓度的41%,其它下及上潮滩仅占4.5%和8.2%

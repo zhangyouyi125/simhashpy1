@@ -1,0 +1,37 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000 Vol.19 No.2 P.6,25
+
+
+
+
+Borland Delphi 5--电子商务与Internet的有效开发工具
+北京中软融保信息技术有限公司（100081）
+　　根据“Forrester Research顾问公司所作的调查，估计到公元2000年全球电子商务市场规模将达到66亿美元。电子商务的广泛应用，使顾客和企业、企业与企业之间可以通过网络进行数据交换和商业交易。delphi 5 Enterprise版能帮助企业开发电子商务应用系统，在公元2000年后保持强大的竞争优势并掌握市场先机。
+1 电子商务数据交换的标准XML
+　　XML是由W3C组织于1997年制定的标准，并获得IBM、Microsoft、Sun、Microsystems、HP、Adobe等厂商的共同支持，XML是一种“可扩展的标识语言”（eXtensible Markup Language），有别于目前广泛使用的HTML，XML可自行定义“标识”（Tag），各行业都可运用XML自行定义所使用的文件类型。正由于这一点，XML在电子商务B2B（Business to Business）应用中成为企业和企业之间开放性的数据交换标准。
+2 运用XML的InternetExpress技术
+　　Delphi 5 Enterprise的InternetExpress技术帮助用户建立基于Web浏览器的瘦客户端应用程序，全新HTML／XML Web Page编辑器以可视化方式设计客户端应用程序，并将运用标准XML传送数据，与符合业界标准COM、CORBA、MTS的MIDAS多级分布式构架相结合，使现有系统平滑地导入电子商务和Internet相关应用。
+3 集成Internet应用的能力
+　　Delphi 5 Enterprise所采用的WebBridge技术可以让单一的原代码同时支持CGI、WIN－CGI、ISAPI及NSAPI标准，并能够生成在Microsoft ASP中使用的Active Server Object。ActiveForms技术可以把Delphi窗体很方便地转化成ActiveX组件，将现有的应用程序快速转化为基于Web浏览器的应用模式。
+　　问：我使用56K MODEM时，为何只能连接到33.6Kt如何才能达到56Kt
+　　答：56K MODEM只能连接到33.6K的原因很多，但大致是由以下5种情况造成的。
+4 One－Step CORBA创建可重用组件
+　　Delphi是第一个支持CORBA分布式组件规范的快速开发工具。这种问题大多会发生在初学者身上。Delphi 5 Enterprise包含VisiBroker CORBA ORB 3．3．2版，并提供可视化编辑工具，使开发人员不需要学习CORBA IDL，便能快速建立供多种平台下C＋＋、Java、Smalltalk、COBOL等程序语言使用的CORBA应用组件。Delphi 5 Enterprise支持CORBA特性，也能使Delphi和众多基于Java的电子商务解决方案顺利集成。
+5　 开放并具有弹性的数据库连接能力
+　　从单机个人数据库到企业级数据库，Delphi 5 Enterprise提供可扩展性和开发性兼具的数据库连接方案。高性能的Borland SQL Link驱动程序提供访问Oracle 8i、Sybase 11．5、Informix 9、Microsoft SQL Server 7、DB／2 Universal Server和InterBase的能力，而Borland DataBase Engine提供快速访问Micrisoft Access、FoxPro、dBASE、Paradox等单机个人数据库或任何支持ODBC规范的数据库。此外，Delphi 5 Enterprise提供InterBase Express系列组件，能够不通过Borland Database Engine和SQL Link驱动程序，直接、快速访问InterBase数据库，帮助InterBase用户简化分发过程，并将InterBase应用程序执行效率发挥到极致。
+6 访问不同类型数据资源
+　　今天IT部门所面临的数据来源已不仅仅是关系型数据库。这样的话，如果有必要还可以通过调用AT命令等方法重新使用原有的56K协议。
+7 全面支持Oracle 8对象关联扩展功能
+　　Delphi 5 Enterprise针对Oracle 8对象关联扩展功能，如Abstract Data Types、Nested Tables、Variable Length Arrays、Object Pointers（REFs）和External File References等提供最全面的支持。在Windows95/98下的设置方法也非常简单，只需进入控制面板，并在调制解调器属性设置中的附加设置里加入“ATW2”即可。MIDAS同时支持CORBAIIOP、DCOM、DCERPC以及TCP／IP等多种连接方式。在很多时候用户在Windows95/98里，都是没有使用MODEM配套的驱动程序，而最常见的情况是使用的MODEM驱动程序为“标准调制解调器”，虽然这对数据传输不会有大的影响，但会出现Windows95/98无法正确显示DCE速率，而显示DTE速率的情况。全新的WebConnection组件可利用HTTP通信协议，访问企业防火墙内的MIDAS应用程序服务器，并能使用SSL加密传送的数据。
+9 MIDAS技术
+　　MIDAS技术让前端应用程序无需作任何状态设置即可执行，节省项目维护、程序分发以及在主从架构进行状态设置上花费的成本。SimpleObjectBroker提供各种组件错误恢复和负载平衡的能力，确保7×24小时商业关键性系统的顺利运行。MIDAS多级应用完全遵循业界标准分布式组件规范CORBA、COM、MTS，不参杂任何专有的解决方案。同样的，如果使用了与你的MODEM不兼容的驱动程序，连接速率也一样有可能出现问题。
+11 将企业数据转化为决策信息
+　　BusinessInsight技术，包括DecisionCube提供交叉分析表，帮助用户分析多维数据。Quick Report 3．0版让用户可以轻松地建立图文并茂、可预览和打印的报表。
+　　最后谈谈读者在购买56K MODEM时需要掌握的几个要点：
+　　1．首先确认本地ISP所使用的是哪种56K协议、是否已经升级到V.90。很显然，直接“ATW2”是简单许多，但它并不是在所有的时候都管用，在我的U．S．Robotics 56K MODEM上就无法使用。
+12 对Windows环境的支持
+　　Delphi 5完全支持Windows 95、Windows 98和Windows NT的各种标准，包括Win32 API、COM、DCOM、ActiveX、OLE Automation、DirectX等，并能建立多线程应用程序及NT Services、Windows控制面板（Control Panel）组件，Delphi 5还提供封装Microsoft Office Automation的VCL组件，强化了和Microsoft Office系列套装软件的集成能力。
+13 TeamSource强化团队开发效率
+　　Delphi 5 Enterprise提供全新的Team Source版本管理系统。针对分布于不同地点的大型开发团队，提供更有效的源代码管理机制。Team Source版本管理系统也可以支持PVCS及其它源代码管理系统引擎，帮助用户精确控制开发团队的程序代码版本。下面以U．S．Robotics Sporster 56K MODEM为例，介绍具体的操作步骤。其实笔者的56K MODEM曾经也遇到过只能连接到9600b/s的情况，而原因就是电话线路室外接头有问题，经电信部门修理后就又可以正常连接到52K了。近年来又跻身于企业级市场，为企业分布式环境提供全方位解决方案，特别在CORBA领域居领导厂商地位。欲获得Delphi 5的更详细信息，可拨打电话01068915794／95／96／97。
+收稿日期：1999－11－25

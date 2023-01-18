@@ -1,0 +1,99 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年  第3期   No.3 May   1998
+科技期刊
+液体火箭发动机带有隔板和无隔板的
+两相冷态解数值模拟
+赵文涛
+(国防科技大学航天技术系*长沙*410073)
+聂万胜　庄逢辰
+(国防科工委指挥技术学院*北京*101407)
+　　摘　要　本文对液体火箭发动机燃烧室内带有隔板和无隔板的两种情况进行了两相冷态解数值模拟,气相控制方程用欧拉坐标系下的Navier-Stokes方程组描述,液相控制方程在Lagrangian坐标系下进行描述。
+　　FDF方法用于故障检测的一个优越性是它无需故障模式信息,因为在这种方法中故障检测的重要信息在于残差方向而非其时间函数。
+　　主题词　冷态解　两相流　隔板　液体火箭发动机　燃烧室
+TWO PHASE COLD FLOW SIMULATION OF 
+WITH AND WITHOUT BAFFLES 
+IN LIQUID ROCKET ENGINE
+Zhao Wentao
+(National University of Defence Technology Hunan*Changsha*410073)
+Nie Wansheng　Zhuang Fengchen
+(Institute of Command and Technology*Beijing*101407)
+　　Abstract　The two phase cold solutions are simulated with numerical method in liquid rocket engine combustion chamber having baffles and no having baffle.The gas controlling equations are discribed under the Euler coordinate.The liquid phase controlling equations are discribed under the Lagrangian coordinate.The two phase influences of gas and liquid are through the sources of equations.The flow values of combustion chamber are compared while having baffles and no baffle.It is proved that the numerical treating method of baffle is successful to the two phase cold flow solution.
+　　Key words　Cold solution　Two phase flow　Baffle　Liquid rocket engine　Combustion chamber
+符号说明
+  　英文字母
+　　CD　液滴阻力系数                     ReReynold数
+　　d液滴直径(μm)                       T温度(K)
+　　dV控制容积(m3)                       u轴向速度(m/s)
+　　D扩散系数(m2/s)                      v横向速度(m/s)
+　　e总能量(J/kg)                        希腊字母
+　　E组合变量矢量                        λ导热系数(W/mk)
+　　F组合变量矢量                        μ粘性系数(kg/ms)
+　　H源项矢量                            ρ密度(kg/cm3)
+　　m蒸发速率(kg/s)                      脚注
+　　M摩尔质量(kg/mol)                    k第k组液滴
+　　n液滴数目个 /m3                         vap蒸发
+　　p压力(Pa)                            x轴向方向
+　　R气体常数(J/kgK)                     y横向方向
+　　1　引　言
+　　液体火箭发动机的冷态试车和热态试车是研制过程中所要采取的两个关键步骤。
+　　主题词　FDI　FDF　模型误差　鲁棒决策
+THE RESEARCH OF FDF ROBUST DECISION METHOD
+He Yingzi　Zhangbing　Wu Hongxin
+(Beijing Institute of Control Engineering*Beijing 2729 box*100080)
+　　Abstract　Fault Detection Filter (FDF) is an important and systematic method among the methods of Fault Detection and Isolation,but the model uncertainty is almost not considered by now.This paper do some work about the robust decision of FDF when there is uncertainty problem,and get some good result.
+　　Key words　FDI　FDF　Model uncertainty　Robust decision
+1　引　言
+　　FDI是近年来控制界的一个热门话题。
+2.2　模型存在误差带来的问题
+　　无模型误差时,FDF设计过程保证故障输出方向(Cfi)等于某一个或某几个系统特征向量(Cvij)的组合,使得此故障下的输出残差方向是这个特征向量或这几个特征向量中的任何一个在输出空间的投影,同时输出残差方向也就与故障输出方向一致。描述喷雾模型时考虑了简单的蒸发定律,研究了燃烧室内有隔板和无隔板气相加质流各个流场参数值的变化规律。
+2　控制方程组
+2.1　气相控制方程组
+　　气相用带有源项的Reynolds平均的Navier-Stokes方程组来描述。源项是由于气相和液相的相互作用而产生的。FDF又称故障灵敏滤波器,它是一个全阶状态估计器,但其观测器增益阵选取特殊,使得输出残差(输出估计误差)在特定的故障发生时有特定的方向。有隔板的计算域较为复杂,由于在计算域内有三块隔板,所以在划分网格时需要在燃烧室头部布置隔板的位置,如图2所示,将三块隔板均匀地排列在燃烧室头部,每一块隔板的厚度为一个横向网格间距,上、下两块隔板面为同一块隔板的两个侧面。
+
+
+图1　无隔板时网格划分网
+
+
+图2　有隔板时网格划分图
+4　边界条件的确定
+　　无隔板和有隔板的人入口边界条件、出口边界条件以及上下表面的边界条件均相同。
+　　入口条件:给定人口流量,即人口密度ρ,人口速度u给定,v=0;其它流场参数的法向梯度为零;
+　　出口条件:各变量的法向导数为零,
+　　上下表面的边界条件:速度为零,即u=0,v=0;其它各变量的法向导数为零,
+　　当燃烧室喷注面板装配有隔板时,隔板体的边界条件是隔板面上的速度为零,即u=0,v=0,其它参数的法向导数为零,即
+5　计算结果及分析
+　　下表是三种情况的算例,人口总的流量均为20kg/s,对于第一种算例,入口氢气的流量为4kg/s,液氧的流量为16kg/s,由计算可看出对于有隔板的情况出口流量为20.23,误差为1.15%,对于无隔板的情况,出口流量为20.48,误差为2.2%;分析其它两种算例所得的结果可以看出,流量的误差均在5%范围以内。
+入口流量
+(kg/s)氢气:4氢气:16氢气:10
+液氧:16液氧:4液氧:10
+出口流量
+(计算值)有隔板20.2320.8920.45
+无隔板20.4820.7020.56
+误　差无隔板1.15%4.45%<2.25%<
+有隔板2.4%3.5%2.8%
+　　计算所得的结果如图所示。设
+
+则故障fiμi下的误差系统方程为
+
+(2.2-3)
+其中G0=A0-LC。仅有的对FDF方法鲁棒性的研究是利用未知输入观测器方法［4］。
+　　图4为有隔板时燃烧室内部压力图,在燃烧室圆柱段,压力基本保持不变;由于液氧雾喷入燃烧室并且不断地蒸发使得混气的组成发生了改变,气体常数和比热比是蒸发出来的氧气和氢气的质量加权平均,这就导致压力在燃烧室头部附近略有降低。在这里所给的两种故障下可以得到ρ≈1.5,利用(2.3.1-1)和(2.3.2-2)式可以计算出。
+2.3　FDF的鲁棒决策
+　　在上一节中给出了隐性和显性两类不确定性,相应也有隐性阈值和显性阈值之分。
+
+
+图5　发动机内部有隔板时混气速度图
+
+
+图6　无隔板时氧气密度变化图
+图7为无隔板时混合气体密度的三维图,沿燃烧室轴向方向第一个网格点处只有氢气,随着液氧雾的运动和蒸发,混气的密度不增加,进入喷管后,混气发生剧烈膨胀,密度下降。
+　　图8为无隔板时氢气密度的三维图,氢气的流量保持不变,在燃烧室圆柱段速度变化化,氢气的密度在三维图上近似为一平面,在喷管处,密度的变化规律和氧气、混气的变化规律相同。
+
+
+图7　无隔板时混气密度变化图
+
+
+图8　无隔板时氢气密度变化图
+6　结　论
+　　液体火箭发动机的有隔板和无隔板的两相冷态解数值模拟是模拟热态解的基础,也是为下一步对高频不稳定燃烧进行数值试验的基础。但是,FDF方法对模型不确定的鲁棒性问题一直没有结论。控制作用为俯仰轮控力矩和帆板驱动力矩Ty,Tp,记为u=［Ty　Tp］T

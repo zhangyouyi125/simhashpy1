@@ -1,0 +1,51 @@
+产业与环境结果显示，当pH<9.5时，随着pH值的升高，自由基含量不断增加，CHCl3产量也随之增加；当pH>9.5时，CHCl3的产量有所下降，与此相对应，自由基的g因子及线宽都发生了变化，由此推测自由基的性质可能发生了改变（图1、表4）INDUSTRY AND ENVIRONMENT
+1998年 第20卷 第4期 Vol.20 No.4 1998科技期刊
+采矿技术的环境评价
+　　一个工业点何以安装一种新技术，会有很多理由。
+
+图1　搅拌速度对J酸提取率的影响
+Fig.1　The effect of stirring speed on extracting
+rate of J-acid
+2.2　乳水比（Rew）对提取率的影响〔7〕
+　　对于液膜分离过程来说，乳水比Rew越大，渗透过程的传质面积越大，从而加速了料液的分离，使分离效率提高；但此时乳状液消耗多，处理成本高。
+　　当前环境议程的复杂性――它包括对排放、废物、能源、化学品、生物多样性和土地利用等问题的考虑――意味着需要考察一大批变量。因此，有用的是进行一种正式的环境技术评价(EnTA)，以确保一切有关环境因素都能考虑到。
+　　联合国环境署工业与环境中心目前正在包括矿产在内的所有工业行业中促进EnTA的常规利用。THMs的形成与加氯量、前体浓度、反应时间、反应温度、pH值及水中某些离子含量等有关，目前国内外已有过较多的研究报道〔4,5〕。在许可证审批过程期间也可以使用EnTA。大中型自来水厂加氯消毒前后都有暴露于阳光的环节，而且光照对氯及THMs前体－腐植酸(HA)的性质都有明显的影响〔6,7〕，而以往人们只孤立地研究光照对氯或HA性质的影响，对THMs形成影响如何尚未见报道。将乳状液按一定乳水比Rew（乳液体积Ve和废水体积Vw之比）加入到废水中，慢速搅拌（300r/min）使其充分接触，静置分离后乳液进
+入破乳器，经破乳后静置分层即可获得J酸盐溶液（浓缩水相）和油相，油相可用于重新制乳。
+关键词　液膜法　J酸　废水
+Study on J-acid from industrial wastewater with liquid membrane.Zhu Yiren，Pan Luting(Department of Chemistry, FuYang Normal College, Fuyang 236032)；Wei Fengyu，Deng Chuanyun(School of Chemical Engineering, Hefei University of Technology, Hefei 230009)；Shen Zhangping，Wen Zhiyu(Nanjing Chemical Plant,Nanjing 210038).China Environmental Science.1998,18(1):91～93
+Abstract―In this paper,LMS-2 was used as the surfactant,tri-noctylamine as the mobile carrier,kerosene as the membrane solvent and NaOH solution as the internal phase of the membrane to form a system of emulsified liquid membrane.in studying the extraction of J-acid from industrial wastewater.Factors affecting the extraction efficiency of J-acid were studied,and suitable technological conditions were determined.The results show that the advantages of rapid rate of J-acid transport and high efficiency of extraction,and the extracting rate do not change with the oil phase reused for many times.The efficiency of J-acid extraction is 96%.
+Key words:liquid membrane　J-acid　wastewater
+　　在偶氮中间体J酸(2-氨基-5-萘酚-7-磺酸)的生产过程中，排出大量强酸性废水（pH＜1），其中硫酸约550g/L,废水呈褐色，直接排放会造成严重的污染。也考察基础设施与支持性服务的环境含义。
+参考文献
+1　N N Li.US.Patent.3410794,1968
+2　邵　刚.膜分离科学与技术，1982，2（2）∶ 57
+3　金桃根.膜分离科学与技术，1982，2（2）∶ 20
+4　王学松.化工进展，1990，（6）∶ 1～6
+5　刘　杰等.工业水处理，1994，14（3）∶ 20～23
+6　沈力人等.膜科学与技术，1997，17（1）∶ 25
+7　万印华等.水处理技术，1991，17（4）∶ 222～224
+8　李思芽等.膜科学与技术，1995，15（2）∶ 22～24
+作者简介
+朱亦仁　男，1946年2月生。
+2.2.3　1，4-萘醌的氯化与CHCl3的形成　如果半醌类自由基参与了CHCl3的形成，那么，凡是含有半醌类自由基的化合物氯化后都应产生CHCl3。
+表3　加氯后光照对THMs及余氯的影响
+Table 3　Effect of irradiation on THMs formation
+and free chlorine content
+
+光照时间(min)　THMs(μg／L) 余氯(mg/L)
+　0(蔽光) 142.5±11.2 2.8±0.1
+0.17 126.8± 9.8 2.6±0.1
+0.34 119.7± 8.7 2.5±0.1
+0.68 114.4± 7.8 2.1±0.1
+1.00 87.9± 7.7 1.9±0.1
+2.00 79.9± 7.7 1.1±0.1 
+
+　　注：n=5
+
+　　从上述光照结果可知，若是出于控制THMs的目的，加氯前水源水应避免光照射；加氯后进行光照，虽可减少THMs的形成，却使自由余氯含量减少，故从保持水中余氯浓度，控制微生物再污染角度出发，加氯后也应避免光照射。
+　　在华盛顿(哥伦比亚特区)Kanawha研究所为联合国环境署工业与环境中心编制的一本最新出版物《预测技术的环境影响――入门和工作手册》中讨论了关于此类战略性研究的进一步细节。这份以早就建立的技术评价(TA)原则为基础的文件已被发展得能在更大的深度上探讨标准技术评价的环境方面。Rew对分离效率的影响如图2所示，当Rew为 1∶5时既节省乳液，又得到较满意的分离效果。在使用这本入门书时，每个行业都必须结合自己的特定需要进一步修改该程序，但标准思路要保持不变。油相重复使用的结果见表1。
+　　联合国环境署已经开始把EnTA方法论引进它的采矿政策与培训活动中。一个最近的实例是开发一个关于黄金采矿技术的EnTA短期研讨会模块。大型金矿中常用氰化物有时已经导致公众对使用这样一种有毒物质的必要性的焦虑和疑问。
+1.4　光照实验
+　　将反应液装入石英瓶中，放在光源下进行照射。
+　　正式EnTA的使用对于技术买主来说会有很大帮助，他们可以直截了当地要求未来的供应商提供必要的信息。EnTA过程通过揭示一家采矿公司正在使用的一种技术的一切有关环境特征，可以帮助行政主管部门办理EIA和许可证审批程序。
+　　联合国环境署工业与环境中心目前正在编制一本简化的工作手册供公司和政府职员使用，以期直截了当地应用“技术选择”。

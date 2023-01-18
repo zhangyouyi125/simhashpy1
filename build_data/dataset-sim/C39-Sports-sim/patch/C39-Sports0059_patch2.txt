@@ -1,0 +1,147 @@
+体　育　科　学
+TIYU KEXUE
+SPORT SCIENCE
+Journal of China sports Science Society
+1998年 第2期 No.2 february 1998
+科技期刊
+
+运动医学
+过度训练对大鼠血浆内皮素和降钙素
+基因相关肽水平的影响
+金其贯　方　明　黄叔怀　孙新荣
+(扬州大学师范学院，扬州 225002)
+摘要　对SD大鼠进行游泳训练建立过度训练模型。实验结果：经过不同强度的游泳训练后，过
+度训练组血浆ET(内皮素)的含量(204.76±26.12 pg/ml)显著高于对照组(172.89±40.03 pg/ml)；血浆
+CGRP(降钙素相关肽)含量(84.06±28.69 pg/ml)显著低于对照组(142.30±40.40 pg/ml)和一般训练组
+(151.41±81.79 pg/ml)；ET/CGRP(2.71±0.96)显著高于对照组(1.65±1.10)和一般训练组(1.76±0.96)。
+一般训练组血浆ET、CGRP和ET/CGRP与对照组相比，虽然有所上升，但无显著性差异。结果
+表明：过度训练可使机体分泌ET增多，而分泌CGRP减少；过度训练导致ET和CGRP的分泌失调，
+可能是过度训练引起运动性高血压的病理生理机制，动态观察血浆ET和CGRP对过度训练的诊断
+与预防有一定的指导意义。
+关键词　内皮素　降钙素基因相关肽　过度训练　大鼠
+Effects of Overload Training on Plasma Endothelia and calcitonin Gene-Related
+Peptide Concentration in Rats
+Jin Qiguan et al
+1998，18(2):62
+(Teachers' College, Yangzhou University, Yangzhou, China 225002)
+Abstract　Overload training model was established based on swimming training of SD rats to explore the 
+effects of overtraining on the secretion of endothelia(ET)and calcitonin gene-related peptide (CGRP) of rats. 
+Results were as follows: after swimming training in different intensities, the plasma ET concentration 
+(204.76±26.12 pg/ml, n=11) in overload training group was significantly higher than that in control group 
+(172.89±40.03 pg/ml，n=10)；the plasma CGRP concentration (84.06±28.69 pg/ml, n=11) was significantly 
+lower than those of control group (142.30±40.40 pg/ml, n=10) and general training group (151.41±81.79 pg/ml, 
+n=10)；while the ratio of ET and CGRP in overload training group (2.71±0.96) was significantly higher than 
+that in control group (1.65±1.10) and general training group (1.76±0.96); compared with control group, ET 
+and CGRP concentration and their ration in general training group increased in a narrow range but with no 
+significant difference. It was indicated that overload training may promote the secretion of ET while restrain 
+the secretion of CGRP, which may cause a secreting dislocation of ET and CGRP, becoming the 
+pathophysiological mechanism for hypertension. Dynamic observation of plasma ET and CGRP has some 
+guiding significance to the diagnosis and prevention of overload training.
+Key words　peptide, calcitonin gene-related peptide, overtraining, rat
+　　内皮素(Endothelin, ET)是血管内皮细胞合成和分泌的一种血管收缩因子，是目前所知最强的
+缩血管物质；降钙素基因相关肽(Calcitonin gene-related peptide, CGRP)是已知最强的扩血管物质，
+对心脏具有正性变力和变时作用。中国古代
+体育发展中曾有过许多娱乐性项目，但其中竞技性成份却很少，流传至今更是凤毛麟角，众多有价值的体育项目仅供人杂耍、观赏，以致于从
+军事活动中分离出来的武术，也最终未形成完善的对抗性竞技规则而不能在全世界流行。本文通过观察不同强度的运动训练对SD大鼠血浆ET和CGRP
+含量的影响，探讨不同强度的运动训练对机体ET和CGRP分泌的影响，为过度训练的诊断与预
+防和运动性高血压的病理生理机制的研究提供实验依据。
+1 材料与方法
+1.1 实验对象
+　　健康雄性Sprague-Dawley(SD)大鼠33只(扬州大学农学院动物科学系提供)，体重290～320 g，
+随机分为3组：对照组(10只)，一般训练组(10只)和过度训练组(13只)。这是华侨、华人体育运动发展较快的主要思想基础。
+1.2 实验方法
+1.2.1　运动条件：玻璃钢游泳池，150×60×70 cm3，水深60 cm，水温31～32℃。
+1.2.2　训练方式：建立过度训练模型，(1)游泳训练共10天，前2天，适应性游泳20 min，后5
+天，每天游泳一次，均要求接近力竭。力竭标准：(1)游泳动作明显失调，不能再坚持；(2)沉入
+水底超过3 s不能回到水面。发现上述情况，及时捞起，用吸水纸擦干，置保温笼中休息。最后
+3天，每天游泳2次，间隔时间6 h，每次游泳均要求达到力竭状态。而中国竞技体育的发展进程，其原因并不仅仅在于自身内部的矛盾运动，即使这种内部的矛盾运动，
+也是由于西方文化和竞技体育的撞击而大大强化了的。
+大鼠末次游泳训练后24 h，称重，依次用乙醚麻醉，立即从颈总动脉处取血3 ml放入含有10%
+EDTA-Na230 ul和抑肽酶40 ul的塑料试管中，混匀。所有血液标本立即低温(4℃、3 000 rpm、
+10 min)分离血浆，置于4℃冰箱储存。ET和CGRP均在8 h内用放射免疫法(RIA)进行测定，ET和
+CGRP放免试剂盒由中国北京东亚免疫技术研究所提供，ET特异性抗体为ET-1，与α-人心钠素，
+CGRP、血管紧张素Ⅰ、Ⅱ以及舒血管肠肽等无交叉反应，抗体效价为1∶20 000，CGRP抗体为
+β-CGRP，与ET、骨钙素(BGP)、C端甲状旁腺素(C-PTH)、降钙素(CT)等无交叉反应，抗体效
+价为1：40 000。而当今竞技运动所需要的不断开
+拓精神正成为社会所追求的高尚情操，激励着各行各业的人们把目光放于未来和整个世界奋勇开拓；几千年历史沿袭下来的道德观念，在体育
+领域里又获得最新的含义。
+　　结果以均数±标准差(±s)表示，统计学处理用组间t检验。所有数据均在586微机上用统计
+软件计算而得，显著性水平p≤0.05。
+2 实验结果
+　　运动训练后，过度训练组神态倦怠，眼神暗淡无光，体重明显减轻，毛发脱落，进食量减
+少，自主活动减少，反应能力降低。运动训练过程中，死亡大鼠2只，死亡率达23%。资本主义的发展与社会生产力的提高必然进一步要求人们文化知识的全面和身体素质的强健，以适应在世界范围
+内激烈竞争条件下的生存，“吾侨每与外人比较，刚形绌立见；于是渐觉学识之恐慌，而有教育之必要。运动训练后，过度训练组血浆ET的含量(204.76±26.12 pg/ml)显著高于
+对照组(172.89±40.03 pg/ml)；血浆CGRP含量(84.06±28.69 pg/ml)显著低于对照组(142.30±40.40 pg/ml)
+和一般训练组(151.41±81.79 pg/ml)；ET/CGRP(2.71±0.96)显著高于对照组(1.65±1.10)和一般训
+练组(1.76±0.96)。而西方竞技体育的特点
+，如直接的胜负、快慢、高低等，正好强烈地吻合了正处于生产力落后但又力求发达，力求与西方并肩而立，追求成功和胜利的华夏民族的心
+理愿望。
+3 讨论
+3.1　不同强度的运动训练对机体ET分泌的影响及其调节机制　　内皮素是Yanagisawa等于1988
+年从猪的主动脉内皮细胞中分离出来的一种活性肽，是目前已知的体内缩血管作用最强，作用
+时间最长的活性物质，具有强烈的收缩血管，促进神经内分泌等作用［2］。关于运动对ET分泌
+的影响，目前国外已有一些报道，但报道结果不尽一致。在日本，围棋为华侨、华人所嗜好，出现了一些高水平的华人选手，如吴清源、林海峰等高手为日本的围棋事业和
+中日的围棋运动交流作出了卓越的贡献。本文研究表明，经过游泳训练后，随着运动
+强度的增加，在安静状态下，SD大鼠血浆ET含量在逐渐上升，过度训练组血浆ET含量显著高
+于对照组(p<0.05)，与一般训练组相比以及一般训练组与对照组相比虽有上升，但无显著性差异。
+说明过度训练可使ET分泌增多。剧烈运动时，一方面，机体交感神经兴奋，刺激肾上腺分泌增
+加，血浆儿茶酚胺及血管紧张素浓度增加，从而刺激ET分泌的增加；另一方面，长时间剧烈运
+动时，机体组织特别是骨骼肌和心肌缺血、缺氧和损伤，也可导致ET的分泌增加。由于海外的华侨、华人遍布世界各地，人数众多。但当内皮细胞受到各种机械、物理、化学因素的强烈刺
+激时，ET产生增加，其降解活力和对抗机制又减弱时，可引起病理反应。在组织缺血、缺氧等
+病理条件下，血管内皮细胞释放大量的ET，通过其强烈的收缩血管，刺激内皮细胞增殖作用，
+而进一步加强ET的合成与分泌，形成一种恶性循环［7］。随着国内市场经济的成熟，投资环境的改
+善，对祖国体育事业的投资会给华侨带来经济上的利益。
+3.2 不同强度的运动训练对机体CGRP分泌的影响及其调节机制
+　　CGRP是Rosenfeld等在1983年应用基因工程的方法发现的一种生物活性多肽，是体内最强的
+舒血管活性肽，有强烈的扩张血管，对抗ET，增加心肌收缩力，对心肌缺血有保护作用［8］。
+关于运动对机体CGRP的影响国内外报道不多，李大元等(1996)在研究无症状心肌缺血和心绞痛
+患者血浆ET、CGRP和P物质含量变化时发现，在极量踏车运动试验后，无症状心肌缺血组、心
+绞痛组和正常对照组血浆ET和CGRP含量都有不同程度地下降，但与运动试验前比较，无显著
+性差异［9］。华侨一方面保持中华民族传文化，另一方面吸收侨居地的文
+化。有资料表明，去甲肾上腺素可抑制CGRP
+的分泌［10］。因此，过度训练导致机体内儿茶酚胺浓度持续升高，可抑制机体CGRP的分泌；另
+一方面，过度训练导致机体内ET的分泌增加，在一定程度上反馈抑制了CGRP的释放，从而导致
+机体血浆CGRP含量的降低。因此，作为西方近现代体育的第一个逻辑起点，却只能是人的思想意识的变化，而作为西方近现
+代竞技体育文化诞生的首要标志――文艺复兴运动，则是一个思想精神的运动，是人的思想精神的解放运动。
+3.3 不同强度的运动训练对机体ET/CGRP的影响及其生物学意义
+　　由前所述，ET是机体最强的缩血管物质，而CGRP作用与ET相反，是体内最强的舒血管物质。
+在正常状态下，它们的分泌维持一种动态平衡。彭英(1996)等在研究自发性高血压大鼠(SHR)下
+丘脑和血浆ET、CGRP含量变化时发现，ET在SHR中枢和外周血液中的含量明显高于同龄正常血
+压鼠；而CGRP在SHR下丘脑和血浆的含量低于同龄正常血压鼠。此外，从中国古代体育的发展来
+看，中国古代体育推崇养身，因而在传统体育中很少有激烈的竞争活动，很少能提供充分发挥创造性、能动性以及人的潜力的机会。Januszwiez等在原发性高血压病
+人血浆测得ET水平明显高于正常人水平，也认为ET对高血压状态的发展和维持起了很重要的作
+用［12］。我们研究发现：在不同强度的游泳训练后，过度训练组ET/CGRP(2.71±0.96)显著高于
+一般训练组(1.76±0.96)和对照组(1.65±1.10)，(p?.05)；一般训练组与对照组相比，虽有上升，
+但无显著性差异，说明过度训练导致机体ET和CGRP分泌的严重失调，可能是运动性高血压的病
+理生理机制，但还有待于进一步研究证实。因此，动态测定血浆ET和CGRP的含量对于过度训练
+的诊断与预防和研究因过度训练而引起的运动性高血压的病理生理机制具有一定的指导意义。
+4 小结
+4.1　过度训练导致机体ET分泌增多和CGRP分泌减少；其调节机制可能是过度训练导致机体儿
+茶酚胺和血管紧张素分泌增多以及组织缺血缺氧，从而刺激内皮细胞合成和分泌ET增多，并抑
+制CGRP的分泌。
+4.2　过度训练导致机体ET和CGRP分泌的严重失调，可能是运动性高血压的病理生理机制。动
+态测定血浆ET和CGRP的含量对于过度训练的诊断与预防和研究因过度训练而引起的运动性高血
+压的病理生理机制具有一定的指导意义。
+5 参考文献
+1 姜文凯，等. 运动. 健康・ 内分泌调理. 北京：人民体育出版社，1995：246
+2 王明山. 内皮素对血流动力学的影响. 国外医学(麻醉学复苏分册)，1996；17(2)：71
+3 Letizia C, et al. Dynamic exercise induces elevation of plasma levels of endothelin-1 in patients with coronary 
+　artery disease. Angiology, 1995; 46(9)： 819~26
+4 Ahlbory G. et al. Metabolic and Vascular effects of circulating endothelin-1 during moderately heavy prolonged 
+　exrcise. J-Appl Physiol, 1995；78(6)：294~300
+5 庞继恩，et al. 高压氧对急性CO中毒患者血浆内皮素-1含量的影响. 中华航海医学杂志，
+　1996；3(3)：167
+6 Dashwood M, et al. Endothelin-1:contractile responses and autoradiographic localization of receptors in 
+　rabbit blood vesls. J. Cardiovasc Pharmacol, 1989;13(5):183
+7 Kurihara H, et al. The possble role of endothelin-1 in the pathgenesis of coronary vasopsm. J. Cardiovsc 
+　pharmacol, 1989;13(5):132
+8 汤 健. 降钙素基因相关肽与心血管疾病. 中华心血管病杂志，1989；17(2)：122
+9 李大元，et al. 无症状心肌缺血和心绞痛患者血浆内皮素、降钙素基因相关肽和P物质含量
+　的变化. 中国病理生理杂志，1996；12(4)：396
+10 Kawasaki, et al. Adrenergic modulation of Calcitonin gene-related Peptide(CGRP)-containing nerve-mediated
+　 vasodilation in the rat mesenteric resistance vessel. Brain Res, 1990；506：287
+11 彭 英，et al. 自发性高血压大鼠下丘脑和血浆ET、CGRP含量变化的研究. 临床神经病学杂志，
+　1996；9(4)：195
+12 Januszwiez A, et al. Elevated endothelin-1 plasma concentration in patients with essential hypertension. J 
+　Cardiovasc Risk, 1994;(1):81
+1997―04―28收稿 1997―06―07修回责任编辑：蓝 光

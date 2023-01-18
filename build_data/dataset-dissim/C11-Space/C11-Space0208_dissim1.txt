@@ -1,0 +1,121 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS
+1999年　第1期　No.1　1999
+
+
+
+复合材料层合板受低速冲击后的
+力学性能的实验研究*
+魏　俊　赵建华　梁越明
+　　摘　要　利用落锤装置,对玻纤/环氧和碳纤/环氧两种复合材料层合板进行了低速低能量的冲击实验研究。利用传感器技术记录了落锤冲击试样过程中的速度曲线,计算了冲击动能和材料损伤时的能量吸收。
+　　在单个处理机上,对于每个子区的求解,采用LU-SSOR迭代方法,即:
+L1N-1U1δQ(i)=R(i)-{Aij}δQij
+其中,i、j表示子区序号,且i,j=1,2,3,4,且δQij为在子区i的区域边界的求解中用到j的区域边界上的变量增量,Li、Ui的表达式详见文献［5］。测量了层合板受冲击后的剩余弯曲强度和剩余弯曲弹性模量,得出了两种复合材料层合板的能量吸收门槛值。结果表明,碳纤/环氧的能量吸收门槛值比玻纤/环氧低,但是前者有较宽的能量吸收容限。和剩余弹性模量下降相比,冲击载荷引起的损伤对弯曲剩余强度下降影响更大。
+　　主题词　能量吸收　能量吸收门槛值、吸收容限和吸收系数　剩余强度和剩余弹性模量　损伤阻力
+EXPERIMENTAL RESEARCH ON RESIDUAL 
+MECHANICAL PROPERTIES OF LAMINATES 
+SUBJECTED TO LOW VELOCITY IMPACT
+Wei Jun Zhao Jianhua Liang Yueming
+(Department of Modern Mechanics,University of Science and Technology of China。Hefei。230026)
+　　Abstract　A low-velocity and low-energy impact research were carried out for Glass/Epoxy and Carbon/Epoxy laminates using Drop-Weight.A velocity transducer technique was applied to record the impact velocity versus time trace during impacting.Impact energy and energy absorption were calculated and traces of impact loading and impact-point-displacement versus time also obtained accordingly.Residual bending strength and modulus were measured after impact damage.The results of two kinds of laminates indicate that the energy absorption threshold of Carbon/Epoxy is less than that of Glass/Epoxy,but the former has wide energy absorption tolerance.The degradation of residual strength caused by impact damage is greater than the degradation of residual modulus.
+　　Key words　Energy absorption Energy absorption threshold and absorption tolerance and absorption factor Residual strength and residual modulus Damage resistance
+1　引言
+　　纤维增强复合材料层合板具有很高的比强度和比刚度,因而被广泛应用于航空航天及其它民用领域,但是其结构和部件在制造、维修和使用过程中不可避免地要受到冲击载荷,并且这类材料对冲击载荷引起的损伤比较敏感。低速低能量冲击载荷引起的损伤表现为基体开裂和分层破坏。这种损伤范围大而且发生在材料内部,人们称为“难以觉察的冲击损伤”。
+
+
+图1　二维流场分区示意图
+　　二维的NS方程经过离散后可以写为［3］:
+
+上式左端为隐式部分,右端Ri,j是余量,用n层的值求解,为显式部分。
+　　许多研究工作者致力于探讨冲击损伤和冲击能之间的关系。文献［1-6］利用C扫描和X射线技术测量了冲击后材料的损伤区域,文献［7］利用揭层技术分层地测量了冲击后材料各层之间的损伤面积和形貌,得出了分层总面积和冲击能量之间的关系曲线。材料受冲击后的拉伸、压缩、弯曲强度以及弯曲弹性模量下降和冲击能量之间关系也是人们研究的一个重要方面［4,6,8-10］。
+　　表1中加速比Sp的计算公式为:
+
+表1　多机并行计算数值实验结果
+加速比二处理机四处理机
+负载平衡前1.613.06
+负载平衡后1.843.44
+　　从表1中可以看到,在我们研究的并行算法中,负载平衡是提高算法的加速比的有效手段。
+　　采用区域分割技术进行多机并行计算,在子区中采用什么样的网格体系将直接影响到区域之间,也就是各处理机之间的数据通讯量的大小。
+　　当复合材料受冲击载荷作用时,一部分冲击动能转变为恢复的弹性应变能;另一部分却被材料所吸收,造成了不可恢复的损伤。410073)
+参考文献
+　[1]Gustason J L,Montry G R and Benner R E.Development of parallel methods for a 1024 processer hypercube.SIAM Journal on scientific and statistical computing,1988,3(4)
+　[2]Olssen P,and Johnson S.Adataparallel implemstation of an explicit method for the threedimension comprseeible NS equation.Parallel Computing,1990
+　[3]王正华,王承尧.显格式宏任务的多机并行计算.空气动力学报,1995,(2)
+　[4]Li,H and Wang C Y.Implicit TVD schemes for the solution of three dimension hypersonic jet flowfield.AIAA paper,96-03165
+　[5]李桦.三维超音速/高超音速复杂流场分区多机并行计算与实验验证.国防科技大学博士论文,1996
+收稿日期:1996年9月6日,修回日期:1998年1月8日
+　　)
+。
+　　本文利用落锤装置,对玻纤/环氧和碳纤/环氧两种复合材料层合板进行了低速低能量的冲击实验研究。通过区域分割技术,我们将流场划分为四个子区,如图1所示。通过数学处理得到了冲击载荷和冲击点位移曲线。测量了板冲击后的剩余弯曲强度和剩余弯曲弹性模量,得出了两种材料层合板能量吸收门槛值。同时对多次冲击能量吸收问题进行了研究。
+2　材料和试样
+　　本文采用两种复合材料:玻璃纤维增强环氧树脂(简称玻纤/环氧)和碳纤维增强环氧树脂(简称碳纤/环氧)。玻纤/环氧层合板铺层顺序为［0/90］4S,固化工艺为100℃保持1小时,175℃保持4小时,成型压力为0.6MPa。固化成型后用砂轮切割机切割成125×125mm2方板。碳纤/环氧是用止海碳素厂生产的碳纤维预浸布铺层后加压热固化成型,层合板铺层顺序也是［0/90］4S。固化工艺为110℃保持半小时,160℃保温2小时,成型压力为2MPa,最后切割成100×100mm2方板。此两种方板冲击后,以冲击中心为对称点,顺上下表层00方向均匀切割5等份,如图1所示。冲击中心在C板条上。这样,玻纤/环氧和碳纤/玻氧板条试样宽度分别为25mm和20mm左右。
+
+
+图1　玻/纤/环氧和碳/纤/环
+氧层合板及试样示意图
+3　落锤试验和有关公式
+　　试验在落锤装置上进行。因此,在该多区多机并行算法中,平衡负载是提高并行效率最直接有效的手段。试样同心地放在具有72mm直径窗口的上下夹板中间,夹板四周用螺栓拧紧以模拟固支情况,如图2所示。
+
+图2　冲击示意图
+1.落锤,2.冲头,3.试样,4.夹具
+　　冲头端部是直径为22mm的半球。冲击过程大约7ms,有1400个左右记录数据。让落锤离试样表面156.5mm处自由落下,由本试验系统测得冲击速度为1.699m/s,用自由落体公式V=核算得V=1.7514m/s,两者相对误差为-3.0%。这是由于后者未考虑落锤下落过程中空气阻力和摩擦阻力的影响所致。根据能量公式,落锤冲击动能为:
+Ui=MV2i
+(1)
+式中M=3.6kg为落锤质量,Vi为冲击速度。材料损伤时吸收的能量为
+Ua=M(V2i-V2f)
+(2)
+其中Vf为落锤被板反弹后瞬时最大反向速度,MV2f表示落锤由于层合板受冲击后弹性变形能释放而获得的动能。冲击过程中,冲击载荷计算公式为
+
+(3)
+其中V(t)取自所记录的速度对时间曲线。冲击点位移计算公式为
+
+(4)
+当冲击动能为8.0J时,玻纤/环氧和碳纤/环氧复合材料板的V(t)曲线示于图3。根据公式(3)和(4)计算的两种材料板的冲击载荷以及冲击点位移曲线示于图4。
+
+
+图3　玻纤/环氧和碳纤/环氧两种
+层合板冲击速度对时间曲线
+
+图4　玻纤/环氧和碳纤/环氧两种层合板
+冲击载荷和中心位移对时间曲线
+4　复合材料板经过冲击后的弯曲试验和有关公式
+　　复合材料板经冲击后,按图1所示切割成板条试样进行弯曲试验。三点弯曲试验要求和数据处理公式遵循国标GB3356-82。弯曲强度计算公式为
+
+(5)
+式中Pb为试样最大失效载荷,l为跨距,b为试样宽度,h为试样厚度。弯曲弹性模量计算公式为
+
+(6)
+式中Δp表示对应于载荷-位移曲线上直线段的载荷增量,Δf表示对应于Δp的位移增量。玻纤/环氧试样跨厚比为16∶1,碳纤/环氧试样跨厚比为32∶1。对于PVM环境来说,其网络性能不高,传输数据的速度较慢,因此,怎样减少处理机之间的数据通讯量,则是在提高多机并行计算加速比时重点考虑的问题。速度由最大负值(Vi=-2.11m/s)回到零,再上升到最大正值(Vf=1.507m/s)。这两个最大值代表了落锤冲击板过程中的接触瞬时速度和脱离瞬时速度,其动能差值可用公式(2)计算,它消耗于材料的损伤。图4中玻纤/环氧板的中心最大位移为5.0mm,最大冲击载荷为1084.8N,板平均厚度为2.5mm;而碳纤/环氧板的中心最大位移为4.4mm,最大冲击载荷为1132.2N,板平均厚度为2.0mm,这说明后者具有较大的刚度。上图中冲击载荷曲线在上升段有明显的抖动,而下降段却很光滑,这说明材料损伤发生在冲击加载阶段而不是在卸载阶段。
+5.2　能量吸收系数和多次冲击
+　　将两种材料吸收的能量换算成能量吸收系数(即材料吸收的能量和冲击能量之比),通过最小二乘方法回归,能量吸收系数与冲击能量的线性方程和实验数据示于图5。因此,拼接网格适合于本文所构造的多机并行算法［4］。
+　　表1中加速比Sp的计算公式为:
+
+表1　多机并行计算数值实验结果
+加速比二处理机四处理机
+负载平衡前1.613.06
+负载平衡后1.843.44
+　　从表1中可以看到,在我们研究的并行算法中,负载平衡是提高算法的加速比的有效手段。从中可看出,除了4号试样,其它三个试样第一次冲击时能量吸收系数最大,以后随冲击次数增加,能量吸收系数逐渐减小。这种情形在较低冲击能量的1号试样中最为明显。
+　　本文采用的平衡负载的方法是静态平衡负载。当以较高的能量冲击时,如表1中4号试样,在第3次冲击时,能量吸收系数高达0.705,此时试样已接近完全破坏。在并行计算中,对应于处理机台数,对流场进行了分区,流场分区示意图如果图2所示。可见其吸收系数低于单次冲击情况,但是它们的吸收系数随冲击能增长的斜率却十分接近,分别为0.02,0.022和0.02。它说明在本文研究的情况下,复合材料板能量吸收系数随冲击能量增加的斜率接近常数。
+3.2　网格规模对算法加速比的影响
+　　本文在进行计算的数值实验中,观察了不同的网格规模对算法加速比的影响,具体结果如表2所示。实验结果表明,冲击点C板条试样的剩余力学性能受影响最大,所以着重以它为研究对象。将C试样的剩余强度σr和剩余弹性模量Er除以未损伤试样相应的强度和弹性模量σ0和E0,便得到剩余强度比σr/σ0和剩余弹性模量比Er/E0。图7和图8分别为两种材料的剩余强度比和剩余弹性模量比对所吸收能量的关系曲线及最小二乘拟合公式。这种方法对问题的分解和任务的分配只进行一次。
+　　从图中拟合公式可看出,碳纤/环氧的剩余强度比衰减指数α=0.15小于玻纤/环氧的α=1.46,以及碳纤/环氧材料的剩余弹性模量比衰减指数α=0.07,小于玻纤/环氧的α=2.55。这表明碳纤/环氧比玻纤/环氧有较宽的能量吸收容限或较高的损伤阻力。
+　　由式(7)直接得到
+　　　　　　　　　　　　　　　　　　　
+(8)
+当y=1时,用图7和图8拟合公式中的系数代入式(8),便可得到相应的能量吸收门槛值U0。当材料吸收能量低于此门槛值时,将不会引起力学性能下降。进一步还可以利用能量吸收系数对冲击能的关系得到冲击能量门槛值,经计算,由剩余强度关系计算的玻纤/环氧能量吸收门槛值U0为0.6J,由剩余弹性模量关系得到的U0为0.7J;而碳纤/环氧相应值分别为0.3J和0.4J。由此可见,碳纤/环氧的能量吸收门槛值比玻纤/环氧低,它说明碳纤/环氧复合材料对冲击载荷引起的损伤更加敏感。两种材料由剩余强度导出的能量吸收门槛值比由剩余弹性模量导出的能量吸收门槛值低,这说明冲击引起的复合材料分层损伤对强度的影响比对刚度的影响要大。
+　　显然,在子区的内点求解过程中,{Aij}均为零矩阵;另外,如果i子区与j子区之间没有公共区域边界,则{Aij}为零矩阵。它在任务之前进行负载划分。
+　　(2)冲击过程中的能量消耗由材料损伤所吸收。因此用能量吸收系数表达材料损伤较为合理。这样就影响了并行效率。近年来,国内外对将多机并行计算与CFD相结合的研究十分重视,在这方面开展了许多有益的工作,取得了很大进展［1,2,3］。因此,能量吸收系数除了和板的铺层情况有关外,还和冲击能量以及冲击次数有关。
+　　(4)碳纤/环氧的能量吸收门槛值比玻纤/环氧低,但是碳纤/环氧有较宽的能量吸收容限。冲击引起的复合材料分层损伤对弯曲强度的影响大于对弹性模量的影响。
+*国家863航天高技术资助项目
+作者单位：魏俊　赵建华　梁越明(中国科学技术大学力学和机械工程系。合肥。230026)
+参考文献
+　[1]Wu H T,SPRINGER G S.Measurements of Matrix Cracking and Delamination Caused by Inpact on Composite Plates,Jurnal of Composite Materials.1998,22(6):518-532
+　[2]LEE S M,ZAHUTA P.Instrumented Impact and Static Indentation of Composites.J.of Comp.Mater.,1991,25(2):204-222
+　[3]Poe Jr.C C.Impact Damage and Residual Tension Strength of a Thick Graphite/Epoxy Rocket Moter Case.J.of Spacecraft and Rockets,1992,29(3):394-
+　[4]Guild F J et al.A model for the reduction in compression strength of continuous fibre composites after impact damage.composites,1993,24(4):333-339
+　[5]BIBO G et al.High-temperature Damage Tolerance of Carbon Fibre-reinforced Plastics part 1:Impact Characteristics.composites,1994,25(6):414-424
+　[6]BIBO G A et al.High-temperature Damage Tolerance of Carbon Fibre-reinforced Plastics:2 Post-impact Compression Characteristis.composites,1995,26(2):91-102
+　[7]宁荣昌,王孝忠.玻璃纤维/环氧树脂复合材料迭层板冲击损伤特性的若干实验研究.复合材料学报,1994,11(3):70-75
+　[8]KIM J K et al.Drop-Weight Impact Damage Tolerance of CFRP with Rubbermodified Epoxy Matrix.Composites,1993,24(6):485-494
+　[9]Papanicolaou G C et al.New Approach for Residual Compressive Strength Prediction of Impacted CFRP Laminates.composites,1995,26:517-523
+　收稿日期:1996年8月20日,修回日期:1998年1月30日

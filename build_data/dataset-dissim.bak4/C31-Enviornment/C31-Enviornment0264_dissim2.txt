@@ -1,0 +1,62 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第3期 No.3 Vol.18 1998
+科技期刊
+
+论工业固体废物全过程总量控制*
+杨玉峰　傅国伟　(清华大学环境科学与工程系,北京 100084)
+文　摘　针对我国目前实施工业固体废物排放量总量控制存在的问题，结合国内外研究进展和趋势，提出了工业固体废物的全过程总量控制概念，即：基于工业固体废物的最小产生量、最大综合利用量、最大处理处置量、最小排放量这一连续的、全过程的总量控制程序，并就典型案例介绍了全过程总量控制的两种方法(物质流核算控制法，环境规划控制法)。
+关键词　工业固体废物　全过程总量控制　物质流核算控制法　环境规划控制法
+Dissertation on the total amount control of solid waste discharged from industry in every process.Yang Yufeng，Fu Guowei(Department of Environmental Science and Engineering, Tsinghua University, Beijing 100084).China Environmental Science.1998,18(3):240～243
+Abstract―Aiming at the problems in implementing total pollutant control of solid waste from industry and combining with the international research advance and trend, this paper puts forward the concept of total amount pollutant control of solid waste from industry in every process, that is, based on continuous procedure of the minimum production, the maximum utilization, the maximum disposal, and the minimum discharge in every process in controlling the amount of solid waste. In addition, this paper introduces two methods of total pollutant control of solid waste from industry in every process with typical case,the control method of material flow accounting and environment planning.
+Key words:solid waste from industry　total pollutant control in every process　the control method of material flow accounting　the control method of environment planning
+
+　　伴随着世界工业化、城市化进程，世界各国的工业固体废物产生量总体上在日益增加〔1〕。
+4.2　污染源时空分布系统
+　　污染源的时空分布及排污去向是划分水体功能的重要依据，也是计算削减污染物及进行环境影响评价的重要基础数据。我国的工业固体废物产生量逐年增加，排放量(包括排入水体)的绝对量也很大〔3〕，因工业固体废物排放和堆存造成的污染事故和损失也很严重〔4〕，且乡镇工业废物排放量增加迅猛〔5〕。
+2　水污染可控性分析程序框图
+　　该程序的主要功能是对排向河流的污染源进行具体的可控性分析，计算出全河段的主要污染控制单元和每一单元的主要污染源，并对每一种污染物进行单因子的解析，按照GB8978-88制定的三级五项排污标准，对每一污染源的每一种污染物排放情况进行解析(见图1)。决策者可根据颜色的深浅变化，反复修改数据，找出最满意的结果。点动该方框内的滚动条，可浏览全部数据，同时图3中还显现出该单元内的前5个排污大户。日本由于人口密集、国土狭窄，减量化、无害化、资源化一直是固体废物处理处置领域强调的重点。我国虽然在综合利用、稳定与固化、焚烧、填埋等技术方面有了一定的进展与规模，但总体而言，废物的资源化程度还很低。若选定万金渠CODCr的单因子解析画面(见图4)。所以作者认为，工业固体废物排放总量控制应从全过程控制的角度研究其内涵。并按水环境功能区划对工业结构进行经济评价，调整工业布局，加强对新建工业选址的监督，防止出现新的不合理布局，在经济迅速发展的前提下，实现经济和水环境的基本协调，这项工作是安阳市实现水环境战略中解决矛盾的协调因子之一，是分析水环境目标可达性的重要依据。因为就目前世界整体发展水平而言，工业固体废物排放是不可避免的，因而提出了考虑工业固体废物排放在内的全过程总量控制模式(多层目标优化模式，详见图1)。
+　min P (最小产生量)
+　　　　↓
+　　max U (最大综合利用量)
+　　　　　↓
+　　　max(min P-maxU) (最大处理、处置量)
+　　　　　　　　↓
+　　　　minD′(最小排放量)＝minP-maxU-max(minP-maxU)
+图1　工业固体废物全过程总量控制模式示意
+Fig.1　The total amount control model of discharged
+solid waste from industry in every process
+　　上述提出的是一个理想化的控制模式，在此基础上可以考虑费用最小化的松动模式，即最小产生量、最大综合利用量、最大处理处置量之间根据费用松动可分为3种形式。
+1.1　一般情形下的总量控制概念(源削减＋综合利用+处理处置＋排放)
+
+式中：C1、C2、C3、C4分别为源削减、综合利用、处理处置和排放所需的费用函数；S、U、D、D′分别为废物的源削减量，综合利用量、处理处置量、排放量；P为废物产生量。
+关键词　水污染　可视化　交互处理　动态显示
+Study on the visualization of control analysis for water pollution.Xuan Hua (Department of Environmental Information, Chinese College of Environmental Management Officials,Qinhuangdao 066000).China Environmental Science.1998,18(3):231～235
+Abstract―Taking Wanjin Canal water system for example, this paper for the first time in our country,puts forword the technical route of realizing the visualization system of computer pictures for the control analysis of water pollution and the design program of the system. The possibility of realizing mutual treatments for the dynamic pictures of river system is discussed in detail. The simple and practical mean is provided for dealing with the water environmental information of a large number of changing valley in a twinkle. By way of this technique, decision makers can make a new decision successfully when they grasp and know well the various changing circumstances of actual water systems.
+Key words:water pollution　visualization　mutual treatments　dynamic pictures
+　　进行水环境规划，首先要揭示的是规划范围内环境性质的空间变化规律，摸清环境现状，并由此进行功能区划、环境容量计算等一系列工作，这些工作都基于地理位置图。发表论文6篇。日本用1987年数据进行了零排放跟踪研究，图2为根据这一研究给出的物质流核算总量控制系统示意。
+
+图2　日本1987年的物质流核算总量控制系统示意(t/人*a)
+Fig.2　The total discharged pollutants control mothod 
+of material flow accounting of Japan in 1987
+2.2　环境规划控制法
+　　这种方法要经过废物最小产生量规划(如: 渣比系数控制、清洁生产)、废物资源化规划(综合利用、废物交换等)、废物无害化规划(无害化处理、处置、排放)。图3给出济南市主要工业固体废物总量控制规划流程示意。
+3　结语
+　　本研究的工业固体废物排放量全过程总量控制既是未来工业固体废物可持续管理的必然选择和方向，也是工业可持续发展的基础。
+　　在进行水污染可控性分析中应用计算机图形可视化技术，可以通过水系图形的动态显示，直接观察到每条河流每个控制单元的水质情况，变静态的数据表格为动态的图形输出。在现实中，对一个特定区域的工业固体废物而言，可根据具体条件(技术、经济水平等)选择文中提到的8种类型之一因地制宜地实施有地方特色的工业固体废物全过程总量控制。
+
+图3　济南市主要工业固体废物总量控制规划流程示意
+Fig.3　The total amount control planning flow of
+main solid waste from industry in Jinan
+括号内的数字分别表示2000年和2010年的规划数值(单位：万t)
+参考文献
+1　联合国环境规划署. 世界环境数据手册. 北京: 中国环境科学出版社, 1990
+2　世界资源研究所、联合国环境规划署、联合国开发计划署编. 世界资源报告(1990～1991).北京: 中国环境科学出版社，1991
+3　中国环境年鉴. 北京: 中国环境年鉴社, 1996
+4　国家环境保护局. 中华人民共和国固体废物污染环境防治法学习材料. 北京: 中国环境科学出版社, 1995
+5　国家环境保护局自然保护司. 中国乡镇工业环境污染及其防治对策. 北京: 中国环境科学出版社, 1995
+6　王　伟,袁光钰. 我国的固体废物处理处置现状与发展. 环境科学. 1997, 18(2): 87～90
+作者简介
+杨玉峰　男，1967年8月生。现在清华大学环境工程系攻读博士学位。主要从事环境管理与环境系统工程研究。曾参加“淮河流域水污染控制工程预可行性研究”、“环境冲突分析理论与方法研究”、“济南市环境规划”等10余项科研项目。如要研究万金渠婴儿沟这段区域的排放情况，可点动“婴儿沟”，见图3，画面的左下方就显示出在这一区域内所有污染源的各种污染物排放量和所占总量的百分比，对于一个污染源的不同排放口，图面上则分别列出，分别计算，然后再计算其合计。
+收稿日期: 1997-06-12
+* 国家自然科学基金(59508004)及“济南市环境规划”资助项目

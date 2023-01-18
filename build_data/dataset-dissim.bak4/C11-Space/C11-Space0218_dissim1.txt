@@ -1,0 +1,86 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS
+1999年 第2期　No.2 1999
+
+
+
+一种非线性最优导弹制导律
+蔡立军　周凤岐
+　　摘　要　以质点飞行器的非线性运动方程为基础,研究了导弹拦截目标问题。运用线化变换理论和线性二次型微分对策理论,导出了导弹和目标的最优控制策略,对导弹最优策略进行了综合分析,给出了一种可以实时实现的最优制导律。并以某型中远程地-空导弹的气动数据和数学模型为基础,进行了全弹道拦截数字仿真,仿真结果表明:该制导律在减少终端脱靶量方面比空间比例导引的效果好。
+　　主题词　线化理论　伪控制变量　最优制导律
+ONE NONLINEAR OPTIMAL MISSILE GUIDANCE LAW
+Cai Lijun Zhou Fengqi
+(Northwestern polytechnical university*Xi'an.710072)
+　　Abstract　The problem of interception of missile-target is studied,which based on nonlinear equations of motion of point-mass aircraft.The optimal control strategy of missile and target is given by using the theory of prelinearizing transformations and linear quadratic differential games.One on-line realizing optimal guidance law is synthesized.We,taking aerodynamic data and mathematical model of a certain earth-to-air midcourse-long missile,have made digital simulation of whole missile trajectory.Simulation results shows that guidance law which given in this paper is more effective than space PN(Proportional Navigation) guidance law.
+　　Key words　Preliearizing theory Pseudocontrol variables Optimal guidance law
+　　导弹能否击中目标,末端制导是关键。由于传统的比例导引在对付高速、高机动目标时的效果较差,因此有必要研究新的,能对付高机动目标的末端制导律。这里,输入为u=xp+1;而xi,fi∈Rm(i=1,2,…,p);fi(x0)=0;u,y∈Rm;n=p×m。依此类推,最后得到第四级的输出(即期望的舵偏角),即为导弹所需要的控制输入信号。
+　　作者单位：海军航空工程学院.烟台.264001
+参考文献
+　1　A.Isidori.NONLINEAR CONTROL SYSTEMS.Springer-Veriag,Berlin,1989
+　2　G.Meyer and L.Cicolani.Application of Nonlinear Systems Inverses to Automatic Control Design System Concepts and Flight Evaluations.Theory and Applications of Optimal Control in Aerospace System,P.Kant,ed.,NATO.AGARD-AG251,1980:10-1 to 10-29
+　3　G.Meyer.The Design of Exact Nonlinear Model Followers.Joint Automatic Control Conference,Charlottesvillt,VA,Vol.2,1981:article FA-3A
+　4　Antoiewicz RF.,Dute EL.,and Menon FKA Application and Flight Test of Linearizing Iransformation using Measurement Feedback to the Nonlinear Control Problem NASA TP-3154
+　5　顾文锦,赵国荣.导弹非线性系统的飞行控制.战术导弹技术,1996,3:33-38
+　6　赵国荣.基于非线性几何理论的飞控系统设计.哈尔滨工业大学博士学位论文.1996,6
+　7　于波等.惯性技术.北京:北京航空航天大学出版社,1994
+　8　曾颖超等.战术导弹弹道与姿态动力学.西安:西北工业大学出版社,1991
+　　收稿日期:1997年3月17日,修回日期:1998年7月15日
+。采用第3节介绍的方法进行设计。因此,导弹必须能够及时跟踪目标的机动变化,以便终端脱靶量能够尽可能的小。所以,在末制导阶段,导弹和目标的迎角及侧滑角很难保持在小的范围内,飞行器速度方向与推力方向重合的假定［3］已不符合实际情况。对于导弹和目标来说,在实际的空气动力状态下,它们在三维空间中的质点运动方程［4］为(1)式。其中下标i=M,T。然后提出了一种由逆解所组成的块对角控制器的设计方法。应该指出,在部分导弹模型中,控制状态量u能通过舵面的升力和侧力对弹体质心动力运动产生影响,而且到达了不能忽视的程度。而
+　　　　(8)
+由(7)、(8)式可以看,飞行器为了实现(7)式所给出的控制策略,必须知道伪控制变量的大小。
+2　最优伪控制变量
+　　通过变换,我们将导弹和目标的运动模型转化成了(4)和(5)式所表示的线性时不变方程。在线化模型下,导弹将充分利用自身的伪控制变量来获得尽可能小的终端脱靶量,而目标则将充分利用自身的伪控制变量来获得尽可能大的终端脱靶量。在第一个子系统内设
+　　　　　　1=v1　　　　　　　　　　　　　　　　　　(18)
+则针对此子系统的控制设计为
+　　　　　　v1=-a1(x1-1)　　　　　　　　　　　　　　(19)
+其中1为系统的期望输入,系数a1为正实常数。于是(4)、(5)和(9)式就构成了线性二次型微分对策问题,运用线性二次型微分对策理论,即可获得导弹的最优伪控制变量为(详细推导见文献［6］,推导过程中考虑了导弹的动态特性。):
+　　　　　　　　　(10)
+　　限于篇幅,EM(t),ψ1M,ψ2M的具体表达式见文献［6］,tgo=tf-t0为剩余飞行时间。
+3　非线性制导律
+　　在前面,我们利用导弹拦截目标的线化模型得到了导弹的最优伪控制变量,由于线化变换并没有改变原问题中的位置状态变量,因此,脱靶量的定义在变换前和变换后的问题中是相同的,这个事实对于保证上节所获得的解的有用性是很重要的。将(10)式所给出的伪控制变量代入(7)、(8)两式即可获得导弹的实际控制为:
+　　　　(11)
+其中
+　　(12)
+这样,(11)、(12)两式就给出了导弹的制导规律,导弹为了实施(11)、(12)两式所给出的制导规律,除了需要知道伪控制变量外,还需要知道弹道倾角,导弹质量等信息,这些量的获取问题请参看文献［5］的讨论。
+4　数字仿真与结论
+　　为了验证上面所给出的非线性末制导律的有效性,本文利用某型中远程地-空导弹气动数据与数学模型进行了空间拦截全弹道数字仿真,当导弹与目标之间的距离大于20公里时,采用文献［5］所给出的中制导律,当导弹与目标之间的距离小于等于20公里时,采用本文所给出的非线性末制导律或空间比例导引,仿真结果见表1和图1～图3(TG=Target)。
+由(18)式求出1,则第二个子系统的期望输入可由第一个子系统的逆解求出如下:
+　　　　　　　　　　　　　　　　　　(21)
+依此类推,最后可以得到系统的控制输入为
+　　　　　　　　　　　　　　　　　　 (22)
+其中
+　　　　　　3=-a3(x3-3)　　　　　　　　　　　　　 (23)
+把上述的设计用方块图表示如图2所示。此时,导弹速度为VM=440m/s,导弹高度HM=1100m,当目标的初始位置为xT0=100公里时,弹体姿态角ψM0=0°,θM0=35°。当目标的初始位置为xT0=50公里,弹体姿态角分别为ψM0=0,θM0=45°,目标速度为VT=350m/s,θT0=0,ψT0=180°当导弹与目标的距离小于等于5公里时,目标开始机动。其它参数分别为CT=0.2,CM=1.0,K=100,空间比例导引系数KPN=3.5,仿真过程所需要的剩余飞行时间由文献［7］中的估计方法获得。经过上述处理后,(4)式的非线性函数关系为:
+　　　　　　　　　　　　　　　　　　(6)
+　　(3)姿态角运动学方程
+　　根据弹体系和平台系之间的转换关系,可以得到
+　　　　　　　　　　　　(7)
+　　考虑到角速度的空间几何关系:
+　　　　　　　　　　　　　(8)
+式中ωbpb、ωbib、ωbip分别为弹体系对平台系、弹体系对惯性系、平台系对惯性系的角速度在弹体上的投影;而ωbie和ωbep为地球自转角速度、平台系对地球系的角速度在弹体上的投影,则(7)式为
+　　　　　　　　　　　　　　　　　　　　　　　　(9)
+　　(4)角速度动力学方程［8］
+　　　　　　　　　　　　　　　　(10)
+　　而合力矩Mb的计算公式为
+　　　　　　　(11)
+其中S为弹体特征面积,L为特征长度,,,mz分别为三个轴向的力矩系数,具体含义可参考文献［8］。一般情况下,在末制导开始阶段,本文所给出的末制导律比空间比例导引所需要的法向过载大,而在末制导结束阶段,末制导律比空间比例导引所需要的法向过载小,这主要是因为本文的末制导律中包含了目标机动的潜在因素。
+　　主题词　远程飞航导弹　导弹数学模型　模型逆解　非线性控制系统　块对角控制器
+A DESIGN OF NONLINEAR CONTROL SYSTEM FOR
+LONG-DISTANCE AERODYNAMIC MISSILE
+Gu Wenjin Wang Shixing Wei Feng
+(Naval Aeronautical Engineering Academy.Yantai.264001)
+　　Abstract　In this paper,the motion equations of a long-distance aerodynamic missile can be transformed in block diagonal form by using given two principles.Thus,a definition of block diagonal nonlinear system and its inverse solution are proposed.After that,a design method that is called block diagonal controller(BDC) is proposed.Therefore,a flight control system is designed using BDC's method for a long-distance aerodynamic missile.The result of the design has been proved by mathematical simulation,which shows that the BDC's design has well prospects.
+　　Key words　Long-distance aerodynamic missile Mathematical model for missile Inverse solution of model Nonlinear control system Block diagonal controller
+1　引言
+　　对于一个简单的低阶非线性系统,可以直接应用微分几何反馈线性化理论［1］的基本内容进行设计。
+　　作者单位：西北工业大学应用数学系*西安*710072
+参考文献
+　1　X.-D.Sun and T.Clarke.Advanced Aircraft Flight Control Using Nonlinear Inverse Dynamics.IEE Proc.Control theory,1994,141(6):418-426
+　2　Isidori A.Nonlinear Control System.2nd ed.,Springer-Verlag,New York,1989
+　3　PKA.Menon.Short-Range Nonlinear Feedback Strategies for Aircraft Pursuit-Evasion.J.Guid.and Control,1989,12(1):27-32
+　4　肖业伦.飞行器运动方程.航空工业出版社,1987
+　5　蔡立军.微分对策最优制导律研究.西工大博士论文,1996
+　6　蔡立军,周凤岐.微分对策最优导引特性分析.西北工业大学学报,1996,14(4):575-579
+　7　侯明善.空-空导弹微分对策最佳导引律的研究.航空学服,1987,8(11):579-586
+　　本文由航空基金资助
+收稿日期:1997年3月21日,修回日期:1998年3月19日

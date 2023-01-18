@@ -1,0 +1,56 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000 Vol.19 No.3 P.19-20
+
+
+
+32位Windows应用程序的实例检测技术
+高升　邱湘茹　唐世伟　贾文举
+　　摘　要：对32位Windows中的实例检测技术进行了研究,并对各种检测技术进行了对比。
+　　关键词：应用程序实例 实例检测 API函数
+　　多任务操作系统Windows允许用户同时运行多个程序,甚至对1个应用程序,也可以创建它在内存中的多个副本,将每个应用程序的1个内存副本称为实例。在一些实际系统中,经常要对实例进行控制,例如控制只启动应用程序的1个实例时,在进程中要检测是否已有1个实例启动。在16位Windows应用程序中,通过检测操作系统传送给WinMain函数的第2个参数hPrevInstance,来检测其它实例的存在。WinMain函数在建立窗口函数和进入消息循环之前,检测hPrevInstance的值,若此参数的值为真则说明应用程序的实例已经存在。然而在32位Windows中,hPrevInstance的值永远为假,它不能再作为判断应用程序实例是否存在的标志。本文以Delphi为工具,对32位Windows中应用程序实例的各种检测技术进行了论述。实际读入的数据是由GetOverlappedResult函数返回的,该函数的最后1个参数值为TRUE,表示它等待异步操作结束后才返回到应用程序。尽管ReadFile采用的也是同步文件读写方式,但由于timeOver的区间超过时间设置为MAXWORD,所以ReadFile每次将读出接收队列中的所有处于等待状态的数据,1次最多可读出nWantRead个字节的数据。
+　　如果所规定的待读取数据的数目nWantRead较大且设定的超时时间（计算公式为:timeMultiplier＊ nWantRead+ timeConstant）也较大,而接受缓冲区中数据较少,则可能引起线程阻塞。例如:
+　　……
+　　COMSTAT comStat;
+　　DWORD dwEvent;
+　　SetCommMask（hComport,EV_RXCHAR）;
+　　……
+　　if（WaitCommEvent（hComport,&dwEvent,NULL））
+　　　　　if（（dwEvent&EV_RXCHAR）&&comstat.cbInQue）
+　　　　　　　　　ReadFile（hComport,inBuffer,comstat.cbInQue,
+　　　　　　　　　　　　　　　　　　　　　　&nRealRead,NULL）;
+　　　　　……
+　　｝｝
+　　……
+　　首先用SetCommMask函数设置事件掩码,上面的代码中为EV_RXCHAR,表示接收到1个字符时触发这一事件,然后调用WaitCommEvent函数等待该事件的发生。例如:
+　　……
+　　COMMTIMEOUTS timeOver;
+　　memset（&timeOver,0,sizeof（timeOver））;
+　　timeOver.ReadIntervalTimeout=MAXWORD;
+　　SetCommTimeouts（hComport.&timeOver）;
+　　……
+　　ReadFile（hComport.inBuffer.nWantRead.&nRealRead,
+　　　　　　　NULL）;
+　　……
+　　除了COMMTIMEOUTS结构的变量timeOver的设置不同,查询方式与同步方式在程序代码方面很类似,但二者的工作方式却差别很大!因为在工程文件打开的情况下,内存中始终存在1个应用程序设计时刻的主窗口。另外,可充分利用Win32的多任务的特点,编写出强壮性较高、实时性较好的通信程序。窗口枚举函数EnumWindows需要2个参数,第1个参数指向1个实际将要查找的目标窗口与当前所有正在运行的窗口进行匹配操作的回调函数MatchProc的内存地址,第2个参数则用于返回找到的目标窗口的句柄。
+1.2 查询方式
+　　查询方式,即1个进程中的某一线程定时地查询串口的接收缓冲区,如果缓冲区中有数据,就读取数据;若缓冲区中没有数据,该线程将继续执行,因此会占用大量的CPU时间,它实际上是同步方式的一种派生。Windows95通信一般都以WOSA（Windows Open Services Architecture,即Windows开放式服务体系）模型为基础,在此模型中位于上层的应用程序通过调用各种通信API（Application Programming Interfaces,即应用程序接口）与位于下层的设备驱动程序进行数据交换。即使在设计时刻的Delphi IDE环境内,也可以正常工作。
+3 互斥信号量方法
+　　在32位的Windows操作系统中,Microsoft引入了互斥信号量技术,该技术主要应用于进程间共享资源及进程同步,因此互斥信号量可以用于表示1个实例已经存在。为了实现线程间同步与通信,上面的代码中用CreateEvent函数产生1个人工复位事件,并将其句柄赋予wrOverlapped的hEvent成员。
+　　//Test3.DPR
+　　var hMutex:THandle;
+　　begin
+　　　　hMutex:=CreateMutex（
+　　　　　　　　　nil,
+　　　　　　　　　False,
+　　　　　　　　′FirstInstance′
+　　　　）;
+　　　　if WaitForSingleObject（hMutex,0）<>
+　　　　　wait_timeout then begin
+　　　　　　　　　Application.CreateForm（
+　　　　　　　　　　′TMyMainForm′,
+　　　　　　　　　　MyMainForm）;
+　　　　　　　　　Application.Run;
+　　　　end;
+　　end.
+　　本文给出的若干种实例检测方法虽然是以Delphi给出的,但对其它平台开发的32位Windows程序也可借鉴。在实时性要求较高的场合建议采用这种方式

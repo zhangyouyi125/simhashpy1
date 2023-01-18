@@ -1,0 +1,145 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第5期 No.5 Vol.18 1998
+科技期刊
+
+β-萘磺酸钠生产废水的处理
+彭书传　魏凤玉　崔康平　邓传芸　周源祥　(合肥工业大学资源与环境科学系，合肥 230009)
+文　摘　先采用液膜分离技术对β-萘磺酸钠生产废水进行处理，回收其中的β-萘磺酸钠，然后用H2O2-Fe2+催化氧化法进行深度处理，取得很好的效果。废水COD和色度去除率分别可达99.54%和94.14%，处理后的废水达到排放标准。因此，水中有机物的去除率随改性时所用的表面活性剂的浓度(<CEC)的增加而增大。
+　　本文研究了先用液膜分离技术对β-萘磺酸钠废水进行处理，回收其中大部分β-萘磺酸钠后，再用H2O2-Fe2+催化氧化法进行深度处理，结果表明,该法不仅处理效率高，而且实现废母液中有用物质的资源化，是处理β-萘磺酸钠废水的一种即经济又十分有效的新方法。
+1　实验部分
+1.1　主要原料
+　　废水，取自南京化工厂，其pH值为2.23，COD为41630 mg/L，色度256度，含盐量为34.41g/L，β-萘磺酸钠含量为13.93g/L。4%CTMAB-膨润土对7种有机物的等温吸附线见图2～图5。
+
+图5　4%CTMAB-膨润土去除水中苯胺和硝基苯等温吸附曲线
+Fig.5　Isothermal sorption curves of aniline and nitrobezene
+1.苯胺　2.硝基苯
+表3　苯、甲苯、乙苯等温吸附曲线回归方程和相关系数
+Table 3　Linear regression data for sorption isotherms
+
+有机物回归方程相关系数
+苯Y=0.088X-0.104R=0.995
+甲苯Y=0.117X+0.147R=0.994
+乙苯Y=0.228X-0.084R=0.962
+
+表4　辛醇-水分配系数(Kow)及溶解度〔3〕
+Table 4　Solubility and otanol-water partition coefficient of organics
+
+有机物　Kow溶解度有机物Kow溶解度
+苯酚298.2对硝基苯酚811.6　
+硝基苯710.2苯　　　　1400.072
+苯胺7.93.6甲苯　　　5400.045
+乙苯1400　0.015
+
+　　由此可见，有机膨润土对水中有机物的去除性能及作用机理与有机物本身的性质有关。
+1.4　基本实验方法
+　　在150mL碘量瓶中分别加入0.5g CTMAB-膨润土(或原土)，25mL不同浓度的有机物溶液，盖紧后，固定在恒温振荡器中，在25℃下以120r/min振荡1h，离心后取上清液，测定其中有机物的残留量(扣除挥发等)，计算水中有机物的去除率及吸附量。
+表1　原土及CTMAB-膨润土的层间距
+Table 1　Interlayer spacing of natural bentonite and CTMAB-bentonite
+
+改性时CTMAB
+浓度(%)层间距
+(nm)改性时CTMAB
+浓度(%)层间距
+(nm)
+原土1.29541.64　
+11.37651.834
+21.43461.928
+31.54471.902
+
+　　由表1可见，CTMAB-膨润土的层间距都大于原土；CTMAB-膨润土的层间距随改性时CTMAB浓度的增加而增大，但当CTMAB浓度大于6%(此时加入的CTMAB量相当于82.4mmol/100g土，超过了原土的CEC)时，其层间距基本不变，这是由于当加入的CTMAB量小于或等于膨润土的CEC时,CTMAB可以计量方式即100%被交换到膨润土上，但在超过CEC后，实际发生交换的CTMAB就不再随加入量的增加而增大。
+1.3　测试方法〔2〕
+　　COD用标准重铬酸钾法测定；pH值用玻璃电极法测定；色度用稀释倍数法测定；β-萘磺酸钠用分光光度法测定。有机膨润土的比表面积随改性时所用表面活性剂浓度的增加而减小〔4〕。
+表1　不同表面活性剂的去除率
+Table 1　Removal rate of different surfactants
+
+表面活性剂COD去除率(%)β-萘磺酸钠去除率(%)
+E644　　71.7074.60
+LMA-3，448.2152.50
+LMS-2　11.7113.55
+SPAN-8042.9045.60
+
+　注：油内比Roi为1∶1　流动载体三辛胺用量为5%　表面活性剂用
+量为2%　内相试剂为0.5mol／L H2SO4　接触时间为5min　乳
+水比Rew为1∶4
+　　由表1可见，表面活性剂选E644时处理效果较好。其原因是，E644为一种较高分子量的聚胺类表面活性剂，其耐酸碱性强，膜稳定性好，而SPAN-80为聚酯类化合物，LMS-2为低分子量聚胺类化合物，它们形成的油膜在强酸碱条件下稳定性较差。
+2.1.2　流动载体的选择　在其它条件相同的情况下，选用不同的载体进行比较实验，见表2。
+表2　流动载体对去除率的影响
+Table 2　The effect of flow carrier on removal rate
+
+流动载体COD去除率(%)β-萘磺酸钠去除率(%)
+无载体25.0018.57
+TBP48.2152.11
+P20413.4011.25
+三辛胺71.7074.60
+
+　　由表2可见，流动载体选三辛胺时分离效率最高，选P204时分离效率最低，这可能是由于P204中的两个2-乙基己基基团较大，与β-萘磺酸钠离子的配合能力差，且P204的加入使膜的粘度下降，导致分离效率下降。
+
+图5　4%CTMAB-膨润土去除水中苯胺和硝基苯等温吸附曲线
+Fig.5　Isothermal sorption curves of aniline and nitrobezene
+1.苯胺　2.硝基苯
+表3　苯、甲苯、乙苯等温吸附曲线回归方程和相关系数
+Table 3　Linear regression data for sorption isotherms
+
+有机物回归方程相关系数
+苯Y=0.088X-0.104R=0.995
+甲苯Y=0.117X+0.147R=0.994
+乙苯Y=0.228X-0.084R=0.962
+
+表4　辛醇-水分配系数(Kow)及溶解度〔3〕
+Table 4　Solubility and otanol-water partition coefficient of organics
+
+有机物　Kow溶解度有机物Kow溶解度
+苯酚298.2对硝基苯酚811.6　
+硝基苯710.2苯　　　　1400.072
+苯胺7.93.6甲苯　　　5400.045
+乙苯1400　0.015
+
+　　由此可见，有机膨润土对水中有机物的去除性能及作用机理与有机物本身的性质有关。
+2.1.3　内相试剂的选择　内相试剂可以是酸或碱，本文分别采用H2SO4和NaOH作内相试剂，结果如图1，图2所示。因此，水中有机物的去除率随改性时所用的表面活性剂的浓度(<CEC)的增加而增大。这是由于H+浓度增加有利于界面内反萃取反应的进行，当H+浓度过高时，表面活性剂稳定性降低，膜破损率增加而造成的。因此选0.5mol／L的H2SO4作内相试剂。
+
+图1　H2SO4浓度与去除率的关系
+Fig.1　The relationship between H2SO4 concentration and removal rate
+
+图2　NaOH浓度与去除率的关系
+Fig.2　The relationship between NaOH concentration and removal rate
+2.1.4　接触分离时间的确定　在相同膜配方条件下，不同萃取接触时间对去除率的影响如图3所示。
+
+图3　接触时间对去除率的影响
+Fig.3　Effect of contact time on removal rate
+　　由图3可见，萃取及反萃取反应在10min内基本达到平衡。如时间再增加，由于乳滴之间碰撞增多，造成一部分乳滴破裂，使分离效率反而降低，故选时间为10min为宜。停止搅拌后，两相能迅速分层，在1min内形成清晰的相界面。
+2.1.5　最佳膜配方的确定　为了确定最佳配方，以表面活性剂E644、流动载体三辛胺、内相试剂0.5mol／L H2SO4、接触时间为固定因素，以油内比Roi、乳水比Rew、表面活性剂用量、载体用量为实验因素，每个因素3个水平，设计正交实验，得出最佳膜配方为：Roi=1∶1;Rew=1∶4;表面活性剂用量为3.0%；载体用量为8%。
+　　最佳膜配方条件下的处理结果：COD去除率为78.50%,β-萘磺酸钠去除率为85.25%,色度去除率为90.2%。
+关键词　CTMAB-膨润土　阳离子表面活性剂　吸附　分配　水处理 
+Sorption of some organic pollutants to CTMAB-bentonite from water.Zhu Lizhong, Ren Xiaogang, Yu Shaobin，Guo Weiqiang(Department of Environmental Science, Hangzhou University, Hangzhou 310028).China Environmental Science.1998,18(5):450～454
+Abstract―CTMAB-bentonite was synthesized by the exchange of cetyltrimethylammonium (CTMA) cations for inorganic ions on the internal and external surfaces of bentonite.The properties and mechanisms for CTMAB-bentonite to sorb benzene, toluene, ethylbenzene, nitrobenzene, aniline, phenol and p-nitrophenol in water were investigated in detail. Benzene, toluene and ethylbenzene sorption to CTMAB-bentonite was characterized by linear isotherms, solute partition, between water and organic phase composed of the large alkyl functional groups of the CTMAB cations. Phenol and p-nitrophenol sorption to CTMAB-bentonite was caused primarily by adsorption, relatively strong solute uptake. Their isotherms were nonlinear.Nitrobenzene and aniline sorption to CTMAB-bentonite was weak, and the isotherms were approximately linear. Their sorption was caused by both the partition and the solute uptake. The sorption mechanism was also studied by octanol-water partition coefficients of organic compounds.
+Key words:CTMAB-bentonite　quaternary ammonium cation 　adsorption　 partition　water treatment
+　　 膨润土是一种天然矿物，主要成份是铝硅酸盐蒙脱土，具有强吸水性、可塑性、粘结性和强离子交换性。有机膨润土吸附水中各类有机物的机理也有待深入研究。
+
+图4　油相重复使用情况
+Fig.4　The situation of oil phase being reused
+　　重复使用实验结果表明，破乳后的油相可以重复使用，只是随着重复使用次数增加，处理效果略有降低。这是由于在膜分离、破乳过程中或多或少地有一部分表面活性剂及流动载体损失而造成的。
+　　破乳后的水相为β-萘磺酸钠的浓缩液，其含量达92.78g／L ，与原废水相比浓缩6倍以上，可回用于生产。
+2.2　H2O2-Fe2+催化氧化处理废水试验
+　　液膜分离后，虽然废水中部分有用物质得以回收利用，但出水水质仍然较差。为了进一步改善处理效果，使最终出水水质达到国家排放标准，本文选用H2O2-Fe2+催化氧化法对液膜分离后的废水进行深度处理。当反应条件为：H2O2以H2O2/COD=2.0g/g计量分批投加，Fe2+投加量为4.0g/L，反应时间为60min，pH=1.5～2.5时〔5〕，处理结果见表3。
+表3　液膜分离后H2O2-Fe2+法处理结果
+Table 3　 Treating result of H2O2-Fe2+oxidation and liquid membrane separation
+
+指标原废水液膜分离后废水深度处理后废水
+COD(mg／L)416308950189
+色度(倍)　　2562515
+
+　　从表3可见，采用液膜分离与H2O2-Fe2+催化氧化法联合处理β-萘磺酸钠工业废水，取得极好的处理效果，废水COD总去除率达到99.54%，色度去除率达到94.14%。
+3　结论
+3.1　在采用E644作表面活性剂，三辛胺作流动载体，0.5mol／L H2SO4作内相试剂，接触时间为10min的条件下，通过正交实验得到最佳膜配方：Roi=1∶1；Rew=1∶4；表面活性剂用量为3%；流动载体用量为8%。
+3.2　废乳破乳后的油相可重复使用，水相回收物浓缩6倍以上，可回用于生产。
+3.3　液膜分离后的废水经H2O2-Fe2+催化氧化法深度处理后，COD总去除率达到99.54%，色度去除率为94.14%，中和后水质达到国家排放标准。
+参考文献
+1　谢　锐.我国染料行业几种主要废水的治理技术概况.化工环保，1994，14(3)：139～141
+2　奚旦立，刘秀英.环境监测.北京：高等教育出版社，1995
+3　邵　刚.液膜分离技术及其应用.膜分离科学与技术，1982，1：57
+4　陆　岗，李盘生.液膜乳状液连续电破乳研究.化学工程，1994，22(4)：20～24
+5　彭书传，魏凤玉，崔康平.H2O2-Fe2+法处理β-萘磺酸钠生产废水的研究.工业水处理，1998，18 (1)：23～25
+作者简介
+彭书传　男，1964年10月生。硕士、讲师。现在合肥工业大学资源与环境工程系从事环境工程专业的教学和科研工作。年产500t凹凸棒橡胶填料及中试技术获省级科技进步二等奖1项，发表论文9篇。
+收稿日期：1998-01-19

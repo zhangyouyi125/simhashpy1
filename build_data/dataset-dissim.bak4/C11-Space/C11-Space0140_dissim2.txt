@@ -1,0 +1,196 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年4月  第19卷  第2期科技期刊
+
+改进的推广KALMAN滤波器
+在导弹被动制导中的应用*
+周 荻
+(清华大学自动化系*北京*100084)
+胡恒章 杨旭东
+(哈尔滨工业大学航天学院*哈尔滨*150001)
+摘  要　　本文研究将改进的推广Kalman滤波器(MEKF)应用于导弹被动制导
+问题。为了提高系统的可观性，我们采用一种双重指标来设计最优导引律。广义被控对象P(s)用状态方程描述为：
+(1)
+式中x∈Rn为广义被控对象的状态变量，广义被控对象P(s)的传递函数形式为：
+(2)
+从w到z的闭环系统传递函数为：
+z=Fl(P，K)w
+(3)
+其中，Fl(P，K)=P11+P12K(1-P22K)-1P21
+标准H∞控制问题：求取控制器K(s)使闭环系统内稳定，且使系统闭环传递函数Fl(P，K)满足：
+‖Fl(P，K)‖∞＜γ0
+(4)
+其中γ0为给定常数，不失一般性取γ0=1。由文献［3］提出的权函数选取方法，取W2(s)=(s+10)/15I2×2，W2(s)的Bode图如图3的实线所示，W1(s)=0.1γ(s+60)/(s+0.01)I2×2，其中γ为调节系数。仅有角度测量的导弹
+制导问题又称被动制导问题。由文献［3，4］知，当广义被控对象P(s)满足6个假设条件，且当标准H∞控制问题的等效条件成立时，即可利用两个代数Riccati方程算法求取H∞鲁棒控制器，详细内容见文献［3，4］。在被动制导条件下，
+导弹的机动飞行轨迹会对滤波器的性能产生直接影响［2］、［3］，因此在
+设计导引律时有必要考虑系统可观性指标。　　
+
+
+图2　俯仰-偏航通道控制系统的结构方块图
+由于导弹的作战空域较大，沿弹道飞行时导弹的模型参数变化较大，而利用H∞鲁棒设计方法设计的控制器仅在可允许的模型不确定性界内保证系统的鲁棒稳定性要求，超出这一范围就不一定能满足要求，甚至系统有可能失稳。然而，
+只有当系统的动态模型和观测模型都很接近于线性时，EKF的估计结果才有
+可能接近于真值。一种改进的推广Kalman滤波器［4］(MEKF)可以克服这一
+约束，因此我们提出在导弹被动制导中应用MEKF进行目标状态估计。
+
+2  直角坐标系中被动制导问题的描述
+
+图1 导弹与目标相对运动关系在仿真时，导弹和目标都可以用质点来表示(见
+图1)。
+　　设计指标为：上升到70%稳态值的时间tr为：
+tr0.2s　h＜12km
+0.35s　h12km，超调：σ10%
+(6)
+4　俯仰-偏航通道自动驾驶仪设计
+　　导弹与目标的最大斜距为50公里，弹道上导弹的速度V变化范围为554～1405米/秒，高度变化约17.5公里，动压头变化约7倍，可以看出导弹的作战空域较大。系统动态模型
+为
+dX=AXdt+bdt+wdt
+(1)
+其中X=［x y z vx vy vz aTx aTy aTz］T，前三个变量代表目标与导弹之间的
+相对位置，中间的三个变量代表相对速度，后三个变量代表目标加速度；b=
+［0 0 0 -aMx -aMy -aMz 0 0 0］T是控制向量，aMx、aMy、aMz代表导弹加速度；
+w=［0 0 0 0 0 0 wTx wTy wTz］T是噪声向量。另外，
+
+
+
+系统观测模型为
+dY=h(x)dt+vdt
+(2)
+其中h(x)=［tan-1y/x  tan-1-z/(x2+y2)1/2］T，v代表观测噪声。
+w和v都是均值为零的高斯白色随机向量，且w和v相互独立。
+参考文献
+  1　Reichert R T.Homing Performance Comparison of Selected Airframe Configuration Using Skid-to-Turn and Bank-to-Turn Steering Policies.NASA-CR-3420，1981
+  2　Zames G,Feedback and Optimal Sensintivity:Model Reference Transformations,Multiplicative Seminorms,and Approximate Inverse.IEEE Trans.Automatic Control,1981,AC-26,p.301-320
+  3　郑建华.鲁棒控制理论及其在BTT导弹中的应用.哈尔滨工业大学工学博士学位论文，1996年1月
+  4　Doyle J C,Glover K,Hargoneger P K and Francis B A.State-Space Solution to Standard H2 and H∞ Control Problem.Proceeding of the American Control Conference,Atlanta,1988,1691-1696
+。xf,yf,zf代表终端脱靶量。
+(5)
+在双重指标控制方案中，我们要在性能指标(5)的基础上加入系统(3)―(4)
+的可观性指标，我们定义这一指标为
+
+(6)
+其中Φ(t,t0)是=Ax的转移矩阵，即
+
+
+Δt=t-t0,H=? h/?xT,S和N是正定对角加权矩阵，tr表示矩阵的迹。由于H∞控制设计方法的两个代数Riccati方程算法定义在标准H∞控制问题框架下，需将式(5)的加权混合灵敏度设计问题转化为标准H∞控制问题，详细过程见文献［3］，称此时的H∞控制设计方法为H∞/加权混合灵敏度设计方法。利用矩阵迹的性质，(6)式可
+以写作
+
+(7)
+把H,N,Φ，S按定义代入(7)式可得
+
+(8)
+当只考虑位置信息时，令s1=1,s2=s3=0,则(8)式化为
+
+(9)
+综合(5)、(9)两式，设双重性能指标为
+
+(10)
+其中c和s是大于零的常数。
+
+    上述双重指标控制问题可以沿直角坐标系的x、y、z轴解耦成三个子问题，
+这样只需考虑求aMy使得在满足约束=Vy,y=aTy-aMy,Ty=-λaTy以及t0,y0,vy0,aTy0和tf的条
+件下，性能指标
+
+(11)
+最小。
+
+    应用最优控制理论可以求得
+aMy=c1y+c2vy+c3aTy
+(12)
+其中
+c1=Λ21Γ11+Λ22Γ21+Λ23Γ31
+c2=Λ21Γ12+Λ22Γ22+Λ23Γ32
+c3=Λ21Γ13+Λ22Γ23+Λ23Γ33
+
+矩阵Λ和Γ的定义和解法较繁琐，这里不
+再详述，读者可参阅文献［3］中的附录。4  改进的推广Kalman滤波器(MEKF)
+
+    考虑非线性系统
+dX=f(t,X)dt+Budt+ε1σ(t)dw,X(0)=X0,t≥0
+(13)
+dY=h(t,X)dt+ε2σ0(t)dv,Y0=0,t≥0
+(14)
+其中状态X∈Rn，观测Y∈Rm，控制u∈Rl，随机过程w、v是两个相互独立的布朗
+运动，它们的维数分别是n1和m1，ε1、ε2是大于零的常数，B是n×l矩阵，
+σ(t)是n×n1矩阵，σ0(t)是m×m1矩阵，h：［0,∞)×Rn→Rm,f：［0,∞)×Rn→Rn,
+X0是L可测向量，它具有有限的二次矩且独立于w和v。
+
+    利用Taylor级数围绕条件均值X^展开可得EKF方程
+
+(15)
+
+(16)
+其中A(t,X)和H(t,X)代表Hessian矩阵fX和hX。
+
+    只有当f和h都很接近于线性时，才能期望(15)―(16)的解接近于真值。
+为了克服这一约束，我们将f和h围绕已知量进行线性化而不是围绕被估计量
+进行线性化可得一种改进的推广Kalman滤波器(MEKF)。逐步调节γ，使闭环系统的灵敏度函数S的奇异值Bode响应曲线尽量往下压，直至补灵敏度函数T的奇异值Bode响应曲线顶上W-12(s)，即在保证闭环系统鲁棒稳定性的前提下尽可能提高系统的性能。定义X~为围绕确定流X-的波动，从而有X=-+X~。把f和h围绕进行
+Taylor展开可以推出MEKF方程，X-是(17)式的精确解。
+
+    设A(t,)=fX-,H(t,)=hX-，那么
+f(t,)=f(t,-)+A(t,)X~+0(X~)
+(19)
+h(t,)=h(t,)+H(t,)X~+0(X~)
+(20)
+把(19)―(20)式代入(13)―(14)式可得波动量的动态方程和观测方程
+dX~=A(t,)X~dt+ε1σ(t)dw,X~0=0
+(21)
+dY=［h(t,)+H(t,)X~］dt+ε2σ0(t)dv,Y(0)=0
+(22)
+　　这样，滤波问题被解耦成两个子问题。第一个子问题是由初值问题(17)
+所决定的确定性问题；第二个子问题是由波动量方程(21)―(22)所确定的随
+机性问题。显然，对于已知的X-，(21)和(22)是线性的，而X~和Y是高斯过
+程。说明了应用H∞/加权混合灵敏度方法设计较大范围模型参数变化系统的鲁棒稳定性是可行的。应
+用线性系统的Kalman-Bucy理论，模型(21)―(22)的最优估计器为
+
+初始条件为^0=0,P(0)=0。X~的误差协方差矩阵P(t)与X的误差协方差矩阵相同。
+在MEKF中，联立解(17)、(21)、(22)可得估计值X^=X-+X~。
+
+5  MEKF在导弹被动制导中的应用
+
+    在MEKF中，线性化的参考点是一个确定值，而在很多情况下，这个确定
+值就等于状态的均值。由此可知，如果系统状态均值较高，波动较小，那么
+由这种方法得到的估值可能具有相当高的精度。目的是在满足一定的性能指标要求前提下，提高系统的鲁棒稳定性，实现用基于弹道上某特征点的数学模型设计的鲁棒自动驾驶仪控制导弹的全弹道飞行。在被动制导问题中，系统中
+的确定性输入项b是导弹的加速度项，它的功率远大于系统中的噪声项w的功
+率。另外，系统的动态模型(1)式是线性的，当初值较准确时，容易求得它的
+精确解。基于以上两个原因，在被动制导中应用MEKF必然可得高精度的状态
+估计值。为了证明这一点，我们把EKF和MEKF同时应用于被动制导问题，进
+行仿真研究。
+
+    仿真时，系统初始状态为x0=3500m,y0=1500m，z0=1000m，vx0=-1
+100m/s，vy0=-150m/s,vZ0=-50m/s,aTx0=aTy0=aTz0=0m/s2。EKF和MEKF初始误差
+的均值设定为零，初始方差阵P(0)=0，系统动态噪声强度ε1=1m/s2，测量噪
+声强度ε2=10-3。经过50次Monte-Carlo仿真所得到的滤波器估计误差的统计
+结果如图1―图3所示。图1中，在某一时刻t，相对距离估计误差利用公式
+
+
+求得，其中E［ex］代表x的估计误差的均值。同理可求得速度估计量的均方根
+型误差的统计结果E［ev］以及目标加速度估计量的均方根型误差的统计结果
+E［ea］。图1―3中的仿真结果表明，MEKF的估计精度明显高于EKF。
+
+
+图2 相对距离估计误差
+图3 相对速度估计误差
+图4 相标加速度估计误差
+6  结论
+
+    我们提出在导弹被动制导问题中采用改进的推广Kalman滤波器(MEKF)。
+为了提高系统的可观性，我们用一种双重指标来设计最优导引规律。仿真结
+果表明，MEKF的精度明显高于推广Kalman滤波器(EKF)。
+
+
+本文于1995年12月18日收到
+
+*本文得到国家教委博士点基金资助
+
+参考文献
+1  Balakrishnan S N.Extention to Modified Polar Coordinates and Application with 
+Passive Measurements.Journal of Guidance,Control,and Dynamics,1989,12(6):906-912
+2  Nardone S C,Aidala V J.Observability Criteria for Bearing-only Target Motion 
+Analysis.IEEE Transactions on Aerospace and Electronic Systems,1981,AES-17(2):162-166
+3  Hull D G,Speyer J L,Burris D B.Linear Quadratic Guidance Law for Dual Control of 
+Homing Missiles.Journal of Guidance,Control and Dynamics,1990,13(1):137-144
+4  Ahmed N U,Radaideh S M.Modified Extended Kalman Filtering.IEEE Transactions 
+on Automatic Control 1994,39(6):1322-1326
+5  Song T L,Speyer J L.A Stochastic Analysis of Modified Gain Extended Kalman Filter 
+with Applications to Estimation with Bearings Only Measutements.IEEE Transactions on 
+Automatic Control,1985,AC-30(10):940-949

@@ -1,0 +1,81 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　No.19　No.1　P.53-54
+
+
+
+
+WINDOWS环境下动态设置打印机参数
+铁治欣　陈奇　俞瑞钊
+摘 要： 一种动态设置打印机参数的方法。在程序中运用此方法，用户在打印时只需在打印机中放入合适的纸张，而不用考虑打印机的设置。 
+关键词： 打印机 注册表 动态设置
+1 问题的提出
+　　在许多应用系统中，常常需要打印各式各样的票据和报表，它们经常是没有统一的格式，所需的打印纸也就大小不一，有的甚至有专用的格式。因此，如果我们不对打印机的设置进行有效的控制，就要求用户在运行这些系统时不断地更改打印机设置，以适应系统的需要。
+　　ActiveX标准非常适合为企业级的客户/服务器系统构造分离的组件：
+　　（1）构造远程组件和构造本地组件的编程方法一模一样，无须特殊的编程经验。
+于华（山东财政学院计算机信息工程系250014）
+收稿日期：1999－09－14
+。这种方法的缺点是每次打印时还要去选择1个逻辑打印机，增加了操作人员的操作步骤。基于此，本文给出了一种比较自动和通用的解决方法。运用此方法开发打印程序，打印时用户只需往打印机中加入适当的纸张即可打印出正确的报表。现在的主流是关系数据库管理系统。WINDOWS 95在用到某一设备或程序时，它就到注册表中取出有关这一设备或程序的设置信息。当增加1台设备时，WINDOWS 95就会在注册表中增加相应的项目；当修改某一设备的设置时，WINDOWS 95也会对有关这一设备的注册项目进行修改。用户不需要直接与数据库打交道。
+　　经研究发现，与打印机有关的主要设置有二项，其中第1项为当前默认打印机，其注册表入口为：HKEY＿LOCAL＿MACHINE\Config\0001\System\CurrentControlSet\Control\Print\Printers，设置值存放在default项中的字符串，即我们可以通过这一注册表的这一分支的default项得到WINDOWS的当前默认打印机。第2项为打印纸设置有关的项目，其注册表入口为：HKEY＿LOCAL＿MACHINE\System\CurrentControlSet\Control\Print\Printers\SETPRINTER，其中的SETPRINTER要替换为你所安装的打印机的名字，如Epson LQ－1600K等，这一分支有许多个项，最关键的项(也是与打印纸张设置有关的项)是Default DevMode，此项的设置值为1个二进制串，其中主要的几个参数的偏移地址和意义见表1。
+表1 打印机参数表
+
+设置项目偏移量字节数说明
+纸张设置0x2F2打印机纸张类型，256为用户自定义纸张，小于256的数值为该打印机能打印的标准纸张的编号，随打印机类型改变。这些层并不一定与网络上的具体物理位置相对应，它们只是概念上的层。ActiveX可以做到操作系统级兼容，即在Windows平台下运行，支持Windows平台下的各类开发工具，如Visual C＋＋、Visual Basic、Visual Foxpro和PowerBuilder等等；JavaBean在所有支持Java的平台上皆可运行。
+打印方向0x2D20x01-纵向打印，0x02-横向打印。以微软的产品为例，当用户服务表现为Windows应用时，往往是用Visual Basic、Visual Foxpro、Visual C＋＋等编写出来的可执行程序。
+
+　　下面我们给出这种动态设置方法在PowerBuilder(PB)中的实现方法。在PB中我们可以定义2个全局函数：gf＿PrnSetting()，gf＿PrnSettingBack()。具体应用时，可以用第1个函数将打印设置为我们需要的状态，并将打印机的原状态保存起来，再用第2个函数将打印机状态恢复。这2个函数的具体实现如下所示。具体地说，可以根据需要把各个部件分别或重复地分布在不同的计算机上，使整个系统的工作量平衡分配到网络中!，ls＿printer)
+IF li＿ret＜＞1 THEN
+　　MESSAGEBOX(″系统提示″，″打印机未设置！″，Excla－ mation!)
+　　RETURN 0
+END IF
+ls＿key＝″HKEY＿LOCAL＿MACHINE\System\CurrentControlSet\
+　　　　　control\Print\Printers\″＋ls＿printer
+RegistryGet(is＿key，cls＿valuename，RegBinary！，lb＿value)
+ablb＿setvalue＝lb＿value
+lb＿newvalue＝blobmid(lb＿value，1，clu＿pos＿papersize－1)＋
+　　　　　　　blobmid(lb＿value，clu＿pos＿width＋2)
+blobedit(lb＿newvalue，clu＿pos＿papersize，clu＿usersizepaper)
+blobedit(lb＿newvalue，clu＿pos＿length，al＿Length)
+blobedit(lb＿newvalue，clu＿pos＿width，al＿Width)
+lb＿value＝lb＿newvalue
+lb＿newvalue＝blobmid(lb＿value，1，clu＿pos＿papersource－1)
+　　　　　　　＋blobmid(lb＿value，clu＿pos＿papersource＋1)＋
+　　　　　　　＆ blobmid(lb＿value，1，clu＿pos＿printdirec－
+　　　　　　　tion－1)＋blobmid(lb＿value，clu＿pos＿printdi－
+　　　　　　　rection＋1)
+blobedit(lb＿newvalue，clu＿pos＿papersource，ai＿papersource)
+blobedit(lb＿newvalue，clu＿pos＿printdirection，ai＿printdirection)
+ls＿key＝″HKEY＿LOCAL＿MACHINE\System\CurrentControlSet\
+　　　　　Control\Printers\″＋ls＿printer
+li＿ret＝RegistrySet(ls＿key，cls＿valuename，RegBinary!将数据服务和应用程序的其它组件分开，在维护、修改甚至重构数据结构及访问机制时，可以丝毫不影响业务服务程序和客户端程序！″，Exclamation！)
+　　RETURN 0
+END IF
+RETURN 1
+//函数功能：恢复原打印机设置
+//输入参数：ablb＿setvalue-打印机原设置串
+//输出参数：无
+//返回值：1-成功，0-不成功
+Gf＿PrnSettingBack(blob ablb＿setvalue)
+int li＿ret
+string ls＿printer，ls＿key
+constant string cls＿valuename＝″Default DevMode″
+li＿ret＝RegistryGet(″HKEY＿LOCAL＿MACHINE\Config\0001\
+　　　　 System\CurrentControlSet″＋＆″\Control\Print－
+　　　　 ers″，′default′，RegString!，ls＿printer)
+IF li＿ret＜＞1 THEN
+　　MESSAGEBOX(″系统提示″，″打印机未设置！
+4.2 用VB和ActiveX组件进行企业开发
+　　目前，组件分为二大类，一类是由微软推出的ActiveX，另一类是Sun的JavaBean!)
+　　RETURN 0
+END IF
+ls＿key＝″HKEY＿LOCAL＿MACHINE\System\CurrentControlSet\
+　　　　　Control\Print\Printers\″＋ls＿printer
+li＿ret＝RegistrySet(ls＿key，cls＿valuename，RegBinary!，
+　　　　　lb＿newvalue)
+if li＿ret＜＞1 then return 0
+return 1 
+　　本文所提供的程序在1台内装WINDOWS 95操作系统的PentiumⅡ266计算机上用PowerBuilder 6．0和Epson LQ－1600K打印机调试通过，并在我们开发的MRP/ERP系统中得到应用，效果良好。对于其它开发工具及其它打印机型号，其实现方法和上面给出的相类似。
+铁治欣（杭州浙江大学计算机科学与工程系310027）
+陈奇（杭州浙江大学计算机科学与工程系310027）
+俞瑞钊（杭州浙江大学计算机科学与工程系310027）
+收稿日期：1999－07－21

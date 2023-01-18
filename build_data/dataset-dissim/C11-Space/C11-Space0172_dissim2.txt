@@ -1,0 +1,68 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年  第3期   No.3 May   1998
+科技期刊
+航天器柔性伸展附件非线性
+振动稳定性研究*
+
+李俊峰　王照林
+(清华大学工程力学系*北京*100084)
+　　摘　要　研究由中心刚体和柔性伸展附件组成的非线性刚柔耦合系统,假设附件为有限变形梁,但本构方程是线性的。最后,介绍了转台伺服系统数字控制器状态设计的实际算法及结果。
+　　主题词　伸展柔性梁　刚柔耦合系统　部分变量稳定性
+STUDY ON THE STABILITY OF NONLINEAR 
+VIBRATIONS OF A DEPLOYING FLEXIBLE 
+APPENDAGE OF A SPACECRAFT
+
+Li Junfeng　Wang Zhaolin
+(Department of Engineering Mechanics,Tsinghua University*Beijing*100084)
+　　Abstract　Consider a rigid-flexible coupled system which consists of a central rigid body deploying a flexible appendage.The appendage is modeled as a finite deflection beam having linear constitutive equations.By taking the energy integral as Lyapunov function,it is proved that nonlinear transverse vibrations of the beam undergoing uniform extension or retrieval are stable when there are not controlling moment in the central rigid body and driving force on the beam,according to the partial stable theorem.
+　　Key words　Deploying flexible beam　Rigid-fiexible coupled system　Partial stability
+1　引　言
+　　近年来,航天器的柔性附件(梁、板等)在伸展过程中的振动得到了广泛的关注［1-4］。目前的研究都假设附件的柔性变形是小变形,将梁的横向位移按照梁的振型展开成无究级数并进行模态截断,然后利用数值积分方法或者渐近方法求解线性化的时变常微分方程组。文献［1］的渐近公式表明,在等速伸展时所有模态振动发散。文献［2］的计算结果表明,在等速伸展时有一些模态振动发散而另一些模态振动稳定。这两个结论有差异的原因在于对系统模型的简化程度不同。控制器与对象串联:UG=Yc,控制器可以采用状态所馈和输出反馈,两者均可得出同样的结论,下面仅以状态反馈来分析:Uc(k)=LXG(k),L为反馈增益矩阵。文［2］考虑了刚体运动和附件运动的耦合,但是基于小变形假设对系统运动方程进行了线性化处理,所以耦合仅限于线性耦合。
+　　由于现代航天器的附件具有尺寸大、重量轻、柔性大等特点,小变形假设已经不再适用。本文假设附件是本构方程为线性的有限变形梁,考虑中心刚体运动与附件运动的非线性耦合,利用Lyapunov直接法严格证明了等速伸展或收缩的梁的横向振动是稳定的。同时用系统的实际状态作为状态变量可使对系统的分析有直观的物理意义。CX0Y0是惯性坐标系,而OXY是描述梁伸展运动和变形运动的固联于中心刚体O点的动坐标系。
+　　PD测速反馈系统:
+　　这种系统的设计思想是用测速反馈构成宽频带的速度环来抑制干扰,用窄频带的位置环实现位置跟踪。梁未变形状态的自然位置沿OX轴方向,长度为L(t)。图中实线为设置控制器最优切换状态后的动态过程,虚线为控制器取零初始状态时的归零过程。记OX轴和OY轴的单位矢量分别为i→和j→。变模态控是将控制过程分成不同模态,也就是将控制任务分解成子任务分阶段来完成。
+设梁为不可伸长的,等截面的转动惯量为I,则系统的运动方程为［5］
+
+
+式中E为弹性模量,Ic和Mc(t)分别为中心刚体的转动惯量和控制力矩。并且:
+
+(3.5)
+式中,
+式(3.5)变为:,考虑到P12=PT21,有
+
+(3.6)
+对Xc(0)求导得:
+
+(3.7)
+显然J达极小的条件为(3.7)式为0,由于P为正定阵,故P11可逆,可得控制器初始状态为:
+
+(3.8)
+4　实例计算与实验
+　　(2)中所讨论的两个模态中,PD测速反馈是从静态开始的,不存在初始状态设置问题,这里考虑Ⅲ型系统的控制器初始状态设计。取性能指标Q=I,对象初始状态XG(0)=［0.05　0.2］T,则由(3.8)可计算控制器初始状态为xc(0)=［0.21233　0.01286　100.10855］T。
+3　稳定性分析
+　　为研究特解的稳定性,取如下扰动变量:
+
+代入系统运动方程(1)-(7)得扰动方程
+
+系统的动能为
+
+系统的势能为
+
+当Mc(t)=0,F(t)=0时,系统有能量积分
+H=T+V=const
+(10)
+将扰动表达式代入得
+
+(11)
+显然,H≥0,从H的表达式(11)可知,只有
+
+(12)
+时,H才可能取零值。利用边界条件(8),由(12)可得
+ω=0,　θ=0,　y==0
+所以H是关于部分变量ω,θ,y,的正定函数,根据部分变量稳定性定理［6］,特解(9)关于部分变量ω,θ,y,是稳定的。
+
+(4.3)
+综合(4.1)、(4.3)可得整个Ⅲ型系统的状态方程为式(3.6)其中,
+A略。假设附件为有限变形梁,则系统的运动微分程是非线性的。如果中心刚体的控制力矩、附件的驱动力和中心刚体初始角速度均为零,那么当梁等速伸展或收缩时,其横向非线性振动是稳定的。
+　　在进入新的控制模态时,还需对控制器的状态进行重新设置,否则会出现振荡、切换失败等现象

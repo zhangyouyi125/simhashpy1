@@ -1,0 +1,100 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS
+1999年　第1期　No.1　1999
+
+
+
+　利用压电自敏感致动器的挠性结构
+振动主动控制实验研究*
+陶云刚　路小波　周洁敏
+　　摘　要　以粘贴有压电自敏感致动器的挠性梁振动主动控制为例,论述了进行挠性结构传感器/致动器及控制系统一体化研究的方法。文中给出了压电自敏感致动器的电路模型及自敏感致动器的应变测量和应变速度测量电路,推导了测量公式。以玻璃钢材料的挠性梁为实验对象,并采用自适应滤波技术来实现振动主动控制,控制系统由TMS320C25及486计算机组成的主从机系统来实现,实验结果表明此种控制方法是有效的。
+　　主题词　钛合金　切削温度　解析预测　有限差分
+ANALYTIC PREDICTION OF CUTTING 
+TEMPERATURE FOR HARD PROCESSING MATERIALS
+Lui Weina
+(Chang chun Institute of Optics and Fine Mechanics．Changchu．130022)
+Yang Lifeng
+(The Northeast Surveying and Designing Institute．Changchu．130021)
+　　Abstract　Based on heat transfer,by useing a finite difference numerical method and personal computer,temperature field at cutting area in two dimensional machining process ispredicted.Take machining titanium alloy by useing diamond tool and carbide tool for examples,the cutting temperature is calculated.The calculated temperature is in good agreement with that measured.This indicates that computer simulation of cutting temperature is applicable.It also provides a new analytic method for the study of cutting and processing features of hard processing materials.A large amount of experiments will be saved thus.It lay a fundation for predictingthe optimum cutting process and instructing the development of new cutter materials.
+　　Key words　Titanium alloy Cutting temperature Analytic prediction Finite difference
+1　引言
+　　随着宇航事业的迅速发展,配备于各类高新仪器与装备的高质量、性能好的材料不断问世,这给加工与制造技术提出了更新、更高的要求。Nianjing。210016)
+　　Abstract　This paper presents the integration research on sensor/actuator and control system of flexible structure,and analyses the active vibration control system of flexible structure system using piezoelectric selfsensing actuator.The circuit model of piezoelectric self-sensing actuator,measurement circuit of strain and strain rate using pezoelectric self-sensing actuator are given.An adaptive filtering technique for vibration active control is provided.The control system is realized by the host-slave system which consists of computer 486 and TMS320C25.Experimental results have demonstrated the effectiveness of this kind of control strategy.
+　　Key words　Vibration Active control Flexible structure Piezoelectric self-sensing actuator
+　　由于空间技术的迅速发展,空间飞行器结构及形状根据所承担的任务变得越来越复杂,航天器主体上挠性附件越来越多,如太阳能帆板、大型抛物面天线、雷达阵和空间机械臂等,从而使得大型挠性空间结构的控制成为空间飞行器上水平的关键课题。下一代多体挠性空间飞行器,如雷达卫星、减灾卫星、中继和空间站等根据任务需要常要求具有高稳定性和高定位精度的挠性结构,从而要求控制系统能抑制挠性的挠性振动。使挠性结构保持形状,如形状控制到希望的构形。而传统的被动振动控制难以满足要求,由此,必须对空间挠性结构进行振动主动控制［1］。
+　　压电陶瓷由于具有良好的机电耦合性能,可作为振动主动控制系统中的传感器/致动器(亦称观测器/执行器)。压电自敏感元件同时具有传感器和致动器的功能,可构成模态传感执行器(modal sensor/actuator)。实现同位控制(collocation control),因而可避免观测溢出［2］。
+　　由于梁式构架结构有便于太空装备组合的优点,目前已成为航天结构的一种重要形式。因此,本文对一种玻璃钢材料的挠性悬臂梁进行了主动振动控制研究。近年来,在控制方法上,国内外集中于采用现代控制理论和方法,但应用于实际工程时还存在很大困难。常规反馈控制系统对于系统内部特性的变化或外部扰动的影响都具有一定的抑制能力,但由于控制器参数是固定的,所以当系统内部特性变化或外部扰动的变化幅度较大时,系统的性能常常会大幅度下降,甚至不稳定。因此,本文尝试采用自适应滤波技术来实现振动主动控制系统。以TMS320C25及PC486构成的主从机系统实现了自适应振动主动控制。实验结果证实了这种控制方法的有效性。
+　　将用计算机模拟计算硬质合金K10刀具前刀面的切削温度所得的计算结果与用人工热电偶实测刀具前刀面切削温度的实验结果相比较二者取得了良好的吻合［1］。
+作者单位:刘薇娜(长春光机学院机械系.长.130022)　杨立峰(东北勘测设计研究院.长春.130021)
+参考文献
+　[1]T.obikwa AL.Prediction of Cutting Temperature and Flank Wear Rate for Praetical Use Using Personal Computer.Proc.of 7th IMCC China:1995:55～60
+　[2]水谷幸夫、香月正司译.Computeよゐ热移动と流れの数值解.森北出版社株式会社,1984.11
+　[3]刘吉萱译.工程传热学.人民教育出版社,1998.11
+。
+　　压电自敏感致动器的模型如图1(a)或1(b)所示。图中Vc和qc分别代表由外加电场引起的等效电压源和电荷源,Vp和qp分别表示由压电效应引起的等效电压源和电荷源,由结构应变产生,电容Cp由压电材料的介电性质引起。使用压电自敏感致动器可测量应变或应变速度。
+
+
+图1　压电自敏感致动器模型
+　　测量应变的压电自敏感致动器电路原理图如图2所示。对控制体内的每一个节点,均由能量平衡列出方程,最后组成有限个差分离散化方程组。则输出电压为
+
+(2)
+式中g1,g2为放大器的增益。
+　　边界条件如图2所示。
+
+(3)
+　　测量应变速度的压电自敏感致动器电路原理图如图3所示。由于传热问题的分析解法非常复杂,所以采用有限差分数值方法由计算机计算切削温度。如果角频率,则有
+V=jωR1CpVp
+(5)
+可见V与Vp的变化率成正比,因此该电路可用于应变速度的测量。
+　　加在压电致动器上的电压为有效值约200V左右的强电压Vp。粘贴在梁表面的致动器受强电压Vp作用而产生的控制力为［1］:　P=ΞVp
+(6)
+这里,p为控制力向量,Ξ为驱动耦合矩阵,Vp为驱动电压向量。Ξ与致动器的数量、大小、粘贴位置有关。
+
+图2　边界条件　
+
+图3　温度计算程序流程图
+3　钛合金切削温度的解析预测
+　　切削加工钛合金Ti-6Al-4V的温度解析预测结果如图4、切削条件如表1所示。
+M=ΨTMsΨ=diag(mi,i=1,2,…,n)为模态质量矩阵(Ms为固有质量矩阵)
+　　C=diag(2miξiωi,i=1,2,…,n)为模态阻尼矩阵;K=diag(miω2i,i=1,2,…,n)为模态刚度矩阵
+　　对压电传感器/致动器的分析可知,系统中的主动控制力向量是广义位移向量q及其导数的函数。在二元定常切削条件下,切削温度计算的程度流程图如图3所示。对于挠性结构来说,应采用位移&速度反馈方法,可既增大系统刚度又提高系统阻尼。此时,有P=Bpq+Br,其中Bp为位移反馈控制矩阵;Br为速度反馈控制矩阵。采用位移&速度反馈方法时,系统可描述为:
+M+C+Kq=ΨTΓ+ΨT(Bpq+Br)
+(8)
+3　自适应主动控制原理
+基于自适应滤波的振动主动控制原理如图4所示。被控对象的输出ek是外扰rk的响应dk与控制输入uk的响应yk之和。这样,便于在模型中引入边界条件。
+uk=W(z)xk
+(10)
+
+(11)
+其中N为自适应滤波器阶数。
+自适应滤波器W的系数调整采用滤波后-x LMS算法［4］,参考信号的选取原则是要求其与外扰信号相关。
+
+其中μ为滤波因子,增大滤波因子μ可缩短学习时间,但易造成滤波器不稳定。H2为控制通道的传递函数,可通过实验建模的方法获得,对单模态情况,H2可简化为一常数。
+4　实验设计及结果
+　　梁的材料为玻璃钢,大小尺寸为960mm×60mm×1.5mm(长×宽×高)。两对压电片分别用环氧胶粘贴于梁的0.2L及0.5L处(L为梁的全长)。
+　　边界条件如图2所示。本实验中的压电片尺寸为20mm×5mm×1mm(长×宽×高)。经过模态测试,得到梁的前三阶的固有频率分别为1.21Hz、6.1Hz、16.6Hz。滤波器阶数为N=25,μ=0.001,参考信号直接从外扰信号提取,控制通道模型采用ARX模型。
+　　自适应振动主动控制系统由TMS320C25及PC486所构成的主从机系统来实现。对该主从机系统的详细介绍请参见文献［5］。
+　　边界条件如图2所示。
+　　同时控制一阶和二阶模态前后误差信号的时域和频域特性如图5及图6所示。同时也会节省大量的贵重的金属材料。其中图(a)、(b)是分别采用硬质合金K10和天然金刚石刀具,在相同的切削条件下切削钛合金Ti-6Al-4V的温度分布图。
+2　切削温度的差分计算
+　　由于切削加工过程是热传导、对流换热同时存在的内部有热源的传热过程,以二元切削为对象,切削过程的传热能量方程应为:
+
+式中θ是温度,κ是导热系数,ρ是密度,c是比热,s是热源,μ、ν分别是X、Y方向的速度。实验框图如图7所示。图7中自适应延时反馈环节,实现以下运算(离散方程):
+e=|y(n)-y(n-k)|-β
+(14)
+
+其中,k为延迟的采样周期数,k的选取需考虑所采用的采样频率以及所控的模态频率,实验中,若采样频率为100Hz,所需控制的一阶模态频率为5Hz,可选取k=10。β为目标参数,是一个极小的数。Kf初始值K0的选取要确保系统是稳定的,通常取一个较小的数。α为学习常数,一般取一个较小的数。通过实现式(14)及(15),自适应延迟反馈环节即可自适应地调整反馈增益。
+
+图7　自适应延迟反馈控制框图
+　　利用自适应延迟反馈控制技术,对梁的自由振动进行了控制,所得实验结果如图8所示。由图8控制前后的响应曲线可看出,自适应延迟反馈控制技术是行之有效的。
+　　(2)切削温度解析计算的优点在于:计算中,它可以不断改变刀具材料、工件材料,切削条件等不同输入参数,很方便的计算出相对应条件下的切削温度分布,从而可节省大量的人力、物力、财力,使大量的切削实验,包括一些无法实现的实验在计算机上完成。通过采用位移&速度反馈及自适应滤波技术或自适应延迟反馈控制技术,挠性梁的受迫振动及自由振动均得到了很好的控制。实验表明此控制方法是行之有效的。
+*国家自然科学基金、江苏省青年基金、江苏省教委“青蓝工程”基金资助
+作者单位：陶云刚　路小波　周洁敏　(南京航空航天大学测试工程系。南京。210016)
+参考文献
+　[1]Woo-Seok Hwang,Woonbong Hwang and Hyun Chul Park.Integration of Composite Structural Design with the Intelligent System Concept.Proceeding of the AIAA/ASME/ASCE/AHS 28th Structures,structural Dynamics and Materials Conference,USA,1993,AIAA-93-1706:3534-3539
+　[2]黄文虎,陈滨,王照林主编.一般力学(动力学、振动与控制)最新进展.北京:科学出版社,1994
+　[3]Kwak M K and Sciulli D.Fuzzy-ligic based vibration suppression control experiments on active structures.AIAA 95-1085-CP:2319-2327
+　[4]何延伟.柔性智能结构振动主动控制技术研究.学位论文,南京:南京航空航天大学,1997
+　[5]涂永峰,周洁敏,陶云刚,何延伟.利用TMS320C25的高速数据采集系统.数据采集与处理,1996,(4)
+收稿日期:1996年9月2日,修回日期:1997年11月20日
+　　

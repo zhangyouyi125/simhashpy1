@@ -1,0 +1,111 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　Vol.19　No.4　P.52-54
+
+
+
+利用Ｖｉｓｕａｌ Ｂａｓｉｃ 进行ＡｕｔｏＣＡＤ二次开发
+欧阳付成 柳荣梦
+摘 要： 利用Ｖｉｓｕａｌ Ｂａｓｉｃ进行ＡｕｔｏＣＡＤ二次开发的关键――建立应用程序与ＡｕｔｏＣＡＤ之间的通信，给出了示例程序。
+关键词： Ｖｉｓｕａｌ Ｂａｓｉｃ ＡｕｔｏＣＡＤ二次开发 ＡｃｔｉｖｅＸ
+　　AutoCAD可以说是当今国内外最为流行的计算机辅助绘图软件，成为绘图和设计人员的有力工具，特别是以它为平台二次开发图形绘制软件显得简单而有效。然后，打开Database Desktop，打开名为Bishe的表格。而Visual Basic以其简单易学和方便设计交互界面的诸多特点成为许多开发人员的首选语言。本文在总体介绍AutoCAD ActiveX Automation 技术的基础上，结合实例讲述如何运用Visual Basic 编程控制AutoCAD进行有关绘图操作。
+1　相关术语
+　　上面已经提到从Visual Basic应用程序控制AutoCAD，显然这两者之间的地位并不是平等的，即Visual Basic 应用程序与AutoCAD之间的通信并不是双向进行的。其中Visual Basic 被称为客户机（Client），是首先开始对话的应用程序；AutoCAD被称为ActiveX服务器（Server），是响应客户机的应用程序。
+　　通过使用自动化AutoCAD就暴露其可编程对象，这些暴露对象称为自动化对象。自动化对象主要暴露二个方面：属性（properties）和方法（methods）。属性是设置或返回对象特征信息的功能，而方法是针对对象执行的各种操作。AutoCAD可以选择所选中对象上的一些属性和方法，通过ActiveX Automation来使用它。例如Line（线）体是AutoCAD所有对象中的一种，它也具有属性（颜色、层、始点、终点和线宽）和方法（拷贝、剪切、旋转、平移和重画等）。
+2　AutoCAD对象模型（Object Model）
+　　Visual Basic 总共可取得AutoCAD约70个对象，这些对象共有五百多个方法和属性。 AutoCAD按层次来组织这些对象，其中 Application 对象处于该层次的顶端，所有其它对象都是Application 对象的“孩子”。操作一个特定的对象必须从Application 对象开始，再到它的子对象（Document对象和Preferences对象），一直下去直到要操作的特定对象。修改所有Database Name、Table Name属性为空，且Active属性为false。
+　　下面着重介绍二次开发经常用到的几个重要的对象及其方法、属性。
+　　Application对象是编写代码时第1个使用的对象。代表AutoCAD本身。Application对象是通过2个重要语句GetObject和CreateObject来与之连接。
+关键词： 远程通信技术 ＴＣＰ／ＩＰ协议 ＦＴＰ协议 ＶＢ语言 ＤＥＬＰＨＩ语言 远程数据库
+　　在工业生产过程中，通常要求计算机控制系统完成数据的采集、远程传输、处理及储存等工作。服务器传输进程就利用由控制进程转过来的客户地址和端口建立起一个相关，从而具备了向客户机申请数据连接的条件。它为AutoCAD图形及非图形对象操作提供入口，因为每个特定对象的操作都是在AutoCAD某个绘图文档中进行的。Document的ModelSpace和PaperSpace属性为图形对象（如Line、Point、Circle等等）提供入口；而非图形对象（如Layers、Linetypes等等）的入口则是通过Document其它相应属性（如Layers、Linetypes等等）提供。
+　　Graphical（图形）对象即实体是可见的对象，如Line、Point、Circle等等，都是在图形文档中所能见到的具体图形元素。
+　　（2）当自动拨号成功连接时（在接收的字符中检测到连接成功的回报码），启动自动传送定时器AutoSendTimer，准备建立网络的FTP连接。Nongraphical（非图形）对象是图形附带的诸如Layers、Linetypes、Dimstyle等不可见属性特征。
+　　还有Collection、Preferences、Plot、Utility等等许多对象，这里就不一一介绍了。如果需要它们的详细信息，可在AutoCAD的在线帮助中找到。
+3　配置系统
+　　大家知道，1个应用程序支持的对象、方法和属性通常定义在应用程序的对象库中。AutoCAD也有1个文件acad．tlb存储了类的信息。为了使Visual Basic能“认识”代码中的对象，在编写代码之前还要做的一步工作是在Visual Basic 中引用AutoCAD对象库：
+　　（1）运行Visual Basic 之后，选择工程→引用；
+　　（2）在引用对话框中将AutoCAD R14 Object Libary 前的方框选中。如果在“可使用的引用”列表中没有找到AutoCAD R14 Object Libary，可单击“浏览”到AutoCAD R14的安装目录，找到acad．tlb文件并选中，确定之后列表中就有AutoCAD R14 Object Libary项了；选中即可。
+　　下面就可以开始编写程序代码了。
+4　编写代码
+　　首先，定义一些必要的对象变量，为后面方便可定义为Public型。
+　　Public acadAppEx As Object ′定义Application对′象变量
+　　Public acadDocEx As Object ′定义Document对象′变量
+　　Public moSpaceEx As Object ′定义ModelSpace对′象变量
+　　Public paSpaceEx As Object ′定义PaperSpace对′象变量
+　　然后，连接到AutoCAD。一般是先试着连接已运行的AutoCAD。如果没有已在运行的AutoCAD，则试着去打开AutoCAD并与之连接。如果系统没有AutoCAD，则会报告1个错误。利用Mscomm控件控制调制解调器拨号连接上位机进行通信。
+　　On Error Resume Next
+　　Set acadAppEx ＝ GetObject（，″AutoCAD．Application″）
+　　If Err Then
+　　　　Err．Clear
+　　　　Set acadAppEx ＝ CreateObject（″AutoCAD．Application″）
+　　　　If Err Then
+　　　　　　MsgBox Err．Description ′报告错误并
+　　　　　　Exit Sub ′退出
+　　　　End If
+　　End If
+　　acadAppEx．Visible ＝ True ′使AutoCAD可见，缺省
+　　　　　　　　　　　　　　　　　　　　　′是不可见
+　　再次，就是使用Document对象取得绘图文档并定好图纸空间或模型空间。
+　　程序分为3个模块：程序主窗体、数据的自动插入及文件删除和数据查询。定时器最主要的二个属性是Enabled和Interval。如果采用直接输入坐标绘制点，然后在点旁用文字标注其高程的话，则文字标注定位不好，而且命令切换频繁，速度非常慢。针对这一问题，本人编写了1段程序来解决。只需将测量控制点的3维坐标在一文字处理器（如记事本）中按1行1个点的数据全部输入并存为文本文件，之后运行这段程序即可将所有控制点全部很好地标注在图中。还可在本程序中加入代码接受用户输入数据来控制字符大小，使程序更具有通用性。（为简单起见，该程序要求事先运行AutoCAD）。
+　　本程序在Visual Basic 5．0企业版上（操作系统为Windows 98）调试通过。主窗体如图3所示。在frmMain窗体上加入3个Commandbutton，它们的Name属性分别为cmdToACAD、cmdBigin和cmdClose，Caption属性分别设为“连接AutoCAD”、“开始绘制”和“关闭程序”。在frmFileName窗体上也加入2个Commandbutton（其Name属性分别为cmdOK和cmdChooseFile；Caption 属性分别为“确定”和“选择文件”）、1个TextBox（Name为text1）用于显示所选择的数据文件和1个CommonDialoge（Name 属性为cdlg1）。
+
+图6　数据读入、保存及文件删除示意图
+　　（2）查询功能的实现
+　　由于数据库预设的主键为“时间”，所以，通过输入对比主键（时间）的值，联合使用Findkey和Gotonearest方法，可以实现查询功能！）″， 64
+　　　　cmdBegin．Enabled ＝ True
+　　　　frmMain．Visible ＝ True
+　　End Sub
+　　Private Sub cmdBegin＿Click（）
+　　　　frmMain．Visible ＝ True
+　　　　Load frmFileName
+　　　　frmFileName．Show
+　　End Sub
+　　Private Sub cmdClose＿Click（）
+　　　Unload Me
+　　End Sub
+　　在cmdFileName的代码模块中写入代码：
+　　　Option Explicit
+　　　Dim File1 As String
+　　　Private Sub Form＿Load（）
+　　　　Left ＝（Screen．Width － Width） ＼ 2
+　　　　Top ＝ （Screen．Height － Height） ＼ 2
+　　End Sub
+　　Private Sub cmdOK＿Click（）
+　　　　Dim LandPoint（0 To 2） As Double
+　　　　Dim pointObj As Object
+　　　　Dim PointCase As Variant
+　　　　Dim TextHeight As Double
+　　　　Dim LandPointT（0 To 2）As Double
+　　　　Dim TextElevaVal As Object
+　　　　If Text1．Text ＝ ″″Then
+　　　　　　MsgBox（″你必须选择一个数据文件″），48
+　　　　Else
+　　　　　　File1 ＝ Text1．Text
+　　　　　　Open File1 For Input As ＃1
+　　　　　　Do While Not EOF（1）
+　　　　　Input ＃1， LandPoint（0）， LandPoint（1）， Land－Point（2）
+　　　　　Set pointObj ＝moSpace．AddPoint（LandPoint）
+　　　　　TextHeight ＝ 1．5
+　　　　　LandPointT（0） ＝ LandPoint（0）＋ 0．5
+　　　　　LandPointT（1） ＝ LandPoint（1）
+　　　　　LandPointT（2） ＝ LandPoint（2）
+　　　　　Set TextElevaVal＝moSpace．AddText（Str（LandPoint（2）），＿LandPointT TextHeight）
+　　　　　Loop
+　　　　　Unload frmFileName
+　　End If
+　　　Close ＃1
+　　End Sub
+　　Private Sub cmdChooseFile＿Click（）
+　　cdlg1．Filter ＝ ″Text File（*．txt）｜*．txt｜All Files″ ＆ ″（*．*）｜*．*″
+　　　　cdlg1．filename ＝ ″″
+　　　　cdlg1．ShowOpen
+　　　　If cdlg1．filename ＜＞ ″″ Then
+　　　　　　Text1．Text ＝ cdlg1．filename
+　　　　End If
+　　End Sub
+欧阳付成（广州海洋地质调查局研究所图形数据研究室510760）
+柳荣梦（广州海洋地质调查局研究所图形数据研究室510760）
+参考文献
+１，Ｏｍｕｒａ Ｇ著，徐有光译．ＡｕｔｏＣＡＤ １４从入门到精通．北京：电子工业出版社，１９９８
+２，Ｍａｎｓｆｉｅｌｄ Ｒ著 廖卫东译．Ｖｉｓｕａｌ Ｂａｓｉｃ ４．０．北京机械工业出版社１９９６
+收稿日期：１９９９－１０－１９

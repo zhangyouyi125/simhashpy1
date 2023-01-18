@@ -1,0 +1,46 @@
+航空计测技术
+AVIATION METROLOGY &
+MEASUREMENT TECHNOLOGY
+1999年 第2期 No.2 1999
+
+
+
+弹射加速度激光多普勒校准装置的改造
+李善明　高树军　张志英　曹弈庆
+　　摘　要　介绍了弹射加速度激光多普勒校准装置改造的内容，分析了改造后的新校准装置的测量不确定度。
+　　关键词　激光―多普勒　弹射加速度　校准装置　测量不确定度
+Reform of Calibration System of Bounce-Shock Acceleration Using Laser-Doppler Method
+Li Shanming,Gao Shujun,Zhang Zhiying,Cao Yiqing
+　　Abstract　This paper introduces the reform content of calibration system of bounce-shock accelaration using laser-Doppler technology.The uncertainty of measurement of the reformed system is analyzed.
+　　Key words　Laser-Doppler,Bounce-shock acceleration,Calibration equipment,Uncertainty of measurement
+
+
+　　弹射加速度激光多普勒校准装置是为解决具有较低动态响应能力的加速度计(包括应变式、压阻式、电感式、电容式等加速度计)和测量系统的校准,是1978年开始建立的。此套装置特别适用于对弹射、开伞、浪击过载传感器和测量系统进行低加速度、长持续时间的一次冲击校准，它利用激光―多普勒一次冲击校准方法，直接由激光―多普勒信息经处理得到速度―时间历程和加速度―时间历程，并判定冲击运动的加速度峰值，其特点是独立地直接由长度和时间量复现加速度量，与被校加速度计无关。这种校准方法是目前公认的原理上完善、校准结果可靠的冲击一次校准方法。由此可见,数值模拟的结果是正确的。由于采样计数器中的ECL集成芯片和BCM―68000数字计算机使用时间过长，难以维修或找到替代型号，因此，决定对装置进行改造。所以，E{xT(k+1)x(k+1)}主要由的选取应与Q成反比。改造后的装置框图如图1。
+
+图1　弹射加速度激光多普勒校准装置
+
+　　高性能的计时计频器PM6680B可满足频率、时间间隔和相位测量的需要，这种计时计频器不同于普通频率计数器，它从一个新的角度分析测量结果，可以观察到频率漂移、快速频率的跳跃或压控振荡器的调整(VCO Setting)，它还可以定量的确定系统抖动，捕捉到非常微弱的FM调制源。这种基于PC的调制域分析功能，特别适合于对多普勒信号这种频率调制信号的分析处理，其可处理信号最高频率达225 MHz，时间分辨率为250 ps，而原来的环形采样计数器的两项指标分别为150 MHz和10 ns。试验也证明此仪器很好地完成了多普勒信号的计频功能。
+　　目前常用的被动容错控制设计方法有完整性控制设计方法、同时镇定以及多模型自适应方法等，这些方法均具有一定的局限性，或设计复杂、条件苛刻，或以损失正常系统性能为代价，因此在实际系统中难以应用。
+
+　　在这一控制方案中，我们设计了基于黄金分割控制的鲁棒自适应控制，对(6)式中的控制器参数α1，α2和增益β0进行在线辩识，从而保证控制器对执行机构、敏感器增益变化的软故障具有被动容错性。对某型号卫星三轴姿态控制的仿真研究表明，这种方案设计简便，实现容易，控制效果好，对测量系统和执行机构的软故障具有很强的被动容错能力。这几个参数是羽流污染的主要指标,也是进一步深入研究真空羽流污染的基础。假设分子与挡板的碰撞为弹性碰撞,则挡板壁面某网格所受羽流粒子撞击的法向和切向总动量分别为:
+
+u,v是与挡板碰撞的分子的轴向和径向速度。同时由于引入特征提取的设计思想，在线辨识对象的特征模型，在线提取系统的动态性能特征以及测量敏感器和控制执行机构的软故障特征并据此实时调整控制器参数，从而获得了较好的对软故障的被动容错能力，为容错控制系统的设计开辟了一条新的途径。
+　　3)激光多普勒信号经放大和滤波以后，由计时计频器采样计数，设多普勒信号由下式表示
+A(t)＝A0sin2πf(t)dt 　　(2)
+式中，A(t)为多普勒信号的大小；A0为多普勒信号的峰值；f(t)为t时刻的多普勒频率。
+　　若A1为计时计频器的触发电平，如图2所示，由于多普勒频率是连续变化的非稳态频率，它的频移与物体的运动速度成正比，由图中可见,测量计时t1小于实际计时t，这对频率测量将带来误差，触发电平越高，误差越大，经实测多普勒信号的最小幅值约为140 mV，触发电平为20
+mV，采样脉冲时间为2.5 ms，当多普勒频移从5～35 MHz时，频率偏差小于0.01％。则到达挡板上各处的羽流粒子质量面密度为:
+ρA=NA*m
+式中,m为气体分子的质量。已知差动放大器的信噪比sN大于25，可以算得，由于渡越电平引起的频率偏差为0.45％。
+参考文献
+1　Parvez S,etc.Disturbance on GSTAR Satellite Due to Thruster Plume Impingement on Solar Array.AIAA 89-0351
+2　Boyd I D,etc.Numerical and Experimental Investigations of Rarefied Nozzle and Plume Flows of Nitrogen.AIAA-91-1363
+3　Samanta Roy R I,etc.Electric Propulsion Contamination.AIAA 92-3560
+4　Samanta Roy R I,etc.Modelling of Ion Thruster Plume Contamination.AIAA 93-2531
+5　Scialdone Jhon J.Contamination Control and Plume Assesment of Low-Energy Thrusters.AIAA 93-2592
+6　樊菁,沈青.直接模拟蒙特卡罗方法中的一个新算法――随机取样频率法.第六届全国计算流体力学会议论文集.北京:科学出版社,1992
+7　Bird G A.Molecular Gas Dynamics.Clarendon Press,Oxford,1976
+8　蔡国飙等.低密度小喷管流场的DSMC直接模拟.推进技术,1996.5
+。
+4　结论
+　　本文所设计的自适应被动容错控制器，保留了黄金分割鲁棒自适应控制动静态性能好，鲁棒性强的优点。喷管喉部流动参数由给定条件通过差分求解N-S方程数值计算喷管流场给出［8］

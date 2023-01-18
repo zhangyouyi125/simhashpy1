@@ -1,0 +1,89 @@
+微型机与应用
+WEIXINGJI YU YINGYONG
+2000　Vol.19　No.5　P.11-13
+
+
+
+
+注册表读写函数的设计
+陈建军
+摘 要：一个利用Windows API函数设计的注册表读写函数，作为一个标准模块可添加到任何一个VB应用程序中，将抽象的应用程序接口转变为一个高级函数接口。
+关键词：注册表 API函数 VB函数 模块
+　　Win95／98／NT的注册表数据库（Registry）是系统中非常重要的组成部分。编译完成之后，在对应的Debug或Release目录下，可以看到一些编译生成的文件。因此无论是日常的维护管理还是应用程序对系统配置的更改和设置都需要对注册表进行操作。前者只要利用注册表编辑器（Regedit．exe）即可，而后者一般是由Windows系统提供若干API函数，由编程语言调用实现。但由于Win32 API函数一般是为C／C＋＋编程人员编写的，文档采用了C语言的数据结构，在其它语言中无法将其一一对应。值得注意的是，Mideva对M－文件有一定的要求，即该文件必须是1个函数，如果要编译没有输入也没有输出的脚本文件，可以先在Matlab中将它编辑成无输入无输出的函数，再按照上述操作进行转换。因此，注册表的程序操作对不少编程者来说是个棘手的问题。为了在VB中能够调用这类DLL，要求将yourfile．bas和matlib42．bas加入到你的工程中，并将yourfile．dll以及matlib42．dll拷贝到工程所在的目录下。下面详细介绍VB中如何调用Matlab函数转换过来的动态链接库。因此我们设计了一个VB的自定义函数RegCRWDKey，作为一个标准模块可添加到任何一个应用程序中。并且充分利用了VB的界面开发能力和Matlab的数据处理和绘图功能。表1为操作一览表。
+表1 RegCRWDKey操作一览表
+功能ModestrhKey[subKey][keyValue Name][key Value]返回错误码
+创建子键C根键名子键名忽略忽略0：调用成功
+1：Mode错
+2：根键名错
+3：调用失败
+4：打开键错
+5：键值名错
+6：关闭键错
+读键值R根键名子键名若缺省，读根键键值键值名若缺省，读默认键值读出的键值调用时必须是非定长字符串变量
+写键值W根键名子键名若缺省，写根键键值键值名若缺省，写默认键值待写键值串
+删子键或键值D根键名子键名键值名若缺省，删除指定子键忽略
+
+注：1．带［］的参数是可选的； 
+　　2．“根键名”为Windows预定义的6个标准键名，请参见注册表；
+　　3．“子键名”如同DOS的树型目录结构，如：“Test＼WindowSize”；
+　　4．除keyValue外所有参数中字母的大小写均具有同等含义。
+4 应用举例
+　　事实上，最简单的例子是直接调用matlib42．dll中提供的inv＿2＿1来计算矩阵的逆。“关键字”实际上是1个句柄，如图1所示。Matlab函数的源程序如下
+（DynDataPlot．m）：
+function DynPlotData（Data）
+T＝length（Data）；
+TestPlot（T）；％初始化动态显示数据的窗口
+MaxY＝max（Data）；
+for k＝1：T
+　　y＝Data（1：K）；
+　　x＝1：k；
+　　TestPlot（T，x，y，MaxY）；％动态绘制数据曲线
+end
+function TestPlot（DataNum，x，Data，MaxY）
+switch nargin
+case 1，％只有1个输入参数，初始化动态显示数据的窗口
+　　fhnd＝findobj（allchild（0），′flat′，′Tag′，′TMWWaitbar′）；
+　　if ～isempty（fhnd）
+　　close（fhnd）；
+　　end
+fhnd＝figure（′Name′，′Show Db Data′，… 
+　　　′Units′，′points′，′Resize′，′off′，… 
+　　　′CreateFcn′，″，′NumberTitle′，′off′，… 
+　　　′IntegerHandle′，′off′，′MenuBar′，′none′， 
+　　　′Tag′，′TMWWaitbar′）；
+　　AxesHnd＝axes（′Parent′，fhnd，′XLim′，［0 DataNum］，…
+　　　′Position′，［．1．1．8．75］，′FontSize′，［11］，… 
+　　　′Box′，′on′，′XGrid′，′on′，′YGrid′，′on′）；
+　　title（′Plot Dynamic Curve′）；
+　　HndList＝［AxesHnd］；
+　　set（fhnd，′HandleVisibility′，′callback′，′UserData′， HndList）；
+case4，％4个输入参数时，动态绘制数据曲线
+　　fhnd＝findobj（allchild（0），′flat′，′Tag′，′TMWWaitbar′）；
+　　HndList＝get（fhnd，′UserData′）；
+　　DataLen＝length（Data）；
+　　if DataLen＝＝1
+　　　set（HndList（1）；′YLim′，［0，MaxY＊1．2］）；
+　　　line（′Parent′，HndList（1），′XData′，［0：1］，′YData′，
+　　　　　［Data（1） Data（1）］，′Color′，［0 0 1］，′
+　　　　　　EraseMode′，′none′）；
+end
+if DataLen＞1
+　　set（HndList（1），′YLim′，［0，MaxY＊1．2］）；
+　　axes（HndList（1））；
+　　line（′Parent′，HndList（1），′XData′，［DataLen－1：
+　　　　　 DataLen］，′YData′，Data（DataLen－1DataLen），
+　　　　　′Color′，［0 0 1］，EraseMode′，′none′）；
+　　end
+end ％case
+return
+　　按照前面描述的步骤，可以将这一函数转换为dyndataplot．dll，同时得到动态链接库的声明模版文件dyndataplot．bas。
+
+图1 注册表
+2 API函数读写注册表的一般过程
+　　（1）使用RegOpenKey或RegCreateKey打开或创建1个键。
+　　（2）若上一步成功，则使用RegQueryValue或RegQuery－ValueEx读取键值，用RegSetValue或RegSetValueEx设置（写）键值。Matlab是一个高度集成的语言环境，在它的界面下可以编写程序、运行程序并可进行跟踪调试。
+　　（3）完成操作后用RegCloseKey关闭键。用Matlab可解决很多工程计算问题，特别是涉及到矩阵和矢量形式的问题。启动时读出窗口大小，若无则新建。注册表内容请参见图1。在通过菜单项选择要打开的数据库后，子窗体1显示数据库的表项结构，鼠标双击某一表项，子窗体2显示该表项中的数据。
+　　该函数运行环境为：Pentium级以上机器；Win95／98平台，VB5．0、VB6．0。
+　　注意：对注册表的操作必须正确无误，否则后果不堪设想！
+陈建军（浙江绍兴文理学院计算机中心312000）
+收稿日期：1999－12－01

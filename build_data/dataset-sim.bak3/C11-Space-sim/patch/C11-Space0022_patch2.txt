@@ -1,0 +1,91 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+竞争学习模糊神经网络及在导弹
+故障诊断中的应用
+胡昌华　王青　陈新海
+　　摘　要　尽管基于解析冗余的故障诊断方法有许多突出的优点而越来越多地得到研究和应用，但它依赖于系统的模型，当系统存在非线性或不确定性时，存在难以建模的困难，模糊神经网络可以通过学习建立系统的模型，且模型参数有明确的物理意义，初始参数易于选择，成为解决这一问题的优选途径，作者通过把模糊神经网络的学习转化为竞争聚类和线性优化问题，基于竞争聚类和最小二乘原理，提出了一种模糊神经网络学习算法，并在某伺服机构上进行了学习和故障诊断的实验，获得了良好的实验结果。
+　　主题词　故障诊断　竞争学习　模糊神经网络
+FUZZY NEURAL NETWORK BASED ON COMPETITIVE 
+LEARNING AND ITS APPLICATION TO 
+FAULT DIAGNOSIS OF MISSILE
+Hu Changhua
+(Section 302,Xian Inst.Of Hi-tech,Hongqing town . Xi'an . 710025)
+Wang Qing
+(Department of Automation,Beijng University of Aeronautics and Astronautics . Beijing . 100084)
+Chen Xinhai
+(College of Aeronautic,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　The fault Diagnosis based on analytical redundancy depends on system's model,while it is difficult to get the system's model when the system is non-linear or uncertain time-varying,there are some difficulties to put this method into application of non-linear system.The fuzzy neural network can build the system's model by learning,and the model's parameter established by this method has clear mean,it provide an effective way to solve the above problem.The key of the Application of the fuzzy neural network is the determination of its parameters.Different from the other researchers,the authors convert the learning process to cluster and linear optimum,based on competitive learning and least-square error criterion,suggest a learning algorithm for the fuzzy neural network system,the experiment in certain servo-mechanism get very good result.
+　　Key words　Fault diagnosis Competitive learning　Fuzzy neural network
+1　引言
+　　对于导弹等大型复杂系统，对其可靠性提出了极高的要求，系统应具有故障诊断和容错能力，美国NASA就曾规定空间机器人应有一个故障诊断系统。基于解析冗余的故障诊断方法不需要增加硬件，利于减小系统的体积和重量，在航天器控制系统故障诊断和容错控制中得到了越来越多的研究和应用。另外，作为一个测试软件开发环境，FDE还具有强大的数学分析、运算、数据处理及图形功能。
+2　不确定度的分析
+2.1　脉冲响应法
+　　影响测量结果的主要因素有光脉冲输出幅度不稳定性，测量几个钠秒量级的时间常数时的示波器的取样误差和外电路时间常数的影响。
+　　3)氢拉曼(Raman)和光参量放大
+　　为获得3～5 μm，8～14 μm波段的单脉冲光输出，采用了光参量放大、氢拉曼(Raman)技术以分别获得3.5 μm以下和9.186 μm的单脉冲光输出。
+　　模糊化完成从输入空间U到定义在U上的模糊集的映射。
+　　　(其中σ2为(x)的形状特征参数)。流程设计方法则利用可视化功能部件以流程图的设计方式完成测试软件的编写工作，开发效率相对较高，且简单易用，HPVEE和LabView是其中的代表。除控键外，面板还提供仪器地址、面板名称等一系列虚拟面板属性信息。
+3　模糊神经网络的竞争学习算法
+　　类似文［1］，易证(4)式的模糊神经网络可以以任意精度逼近任意非线性函数。它的底层部分则基于一组I／O函数和测试接口，实时模式下，测试人员对软面板上控件的操作将直接反映到真实仪器上。
+　　为了解决外界电磁干扰，整套测试系统置于屏蔽室内，所有的测量在屏蔽室内进行，它解决了外界的不必要的干扰。具体分析如下：
+
+不确定度来源不确定度分类引入不确定度量
+幅度不稳定性B2.0％
+外电路的影响B2.0％
+取样误差A0.5％
+其它B1.0％
+重复性A3.4％
+不确定度合成4.6％
+
+2.2　频率响应法
+　　调制频率的准确度与不稳定直接影响测量结果，另外激光输出功率的稳定性、频谱仪读数的非线性也将对测量产生影响，具体分析如下：
+
+不确定度来源不确定度分类引入不确定度量
+光源幅度不稳定性B0.6％
+调制频率不稳定性B0.2％
+频谱仪读数的非线性B1.1％
+其它B0.5％
+重复性A2.0％
+不确定度合成2.4％
+
+2.3　噪声频谱法
+　　噪声频谱测量不确定度，主要来源于低噪声前置放大器和频谱分析仪的幅度非线性、测量系统的噪声带宽、替代不完全等效等，具体分析如下：
+
+不确定度来源不确定度分类标准替代法测量
+引入不确定度量
+前放＋频谱B1.1％
+替代不完全等效B1.0％
+噪声带宽B0.5％
+其它B1.0％
+重复性A2.8％
+不确定度合成3.4％
+
+3　不确定度的验证
+　　为验证系统的测量不确定度，用不同的红外探测器对不同的测量装置进行一系列的实验，具体结果见表1、表2、表3。
+　　(2)若‖Xj-Xl‖≤r，则用竞争学习算法确定Xj属于的聚类，并调整聚类中心的参数。
+　　(a)计算
+　　　　　　　　　　　　　　　(5)
+　　　　　　　　　　(6)
+　　pt表示中心点Xt附近样本的密集程度，ni为Xi被选最近点的次数。为了给测试人员一个直观的显示，虚拟面板的实现也采用这种方法，其上的控键则利用计算机的图形技术生成。
+　　2)锁模脉冲输出幅度的稳定
+　　由于单纯被动锁模激发效率约为60％～70％，输出锁模脉冲幅度很不稳定，为使输出的光脉冲幅度稳定得以提高，系统采用主被动锁模方式，并选用化学性能稳定的染料和溶剂，光学系统采用高质量光学镜片和调整支架。因此，如何保存仪器驱动器信息，特别是虚拟面板上控件所对应的程控信息，对应用软件环境的开发人员来讲十分关键。
+　　实验方法：根据导弹的幅相频率特性和阶跃响应曲线选择合适的激励信号(本试验中激励信号选择为长度为64的逆M序列，Δt=0.01)，用该激励信号分别激励系统，我们共进行了伺服机构正常和存在反馈电位计接触不良故障等8种初始状态的实验，每种初始状态进行了5～10组实验。利用正常系统的输入输出测量数据建立模糊神经网络，以该模糊神经网络作为伺服机构的观测器，构造图1所示的基于模糊神经网络的故障诊断系统，观测残差的输出情况。
+　　实验结果及结果分析：从实验结果中选择两个比较有代表性的结果来说明问题，图2和图3分别为伺服机构正常和存在反馈电位计接触不良故障情况下残差输出随时间变化曲线，图中横坐标为时间，纵坐标为残差幅值，从图2可以看出当系统处于正常工作状态时残差很小，表明模糊神经系统以较高精度逼近系统，由图3见，当系统发生故障时，残差的值较大，残差能够真实的反映系统的故障状态，依据残差可以实现故障诊断。
+2)激光输出功率的稳定：影响激光输出功率的稳定性主要有激光供电电源、环境条件的变化等，为此采用在线式UPS给激光器电源供电，它的基本工作原理是，首先将电网220 V交流电变为直流电，一路给电池充电，另一路再逆变为稳定的220 V交流电输出，同时电网中的噪声干扰也被大大抑制；另一方面对激光器的工作环境进行控制，如减少空气流动、让激光器工作在恒温室等。
+*国家自然科学基金重点课题和国防基础科学基金课题资助项目
+作者单位：胡昌华：解放军二炮工程学院302教研室 . 西安 . 710025
+　　　　　王青：北京航空航天大学自动控制系 . 北京 . 100084
+　　　　　陈新海：西北工业大学航天工程学院 . 西安 . 710072
+参考文献
+1　毛志宠，张雪枫，李衍达.模糊系统作为通用函数逼近器的研究.中国科学(E)，1997，27(4)：362-367
+2　胡昌华.控制系统故障诊断与容错控制的分析与设计.北京：国防工业出版社，1999
+3　陈建勤，席裕庆，张剑俊.模糊规则的学习及其在非线性系统建模中的应用.自动化学报，1997，123(4):533-537
+4　Wang Lixin.Adaptive Fuzzy Systems and Control.Prentice-Hall International.Inc,1992
+5　Paul M Frank.Fault Diagnosis Using Analytical and Knowledge-based Redundancy-A Survey and some New Results.Automatica,1990,26(3),459-474
+收稿日期:1998年6月15日
+修回日期:1999年1月10日

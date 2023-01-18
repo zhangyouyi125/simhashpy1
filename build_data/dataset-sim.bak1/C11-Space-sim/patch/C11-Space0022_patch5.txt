@@ -1,0 +1,94 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+竞争学习模糊神经网络及在导弹
+故障诊断中的应用
+胡昌华　王青　陈新海
+　　摘　要　尽管基于解析冗余的故障诊断方法有许多突出的优点而越来越多地得到研究和应用，但它依赖于系统的模型，当系统存在非线性或不确定性时，存在难以建模的困难，模糊神经网络可以通过学习建立系统的模型，且模型参数有明确的物理意义，初始参数易于选择，成为解决这一问题的优选途径，作者通过把模糊神经网络的学习转化为竞争聚类和线性优化问题，基于竞争聚类和最小二乘原理，提出了一种模糊神经网络学习算法，并在某伺服机构上进行了学习和故障诊断的实验，获得了良好的实验结果。
+　　主题词　故障诊断　竞争学习　模糊神经网络
+FUZZY NEURAL NETWORK BASED ON COMPETITIVE 
+LEARNING AND ITS APPLICATION TO 
+FAULT DIAGNOSIS OF MISSILE
+Hu Changhua
+(Section 302,Xian Inst.Of Hi-tech,Hongqing town . Xi'an . 710025)
+Wang Qing
+(Department of Automation,Beijng University of Aeronautics and Astronautics . Beijing . 100084)
+Chen Xinhai
+(College of Aeronautic,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　The fault Diagnosis based on analytical redundancy depends on system's model,while it is difficult to get the system's model when the system is non-linear or uncertain time-varying,there are some difficulties to put this method into application of non-linear system.The fuzzy neural network can build the system's model by learning,and the model's parameter established by this method has clear mean,it provide an effective way to solve the above problem.The key of the Application of the fuzzy neural network is the determination of its parameters.Different from the other researchers,the authors convert the learning process to cluster and linear optimum,based on competitive learning and least-square error criterion,suggest a learning algorithm for the fuzzy neural network system,the experiment in certain servo-mechanism get very good result.
+　　Key words　Fault diagnosis Competitive learning　Fuzzy neural network
+1　引言
+　　对于导弹等大型复杂系统，对其可靠性提出了极高的要求，系统应具有故障诊断和容错能力，美国NASA就曾规定空间机器人应有一个故障诊断系统。在传统的三通独立设计方法中,一般先令A11、A21=0,使被控对象(5)转化为两个“独立”的通道,等分别设计出up和uq后,再重新引入A12Xq和A21Xp等耦合项进行校验。
+5.3　全局最优法
+　　因在p≤0或p≥1时,因而当p＜0时ΔVB＞ΔVB｜p=0,当p≥1时,ΔVB≥2Mi/Ti。那么
+
+(1)
+则Gij(t)的更新方程为
+
+(2)
+*指卷积。
+2　自适应模糊逻辑系统――一种模糊神经网络
+　　模糊神经网络由四部分组成：模糊化，模糊规则库，模糊推理机和反模糊化。一般来讲,当软件的故障率λ(t)大时,缺陷易于暴露,因此dλ(t)/dt应负得多一些。
+　　　(其中σ2为(x)的形状特征参数)。
+　　模糊规则库由一组模糊规则构成，模糊规则是通过(如果一则/IF-THEN)语言描述的，即：
+
+　　其中隶属函数式中★表示T算子，经常采用的T算子有“模糊交”和“代数乘”。
+5　小结和进一步的工作
+　　我们根据典型的挠性天线及星体动力学方程,研究了开环挠性天线弹性振动的抑制问题,并从工程应用角度分析了影响挠性天线高精度指向的主要因素,初步探了有关解决办法。
+3　模糊神经网络的竞争学习算法
+　　类似文［1］，易证(4)式的模糊神经网络可以以任意精度逼近任意非线性函数。
+5　仿真计算
+　　图1～2给出了一个尖形信号(二维图像边缘的一个剖面)的WTDF滤波结果,图1为原始信号和加有高斯白噪声(水平为0.3)的信号,图2为滤波后的重构结果。第三部分提出了基于软件工程的软件可靠性系统化分析方法。
+　　Step2　对于第j对数据(Xj,Yj)(j=2,3，…)假定此时已有M个聚类，其聚类中心分别为Xk(k=1,2,…，M)，若‖Xj-Xl‖=mink‖Xj-Xl‖,则
+　　(1)若‖Xj-Xl‖＞r，则增加一新聚类XM+1=Xj,M=M+1,Yk=Yj。注意在动力学中,a为负值,因而c取负值。分析数值仿真结果,得到如下结论:
+　　①在挠性天线设计时,从提高指向精度方面考虑,要求天线应具有较高基频;从系统控制器设计方面考虑,要求减小天线―星体系统的耦合作用。
+　　(b)修正Xc
+　　　　　　　　　(7)
+　　使用pt‖X-Xt‖进行比较可使pt参与竞争，从而避免一般竞争学习算法中的死点问题，因为作为死点，它被选为中心Xt的次数几乎为零，引入pt后，意味着nt参与比较，使死点有机会参与竞争。
+
+(4)
+其中N表示离散信号的点数,n表示时间,m表示尺度,W表示信号的子波变换。
+表3　错误统计数据(时间单位:秒)
+
+序 号间 隔 时 间累 计 时 间序 号间 隔 时 间累 计 时 间
+11193389
+21210190
+3131130120
+4581222142
+54121313155
+624361422177
+76421577254
+81456167261
+
+表4　评估结果
+
+初始故障率α0.14065864
+影响故障率比例常数β0.00899166
+参数精度(方程组残量的欧氏范数)0.00008883
+当前故障率(t=250)0.01345717
+平均故障前时间(MTBF)74.30983110
+下一故障可能时间335.30983110
+
+
+
+图1　故障率图
+
+
+图2　故障率图
+评估的结果表明,该软件系统的平均故障前时间(MTBF)约为74秒,即软件离正式交付尚有一定距离,仍需进一步的测试。由于R在(0,2/N′)内是单调函数,因而可通过二分搜索法求取R=0之根。则系统的滑动模态域即为
+M={X∶sp=GpXp=0}∩{X∶sq=GqXq=0}
+(9)
+式中sp、sq为待定的滑动模态参数,Gp、Gq为相应的滑动模态参数矩阵。
+　　实验结果及结果分析：从实验结果中选择两个比较有代表性的结果来说明问题，图2和图3分别为伺服机构正常和存在反馈电位计接触不良故障情况下残差输出随时间变化曲线，图中横坐标为时间，纵坐标为残差幅值，从图2可以看出当系统处于正常工作状态时残差很小，表明模糊神经系统以较高精度逼近系统，由图3见，当系统发生故障时，残差的值较大，残差能够真实的反映系统的故障状态，依据残差可以实现故障诊断。
+
+图2　伺服机构正常残差输出随时间变化曲线
+
+图3　存在反馈电位计接触不良故障情况下残差输出随时间变化曲线
+　　实验表明，基于竞争学习的模糊神经网络能以较高精度逼近具有严重非线性的系统，据此构造的故障诊断系统可以有效地进行故障检测与诊断。
+2　坐标系及数学模型
+2.1　地心惯性坐标系
+　　原点在地心,X轴指向春分点,Y轴在赤道平面由X轴向东转90度,Z轴按右手法则得到

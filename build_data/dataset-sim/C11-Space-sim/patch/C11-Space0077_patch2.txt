@@ -1,0 +1,118 @@
+航空计测技术
+AVIATION METROLOGY &MEASUREMENT TEHNOLOGY
+1999年　第19卷　第4期　Vol.19　No.4　1999
+
+
+
+空间坐标转换技术的分析与研究(一)
+周维虎+啊±家槐　丁叔丹　费业泰
+摘　要　系统分析了空间坐标转换的不同形式及其相互关系，运用旋转矩阵理论作了较为深入的探讨，指出了使用中应注意的问题。
+　　实验时,第i组应变片是在距柔性梁根部ai处的两侧面轴线对称位置上,分别粘贴两个应变片,并将其接成半桥,以提高输出灵敏度。
+关键词　坐标转换　矩阵　雅可比矩阵　齐次矩阵　微分算子　微分运动
+Analysis and Study of Spatial Coordinate Transformation Technique (1)
+Zhou Weihu,Lan Yibing,Ding Shudan,Fei Yetai
+Abstract　The different types of spatial coordinate transformation and the relation between them are analyzed systematically in this paper.Using the rotation matrix theory,the deep search is done and the attentive problems during use are pointed out.The useful concepts of homogeneous matrix,differential movement,differential operator and Jacobi matrix etc. are proposed.The application of these concepts to robotics is discussed.
+Key words　Coordinate transformation,Matrix,Jacobi matrix,Homogeneous matrix,Differential operator,Differential movement
+　　空间测量和机构运动都离不开空间坐标转换，在不同的应用领域坐标转换具有不同形式。它们既有相似之处，又有不同之处，有时会产生混淆。
+　　目前，MSG－3已经成为民用航空的支柱。
+1　基本原理
+　　设有两个原点相同的直角坐标系，O-XYZ，O′-X′Y′Z′，如图1所示，任一点P在这两个坐标系中的坐标分别为(x，y，z)，(x′，y′，z′)。设X′，Y′，Z′轴在O-XYZ坐标系中的方向余弦为
+X′　　　Y′　　　Z
+cosα　　　　　r11　　　r12　　　　r13　　　　　　
+cosβ　　　　　r21　　　r22　　　　r23　　　　　 　
+　　　　　cos　　　　　　γr31　　　　r32　　　　r33　　　　　　　　　（1）
+则有
+x＝r11x′＋r12y′＋r13z′
+y＝r21x′＋r22y′＋r23z′
+z＝r31x′＋r32y′＋r33z′(2)
+矩阵形式为
+(x，y，z)T＝R*(x′，y′，z′)T　　　　　　　　　　　　　　　(3)
+式中，R＝(rij，称为旋转矩阵。
+4　平面两杆机构动力学实验结果及分析
+4.1　平面两杆机构结构特点
+　　实验用平面两杆机构简图如图2。从(1)式易知，X，Y，Z轴在O′-X′Y′Z坐标系中的方向余弦为
+　　　　　　　　　(6)　　　　　
+于是有
+x′＝r11x＋r21y＋r31z　　　　　
+y′＝r12x＋r22y＋r32z　　　　　　
+z′＝r13x＋r23y＋r33z′　　　　　　　(7)
+(7)式的系数矩阵是(1)式系数矩阵的转置RT，矩阵形式为
+(x′，y′，z′)T＝RT．(x，y，z)
+顾及(3)式有
+(x′，y′，z′)T＝RT．(x，y，z)T＝R-1(x，y，z)T
+于是
+　　　　　　　　　　　　　R-1=RT，R.RT=I　　　　　　　　　　　　　　　　　（8）
+可见，旋转矩阵R是正交矩阵。对(4)式逆变换，有
+(x′，y′，z′)＝RT[(x－x0)，(y－y0)，(z－z0)\]T
+由正交矩阵的性质知
+
+了解上述性质可以检查旋转矩阵计算的正确性。
+
+图1
+3　单次旋转矩阵与复合旋转矩阵
+　　一般来说，两坐标系之间的变换需三次旋转才能完成。
+　　本文针对一平面两杆机构开展了柔性多体系统动力学实验研究。绕X，Y，Z轴的单次旋转矩阵分别为
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(9)
+旋转角α均为正旋转。据支持者说，它能在毫不影响可靠性或安全性的情况下取代以前广为采用的定期大修。当左、右手坐标系之间转换时，需改变一个坐标轴的方向。
+
+P1，P2，P3为反向矩阵，分别使X，Y，Z轴反向。
+　　单次旋转矩阵的叠加产生复合旋转矩阵，复合旋转矩阵为
+　　　　　　　　　　　　R＝R1R2R3　　　　　　　　　　　　　　　　　　　　(10)
+顾及(8)式有
+
+所以，复合旋转矩阵也是正交矩阵
+　　在(10)式中，单次矩阵的左乘与右乘其含义是不同的。
+4　旋转矩阵的左乘与右乘
+　　设O-XYZ为基础坐标系，O′-X′Y′Z′为转换后的新坐标系。应用MSG－3维修原理之后，消除了定时的热端检查和大修。
+　　由材力知识可导出梁的挠曲变形与应变的关系:
+　　　　　　　　　　　　　　　　　　　　 (2)
+式中,h为梁的厚度;y″(x,t)表示对挠曲变形y(x,t)的位置变量x取二阶偏导数。故在按(4)式确定实测振动位移和进行仿真计算时,均须采用以弹簧铰支―自由为边界条件所确定的振形函数。
+4　平面两杆机构动力学实验结果及分析
+4.1　平面两杆机构结构特点
+　　实验用平面两杆机构简图如图2。
+5　Kardan旋转与Euler旋转
+　　实现坐标系转换的旋转模式有多种，常见的有Kardan旋转与Euler旋转。Kardan旋转是三个连动的旋转轴中不出现同名轴，如图2所示。
+1)保持Z不动，OXY按右手规则旋转αz角；
+2)保持Y0不动，OZX0按右手规则旋转αy角；
+3)保持X′不动，OY0Z0按右手规则旋转αx角；
+Kardan旋转属于相对变换，坐标转换公式为
+(x，y，z)T＝R3(αz).R2(αy).R1(αx).(x′，y′，z′)T　　　　　　　 (11)
+令
+
+则有
+a1＝cosαy.cosαz
+b1＝cosαy.sinαz
+c1＝－sinαy
+a2＝－cosαx.sinαz＋sinαx.sinαy.cosαz
+b2＝cosαx.cosαz＋sinαx.sinαy.sinαz
+c2＝sinαx.cosαy
+a3＝sinαx.sinαz＋cosαx.sinαy.cosαz
+b3＝－sinαx.cosαz＋cosαx.sinαy.sinαz
+c3＝cosαx.cosαy
+
+图　2
+Euler旋转与Kardan旋转不同，Euler旋转的三个旋转轴中，第一根轴与最后一根轴同名。如图3所示。
+1)绕Z轴旋转角，使X轴到达OXY平面与OX′Y′平面的交线位置；
+2)绕X轴(I线)转动θ角，使Z轴与Z′重合；
+3)再绕Z′反转φ角，使X，Y与X′，Y′重合。
+坐标转换公式为
+(x，y，z)T＝R3()R1(θ)R3(φ).(x′，y′，z′)T
+＝R.(x′，y′，z′)T 　　　　　　　　　　(12)
+仿(11)式，R中各项元素为
+
+
+
+图　3
+6　旋转矩阵的奇异性
+　　实际应用中，旋转矩阵有时会出现奇异性。用Euler旋转时，如图3所示，当Z与Z′轴之间的夹角θ很小时，θ≈0°，Euler旋转矩阵
+
+可见，与φ相关，旋转矩阵奇异,解不出三个独立的参数,θ,φ，下面举例说明。
+　　除了降低维修费用之外，持续的检测也能为机体制造商提供大量的数据，反过来能使OEM改进飞机系统和部件的可靠性。最新型的远程公务机，例如以色列飞机工业公司/银河宇航公司的“银河”、“挑战者”604、赛斯纳“奖状”X、达索“”900EX和“湾流”V，其中许多系统都是根据MSG－3维修原理在收集的数据基础上重新设计的。若圆柱垂直放置，θ角很小，旋转矩阵奇异，将解不出角。此时，改为Kardan旋转可解决这一问题。
+　　Kardan旋转也存在同样问题，当αy≈±90°时，有
+
+旋转参数相关，矩阵R奇异，解不出独立转角。最新投放市场的许多公务机和大型客机都是基于这个原理设计生产的。
+
+图　4
+作者简介:+36岁　男　高级工程师
+作者单位:长城计量测试技术研究所，北京市，100095
+　　收稿日期:1998-10-14收稿

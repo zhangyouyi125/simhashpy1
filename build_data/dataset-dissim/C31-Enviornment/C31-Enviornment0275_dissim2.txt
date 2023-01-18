@@ -1,0 +1,81 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第3期 No.3 Vol.18 1998
+科技期刊
+
+上海南汇淤泥质潮滩表层沉积物中多环芳烃*
+刘　敏　许世远　陈振楼　（华东师范大学地理系，上海 200062）
+文　摘　运用GC/MS对上海南汇淤泥质潮滩夏秋两个季节表层沉积物中的有机污染物多环芳烃作定性和定量分析。结果表明，该区多环芳烃总浓度最高达0.829 μg/g；个别组分已超出检测限达3～7倍，它们在秋季潮滩以及夏季中潮滩其浓度值及在PAHs总量中所占的百分比比重较大，已成为PAHs有机污染物高浓度区。
+关键词　表层沉积物　多环芳烃　淤泥质潮滩　上海南汇
+The polycyclic aromatic hydrocarbons in surface sediments of tidal mud flat from Nanhui,Shanghai.Liu Min, Xu Shiyuan，Chen Zhenlou(Department of Geography, East China Normal University,Shanghai 200062).China Environmental Science.1998,18(3):284～288
+Abstract―The results of qualitative and quantitative analyses on the Polycyclic Aromatic Hydrocarbons (PAHs) in surface sediments of tidal mud flat in the summer and the fall from Nanhui,Shanghai, show that the total PAHs concentration is up to 0.829μg/g.The individual component concentration is 3～7 times more than the monitoring limit and there is high content and percentage in total PAHs in the fall tidal flat and the summer mid-tidal flat,thus becoming PAHs polltants of the high sediment concentration levers in this region.
+Key words: surface sediments　PAHs　tidal mud flat　Nanhui of Shanghai
+　　近年来，国外已在河口湾〔1～3〕 ,现代湖泊〔4〕、海湾和土壤〔5〕、海岸带〔6，7〕等近代沉积物及大气颗粒〔8〕等环境介质中进行多环芳烃（PAHs）的调查和研究，对PAHs在环境介质中的行为及生态效应研究等方面已积累了较丰富的资料。但是，国内有机污染物PAHs的研究与报道主要限于大气相和大气颗粒相中〔9，10〕，对沉积物污染也重点放在重金属的调查与研究上，而对PAHs研究很少。多环芳烃（PAHs）作为一种重要的环境污染物和致突变物，严重影响着沉积物环境质量。本文通过对上海南汇淤泥质潮滩表层沉积物所作的PAHs分析和测试，来分析PAHs在滨岸沉积物中的浓度水平及其环境行为。发表论文3篇。
+1.3.2　接种污泥　 采用实验室活性污泥法模型曝气池中污泥作为接种污泥。现任洛阳大学数理工程系环境工程教研室讲师。
+1.2.2　样品的前处理　参照美国EPA SW－846中3550方法（超声萃取法）进行，样品浓缩定容后用GC/MS分析。
+1.2.3　仪器操作条件　色谱柱，J&W DB-5毛细柱 30m×0.32mm×0.32μm；载气氦气，流速 2.7mL/min；柱前压控制程序，初压为66.7kPa（96BSH1416）资助项目
+保持35min，以15kPa/min 速率升至150kPa后，按30kPa/min 速率降至66.7kPa。
+　　进样口温度为270℃，接口温度260℃；柱温程序：初温为35℃，保持5min；以8℃/min升至270℃，保持17min；进样量1μL;进样方式Grob型不分馏进样。电离源EI，70eV；发射电流0.5mA；质量范围40～400amu;扫描速度0.5s/Scan;倍增器电压：1450 V。
+2　结果与讨论
+2.1　定性定量鉴定
+　　通过仪器分析，计算机检索，谱库谱图解析及标准样品核对，对样品的总离子流图和质量色谱图进行定性，见表1，图1，图2。由标样的仪器检测限和标样的响应因子特征离子峰面积进行定量，如表2所示。多环芳烃分别以1，4-二氯苯-D4、萘-D8和蒽-D10为内标，测得目标物的特征离子峰面积和相邻内标的特征离子峰面积之比求得其含量。
+1.3.2　接种污泥　 采用实验室活性污泥法模型曝气池中污泥作为接种污泥。从表2中可以看出，多环芳烃（PAHs）总浓度从0.829μg/g～0.057μg/g。组分芘、苯并(a)芘和荧蒽等含量大大超过检测限，芘最高超过近3倍，苯并(a)芘近7倍，荧蒽近4倍。
+　　葡萄糖营养液：采用葡萄糖配水，其中投加(NH4)2CO3和KH2PO4作为氮源和磷源，使COD∶N∶P=200∶5∶1，COD约15g/L。而上述3类组分也是中国环境优先污染物“黑名单”中的有机污染化合物。
+　　季节性变化及在不同地貌单元中的分布特征显示，芘在6月份相对较低（表3），而且中潮滩较高，浓度含量0.030μg/g，占PAHs总浓度的17.2%，其它上和下潮滩则较低，含量为0.034和0.013μg/g，占PAHs浓度总量分别为4.2%和1.57%。8月份芘含量较高，但上、中和下潮滩浓度含量分别为0.009、0.025和0.037μg/g，在PAHs总浓度所占百分含量差别较小，在15%左右；苯并(a)芘季节变化不太明显，6月份以中潮滩最高，浓度含量为0.071μg/g，占PAHs总浓度的41%,其它下及上潮滩仅占4.5%和8.2%。秋季8月份在整个潮滩含量相差较小，在总PAHs浓度含量中所占比例也相近；荧蒽其季节性变化规律与苯并(a)芘相似。
+　　总的看来，秋季8月份芘、苯并(a)芘、荧蒽浓度含量及其在PAHs总浓度中所占百分含量差别较小，也比较稳定；夏季6月份则表现为中潮滩出现最高值，而高潮滩与低潮滩含量较低，上述特点表明研究区受人为污染较重，已成为PAHs有机污染物的高浓度区。
+表2　上海南汇淤泥质潮滩表层沉积物中多环芳烃（PAHs）（μg/g）
+Table 2　Contents of PAHs in surface sediments of tidal mud flat from Nanhui,Shanghai (μg/g)
+
+序号化合物名称分子式分子量6S16S26S38S18S28S3检测线
+1三甲基苯C9H121200.618<0.0030.751<0.003<0.003<0.0030.003
+2萘C10H8128<0.003<0.003<0.003<0.003<0.003<0.0030.003
+3甲基萘C11H101420.0390.0400.0120.0150.0370.0460.003
+4甲基萘C11H101420.0140.0150.0050.0040.0140.0150.003
+5苊C12H8152<0.003<0.003<0.003<0.003<0.003<0.0030.003
+6二氢苊C12H10154<0.003<0.003<0.003<0.003<0.003<0.0030.003
+7芴C13H10166<0.003<0.003<0.003<0.003<0.003<0.0030.003
+8菲C14H10178<0.003<0.003<0.003<0.003<0.003<0.0030.003
+9蒽C14H10178<0.003<0.003<0.003<0.003<0.003<0.0030.003
+10芘C16H102020.0340.0300.0130.0090.0250.0370.003
+11荧蒽C16H102020.0340.0280.0110.0080.0270.0390.003
+12苯并(a)蒽C18H12228<0.01<0.01<0.01<0.01<0.01<0.010.01
+13C18H12228<0.01<0.01<0.01<0.01<0.01<0.010.01
+14苯并(b)荧蒽C20H12252<0.01<0.01<0.01<0.01<0.01<0.010.01
+15苯并(k)荧蒽C20H12252<0.01<0.01<0.01<0.01<0.01<0.010.01
+16苯并(a)芘C20H122520.0660.0710.0370.0310.0550.1090.01
+17茚并(1,2,3-cd)芘C22H12276<0.01<0.01<0.01<0.01<0.01<0.010.01
+18二苯并(a,h)蒽C22H14278<0.01<0.01<0.01<0.01<0.01<0.010.01
+19苯并(ghi)C22H12276<0.01<0.01<0.01<0.01<0.01<0.010.01
+　PAHs　　0.8060.1740.8290.0570.1680.245
+
+　　　　　注：6S1、6S2、6S3及8S1、8S2、8S3分别为6月份和8月份高、中、低潮滩表层样品
+表3　夏秋季节不同地貌单元多环芳烃主要分子占PAHs总浓度的百分含量（%）
+Table 3　Percent contents of main elements in total PAHs from diferent 
+geomorphical units in summer and fall（%）
+
+组分特征6月8月
+低潮滩中潮滩高潮滩低潮滩中潮滩高潮滩
+荧蒽/PAHs4.216.11.314　16.115.9
+芘/PAHs4.217.21.5715.815　15.1
+苯并(a)芘/PAHs8.241　4.554.432.744.5
+
+3　结语
+　　上海南汇淤泥质潮滩中鉴定出的毒害有机物多环芳烃，说明上海市滨岸环境已受到不同程度的有机毒害物质多环芳烃的污染。
+3　结论
+3.1　焦化废水中多环芳烃及杂环类有机物经厌氧酸化处理后均发生了不同程度的转化。从滨岸现状来看，废水排放造成PAHs的相对富集可能是主要原因。研究表明，受试的有机物经过厌氧酸化处理后均发生了不同程度的转化。尤其在中潮滩区，由于水浅和底泥阻滞作用，水流不畅，几乎被高浓度污水所覆盖，累积现象更为明显，这是出现中潮滩区PAHs组分高的主要原因。而低潮滩则往往不易沉降，浓度相对较低，或者由于受潮汐作用等影响含量变化较大。对厌氧酸化前的水样和经过12h酸化反应后水样进行瓦呼仪试验，研究厌氧酸化前后受试污染物好氧生物降解性能的变化。
+参考文献
+1　Lake J L，Norwood C,Dimock C，et al.Origins of polycyclic aromatic hydrocarbons in esruarine sediments. Geochim. Cosmohcim. Acta,1979,43:1847～1854
+2　Shiaris M P，Jambard D.Polycyclic aromatic hydrocarbons in surficial sediments of Boston Harbour, Massachusetts.Marine Pollution Bulletin,1986,17(10):469～472
+3　Croudace I W，Cundy A B.Heavy metal and hydrocarbon pollution in recent sediments from Southampton Water.Environ.Sci.Technol.,1995,29:1288～1296
+4　Wakeham S G,Giger W,Schaffner G. Polycyclic aromatic hydrocarbons in recent lake sediments-I. compounds having anthropogenic origins.Geochim.Cosmohcim.Acta,1980,44:403～413
+5　Windsor J G，Hites R A. Polycyclic aromatic hydrocarbons in Gulf of marine sediments and Nova Scotia soils. Geochim.Cosmohcim.Acta,1979,43:27～33
+6　Boehm P D，Farrington J W. Aspects of the polycyclic aromatic hydrocarbon geochemistry of recent sediments in the Georges Bank region.Environ.Sci.Technol.,1984,18(11):840～845
+7　Hites R A,Laflamme R E,Farrington J W.Sedimentary polycyclic aromatic hydrocarbons: the historical record.Science, 1977, 198:829～831
+8　Kowalczyk G S，Gordon G E,Rhelngrover S W. Identification of atmospheric particulate sources in Washington D.C.using chemical element balances.Environ.Sci.Technol.,1982,16(2):79～90
+9　冯沈迎,仝　青，乌　兰等.呼和浩特市大气相和颗粒物中有机污染物的定性分析.环境科学，1995,15(6)：66～69
+10　丁中华.煤都大同市大气环境中的颗粒物有机污染物和金属元素的分析研究.环境科学进展，1996,4(1)：23～27
+作者简介
+刘　敏　男，1964年1月生。现为华东师范大学地理系博士后，副教授。
+3.4　厌氧酸化-好氧生物处理工艺是去除焦化废水中难降解有机污染物的有效途径。主持上海市博士后基金“上海淤泥质潮滩表层沉积物中多环芳烃时空变化及其环境影响”；参加上海市重点科技攻关项目“苏州河底泥合理处理对水环境的影响研究”以及国家自然科学基金项目“长江三角洲滨海湿地季节性冲淤变化及其环境效应”等多项国家和地方科研项目。曾获得河北省科技进步一等奖。对杂环化合物及多环芳烃生物降解机理的研究表明，环的开环裂解是它们在生物降解过程中的限速步骤。
+收稿日期：1997-07-02
+* 国家自然科学基金(49771011)和上海市博士后科学基金

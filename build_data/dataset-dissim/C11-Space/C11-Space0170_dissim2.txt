@@ -1,0 +1,90 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年  第3期   No.3 May   1998
+科技期刊
+转台伺服系统变模态控制器最优
+切换状态设置
+
+李秋明　冯汝鹏　于　镭　刘升才
+(哈尔滨工业大学惯导中心*哈尔滨*150001)
+　　摘　要　本文对转台伺服系统变模态控制的切换问题进行了探讨,分析了切换后控制器状态设置问题。
+　　上述的拓扑分离结构,虽然没有实验的验证,但是横向主分离及二次分离的形态与位置都与实验显示出的结果相一致,而Ying［6］的计算结果与实验结论相比,主分离线与二次分离线的上下位置颠倒了。最后,介绍了转台伺服系统数字控制器状态设计的实际算法及结果。
+　　主题词　转台　伺服系统　变模态控制　切换状态
+OPTIMAL SWITCH STATE SETTING OF 
+VARY-MODEL CONTROLLER IN THE 
+TURNTABLE'S SERVO SYSTEM
+
+Li Qiuming　Feng Rupeng　Yu Lei　Liu Shengcai
+(Inertial Navigation Test Equipment Research Center,Harbin Institute of Technology*Harbin*150001)
+　　Abstract　This paper had thoroughly discussed the problem of switch in the vary-model control,and analyzed the switch state setting of the controller.Furthermore,the optimal switch state setting method is offered.In conclusion,the practical state setting way and result of turntable's digital controller is introduced.
+　　Key words　Turntable　Servo system　Vary-model control　Switch state
+1　引　言
+　　随着惯导器件水平的不断发展,对惯导测试转台的要求越来越高。快速、无超调、高精度是这类伺服系统的重要技术指标。同时满足这三项指标,传统的设计方法已很难达到要求,根据国外的情况和我们的实践,这类系统多采用变模态控制。变模态控是将控制过程分成不同模态,也就是将控制任务分解成子任务分阶段来完成。它可以在系统运行的不同阶段,选用合适的控制律,组合简单的控制方法实现高品质控制。而Ying［6］在同样位置的等密度线的图中,只显示出一对横向主涡。切换时两个重要因素是切换条件的选取和进入新的控制模态时控制器的初始状态设置。本文讨论了最优切换状态设置问题及切换条件的选取,并针对某型转台伺服系统数字控制器介绍了实际的算法及实验结果。
+2　变模态控制器设计
+　　根据转台伺服系统的要求,可将整个控制过程分成无超调快速归零和保证高精度两个状态。无超调快速归零由PD测速反馈系统完成,保证高精度由Ⅲ型系统来完成。采用数字控制系统设计。
+　　PD测速反馈系统:
+　　这种系统的设计思想是用测速反馈构成宽频带的速度环来抑制干扰,用窄频带的位置环实现位置跟踪。这类系统的特点是动特性好,对速度环的输入进行限幅后,可调整电机的最高转速。控制器形式为式(2.1)(输入是位置阶跃信号)。Kp的大小应保证该系统精度达到0.1°,Kd的值应设计成临界阻尼系统,以保证无超调响应。
+　　计算网格为CH形网络(图1),网格沿物体轴向、法向及周向分别为60×49×58,物面附近法向最小网格尺度为2.0×10-5(半球直径D=1)。其特点是静态刚度无究大,抗干扰能力最强。计入迎风面的附着结点及无究远的分离结点,则结点,鞍点总数满足拓扑分析的hairysphere定理:ΣN-ΣS=2。其控制器形式为式(2.2)
+
+　　切换条件的确定:
+　　切换条件的确定也即切换时对象状态的选取从理论上证明比较困难,一般都是根据实际情况而定［1］,根据李雅普诺夫第二法,在切换时,系统应具有较小的能量,否则将会出现振荡等不稳定现象。这种能量可以用切换时系统的速度v或者给电机的控制量u来表示。本文选择的切换条件是位置偏差小于0.2°并且v＜0.05°/s。这里还要注意切换时的位置偏差是Ⅲ型系统稳定的范围而且也是PD测速反馈控制能够达到的范围。
+　　在进入新的控制模态时,还需对控制器的状态进行重新设置,否则会出现振荡、切换失败等现象。
+3　控制器的最优切换状态设置
+　　设某离散线性定常控制系统,其控制器动态方程为:
+
+(3.1)
+式中,Xc,Uc,Yc分别为控制器的状态向量、输入向量及输出向量。
+受控对象的动态方程为:
+
+(3.2)
+式中,XG,UG,YG分别为对象的状态向量,输入向量及输出向量。控制器与对象串联:UG=Yc,控制器可以采用状态所馈和输出反馈,两者均可得出同样的结论,下面仅以状态反馈来分析:Uc(k)=LXG(k),L为反馈增益矩阵。由此可得,
+
+(3.3)
+令
+XG,则得整个系统的动态方程为
+
+(3.4)
+式中,由控制器的设计可以保证A稳定。根据李雅普诺夫第二法,如果系统有一个渐进稳定的平衡状态,则当系统向平衡状态附近运动时,系统储存的能量随时间的推移应逐渐衰减,直到平衡状态衰减到最小值。
+　　主题词　分离流　涡　数值模拟
+NUMERICAL INVESTIGATION OF 
+THREE-DIMENSIONAL SEPARATED 
+FLOWS ABOUT A HEMISPHERE-CYLINDER
+
+Chen Liang　Yan Chao　Ding Xiaomei
+(Beijing University of Aeronautic and Astronautics*Beijing*100083)
+　　Abstract　A numerical investigation of three-dimensional separated flows about a hemisphere-cylinder is presented.The analysis has been restricted to transonic and laminar flows.Results are given for the complex flow field structures including shock,boundary layer,separated flow,vertical flow and their mutual effects.The topological structures of the separated flow is shown.
+　　Key words　Separated flow　Vorfex　Numerical simulation
+1　前　言
+　　三维分离是流体力学中引人注目的一个课题,其结构形态还有不少争议和疑问。半球柱绕流包含有丰富的三维分离形态和空间涡结构,跨音速情况下,还存在激波与边界层的相互干扰作用。并且:
+
+(3.5)
+式中,
+式(3.5)变为:,考虑到P12=PT21,有
+
+(3.6)
+对Xc(0)求导得:
+
+(3.7)
+显然J达极小的条件为(3.7)式为0,由于P为正定阵,故P11可逆,可得控制器初始状态为:
+
+(3.8)
+4　实例计算与实验
+　　(2)中所讨论的两个模态中,PD测速反馈是从静态开始的,不存在初始状态设置问题,这里考虑Ⅲ型系统的控制器初始状态设计。在求取系统的状态空间模型时,一个需要注意的问题是控制器的状态要根据实际的算法确定,对象的状态也宜选为实际的物理量,否则在计算控制器最优切换状态时会增加计算量并降低了可操作性。
+参考文献
+1　Martinelli I.Calculations of viscous flows with a multigrid method.Ph.D.dissertation,MAE Dept.,Princeton Univ.,NJ,1987
+2　Swanson R C,Turkel E.Aspects of a High-Resolution Scheme for the Navier-stokes Equations.AIAA-93-3372-CP,1993
+3　Hsieh T.An investigation of separated flows about a hemisphere-cylinder at incidence in the mach number range from 0.6 to 1.5.AIAA-77-1179,1977
+4　Meade and Rew J JR.Experimental study of three-dimensional separated flow surrouding a hemisphere-cylinder at incidence,AIAA paper 87-2492,1987
+5　Rieger H.Solution of steady three-dimensional compressible Euler and Navier-Stokes equations by an implict LU scheme.AIAA-88-0619,1988
+6　Ying S X.Numerical simulation of unsteady,viscous,high-angle-of-attack flows using a partially flux-split algorithm.AIAA-86-2179,1986
+。这里,Ⅲ型系统选取串联型控制器,设定控制器状态为W1,W2,u,由(2.2)可建立控制器状态方程为:
+
+(4.1)
+对象的动态方程为:
+
+(4.2)
+以转轴角位置θ(t)与转轴角速率(t)为状态变量,考虑到e(k)=θr-θ(k),可建立离散状态方程。因此,为保证数值粘性不掩盖物理粘性,Martinelli［1］对人工粘性的常系数进行了修正,采用与Jacobian矩阵频谱半径有关的变尺度因子。对于设计的一组参数:Kd=7.321×104,KM=4.4,T=0.005,J=42,a=c=-0.8512,b=d=-0.0667(单位:国际单位)可计算A。取性能指标Q=I,对象初始状态XG(0)=［0.05　0.2］T,则由(3.8)可计算控制器初始状态为xc(0)=［0.21233　0.01286　100.10855］T。此时,JOPM=0.4589×105。若为零初始状态,
+
+
+图1　切换后归零过程
+则切换后性能指标为:J0=3.0638×108。二者的偏差归零过程如图1所示。图中实线为设置控制器最优切换状态后的动态过程,虚线为控制器取零初始状态时的归零过程。可见前者的超调量明显减小,实现了无超调归零,只是过渡过程时间略大些。横向主涡在向下游发展的过程中,由于涡量不断由边界层卷入,涡强增大,诱导产生二次分离(常点型开式分离)和二次涡。半球柱绕流包含有丰富的三维分离形态和空间涡结构,跨音速情况下,还存在激波与边界层的相互干扰作用

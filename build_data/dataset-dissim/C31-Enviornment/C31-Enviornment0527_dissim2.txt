@@ -1,0 +1,58 @@
+城市环境与城市生态根据当地特点，城市生态系统类型划分为：耕地、园地、林地、牧草地、水面、农田、城镇、工矿、未利用等9类，总面积3648.5　km2URBAN ENVIRONMENT & URBAN ECOLOGY
+1999年 第12卷 第4期 Vol.12 No.4 1999
+
+
+
+水资源可持续利用的系统动力学仿真研究
+杨建强，罗先香
+　　摘要：如何保护城市环境，合理开发利用自然资源，是当今世界所面临的共同问题。针对我国城市资源与环境的特点，要使经济快速、持续发展，必须解决好水资源的持续利用问题。本文以吉林西部地区乾安县为例，应用系统动力学的原理与方法开展了该区水资源可持续利用系统仿真研究，经过政策模拟对比，提出了符合乾安县经济发展的最佳方案。
+　　关键词：水资源；可持续发展；系统动力学
+　　中图分类号：X143　　文献标识码：A　　文章编号：1002-1264(1999)04-0026-04
+Research of System Dynamic Model for 
+Sustainable Utilization of Water Resource
+YANG Jian-qiang，LUO Xian-xiang
+(Changchun University of Science and Technology,Changchun 130026)
+Abstract：Taking Qianan county in the west plain of Jilin as an example,the author made a thorough study of system dynamic mode for sustainable utilization of water resource.As a result of policy simulating and contrasting the optimal plan is put forward that is favorable to economic development in Qianan country.
+Key words：water resource;　sustainable development;　system dynamics 
+　　水资源的开发利用与城市环境、经济的发展息息相关，由于水资源短缺和不合理开发利用已带来许多城市环境问题，严重阻碍了经济的发展和人民生活水平的提高，因而，研究如何使水资源可持续利用，在当前显得尤为重要。自然成本在GNP中得不到反映，完全变成经济资本被人类无偿占有，没有或很少投入到生态系统建设之中，造成人类的经济资本和社会资本不断增加的同时，生态系统中的自然资本不断减少，因此通过全球性和区域性的生态灾害表现出来，使人类经济资本和社会资本遭受巨大损失。造成上述状况的重要原因之一是：体现在环境与资源上，以土地为载体的生态(社会、经济、环境)价值，长期以来没有被人们充分认识，即使在市场经济条件下，人们也仅考虑环境与资源可实现的经济价值，很少顾及其潜在的社会与环境价值，应该承认，生态价值的测算是一世界性难题，本文仅从城市生态系统综合价值测算的理论和方法，进行有益的探讨。自然成本在GNP中得不到反映，完全变成经济资本被人类无偿占有，没有或很少投入到生态系统建设之中，造成人类的经济资本和社会资本不断增加的同时，生态系统中的自然资本不断减少，因此通过全球性和区域性的生态灾害表现出来，使人类经济资本和社会资本遭受巨大损失。它是由美国麻省理工学院J.W.Forrester教授于50年代中期创立的。该方法是在总结运筹学的基础上，综合系统理论、控制论、信息反馈理论、决策理论、系统力学、仿真与计算机科学等基础上形成的崭新的学科［1］。它以现实存在的系统为前提，根据历史数据、实践经验和系统内在的机制关系建立起动态仿真模型，对各种影响因素可能引起的系统变化进行实验，从而寻求改善系统行为的机会和途径。这是一种不需在真实系统上试验，节省人力、物力、财力和时间的科学方法。
+　　系统动力学具有如下特点［2］：①擅长处理周期性问题；②擅长处理长期性问题；③在数据缺少条件下仍可进行研究，因为SD模型的结构是以反馈环为基础，而多重反馈环的存在使得系统行为模型对大多数参数是不敏感的，因此，虽然数据缺乏对参数的估计会带来一定困难，但只要选择的参数落在其允许范围内，系统行为仍显示出相同的模式，此时，仍可用SD方法研究系统行为趋势等问题；④擅长处理高阶、非线性、时变的问题。
+1　城市生态系统服务功能价值概念
+　　1997年Robert Costanza等人在《Nature》上发表了“全球生态系统服务功能价值和自然资本”一文在世界范围引起巨大反响［1-3］。城市生态系统服务功能资本结构共24项，划分如下：自然资本分为水土保持、水循环、土壤形成、污染净化、小气候、生物调控等6项；经济资本分为农、林、果、牧、鱼、矿产、工业、建筑、运输、电信、商饮服、旅游资本等12项；社会资本分为居住、就业、文教、医疗、娱乐和行政管理等6项。也就是说，模型边界所包围组成部分可以很少，但必须要能解释边界内发生的系统行为，闭合边界从本质上说是没有任何流可以穿过的。然而，实际系统大部分是开放系统，它们与环境之间存在着频繁的物质、能量和信息的交流。所以必须针对研究问题的需要，根据系统结构由远及近地先对系统，然后对各子系统一一进行系统边界的确定，基本原则是：将直接参与或对农业自然资源环境系统有直接影响的因素划分在边界之内。
+　　乾安县水资源的利用方式直接关系到整个系统的兴衰。因而水资源总量，各产业的水资源需求量，分配量及水的利用率，利用方式；工农业总产值，耕地面积，林草地面积；灌溉定额等对整个系统有较大影响，故划在边界之内。因此本研究计算的是最低水循环成本，采用替代成本分析法：
+・农业水循环价值公式　
+Va=-a・(W1-W2)・Pw/Sa
+　　Va农业水循环价值；W1农业年总用水量；W2农业年总排水量；Pw当地农业水资源价格(元/t)；Sa农业用地面积(万hm2)；a调整系数，考虑到蒸发渗漏等自然水循环因素取当地经验系数0.1；
+・城镇水循环价值公式　Vc=-W・P・Pw/Sc
+　　Vc城镇水循环价值；W人均用水量(t/人・年)；P总人口(万人，下同)；Pw当地生活水资源价格(元/t)；Sc城镇用地面积(万hm2)；
+・工矿水循环价值公式　Vi=W・G・Pw/Si
+　　Vi工矿水循环价值；W万元产值用水量(t/万元)；G工矿业总产值(万元)；Pw当地工业水资源价格(元/t)；Si工矿用地面积(万hm2)；
+　　③污染净化的测算依据来自文献［4］，对于城镇、工矿、交通用地产生的环境污染主要采取防治成本法测算。
+　　目标变量　农业供水量，工业供水量，供水紧张程度，环境经济损失等。
+　　控制变量　是指为促进发展目标的实现而采取的诸项措施，主要有：农田灌溉定额，节水投资，供水事业投资，供水能力系统，灌溉方式等。
+　　辅助变量　为连接状态变量，目标变量等而设置的变量。水资源量，地下水允许开采量，降雨量，每亩耕地实际用水量等。
+　　系统动力学认为，系统与系统之间，系统内部各因素之间存在着互为因果关系，并且这种因果关系构成闭合的反馈回路。
+　　关键词：城市生态系统；自然资本；可持续发展；生态价值
+　　中图分类号：X171　　文献标识码：A　　文章编号：1002-1264(1999)04-0019-04
+The Systematic Analysis on Value of Urban Ecosystem Services
+ZONG Yue-guang,XU Hong-yan,TANG Yan-bing,CHEN Hong-chun
+(The Department of Resources and Environmental Science,Beijing Normal University,Beijing 100875)
+Abstract：In order to analyze ecological values of an urban ecosystem, this paper provided a systematic analysis on the value of urban ecosystem services based on the concept of sustainable development in ecological economics.There are several appraisal approaches that could be used in ecosystem valuation.Because the urban ecosystem services are uncertain,it must be considered with a minimum estimate.For the total capital,natural capital contributes to human welfare more than 1/3 in the urban ecosystem every year,and therefore represents part of the total economic and social value.Sustainable development can only be achieved when natural capital is increasing in a urban
+ecosystem.
+Key words：urban ecosystem;　natural capital;　ecological value;　sustainable deveopment 
+　　据有关资料显示唱常我国生态环境有不断恶化的趋势，这种趋势不改变，将严重阻碍全人类共同追求的可持续发展目标在中国的实现。
+
+
+图1　理想市场条件下的边际效益与边际成本
+2.2　自然生态系统服务功能的边际效益和边际成本
+　　由于自然生态系统提供的服务功能(土地、水资源、空气、矿产等)缺乏弹性，因此形成如图2所示的垂曲线qb。
+
+
+图3　调控后的生态系统服务功能的边际效益与边际成本
+3　典型地区生态系统服务功能价值测算
+3.1　研究目标
+　　测算XX市城市生态系统服务功能体现的总资本价值结构。对于土地盐碱化有：农业用水需求供水紧张程度超采地下水，大水漫灌土地盐碱化、沙化农业供水量耕地面积农业用水需求为一负反馈环，正反馈回路说明增加水资源量能促进经济发展，同时经济发展又能促进水资源的合理开发和科学利用，相对地增加供水量，负反馈环回路说明经济发展对水资源的需求加剧了水资源的紧张程度，加之不合理的灌溉方式，其结果反馈到土地资源及农业和人民生活上，制约经济的发展。目前，该区水资源利用存在浪费大，水资源供需存在潜在危胁，水资源利用方式不合理，土地资源盐碱化、沙化、林草地锐减等问题，已严重影响了经济。如何合理开发利用水资源，促使经济可持续发展，提高农业产值是本模型研究的核心。
+2.3　系统流图设计及方程构造
+　　根据系统动力学原理，结合大量历史数据，在对系统主要变量的变化特征进行细致分析的基础上，设计出系统动力学流图(见图1)。
+　　流图只说明系统中各变量间的逻辑关系与系统构造，并不能显示其定量关系，为此，需要建立系统动力学方程，状态方程是SD模型的核心，它表示系统行为的变化，其它方程则由状态方程导出。状态方程一般表达式为：
+
+　　其差分形式为：X(t+Δt)=x(t)+f(Ri、Ai、Xi、Pi)×Δt其中X为状态变量，A是辅助变量，R为流率变量，P是参数，t为仿真时间，Δt是仿真步长。

@@ -1,0 +1,107 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+空间辐射散热器含液滴介质的
+辐射特性和辐射传热
+橙盍⒚鳌√负推健⊥跗窖簟×趿只　夏新林
+　　摘　要　本文从米氏电磁散射理论出发，计算了含液滴介质的辐射特性。考察了各向同性散射能量传递份额的再分配，导出了吸收、发射、各向同性散射介质的辐射传递系数。
+
+
+图1　典型测量系统的组成
+
+　　900系列分布式数据采集系统除采用专用电缆在1.2 km范围内进行数据传送外，在远距离或不便布设专用电缆的使用场合，可以使用调制解调模块，利用现有的电话线路进行数据传送，也可利用现有的专用无线通讯网，进行数据传送和控制。外部的干扰主要是工业生产中大量使用电阻炉、感应炉等电气加热炉，而作为仪表变送器使用的热电偶，又与这些产生强电磁场的设备极为靠近。
+　　主题词　空间辐射散热器　液滴层　米氏电磁散射理论　辐射换热　辐射传递系数
+RADIATIVE PROPERTIES AND HEAT TRANSFER OF A
+DROPLET-FILLED LAYER IN SPACE RADIATOR
+Ruan Liming Tan Heping Wang Pingyang Liu Linhua Xia Xinlin
+(School of Energy Science and Engineering,Harbin Institute of Technology . Harbin . 150001)
+　　Abstract　The radiative properties of a droplet-filled layer are calculated by using the Mie scattering theory in this paper.The redistribution of radiative energy in the case of isotropic scattering is investigated,and the radiative transfer coefficient (RTC) in an absorbing,emitting and isotropic scattering medium is derived.The transient radiative heat transfer of a droplet-filled layer in space radiator is solved.Then the validity and high precision of the formula for the RTC are confirmed by comparing with references ［4,5］.Finally,the effects of size or size distribution of droplet,which are created by generator,on the transient coupled heat transfer are analyzed by means of computer aided experiment,so the numbers of experiment can be reduced in design of space radiator.
+　　Key words　Space radiator Droplet layer Mie scattering theory Radiative heat transfer Radiative transfer coefficient
+1　引言
+　　空间轨道发电装置的废热在空间的散逸需要使用散热器。Mattick和Hertzberg在1981年就提出可以把热的液滴向空间喷洒，通过瞬间的辐射冷却，然后再加以回收［1］。文献［2，3］对该散热系统的组成和优化进行了详细的讨论。文献［4］假设沿液滴层厚度方向温度是均匀的，由此得到了简化结果。文献［5］对沿液滴层厚度方向温度不均匀的冷却效果进行了数值模拟。本文导出两侧均为半透明界面下一维吸收、发射、各向同性散射介质的辐射传递系数；对空间辐射散热器喷洒的液滴层的散热过程进行了数值模拟，并与文［4，5］的计算结果进行了比较。
+2　空间辐射散热器含液滴介质的计算模型
+　　如图1所示，液滴层由液滴发生器喷出，以匀速穿过空间，它具有不变的厚度L。在垂直于X-Y平面方向的范围相对L要大得多，因此在该方向的变化可忽略。液滴层在Y=0的截面上温度均匀为Ti，由于液滴层向空间散热冷却，因此液滴层的温度T=f(x,y)。液滴层由许多个半径为5-100μm的液滴组成，发射、吸收和散射辐射能。
+
+
+图1　典型测量系统的组成
+
+　　900系列分布式数据采集系统除采用专用电缆在1.2 km范围内进行数据传送外，在远距离或不便布设专用电缆的使用场合，可以使用调制解调模块，利用现有的电话线路进行数据传送，也可利用现有的专用无线通讯网，进行数据传送和控制。
+
+图5　少于5个模块的980网络的典型连接
+　　3)981网络的典型连接见图6。
+
+
+图　3
+
+　　漏电流的形成是因为有些绝缘体的绝缘性能随着温度的升高而逐渐下降。可以在1.2 km的范围内，根据现场使用需要随意组成最少1个模块、20个测量点；最多不超过99个模块、1980个测量点(取决于模块)的测量系统。
+
+
+图1　典型测量系统的组成
+
+　　900系列分布式数据采集系统除采用专用电缆在1.2 km范围内进行数据传送外，在远距离或不便布设专用电缆的使用场合，可以使用调制解调模块，利用现有的电话线路进行数据传送，也可利用现有的专用无线通讯网，进行数据传送和控制。当干扰信号过大时，放大器工作在饱和区，使仪表灵敏度降低，指针行程时间增长，产生变差，严重时使仪表不能正常工作。在时间间隔t(=mΔt)到t+Δt(=［m+1］Δt)内，离散化方程为
+C(Tm+1i-Tmi)/Δt=Φr,m+1i/Δx　　　　　　　　　　　　(4)
+　　液滴层与环境的交界面为半透明界面(在某些波段热射线可以穿透界面)。二是对仪表主要线路采用等电位屏蔽，并合理安排一条漏电流的通路，阻止其进入测量系统输入变压器。半透明界面下，介质由辐射换热引起控制体i的辐射源项Φri为
+　　(5)
+式中：为结点温度Ti下谱带模型k区域内黑体辐射能占总辐射能的份额。上角标s表示镜反射，下角标t-t表示半透明介质的两侧均为半透明界面。［ViVj］k，［ViSj］k(Sj=S-∞,S+∞)分别为吸收―发射―各向同性散射性介质内，控制体与控制体、控制体与表面间的单色辐射传递系数。
+5　模块的结构与连接
+5.1　模块的结构
+　　测量模块是分布式数据采集系统的主要组成部分，负责完成多路传感器信号的扫描、采集、放大、A／D转换、信号发送等功能，其作用相当于目前常用的二次仪表，测量模块的工作原理如图2。求单色辐射传递系数的前提是必须了解含液滴介质层的辐射特性。如所使用的是非金属保护管(如石英管、氧化铅管等)时，可用废镍铬丝缠绕在非金属保护管上，金属丝的一端接地，但这种方法效果不太好。粒子系粒子半径范围［rmin,rmax］；P(r)为粒径分布函数［cm-3 μm-1］，定义为单位容积内半径为r→r+dr的粒子数。933模块的CH19、CH20空。对于某一确定种类的粒子，其复折射率是波长的函数，其粒子散射反照率是尺度参数的函数。通常粒子系是由不同粒径的粒子组成，其散射反照率各不相同，因此必须计算平均散射反照率λ
+　　　　(7)
+　　本文假定散射是各向同性的。
+3.2　液滴层的辐射特性计算
+　　如果液滴层为液滴与其它吸收性(非散射性)介质所组成，则液滴层的单色衰减系数κtot,λ
+κtot,λ=κext,λ,p+(1-Fv) . κabs,λ,m
+　　式中：κabs,λ,m为吸收性介质的吸收系数；Fv为液滴体积浓度，由下式直接计算得到：
+
+　　空间液滴层由液滴与空气组成，空气吸收系数为零。因此，粒子系衰减系数即为液滴层的衰减系数。液滴层的液滴粒径分布由液滴发生器确定。
+　　共模干扰主要来源于地电流和漏电流。(2)冷却效果好。作为计算机辅助实验，本文对Modifided gamma粒径分布函数进行了数值模拟。Modifided gamma分布函数为：P(r)=p1 . rp2 . exp(-p3 . r)粒子半径范围为0.5～25μm。p1,p2,p3为三个常量，分别取下列三组数据。本文分析了仪表干扰的来源、种类及应采取的抗干扰的措施。
+
+图2　符合Modifided gamma分布的非均匀粒径粒子系的粒径分布曲线
+　　　　casel:p1=1000,p2=2,p3=0.3;相应Fv=5.230E-4 (cm3/cm3)
+　　　　case2:p1=1000,p2=2,p3=0.4;相应Fv=1.144E-4 (cm3/cm3)
+　　　　case3:p1=1000,p2=2,p3=0.5;相应Fv=3.169E-5 (cm3/cm3)
+　　已知粒子复折射率(水的复折射率见表1)，给定粒径和波长范围，则单色衰减、散射、吸收因子及单色散射反照率可用Mie散射理论计算程序求出［7］。将单色衰减、散射、吸收因子及粒径分布函数代入式(6)及(7)，得到液滴层辐射特性参数(见表1)。
+表1　符合Modifided gamma分布的含液滴介质的单色衰减系数κtot,λ(cm-1)
+及平均散射反照率λ
+λ水的复折射率case1case2case3
+nλkλκtot,λλκtot,λλκtot,λλ
+2.01.3060.00110.5870.9200.1580.9320.0540.942
+3.51.40.00940.6300.7310.1740.7660.0610.797
+5.01.3250.01240.6610.7480.1830.7850.0640.818
+8.01.2910.03430.6880.6640.1900.7080.0650.745
+10.01.2180.05080.6890.6590.1720.6730.0520.677
+12.01.1110.1990.5130.4200.1270.3950.0400.367
+13.01.1460.3050.5610.4360.1430.4130.0460.388
+14.01.2100.3700.5940.4460.1530.4260.0500.404
+
+4　辐射传递系数
+　　已知含液滴介质层的辐射特性，则可求出单色辐射传递系数。如果主机有RS485通讯接口，就可直接与模块进行通讯。此时放大器无功率输出，可逆电机停止转动，桥路处于平衡状态。辐射传递系数包含单元j的面积和表面吸收率，已考虑了多次反射，并且具有相对性。
+　　干扰的表现可以通过仪表记录曲线反映出来，干扰的大小可以通过电压表测量出来。此时，吸收、发射性介质的辐射传递系数所表示的能量传递份额将重新分配。为书写方便，下列各式略去下角标k；用下角标a表示辐射传递系数所表示的能量传递份额中被吸收的部分。令：η=1-ω。注意：散射性介质是介质散射，界面只反射，不散射。
+　　共模干扰主要来源于地电流和漏电流。其物理模型第一步可简化为：半透明界面下一维等温吸收、发射、各向同性散射的灰介质与周围环境的辐射换热。由于介质层两则界面反射率ρ=0，在此情况下按漫反射或按镜反射计算均可。要注意的是，912模块测电压时，每个通道有两个端子不接，912模块只有10个通道。如果测量温度改变，热电偶的电动势随之改变，则又产生新的不平衡电压，再经放大器加以放大，驱动可逆电机，结果又改变了滑动臂的位置，同样直至达到新的平衡位置为止。计算结果与文［4］的比较见表2。从表中可以看出，结果非常理想。测量参数的通道、方法、量程等通过设置不同的命令解决。外部的干扰主要是工业生产中大量使用电阻炉、感应炉等电气加热炉，而作为仪表变送器使用的热电偶，又与这些产生强电磁场的设备极为靠近。
+
+图5　少于5个模块的980网络的典型连接
+　　3)981网络的典型连接见图6。
+
+图5　少于5个模块的980网络的典型连接
+　　3)981网络的典型连接见图6。
+　　本文从米氏电磁散射理论出发，计算了含液滴介质的辐射特性；考察了各向同性散射时的能量传递份额的再分配，导出了吸收、发射、各向同性散射介质的辐射传递系数。选用文献［4，5］的数学模型，计算了空间辐射散热器液滴层瞬态辐射换热，经与文献［4，5］的比较表明，本文所导出的辐射传递系数计算方法正确，精度高。
+　　通过计算机数值模拟，可分析空间辐射散热器液滴发生器产生的液滴粒子大小、粒径分布函数对瞬态辐射换热的影响，减少空间辐射散热器设计过程中的实验次数。在已知介质复折射率的前提下，也可对采用其它工质的空间辐射散热器进行数值模拟。
+*国家杰出青年科学基金(59725617)及国家自然科学基金(59706008)资助项目
+作者单位：哈尔滨工业大学能源科学与工程学院 . 哈尔滨 . 150001
+参考文献
+1　T Mattick A,Hertzberg A.Liquid droplet radiators for heat rejection in space.Journal of Energy,1981,5:387-393
+2　Presler A F,Coles C E,Diem-Kirsop P S,White K A.Liquid droplet radiator program at the NASA lewis researchcenter.ASME paper,1986,86-HT-15
+3　Taussig R T,Mattick A T.Droplet rediator systems for spacecraft thermal control.Journal of Spacecraft Rockets,1986,23:10-17
+4　Siegel R.Transient radiative cooling of a droplet-filled layer.Journal of Heat Transfer,1987,109(1):159-164
+5　Siegel R.Separation of variables solution for non-linear radiative cooling.Int.J.Heat Mass Trans.,1987,30(5):959-965
+6　余其铮，马国强，刘晓彦.Mie散射程序的改进.哈尔滨工业大学学报，1987，(4)：21-26
+7　谈和平，余其铮，阮立明.线性辐射反演确定液滴粒径的分布.工程热物理学报，1992，13(3)：314-317
+8　谈和平，余其铮，Lallemand M.高温下半透明介质内辐射与导热的非稳态复合换热.工程热物理学报，1989，10(3)：295-300
+9　Tan H P,Lallemand M.Transient radiative conductive heat transfer in flat glasses submitted to temperature,flux and mixed boundary conditions.Int.J.Heat Mass Transfer,1989,32(5):795-810
+10　Tan H P,Ruan L M,Xia X L,Yu Q Z,Tong T W.Transient coupled radiative and conductive heat transfer in an absorbing,emitting and scattering medium.Int.J.Heat Mass Transfer,1999,42(15):2967-2980
+收稿日期:1998年4月20日
+修回日期:1998年10月19日

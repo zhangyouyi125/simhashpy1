@@ -1,0 +1,112 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+竞争学习模糊神经网络及在导弹
+故障诊断中的应用
+胡昌华　王青　陈新海
+　　摘　要　尽管基于解析冗余的故障诊断方法有许多突出的优点而越来越多地得到研究和应用，但它依赖于系统的模型，当系统存在非线性或不确定性时，存在难以建模的困难，模糊神经网络可以通过学习建立系统的模型，且模型参数有明确的物理意义，初始参数易于选择，成为解决这一问题的优选途径，作者通过把模糊神经网络的学习转化为竞争聚类和线性优化问题，基于竞争聚类和最小二乘原理，提出了一种模糊神经网络学习算法，并在某伺服机构上进行了学习和故障诊断的实验，获得了良好的实验结果。
+　　主题词　故障诊断　竞争学习　模糊神经网络
+FUZZY NEURAL NETWORK BASED ON COMPETITIVE 
+LEARNING AND ITS APPLICATION TO 
+FAULT DIAGNOSIS OF MISSILE
+Hu Changhua
+(Section 302,Xian Inst.Of Hi-tech,Hongqing town . Xi'an . 710025)
+Wang Qing
+(Department of Automation,Beijng University of Aeronautics and Astronautics . Beijing . 100084)
+Chen Xinhai
+(College of Aeronautic,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　The fault Diagnosis based on analytical redundancy depends on system's model,while it is difficult to get the system's model when the system is non-linear or uncertain time-varying,there are some difficulties to put this method into application of non-linear system.The fuzzy neural network can build the system's model by learning,and the model's parameter established by this method has clear mean,it provide an effective way to solve the above problem.The key of the Application of the fuzzy neural network is the determination of its parameters.Different from the other researchers,the authors convert the learning process to cluster and linear optimum,based on competitive learning and least-square error criterion,suggest a learning algorithm for the fuzzy neural network system,the experiment in certain servo-mechanism get very good result.
+　　Key words　Fault diagnosis Competitive learning　Fuzzy neural network
+1　引言
+　　对于导弹等大型复杂系统，对其可靠性提出了极高的要求，系统应具有故障诊断和容错能力，美国NASA就曾规定空间机器人应有一个故障诊断系统。
+6　结束语
+　　这种新研制的便携式飞机称重仪已在南昌飞机制造公司、深圳中海直公司、新乡陆航维修大队、珠海直升机公司、通县陆航飞行团等单位使用，均得到了较好的评价。问题是基于解析冗余的故障诊断和容错控制方法需要系统的精确数学模型，而对于具有不确定时变的系统或非线性系统，很难用机理分析的方法建立系统的数学模型，近年来，模糊神经网络的任意非线性函数逼近能力得到了广泛研究和证实，而与人工神经网络相比，模糊神经网络的参数有明确的物理意义，初始参数的选择有一定的依据，显示出更大的优越性。本文基于竞争学习的原理提出了一种模糊神经网络的学习算法，以该模糊神经网络作为系统的建模工具，实现导弹伺服机构故障诊断，并进行了实际实验验证，实验获得了较好的结果。
+　　一般飞机分为三点支撑和四点支撑两种(见图2、图3)。
+　　关键词　飞机　称重　传感器　单片机　千斤顶　滑动底盘
+Development and Application of a New Generation of Portable Airplane
+Weighing System
+Chen Kexing,Wang Wenjian
+　　Abstract　This paper presentes a new type of portable airplane weighing system,especially its performance,principle and application.
+　　Key words　Airplane,Weighing,Load cell,Single-chip computer,Hoisting jack,Sliding chassis
+　　在飞机的制造、改装及大修中都必须对飞机进行称重试验，要求给出飞机的重量、重心等参数。
+
+
+图3　输出电路
+　　图中Rin为输入限流电阻，R为输出限流电阻，RG为晶闸管的门极电阻，RS和CS构成阻容吸收回路。
+　　模糊规则库由一组模糊规则构成，模糊规则是通过(如果一则/IF-THEN)语言描述的，即：
+
+　　其中隶属函数式中★表示T算子，经常采用的T算子有“模糊交”和“代数乘”。
+　　模糊推理机是利用模糊规则库中的模糊规则来完成由输入空间上的模糊集到输出空间的模糊集上的映射，设是输入空间上的任一模糊集，则每个模糊规则Rk确定了一个定义于输出空间的模糊集CA . Rk，其隶属函数为：
+CA . Rk=sup{A(X)★Rk(X,Y)}　　　　　　　　　　　　(1)
+　　反模糊化完成从输出空间上的模糊集到输出空间上的确定值的映射，反模糊化中比较多采用的方法为“中心平均”反模糊化方法，即
+　　　　　　　　　　　　　　　(2)
+　　隶属函数常用的形式有三角形、梯形、高斯型等几种形式，如果隶属函数为高斯型的隶属函数，则
+　　　　　　　　　　　　　(3)
+　　如果隶属函数取为高斯型的隶属函数，推理规则中的T算子取代数积，反模糊化取“中心平均”的方法，则得模糊神经网络的描述
+　　　　　　　　　　　(4)
+　　(4)式的模糊逻辑系统与归化的径向基网络(隶属函数为高斯型非常相似，因此可把(4)式描述的系统看成一种模糊神经网络。
+3　模糊神经网络的竞争学习算法
+　　类似文［1］，易证(4)式的模糊神经网络可以以任意精度逼近任意非线性函数。此种飞机称重方式的优点在于大大地简化了飞机的称重过程，可以节约大量的人力和提高称重的效率。
+聚类中心的竞争学习算法：
+　　Step1　从第一个数据对开始，在X1上建立一个聚类中心，且令X1=X1,Y1=Y1，并选择一个聚类半径r。而控制规则的实现是基于对系统的输出变化量△y(KT)判断，其中：
+△y(KT)＝y(KT)－y(K－1)T
+　　对应于图6所示的控制局势划分，其控制规则分别为
+　IF　y(KT)∈S1 　THEN 　 u(KT)＝uc max
+　IF y(KT)∈S2 THEN
+　　{ IF △y(KT)＜0　THEN u(KT)＝uc max
+　ELSE　 IF　 0≤△y(KT)＜c1　 THEN u(KT)＝uc1
+　ELSE　 IF　 c1＜△y(KT) 　 THEN u(KT)＝uc2
+　　}
+IF　 y(KT)∈S3　 THEN
+　　{ IF　 △y(KT)＜0 　 THEN　 u(KT)＝uc3
+　ELSE　 IF　 0≤△y(KT)＜c2　 THEN　 u(KT)＝uc4
+　ELSE　 IF　 c1＜△y(KT)　 THEN　 u(KT)＝uc5
+　　}
+　IF　 y(KT)∈S4　 THEN
+{ IF　 △y(KT)≥0 　 THEN　 u(KT)＝ucs
+　　ELSE　 IF　 △y(KT)＜0　 THEN　 u(KT)＝uc6
+　　}
+IF　 y(KT)∈S5　 THEN
+　　{ IF　 △y(KT)≤0 　 THEN　 u(KT)＝ucs
+　　ELSE　 IF　 △y(KT)＞0　 THEN　 u(KT)＝uc7
+　　}
+IF 　y(KT)∈S6 　 THEN
+　　{ IF　 △y(KT)＜0 　 THEN 　 u(KT)＝uc8
+　　ELSE　 IF 　△y(KT)≥0　THEN　 u(KT)＝0
+　　}
+IF　 y(KT)∈S7　 THEN　 u(KT)＝0
+　　在上述控制规则中，控制量ucj的关系为ucmax＞uc1＞uc2＞uc3＞uc4＞uc5＞uc6＞ucs＞uc7＞uc8＞0。
+　　(2)若‖Xj-Xl‖≤r，则用竞争学习算法确定Xj属于的聚类，并调整聚类中心的参数。
+2.2　输入通道
+　　按流程要求最高温度为1100 °C，故而我们选择了K型热电偶(量程为1300 °C)。用继电器控制它的不同的触发点，可产生不同的音乐，这样易于识辨不同的事件。
+　　用竞争学习方法确定聚类中心后，剩下的问题是如何确定Yk
+　　令
+　　　　　　　　　　则(4)式变为(8)式
+　　　　　　　　　　　　　　(8)
+hT(k)=［R1,R2,…,RM］,θ=［Y1,Y2,…,YM］T
+　　取性能指标为极小化J确定Yk，得
+］
+4　基于模糊神经网络的非线性系统故障诊断
+　　文［5］对基于观测器的故障诊断方法进行了深入的分析，由文［5］易得图1所示的用模糊神经网络作为观测器的故障诊断系统。针对这种情况，我们以单片机为核心设计了煤样工业分析方法的温度控制系统。
+　　实验方法：根据导弹的幅相频率特性和阶跃响应曲线选择合适的激励信号(本试验中激励信号选择为长度为64的逆M序列，Δt=0.01)，用该激励信号分别激励系统，我们共进行了伺服机构正常和存在反馈电位计接触不良故障等8种初始状态的实验，每种初始状态进行了5～10组实验。利用正常系统的输入输出测量数据建立模糊神经网络，以该模糊神经网络作为伺服机构的观测器，构造图1所示的基于模糊神经网络的故障诊断系统，观测残差的输出情况。
+4　结束语
+　　本系统以单片机为核心，由于采用了热偶放大器及光耦晶闸管，使硬件接口简单，软件编程简化；液晶显示模块的采用使提示信息量更为丰富,操作简便；运用了智能控制领域的产生式控制算法，使控温精度提高。
+表2
+
+α(°)R
+P(cosα＋(P／100)sinα)△％P(cosα-(P／100)sinα)△％
+0.51.00004＋0.0040.99987－0.01
+11.00002＋0.0020.99967－0.03
+1.50.99992－0.0080.99940－0.06
+20.99974－0.030.99904－0.1
+2.50.99948－0.050.99861－0.14
+30.99915－0.080.99811－0.19
+
+
+　　由表2知，要使传感器的测量重复性在±0.05％以内，须保证侧向力与轴线的夹角不大于1°，要使重复性在0.1％以内，必须保证其夹角不大于2°。
+5　误差分析
+　　飞机称重过程中，称重作用点与中心轴线(铅垂线)成α角的载荷P可分解为轴向力Pcosα和侧向力Psinα，如图6所示

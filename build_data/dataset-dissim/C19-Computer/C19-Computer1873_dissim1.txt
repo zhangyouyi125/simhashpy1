@@ -1,0 +1,77 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000 Vol.19 No.3 P.55-56
+
+
+
+DOS工作站共享Windows NT/9x网络资源
+刘杨　邓为　徐红霞
+　　摘　要：针对目前各企事业单位仍有不少运行DOS低档微机的现象,为使以前的软硬件资源得到充分利用,介绍了一种DOS工作站登录Windows NT/9x网络以共享网络资源的方法。
+　　关键词：DOS工作站 网络共享 Windows NT/9x
+　　在许多企事业单位中,都安装WindowsNT/9x以构建Intranet或对等网。SEND.FILE.REQUEST帧是1个要求服务器发送文件的请求。为使DOS工作站能够登录WindowsNT/9x网络,实现资源共享,使得以前的软硬件投资得到有效利用,本文将介绍利用Microsoft Network Client for MS-DOS以实现DOS向Windows环境转移的一种过渡办法。
+1 准备工作
+　　要使DOS工作站登录网络后可以访问Windows NT Server或Windows 9x工作站的资源,其方法略有不同。
+　　1.在NT服务器的“管理工具”中的“域用户管理器”上为DOS工作站新建用户名和口令,如WWH和WZ;默认隶属组为:DomainUser,其它组属性可自己设定或取默认值。（登录访问Windows 9x无须此步骤）
+　　2.在DOS工作站上用网卡附带的驱动盘来检测和设置I/O地址及IRQ值,使其与原设备中的所有I/O地址、IRQ值无冲突。
+2 服务器设置
+　　设NT安装在C：\WINNT目录下,工作站网卡是SN2000+,用附带程序设置该卡I/O=300,IRQ=3,BOOTADRESS=C800（尽量用此设置）,其卡号前6位为52544C（通过网卡的附带程序测得）。
+　　3.制作安装盘。
+　　方法一:将格式化好的空白软盘插入软驱,再将Windows NT服务器的CD-ROM插入光驱,然后在“资源管理器”中将光盘中\Clients\Misclient\Disks\Disk1文件夹上的所有文件拷贝到软盘上,这样,一张安装盘就准备好了。
+姚卫新（无锡市中国纺织大学计算机系214063）
+参考文献
+1，詹文军.Windows NT4组网与管理基础教程.北京:机械工业出版社,1998,205
+2，陆晨音.Windows NT 4.0系统下远程引导的设置与管理.计算机系统应用,1998;(11)
+收稿日期：1999-09-06
+。在服务器的“管理工具”中的“网络客户管理器”上选“制作网络安装启动磁盘”,然后按提示进行选择,选择时要注意:
+　　（1）选择DOS工作站的网卡型号,如兼容网卡NE2000Compatible。
+　　（2）填好工作站的计算机名、用户名、访问服务器的域名。
+　　（3）网络协议。根据作为服务器的Windows NT或9x所安装的网络协议来选择。
+　　3.安装DOS无盘工作站时一定要把IO.SYS和MSDOS.SYS文件的系统、隐藏的属性清除掉,否则工作站启动登录时会出现错误信息;
+　　Non-system disk for disk error
+　　Replace and press any key when ready
+　　无法启动无盘工作站。
+　　插入软盘,所有的选择确定后系统自动复制安装程序,这样,安装盘就制作好了。
+2 在DOS工作站上安装客户程序
+　　这里以安装盘方法一为例介绍安装过程,方法二的安装过程与之类似。
+　　1.在DOS工作站上,键入A：\>SETUP
+　　2.按提示正确选择,当有
+　　Change Names
+　　Change Setup Options
+　　Change Network Configuration
+　　选项时,选择Change Names,设置用户名、计算机名、工作组名、域名。格式为:WIN95SRV D：\PWIN95.SBS
+4.2 安装网卡
+　　在服务器的MS-DOS方式下执行RPLCMD,并按下列说明填写。
+　　通过“控制面板\服务”激活“服务”对话框,在“启动类型”选项中选中“自动”,再单击“确定”即可。安装出现“Setup Options”,选择“Custom”;出现“Analyzing Your Computer”对话框时选择“NoI want to modify the hardware list”,并删除所有硬件;出现“Network Configuration”对话框时,请利用“选择网卡Properties Resources”设置网卡的IRQ和I/O地址。
+　　设置好后,安装程序自动将文件复制到硬盘C:\NET子目录下。重新引导工作站,在输用户名处直接按回车键,即默认用户名（如:WWH）,输入口令（如:WZ）。第一次引导时,系统会提示:
+　　There is no password-listfile for WWH（WWH为用户名）
+　　Do you want to create onet（Y/N）[N]:
+　　在这里选Y。接着,DOS工作站就能登录上Windows NT或9x网络了。
+3 共享网络资源
+　　DOS工作站网络登录成功后,网络驱动程序即加载成功,此时即可使用网络命令共享Windows NT/9x资源。安装出现“Setup Options”,选择“Custom”;出现“Analyzing Your Computer”对话框时选择“NoI want to modify the hardware list”,并删除所有硬件;出现“Network Configuration”对话框时,请利用“选择网卡Properties Resources”设置网卡的IRQ和I/O地址。
+　　2.利用网络驱动器映射的方式访问共享资源
+　　NET USE drive：\\servername\sharename
+　　NET、USE为命令项,drive:为映射驱动器名,servername同上,sharename为共享的文件夹名。
+　　例如,要把本地计算机的H:驱动器映射到服务器名为NT_SERVER的Windows NT Server上的网络共享文件夹REDALERT,则这样做:
+　　（1）在NT服务器上把文件夹REDALERT设置成共享,给DOS工作站用户以共享权;
+　　（2）在DOS工作站上键入命令:
+　　NET USE H：\\nt_server\redalert
+　　这样DOS工作站就能共享REDALERT文件夹了。
+　　如果欲共享机器名为HOST的Windows 9x工作站上的DOS文件夹,则应:
+（1）在Windows 9x工作站上将DOS设为共享。
+　　启动“远程启动管理器”,执行“配置\检查配置”并选择“是”;执行“配置\修复安全性”,选择“是”。
+若要安装应用软件的共享文件,也可按上述方法做。
+　　利用打印机映射的方式访问共享资源的做法是:NET USE LPTt\\Servername\Sharename
+　　其中?为打印机端口的号码,如1、2等;Sharename是类型为Print的共享资源名称。
+　　3.断开网络驱动器的连接
+　　NET USE drive：/DELETE
+　　其中drive为映射驱动器名称。
+　　用NET命令映射好驱动器名后,以后登录上网时系统会自动建立好映射,若要改变映射关系,可用NET命令重新设置,有关NET命令的详细情况可键入:NET/t来查询。
+4 故障处理
+　　软件安装好后如果DOS工作站登录不成功,一般有这样2种情况:(1)有关网卡的初始化设置发生错误;(2)网卡初始化设置正确,但登录失败。对情况(1),进入C：\NET子目录,运行SETUP,把IOBASE（输入/输出地址）、INTERRUPT（中断值）、netcard项（网卡驱动程序）设置正确。
+4 建立Windows 95环境下的无盘工作站
+4.1 安装Windows 95共享文件
+　　在NT服务器上建一共享目录（如PWIN95.SBS）用于保存公共文件,并建另一共享目录（如:PWIN95RPL）用于保存每台工作站的私有文件。检查computer name（计算机名）、user name（用户名）、workgroup（工作组名）、logon domain（域名）项设置是否正确。经过上述处理,一般都能排除故障。如有特殊网卡,网卡驱动程序（Netcard项）需用其随卡驱动程序。
+刘杨（武汉华中师范大学计算机系430079）
+邓为（武汉华中师范大学计算机系430079）
+徐红霞（武汉华中师范大学计算机系430079）
+收稿日期：1999-10-28

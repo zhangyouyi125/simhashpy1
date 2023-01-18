@@ -1,0 +1,96 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+学习宣贯五项国家军用标准的粗浅体会
+余文卿
+　　摘　要　简述了五项国家军用标准的主要内容及重要意义、测量与质量的关系以及几点做法。
+
+3.2   参数的集员估计
+
+    3.1节给出了参数的中心估计，这一节将以这个估计为中心，构造包含FSS并
+且尽可能小的集合，作为参数的集员估计。GJB2712―96、GJB2725―96等五项国家军用标准的制定与实施,向国防计量工作提出了更高的要求，是广大计量工作者和管理者操作性最强的标准文件。
+1　五项国家军用标准是国防计量的工作指南
+　　五项标准有机地结合了国防计量的特点和优势，并与国际惯例接轨和国际标准保持一致。GJB2715―96(国防计量通用术语)总计罗列了180个名词术语。则可得第一
+个子块的闭环运动方程：
+1+a1(x1-1)=0
+(8)
+当t―→∞,x1-1―→0。
+　　GJB2725―96(校准实验室和测试实验室通用要求)是属通用标准。它规定了校准实验室和测试实验室必须具备的能力和资格，明确要求校准实验室和测试实验室应能满足六个管理要素和七个技术要素的要求。这些要求不但要从制度上、管理程序上进行控制,而且要从技术、人员、文件和设备上进行控制，同时要定期进行内部审核和管理评审，使校准实验室和测试实验室始终满足标准的要求。
+　　GJB2712―96(测量设备的质量保证要求――计量确认体系)主要规定军工产品在研制、试验、生产和使用过程中所需要的测量设备(包括测量器具、测量标准、标准物质、辅助设备及其技术资料)能满足预期的使用要求,最终目的是保证产品质量和服务质量。显然，该闭环系统是渐近稳定的。
+
+    (5)突破了飞行控制系统中回路的概念。建立国防计量标准时，编写建标报告的内容、格式和要求，必须按标准规定编写。其作用是真实反映测量标准的技术状态，以便考核实验室的技术能力和技术水平。
+　　GJB／J2739―96(国防测量器具等级图编写的一般规定)是计量机构专用的技术标准。
+　
+参考文献
+1  袁震东，徐桥南.多输入多输出系统参数的集员辨识.控制理论与应用，
+1994，11(4)：404-412
+2  Milanese M,Vicino A.Optimal Estimation Theory for Dynamic Systems with Set 
+membership Uncertainty:an Overview.Automatica,1991,997-1009
+3  Milanese M,Vicino A.Estimation Theory for Nonlinear Models and Membership 
+Uncertainty.Automatica,1991,403-408
+4  Jaulin L,Walter E.Set Inversion via Interval Analysis for Nonlinear Bounded 
+Error Estiamtion.Automatica,1993,1053-1064
+5  Milanese M,Belforte G.Estimation Theory and Uncertainty Intervals Evaluation 
+in Presence of Unkown But Bounded Errors:Linear Families of Models and Estimators.
+IEEE Trans.Aut.Control,1982,408-414
+。内容包括：国防计量最高标准，各等级其它测量标准、工作测量器具的名称、测量范围、不确定度或允许误差极限以及检定方法名称等。关于等级图的结构层次、具体画法，标准中均作了明确的规定。等级图由文字和框图构成，具有文图并茂、一目了然的作用，是量值溯源的主要依据。这种方
+法能处理一般非线性系统参数的集员辨识问题，计算简单、可靠，并成功应
+用于飞行器气动参数的辨识。测量是手段，是保证产品质量的基础工作。
+
+主题词  反馈线性化  飞行控制系统  控制器
+
+
+BLOCK DIAGONAL CONTROLLER OF THE
+TACTICAL MISSILE
+Zhao Guorong Zhang Fuen
+(Harbin Institute of Technology*Harbin*150001)
+Gu Wenjin
+(Naval Aeronautical Engineering Acadimy・*antai*264001)
+Abstract  In this paper,a block diagonal form about nonlinear system is defined.Based on 
+the definition,a design method called block diagonal controller(BDC)is proposed via 
+feedback linearization.Thus,a linearization design of a class of nonlinear system can be 
+simply realized.The result of design has been proved by mathematical simulation of a 
+certain anti-ship missile.
+
+Key words  Feedback linearization  Flight control system   Controller
+
+1  引言
+
+　　G.Meyer［1~3］等人将直升机运动描述成一个块三角系统，使之有别于一
+般的仿射非线性系统。测量水平的高低和测量手段的好坏直接影响产品质量，测量具有对质量起着微观控制和宏观调控的作用，它可以给产品质量塑造美好的形象，也可以给产品质量带来不良的结果；因此，有质量就有测量，有高水平的测量技术和手段就会有一流的质量。
+
+    根据定理1和定理2，很自然有此推论。人们知道，质量是企业的生命线、效益线，测量(计量)则是基础线、保证线。它们之间既相辅相成，又主次分明。
+参考文献
+1  Hunt L R,Su R,Meyer G.Golbal transformations of nonlinear system.IEEE Trans.
+Aut.Contr.，1983，AC-28(1)：24-31
+2  Meyer G,Cicolani L.Application of nonlinear system inverses to automatic flight 
+control design-system concept and flight evaluation.AGARD ograph on theory and 
+applications of optimal control in aerospace systems,AG-251,Brussels：Pieter Kant,
+1980,10-1-10-29
+3  Meyer G,Su R,Hunt L R.Application of nonlinear transformations to automatic flight 
+control.Automatica,1984,20(1)：103-107
+4  Isidori A.Lectures on nonlinear control.Preliminary Verion July,1987,76-77
+5  陈佳实.导弹制导和控制系统的分析与设计.北京：宇航出版社，1989，54-61
+6  赵国荣.导弹运动方程的逆解析解.自动驾驶仪与红外技术.1996，3：33-38
+。常言道：树高千尺离不开根，测量是实施质量保证和质量管理的重要手段就不喻而解了。
+3　标准对计量工作提出了更高的要求
+　　根据国防计量为军工产品服务的特点，五项国家军用标准把企业的计量工作摆在突出的位置，特别是对校准实验室和测试实验室、测量设备等方面提出了更高、更具体的要求，不仅从管理模式上、管理对象上、管理内容和方法上,提出了新的概念与新的思维,而且从企业计量工作的需求方面，经济效益和社会效益的追求方面，以及风险性、量值溯源性、依法管理、执法力度方面,都提出了较高的要求，既有别于我国的传统做法，又不同于国外的计量管理。标准对实施检验、测量和试验设备的质量控制提供了指南，拓宽了计量工作的领域。
+
+A  对d的修正
+　　对d修正的目的是为了使边界椭球尽可能小，并且包含FSS。标准扩大了计量工作的职能，从计划(设备筹划)、检验、测试工作实施、测量设备管理与控制、鉴定、验证、监督评审、人员培训、量值溯源以及校准实验室和测试实验室的认证验收等方面,均赋予了计量部门的使命。标准还对测量设备的验收计量确认,以及对测量和测量过程实施控制等提出了要求，使测量工作与产品紧密结合起来。静导数Cβz、mβy和mαz的估计区间都
+较小，因而其估计结果可以比较信赖地使用，轴向力系数Cx0和CxB的估计区
+间也较小，其估计精度也较高；而动导数尤其是mωzz的估计区间较大，其估
+计结果的可信度较低，对于小不对称参数，其估计区间也较大，因而其结果
+只可作为参考。同时运用实例培养计量人员综合应用A类不确定度、B类不确定度、合成不确定度、扩展不确定度的评定与计算方法。另一方面,对GJB2725―96等标准进行了大胆尝试。我们的力学校准实验室按照标准的要求逐条逐款逐项地进行实施，共起草了30余个技术文件(包括程序文件、操作文件、控制文件等)和10多个图表。Milanese和Vicino［３］用直方
+体来近似描述FSS，解决了仅限于函数为未知参数的多项式时的集员辨识问
+题；Jaulin和Walter［４］用区间分析法较好地描述了FSS的形状，但其计算
+量随着未知参数的增加以及精度要求的提高而迅速增加，而且需要预先知道
+包含函数以及FSS的子集；随机扫描法以及OMNE都存在与区间分析法类似的
+问题。第二，在工厂领导的大力支持下，我们依靠集体的智慧和力量，挖潜革新，充分利用大厂基础设施的优势，较好地完善了力学校准实验室的内部设施及环境条件。第三，加强了软件管理，使校准实验室更加规范化和标准化，为工厂节约了一笔开支。
+　　实践使我们深刻认识到，学好用好五项国家军用标准，加快计量工作的改革步伐，推动国防计量事业的发展，主动参与型号产品的研制，试验、生产和使用过程的计量控制，提高产品质量的竞争力是计量工作者义不容辞的责任，是当前计量工作深化改革、迈向市场的一项光荣而艰巨的任务。
+54岁　男　工程师　读者服务卡索引号： 118
+作者单位：江南机器厂，湖南省相潭市，411207
+1998-03-26收稿

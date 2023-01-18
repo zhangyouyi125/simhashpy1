@@ -1,0 +1,65 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+交流稳压电源的远控接口电路
+王文海
+　　几乎所有的电气产品和设备均需进行电源电压变化对其性能影响的试验；但现在市场上的交流稳压电源几乎都没有远控接口，其输出电压均需进行手动调节，工作很不方便，更不能组成自动测试系统。梁未变形状态的自然位置沿OX轴方向,长度为L(t)。假设附件为有限变形梁,则系统的运动微分程是非线性的。用于软件安全性时,主要是针对安全性要求极高(safty-critical)的软件,发现其中是否有病毒,或是否有隐藏的窃密程序(Trojan)。可以通过将内存映象的反编译结果与原始输入(源程序)相比较来验证软件的正确性,如果二程序完全等价,则编译结果可靠(反编译可靠的前提下)。
+　　A2和A3组成双向精密限幅器，当输入电压e1为负电压，其绝对值小于D3和D4所形成的电压；或当e1为正电压，其量值小于D5所形成的电压时，D1和D2均不导通，对电路工作不造成影响；而当输入电压e1超过上述范围时，D1或D2导通，从而对A1的输出限幅。
+　　主题词　伸展柔性梁　刚柔耦合系统　部分变量稳定性
+STUDY ON THE STABILITY OF NONLINEAR 
+VIBRATIONS OF A DEPLOYING FLEXIBLE 
+APPENDAGE OF A SPACECRAFT
+
+Li Junfeng　Wang Zhaolin
+(Department of Engineering Mechanics,Tsinghua University*Beijing*100084)
+　　Abstract　Consider a rigid-flexible coupled system which consists of a central rigid body deploying a flexible appendage.The appendage is modeled as a finite deflection beam having linear constitutive equations.By taking the energy integral as Lyapunov function,it is proved that nonlinear transverse vibrations of the beam undergoing uniform extension or retrieval are stable when there are not controlling moment in the central rigid body and driving force on the beam,according to the partial stable theorem.
+　　Key words　Deploying flexible beam　Rigid-fiexible coupled system　Partial stability
+1　引　言
+　　近年来,航天器的柔性附件(梁、板等)在伸展过程中的振动得到了广泛的关注［1-4］。M(x,t),P(x,t),S(x,t)分别是梁的弯矩、轴向力和剪力,连界条件为
+
+式中F(t)为梁的伸展驱动力。
+2　与交流稳压电源的连接
+　　目前，常用的交流净化稳压电源的典型结构框图如图2所示。
+参考文献
+1　李未.欧洲程序设计方法研究的三个动向.智能机研研究动态,Vol 9,1996
+2　Cristina Cifuentes and John Gough K.Decompilation of binary programs.Software Practice and Experience,1995,25(7)
+3　Spector A and Gifford D.Case study:the space shuttle primary computer system,Communications of the ACM,27,872-900
+4　Hood S T.Decompiling with definite clause grammars.Research Report,ERL-0571-RR,1991
+5　Pavey D J and Winsborrow L A.Demonstrating equivalence of source code and PROM contents.4th European Workshop on Dependable Commputing,8-10,1992
+6　合肥工业大学微机所.DECLER用户使用手册.1995.3
+。A为正弦电压发生器；输出取样B和输出取样C分别监视Ui和Uo的状态，并与基准电压D在E中进行比较和放大，经模相变换电路F获得与反馈量相关的补偿信号，驱动A产生需要的补偿电压，从而保证输出电压稳定；G是电源滤波器和尖峰抑制电路。
+2.3　反编译在航天技术中的应用
+　　反编译发展至今,其应用领域主要体现在软件维护和软件安全性［2］两方面。采用顺序-索引-连接技术构造特征表。梁未变形状态的自然位置沿OX轴方向,长度为L(t)。当e1＝0时，调节该交流稳压电源前面板上的输出电压调整电位器，使输出电压为220 V，调节e1,使交流稳压电源输出电压Uo由150 V变到250 V，得到表1结果
+
+图　2
+表1V
+
+
+Uoe1
+250　0.546
+240　0.362
+230　0.181
+2200　
+210－0.178
+200－0.359
+190－0.524
+180－0.691
+170－0.868
+160－1.038
+150－1.200
+
+
+　　由上述测量结果，利用最小二乘法进行直线回归得出
+Uo＝219.62＋57.26e1　V
+　　按上式计算出的Uo和实测值相比较，相差不超过±1 V。推理分析结果的正确性依赖于复合数据是否是同时引用和规则的完备性,是个不确定性算法。但由于DF―5K交流稳压电源的稳压精度为±0.5％，因此该回归直线完全可以满足要求。
+2　系统建模
+
+
+图1　系统示意图
+考虑图1所示作平面运动的力学系统。
+读者服务卡索引号： 120
+作者单位：长城计量测试技术研究所，北京市，100095
+1998-02-23收稿

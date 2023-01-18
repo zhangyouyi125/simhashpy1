@@ -1,0 +1,150 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS
+1999年 第2期　No.2 1999
+
+
+
+陀螺仪温度试验与建模研究
+徐丽娜　邓正隆　张广莹　诸一江　吕锡仁
+　　摘　要　本文阐述了陀螺仪温度试验系统的结构和特点,用该系统进行了某型陀螺仪的温度速率与位置试验,并在试验基础上建立了陀螺仪静态温度模型,由补偿研究证实了所建模型的工程实用性。
+　　主题词　陀螺漂移　温度试验　误差模型　系统辨识
+TEMPERATURE TEST AND 
+MODELING RESEARCH OF GYROSCOPE
+Xu Lina Deng Zhenglong Zhang Guangying
+(Department of Control Engineering Harbin Institute of Technology.Harbin.150001)
+Zhu Yijiang Lü Xiren
+(Beijing Automatic Control Institute.Beijing.100074)
+　　Abstract　The structure and features of a gyroscope's temperature test system is presented in this paper.Using the system,rate and position test about gyro temperature character has been carried out.On the base of the test,a static model of gyro temperature features has been studied and its practicability of project has been proved by compensate study.
+　　Key words　Gyro draft Temperature test Modeling of error System identification
+1　引　言
+　　陀螺仪是决定惯性系统精度的核心部件,由于对温度敏感度大,温度漂移成为其主要的误差源之一,进行温度控制或温度漂移补偿是解决此问题的途径。
+　　　
+图7　PCM控制阶跃响应实验曲线　　　　　图8　PCM控制正弦响应实验曲线
+　　图9是GPCM控制阶跃响应实验曲线,对照图7可知,系统的超调和过渡时间都大大减少。
+　　主题词　GPCM控制　PCM控制　气动伺服系统
+THE THEORETICAL ANALYSIS AND EXPERIMENTAL 
+RESEARCH ON THE PNEUMATIC SERVO SYSTEM 
+WITH GENERALIZED PULSE CODE MODULATION
+Wang Xuanyin Yue Jiguang
+(The State Key Laboratory for Fluid Power Transmission and Control,
+Zhejiang University.Hangzhou.310027)
+Wang Xuyong
+(Shanghai Jiao Tong University.Shanghai.200030)
+Liu Qinghe
+(Harbin Institute of Technology.Harbin.150001)
+　　Abstract　Be aimed at the contradictions between accuracy and control range and between stability and fastness in pulse code modulation (PCM) pneumatic system,a generalized pulse code modulation(GPCM) is proposed.This paper builds the mathematic model of the GPCM,and does simulation and experiment in datail.The results prove its effectiveness. 
+　　Key words　GPCM control PCM control Pneumatic servo system
+1　引　言
+　　气动PCM控制是八十年末出现的一种新的气动伺服控制方式,它用廉价的普通开关阀作电-气转换元件来获得较好的伺服控制性能。为此,我们设计、研制和组建了“陀螺仪温度试验系统”,应用此系统对某型陀螺在大量试验的基础上,进行了静态建模研究。所建模型为陀螺仪温度漂移补偿,为解决快速启动问题提供了依据,而且也为诊断陀螺仪的缺陷提供了信息。因此,上述非线性数学模型中,qmi(i=1,2)直接影响系统的特性。
+　　控制系统使箱体内温度控制范围在-40℃～+80℃,温度均匀度与波动均达到了十分之几度数量级。图8是PCM控制正弦响应实验曲线,从图看出,系统跟踪正弦的能力较差,显然这是由于PCM阀的流量不够,但如果再增大S0,系统的快速性会有所提高,跟踪性能会得到改善,但系统的超调大大增加,甚至出现振荡、不稳定的结果。经过分析,针对本文采用的气动回路和GPCM控制,可用下述公式来计算流量qmi,
+　　当u(k)≥0,且|e|＞es时
+　　　　qm1=　　　(9)
+　　　　qm2=qm3-qmc　　　　　　　　　　　　　　　　　　　　　　　　　　　(10)
+　　　　qm3=　　　(11)
+　　　　　　 (12)
+当u(k)＜0,且|e|＞es时
+　　　　qm1=qm3-qmc　　　　　　　　　　　　　　　　　　　　　　　　　　　(13)
+　　　　　　(14)
+　　　　　　 (15)
+　　　　　　(16)
+当|e|＜es时
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　(17)
+　　　　　　Sc=S0f(u)　　　　　　　　　　　　　　　　　　　　　　(18)
+　　　　　　　　　　　　(19)
+　　式中,e:偏差信号,e=yr-y,m;es:定位精度,m;yr:目标位移,m;y实际位移,m;S1:气缸左腔进气时的综合有效面积,mm2;S2:气缸右腔进气时的综合有效面积;mm2;S3背压气源进气时的综合有效面积,mm2;Sc:PCM阀的有效面积,mm2;S0:PCM阀的最小有效面积,mm2;l:活塞最大行程,m;A1、A2:活塞两腔作用面积,m2;Ps1、Ps2、Ps3:气源压力,N/m2;P1、P2:气缸两腔工作压力,N/m2;Pa:大气压,Pa=1.034.105N/m2。
+　　(4)数据采集及处理系统
+　　本系统包括计算机、可程控仪器、接口及数据采集和处理系统。在计算机控制下,可进行试验数据的自动采集和处理。
+　　(5)气源系统
+　　本系统是转台主轴气浮轴承及温度控制所需要的。
+
+图1　陀螺仪温度试验系统框图
+　　由上述温度试验系统,可进行-40℃～+80℃单陀螺及多陀螺仪温度速率及温度位置试验,系统的各项技术指标可保证试验所需精度要求。
+　　我们用该系统对某型无温控速率积分陀螺仪进行了温度范围为t=-40℃～+60℃,温度间隔Δt=10℃的两种试验。
+　　(1)温度速率试验
+　　速度范围取ω=±1°/s～±200°/s十挡速率,在每一试验温度、试验速率下,采样陀螺内热敏电阻阻值、力矩器电流在采样电阻R上的电压降,各取20个点数据,并取均值。
+　　(2)温度位置试验
+　　进行六位置试验,每一试验温度、试验位置上采样20个点数据(与上同),取均值。
+3　建模研究
+　　对应于被测陀螺,并考虑工程实用性,采用了如下简化的陀螺仪静态漂移误差模型:
+　　　　SF(t)I(t)=Df(t)+Di(t)ai+Ds(t)as+ωs+e(t)　　　　　　　　(1)
+式中：SF(t)――在温度t时的刻度系数,°/h.mA;
+　　　I(t)――在温度t时力矩器电流采样均值,mA;
+　　　ai,as――分别为沿陀螺仪输入轴、自转轴的加速度,用重力加速度g表示;
+　　　Df(t)――在温度t时,与加速度无关的漂移系数,°/h;
+　　　Di(t),Ds(t)――分别为在温度t时,沿输入轴、自转轴与加速度有关的漂移系数,°/h.g;
+　　　ωs――陀螺仪壳体绕输入轴相对惯性空间的角速度,°/h;
+　　　e(t)――在温度t时,陀螺仪随机漂移率,°/h。
+　　在温度速率及温度位置试验数据求得SF(t)、Df(t)、Di(t)、Ds(t)之后,对上述四个系数随温度变化的模型结构和参数进行辨识,即为建模过程。这里我们采用了回归算法进行建模。
+　　用回归算法建模,步骤如下:
+　　(1)陀螺仪内部温度求取
+　　由热敏电阻R-t特性表,进行由R求陀螺内部绝对温度t的拟合计算:
+　　　　　　　　　　　　(2)
+为提高拟合精度,采用了分段拟合法,见图2。
+
+图2　t=f　(R)拟合特性
+　　在-40℃～0℃范围内,参数为B00～B03,拟合误差用标准差S1表示,计算结果为S1=0.015938℃。
+　　在0℃～+60℃范围内,参数为B10～B13,拟合误差S2=0.007603℃。
+　　在-40℃～+60℃范围内,拟合误差St=0.011675℃。
+　　
+　图9　GPCM控制阶跃响应实验曲线　　　　图10　GPCM控制正弦响应实验曲线
+　　作者单位：王宣银　岳继光(浙江大学流体传动及控制国家重点实验室.杭州.310027)；王旭永(上海交通大学.上海.200030)；刘庆和(哈尔滨工业大学.哈尔滨.150001)
+参考文献
+　1　Hirohisa Tanaka.Electr-Hydrulic PCM Control.The Journal of Fluid Control,1988,17(2):34-46
+　2　宁舒.气动位移系统的计算机“PCM”控制初探.液压与气动,1991,(1):18-23
+　3　Ning Shu et al. Computer “PCM” and Learning Control for Positioning of Pneumatic Cylinder.Proc.of the Second JHPS International Symposium on Fluid Power,Tokyo,1993:583-588
+　4　王旭永.三轴转台外框电液位置伺服系统低速运动的研究.哈尔滨工业大学,博士论文,1993
+　　本文为博士后科学基金和浙江大学流体传动及控制国家重点实验室开放基金资助
+收稿日期:1996年4月10日,修回日期:1998年10月22日
+。在每一试验温度下,进行正、反转各十挡速度试验,由下式求SF(t):
+　　　　　　　　　　　　　　　　　　　(3)
+　　　　　　SFi(t)=［SFi(t)++SFi(t)-］　　　　　　　　　　　(4)
+式中:SFi(t)、ωi(t)、Ii(t)――分别表示在温度t、速度i时的刻度系数、转台速率、力矩器电流均值;
+　　　　　　I0(t)――速率为0时,力矩器电流均值;
+　　　　　　+、-――转台正、反转。文献［4］详细地分析了双阀变增益电液伺服系统的稳定性,认为伺服阀非线性变增益对加速度环的影响最为严重和直接,但加速度环不会因为给伺服阀设置非线性增益而出现不稳定,即不会产生极限环,合适的双阀变增益比可保证系统稳定,从这可知,选择合适的GPCM阀增益能保证系统的稳定性。在每一试验温度下取十挡速率,求得之SFi(t)的标准差均在千分之一以下,因此简化试验,只选择±30°/s之速率,求取SF(t)。
+　　(3)漂移系数求取
+　　由六位置试验数据可得:
+　　　　　　SF(t)=2ωecosφ/［I2(t)-I1(t)］　　　　　　　　　　(5)
+　　　　　　Df(t)=SF(t)［I1(t)+I2(t)］　　　　　　　　　　　 (6)
+　　　　　　Di(t)=SF(t)［I5(t)-I3(t)］+ωesinφ　　　　　　　(7)
+　　　　　　Ds(t)=SF(t)［I6(t)-I4(t)］　　　　　　　　　　　 (8)
+式中：φ――表示温度试验所在地的纬度;
+　　　ωe――地球自转角速度。
+
+图3　GPCM控制气压驱动回路
+ 
+图4　系统的抽象数学模型
+　　根据热力学定律可推得气缸两腔的压力微分方程:
+　　　　　　　　　　　　　　　　　　(6)
+　　　　　　　　　　　　　　　(7)
+根据牛顿第二定律得:
+　　　　　　　　　　　　(8)
+　　方程(6)、(7)、(8)为描述气动位置系统的非线性数学模型。
+　　(4)建模
+　　由两种温度试验得到了-40℃～+60℃范围内的SF(t)、Df(t)、Di(t)、Ds(t)的采样值。考虑到工程实用性,用一元线性回归算法分别用一段及多段法进行参数辨识,建立陀螺刻度系数与漂移系数的静态温度模型:
+　　　　　　SF(t)=A0SF+A1SFt+eSF(t)　　　　　　　　　　　　(9)
+　　　　　　Df(t)=A0f+A1ft+ef(t)　　　　　　　　　　　　　(10)
+　　　　　　Di(t)=A0i+A1it+ei(t)　　　　　　　　　　　　　(11)
+　　　　　　Ds(t)=A0s+A1st+es(t)　　　　　　　　　　　　　(12)
+　　用分段法所建模型的精度比一段法高,下表以被测的某型速率积分陀螺其中之一为例,进行一段与两段建模结果之比较。
+
+　一段
+-40℃～+60℃两段
+-40℃～0℃0℃～+60℃
+SSF0.005390.001760.00367
+SSF/A0SF0.000580.000190.00039
+Sf/A0f0.27340.10140.1119
+
+表中:SSF:刻度系数SF(t)的拟合标准差,°/h*mA;
+Sf:与加速度无关的漂移Df(t)的拟合标准差,°/h。它的显著优点是寿命长,价格低,能直接与数字电路接口实现计算机控制,而且对环境要求很低;它的缺点是PCM方式自身所固有的离散性。因此,对于PCM控制来说,控制精度与控制范围、稳定性与快速性是矛盾的。以一段法为例,算式为:
+　　　　　　　　　　　　　　　　　　(13)
+　　　　　　　　　　　　　　　　　　　(14)
+　　　　　　　　　　　　　　　　　　　(15)
+　　　　　　　　　　　　　　　　　　　(16)
+取St与表中SSF数据,则StSF=0.01169。
+4　结束语
+　　用所组建的陀螺仪温度试验系统对某型陀螺仪进行了多个陀螺的温度试验,在取得大量数据的基础上,建立了陀螺刻度系数与漂移系数的静态温度模型,已用于温度补偿研究,证实了其工程实用性。同时,由温度试验结果也可发现不同温度段陀螺仪的性能差异,可为陀螺仪设计和研制者分析提供依据。
+　　作者单位：徐丽娜　邓正隆　张广莹(哈尔滨工业大学控制工程系.哈尔滨.150001)；诸一江　吕锡仁(北京自动控制研究所.北京.100074)
+参考文献
+　1　W G.Denhard.Inertial Component testing:Philosophy and Methods.Technivision Services Slough,England,1970
+　2　中华人民共和国航天工业部标准,QJ1079-86.陀螺仪主要精度指标和测试方法,1986
+收稿日期:1997年3月3日,修回日期:1998年3月19日

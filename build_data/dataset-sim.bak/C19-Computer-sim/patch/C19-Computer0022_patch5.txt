@@ -1,0 +1,143 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+使用VxD实现Windows95的中断处理
+王勇　盖江南　付长冬
+　　摘　要　本文主要说明在Windows 95系统平台下虚拟设备驱动程序（VxD）如何处理中断，包括申请、占有、释放，并给出VxD处理中断的流程和具体实例。
+　　本文介绍ASP工作的原理并针对一个具体的应用实例介绍其使用方法。由于系统通常都是在Windows 95系统下开发的，所以需解决Windows 95下的中断实现问题。
+1　Windows 95的中断原理
+　　Intel的80X86 CPU系列芯片规定了0、1、2和3四个级别的执行代码可信度，Windows 95中只用到了0级和3级。执行于第0级的代码具有最高的可信度，可直接对硬件、中断和文件系统进行物理访问，仅有操作系统及其部件被允许在第0级内执行。
+　　缺点：
+　　需要与公用网平台的路由器进行协作（不利于VPN的私有性和安全性）；
+　　当VPN的规模较大时，难以对网络进行维护和管理；
+　　VPN的地址空间必须与公用网络地址空间保持一致，企业不能根据需要规划私有网络地址空间，也不能有效地控制VPN与公用网（如：Internet）和其他外网的接入点；
+　　路由过滤技术通常需要与防火墙技术结合使用。
+　　在Windows 95下可以用两种方法实现中断，一种是编写DLL程序，另一种是使用虚拟设备驱动程序（VxD）。两者的区别在于：VxD是作为操作系统的组件运行于第0级的，而DLL程序却运行于第3级。
+　　VxD的运行在虚拟机管理器（VMM）的监控之下，VMM是位于最底层的操作系统部件。本文的证明过程中利用了改进的Razumikhin定理以及二次调节理论中的方法。硬件设备在数据准备好之后就发中断信号，但VxD并不直接截获这些中断，而是依赖于虚拟可编程中断控制器（VPICD）来处理硬件中断。
+　　VPICD虚拟化可编程中断控制器（PIC）硬件，允许其它VxD支持自己的硬件设备，譬如磁盘驱动器和通信端口，它们使用硬件中断去通知主机输入数据或状态的改变。VPICD可以映象硬件中断到其它设备，向其它设备提供一些服务，通过这些服务允许虚拟设备请求中断，并可在虚拟机中模拟硬件中断，称为虚拟中断。并且它还可以处理PIC硬件的I/O操作。它的处理结构图如图1所示。
+
+图1　VPICD的处理结构图
+　　VPICD提供的基本服务如下：
+　　（1） VPICD―Vrtualize―IRQ
+　　（2） VPICD―Set―Int―Request
+　　（3） VPICD―Phys―EOI
+　　（4） VPICD―Virtual―EOI
+　　（5） VPICD―Clear―Int―Request
+　　（6） VPICD―Force―Default―Behavior
+　　（7） VPICD―Force―Default―Owner
+　　VPICD―Virtualze―IRQ负责向VMM申请硬件中断IRQ。如果此IRQ没有被其它硬件所占用，则得到一个中断句柄，可以设置新的中断处理程序，并清除进位寄存器。如果IRQ被别的硬件所占用，则进位寄存器置位。这样，Exchange Server和MS PC Mail用户在编写报文时，就能够从地址表中选择其它系统的地址，如同自己系统的地址一样。
+　　但在以前的研究中，假设所有的时间参数（如加工时间）都是精确的，对加工时间弹性可变 的情况还很少研究\。
+　　VPICD―Pyhs―EOI结束一个硬件中断，允许下一次的硬件中断。
+　　VPICD―Virtual―EOI允许其它的VxD向VPICD发送虚拟EOI命令，结束一个虚拟中断。
+3.2　会计信息系统的实现
+　　由于开发平台的限制，开发工具和数据库管理系统都不是完全的面向对象的，所以在系统的实现过程中存在着把面向对象的模型转换成关系模型，转换的方式如下：
+　　　　　　　　　　　　面向对象的模型　　　　　关系模型
+　　　　　　　　　　　　　　　属性　　←―→　　　字段
+　　　　　　　　　　　　　　　类　　　←―→　　关系元组
+　　　　　　　　　　　　　　　继承　　←―→　　视图
+　　　　　　　　　　　　　　　消息　　←―→　　函数（过程）
+　　然后利用开发工具的面向对象特性，完成整个会计信息系统的实现。VPICD―Force―Default―Owner则重新设置此IRQ对应的默认的中断处理程序。
+2　虚拟设备的中断控制
+　　在阐述虚拟设备的中断控制前，首先说明一个非常关键的数据结构，定义如下：
+　VPICD―IRQ―Descriptor STRUC
+　　　VID―IRQ―Number　　　　dw　？
+　　　VID―Optionsdw0
+　　　VID―Hw―Int―Procdd？","成功保存？
+　　　VPICD―IRQ―Descriptor　　ENDS
+　　此数据结构中的域含义如下：VID―IRQ―Number定义虚拟设备申请的IRQ数，VID―Options必须为0，VID―Hw―Int―Proc是用户中断处理程序的地址，在虚拟化成功后，它将替代系统默认的中断处理程序地址。以上三个域是必须填写的。
+　　VID―Virt―Int―Proc是虚拟中断处理程序地址，而VID―EOI―Proc是物理中断结束后调用函数的指针。
+　　虚拟设备中断控制的处理过程如下：（1） 当用户通过CreateFile()函数装载VxD时，系统向VxD发送DEVICE―DYNAMIC―INIT消息，VxD消息控制处理程序调用对应的初始化程序。在此程序中如下处理：
+　　MOV EDI，OFFSET32 VID
+VxDCall VPICD―Virtualize―IRQ
+　　而VID可以如下定义：(假设申请IRQ 为9，中断处理程序为hw―int―proc)
+　VID VPICD―IRQ―Descriptor <9，0，hw―int―proc，>
+　　（2） 中断处理程序在处理中断时必须按以下的步骤进行：
+　　. 调用VPICD―Pyhs―EOI结束物理中断。
+　　. 调用VPICD―Set―Int―Request设置虚拟中断。
+　　（3） 在虚拟中断处理程序中作如下处理：
+　　. 真正的中断处理。
+　　. 调用VPICD―Clear―Int―Request清除虚拟中断。
+　　. 调用VPICD―Virtual―EOI结束虚拟中断。如何使网络计费不受IP地址混用影响，真实反映用户流量；如何加快网络浏览速度、降低不必要的出国费用；如何监控网络以了解、掌握、控制网络信息，对不良信息进行过滤，保证校园网健康应用和发展；如何有效保护网络资源，特别是校园网内部资源。在此程序中作如下处理：
+　MOV EDI，IRQHANDLE
+VxDCALL VPICD―Force―Default―Behavior
+VxDCALL VPICD―Force―Default―Owner
+3　VxD实现中断处理的实例
+　　本节以一个具体实例说明VxD中如何处理中断，给出的实例略有删节。
+. 386p
+. xlist
+#include vmm.inc
+#include debug.inc
+#include shell.inc
+#include vpicd.inc
+. list
+CVXDSAMP―DYNAMIC EQU 1　　　　　　　　　　　　　　　　　　　　//申明是一个动态VxD。
+CVXD―DEVICE―ID EQU 28ABH　　　　　　　　　　　　　　　　　　　//定义虚拟设备标识号
+VxD―LOCKED―DATA―SEG　　　　　　　　　　　　　　　　　　　　　　　//定义IRQ结构内容
+　　CVXD―IRQ―Desc VPICD―IRQ―Descriptor <09h，0，\
+OFFSET32 ―　CVXD―HW―INT，
+OFFSET32 ―　CVXD―VIRT>
+irqhandle dd 0
+VxD―LOCKED―DATA―ENDS　　　　　　　　　　　　　　　　　　　　　　　　//定义VxD参数
+DECLARE―VIRTUAL―DEVICE CVXDSAMP， 1， 0，CVXD―Control，
+CVXD―DEVICE―ID， UNDEFINED―INIT―ORDER
+VxD―CODE―SEG
+BeginProc CVXD―Dynamic―Init
+mov edi，offset32 CVXD―IRQ―Desc
+VxDcall VPICD―Virtualize―IRQ
+jc errorhandle
+mov irqhandle，eax　　　　　　　　　　　　　　　　　　　　　　　　　　//保存IRQ句柄
+mov eax，VXD―SUCCESS
+ret
+errorhandle：　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//出错处理
+mov eax，-1
+ret
+EndProc CVXD―Dynamic―Init
+BeginProc CVXD―Dynamic―Exit
+mov eax，irqhandle　　　　　　　　　　　　　　　　　　　　　　　　　　//返回IRQ句柄
+VxDcall VPICD―Force―Default―Behavior
+mov eax，VXD―SUCCESS
+ret
+EndProc CVXD―Dynamic―Exit
+VxD―CODE―ENDS
+VxD―LOCKED―CODE―SEG
+BeginProc CVXD―Control　　　　　　　　　　　　　　　　　　　　　　//消息控制函数例程
+Control―Dispatch SYS―DYNAMIC―DEVICE―INIT， CVXD―Dynamic―Init
+Control―Dispatch SYS―DYNAMIC―DEVICE―EXIT， CVXD―Dynamic―Ex it
+clc
+ret
+EndProc CVXD―Control
+BeginProc CVXD―HW―INT ，PUBLIC　　　　　　　　　　　　　　　//物理中断处理函数例程
+cli
+mov eax，irqhandle
+VxDcall VPICD―Phys―EOI　　　　　　　　　　　　　　　　　　　　　//结束本次硬件中断
+VxDcall VPICD―Set―Int―Request　　　　　　　　　　　　　　　//设置一个虚拟中断请求
+clc
+ret
+　　EndProc CVXD―HW―INT
+BeginProc CVXD―VIRT ，PUBLIC　　　　　　　　　　　　　　　　　//虚拟中断处理函数例程
+；； 处理中断事务?　　　　　　　　　　　　　　　　　　　　//具体的中断处理应在此处理
+mov eax，irqhandle
+VxDcall VPICD―Clear―Int―Request　　　　　　　　　　　//消除指定虚拟机中的虚拟中断
+VxDcall VPICD―Virtual―EOI　　　　　　　　　　　　　　　　　　　　//发送虚拟EOI命令
+sti　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//开中断
+clc　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//清除进位标志
+ret
+EndProc CVXD―VIRT
+VxD―LOCKED―CODE―ENDS
+END
+4　结束语
+　　从以上的分析和实例可以看出，使用虚拟设备驱动程序实现Windows 95的中断处理，可靠性更高，速度也更快，一般比使用DLL程序快2―3倍，并且在每秒8000次中断的情况下也能可靠稳定地运行，确实给开发Windows 95下的中断程序带来了极大的方便。
+作者简介：王勇　助理讲师。主要从事技术开发、系统管理与维护等工作。
+盖江南　硕士研究生。研究方向：计算机图形图像处理。
+付长冬　硕士研究生。研究方向：操作系统的设计与实现。
+作者单位：总装备部指挥技术学院　北京（101416）
+参考文献
+［1］　A.Baker.Windows NT设备驱动程序设计指南.北京:机械工业出版社,1996
+［2］　A.King.Windows 95 技术内幕.北京:清华大学出版社,1995
+［3］　H.Cluster.Windows NT技术内幕.北京:清华大学出版社,1996
+［4］　木　子,等.UNIX设备驱动程序.北京:学苑出版社,1993
+［5］　彭向东,等.使用VtoolsD开发Windows95中断程序.电脑与信息技术,1998;(5)
+收稿日期:1998-12-04(修改稿)

@@ -1,0 +1,85 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+2D碳/碳复合材料CVI过程的
+数值模拟研究
+姜开宇　李贺军　李克智
+　　摘　要　本文根据2D碳/碳复合材料的结构特征及CVI工艺的特点建立了孔隙模型和动力学模型，并利用该模型对其CVI过程进行了模拟与分析。模拟结果与实验结果的对比表明该数学模型是合理的。
+　　主题词　2D碳/碳复合材料　CVI　数值模拟　孔隙模型
+NUMERICAL SIMULATION OF CHEMICAL VAPOR INFILTRATION
+FOR 2D C/C COMPOSITES
+Jiang Kaiyu Li Hejun Li Kezhi
+(Institute of C/C Composites,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　According to structure feature of 2D C/C composites and the characteristics of CVI process,a porous model and dynamics model are established in this paper.The CVI Process of 2D C/C composites has been simulated and analyzed by the use of these models.It is evinced that these models are feasible by comparing the results of simulation and experiments.
+　　Key words　2D C/C composite CVI Numerical simulation Porous model
+1　引言
+　　化学气相渗透(CVI)工艺是制备碳/碳复合材料的主要工艺之一。该工艺能够避免常规工艺对纤维和基体的破坏，改善基体的微观组织结构，提高复合材料的性能，然而由于生产周期很长，成本很高，各种工艺参数如温度、压力、反应气的流动情况等对该工艺过程的影响也极为复杂，这都给CVI工艺参数的优化带来了很大的困难。数值模拟技术有助于更好地理解CVI的工艺过程，预测系统的行为，为工艺参数的优化及数据分析服务；它还可以检验新的设计思想，模拟由于经济原因或实验条件所限而难以进行的实验过程，因而对碳/碳复合材料CVI工艺的研究具有十分积极的意义。
+　　目前，国外已有研究人员对碳纤维增强SiC基复合材料的CVI模拟进行了研究［1，2］，取得了较好效果。然而对于实际应用中使用较多的2D碳/碳复合材料(其预制体为2向碳布叠层)的CVI模拟，迄今为止国内尚未见公开发表的有关文章，国外也很少有资料报导［3，4］。对2D碳/碳复合材料CVI工艺进行数值模拟，有助于更好地将CVI传质的动力学理论与实际应用结合起来。
+　　3)热电偶模块具有特殊设计的隔热联结器，用于提高测量精确度。分散式数据采集系统解决了集中控制时价格与风险之间的矛盾，确立了计算机在工业控制中的地位，70年代后期，开始逐渐成为过程控制的主流。由于2D碳/碳复合材料的内部孔隙结构较为复杂，如何建立一个既能够较好地描述预制体内部孔隙结构及其变化的符合实际情况的结构模型，是模拟成功的关键。
+　　8)系统允许同步进行测量、功能转换、报警控制及通讯，以获取最好的操作性能。然而过于追求这种一致性，将导致几何模型的过分复杂化，给以后的模拟计算带来很大的不便。而且由于变量的增加，将使迭代过程中产生的累积误差增加，影响计算精度，甚至无法得到收敛解。根据2D碳/碳复合材料的结构特点，可将其几何抽象成一个比较便于计算的结构模型――孔隙模型，来描述2D碳/碳复合材料预制体的致密化过程。
+　　图1为孔隙模型的示意图。该模型将预制体沿厚度方向均匀地划分成若干单元(单元的数量根据计算精度要求而定，一般可取为碳布层数)，单元上均匀分布着直径相等的圆柱形孔隙，孔隙半径r0取纤维束平均间隙的1/2(即r0=α/2)，根据预制体的孔隙率ε，由下式可确定单位面积上孔隙的数量n0：
+n0=ε/(π r20)　　　　　　　　　　　　　　　(1)
+
+图1　孔隙模型示意图
+　　预制体的致密化过程可通过孔隙半径的变化来描述。
+　　为求出孔隙半径的变化，必须建立一个动力学模型来达到这一目的。建模时需作如下假设：
+　　(1)反应气(C3H6)仅靠扩散作用向预制体内部渗透；
+　　(2)反应气的扩散速度远大于热解碳的沉积速度，因而该过程为一稳态过程；
+　　(3)C3H6的热解反应可认为是一级反应；
+　　对于盘状2D碳/碳复合材料预制体，当其直径D远大于其厚度h时(D＞h)时，反应气沿径向的扩散可忽略不计。因此该CVI的传质过程可认为是沿预制体厚度方向的一维传质过程。以直流电压为例，测量范围可以为1 μV～12 V，准确度可达0.01％×读数±0.01％ FS。
+　　由式(2)：
+　　　　　　　　　　　　　(3)
+即可求出预制体内反应气的浓度分布。式中C0为沉积炉内反应气浓度。
+　　2)每个测量模块都具有独立的17位A／D转换器，提供200次／s或40次／s的测量速率，并具有1 μV分辨能力及0.6°C的测量准确度。
+　　关键词　坐标测量机　虚拟现实　虚拟制造　虚拟测量
+New Developing Orientation of Coordinate Measuring Machine
+――Virtual Coordinate Measuring Machine
+Huang Qingcheng,Ye Dong,Liu Dejun,Che Rensheng
+　　Abstract　As the inevitable outcome of combining the virtual reality technique with coordinate measuring technique,the virtual coordinate measuring machine is the need for developing the virtual manufacture technology.This paper proposes a new developing orientation of 3D CMM――virtual coordinate measuring machine (VCMM),introduces the system structure and basic function of the VCMM and the necessary software and hardware environment for the simulation of VCMM.
+　　Key words　CMM,Virtual reality,Virtual manufacture,Virtual measurement
+　　虚拟现实技术是80年代才刚刚提出来的，随着计算机技术的迅速发展，该技术在90年代得到重视而迅速发展并很快进入实用阶段，尤其在军事、娱乐方面首先获得的成功应用。
+4　结束语
+　　适应虚拟制造发展的需要，本文提出了坐标测量领域一个全新的概念――虚拟坐标测量机，它不同于传统的坐标测量机，支持“并行工程”和“虚拟制造”，代表着新一代测试技术和测试设备的发展方向，并成为虚拟制造中的一个重要组成部分。
+
+
+图1　虚拟坐标测量机组成模块的体系结构
+2　虚拟坐标测量机的基本功能
+　　虚拟坐标测量机的基本功能与真实坐标测量机基本相同，两者的差异主要是在运行环境上的区别。图2为不同温度下的预制体密度变化曲线。由该图可看出，沉积温度较高，预制体的致密化速度就越快。但沉积温度越高，预制体外层孔隙封闭得越快。这使得复合材料制作的最终密度有所降低。
+*国家自然科学基金资助项目(59775086)
+作者简介:黄庆成　34岁　男　博士研究生
+作者单位:哈尔滨工业大学仪器仪表及测控技术系，黑龙江省哈尔滨市，150001
+参考文献
+　　1　刘红旗,王枞.虚拟现实环境下的产品设计和制造技术.虚拟制造技术研讨与演示会论文集,1998
+　　2　Jay Lee.制造全球化的挑战及研究战略.中国机械工业,1997,8(1)
+　　3　蒋新松.拟实制造.CIMS-China'96论文集(上册).第四届中国计算机集成制造系统(CIMS)学术会议,1996
+　　4　Nathanial J Durlach and Anne S Mavor.Virtual Reality Scientific and Technologycal Challenges.Washington,DC:National Academy Press,1995
+　　5　曹麟祥,汪慰军.三坐标测量机的现状、发展与未来.宇航技测技术,1996,16(2)
+　　6　安卫.国外三坐标测量机技术发展动态.航空精密制造技术,1996,32(4)
+1999-04-21收稿
+。在这个人造现实空间里，用户可以根据自己的需求来建造所需的各种坐标测量机和运行环境，可见，虚拟坐标测量机是一种纯数字化的软件系统，其体系结构一般由如下模块组成：
+　　从图1的体系结构可以看出，虚拟坐标测量机主要由虚拟坐标测量机建模、参数输入、虚拟测量环境和参数输出等模块组成。
+　　5)安装方便、使用灵活
+　　IMP体积小，对环境要求不高，可平置或悬挂在任何地方，十分适于工业现场。实验中预制体由吉体碳素厂的3KPAN平纹碳布制成，采用等温CVI方法在沉积炉内进行沉积，沉积炉内温度为T(750℃＜T＜1000℃)。具体的模拟值与实验值见表2。曲线表明模拟预测值与实验值符合得较好，这说明本文所建立的2D碳/碳复合材料CVI工艺的数学模型是可行的。坐标测量机的万能性强，自动化程度高，成为现代化工业生产、科学研究必不可少的精密测量仪器。
+表2　实验值与模拟值对照表
+时间050100150200250300350400450500
+模拟值0.8701.0241.1941.3441.4731.5811.6691.7371.7881.8241.849
+实验值0.871.021.141.301.371.421.571.621.701.751.78
+
+4　结论
+　　(1)本文根据2D碳/碳复合材料的结构特征及CVI工艺的特点建立了孔隙模型和动力学模型，该模型为2D碳/碳复合材料的CVI工艺数值模拟打下了理论基础；
+　　(2)实验结果与模拟结果的对比表明，用该模型模拟薄片状2D碳/碳复合材料制件的CVI过程可以取得比较满意的结果；
+　　(3)通过对2D碳/碳复合材料的CVI工艺的模拟，可以得到关于预制体内部孔隙率的分布、沉积温度及沉积时间等工艺参数对预制体致密化过程的影响等重要信息，便于对CVI工艺进行优化。
+*国防基金及国防预研基金资助项目
+作者单位：西北工业大学401教研室 . 西安 . 710072
+参考文献
+1　Tai Nyanhwa,Chou Tsuwei.Modeling of an Improved Chemical Vapor Infiltration Process for Ceramic Composites Fabrication.J.Am.Ceram.Soc.1990,73(6):1489-98
+2　Chung Guiyung,McCoy B J.Modeling of Chemical Vapor Infitration for Ceramic Composites Reinforced with Layered.Woven Fabrics.J.Am.Ceram.Soc.1991,74(4):746-51
+3　Vaidyaraman S,Lackey W J,Agrawal P K,Starr T L.1D Model for Forced Folw-Thermal Gradient Chemical Vapor Infiltration Process for Carbon/Carbon Composites.Carbon,1996,34(9):1123-33
+4　McAllister P,Wolf E E.Modeling of Chemical Vapor Infiltraqtion of Carbon in Porous Carbon Substrates.Carbon,1991,29(3):387-396
+5　Sher Wood T K等著，时钧等译.传质学.化学工业出版社，1988
+收稿日期:1998年5月18日
+修回日期:1999年5月17日

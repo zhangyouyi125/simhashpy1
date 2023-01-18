@@ -1,0 +1,59 @@
+计算机工程
+COMPUTER ENGINEERING
+1999年 第25卷 第8期 Vol.25 No.8 1999
+
+
+
+IPSOFACTO快速ATM信元传输上的IP交换
+许飞，许晓鸣，杨煜普，孙海荣
+摘要：介绍了一种无需信令通过ATM交换机建立路径，将IP流映射到ATM交换的技术。IPSOFACTO(IP Switching Over Fast ATM Cell Transport)负责将IP流映射到一条ATM交换路径。
+关键词：IPSOFACTO；IP交换；交换路径
+IPSOFACTO--IP Switching over Fast ATM Cell Transport
+Xu Fei,XuXiaoming,Yang Yupu,Sun Hairong
+(Dept.of Automation,Shanghai Jiaotong University,Shanghai 200030;
+State Key Lab.of Optical Communication,University of Electronic and Science technology,Chengdu 610054)
+【Abstract】In this paper a techonology of setting up path through an ATM switch without signaling system and reflection IP flows to an ATM switch is presented.The function of IPSOFACTO is to reflect IP flows to an ATM switching path.
+【Key words】IPSOFACTO;IP Switching;Switching path
+　　ATM 技术本身是一种新的网络体系，目前达到标准化并已实现的主要是低层通信支持环境：物理层、 ATM 层和 AAL 层，相当于 OSI 物理层和链路层的协议。随着 ATM 逐步走向实用化，学术界和工业界已认识到建立 ATM 网络上层协议国际标准的迫切性和重要性。如何制定 ATM 网络上层协议的标准一直存在两种观点。一种是对现有上层协议 ( 如 TCP/IP) 进行修改和移植，可最大限度地保护用户在网络上现有的投资，并可缩短标准化周期，加快 ATM 的标准化和实用化进程。5即为模糊最优调度结果 ，对应的模糊流程时间为(28, 34, 43。另一种是研究全新的 ATM 上层协议，以期充分发挥 ATM 的技术优势，但意味着浪费大量已有的网络投资，并延长标准化周期。 
+1 基本原理 
+　　IPSOFACTO 工作的基本前提是交换机的输入端口的所有未用 VC 均映射到交换控制处理器。如图 1 所示。 
+
+图 1 未用 VC 映射到路由器 
+　　信元级数据传递的交换路径的建立过程如下：发送端给新数据流的首分组在进线上选择一条未用的 VC 。当该线的下游末端的交换控制器收到首分组时，就根据 IP 路由表选择它的出线，以及该出线的一条未用的 VC 。然后，交换控制器在 VC 表中添加一条记录《 { 输入端口，输入 VC} ， { 输出端口，输出 VC} 》 ( 如图 2 示 ) ，则该数据流的后续分组在信元级就如此交换了。 
+
+图 2 添加一条交换路径 
+　　相对于数据分组，交换控制器不为 IP 的“控制”信息创建交换路径，而是通过一条预定的“控制 VC ”发送和接收 IP “控制”信息。
+　　(2) 适应度函数的选取
+　　染色体的适应度按下式计算：，其中J为目标函数。如通过删除 VC 表中的一条记录，可终止某数据流的前向传递状态，并释放相应的交换路径，同时打上该 VC 未使用的标记，留作后用。
+1　设计思想
+　　利用PowerBuilder6.0的动态数据窗口(DataWindow)技术修改数据库的列属性名称。
+作者简介：王臻　硕士研究生。
+2　模糊数及基于面积补偿的比较方法
+　　模糊数是模糊集的一种特殊形式［1］。8x,x]间随机生成两个点，作为TrFN的a, b点，为了保证生成模糊数的中心仍为x，取c, d两点满足：c-x=x-a，d-x=x-b。 
+　　(2) 当下游节点收到一条 RECLAIM 信息，它将相应的流入 VC 打上“未用”标记，并向下下游节点发送 RECLAIM 信息同时向上游节点返回一条 RECLAIM-ACK 信息。 
+　　(3) 一旦上游节点收到 RECLAIM-ACK 信息就将该 VC 标记为“未用”。 
+　　如果上游节点在一定的时间内未收到 RECLAIM-ACK 信息，将向下游节点重发 RECLAIM 信息。 
+　　注意，不必对每条 VC 这样做，而是一对 RECLAIM 和 RECLAIM-ACCK 信息，可包含多条 VC 的状态转换。显然这可减少交换机间的控制业务量。
+2　数据窗口的动态修改技术
+　　在数据窗口中的列、文本、按钮、图片都称为数据窗口对象（Dwobject），它们都有自己的属性。针对实际生产中加工时间的不确定性，应用模糊加工时间参数替代传统的清晰参数表示方法，引入了一种新的模糊数比较方法―面积补偿法，构造了一种解模糊Flow-shop问题的有效遗传算法。
+作者单位：中国科学院空间中心四室　北京（100080）
+收稿日期:1999-06-18
+。
+3　设计步骤
+3.1　定义表结构
+　　在PowerBuilder6.0的数据库画笔（DataBase Painter）中定义表结构。 
+3 小结 
+　　与 MPOA 不同， IPSOFACTO 不使用 ATM 信令就给 IP 流建立起交换路径。
+　　. 在窗口上放置按钮控件“保存”（cb―1），cb―1的clicked事件的脚本程序为：
+　　{ 
+if update(dw―1)=1 then 
+commit ;
+messagebox("ok。 Ipsilon 公司的方案是从下游节点选择 VC 对一串数据流进行交换， CSR 却是从上游节点选择 VC 。而 IPSOFACTO 是基于路由信息和 VC 的状态 ( 已用或未用 ) 来进行 IP 流到交换路径的映射的。
+　　定理1　如果， 则模糊数。 
+作者单位：上海交通大学电信学院自动化系，上海 200030；
+　　　　　电子科技大学光纤通信国家重点实验室，成都 610054
+参考文献 
+1 Katsube Y,Nagaml K,Esak H.Toshiba's Router Architecture Extensions for ATM:Overview,RFC 2098,1997-02 
+2 Newman P.Ipsilon Flow Management Protocol Specification of Ipv4 Version1.0,RFC 1953,1996-05 
+3 Newman P.IP Switching:ATM under IP.IEEE/ACM Transactions on Networking,1997-09 
+4 孙海荣 .ATM 技术 . 成都：电子科技大学出版社， 1998-03 

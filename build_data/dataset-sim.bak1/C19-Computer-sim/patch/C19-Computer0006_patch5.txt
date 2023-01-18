@@ -1,0 +1,80 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+一种软件结构复杂度度量模型及其自动实现
+王小明
+　　摘　要　本文对软件结构中扇入/扇出对软件复杂度的影响进行分析,研究探讨了一种基于扇入/扇出的软件结构复杂度度量模型，给出了自动实现算法。我们采用VC++（4.10版本）制作大幅地图也能达到此目的，一幅城市的大区图常用的作图要素为点和线，完全可用MFC的数据串行化处理。
+　　关键词　扇入，扇出，软件复杂度，模型
+A MODEL OF MEASURING SOFTWARE STRUCTURE
+COMPLEXITY AND ITS AUTO-REALIZATION
+Wang Xiaoming
+Computer Center,Gansu College of Economic Management， Gansu.Lanzhou，730070
+　　Abstract　This paper analyzes the influence of fan-in and fan-out to software complexity in a software structure, and makes a study of some software structure complexity model, based on fan-in and fan-out，gives an automatic algorithm. the models have higher application value.
+　　Keywords　Fan-in，Fan-out，Software complexity，Model
+1　软件结构复杂度度量
+　　在设计计算机大型软件的时候，无论是采用结构化方法还是面向对象技术，为了降低研究与设计的复杂度，总是采取“分而治之”的策略，即将要研究的大系统划分为多个规模适中的子系统，再通过对各子系统的研究设计、子系统集成，从而构成一个大型的软件系统。各子系统之间通过控制流与数据流相关联。在一定程度上，软件系统的复杂度取决于各子系统之间的控制流与数据流的复杂程度。从软件设计的角度来看，这种控制流与数据流即是模块间的扇入与扇出。软件结构复杂度是指模块结构的复杂度和整个软件系统结构的复杂度。系统所使用的涂片均采用 HE 染色法进行染色处理。 
+　　显然，在普通集合中，元素对集合的隶属关系只有两种状态，要么为 “ 真 ”(“1”) ，要么为 “ 假 ”(“0”) ，二者必居其一。一个模块的扇入指进入该模块的控制流与数据流之和，一个模块的扇出指该模块输出的控制流与数据流之和。软件结构的复杂度可表示为对应模块或子系统的扇入与扇出乘积的平方。
+2.4　存储过程创建
+　　SQL SERVER中，存储过程是保存在一个数据库中一个名称下的语句集合。结构复杂度度量力求反映模块内部结构的复杂度以及模块间接口的复杂度，进而反映整个软件系统的结构复杂度。但是这种方法将扇入/扇出，模块间循环调用与顺序调用，分枝调用，逐层调用与隔层调用，不同深度的调用，等等，对模块(系统)的复杂度影响同等对待，按照系统科学和软件工程理论，这并不完全合理。本文在研究结构化系统设计与程序设计的基础上，将扇入/扇出对模块的复杂度影响分别讨论，给出了基于扇入/扇出的模块和系统结构复杂度定量度量的数学模型。 
+2.3 形态学识别算法 
+　　所采集的彩色细胞图象经过预处理之后，根据如下算法进行特征提取和识别分类。它能够捕捉活动，如肌肉的运动，并且产生电子信号。
+　　准则2：任一程序中，分枝结构比序列结构复杂；循环结构比分枝结构复杂。
+　　准则3：任一程序中，隔层调用比逐层调用复杂；模块间自底向上调用(构成循环结构)比自顶向下调用复杂。
+　　准则4：系统模块越多系统越复杂；中间层模块越多系统越复杂；模块层数越多系统越复杂。从广义上说，只要达到此目的，即使没有完全达到上述的4个特征，我们也认为是虚拟现实。经常用作加强事务级规则和数据完整性。 
+　　中文笔式人群速记电脑系统 ( 以下简称系统 ) 研究的目的在于：书写者只要严格按照人群速记符的书写标准，从书写板上输入速记符，计算机读取来自书写板的书写轨迹信息并进行预处理，再经过笔画识别 [2,3] 和特征匹配，得到标准速记符，并根据速记符与汉语拼音的对应关系翻译其中文含义。扇入：指直接调用该模块的模块数目。
+　　模块总数(m)：系统中模块总个数。研究方向：分布并行处理系统。
+　　对称层号：当系统模块总层数n为奇数时，自顶(入口)向下(出口)各层对称层号依次为1，2，…，,…,2，1；当n为偶数时，自顶(入口)向下(出口)各层对称层号依次为1,2,…,,,…,2,1。
+　　第j层对称层权值(yj):
+2.3　数学建模
+　　依据2.1系统结构复杂度准则1-5，在研究大量实际系统模块扇入/扇出对模块(系统)结构复杂度影响的基础上发现， 一个模块的扇出不仅影响其自身的结构复杂度，更重要的是影响系统其他模块结构的复杂度(接口复杂度)，并使其本身的结构复杂度按2的指数增长。在获取报警信息的同时，一方面发往空闲的接警台，另一方面在本地硬盘形成两个二进制文件fjy和fjy0，其中fjy存储报警日期、报警时间、报警电话号码、用户名和用户地址信息：
+m―hPrint=fopen("fjy","w+");
+fwrite(szPrintMsg,1,szPrintMsg.GetLength(),m―hPrint);
+fclose(m―hPrint);
+　　其中fjyo文件仅存储报警电话对应的用户地址 strUserAddr:
+m―hPrint=fopen("C:\\MSDEV\\DSYP\\fjyo",
+"w+");
+/*在指定的目录中形成文件fjyo*/
+fwrite(strUserAddr,30,1,m―hPrint);
+fclose(m―hPrint);
+　　在形成fjyt和fjyo的两段源码中，m―hPrint为指向文件的指针，szPrintMsg为一字符缓冲区，szPrintMsg.Get Length()为字符缓冲区的总字节长度，strUserAddr为存放报警用户地址的字符串。模块的结构复杂度函数依赖于系统总模块数、系统深度、模块在系统中所处位置、扇入/扇出来源与去向等。
+关键词：Steiner Tree；进化规划；NP-complete
+Solve Steiner Tree Problem Based on Evolutionary Programming
+Qu Runtao,Xi Yugeng,Han Bing
+(Dept. of Automation,Shanghai Jiaotong University,Shanghai 200030)
+【Abstract】In this paper a novel method based on evolutionary programming is proposed to solve the Steiner Tree Problem,we combined with the heuristic alogoithm to improve the efficient of the evolutionary algorithm. The effective of evolutionary programming alogrithm is given out through simulation.
+【Key words】Steiner Tree；Evolutionary programming；NP-complete
+　　Steiner Tree 问题[1]，是图论中的一个 NP-complete 问题，由于在网络中有广泛的应用 [2] 而受到大量的重视。
+　　定义1:　由m个子模块构成的软件系统P,其子模块的结构复杂度定义为：
+　　模块j的扇入复杂度:
+Rj=m×hj×e｜j 模块深度层号-扇入i起点深度层号-1｜　　　　　　　　　　　(1)　
+　　（q为j模块扇入总数, 1≤j≤m，m为模块总数，以下同）
+　　模块j的扇出复杂度：
+Cj=m×hj×2｜j 模块深度层号-扇入i终点深度层号+1｜　　　　　　　　　　　(2)　
+　　（p为j模块扇出总数）
+　　模块j的总复杂度:
+　　　　　　　　　　　　　　(3)　
+　　系统模块的平均复杂度：
+　　　　　　　　　　　　　　(4)　
+　　模块j的总复杂度相对于系统模块的平均复杂度的偏差：
+　　　　　　　　　　　　　　　(5)　
+　　依据软件工程理论，一个软件系统最优，不是某几个模块最优，而应该是所有模块优度均衡，从而使系统最优。所以，可根据系统乘法原理［7］定义软件系统的结构复杂度。
+　　定义2:　由m个子模块构成的软件系统P,各模块的结构复杂度为Fj,则软件系统的结构复杂度为:
+Z=Fj　　　　　　　　　　　　　　　　　(6)　
+　　实践表明，当Kj≤-1时，该模块可能规模偏小，需同其它模块合并;当Kj≥1时，该模块可能规模偏大，需要进行再分解或调整控制流，使各结点复杂度达到基本的均衡，从而使整个系统结构复杂度达到较低水平。计算机以列表方式将有关信息显示出来，由用户选择安排。本文主要探讨将分布式对象技术应用中出现的各种问题及其解决方法。同样，在选中的会议与该与会者已安排的会议有冲突的情况下，仍可允许安排会议，这些安排也保存在RC.DBF中。笔者构造了100多种不同规模的软件系统结构模型，并对实际使用中的10种大型管理信息系统使用C语言实现该算法，对系统模块和系统结构复杂度进行了自动度量分析；对同一系统的不同系统结构方案进行了度量分析比较,其结果比较理想。
+注：本项目受正林集团技术创新基金资助(No.980530)。
+作者简介：王小明　副教授。 
+　　在 10 个随机产生的 25 节点的网络模型上将进化规划算法求得的解和基本的启发式算法求解的结果进行了对比。
+作者单位：甘肃省经济管理学院计算机中心　甘肃.兰州(730070)
+参考文献
+［1］　Tom DeMarco.Structured Analysis and System Specification.Yourdon inc,1979
+［2］　Roger S. Pressman, Software Engineering:A practitioner′s Approach,McGraw-HillBook Company,1982
+［3］　Elism B. & Susan U. Object-Oriented Methodologies and Systems, 1994
+［4］　Hausi A.M.&Rounald J.N.,The 17th IWCASE,1995
+［5］　张海藩.软件工程导论.北京:清华大学出版社,1998
+［6］　汤　庸.软件工程方法学及应用.北京:中国三峡出版社,1998
+［7］　孙　凌.计算机信息系统分析与设计.武汉:武汉大学出版社,1994
+［8］　杨士尧.系统科学导论.北京:农业出版社,1986
+收稿日期:1999-03-09(修改稿)

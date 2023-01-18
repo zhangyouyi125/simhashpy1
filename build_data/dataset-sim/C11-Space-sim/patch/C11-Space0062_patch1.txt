@@ -1,0 +1,57 @@
+航空计测技术
+AVIATION METROLOGY &
+MEASUREMENT TECHNOLOGY
+1999年 第2期 No.2 1999
+
+
+
+HBU―3000型布氏硬度计的调修
+梁廷伟啊〕戮涛＊场×跷肮＊＊唱
+
+　　摘　要　描述HBU―3000型布氏硬度计的工作过程，分析其易出故障的部位和成因，以便使用和维修。
+　　关键词　布氏硬度计　使用　维修
+
+　　HBU―3000型布氏硬度计是吴忠材料试验机厂生产的，适合做试件体积和高度都较大的布氏硬度试验。
+　　第二,捕获环边缘与导向瓣边缘相接触,有12种基本接触类型。负荷由砝码及二级杠杆放大实现，通过机械变荷机构，可预选负荷。试验的重要环节都有自动控制及保险机构，整个工作过程有指示灯显示，并有信号报警，使用比较方便，但在使用过程中，光学系统、变荷机构以及定位控制系统都易出故障，下面对其工作状态和具体的使用情况进行分析。
+4.3　本方法的计算结果与对系统的认识程度有关
+　　本方法的分析结果与对系统的认识程度有关,与环境也是密切相关的。首先划分该系统的中间状态:此例的中间状态是由于系统硬件降阶造成的。
+　　主题词　周边式对接机构　航天器对接　对接捕获　接触撞击
+DETERMINING THE POSITION OF THE FIRST 
+CONTACT POINTS FOR THE SPACE 
+VEHICLES WITH ANDROGYNOUS 
+PERIPHERAL DOCKING MECHANISM
+Wang Xinggui
+(The PLA College of Ordnance Engineering.Shijiazhuang.050003)
+Han Songchen Rong Li　Zhao Yang
+(Harbin Institute of Technology.Harbin.150001)
+　　Abstract　In this paper,the problem about the position of the first contact points for the space vehicles with androgynous peripheral docking mechanism is analyzed.First,the space analytic equation for three kinds of contact domain possible is establisehed about the above mechanism.then,on the basis of the principle of "point" projection is unchanged,the space analytic equation is reduced to two dimension.The diffculty and complexity to determine the position of the contact points is greatly simplified.Finally,many examples are given.
+　　Key words　Androgynous peripheral docking mechanism Space vehicles docking Docking capture Contact impact
+1　引言
+　　交会对接是实现载人航天的关键技术之一,因为它是未来空间站、空间平台等实现在轨装配、回收、补给、维修和人员更换等作业的先决条件。
+
+
+　　图1　FBW系统状态转移图
+则系统在第i个工作阶段的状态集以及相应的结构函数值可列出如下表所示:
+表1　系统工作状态与结构函数阵列
+状态h1h2h3h4su1ju1cu1su2ju2cu2Φ
+S11111111　　　1
+S2XXXX　　　1111
+　　其中,X=0或1,但h1+h2+h3+h4=3。
+　　考虑接口及各种系统级故障因素,则［1］中图3的系统状态转移图就变为如图1所示。应该注意的是变换负荷只能在完全卸荷后,才能进行，否则要损坏整个变荷机构。
+1.4　压痕投影测量部分
+　　投影部分主要是观察和测量压痕，它由光源、镜管、反射镜、影屏玻璃及微分筒等组成，压痕经光学系统放大20倍后投影于影屏玻璃上，并通过影屏上的刻线及微分筒可准确地测量压痕的直径。光源是由一个12 V50 W的专用灯泡及聚光镜组成，它在机体内部主杠杆的下面，灯管后部的三个调节螺钉是调节灯丝对中的，下边的一个螺钉是调节灯丝和聚光镜距离的。
+2　使用操作及电器动作过程
+　　1)打开电源开关K1，红色指示灯1 D亮，然后根据试验的需要变换负荷，打开光源开关K3，光源灯3D亮，然后转动丝杠的手轮使被测试样顶至保护罩。
+　　2)按下加荷按钮1 AN，继电器1C吸合并自保，电机正转，支杆向下运动，开始加荷，至支杆上A触点脱开，继电器2J失电，其常通触点闭合，则A触点延时继电器1SJ及保荷延时继电器2SJ吸合，同时黄色保荷指示灯亮，开始保荷，其中1SJ的作用是使在A触点断开后继续维持加荷状态至1SJ延时导通后,其常闭触点断开，这时继电器1 C失电，电机停转，停止加荷，使支杆顶部与主杠杆脱开3～5 mm距离，以免影响负荷精度。
+　　3)所选择的保荷时间到时以后，延时继电器2SJ的常开触点闭合，继电器2C有电吸合并自保，电机反转，支杆向上运动，开始卸荷。此时,主动捕获环边缘的空间圆,即为一个与该捕获环同心半径为Rk的球面与该捕获平面相交的空间曲线。
+　　5)在任何时候，只要按下总停按钮3AN，硬度计立即停止运转，要复位时,只要按一下卸荷按钮2AN，即可自动复位。
+2.3　硬/软件系统可靠性建模分析
+2.3.1　建模思想
+　　根据以上的分析,总结硬/软件系统可靠性建模分析过程如下:
+　　1)首先将系统的任务阶段性明确划分出来,划分的标准即看系统的每个功能
+　　a.是否是依小于1的概率投入运行;和
+　　b.硬件运行构成是否在运行过程中有变化。
+3.2　卸荷保护部分
+　　卸荷部分有二级定位保护，当二级杠杆运动到无触点行程开关JK处时,便停止卸荷，如无触点行程开关JK失控，则二级杠杆继续向上运动与上面的保险微动开关WK1接触，电机停转，同时讯响器LB讯响报警。这时按加荷按钮1AN,报警停，杠杆下降。当杠杆降低到适当的位置再按总停按钮3AN,即可进行修理。
+3.3　变荷机构部分
+　　在试验过程中，有时会出现预选负荷不准的情况。导致加荷紊乱的原因是砝码与变荷架的相对位置改变了。当xq3≤0表示已相交,xq3=0时为首次接触交点。两个对接机构的首次接触撞击点主要就决定于这些对接初始条件。造成这种情况的原因主要是室内光线太强，因是投影仪，故影屏前的光线不能太强，一般控制在40 lx以下。光学反射镜上有污物也会影响光反射强度，应定期用镜头纸擦污物。另外,试样表面不光亮，反射光线太弱，应减小试样表面粗糙度Ra(粗糙度Ra一般小于0.4 μm)及保证试样表面的亮度，发黑的试样应把表面的发黑层去掉，不然几乎无反射光。而它既不属于硬件故障,也不属于软件故障。此时,主动捕获环边缘的空间圆,即为一个与该捕获环同心半径为Rk的球面与该捕获平面相交的空间曲线

@@ -1,0 +1,150 @@
+宇航材料工艺
+AEROSPACE MATERIALS & TECHNOLOGY
+1999年 第29卷 第5期 Vol.29 No.5　1999
+
+
+
+材料科学中的分形理论应用进展*
+
+屈朝霞　张汉谦
+文　摘　综述和分析了近年来分形理论在材料科学中的应用进展，包括分形维数的测定方法；分形在材料科学中应用的几个发展阶段；分形在材料断裂和凝固相变等不同领域中应用的具体进展。
+关键词　 材料科学，分形理论，应用
+Progress of Application of Fractal Theory to Material Science
+
+Qu Zhaoxia
+(　Tianjin University 　Tianjin　300072　)
+Zhang Hanqian 
+(　Taiyuan University of Technology　Taiyuan　030024　)
+Abstract　 In this paper, the progress of application of fractal theory to material science is summarized and analyzed, including some methods to measure fractal structure's fractal dimension and several stages of application of fractal theory to material science as well as the progress in some fields such as material fracture ,solidification and phase transformation.
+Key words　 Material science, Fractal theory, Application
+
+1　引言
+　　70年代末，法国数学家Mandelbrot 通过对许多形状复杂的不规则物体进行仔细观察和综合分析后，提出了分形的概念并首创了分形理论［1］。
+　　"风云三号"为太阳同步轨道气象卫星。并给出了一些软件实际应用的成果图。随着研究的进一步深入，文献［10，18］ 利用随机分形模型精确地计算了沿晶断裂表面的维数 。人们把分形论、耗散结构和混沌称为70年代科学史上的三大发现。随着分形理论及其应用的不断发展，已迅速成为描述、处理自然界和工程中非平衡和非线性作用后的不规则图形的强有力工具［2］。近年来， 国内外学者对分形理论在材料科学中的应用进行了大量的研究，尤其是在金属断裂［3～17］、合金凝固和相变［18～20］、材料微结构［21，22］、薄膜研究［19］等方面取得了很大进展，为进一步促进分形理论在材料科学中的应用， 本文对近年来分形理论在材料科学中的应用进行如下总结和分析。
+2　分形维数的测定方法
+　　实际测定分维的方法，根据研究对象的不同，大致可分成以下五类［23］ ： 改变观测尺度求维数； 根据测度关系求维数；根据相关函数求维数；根据分布函数求维数；根据频谱求维数。分形在材料科学中应用时，常用的测定分维方法有：盒维数法、码尺法和小岛法。 
+　　（1） 盒维数
+　　若令F集是Rn域中非空有界子集，Nε(F)是覆盖F集所需的数量最少的直径最大为ε的集合的个数。改变ε，Nε(F)就随之变化，作ln Nε(F)―lnε曲线，若存在相当长的直线部分，斜率的相反数即为分维值。
+　　由于盒维数是由相同形状集的覆盖确定的，计算起来比Hausdorff维数容易，因而被广泛应用。如海岸线的分维、任何函数图的维数、金相照片中成分和组织的分维都采用盒维数法。
+关键词：云图；分辨率；传输系统；信道隔离
+分类号：TN957.53　文献标识码：A
+文章编号：1006－1630(2001)02－0029－04
+The Technology for High Resolution Picture Transmission of FY-1C Satellite
+WANG Jin-hua（No.509 Institute of SAST, Shanghai 200240, China）　
+LIU Ting-gui（No.813 Institute of SAST, Shanghai 200086, China）　
+HOU Ai-wu（No.509 Institute of SAST, Shanghai 200240, China）　
+
+Abstract：The FY-1C satellite transmission system, including the mission, schem e, main specifications and system constitution is introduced. Polarization isola tion and limiting frequency spectrum outside bandwidth are adopted in order to a t tain channel isolation specification. The technological factors of satellite-bo r ne recorder that is changed from a magnetic tape recorder to a solid-state reco r der are summed. The manufacture processes of the magnetic tape recorder, the FLA SH and DRAM solid-state recorder are described. On-orbit testing and runni ng state of the transmission system is briefly introduced.
+Keywords：Cloud picture; Resolution; Transmission system; Channel isolation
+作者简介：王金华(1971-),男,工程师,研究领域:通信系统设计和测试。用单位长度r去近似分形复杂曲线，先把曲线一端作为起点，然后以此点为中心画一个半径为r的圆，与曲线相交于一点，把起点和此点用直线连接起来，再把此交点重新作为起点，以后反复进行，把测的线段总数记为N(r)，改变单位长度r，则N(r)也变化，具体关系如下： 
+N(r)= L/r∝r－D(1)
+即 
+L∝r1－D(2)
+对(2)式两边取对数，作lnL― lnr曲线, 如存在相当长的直线部分，则1－D为直线斜率。 
+　　（3） 小岛法
+　　小岛法是根据周长―面积测度关系来求分维的。对于一般规则图形的周长P和面积A有如下关系： 
+P∝A1/2(3)
+对于不规则图形的周长和面积有： 
+P1/D∝A1/2(4)
+式中，D是不规则图形边界线的分维，对（4）式两边取对数，则有：
+lnP=D/2lnA+const(5)
+作lnP―lnA曲线，如存在相当长的直线部分，则D/2为直线斜率。
+　　应当指出：对同一研究对象，采用不同方法，所测得的分维不同，因而不能严格地说哪一种方法所测得分维能代表某一研究对象的分维。特别对有CPU和存储器的单粒子翻转效应（SEU）和闩锁效应（SEL）试验。 
+3　分形理论在材料科学中应用的几个发展阶段
+　　纵观分形在材料科学中应用的研究文献可知，随着分形数学理论的发展和计算机性能的提高，尤其是图像处理功能的完善，分形理论应用于材料科学时，经历了从简单的实验测定到复杂分形模型的建立，再到复杂分形结构的模拟这样几个发展阶段。
+3.1　分维的实验测定
+　　对一些结构或实验结果表现出的不规则性和粗糙性，人们直观地认为它们具有统计自相似性，进而利用计算机图像处理技术或其它方法测定出其分维，再去寻找分维与物理量之间的关系；或者由实验结果发现一些物理量有幂律关系，由幂律关系得到其分维。目前，人们针对不同的研究对象，开发了不同的分维测定方法。如测量断口表面的分维时，除小岛法外，还发展了垂直剖面法［4］、二次电子线扫描法［24］、显微干涉图像法［25］和扫描隧道显微法(STM)等［21］。
+3.2　分形结构模型的建立
+　　对一具有分形特征的结构简化并抽象为某一类数学分形模型，求其分维，并探寻分维与物理量的关联。经卫星在轨飞行验证，对FY-1C所进行的电磁兼容性设计是正确的。已建立的动力生长模型有三类［2］：一是有限扩散凝聚模型；二是弹射凝聚模型；三是反应控制凝聚模型。由于红外成像导引头选用为卡迪拉克轿车生产的现成商用组件，因而成本很低。张济忠在研究气固相变时提出了核凝聚模型［23］。谢和平建立了穿晶、沿晶、以及穿晶和沿晶相偶合的微观断裂分形模型［26］，已建立的模型，为薄膜生长、非晶态材料晶化、金属等微小颗粒在无规则运动中凝聚成一个个小集团等问题的研究指明了方向。 
+作者单位：舒伟民（上海航天技术研究院509所，上海 200240）　
+
+参考文献：
+［1］中国星船材料空间效应数据手册[M].航天工业总公司五院五一∷.
+［2］马歇尔空间飞行中心标准MSFC-SPEC-1443.空间环境中与光学表面有关的非金属材料的出气试验[S].1987,10.
+［3］欧洲空间局ESA PSS-01-702.空间材料热真空筛选试验[S].1983,3.
+
+收稿日期：2001年1月16日
+出版日期：2001年4月25日
+。分形结构模型的建立，为分形结构的重构打下了基础。
+3.3　分形结构的重构和模拟
+　　根据物体和结构的自然特性，人为地构造出分形边界和分形结构模型，按照一定的算法，进行计算机模拟和实验观察，这样可直接了解到具有分形边界和分形结构的物体所表征的物理力学特征，进而探讨事物发展的分形物理机理。已进行了建立在逾渗模型、DLA、Laplace分形以及其它分形模型的计算机模拟。
+关键词：极轨气象卫星；应用卫星；卫星应用；遥感卫星
+分类号：P414+.2　文献标识码：A
+文章编号：1006－1630(2001)02－0001－07
+The Development of FY-1C Polar-Meteorological Satellite
+MENG Zhi-zhong（SAST,Shanghai 200233，China）　
+
+Abstract：Based the summary of foreign polar-orbiting weather satellites develo p ment, such as United states, Russia etc. , this paper introduces the service app lication satellite system of China polar-orbiting weather satellites and geost a tionary orbiting weather satellites. The basic function, global design, technique characteristic, key techniques and related development of FY-1C Satellite are stressed. At the end of this paper, the development assumption of new generation polar-orbiting satellite, FY-3 Satellite, is simply related.
+Keywords：Polar-orbiting weather satellite；Application satellite； Satellite applications ；Remote sensing satellite
+作者简介：孟执中(1934-)，男，研究员，上海市宇航学会会员，FY-1极轨气象卫星总设计师。
+　　分形应用于不同领域时，都经历了分维的实验测定、分形模型的建立、分形结构的模拟这样几个发展过程。
+关键词：气象卫星；卫星遥感；太阳同步轨道卫星
+分类号：P414+.2　文献标识码：A
+文章编号：1006－1630(2001)02－0008－07
+Status and Development of FY Series of Meteorological Satellites
+ZHANG Wen-jian（National Satellite Meteorological Center CMA，Beijing 100081，China）　
+
+Abstract：The developmental course and main performances of first generation of FY-1 series of polar orbiting meteorological satellites and FY-2 series of sta tionary meteolorogical satellites of our country and the developmental plan of FY-2's s u ccessors and FY-3 satellite are introduced. The plan of radiation-correcting f ield of sensors is also introduced.
+Keywords：Meteorological satellite; Satellite remote sensing; Sun-synchronous satellite
+作者简介：张文建(1954-)，男，理学博士，研究员，中国气象学会卫星气象学委员会主任，中国地理学会遥感分会常务副理事长。
+　　在凝聚态物理中，对一些远离平衡无序系统的不可逆生长过程的研究指出，分形概念及分形维数能很好地描述相变与临界现象中的自相似的标度不变性质，并已能利用计算机模拟图形和实验结果［2］。
+4　分形理论在材料科学中不同领域的进展
+4.1　断裂方面的研究进展
+　　Mandelbrot等认为［3］，金属断裂表面是粗糙的和不规则的， 对断面细节观察发现，裂纹均以Z字形前进， 大的Z字形套小的Z字形，具有近似的自相似性质，故可以把它看作是一种分形结构。这样，可以用维数来描述断口的特征。
+　　金属断口的分维测定方法一般采用小岛法［3］和垂直剖面法［4］。断口分维的测定主要采用小岛法，小岛法测定金属断口表面的分维时的具体实验过程为：将断口表面利用真空镀膜技术镀上一层镍，然后平行于断口平面用细砂纸磨去一层并抛光， 则凸出的部分被磨去之后在显微镜下观察发亮，称之为“岛”， 没有磨到的区域由于镀镍发暗，称之为“湖”， 于是断口平面在图像分析仪的屏幕上成为千姿百态形状各异的“湖”中之“岛”。 然后测每个“岛”的周长和面积，求其分维。文献［20］对马氏体相变进行了分形描述。这种方法在金属断口方面的应用日益广泛，如文献［5，6］中便采用此方法。文献［5］指出：采用垂直截面法测量的断口分维不依赖于测量码尺的选择，使用时，比小岛法更为方便。
+　　通过对断裂的分形研究，提出了多种断裂模型。刘文予［11］ 建立的金属断口的分形模型提高了断口定量分析的精确性。苏辉［8］ 提出了沿晶断裂的随机分形模型，并指出沿晶断裂中晶间夹角变化导致分维变大。江来珠［9］ 首先在严格自相似基础上建立了易切削钢冲击断口裂纹扩展的分形几何模型，随后李学良［6］建立了易切削钢裂纹扩展的随机分形模型，与实际情况比较吻合，减小了原来的模型与实际情况的偏差。类维生［10］ 建立了裂纹扩展速率的分形结构模型。龙期威［7］提出了沿晶断裂的分形模型。 分形维数（在分形理论中，也有学者称为分数维数）简称为分维， 其变化是连续的，它定量描述分形结构自相似的程度、不规则程度或破碎程度。
+　　在建立分形模型时，必须考虑分形结构形成的物理机制和环境因素，尽可能与实际情况相吻合。卫星在轨运行测试验证表明，卫星温度处于最佳状态，镉镍电池组的温度控制在（4～9）℃的范围内，6台镉镍电池之间温差小于3℃,满足镉镍电池的特殊温度要求。而文献［24］认为，用小岛法测定的断口分维，仅仅反映了断口轮廓峰某一等高线的不规则性，不适用于断口的粗糙度描述，实际断口只是统计意义下的分形结构，是一种随机分形。金属断口的多种分形模型的建立，说明了分形在这方面应用的进一步深入，为将来金属断口这一分形结构的重构和模拟打下了基础，为最终认识金属断口这一分形结构形成的物理本质及其正确地指导生产实践创造了条件。
+　　许多研究文献涉及了断口分维与材料性能之间的关系［3～8］。 
+作者单位：刘玉洁（中国气象局国家卫星气象中心,北京 100081）　
+
+收稿日期：2001年3月6日
+出版日期：2001年4月25日
+。 实验测定的韧度指标与断口分维之间不仅有正变化关系，也有反变化关系，有时甚至根本不具有单调对应关系。许多学者认为［3～8］，断口表面的分维是金属断裂表面粗糙度的一种量度，且与金属内部的组织和性能有关。随后，龙期威指出利用小岛法所测定的分维为表观分维， 并不是“小岛”的真正分维，表观分维与测量码尺有很大关系，当测量码尺大于临界长度， 即小岛周边Koch 曲线始图的边长（在断口分析中为裂纹扩展的最小步长），表观分维与韧度成反变化；当测量码尺小于临界尺寸时， 表观分维与断口的真正分维较接近，才与韧度成正的线性关系。 穆在勤［4］等提出：沿断裂表面不同方向剖面的分形维数D与lgKIC之间具有不同的线性关系（沿裂纹扩展方向的分维与韧度成正变化； 垂直裂纹扩展方向的分维与韧度成反变化）。 
+作者单位：王世金（中国科学院空间科学与应用研究中心，北京 100080）　
+　　　　　朱光武（中国科学院空间科学与应用研究中心，北京 100080）　
+　　　　　梁金宝（中国科学院空间科学与应用研究中心，北京 100080）　
+　　　　　张微（中国科学院空间科学与应用研究中心，北京 100080）　
+　　　　　李保权（中国科学院空间科学与应用研究中心，北京 100080）　
+　　　　　舒伟民（上海航天技术研究院509所，上海 200240）　
+
+参考文献：
+［1］臧振群,古士分,师立勤,等. 航天器异常与空间环境[J].空间科学学报,1998,18(4)：342-347.
+［2］Julian M W. The national space weather program[R]. Federal Coordinator for Meteorological Services and Supporting Research, FCM-P31-1977, Washington, DC , 1997.
+［3］Steve Pearson. NASA's space environments and effects (SEE) program [R]. Geor ge C. Marshall Space Flight Center, NP-1999-06-74-MSFC, Huntsville, Al 35812 , 1998.
+［4］叶宗海. 空间粒子辐射探测技术[M]. 北京: 科学出版社,1986.148 -198.
+［5］Sawyer D M, Vette, J I. AP-8 Trapped proton environment for solar m aximum an d solar minimum[R]. National Space Science Data Center, NSSDC/WDC-A- R&S 76-06, Greenbelt, MD, 1976.
+
+收稿日期：2000年11月17日
+修稿日期：2001年1月19日
+出版日期：2001年4月25日
+。文献［19］还发现，自然蒸发的氯化铵饱和溶液的结晶产物是分形结构，其形态受DLA模型控制或受表面张力的作用。
+　　另外，对能否用分维来定量描述金属断裂韧度存在着较大的争议和分岐［18］。Dauskardt认为分维与材料韧度之间不应有必然联系［27］，穆在勤等认为二者存在线性关系［13］；研究表明［28］：只有当裂纹扩展过程中裂纹尖端的塑性形变区被限制在很薄的一层区域内时，断口表面的分维才与分维韧度之间有联系，即当处于平面应变状态时，分维才与韧度有定量关系。有学者指出［17］：断口的分形结构是裂纹扩展过程的产物，常规的断裂韧度KIC、JIC或GIC是在线弹性或弹塑性条件下描述裂纹起裂特性的临界参量，因而，从物理意义上讲，上述常规断裂韧性与断口的分形维数是不相容的。将分形用于金属断裂研究时， 所选择的力学量应能表征裂纹扩展过程所具有的耗散性。 建立与分维的定量关系时，物理量的选择应保证分形、物理、 断裂力学与分维的自洽性。在线弹性力学量不能解决时，应考虑弹塑性力学量。
+　　在以往的断裂研究中， 对分维的物理意义也有了较深刻的认识：分维是熵的一种量度，并且还是一个状态函数。 对于固定的几何图形或演化过程的任一暂态而言，分维存在且唯一。产生分形结构的物理机制是系统的耗散性，耗散的本质是系统中熵的增加，而熵又可用分维来度量。
+4.2　凝固和相变方面的研究进展
+　　孙力玲［18］等人用分形理论证明了定向凝固固―液界面结构属于分形结构，可以用分形方法来定量描述；非平衡凝固中固―液界面的分形维数，不仅是描述不规则图形的几何参量，也是一个依赖于凝固速度变化的态函数；当合金成分一定时，增大凝固速度导致固液界面的分形维数增大，其研究结果还证明了分维是熵的另一种量度。然而文献［16］ 经过研究得出：不论平行还是垂直的分维都与冲击功呈正线性关系， 不论何种材料，垂直方向的分维总是大于平行方向的分维。要基本上搞清楚某一分形结构及其形成的物理本质，必须能达到对所研究对象的重构，而只有实现了分形结构的重构，其研究成果才有可能较成熟地指导生产实践。分形在金相组织研究方面也取得了一些进展。在分析了原顶盖不足之处后，提出了采用过弯法抵消弯曲回弹，采用翻边法提高焊接质量的成形方法，给出了经大量工艺试验后确定的工艺参数，并分析、介绍了模具设计过程。垂直剖面法是码尺法的一种，测定分维的具体过程为：沿断口两个不同方向垂直截开断口，分别得到两条断口边界轮廓线，利用图像分析仪在不同放大倍数下分别测出两条断口边界的长度，再用上述原理得到两个分维，即垂直和平行于裂纹扩展方向的分维。
+4.3　材料微结构方面的研究进展
+　　对于材料微结构的定量刻划可采用分维。
+关键词：红外遥感系统；红外扫描系统；辐射计
+分类号：TN215; TP722.5　文献标识码：A
+文章编号：1006－1630(2001)02－0015－09
+10-Band Scanning Radiometer of FY-1C Satellite
+ZHENG Qin-bo（Shanghai Institute of Technical Physics, Chinese Academy of Sciences, Shanghai 200083, China）　
+WENG Chui-jun（Shanghai Institute of Technical Physics, Chinese Academy of Sciences, Shanghai 200083, China）　
+WANG Wei-yang（Shanghai Institute of Technical Physics, Chinese Academy of Sciences, Shanghai 200083, China）　
+GONG Hui-xing（Shanghai Institute of Technical Physics, Chinese Academy of Sciences, Shanghai 200083, China）　
+
+Abstract：10-band scanning radiometer is a main load of FY-1C meteorological s at ellite .The paper introduces optic design , electronic design, radiation calibra tion and performance of the component in detail. Testing result of the remote s ensor on after-launched satellite is given and compared with s imilar sensors abroad .
+Keywords：Infrared remote sensing system；Infrared scanning system；Radiometer
+作者简介：郑亲波(1944-)男，研究员，博士生导师，上海市宇航学会会员，风云一号(02批)气象卫星副总设计师，研究领域：空间光电遥感技术。Fe－Cr基合金在发生调幅分解时，会产生一种连通结构，且延伸很广，这种结构难以用大小来描述，为此，文献［22］用分维表征了原子级微观结构的结构特征。传统的测量方法和评价方法已无法描述在若干纳米尺度下的表面微观形貌。文献［21］对材料表面微观形貌用STM进行了研究，认为是一种分形结构，用Weierstras-mandelbrot模型模拟了分形表面，并对其进行了分形分析。
+5　结语
+　　(1) 分形在材料科学方面的应用已取得了很大的进展，为其他领域的分形应用奠定了良好的基础。
+　　(2) 随着分形理论的发展和完善，分形在材料科学方面的应用将不断扩大，其结果将进一步丰富和完善材料科学方面的理论研究及应用。 
+作者单位：侯建文（上海航天技术研究院812所，上海 200233）　
+
+参考文献：
+［1］章仁为.卫星轨道姿态动力学与控制[M].北京：北京航空航天大学,1998.
+［2］侯建文.一种带帆板挠性的控制系统分析和设计[J].中国空间科学技术,19 92,（2）.
+
+收稿日期：2000年11月20日
+修稿日期：2001年1月11日
+出版日期：2001年4月25日

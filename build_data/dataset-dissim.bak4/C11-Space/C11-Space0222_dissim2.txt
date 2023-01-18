@@ -1,0 +1,122 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS
+1999年 第2期　No.2 1999
+
+
+
+捷联惯导系统中确保全姿态测量的
+软故障检测和隔离
+秦永元　牛惠芳
+　　摘　要　本文探讨了最多有两个捷联陀螺发生软故障时的故障检测和隔离方法,给出了由奇偶向量确定的软故障χ2检验法,详细推导了两个陀螺都发生软故障时的极大似然故障隔离判决函数的计算公式,归纳出了对故障陀螺的隔离搜索算法。仿真结果表明,即使故障量与漂移一样微小,该法仍能准确检测并隔离出故障陀螺。
+　　主题词　软故障　检测　隔离　奇偶向量
+THE SOFT FAULT DETECTING AND LSOLATING TO 
+ENSURE THE ENTIRE ATTITUDE MEASURING OF 
+A STRAPDOWN INERTIAL NAVIGATION SYSTEM
+Qin Yongyuan Niu Huifang
+(Dept.of Automatic Control Northwestern Polytechnical University.Xi'an.710072)
+　　Abstract　In the federated filter design,the reliability of a strapdown inertial navigation system should be guaranteed absolutely because it is used as a common reference system.The paper investigates the way to detect and to isolate at most two faulty inertial components.The soft fault detection algorithm based on chi-square test is reviewed.The parity judgement function to isolate two faulty inertial components based on maximun likelyhood test is deduced in detail.The algorithm to search the faulty components is induced.The fault detection and isolation of the scewed redundant ring laser gyro cluster is simulated on the computer.The results show that the searching scheme can detect and isolate faulty components correctly even if the soft faults are as tiny as the gyro drifts.
+　　Key words　Soft fault Detection Isolation Parity vector
+1　引　言
+　　要获得运载体的完整姿态信息,捷联陀螺必须采用余度斜置和容错测量技术。对于由陀螺失效引起的硬故障,采用奇偶方程校验能有效地隔离出失效陀螺,但对陀螺性能变化引起的软故障,则须采用极大似然法作故障隔离。通常只研究仅一个陀螺有软故障时的隔离方法［2］,然而两个陀螺都有故障的概率不可忽视。本文探讨最多有两个陀螺发生软故障时的检测和隔离方法。显然其含量随激波强度的增加而下降,但自由基和离子的含量却因此而上升。
+　　主题词　爆轰波　超音速燃烧　化学平衡
+THE ESSENTIAL FEATURE OF STEADY 
+DETONATION WAVE USING PROPULSION
+Cui Dongming Fan Baochun
+(Power Eng.College,Nanjing Univ.of Sci.& Tech..Nanjing.210094)
+　　Abstract　In view of the essential conservation equation of the steady detonation wave、multiconstituents equation of state and the constituent conservation equation of accounted chemical equilibrium moving.Acoording iteration equation devived in this paper,the equilibrium constituents behind different intensity steady detonation wave、reaction heat and isentropic exponent are calculated,the essential feature of steady detonation wave、steady condition and the various factors of influence steady are discussed.
+　　Key words　Detonation wave Hypersonic combustion Chemical equilibrium
+1　引　言
+　　如果激波诱导的化学反应所释放的能量足以补充其传播过程中的能量损失,该波则可以自持,称此为爆轰波。过去,人们在讨论爆轰波的驻定条件和驻定范围时通常忽略由于激波强度的变化导致的化学平衡的移动以及由此产生的平衡组分、产物绝热指数和反应热的变化［5］。
+　　假设仅陀螺j出故障,并记该事件为Hj,则量测方程成:
+　　　　　　Z=Hω+ε+ejf　　　　　　　　　　　　(6)
+式中ej为与Z同维的向量,第j个分量为1,其余分量全为零,f表示故障大小,是确定性量。CB曲线是不同来流速度下θ取极大值点的联接线,是正规反射的极限状态。
+　　按(7)式分别计算D1,D2,…,Dm,若Dk(k=1,2,…,m)为最大,则判定第k个陀螺出故障。
+3　两个陀螺都有软故障时的检测和隔离算法
+　　若陀螺i和陀螺j都出故障,并记该事件为Hij,其中i,j=1,2,…,m,i≠j,则故障向量为:
+　　　　　　bf=eifi+ejfj　　　　　　　　　　　　　(8)
+　　若两故障量悬殊很大,则可按单个陀螺出故障的情况分析之,故障隔离判决函数按(7)式计算。
+　　方程(2.1)～(2.8)组成一组以β和θ为参数的封闭方程组,当来流的组分、温度、压力和流速给定时便可得到斜爆轰极曲线,从而预测斜爆轰的驻定范围,驻定斜爆轰的倾斜角等重要参数。此时
+　　　　　　P=Vε+f(Vi+Vj)　　　　　　　　　　　　(11)
+由于f(Vi+Vj)为确定性量,ε服从正态分布,所以P也服从正态分布,且均值为f(Vi+Vj),方差阵为σ2I。图2　(c)为产物的绝热指数的变化曲线,该值与系统所含质量的自由度有关,自由度越小,绝热指数γ越大。
+　　本文考虑了化学平衡随激波强度变化的移动,根据计算得到的斜爆波极曲线,对斜爆轰波的驻定条件及其影响因素进行分析和讨论。与此相应的数值解法可以精确地给出爆轰波驻定的匹配条件,即给出爆轰波的驻定窗口,这对驻定爆轰的理论研究和实际应用皆具有相当的价值。所假设的条件为:六个单轴激光陀螺的敏感轴分别沿正十二面体的法线,陀螺从1至6作编号,(1)式中H阵见［8］p92。自爆轰现象发现以来,爆轰总是和传播联系在一起的,其传播速度,即爆速,是爆轰波的重要特征参数。其余条件和仿真结果列于表1～表4。诸表中,括号内的数字组为隔离函数最大值指示的故障陀螺号,加*号表示判定正确的情况。
+　　　　表1　单个陀螺出故障时判决函数最大值的指示结果
+
+A　D
+123456
+C
+0.01BDj(1)*(2)*(3)*(4)*(5)*(6)*
+D+i,j(3,5)(2,3)(1,5)(2,5)(1,3)(1,2)
+D-i,j(1,5)(1,6)(2,6)(1,4)(4,6)(2,3)
+-0.01Dj(1)*(2)*(3)*(4)*(5)*(6)*
+D+i,j(3,5)(2,3)(1,5)(2,5)(1,3)(1,2)
+D-i,j(1,5)(1,6)(2,6)(1,4)(4,6)(2,3)
+
+　　注:A――故障量(°/h)　B――判决函数　C――判决函数最大值指示的陀螺号　D――实际故障陀螺号
+　　　　表2　两个陀螺出故障且故障量相差悬殊时判
+　决函数最大值的指示结果
+
+ABD
+23456
+1DjC
+(1)*(1)*(1)*(1)*(1)*
+D+i,j(1,6)(2,5)(1,6)(3,4)(1,6)
+D-i,j(1,5)(1,4)(1,3)(1,2)(1,5)
+2Dj(2)*(2)*(2)*(2)*(2)*
+D+i,j　(1,5)(2,4)(2,4)(2,6)
+D-i,j　(1,2)(1,6)(1,2)(4,5)
+3Dj(3)*(3)*(3)*(3)*(3)*
+D+i,j　　(1,5)(1,4)(1,5)
+D-i,j　　(2,6)(3,6)(2,4)
+4Dj(4)*(4)*(4)*(4)*(4)*
+D+i,j　　　(1,3)(4,6)
+D-i,j　　　(1,4)(2,3)
+5Dj(5)*(5)*(5)*(5)*(5)*
+D+i,j　　　　(1,3)
+D-i,j　　　　(2,4)
+
+　　注:A――故障陀螺号,故障量0.05°/h　B――判决函数　C――判决函数最大值指示的陀螺号　D――故障陀螺号,故障量0.005°/h
+表3　两个陀螺出故障且故障量相同符号相同时判决函数最大值指示结果
+ABD
+23456
+1DjC
+(6);(5)(5);(4)(6);(3)(3);(2)(6);(1)
+D+i,j(1,2)*(1,3)*;(4,5)(1,4)*(1,5)*;(2,3)(1,6)*;(3,5)
+D-i,j(5,6)(1,4);(2,4);(3,4);(4,5)(3,6)(2,6);(1,2);(2,5)(5,6);(1,3);(2,6)
+2Dj　(2);(3)(2);(4)(4);(1)(2);(6)
+D+i,j　(2,3)*;(1,5)(2,4)*(2,5)*(2,6)*
+D-i,j　(2,5);(3,5);(2,6)(1,6)(1,4)(4,5)
+3Dj　　(2);(1)(1);(6)(2);(5)
+D+i,j　　(3,4)*(1,6);(3,5)*(3,6)*
+D-i,j　　(1,2)(1,3);(5,6);(1,5)(2,5)
+4Dj　　　(4);(5)(6);(4)
+D+i,j　　　(1,3);(4,5)*(4,6)*
+D-i,j　　　(1,4);(3,4);(2,4);(3,5)(2,3)
+5Dj　　　　(4);(3)
+D+i,j　　　　(5,6)*
+D-i,j　　　　(3,4)*
+　　注:A――故障陀螺号,故障量0.1°/h　B――判决函数　C――判决函数最大值指示的陀螺号
+D――故障陀螺号,故障量0.1°/h
+表4　两个陀螺出故障且故障量相同符号相反时判决函数最大值指示结果
+ABD
+23456
+1DjC
+(1);(2)(1);(3)(1);(4)(1);(5)(4);(1)
+D+i,j(3,4)(1,6);(3,4)(2,5)(1,2);(2,5);(3,5)(2,4)
+D-i,j(1,2)*(1,3)*;(2,6)(1,4)*(1,5)*;(3,6);(1,6)*
+2Dj　(6);(4)(5);(3)(2);(5)(3);(1)
+D+i,j　(4,6)(3,6);(1,3);(1,5)(3,6)(1,5);(1,4);(3,5)
+D-i,j　(2,3)*(2,4)*;(3,5)(2,5)*(2,6)*;(1,3)
+3Dj　　(3);(4)(5);(3)(3);(6)
+D+i,j　　(5,6)(3,6);(1,3);(5,6)(1,4)
+D-i,j　　(3,4)*(3,5)*;(2,4)(3,6)*
+4Dj　　　(2);(6)(1);(5)
+D+i,j　　　(2,6)(2,5);(1,2);(1,3);(1,6)
+D-i,j　　　(4,5)*(1,5);(4,6)*
+5Dj　　　　(5);(6)
+D+i,j　　　　(1,2)
+D-i,j　　　　(5,6)*
+　　注:A――故障陀螺号,故障量0.1°/h　B――判决函数　C――判决函数最大值指示的陀螺号
+D――故障陀螺号,故障量-0.1°/h
+5　分析和结论
+　　从诸表可看出:当故障陀螺只有一个,或有两个但故障量悬殊时,Dj最大值所指示的故障陀螺号固定不变,并能正确指示出故障陀螺;当故障陀螺有两个且故障量接近时,D+i,j和D-i,j最大值所指示的故障陀螺组有多个,其中有一组是正确的,顺序隔离指示的故障陀螺组就能搜索出实际的故障陀螺。根据以上分析,可得对故障陀螺作搜索和隔离的流程图如图1所示。
+　　计算时常因修正值过大而导致结果发散,故本文采用欠松驰迭代

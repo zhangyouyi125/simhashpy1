@@ -1,0 +1,97 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000 Vol.19 No.3 P.53-55
+
+
+
+Windows NT 4.0下无盘工作站的建立方法
+姚卫新
+　　摘　要：在Windows NT环境下用NE2000兼容网卡建立无盘工作站的方法。
+　　关键词：远程启动 无盘工作站 服务器 机器目录
+1 远程启动工作原理和过程
+　　客户机上电后,初始化网卡,网卡BootROM上固化的软件向网络广播1个FIND帧,即引导请求帧,该帧中包含有客户机的网卡ID号。
+　　服务器端的远程启动服务接收到客户机广播的FIND帧后,根据帧中所带的网卡ID号在远程启动数据库中查找相应的工作站记录,如果不存在这样1个记录,引导过程不能继续;如果此工作站记录已经存在,远程启动服务则发送1个FOUND帧给客户机,FOUND帧中已包含了服务器的网卡ID。
+　　当网络上有数台服务器在运行远程启动服务时,RPLROM有可能会接收到多个FOUND帧,但RPLROM只对它收到的第1个FOUND帧有反应,它将根据第1个FOUND帧中所带的服务器网卡ID号,返回1个SEND.FILE.REQUEST帧给对应的服务器。SEND.FILE.REQUEST帧是1个要求服务器发送文件的请求。
+　　服务器端的远程启动服务在收到SEND.FILE.REQUEST帧后,将根据远程启动数据库的工作站记录查找对应的启动块（BootBlock）,用FILE.DATA.RESPONSE帧将启动块送回客户机端的RPLROM。
+　　RPLROM在收齐所有的FILE.DATA.RESPONSE帧后,将执行点转向启动块的入口,启动工作站。工作站以Win95实模式启动后,将创建1个RAM盘,并将Win95实模式文件从远程启动服务器拷贝到RAM盘,加载Win95实模式网络设备启动并建立1个到SBS服务器的连接。如果用户请求的是内嵌在服务器端执行的脚本语言的程序调用（后缀是＊.asp）,则启动相应的ASP服务程序,动态生成页面返回给用户。创建ODBC的过程如下:
+　　首先在WEB服务器WINDOWS NT上安装访问数据库的ODBC驱动程序,利用ODBC检测工具软件测试与数据库是否连通（如运行ORACLE ODBC TEST）。
+　　通过“控制面板\网络\添加协议”添加DLC通信协议。通过“控制面板\网络\添加服务”添加远程启动服务。
+　　通过“控制面板\服务”激活“服务”对话框,在“启动类型”选项中选中“自动”,再单击“确定”即可。
+3 建立DOS环境下的无盘工作站
+3.1 增加网卡
+　　在众多的网卡中,卡号前6位数字为0020AF和00608C的网卡直接支持NT的远程启动,如果选用的网卡是这2种,那么就可以忽略本段内容。
+　　在MS-DOS方式下执行RPLCMD,对每一步的提示按如下说明来填写。
+C：\WINNT\RPLCMD.EXE
+适配器 引导Config配置文件 服务代理商WKSTA
+［退出］：V（Vender）
+（Adapter Boot Config Profile Vender［Quit］）
+Add Del EnumA（Add）
+VenderName=52544（输入卡号前6位）
+all other parameters are optional
+VenderComment=
+适配器 引导Config配置文件 服务代理商WKSTA
+［退出］：B（Boot Block）
+Add Del EnumA
+BootName=bootdos
+VendorName=52544C（对应VendorName）
+BbcFile=BBLOCK\NETBEUI\NE2000\DOSBB.CNF
+all other parameters are optional
+BootComment=
+WindowSize=
+适配器 引导Config配置文件 服务代理商WKSTA
+［退出］：C（Config）
+Add Del EnumA
+ConfigName=configdos
+BootName=bootdos（对应BootName）
+DirName=dos
+DirName2=dos622
+FitShared=fits\dos622.fit
+FitPersonal=fits\dos622p.fit
+all other parameters are optional
+ConfigComment=CONFIGDOS622
+DirName3=
+DirName4=
+适配器 引导Config配置文件 服务代理商WKSTA
+［退出］：Q
+3.2 建立无盘工作站
+　　将DOS6.22的文件复制到C：\WINNT\RPL\RPLFILES\BINFILES\DOS622下,并解除MSDOS.SYS和IO.SYS的S和H属性。
+　　启动“远程启动管理器”,执行“配置\检查配置”并选择“是”;执行“配置\修复安全性”,选择“是”。
+　　建立启动配置文件（profile）,注意选择建立的新配置:CONFIGDOS622
+　　用建好的配置文件建立新的工作站,在“WKSTA”处输入工作站名,如:STATION1;在“适配器ID”处输入卡号,例如:52544C1B1E60。
+　　启动远程工作站。
+4 建立Windows 95环境下的无盘工作站
+4.1 安装Windows 95共享文件
+　　在NT服务器上建一共享目录（如PWIN95.SBS）用于保存公共文件,并建另一共享目录（如:PWIN95RPL）用于保存每台工作站的私有文件。ADO作为Web服务器端的一种扩展,它允许基于Web的应用程序的开发人员编写服务器端的脚本以扩展基于Web的应用程序的能力。将Windows 95的文件安装到\\YWXSERVER\PWIN95.SBS中（其中YWXS-ERVER为服务器名）。按缺省值完成安装即可。
+　　在服务器上放入Windows NT光盘,执行CLIENTS\RPL\UPDATE\WIN95下的WIN95SRV.BAT文件。上半部分是用户对话界面,下半部分是返回的输出结果页面,如统计结果。
+　　（5）应用系统开发过程复杂,效率低。
+　　应用程序对数据库的访问是通过数据库访问ADO实现的,主要包含启动Web服务器和数据库服务器之间的会话,定义数据库服务器的调用,即分析SQL语句的语法有效性;为SQL语句打开光标（Cursor）;把Web应用程序中的变量粘接起来送入数据库服务器共享的存储器中;说明要返回字段的内容,这些字段以服务器的数据结构中的值为依据;在光标存储器空间内执行SQL语句;取1个或多个数据行送入Web应用程序页面中;关闭光标。因为Windows 95远程启动时首先映射C盘,所以工作站本地硬盘和光盘盘符从D开始,另外由于Windows 95还需要1个虚拟盘（RAMDRIVE）,所以需要保留1个盘符给RAMDRIVE。
+　　　NET USE F：\\NTS4\PWIN95.SBS
+　　　NET USE G：\\NTS4\PWIN95RPL
+　　在F盘上执行SETUP,将Windows 95安装到G：\CLIENT1目录下。安装出现“Setup Options”,选择“Custom”;出现“Analyzing Your Computer”对话框时选择“NoI want to modify the hardware list”,并删除所有硬件;出现“Network Configuration”对话框时,请利用“选择网卡Properties Resources”设置网卡的IRQ和I/O地址。其余选择Windows 95的缺省值。
+　　运行“远程启动管理器”,执行“检查配置”和“修复安全性”,建立1个使用“CONFIGPWIN95”配置的profile,例如:PWIN95PRO。
+　　执行服务器上的C：\WINNT\RPL\BIN\WIN95CLT.BAT建立配置文件与工作目录及服务器的对应关系,例如:Win95clt d：\95rpl\client1\\YWXSERVER PWIN95PRO。
+　　修改C：\PWIN95.SBS目录下的MACHINES.INI文件。加入工作站的启动信息,例如:
+　　　　［52544C1B1E60］
+　　　　　SYSDATPATH=G：\CLIENT1
+　　　　　G=\\YWXSERVER\PWIN95RPL
+　　更换工作站的profile为PWIN95PRO,重新启动工作站,当出现“Type the username,or press enter if it is 52544C1B1E60:”时,注意输入用户名,例如:STATION1,即可完成以后的安装。
+　　在IIS 4.0 WEB SERVER上需要安装Oracle的通信软件SQLNET或NET8,其中可能遇到汉字不能正常显示的现象,这是因为安装过程中选择了错误的字符集所致。
+　　在1台普通的Windows 95工作站上执行Windows 95光盘上的NETSETUP.EXE程序。出现“服务器安装”对话框时,单击“设置路径”。
+　　出现“服务器路径”对话框时,输入:\\YWXSERVER\PWIN95.SBS,单击“确定”。
+　　单击“机器安装目录”中的“添加”按钮,分别输入计算机名,本机工作目录和第1台无盘工作站的工作目录,例如:STATION2;\\YWXSERVER\PWIN95RPL\CLIENT2;\\YWXSERVER\PWIN95RPL\CLIENT1。继续完成以后的安装。
+　　在服务器上修改工作站的启动记录,让它使用第1台工作站的profile,修改MACHINES.INI,加入该工作站的信息（方法同上）。
+　　　　　［52544C1B17B4］
+　　　　　　SYSDATPATH=G：\CLIENT2
+　　　　　　G=\\YWXSERVER\PWIN95RPL
+　　重新启动工作站,完成安装。
+6 建立无盘工作站的注意事项
+　　1.在安装和初次启动无盘工作站时,最好只有服务器和工作站2台机器。
+　　2.在安装无盘Win95时,如出现编号为“SU-0013”的错误提示,需要通过设置CMOS把硬盘禁止掉。
+　　3.安装DOS无盘工作站时一定要把IO.SYS和MSDOS.SYS文件的系统、隐藏的属性清除掉,否则工作站启动登录时会出现错误信息;
+　　Non-system disk for disk error
+　　Replace and press any key when ready
+　　无法启动无盘工作站。
+　　（3）在Oracle SQLPLUS下运行并生成程序包。
+　　5.在DOS无盘工作站上安装PWin95时,要使用“CUSTOM”方式,不要选用“TYPICAL”方式,否则,安装过程会死机,而且下次再安装PWin95时不正常。
+3.2 选择FRONTPAGE98建立页面框架
+　　好的开发工具可以大大加快系统的开发进程,降低开发成本,它是影响应用系统开发周期的重要因素。在控制面版中参考表1对ODBC进行配制

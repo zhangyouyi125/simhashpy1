@@ -1,0 +1,91 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第1期 No.1 Vol.18 1998
+科技期刊
+
+紫外-B辐射增强对小麦和燕麦繁殖特性影响的研究*
+岳　明　王勋陵　(兰州大学生物系，兰州 730000)
+文　摘　模拟15％臭氧层减薄水平，研究了紫外-B（UV-B）辐射增强对小麦的花粉活力及萌发特性以及籽粒产量与其萌发特性的影响。小麦和燕麦的繁殖特性对紫外辐射的敏感性差异很大。
+参考文献
+1　Emerich Erdoes,Karel Mocek,et al. The Journal of the Air & Waste Management Association，1989，39：(9) 1206～1209
+2　国家环境保护局编.胡建民主编.电力工业废气治理.北京：中国环境科学出版社，1993.187～195
+作者简介
+马鲁铭　男，1959年10月生。
+关键词　紫外辐射　小麦　燕麦　花粉　种子萌发
+A preliminary study of the responses of wheat and oat reproductive characteristics to enhanced UV-B radiation.Yue Ming，Wang Xunling(Department of Biology,Lanzhou University,Lanzhou 730000).China Environmental Science.1998,18(1):68～71
+Abstract― The pollen vitality and germination and also the seed yield and germination of wheat (Triticum aestivum CV. 80101) and oat(Avena sativa VC. Bayaer-3) under supplementary UV-B radiation from approximately 15% ozone layer depletion were researched. There are sensitivity differences of reproductive characteristics to UV-B radiation between wheat and oat. The seed yield of oat and its germination rate(25℃,in dark) were inhibited significantly by UV-B radiation enhancement, while there was no effect of UV-B radiation on those of wheat. The decrease of wheat pollen vitality and its germination rate by UV-B radiation enhancement could be compensated by increase of numbers of ears per plant under supplementary UV-B radiation. The effects of UV-B radiation are related with metabolic changes of physiological active compounds in pollen and seed which are connected with their germination.
+Key words: ultraviolet radiation　wheat　oat　pollen　seed germination
+　　由于平流层臭氧层减薄导致的地表紫外辐射增强（主要是UV-B,280～315nm）已成为越来越受关注的全球变化问题之一。增强的紫外辐射对植物生长发育及生理机能的研究较多〔1〕，但对植物繁殖特性的影响则研究很少。
+　　生化出水吸收烟道气的二氧化硫还有一个突出的优点：不产生二次污染。这不仅关系到作物产量，也关系到植物种间竞争平衡，从而可能在较短的进化时间里改变群落的组成和生产力。
+　　短波紫外辐射（UV-C,<280nm）对花粉的伤害虽早引起了注意，但现已证明UV-C无助于评价臭氧层减薄的生态影响，因为即使臭氧层减薄90％，UV-C也不会到达地表。故可不予考虑。至今有关UV-B对花粉影响的报道仅见Chang等〔4〕和Pfahler〔5〕对一种紫露草（Tradesantia)和玉米，Flint和Caldwell〔2〕对虞美人(Papaver rhoeas)等植物花粉萌发的研究。
+3　试验流程
+　　试验在上海石化股份公司水质净化厂进行，流程如图2。
+　　在污水生化处理过程中，微生物分解有机物，释放出二氧化碳。干法投资低，但二氧化硫去除效率低，吸收剂利用率亦低〔1〕；湿法虽然去除率高，但投资和运行费用均很高，工艺复杂。试验在兰州大学生物园进行，小区面积1m2，。按400株/m2的密度播种，每处理设3个重复区。本试验生化出水采用上海石化股份公司水质净化厂的生化出水，它的碱度为300 mg/L左右；海水采用上海金山卫海水，碱度140 mg/L左右。辐射处理采用秦牌（Qin Model）40W紫外B灯照射，辐射强度测定用北京师范大学生产的UV-B型紫外辐射强度仪。根据Caldwell〔3〕计算，将仪器的读数转变为生物有效辐射量，以mW/m2单位表示。处理从出苗一周后开始直至成熟（每遇下雨暂停照射），处理时间为每日9:00～16:00，处理强度为在自然太阳辐射基础上增加76.2 mW/m2,该强度相当于兰州地区（海拔1500 m，北纬36度）夏至前后晴天平均增加30％的紫外辐射量，即模拟臭氧层减薄15％，这与联合国环境规划署（UNEP）1991年预测臭氧层减薄的值一致。通过调节灯与材料的距离，基本保证整个生长季节处理强度的一致。对照仅接受自然太阳辐射。　
+　　花粉活力测定采用TTC染色法，将采来的花粉抖入盛有1％TTC溶液的试管中，25℃下处理1h，镜检，每处理样本数n=4,每样本统计200～250粒花粉。花粉萌发率测定基本参照Flint和Caldwell的方法〔2〕，不过蔗糖浓度是多次试验后确定的，当花粉抖落到培养的玻片上后，立即将玻片置于铺有湿滤纸的培养皿中，覆盖能透过紫外-B辐射的塑料薄膜以保湿。此外，在实际烟气脱硫过程中温度较高，二氧化硫在水中的物理溶解度减小，化学吸收的比例增大，碱度的作用更大。每处理统计样本数为n＝3，每样本统计500粒左右的花粉。
+　　但按上述方法在蔗糖浓度为5%～40％的不同培养基上燕麦花粉未能得到较好的萌发，最大萌发率仅5％左右，原因待查，其结果不在本文中讨论。
+　　小麦成熟后每小区随机抽取10株进行有关指标测定。
+1　原理
+　　二氧化硫是中等溶解度的气体，在水中溶解后可进一步电离形成H+:
+　　SO2 + H2O←→HSO-3+H+(1)
+　　HSO-3←→SO2-３+H+　　(2)
+　　随水中H+浓度的上升，限制了SO2的继续溶解。种子自然风干，其余植物材料在70℃条件下烘干。常规方法测定所收获的种子在25℃时的发芽率和发芽势。每皿100粒种子，设6次重复。
+2　结果与讨论
+　　花粉活力的测定表明，对照组小麦和燕麦具活力花粉为37.3％和32.3％，而UV-B处理分别为19.0％和27.9％（图1）。UV-B辐射引起两种植物花粉活力不同程度地降低，其中小麦花粉活力的降低达到了显著水平(P<0.05）。
+
+图1　紫外-B辐射对花粉活力的影响
+C:对照组　T:处理组
+Fig.1　Effect of UV-B radiation on pollen vitality
+　　取自对照小区与处理小区观测其花粉萌发如表1。 
+表1　紫外-B辐射对小麦花粉萌发的影响*
+Table 1　Effect of UV-B radiation on the germination
+of wheat pollen
+
+项　目自然光照UV-B辐射
+花粉统计数量萌发率(%)花粉统计数量萌发率(%)
+对照组 C1596 58.9±1.1a 1860 50.2±1.4b 
+处理组 T129343.3±2.8c154232.6±1.7d 
+
+注：*花粉统计数量为3次重复统计花粉数量之和，萌发率一栏为平均值±标准差，其后所跟字母不同表示各平均值之间差异显著(按照Duncar多范围检验。P<0.05, n=3)，检验前百分数值经过反正弦变换
+　　从表1所示，对照组的花粉萌发率明显高于处理组，表明UV-B增强导致小麦花粉萌发率的降低，双因素方差分析显示（表2），不同花粉来源及不同的萌发条件之间花粉萌发率差异显著，而且花粉来源和萌发条件之间不存在交互作用。这说明紫外-B辐射不仅对小麦花粉的萌发过程有显著抑制作用，而且对所产生的花粉特性也有显著影响。由于吸收液的pH值测定迅速、方便，并能判断吸收液的饱和程度，有利于现场运行操作。试验开始后，固定气液比，当出流吸收液的 pH值不再变化时，表明已达到稳定运行工况，此时可以记时记量，用碘吸收液收集尾气中残留的SO2，由此可以计算出尾气的SO2浓度。但都没有从长期受UV-B处理植株上取得花粉进行试验的报道。从图1，表1，表2看，花粉来源和萌发条件各自独立地影响小麦花粉的萌发，即使萌发过程中不受UV-B辐射照射，那些曾受过UV-B辐射的植株其花粉活力及萌发率已受到明显抑制。这一结论对认识UV-B辐射增强如何影响植物，特别是闭花受精植物的繁殖特性很有指导意义。
+　　植物在生长过程中，UV-B辐射抑制光系统II的功能，诱导自由基的形成和DNA伤害，以及次生代谢产物的改变〔3〕。UV-B辐射可能通过一些分子如DNA等，影响与花粉活力和萌发有关的生理活性物质的代谢，进而抑制花粉活力和萌发率。
+　　从籽粒产量看，UV-B辐射导致燕麦单株籽粒数和籽粒重的显著降低，但对小麦的籽粒产量没有影响（表3）。试验开始后，固定气液比，当出流吸收液的 pH值不再变化时，表明已达到稳定运行工况，此时可以记时记量，用碘吸收液收集尾气中残留的SO2，由此可以计算出尾气的SO2浓度。
+表3　紫外-B辐射增强对小麦和燕麦籽粒产量性状的影响*
+Table 3　Effect of UV-B radiation on the characteristics of seed yield in wheat and oat
+
+处理总生物量籽粒数 籽粒量 有效穗数 千粒重 籽粒重/总生物量 
+　　　小麦
+C5.45±0.26a 36±4a 1.26±0.10a1.6±0.84ac 31.3 0.231 
+T4.43±0.31b38±4a 1.26±0.06a 2.3±0.48bd 32.50.284 
+　　　燕麦 
+C 4.28±0.27b75±7b 1.44±0.11a 1.2±0.42a 22.50.336 
+T3.79±0.20c62±6c 1.05±0.06b 2.0±0.67cd15.0 0.277 
+
+　　　　　　注：*除最后两列外，各数值为10株的平均值±标准差。每列中缀有相同字母者为其平均值无显著差异（按Duncan多范围检验，P<0.05)
+
+　　 UV-B辐射引起植物生物量下降已有不少报道，UV-B辐射刺激侧芽的生长，因而导致分蘖数的增加被认为是植物对UV-B辐射的普遍反应〔1〕。另外，两个光形态建成系统也影响分蘖。而1#SBR碱度持续下降，是由于有机负荷低，发生了硝化反应的原因。表3中籽粒重/总生物量反映出UV-B辐射有利于小麦同化产物向籽粒中运输，但对燕麦的作用正相反。表3还显示，尽管UV-B辐射使小麦和燕麦的单株有效数增加，但却没有引起籽粒产量的相应增加，说明每个有效穗的籽粒产量受到UV-B辐射的显著抑制，这显然与授粉结实率的降低有关。 
+　　取自对照组和UV-B处理组的两种植物种子在25℃时的发芽情况如图2，图3，小麦和燕麦种子发芽率在第4天以后不再增加，可以看出，从第2～4天受过UV-B处理的小麦种子发芽率没有显著差异(在0.05水平上差异。
+
+图3　二氧化硫溶解量与出流吸收液pH值的关系
+Fig.3　The relationship between the amount of dissolved 
+SO2 and effluent pH of absorbing solution
+5　海水与生化出水对比实验
+　　生化出水脱硫方法原理与海水脱硫方法相同,不同点主要在于二者的碱度大小。据Teramura等报道〔6〕，UV-B辐射可以改变大豆种子中蛋白质与脂肪的含量。处理组燕麦种子开始时发芽比率高于对照组，这是否与处理组燕麦种子的成分有所改变而促进其吸胀有关，尚待进一步研究。
+
+3　结论
+3.1　增强3％的紫外-B辐射对小麦和燕麦的花粉活性都有一定抑制作用。特别是，经过紫外－B辐射后代的花粉，即使萌发时不再受紫外-B辐射处理，其活力仍有明显抑制的表现。
+3.2　增强30％的紫外-B辐射对燕麦籽粒产量及发芽率有明显影响，而对小麦的影响则不明显。
+3.3　小麦和燕麦的繁殖特性对紫外-B辐射反应的敏感性不一样，燕麦大于小麦。
+3.4　紫外-B辐射虽对小麦花粉活力和萌发有抑制作用，但可以通过单株有效数的增加予以补偿，故不会对其最终的繁殖效率产生明显影响。
+参考文献
+1　Barnes P W,S D Flint，M M Caldwell.Am. J. Bot.，1990，77:1354～1360
+2　Flint S D，M M Caldwell.Ecology,1984，65:792～795
+3　Caldwell M M，S D Flint.Solar ultraviolet radiation and ozone layer change:Implications for crop plants. In:Physiology and Determination of Crop Yield(American Society of Agronomy, Crop Science Society of American,Soil Society of American.eds.)，1994，487～507
+4　Chang D C N，W F Campbell.Environ. EXP. Bot.，1976，16:195～199
+5　Pfahler P L.Environ. Health. Perspect.1981，27:125～132
+6　Teramura A H，J H Sullivan.Environ. Pollut.，1988，53:466～468
+7　Flint S D，M M Caldwell.Am.J.Bot.，1983，70:1416～1419
+8　Jackson J F，H F Linskens.Molec. Gen. Genet.1979，176:11～16
+作者简介
+岳　明　男，1967年10月生。西北大学生物系讲师，兰州大学污染生态学博士。通过快速测定出流吸收液的pH值，可以迅速推算出二氧化硫去除率，根据排放要求及时地调整气液比。发表论文10余篇。
+收稿日期：1997-03-04
+*国家自然科学基金及博士点基金资助项目

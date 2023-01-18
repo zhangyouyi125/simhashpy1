@@ -1,0 +1,81 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第3期 No.3 Vol.18 1998
+科技期刊
+
+新书《产甲烷细菌及其研究方法》简介
+　　由农业部厌氧微生物学重点开放实验室编写的“产甲烷细菌及其研究方法”已于1997年11月由成都科技大学出版社出版。本书系统地描述了产甲烷细菌的生态分布、生理生化特性、显微形态和分子生物学最新进展；针对产甲烷细菌目前在分类上仍存在的混乱现象，依据国际细菌分类委员会产甲烷菌分会制定的分类依据，系统地整理了国际上关于产甲烷细菌的最新分类系统；本书联系沼气发酵和工程技术研究，特别描述了极端环境下的厌氧细菌；在本重点实验室实践的基础上，系统地介绍了产甲烷细菌的研究方法。尤其在中潮滩区，由于水浅和底泥阻滞作用，水流不畅，几乎被高浓度污水所覆盖，累积现象更为明显，这是出现中潮滩区PAHs组分高的主要原因。
+表1　上海南汇淤泥质潮滩表层沉积物中有机化合物定性分析结果
+Table 1　The qualitative analysis of organic compounds in surface sediments of tidal mud flat from Nanhui,Shanghai 
+
+序号化合物名称分子式分子量检测方法
+1三甲苯C9H12120GC/MS
+2环己烯酮C6H8O96GC/MS
+3二氢-三甲基呋喃C7H12O112GC/MS
+4甲基戊烯醇C6H12O100GC/MS
+5三甲基戊醇C8H18O130GC/MS
+6羟基甲基戊酮C6H12O2116GC/MS
+7甲基萘（1）C11H10142GC/MS
+8甲基萘（2）C11H10142GC/MS
+94-甲基-1-亚硝基哌啶C6H12N2O128GC/MS
+10联苯C12H10154GC/MS
+11十四烯C14H28196GC/MS
+12十四烷C14H30198GC/MS
+13双叔丁基环己二烯二酮C14H20O2220GC/MS
+14叔丁基-4-羟基酚C11H16O2180GC/MS
+15十五烷C15H32212GC/MS
+16双叔丁基-4-甲基酚C15H24O220GC/MS
+17十六烷C16H34226GC/MS
+18十七烷C17H36240GC/MS
+19十八烷C18H38254GC/MS
+20三甲基十五烷酮C18H36O268GC/MS
+21异二丁基酞酸酯C16H22O4278GC/MS
+22十九烷C19H40268GC/MS
+23二丁基酞酸酯C16H22O4278GC/MS
+24二十烷C20H42282GC/MS
+25荧蒽C16H10202GC/MS
+26二十一烷C21H44296GC/MS
+27芘C16H10202GC/MS
+28二十二烷C22H46310GC/MS
+29双对氯苯基砜C11H8ClO2 S286GC/MS
+30二十三烷C23H48324GC/MS
+31十八烷酰胺C18H38NO284GC/MS
+32二十四烷C24H50338GC/MS
+33二十五烷C25H52352GC/MS
+34已辛基酞酸酯C24H38O4390GC/MS
+35二十六烷C26H54366GC/MS
+36二十七烷C27H56380GC/MS
+37二十八烷C28H58394GC/MS
+38三甲基十二碳三烯醇C15H26OH223GC/MS
+39二十九烷C29H60408GC/MS
+40苯并(a)芘C20H12252GC/MS
+41三十烷C30H62422GC/MS
+42三十一烷C31H64436GC/MS
+
+
+图1　夏季6月份低潮滩表层沉积物中有机化合物总离子流色谱图
+Fig.1　Total ion current traces of organic compounds in surface sediment from lower tidal mud flat in June in summer
+
+图2　秋季8月份低潮滩表层沉积物中有机化合物总离子流色谱图
+Fig.2　Total ion current traces of organic compounds in surface sediment from lower tidal mud flat in August in fall 
+2.2　分析与讨论
+　　上海南汇淤泥质潮滩表层沉积物中鉴定出有机化合物共42种，其中多环芳烃（PAHs）6种（另外13种低于检测线），其它类别36种(表1，表2)。若邮购需加15%包装邮寄费。
+　　本书由中国沼气学会办公室代为征订发行。邮汇或信汇均可。
+　　信汇收款单位：中国沼气学会，开户银行：成都84428合行人南支行，帐号：109470。多环芳烃的检出，可以初步推断，一是由于有机污染物在环境气、液和固界面存在着迁移、富集作用的结果，如源于各种机动车辆的废气或工业废气排放出的多环芳烃被吸着于大气飘尘上，飘尘再经过沉降或雨雪等的冲刷进入滨岸浅水环境，再经分配或吸附作用进入潮滩表层沉积物中；二是各种废水排放（如工业废水和生活污水等）进入水体中的多环芳烃被潮滩底泥吸附沉淀。
+参考文献
+1　Lake J L，Norwood C,Dimock C，et al.Origins of polycyclic aromatic hydrocarbons in esruarine sediments. Geochim. Cosmohcim. Acta,1979,43:1847～1854
+2　Shiaris M P，Jambard D.Polycyclic aromatic hydrocarbons in surficial sediments of Boston Harbour, Massachusetts.Marine Pollution Bulletin,1986,17(10):469～472
+3　Croudace I W，Cundy A B.Heavy metal and hydrocarbon pollution in recent sediments from Southampton Water.Environ.Sci.Technol.,1995,29:1288～1296
+4　Wakeham S G,Giger W,Schaffner G. Polycyclic aromatic hydrocarbons in recent lake sediments-I. compounds having anthropogenic origins.Geochim.Cosmohcim.Acta,1980,44:403～413
+5　Windsor J G，Hites R A. Polycyclic aromatic hydrocarbons in Gulf of marine sediments and Nova Scotia soils. Geochim.Cosmohcim.Acta,1979,43:27～33
+6　Boehm P D，Farrington J W. Aspects of the polycyclic aromatic hydrocarbon geochemistry of recent sediments in the Georges Bank region.Environ.Sci.Technol.,1984,18(11):840～845
+7　Hites R A,Laflamme R E,Farrington J W.Sedimentary polycyclic aromatic hydrocarbons: the historical record.Science, 1977, 198:829～831
+8　Kowalczyk G S，Gordon G E,Rhelngrover S W. Identification of atmospheric particulate sources in Washington D.C.using chemical element balances.Environ.Sci.Technol.,1982,16(2):79～90
+9　冯沈迎,仝　青，乌　兰等.呼和浩特市大气相和颗粒物中有机污染物的定性分析.环境科学，1995,15(6)：66～69
+10　丁中华.煤都大同市大气环境中的颗粒物有机污染物和金属元素的分析研究.环境科学进展，1996,4(1)：23～27
+作者简介
+刘　敏　男，1964年1月生。
+　　联系地址：成都市人民南路四段十三号，中国沼气学会办公室
+　　邮　　编：610041
+　　电　　话：(028)5230681
+　　联系人：杨桂芳

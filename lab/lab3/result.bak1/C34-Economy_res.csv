@@ -1,0 +1,9 @@
+total,1416
+TP,522
+FP,0
+TN,720
+FN,174
+accuracy,0.8771186440677966
+precision,1.0
+recall,0.75
+F1-Score,0.8571428571428571

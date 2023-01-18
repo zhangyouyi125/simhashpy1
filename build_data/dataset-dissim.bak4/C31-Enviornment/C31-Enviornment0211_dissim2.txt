@@ -1,0 +1,52 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第1期 No.1 Vol.18 1998
+科技期刊
+
+白宫专门为温室气体排放控制召开会议
+　　克林顿总统在今年10月6日就气候变化问题召开一整天会议，会上他给出了美国将在12月联合国京都气候会议上提出的一些建议要点。
+　　会议在华盛顿特区乔治城大学举行，克林顿和戈尔副总统轮流主持会议。
+　　液膜法处理含J酸工业废水工艺流程简单，处理成本低廉。参加会议的还有气候专家、经济学家和企业界领导人。
+　　克林顿以迄今最明确的语气谈到气候变化问题。
+1.2　实验方法
+　　将LMS-2、TOA、煤油按一定比例加入组织捣碎机，先低速混合均匀，然后加入氢氧化钠溶液，高速搅拌（3000r/min）3min即可制得稳定的乳状液。虽然我们不是全都清楚，但已经知道的已是以让我们采取负责的行动。”故本实验在搅拌转速为300r/min时可得到最高分离效率。”他警告说，今后几十年内发展中国家的排放将超过工业化国家。
+　　会上各方面专家发表了意见。
+关键词　液膜法　J酸　废水
+Study on J-acid from industrial wastewater with liquid membrane.Zhu Yiren，Pan Luting(Department of Chemistry, FuYang Normal College, Fuyang 236032)；Wei Fengyu，Deng Chuanyun(School of Chemical Engineering, Hefei University of Technology, Hefei 230009)；Shen Zhangping，Wen Zhiyu(Nanjing Chemical Plant,Nanjing 210038).China Environmental Science.1998,18(1):91～93
+Abstract―In this paper,LMS-2 was used as the surfactant,tri-noctylamine as the mobile carrier,kerosene as the membrane solvent and NaOH solution as the internal phase of the membrane to form a system of emulsified liquid membrane.in studying the extraction of J-acid from industrial wastewater.Factors affecting the extraction efficiency of J-acid were studied,and suitable technological conditions were determined.The results show that the advantages of rapid rate of J-acid transport and high efficiency of extraction,and the extracting rate do not change with the oil phase reused for many times.The efficiency of J-acid extraction is 96%.
+Key words:liquid membrane　J-acid　wastewater
+　　在偶氮中间体J酸(2-氨基-5-萘酚-7-磺酸)的生产过程中，排出大量强酸性废水（pH＜1），其中硫酸约550g/L,废水呈褐色，直接排放会造成严重的污染。他警告说“我们必须准备好实施现实的温室气体控制。Rew对分离效率的影响如图2所示，当Rew为 1∶5时既节省乳液，又得到较满意的分离效果。”
+表1　油相的重复使用情况
+Table 1　The situation of oil phase being reused
+
+序号油相回用次数J酸提取率(%)
+1新制乳液　96.5
+2破乳1次　95.9
+3破乳2次　96
+4破乳3次　96.2
+5破乳4次　95.8
+6破乳5次　95.5
+7破乳6次　95
+8破乳7次　96.4
+9破乳8次　96.3
+10破乳9次　96.1
+
+2.6　废水在最佳条件下分离情况
+　　实验操作的条件及结果如表2所示
+表2　液膜法提取J酸操作数据
+Table 2　The operation date of ertracting J-acid 
+by liquid membrane 
+
+　　项　　目操作数据
+废水硫酸含量(g/L)550
+废水J酸含量(g/L)6.5
+搅拌速度(r/min)300
+乳水比(Rew)1∶5
+油内比(Roi)1∶1
+混合时间(min)15
+内相含J酸浓度(g/L)39
+处理后水相J酸浓度(g/L)≤0.2
+处理后水相硫酸含量(g/L)≥500
+J酸提取率(%)≥96
+
+　　从表2可以看出，料液经液膜分离后，J酸可以进入内水相而得到富集，处理后的水相J酸含量小于0.2 g/L，可做为稀硫酸回收使用

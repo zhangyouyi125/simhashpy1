@@ -1,0 +1,90 @@
+航空计测技术
+AVIATION METROLOGY &
+MEASUREMENT TECHNOLOGY
+1999年 第2期 No.2 1999
+
+
+
+航空发动机总温热电偶校检问题
+王常树
+　　摘　要　由于航空总温热偶气动构件的复杂性，校验问题一直悬而未决。交会控制的目的是把机动船导向目标船,并最终与其实现安全的对接。作为代价是稍加复杂化的推进系统。
+　　关键词　总温电偶　校验　STT―1 A校验器
+Calibration Problem of Total Temperature Themocouple Using for Aero Engine
+Wang Changshu
+　　Abstract　Because the aerodynamic constructure of the aero air total temperature thermocouple is complicated,its calibration is always not yet decided.Owing to the thermo-electric property move and the matching character change of the thermocouple after being made,the matching calibration is necessary.In this paper,after emphasizing the above problems,the STT-1A series total temperature thermocouple calibrator wining national patent and developed by myself is introduced.
+　　Key words　Total temperature thermocouple,Calibration,STT-1A Calibrator.
+
+　　前言
+　　在发动机台架试车及装机飞行中，监控温度是十分重要的参数，它直接影响着发动机的安全和寿命。而目前应用的气动总温型热电偶，由于其结构的复杂性，一般无法直接校验。通常采用的方法是：直接与符合热电偶分度表的二次仪表联接；在发动机上用标准样件对比。
+　　我国一直采用前苏联的方法，总温电偶的生产厂家应用国家标准热电偶一般只抽检其偶丝，总装后的热电偶也不进行校验。
+　　事实是这样配套的仪表在应用中，测量值偏离真实值的概率增加，且偏差较大。
+　　主题词　椭圆轨道上卫星交会　周期运动　距离速率控制算法　末端控制模式
+CONTROL SCHEMES FOR TERMINAL
+SPACECRAFT RENDEZVOUS
+Yu Shaohua　Yang Linna
+(The Center for Space Science and Applied Research,Chinese Academy of Sciences*Beijing*100080)
+　　Abstract　Three control schemes are proposed,based on the Range-Rate control algorithms.They are valuable from the application point of view,and adaptable to various space missions in elliptival orbits.The controlled trajectory is stable,smooth,and selectable.The control and propulsion subsystems of the spacecraft,heeded,are also simple.
+　　Key words　Satellite rendezvous in elliptical orbit　Periodic motion　Range-Rate control algorithms　Terminal control schemes
+1　引　言
+　　空间飞船在轨交会已成为载人航天的例行作业。
+1　气动总温热电偶校验的具体问题
+1.1　气动总温热电偶校验是必须进行的工作　
+　　总温热电偶较普通热电偶结构复杂。热电偶接点一般装在滞止空腔内或采样孔壳体内，有单点和多点形式。
+3　目标极化散射特性的能量谱描述及特征提取
+　　J.Johannes在其博士论文［3］中定义了极化谱概念。
+　　中低温一般采用镍铬―镍硅热电偶，其分度号为“K”的偶丝，“K”型的偶丝在400 °C以下是不稳定的，其热电性如图1。八十年代末,宽带波形技术的成熟,给雷达目标极化识别增添了新的特征信息量,使得对飞机等复杂目标的可靠识别成为可能。为完整地描述目标的极化散射特性,我们定义了两种谱的概念:利用宽频带局部最优极化在极化轨道上的运动特性,引入动力学理论描述,定义了一种称为极化谱的概念［4］(此文不介绍);利用目标散射能量与大圆极化轨道上极化态的正弦关系,结合宽带观测条件,定义了本文的极化域能量谱概念,图1是H飞机目标的极化域能量谱。
+
+
+图2　K型热电偶分度表给出的热电势
+E″、E′为单只热电偶热电特性,E0为标准热电势
+
+　　航空热电偶在组装、焊接等一系列安装过程中，由于偶丝受拉、扭、压等应力和焊接环境影响及焊接方法的不同，都使偶丝的热电特性有一定的差异。方程(4)主要描述交会距离D变化,称作距离运动;方程(5)描述交会轨迹的方向角φ变化,称作方向角运动。
+　　综上所述，航空发动机总温热电偶新偶制成后，使用中必须定期进行热电特性的校验工作。从我们长期从事这项工作的经验也体会到，该工作是必须进行的。
+1.2　总温热电偶与二次仪表配套校准的必要性
+　　以WP―13系列发动机应用的GWR―6涡轮后总温温度表为例：
+　　产生配套误差因素：
+　　表头　ZWP―6为磁电式指针表
+　　电偶　GR―20为滞止腔式总温电偶
+　　技术条件：
+　　ZWP―6外接电阻，成套外阻为(2.5±0.1)Ω
+　　按标准电势值　300～900 °C校验
+　　GR―20电偶在上述温度下，外阻由2.5 Ω升至2.8 Ω
+　　绝缘电阻由5 MΩ下降至200 kΩ
+　　显然GR―20电偶热接点感受到热源温度后，由于其绝缘电阻的变化、电偶阻值的变化与ZWP―6表头配套产生的结果，使全套热电特性都发生了变化，而这一变化与四只电偶有不同组合，表头本身电特性也不同，所以产生的误差是不同的，有的误差还会相当大。因此,配套校验是必要的。再者,虽然目标在极化域的散射能量特性是重要的,但其回波极化状态在Poincare极化球面上的动态分布特性可能更加有意义,因此仅仅将目标散射能量在极化域的分布定义为极化谱的概念,对于描述目标极化散射特性缺少完整性。由于该方法只考虑两船间相对运动学关系,不直接考虑动力学规律,因而在某种程度上降低了控制质量。每年因测温问题造成大量不必要的重复开车，全国的浪费是惊人的。
+　　总温电偶与数字表、计算机巡检系统配套的检验问题同样也存在上述的误差及差异，并且表现得更为明显；因此，类似这些系统，最低标准应该查清配套检验的规律，找出产生差异和误差的原因，在计算中补值。
+2　内外场现场用总温热电偶检定装置的研制
+　　我厂为解决蜗轮喷气发动机台架试车温度测量的检定问题，自行设计制造了SJT―1A型检定装置。另外,由于本文的极化测量是在宽带条件下进行的,因此这种单频点下极化谱的概念难以适用。主要解决发动机内外场试验时的温度仪表检定问题，因此，它的热源简单实用。
+2　目标散射能量与极化轨道上极化态的关系
+2.1　椭圆极化比
+　　考虑极化基变换,即
+　　(A.B)=(H.V)［T］,酉过渡矩阵
+由于φ1,φ2并不影响新基A、B的极化状态(H、V为一对水平、垂直极化基),仅有φ1对A、B之间的相对相位作贡献,故暂可不考虑φ2,根据坐标变换,有:
+
+在后面研究极化轨道的相关问题中,为了不失一般性,可令φ=0,则:
+,这便是椭圆极化比与线极化比的关系。可进行多量程、任意控制点的校准工作。1997年10月通过部级检定，并获国家专利。其检定装置框图见图4。
+
+
+图　4
+　　SJT―1A型检定装置特点：
+　　检定装置小巧、紧凑、便于操作、能满足精度要求。特别适用于工厂，外场现场的检定工作。简单实用，可与国外(前苏联、美国)同类装置相比。
+3　国外现状
+　　小型总温型热电偶由于其自身的特点给校验工作带来很大的麻烦。而这一问题也一直是困绕从事这项工作的工程技术员的关键难题。我国由于“航空样件”的落后，由于测温问题造成发动机生产及使用过程的大量重复试车，而产生能源及人工的大量浪费。最主要的是发动机的安全问题。因此这一工作急需解决，特别是现场应用。
+　　生产航空发动机的先进国家解决这一问题主要有以下几个方面：
+　　对总温热电偶在设计生产过程及应用中做大量的试验，将各种数据处理后，加到不同的场合中进行参数补值中和。
+　　在发动机上开车直接用“样件”进行对比，验证工作仪表的性能。然后控制机动船的纵向发动机(其推力线沿视线方向)的推力,使满足下列规律:
+
+　　距离速率控制误差很小,因此可以认为距离运动的近似表达式为:
+
+(6)
+把方程(6)代入(5),得到方向角受控运动方程:
+
+(7)
+2)ODRRCA控制算法［4］
+　　它由两组推力器组成:
+　　(1)纵向发动机aS的控制规律与RRCA算法中相同,因此距离运动仍由式(6)表述。综上所述，解决全套测量仪表现场校准的工作没有较为统一的理想方法。
+　　我们长期从事发动机现场测试工作，利用长期积累的技术和经验，研制了SJT―1A校准设备，这是初步的摸索，希望推广后，对该项工作能起较好的效果。在我国“航空样件”工程上起到抛砖引玉的作用。
+　
+　
+　　王常树：53岁　男　高级工程师
+作者单位：贵州黎阳机械公司，贵州省平坝县，561102
+　　1998-03-17收稿

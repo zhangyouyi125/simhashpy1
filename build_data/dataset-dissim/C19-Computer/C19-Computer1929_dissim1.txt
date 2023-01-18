@@ -1,0 +1,94 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　Vol.19　No.6　P.36-37
+
+
+
+
+标准数据类型的JAVA容错解析
+吕海莲
+摘要：JAVA语言环境中标准类型数据的批量输入及类型自动判定功能的设计思想和程序实现。
+关键词：数据类型 容错解析 Java语言
+1  问题的提出
+　　JAVA语言是一种跨平台的网络编程语言，它提供了极其丰富的接口、类以及相应的方法，使用户能实现友好界面和强大的程序功能。但是，它没有提供直接处理从键盘上输入的基本数据类型的方法，只是把所有的输入信息作为流来处理。所以，对于用户从键盘上提供的非字符流信息，就需要自己对输入流进行恰当的处理。而JAVA对数据类型之间的转换没有提供容错机制，即一旦数据格式不符就会产生例外而退出，因此对于批量数据的键盘输入来说，希望程序具有能够判断类型不符并提示重新输入的容错机制。针对这种要求，本文结合JAVA语言的编程环境，提供了一种实现这种功能的程序模型，采用流处理的方式加上一些处理技巧，使程序能够实现以下功能：
+　　(1)接收从键盘上输入的多个数据行，1行中可含多个基本数据类型。
+　　(2)对数据行信息进行类型解析。
+　　(3)根据解析结果，提供容错机制，多余的数据自动舍去，屏蔽运行时例外。
+　　(4)以当前输入的合法数据为新的数据源保存到一个随机文件中，以备重复运用。Novell客户软件除了带来对NetWare服务器访问和管理的功能外，也会对系统产生一些其它的影响，首先是启动登录，每次系统启动时都会要求与NetWare的服务器连接和登录。在DOS下的工具是SYSCON（3.XX）和NETADMIN（4.XX）；在Win3.X下是NWADMN3X；在Win95／98下是NWADMIN。从客户软件的安装过程可以看到，安装时首先是将现有的不兼容协议删除，然后再安装Novell自己的工作站程序。
+　　(1)键盘行数据的输入和接收
+　　从键盘上输入的信息，系统都是以字符流的形式进行接收，程序通过FileDescriptor.in在标准输入流上建立文件输入流FileInputStream fin，然后读取键盘的数据并写入一个保存行数据的辅助I／O流文件temp.dat，并把它作为类StreamTokenizer解析的对象，而正确的数据行则保存到一个随机文件filerd.dat中。不能运行时系统会提示缺少哪些文件，从NetWare 4.XX服务器上找到补上即可。当用户输入＠字符时系统自行退出。
+　　(2)行数据的解析
+　　类StreamTokenizer提供了强大的流解析功能，它把输入流解析为记号，并通过维护一张语法表来进行解析。
+　　通过Windows 95／98／NT的Novell客户软件进行系统管理是NetWare 5.0最重要的管理方式，除了像文件共享这样的少数任务还要在MS－DOS下用flag进行管理以外，绝大多数管理任务都可以完成。为此，应采用最新版的客户软件，目前的Win95／98版本是3.1.0＋SP2，NT的版本是4.61，可以从Novell公司的网址下载。
+　　通过Windows 95／98／NT的Novell客户软件进行系统管理是NetWare 5.0最重要的管理方式，除了像文件共享这样的少数任务还要在MS－DOS下用flag进行管理以外，绝大多数管理任务都可以完成。只有用16位带NDS模块的ODI方式上网或者32位ODI方式上网，才能避免出现上述问题，享受Novell的NDS访问权利与服务。
+3  程序设计主要流程
+　　根据程序的设计功能目标，图1对程序流程图进行了简单描述。
+
+图1  程序设计的主要流程
+4  程序实现
+import java.io.*；
+public class Jx{
+public static void main(String args[])
+　{int numrec＝1；  ／／行数据序号
+　　　try{ ／／定义输入流及随机文件
+　　FileInputStream fin＝new FileInputStream(FileDescrip－
+　　　tor.in）；
+　　File file＝new File（″filerd dat″）；
+　　If（file.exists（））file.delete（）；／／重建文件
+　　RandomAccessFile rfile＝new RandomAccessFile（″fil－
+　　　　　　　　　　　　　　erd.dat″，″rw″）；
+　　int data；data＝fin.read（）；
+　　System.out.print（″record″＋numrec＋″：″）；   ／／正确数据
+　　　　　　　　　　　　　　　　　　　　　　　　　　　／／的行号提示
+　　data＝fin.read（）；
+　　while（data!Novell客户软件除了带来对NetWare服务器访问和管理的功能外，也会对系统产生一些其它的影响，首先是启动登录，每次系统启动时都会要求与NetWare的服务器连接和登录!′＼n′）
+　　｛temp.write（data）；data＝fin.read（）；｝
+　　temp.write（data）；temp.close（）；
+　　｝catch（FileNotFoundException e）｝
+　｝catch（IOException e）｛｝；
+　　try｛ ／／对行数据进行解析，刚建立的文件作为输入流
+　　FileInputStream temp＝new FileInputStream（new File
+　　　　　　　　　　　　　　　　　　　　　　（″temp.dat″））；
+　　StreamTokenizer st＝new StreamTokenizer）temp）；
+　　int ch＝′＼″′；st.quoteChar（ch）；／／定义串分隔符“″”
+　　int count＝0； ／／用于辨别数据的顺序
+　　／／存放结果的变量及正次序正确标记
+　　boolean flagn＝false，flags＝false，flagd＝false；
+　　int nn＝0；double dd＝0；String ss＝new String（″″）；
+　　while （st.nextToken（）！＝st.TT＿EOF）
+　　｛count＋＋；
+　　switch（st.ttype）
+　　　　｛case st.TT＿NUMBER：if（count＝＝1）（nn＝（int）
+　　　　　　　　　　　　　　　　st.nval；flagn＝true；｝
+　　　　　　　　　　　　　　　　else if（count＝＝3）
+　　　　　　　　　　　　　　　｛dd＝st.nval；flagd＝true；｝
+　　　　　　　　　　　　　　　　break；
+　　　　case（int）′＼″′：if（count＝＝2）｛ss＝st.sval；flags＝
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　true；｝
+　　　　　　　　　　　　　　　　break；
+　　　　defaultbreak；
+　｝
+｝
+　if（count＞＝3 ＆ flagn ＆＆flags ＆＆flagd）／／建立1个
+　　　　　　　　　　　　　　　　　　　　　　　／／数据行
+　　｛numrec＋＋；
+　　　　rfile.writeInt（nn）；   rfile.writeChar（′＼t′）；
+　　　　rfile.writeUTF（ss）；   rfile.writeChar（′＼t′）；
+　　　　rfile.writeDouble（dd）； rfile.writeChar（′＼n′）；｝
+　　else System.out.println（″error，repeat input：″）；
+　　temp.close（）；
+　　｝catch（FileNotFoundException e）｛
+　　｝catch（IOException e）｛｝；
+　　System.out.print（″record″＋numrec＋″：″）；／／接收下1个
+　　　　　　　　　　　　　　　　　　　　　　　　　　／／行数据
+　　data＝fin.read()；
+　　｝／／与第1个try配对
+　　｝catch（FileNotFoundException e）｛
+　｝catch（IOException e）｛｝；
+｝
+｝
+　　该文只是针对固定的数据格式的解析对其解决方法进行了比较详细的分析，在具体的程序设计中，会有多种基本数据类型以及复合数据类型的需要。因此，对于更复杂的数据类型组合的解析实现有待进一步的讨论。
+参考文献
+1，Kelly J，Lindberg P著．Novell NetWare 5网络管理员手 册．北京：电子工业出版社，1999
+2，肖薇，陈剑辉，裴植．探索NetWare 5的奥秘―基础篇．北京：人民邮电出版社，1999
+收稿日期：2000－01－20

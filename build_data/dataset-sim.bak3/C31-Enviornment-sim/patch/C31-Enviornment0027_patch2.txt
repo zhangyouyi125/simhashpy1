@@ -1,0 +1,85 @@
+水土保持通报
+BULLETIN OF SOIL AND WATER CONSERVATION
+1999年 第19卷 第2期 No.2 Vol.19 1999
+
+
+
+半干旱区发展集雨节灌农业的效益研究
+曹　国
+摘　要　半干旱区集蓄雨水的主要目的是抗旱保苗，补灌大田粮食作物，解决人畜饮水和补灌果树、塑料大棚蔬菜、日光温室蔬菜，发展庭院经济。评定雨水利用措施效益的结果表明：集蓄的雨水用于大田作物补灌，每1t水产值均在11元以下。耐氨固氮菌促进增产的作用不仅与其本身的固氮作用有关，还可能与其分泌出某些生长刺激物（或激素）有关。由于大部分自然集流面都远离农户，不便于蔬菜果树生产，只能用于粮食作物生产，尽管经济效益不如蔬菜和果园高，但通过大面积补灌，可以提高粮食作物产量，解决温饱问题。
+关键词　集雨　节灌　效益
+文献标识码：A　　　文章编号：1000-288X(1999)02-0040-04　　　中图分类号：F323.213
+Benefit of developing Runoff Harvesting and Economical
+Supplementary Irrigation in Semi-arid Area
+CAO Guo-fan
+(Dryland Farming Institute of Gansu Academy of Agricultural Sciences, Lanzhou, 730070, PRC)
+Abstract　The main aim of runoff harvesting in semi-arid area is to lighten soil and water loss, solve the problem of watering people and domestic animals, develop courtyard economy, prevent drought and keep a full stand of seedings, irrigate supplementarily(SI) fruit trees, vegetables in greenhouse and solar radiation greenhouse, irrigate supplementarily field crops. Different use measures of harvested runoff have much different benefit. According to output value of water pur ton(OVPt). The results of benefits of every water use measures show: If soil water capacity is lower than 11 percent, water providing sowing technology can keep a full stand of seedings used 15～45m3/ha water. Water providing dibble technology can keep a full stand of seedings of corn or other thinly scattered crops used 1～1.5kg water pur spot or 30～45m3/ha water. Through SI, OVPt of fruit trees can reach 40 Yuan,and that of vegetables cultivated in solar radiation greenhouse can reach 72 Yuan, vegetables cultivated in greenhouse 15 Yuan, the OVPt of field crops are all lower than 11 Yuan. But most of the area which is suitable for runoff harvesting is far from household, it is difficult to produce fruit and vegetables in this area, cereals can be produced only. Although benefit of fields crops cultivated with SI is not goods enough, if SI is used in a big area, the problem of sufficient goods and adequate clothing can be solved stablely.
+Keywords: rainfall harvesting; supplementary irrigation; benefits
+　　为了做到有的放矢，在我们大力推广集雨节灌农业之前，必须首先弄清楚怎样应用所集蓄的雨水才是最有效的，各种用途的效益究竟有多大。根据不同用途产生的效益大小、贮水设施的位置、集存雨水的数量，运用的难易程度等，合理安排运用所集蓄的雨水，才能实现高产高效的目的。
+1　集蓄雨水的自身效益
+1.1　解决人畜饮水问题
+　　在半干旱区的许多地方，人畜饮水问题一直是一个突出问题，方圆上百里没有水源，也没有机动车可走的路，每户都要投入一个主要劳力，专门负责从很远的地方挑水。通过收集雨水解决人畜饮水问题，使大量的劳力从繁重的挑水活动中解放出来，从事其它生产和经济活动，可以获得更大的经济效益。
+1.2　发展庭院经济
+　　集蓄的雨水用于发展庭院经济，不管是搞食用菌栽培，名贵药材种植，还是发展特种养殖，调查结果表明：每1t水产值都在50元以上，是增加农民收入的有效途径。
+　　　表3 苋菜不同处理的产量结果
+
+处理平均产量
+(kg/小区)折单产 增产增产率
+(%)显著性
+(kg/hm2)
+处理18.6317260　　　
+处理210.3020600334019.40**
+处理310.8321660440025.50**
+处理49.6419280202011.70*
+
+注：L.S.D0.05 =1696.1(kg/hm2)，L.S.D0.01 =2568.0(kg/hm2)，小区面积5m2。一般施水量为15～45m3/hm2。与喷施叶面肥相比，喷施耐氨固氮菌的生物量略高，根系活力显著高于叶面肥，其它叶面积、叶绿素含量略低，但差异不显著。因此，具有抗旱保苗的作用。若作物出苗后能有足够的雨水补充，就能保证一定的产量形成。
+　　点浇技术的作用是抗旱保苗，主要用于玉米等稀植作物。一般每穴施水1～1.5kg，30～75m3/hm2就能保证苗齐苗壮。半干旱区的冬春降水比较少，玉米苗期常常缺水，若能保证全苗，后期进入雨季，就能保证理想的产出。
+2　积蓄雨水生产蔬菜的效益
+2.1　塑料大棚生产蔬菜的效益
+　　1996年和1997年在定西唐家堡布设了3种蔬菜作物的补灌试验，有西红柿、茄子、黄瓜3种蔬菜，每种设3个补灌量，依次为0mm/hm2，1500mm/hm2，3000mm/hm2，小区面积27m2，其它管理同于大田。产量结果见表1。黄瓜对水分的变化最敏感，产量随水分的增产幅度最大，其次是西红柿，茄子对水分的敏感性较差，但总的变化趋势是一致的，补灌量增加，产量提高，尤其是补灌100mm的处理较对照显著增产，说明在半干旱区蔬菜生产中，补充供水可以收到事半功倍的效果。
+表1　塑料大棚生产蔬菜补灌的效益
+处理产量/
+(kg.hm-2)较CK增产/
+(kg.hm-2)水的产值/
+(元.t-1)补灌效率/
+(kg.mm-1.hm-2)
+茄子不补灌18129―――
+茄子补灌100mm22990．54861．59．7248．6
+茄子补灌200mm2571675877．6037．95
+黄瓜不补灌46113―――
+黄瓜补灌100mm580111189819．03118．95
+黄瓜补灌200mm638221770914．1688．5
+西红柿不补灌39550．5―――
+西红柿补灌100mm48898．5934814．9593．45
+西红柿补灌200mm5298613435．510．7567．2
+
+　　注： 1996年和1997年平均效益。
+　　试验证明：同样的水分用于不同的蔬菜生产,产生的效益不尽相同,有限的雨水补灌黄瓜,补灌效率高，每1t水产值大,补灌茄子,补灌效率低,每1t水产值小,说明集蓄的雨水应优先选择补灌黄瓜。
+关键词 耐氨固氮菌；蔬菜作物；生理反应；增产效果
+Study on the Promotion of Ammonia Resistant Strains of N2-fixing Bacteria to Vegetable Crops. 
+Lu Qiuyan, Kong Huiqing, Tao Jiafa and Chen Ping (Guangdong Institute of Microbiology, Guangzhou 510070); Ke Yushi (Soil and fertilizer Reseach Institute, Guangdong Academy of Agricultural Sciences). Soil & Environ Sci, 1999, 8(1): 50～52
+The growth, physiological response and effect of the increased production after application of ammonia-resistant strains of N2-fixing bacteria on vegetable crops were investigated. The results showed that the application of the strains significantly increased the biomass of vegetable seedling, leaf area, chlorophyll content of leaf and root activity, and further led to a highly-increased production. The reason for increasing production lie in the N2-fixing activity of the strains, and the direct reason includs the expanding of leaf area, higher chlorophyll content, and the improving of root activity after the strians application. It is implied that the growth stimulus (ou hormone) secreted by bacteria may partly contribute to the increased production.
+Key words ammonia-resistant strains of N2-fixing bacteria; vegetable crops; physiological response; production-improving effect
+　　耐氨固氮菌是采用基因工程技术选育的新型菌株，具有较强的固氮能力和促进植物生长的作用。
+2.2　日光温室生产蔬菜的效益
+　　1997年和1998年在定西唐家堡进行了黄瓜不同补灌方式和不同补灌量的试验研究，试验选择滴灌、渗灌和沟灌3种灌水方式，每种灌水方式分设3个灌水量，分别为每1hm2灌水3000m3，4500m3，6000m3 ，其它管理同于大田。本研究利用中国农业科学院红壤试验站的长期定位试验，较系统地探讨了在化肥和秸秆还田长期影响下，第四纪红壤对磷的吸附和解吸，为土壤的合理培肥和作物合理施肥等提供科学依据。说明不同处理下土壤对磷素的吸附解吸能力亦出现了一定的差别。称取土壤若干份，每份重2.0 g，然后，分别加入不同浓度的磷标准液40 ml，恒温(25±1℃)振荡48 h，离心后测定清液中H2PO4-的浓度，再根据平衡液浓度和相应浓度下土壤中吸附的H2PO4-量，计算吸附等温方程和绘制吸附等温曲线。据在树冠外缘60cm2土壤剖面调查，补灌后，果树吸收根总量比对照增加104％；另一方面，良好的营养生长不仅促进了生殖生长，成花率、座果率和单果重，分别比对照提高了50％，32.8％和24.0％，而且果品的品质也大大地改善，商品价值也得到了很大的提高。据测定，平均单果重、最大单果重、可溶性固形物和一级果品率分别比对照增加了42.1g，22.5g，0.80％和17.4％，达到217.6g，254.3g，14.8％和93.4％。这样看来，施肥对土壤吸附H2PO4-特性的影响是很明显的。以陇春8139为指示品种，随机排列，小区面积300m2，施肥水平、田间管理同大田。
+　　蔬菜品种：黄瓜、节瓜、苦瓜、豌豆、番茄、辣椒、芥蓝、苋菜。结果表明：地膜覆盖穴播使产量大幅度提高，以穗粒数增加为主；补灌使产量成倍增加，以小穗数增多和千粒重增大为特征，补灌加地膜覆盖的效果更好，能使小穗数、穗粒数、千粒重都增加。拔节期和抽穗期分别补灌15mm的地膜穴播小麦比露地条播不补灌的（对照）增产1024.5kg/hm2，增产率为155.3％，补灌效益为34.05kg/(mm.hm2)，产量极显著地高于其它5种处理；拔节期补灌15mm的地膜穴播小麦比对照增产580.5kg/hm2，增产率为87.9％，补灌效益为39kg/(mm.hm2)，地膜穴播不补灌者较对照增产480kg/hm2,增产率为72.7％，拔节期补灌15mm露地穴播的较对照增产400.5kg/hm2，增产率为 60.6％，补灌效益为27kg/(mm.hm2)。
+4.2　旱地地膜谷子的集流补灌试验
+　　以陇谷5号为指示作物，随机设计，3次重复，小区面积36m2。分别在拔节期、始穗期、灌浆期每1hm2补充供水30mm，其它同大田。结果表明：在谷子生长发育的不同时期补充供水有不同的作用，拔节期供水利于穗的分化完成，始穗期补充供水利于小穗的分化完成，灌浆期补充供水利于千粒重的提高；各生育时期补充供水的补灌效益也不一样，拔节期补充供水的补灌效益最高，始穗期补充供水的补灌效益居第2，灌浆期补充供水的补灌效益最低。说明拔节期补充供水的效果最好。实验中根据需要设1～2次重复。
+表2　不同时期补充供水的穗长、穗粒重、千粒重、产量、补灌效率
+处理穗长/
+cm穗粒重/
+g千粒重/
+g产量/
+(kg.hm-2)水产值/
+(元.t-1)补灌效率/
+(kg.mm-1.hm-2)
+未补灌(CK)13.12.62.81726.5―0
+拔节期补灌14.64.13.02749.54.7734.05
+始穗期补灌13.73.83.02578.53.2328.35
+灌浆期补灌13.33.43.12311.52.7019.50
+
+4.3　旱地地膜玉米集流补灌效益研究
+　　1997年在定西唐家堡进行了地膜玉米集流补灌试验，以极早熟玉米良种新玉6号为指示作物，分播前管灌40mm，播前点浇5mm，大喇叭口期滴灌40mm和对照（不灌）4种处理，随机排列，重复3次，其它管理类同于大田。
+3 小结
+　　（1）在湘南红壤地区土壤、气候条件下，单施化肥将使土壤的酸化速度增加，但土壤的磷素供应状况因为磷肥施用量的增加而得到较大的改善；化肥+秸秆还田则可能更有利于土壤中各种养分的平衡和养分供应状况的改善。点浇5mm最经济实惠,在水资源极度贫乏的半干旱区值得推广。*―显著；**―极显著

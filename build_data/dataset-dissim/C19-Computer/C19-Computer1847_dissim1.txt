@@ -1,0 +1,37 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000 Vol.19 No.2 P.58-59
+
+
+
+
+Windows 9x使用技巧问答（一）
+谢晓巍　陈轩飞　谢晓艳
+　　Windows 9x因其使用方便、操作简单而迅速成为目前最为流行的操作系统。但是，用户要想灵活使用Windows 9x，以满足个人的需求，也并不容易。下面对Windows 9x使用中经常出现的问题进行解答。
+1 系统环境
+　　问：Windows 9x总是将用户编辑的文档自动保存在“我的文档”（C＼My Documents）文件夹中，这个看似体贴用户的设计却给不少用户带来了麻烦。当1台电脑被多人同时使用时，如果用户希望将自己的文件保存在自己特定的文件夹中，应该怎样设置呢？
+　　另外，D－link DFE－530TX网卡还有一个特点，即可使用多个远程启动映像文件，在机器启动时由用户选择从哪个文件启动，从而方便了用户的使用，尤其是教学单位，学生可根据情况选择从DOS还是Win95启动。
+2 服务器共享安装
+　　在Win95或Win98下以系统管理员登录到NetWare服务器。
+　　在图1中选“Install Options…”选项后会出现如图3所示画面。
+　　问：如何保持用户在Windows中设定的风格？
+　　工作站安装完成后，在工作站的Windows目录中会产生1个文件名为net＄dos．sys的文件。如果后一用户不希望别人修改他所设定的Windows风格，可运行regedit程序，打开注册表编辑器，逐层进入HKEY＿CURRENT＿USER＼Software＼Microsoft＼Windows＼CurrentVersion＼Policies＼Explorer目录，再在右边的工作区中单击右键，选择“新建／DWORD值”，并将这个DWORD值命名为“NoSaveSettings”，然后双击这个值，在“编辑DWORD值”对话框中设置键值为“1”。这样，别人就无法更改你所设定的原有风格了。
+　　问：怎样禁止使用“系统属性”中的“设备管理器”页？
+　　答：Windows 9x利用“系统属性”中的“设备管理器”页来设置硬件的中断和输入／输出范围等，如果用户任意改变这些参数，就可能引起硬件冲突，造成硬件不能正常工作。要禁止他人任意修改“系统属性”中的“设备管理器”页，可运行regedit程序，打开注册表编辑器，逐层进入＼HKEY＿USERS＼．DEFAULT＼Software＼Microsoft＼Windows＼CurrentVersion＼Policies＼System目录，再在右边的工作区中单击右键，选择“新建／DWORD值”，并将这个DWORD值命名为“NoDevMgrPage”，然后双击这个值，在“编辑DWORD值”对话框中设置键值为“1”。
+　　问：怎样禁止使用“控制面板”？
+关键词： 无盘工作站 文件安装 高速网络 
+　　虽然当前Win95／98已成为一般用户首选的操作系统，但是在广大教学单位，由于各种原因，用的主要还是无盘站。下面的方法即可禁止用户使用“控制面板”，同时还将禁止用户使用“打印机”来添加或删除打印机。
+　　运行regedit程序，打开注册表编辑器，逐层进入＼HKEY＿USERS＼．DEFAULT＼Software＼Microsoft＼Windows＼CurrentVersion＼Policies＼Explorer目录，再在右边的工作区中单击右键，选择“新建／二进制值”，并将这个二进制值命名为“NoSetFolders”，然后双击这个值，在“编辑二进制值”对话框中设置键值为“01 00 00 00”。这样，别人就无法使用“控制面板”和“打印机”了。 
+　　在工作站以管理员身份登录，先在工作站用户盘如k：盘建立一临时文件存放目录如TMP，然后在Win95共享目录中运行setup．ext，格式为：
+　　setup msbatch．inf／t：k：＼tmp
+　　其中的msbatch．inf选项可省略，安装文件会自动查找它，／t：k：＼tmp选项必须加上，否则安装过程中会出现“Can not load Program”的错误信息？
+　　答：Windows 9x本身并不是1个安全可靠的操作系统，任何1个用户都可以不经许可就进入Windows 9x系统，尽管Windows 9x可以设置登录时的用户口令，但是1个未经授权的用户可以直接点击对话框中的“取消”按钮来自由进入Windows 9x系统。下面的设置可禁止非授权用户进入Windows 9x系统。选择“Network Options…”选项出现图2画面。以后再进入Windows 9x时在登录窗口按“取消”按钮或按“Esc”键都不能进入Windows 9x系统。
+　　依据系统提示，完成工作站文件的安装，此过程大约需要几分钟时间，然后会提示重新启动系统，有时会出现“Invalid DPMI return from xxxxxxxx”的信息，不过不要紧，重新启动系统即可？以后正常启动的时间要短一些，比本地Win95启动可能稍慢，视工作站的多少而不同。
+　　问：怎样隐藏驱动器？
+　　答：如果用户有机密文件需要保密，我们可以通过将这个文件所在的驱动器隐藏起来，达到加密的效果。打开注册表编辑器，在“HKEY＿CURRENT＿USER＼Software＼Microsoft＼Windows＼CurrentVersion＼Policies＼Explorer”
+目录下，选“新建／二进制值”，输入NoDrives，缺省值为00 00 00 00，它的4个字节中每个字节的每一位（bit）就对应于1个驱动器（从A：到Z：），当相应位为1时，该驱动器即被隐藏起来。
+　　工作站安装完成后，在工作站的Windows目录中会产生1个文件名为net＄dos．sys的文件。― 未完待续 ― 
+谢晓巍（长沙电力学院计算中心410077）
+陈轩飞（长沙电力学院动力系）
+谢晓艳（湖南财经学院信息系）
+（收稿日期：1999－09－01）

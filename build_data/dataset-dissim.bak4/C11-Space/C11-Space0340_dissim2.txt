@@ -1,0 +1,130 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1999年 第14卷 第3期 Vol.14 No.3 1999
+
+
+
+来流湍流度及端壁效应对涡轮叶片上对流换热的影响*
+朱惠人　许都纯　郭涛　刘松龄
+　　【摘要】　利用大尺寸低速开式叶栅风洞对涡轮叶片表面的对流换热进行了实验测量，叶片高度方向布置了3个测量位置，距端壁距离分别为5 mm，30 mm及150 mm。重点对比研究了高来流湍流度、端壁效应及来流雷诺数对涡叶片中部及根部区的过渡起始点、过渡区长度及换热的影响。实验参数范围是：来流湍流度Tu=0.75～13.5％，来流雷诺数Re=60000～240000。
+　　主题词：湍流　叶片　对流换热　测量
+　　分类号：V231.1
+INFLUENCES OF MAINSTREAM TURBULENCE AND END-WALL EFFECT ON CONVECTIVE HEAT TRANSFER OF TURBINE BLADE
+Zhu Huiren, Xu Duchun, Guo Tao, Liu Songlin
+（7th Dept.Northwestern Polytechnical University, Xi′an　710072）
+　　ABSTRACT　　The influences of mainstream turbulence,end-wall effect and mainstream Reynolds number on the beginning location of transition,transition length and heat transfer both in the middle region and root region of a turbine blade were comparatively studied.A five-blade linear cascade in a large-scale low-speed opening wind tunnel was used in the experiment.A thin-foil thermocouple technique was applied to determining the heat transfer coefficients on the blade surface.Three row of thermocouple located 5 mm,30 mm and 150 mm in the span-wise direction of blade from end-wall.The mainstream Reynolds number changed from 60000 to 240000.The mainstream turbulence varied from 0.75% to 13.5%.The results showed that the mainstream turbulence enhanced heat transfer coefficients on the suction surface to a great extent,and also increased the heat transfer coefficients on the pressure surface.Both onset and end of transition on the suction surface boundary layer move forward with increase of mainstream turbulence intensity.The end-wall effect region emerged at the root region of x／C＞0.24 of suction surface for the present turbine blade.The end-wall effect raised on the heat transfer coefficients for a low mainstream turbulence,but diminished for a high mainstream turbulence at the end-wall effect region.The influence of mainstream turbulence on the heat transfer coefficients vanished at the end-wall effect region. 
+　　Key　Words　Turbulence　Blades　Heat convection　Measurements
+1　前　言
+　　在现代高性能航空发动机中，由于燃气的温度越来越高，高湍流度已成为发动机内流动的一个主要特点，特别是在燃烧室出口燃气的湍流度往往可高达10%以上，对涡轮叶片上的流动及换热有重要影响。因此，90年代以来，这个问题已成为国际上发动机高温部件研究领域的热门课题之一。如Mehendale［1］等实验研究了高湍流度对前缘区无气膜情况下传热的影响，Zhang［2］等实验研究了高湍流度对涡轮叶片上无气膜情况下传热的影响。结果表明，当主流湍流度从0.7%提高到17%时，涡轮叶片上前驻点，吸力面及压力面上的对流换热可分别提高30%，250%及100%。在吸力面上，高湍流度可以使流动转捩大大提前，从而改变该面上对流换热的分布情况。Zhang［3］等实验研究了高湍流度和非定常尾迹共同作用时对涡轮叶片上无气膜情况下传热的影响，发现在强非定常尾迹条件下，高来流湍流度的影响趋于消失。从国际上公开发表的文献来看，目前该领域的研究主要集中在叶片中部的二维区内。
+　　本文主要是将研究区域扩展到叶片的根部，考查高湍流度对涡轮叶片高度方向上不同区域流动及换热的影响，进一步深化对高湍流度条件下，涡轮叶片上流动及换热规律的认识，同时为涡轮叶片设计积累相应的实验数据，也为发展相应的湍流模型及数值模拟打下一定的基础。
+2　实验装置
+　　实验在低速开式叶栅风洞中进行，图1为试验段简图。试验段迎风横截面为30 cm×80 cm，其内安装了由5个导向叶片组成的叶栅，转角为68°，中间的叶片经加工后用于测量换热系数，其余叶片主要用来为中间的叶片形成周期性边界条件。叶片弦长C=20.5 cm，间距P=16 cm，半高L=15cm。叶栅前来流速度的可调节范围是3～23 m/s。
+
+
+图1　低速叶栅风洞试验段简图
+　　为模拟不同的来流湍流度，制成了2个湍流发生网格。一号网格由1.5 cm×1.5 cm的木条制成，网格大小为4.1 cm×4.1 cm；二号网格由0.6 cm×0.6 cm的铝条制成，网格大小为2.0 cm×2.0 cm。叶栅前23.5 cm，47.5 cm及78.5 cm处可以安装湍流发生网格，测量表明，不安装湍流发生网格时，叶栅进口处湍流度为0.75%，安装湍流发生网格时，可使叶栅进口处湍流度提高至13.5%。表1给出了本实验中将不同湍流发生网格放在叶栅前不同位置时，在叶栅前缘所产生的湍流度的具体数值。
+表1　实验中不同网格置于不同位置时，在叶栅前缘所产生湍流度
+
+网　　格距叶栅前缘湍流度网　　格距叶栅前缘湍流度
+一号网格
+一号网格23.5 cm处
+47.5 cm处13.5%
+10.0%二号网格
+二号网格23.5 cm处
+78.5 cm处8.0%
+4.0%
+
+　　叶栅中间的叶片经加工后用于测量换热系数，该叶片用硬质松木制成中空的，以便于热电偶引线。表面粘贴厚度为0.05 mm的薄合金钢加热带，通直流电对其进行加热，在表面形成等热流密度的发热量，这样在测量出电加热功率及来流温度t∞和叶片表面加热带的温度ti,j后，就可计算叶片表面的局部对流换热系数h及努赛尔特数Nu：
+h＝（qi,j-q′）／（ti,j-t∞），　　Nu＝hC／λ
+上式中qi,j是根据电加热功率确定的热流密度，q′为换热表面的热辐射、加热片内部沿着加热片的二维导热及从加热钢带通过木制叶片向内部的导热这三部分损失之和。根据实验对比及相应的传热计算可得到上述三种损失的变化范围为：辐射热损失：1～2%，沿加热片的二维导热修正0～1%，通过木制叶片向内部的导热损失，0.5～2%。
+　　为了研究叶片上两维区的换热及端壁效应对换热的影响，在叶片的高度方向上布置了三排热电偶，它们距端壁的距离分别是y=5 mm，30 mm及150 mm。与叶片半高L的比分别是y/L=0.033，0.2及1.0，其中y/L=1处是叶片的中部，处于流动的两维区。
+
+男  27岁  博士研究生  西北工业大学573信箱  710072
+参考文献
+1Stamatis A,Mathioudakis K,et al.Adaptive Simulation of Gas Turbine 
+Performance.ASME Paper 89-GT-205,1989
+2Stamatis A,Mathioudakis K,et al.Gas Turbine Component Fault Identification 
+by Means of Adaptive Performance Modelling.ASME Paper 90-GT-376,1990
+3Mathioudakis K,Stamatis A.Compressor Fault Identification from Overall 
+Performance Data Based on Adatpive Stage Stacking.ASME Paper 92-GT-28,1992
+4LE D.A Fast and Robust Unconstrained Optimization Method Requiring 
+Minimum Storage.Mathematical Programming,1985,(32):41-68
+
+1996年11月收稿；1997年5月收到修改稿。
+3.1　端壁效应的影响
+　　图2给出了Re为60000，Tu为0.75%时，涡轮叶片上距端壁距离分别为y/L=0.033，0.2及1.0处的Nu数的分布。比较叶片根部区域（y/L=0.033）与中部区（y/L=1.0）的两条曲线，可以明显地看出，在叶片吸力面x/C大于0.24的区域，叶片根部区的对流换热强度明显高于中部区，说明在该区域有较强的端壁效应影响。在吸力面层流区及压力面一侧，叶片根部区域的换热强度与中部区相比虽有一定程度的增强，但幅度不大，说明在叶片吸力面层流区及压力面上端壁效应不强。
+
+    测量参数Qmi为高压转子转速NH，主燃烧室进口总温T*3，总压P*3，加力燃烧室
+进口总温T*6和主燃油流量wf，模型估算相应参数Qci为NHref，T*3ref，P*3ref，T*6ref
+和wfref，定义误差：
+
+εi=Qci-Qmi i=1，…，m (m=5)                          (4)
+
+再加上发动机模型的平衡检验误差ei，i=1，…，n(n=6)，于是(2)式的代价函数：
+
+                                  (5)
+
+因自适应仿真模型中解向量的维数(n+l=16)大于误差向量的维数(n+m=11)，故本文求
+解非线性规划问题时，采用改进的共轭梯度算法(LMINN算法)进行非线性寻优。该区域的流动具有两维性。
+3.2　来流湍流度对叶片中部及根部区换热影响的比较
+　　图3（a）给出了Re为60000，Tu分别为0.75%，4.0%，8.0%，10.0%及13.5%时，涡轮叶片上中部区域（y/L=1）处的Nu数的分布，横坐标是以驻点为起点的弧长x与叶片弦长C的比。
+这使得发动机仿真模型的检验和校正、自适应仿真及其应用一直是受到重视的研究
+课题［1-3］。湍流度对叶片吸力面上层流区及湍流区的的换热影响不大，但对过渡区的换热有较大影响。
+
+图2 高空转速特性主燃烧室进口总温      图3 高空转速特性主燃烧室进口总压
+
+图4 高度特性加力燃烧室进口总温         图5 高度特性主燃油流量
+
+    在采用LMINN算法求解非线性规划问题时，算法中的初始步长取为0.01，当迭代
+达到一定次数后，LMINN算法趋于一阶收敛，为了提高收敛速率，本文用k＞16作为算
+法重新启动准则，用最速下降方向重新构造共轭方向进行搜索。该趋势与文献［2］中的结果相同，原因主要是湍流度的增大削弱了层流区的稳定性，引起流态提前过渡；（2）过渡区结束点的位置随Tu的增大有前移的趋势，如当Tu=0.75，8.0%及13.5%时，过渡区结束点的位置分别在x/C=0.88，0.60及0.52处。这种趋势与文献［2］的结果也相同。
+主题词：  航空发动机  仿真  参数  自适应控制   非线性规划
+分类号：  V233.7
+
+１  引  言
+
+    发动机模型的精度，一方面决定于模型算法的简化程度，而更重要的一方面是
+部件特性参数的准确程度，这决定于部件试验是否充分。如在x/C=0.3至0.7的区域，湍流度从0.75%提高到13.5%时，对流换热提高约100%。
+
+
+图3　Re=60000时，来流湍流度对叶片中部及根部区换热影响的比较
+　　与吸力面相比，压力面上没有湍流区，过渡区也不明显，湍流度的提高虽对叶片压力面上的换热有一定的增强作用，但幅度较小。
+
+图1 自适应模型的结构框图
+    该发动机自适应模型中部件特性采用如下10个修正因子(l=10)：
+
+低压压气机mf1=(cwLP)act／(cwLP)ref mf2=(η*LP)act／(η*LP)ref
+高压压气机mf3=(cwHP)act／(cwLP)ref mf4=(η*HP)act／(η*LP)ref
+燃烧室mf5=(ηb)act／(ηb)ref
+高压涡轮mf6=(dhHT)act／(dhHT)ref mf7=(η*HT)act／(η*HT)ref
+低压涡轮mf8=(dhLT)act／(dhLT)ref mf9=(η*LT)act／(η*LT)ref
+加力燃烧室mf10=(ηaf)act／(ηaf)ref
+
+其中cwLP，η*LP和cwHP，η*HP分别为低、高压压气机的质量换算流量和绝热效率，
+ηb为主燃烧室燃烧效率，dhHT，η*HT和dhLT，η*LT分别为高、低压涡轮单位焓降
+和绝热效率，ηaf为加力燃烧室燃烧效率。这主要是因为压力面上的流动具有较强的顺压力梯度，因而稳定性较好，不易发生过渡，使湍流度的影响较为有限。当湍流度为13.5%时，与湍流度为0.75%的情况相比，对流换热提高约50%左右。
+　　图3(b)给出了Re为60000，Tu分别为0.75%，4.0%，8.0%，10.0%及13.5%时，涡轮叶片上根部区（y/L=0.033）处的Nu数的分布。可以看出：在本实验的各个湍流度下，叶片吸力面根部区的过渡起始点位置，过渡区的长度及换热强度均相差不大，这与图3(a)中所表明的叶片中部区的换热有明显不同，说明叶片吸力面根部区的流动及换热有其自身的规律，与叶栅前来流的品质关系不大。比较图3(a)及(b)还可看出，随着来流湍流度的增大，叶片吸力面中部区的换热强度与根部区的换热强度之间的差别趋于缩小，说明在高湍流度条件下，端壁效应要弱一些。在叶片的压力面上，湍流度对换热强度有一定影响，但对换热的分布规律的影响并不大。本文通过建立发动机自适应模型，根据测量数据校正部件特性参数，
+从而提高发动机仿真模型的精度。
+3.3　来流雷诺数对叶片中部及根部区换热影响的比较
+　　图4(a)给出了Tu为10.0%时，来流雷诺数Re=60000，105000，150000，195000，240000时，涡轮叶片上距端壁距离为150 mm（y/L=1）处的Nu数的分布。
+　　在吸力面上，来流雷诺数的影响表现在以下几个方面：（1）随着雷诺数的增大，过渡起始点逐渐前移，如Re=60000时，过渡起始点约在x/C=0.40处，而当Re=240000时，过渡起始点已前移至x/C=0.24附近；（2）过渡区的长度随雷诺数的增大而有一定幅度的增加，如Re=60000时，过渡区约在x/C=0.40～0.50的区域，当Re=240000时，过渡区约在x/C=0.24～0.44的区域；（3）随着雷诺数的增大，整个吸力面上的换热强度均有所提高。提高的幅度在层流区、过渡区及湍流区基本相同。
+　　在压力面上，来流雷诺数的不同并没有使该侧的流动特点发生实质性变化，只是换热强度随着雷诺数的增大有一定的提高，但幅度不如在吸力面大。
+　　图4(b)给出了Tu为10.0%时，来流雷诺数Re=60000，105000，150000，195000，240000时，涡轮叶片上距端壁距离为5 mm（y/L=0.033）处的Nu数的分布。
+
+
+图4　Tu=10.0%时，来流雷诺数对叶片中部及根部区换热影响的比较
+　　在整个根部区，换热强度随雷诺数的增大而增强，且在吸力面湍流区增强的幅度最大，这些特点与叶片中部区非常相似，但也有不同之处，即吸力面上的过渡起始点及过渡区长度并未受雷诺数变化的影响。
+
+    通过对(3)式的求解即可在保证各部件匹配关系的前提下，求得所需的修正因子
+值。压力面根部区的流动换热特点与中部区基本相同。
+4　结　论
+　　（1）在叶片吸力面根部的后半区域有较强的端壁效应影响，在吸力面层流区及压力面一侧，叶片根部区域的端壁效应较弱。在高湍流度条件下，端壁效应要弱一些。
+　　（2）湍流度对叶片吸力面二维区的层流区及湍流区的的换热影响不大，但对过渡区的换热有较大影响，随着来流湍流度的增高，过渡起始点发生前移，过渡区的长度要缩短，导致吸力面总换热量增加。 湍流度对叶片吸力面根部区的过渡起始点位置，过渡区的长度及换热强度均影响不大。湍流度的提高并未改变叶片压力面上（根部区及两维区）的流动特点，对换热有一定的增强作用，但幅度较小。
+　　（3）雷诺数的增加，对叶片吸力面二维区的流动特点有一定影响，使过渡起始点前移，过渡区的长度增加，但对叶片吸力面根部区的流动特点影响不大。叶片压力面根部区及两维区的流动特点，受雷诺数的影响均不大。
+
+5  结束语
+
+    本文研究部件特性参数的校正，校正点是发动机的各稳态工作点，而各特性线
+皆以相似参数描述，在整个飞行包线内，这些校正点分布在发动机共同工作线的周
+围。部件试验耗资大、周期长，
+而且部件试验得到的数据在整机共同工作情况下，会因为各种因素的影响发生变化。

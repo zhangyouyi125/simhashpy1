@@ -1,0 +1,36 @@
+水土保持通报
+BULLETIN OF SOIL AND WATER CONSERVATION
+1999年 第19卷 第2期 No.2 Vol.19 1999
+
+
+
+一种新型果树滴灌装置的制做和使用方法
+　　这种有贮水功能的新型滴灌装置,结构简单、好操作、不堵塞,根治了传统滴灌堵塞、滴头滴水量不均的问题。利用贮水功能可以贮存果园的1a用水，还可以把天然降雨贮存，起到抗旱、排涝的作用。通过收集雨水解决人畜饮水问题，使大量的劳力从繁重的挑水活动中解放出来，从事其它生产和经济活动，可以获得更大的经济效益。根据不同用途产生的效益大小、贮水设施的位置、集存雨水的数量，运用的难易程度等，合理安排运用所集蓄的雨水，才能实现高产高效的目的。流量观察器包括滑轮和支架，该滑轮通过沿支架上的夹角导向槽往复滑动来挤压或放松导流管，以此控制滴水量。
+表1　塑料大棚生产蔬菜补灌的效益
+处理产量/
+(kg.hm-2)较CK增产/
+(kg.hm-2)水的产值/
+(元.t-1)补灌效率/
+(kg.mm-1.hm-2)
+茄子不补灌18129―――
+茄子补灌100mm22990．54861．59．7248．6
+茄子补灌200mm2571675877．6037．95
+黄瓜不补灌46113―――
+黄瓜补灌100mm580111189819．03118．95
+黄瓜补灌200mm638221770914．1688．5
+西红柿不补灌39550．5―――
+西红柿补灌100mm48898．5934814．9593．45
+西红柿补灌200mm5298613435．510．7567．2
+
+　　注： 1996年和1997年平均效益。
+关键词　集雨　节灌　效益
+文献标识码：A　　　文章编号：1000-288X(1999)02-0040-04　　　中图分类号：F323.213
+Benefit of developing Runoff Harvesting and Economical
+Supplementary Irrigation in Semi-arid Area
+CAO Guo-fan
+(Dryland Farming Institute of Gansu Academy of Agricultural Sciences, Lanzhou, 730070, PRC)
+Abstract　The main aim of runoff harvesting in semi-arid area is to lighten soil and water loss, solve the problem of watering people and domestic animals, develop courtyard economy, prevent drought and keep a full stand of seedings, irrigate supplementarily(SI) fruit trees, vegetables in greenhouse and solar radiation greenhouse, irrigate supplementarily field crops. Different use measures of harvested runoff have much different benefit. According to output value of water pur ton(OVPt). The results of benefits of every water use measures show: If soil water capacity is lower than 11 percent, water providing sowing technology can keep a full stand of seedings used 15～45m3/ha water. Water providing dibble technology can keep a full stand of seedings of corn or other thinly scattered crops used 1～1.5kg water pur spot or 30～45m3/ha water. Through SI, OVPt of fruit trees can reach 40 Yuan,and that of vegetables cultivated in solar radiation greenhouse can reach 72 Yuan, vegetables cultivated in greenhouse 15 Yuan, the OVPt of field crops are all lower than 11 Yuan. But most of the area which is suitable for runoff harvesting is far from household, it is difficult to produce fruit and vegetables in this area, cereals can be produced only. Although benefit of fields crops cultivated with SI is not goods enough, if SI is used in a big area, the problem of sufficient goods and adequate clothing can be solved stablely.
+Keywords: rainfall harvesting; supplementary irrigation; benefits
+　　为了做到有的放矢，在我们大力推广集雨节灌农业之前，必须首先弄清楚怎样应用所集蓄的雨水才是最有效的，各种用途的效益究竟有多大。说明拔节期补充供水的效果最好。导流管的尾端埋入指定位置，四周用粗砂或带有小通孔的管子包裹，保证水流畅通。导流管的根数及长度根据果树的种类和大小及土壤种类来确定。半干旱区的冬春降水比较少，玉米苗期常常缺水，若能保证全苗，后期进入雨季，就能保证理想的产出。据在树冠外缘60cm2土壤剖面调查，补灌后，果树吸收根总量比对照增加104％；另一方面，良好的营养生长不仅促进了生殖生长，成花率、座果率和单果重，分别比对照提高了50％，32.8％和24.0％，而且果品的品质也大大地改善，商品价值也得到了很大的提高。拔节期和抽穗期分别补灌15mm的地膜穴播小麦比露地条播不补灌的（对照）增产1024.5kg/hm2，增产率为155.3％，补灌效益为34.05kg/(mm.hm2)，产量极显著地高于其它5种处理；拔节期补灌15mm的地膜穴播小麦比对照增产580.5kg/hm2，增产率为87.9％，补灌效益为39kg/(mm.hm2)，地膜穴播不补灌者较对照增产480kg/hm2,增产率为72.7％，拔节期补灌15mm露地穴播的较对照增产400.5kg/hm2，增产率为 60.6％，补灌效益为27kg/(mm.hm2)。把联接盘和注水口分别用热合机热合在指定位置，每个封头的底部应装2～4个联接盘，再将贮水器的2个封头对应地热合在筒体的两头，然后做注水试验，制作工艺完成。为加工方便，贮水器封头可做成方形。导流管、流量控制器、流量观察器可直接利用医用静脉注射器代替，导流管的长度可根据实际情况接长。
+　　在果树北侧筑贮水器土床时，应在果树南侧挖土，挖土后会自然形成一个浅坑，将浅坑的4边和底部修平并压实，铺上反光膜，就造出了一个贮水池。分别在拔节期、始穗期、灌浆期每1hm2补充供水30mm，其它同大田。这种贮水池的好处是除了有积存天然降雨功能外，在平时还能增加反射光和防止土壤中的水分蒸发及防止杂草生长的作用。
+(卞绍东.山东省莱州市科新实用技术开发部.261400)

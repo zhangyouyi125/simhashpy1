@@ -1,0 +1,147 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年4月  第19卷  第2期科技期刊
+
+
+多模自适应目标图像跟踪
+周 锐 申功勋
+(北京航空航天大学第五研究室*北京*100083)
+崔祜涛 杨 涤
+(哈尔滨工业大学*哈尔滨*150001)
+摘  要   本文建立了图像序列中含加性和乘性两种噪声模型影响下的目标偏
+移值测量模型。
+
+
+图5 绕y″轴旋转有关的重力梯度加速度作用引起流体晃动而
+反馈到贮箱上的力臂
+
+5  结论与讨论
+
+　　为了达到不同的科学实验目的，一些科学实验卫星必须执行多种旋转运
+动的操作，AXAF-S卫星需要做本文前面所述那样的转动。
+
+主题词  图像相关  多模跟踪   速度和加速度滤波器  模型概率
+　
+MULTIPLE MODELS ADAPTIVE 
+TARGET IMAGE TRACKING
+Zhou Rui Shen Gongxun
+(Beijng University of Aeronautics and Astronautics*
+Beijing*100083)
+Cui Hutao Yang Di
+(Harbin Institute of Technology*Harbin*150001)
+Abstract  In this paper,the target image position offset measurement models in image 
+sequence are developed under the effects of additive and multiplitive noise.In consid-
+eration of the target maneuvering,the target states are estimated by multiple-model 
+filters and two-stage Kalman filters,depressing the effects of noise and avoiding the 
+explicit maneuvering detection.The algorithm has good performance with high speed 
+and small savings.
+
+Key words  Image correlation  Multiple model tracking   Velocity and acceleration 
+filter  Model probabitity 
+
+1  引言
+
+　　在基于图像传感器的目标跟踪系中,由于各种噪声影响,例如传感器噪声、
+背景噪声和图像量化噪声等,使得跟踪器提取到的目标位置信息含有较大误差。
+这些噪声一般可以分为两类:加性噪声和乘性噪声。滤波是抑制噪声、提高跟
+踪精度的一种有效方法,而正确的目标测量模型和动态模型是实现精确跟踪与
+滤波的前提和基础。通过对图3、图4和图5的分析，我们得到进
+一步的结论：(1)本文把重力梯度加速度作为一个扰动源，来研究液体燃料贮
+箱的晃动，作为一般卫星的姿态控制，可以忽略不计，但作为高精度姿态控
+制的卫星，却是一个非常重要的扰动源。我们取低温液态氦与墙的接解角为0°。(2)把整个卫星作为一个系统，作用
+在流体上的重力梯度加速度可以看做是这个系统的输入，而最后由液体晃动
+引起的作用于贮箱上的力和力矩是这个输入的响应和反馈，如果我们把作用
+于贮箱上的力和力矩产生的卫星运动引起的加速度又作为输入的话，那么我
+们就可以建立一个流体力学与卫星控制的闭合系统。
+
+　　在计算程序中，对于速度分量采用交错网络，通过MAC［９］方法来处
+理，压力参数值取在网格的中心点上，离散用“Hybrid Scheme”
+方法，流场的计算采用半隐式，时间步长用对流的稳定性和粘性扩散的稳定
+性来确定，压力迭代采用共轭梯度法(Conjugate Gradient Method).。
+
+2  目标图像偏移值测量模型
+
+　将目标图像中要跟踪的点作为参考点,则参考点与传感器视场中心之间的
+距离即为目标偏移量。设r(x,y)为目标参考图像,s(x,y)为传感器检测到的
+实时图像,并假定实时图像是由参考图像平移以后并迭加不相关高斯噪声n(x,
+y)的结果,于是有
+s(x,y)=cr(x-εx,y-εy)+n(x,y)
+(1)
+其中,εx,εy为目标图像参考点的偏移量,c是比例变换因子。对于帧频较高
+的跟踪器,εx,εy一般较小,于是可对r(x,y)Taylor展开,并保留到一阶项
+s(x,y)=c［r(x,y)+εxrx+εyry］+n(x,y)
+(2)
+其中rx=r/x,ry=r/y是r(x,y)在X,Y方向偏导数。若跟踪窗口
+内图像象元数大小为M=N×N=N2,于是可将(2)式写成向量形式
+
+是由于乘性噪声的影响。方位角ΨＥ被定义为单
+位径向量与ｚ″轴负方向的夹角，ωｘ，ωｙ和ωｚ分别表示绕ｘ″，ｙ″和ｚ″
+轴的旋转角速度，当系统没有旋转运动时，在直角坐标中的单位径矢量ｒｃ可
+表达为：
+
+
+（1）
+当只考虑系统绕ｙ″做旋转运动时，单位径向量ｒc为：
+
+
+（2）
+通过(3)式和(4)式比较有ΨＥ＝ΨＥｏ＋ωｙｔ。由于以上各式是建立在Taylor展开基础上,因此估值误差将随偏移量
+减少而减少。
+
+　　作为例子，本文研究了绕ｙ″轴旋转产生的重力梯度加速度引起的卫星
+贮箱中流体的晃动问题(见图1)。
+
+    有了目标偏移值测量模型,就可建立目标运动模型,对目标状态进行滤波估
+值。3  目标运动模型描述与滤波器的建立
+
+    假设目标运动模型可以用一线性系统模型表示:
+Xk+1=FkXk+Gkgk+Gxkwxk
+(9)
+gk+1=gk+Ggkwgk
+(10)
+其中Xk是状态向量,表示目标位置和速度;gk表示目标加速度。通过数值计算获得了流体作用于卫星贮箱上的
+力和力矩。本文有兴趣研究与旋转运动相
+关的重力梯度加速度引起的流体晃动力在卫星贮箱上的反馈。本文将上述方法和多模跟踪算法［4］相
+结合,消除显式的机动性检测,又具有较少的计算量和存储量等特点。设系统
+有两个加速度模型,第一个零加速度模型M1k,即恒定速度模型;第二个是恒加速
+度模型M2k。模型M1k不需要对加速度进行估值,模型是解偶的,维数低,计算量小。
+
+
+
+该算法结构如图1所示。由此可以看出:该算法消除了显式的机动性检测,且滤
+波维数低。4  仿真结果与结论
+
+　　模拟产生含噪声的高斯分布的目标图象,且目标图像在传感器平面上作运
+速直线、运加速、加速拐弯几种运动,并且几种运动交替出现。采用本文建立
+的图像偏移值测量模型和多模滤波算法对目标图象的运动状态进行估值。目
+标初始状态:x(0)=1象素,y(0)=10象素;(0)=0象素/帧,(0)=-0.3象素/帧。仿
+真时模型切换概率取p11=0.9,p22=0.9,p12=p21=0.1;模型概率初值μ10=0.9,
+μ20=0.1。
+我们以部分充有低温液态氦的低温保温贮箱为研究对象，使用园柱坐标(ｒ，
+θ，ｚ)，相对应的速度分量为(ｕ，ｖ，ｗ）。可以看出,该算法对机动目标具有很好的跟踪效果,
+位置跟踪基本重合。为了说明多模跟踪对机动目标的自适应性,图3给出了常
+规单模跟踪曲线,即没有加速度补偿的结果,可看出,当目标出现机动性时,跟
+踪效果差。
+
+    
+
+图2 多模跟踪曲线
+(a)位置跟踪 (b)速度跟踪
+图3 单模跟踪曲线
+(a)位置跟踪 (b)速度跟踪
+
+综上所述,本文提出的图像序列中目标偏移值测量模型和多模跟踪算法,能实现
+对噪声图像中机动目标进行精确跟踪,且滤波器是解偶的,计算量和存储量小。
+
+本文于1995年11月20日收到
+参考文献
+1  Fitts J M.Precision Correlation Tracking via Optimal Weighting Function.Proceedings 
+of the 18th IEEE Conference on Decision and Control,1979:280-283
+2  Ignagni M B.Separate-Bias Kalman Estimator With Bias State Noise.IEEE Trans on 
+Automatic Control,1990,35(3):338-341
+3  Alouani A T,Xia P.A Two-Stage Kalman Estimator for Tracking Maneuvering 
+Targets.In Proceedings of IEEE 1991 International Conference on Sys,Man,Cyb
+4  Blom H A P,Shalom B.The Interacting Multiple Model Algorithm for System with 
+Markovian Switching Coefficients.IEEE Trans on Automatic Control,1988,23(8):780-783
+5  Blair W D.Fixed-gain Two-stage Estimators for Tracking Maneuvering Targets.IEEE 
+Trans on Aero,Elect and Sys.1993,29(4):1004-1014

@@ -1,0 +1,49 @@
+航空计测技术
+AVIATION METROLOGY &
+MEASUREMENT TECHNOLOGY
+1999年 第2期 No.2 1999
+
+
+
+HBU―3000型布氏硬度计的调修
+梁廷伟啊〕戮涛＊场×跷肮＊＊唱
+
+　　摘　要　描述HBU―3000型布氏硬度计的工作过程，分析其易出故障的部位和成因，以便使用和维修。
+　　关键词　布氏硬度计　使用　维修
+
+　　HBU―3000型布氏硬度计是吴忠材料试验机厂生产的，适合做试件体积和高度都较大的布氏硬度试验。考虑到式(10)成立,则显然有。负荷由砝码及二级杠杆放大实现，通过机械变荷机构，可预选负荷。试验的重要环节都有自动控制及保险机构，整个工作过程有指示灯显示，并有信号报警，使用比较方便，但在使用过程中，光学系统、变荷机构以及定位控制系统都易出故障，下面对其工作状态和具体的使用情况进行分析。仿真的目的是在确保卫星姿控指标的条件下,挠性天线达到较高的跟踪指向用户星精度。杠杆分为二级，第一级杠杆比为8∶1，第二级杠杆比为6.25∶1，总杠杆比为50∶1，第一级杠杆比不可调，第二级杠杆比可通过主刀刃进行调整，调整后,把主刀刃下面的二个顶丝拧紧。因此,在挠性天线设计时,应根据跟踪精度的要求设计天线基频,同时兼顾耦合系数等要求改善天线结构挠性。
+1.2　加卸荷支杆部分
+　　这部分主要是把变速箱的动作传至支杆来操纵加荷和卸荷，支杆头部有触点A，以发出负荷保持时间为开始信号，并通过时间继电器2SJ给出负荷保持时间终止信号，支杆下部有一微动限位开关WK2(见图1)以限制砝码下降最低位置的行程。
+
+图　1　　
+1.3　砝码变荷部分
+　　砝码变荷机构主要是实现试验力的预选，共有250 kgf、500 kgf、1000 kgf、3000 kgf四种砝码组合可供选择，变荷方式是通过变荷手把带动一对伞齿轮转动变荷支架以支起不用的砝码组，实现变荷的目的，变荷时只要使变荷手把上的负荷数对准标记即可。应该注意的是变换负荷只能在完全卸荷后,才能进行，否则要损坏整个变荷机构。如倾斜转弯(BTT)导弹,弹体在飞行过程中不断高速滚转,使得俯仰和偏航通道成为一个强烈耦合的组合通道,难以分开;又如三轴稳定卫星,由于内部携带的飞轮的作用,星体的滚动和偏航通道的动力学也相互交叉关联。光源是由一个12 V50 W的专用灯泡及聚光镜组成，它在机体内部主杠杆的下面，灯管后部的三个调节螺钉是调节灯丝对中的，下边的一个螺钉是调节灯丝和聚光镜距离的。弹性振动的抑制可以是开环,也可以是闭环的。
+4　分析与结论
+　　分析以上从稳定性角度研究的飞行器耦合通道控制系统的新独立设计方法可知:
+　　(1)变结构控制理论是本文研究的独立设计思想和方法的基础。则系统的滑动模态域即为
+M={X∶sp=GpXp=0}∩{X∶sq=GqXq=0}
+(9)
+式中sp、sq为待定的滑动模态参数,Gp、Gq为相应的滑动模态参数矩阵。
+　　在复合控制中,有两大难点有待解决:
+　　①解耦控制;②弹性振动抑制
+　　无论是天线指向跟踪,还是卫星姿控,都会激励挠性天线的弹性振动,由于星上天线阻尼较小,因此,如不加以控制,很难满足高精度指向的要求。
+　　5)在任何时候，只要按下总停按钮3AN，硬度计立即停止运转，要复位时,只要按一下卸荷按钮2AN，即可自动复位。
+　　α是天线绕其Y轴的转动角度,qi,ζi,Ωi,bi(i=x,y,z)分别为天线三轴模态坐标,阻尼系数,特征频率和转动耦合系数。仿真结果表明,星体姿态对天线指向精度会有较大影响,反映在每次星体姿态保持喷气的时刻,对挠性天线都表现为一个冲击振荡,虽然由于天线自身的阻尼作用,振动会被逐渐减弱,但在很长时间内难以达到满意的跟踪精度。这时按加荷按钮1AN,报警停，杠杆下降。当杠杆降低到适当的位置再按总停按钮3AN,即可进行修理。
+　　(2)该方法可以推广到时变系统,实际中飞行器的参数都是时变的。导致加荷紊乱的原因是砝码与变荷架的相对位置改变了。调整方法是松开砝码吊杆上的顶丝，转动吊杆，使负荷在3000 kgf时,变荷架上的三支杆在砝码周围销子的空档内;在1000 kgf时，三支杆转至砝码最上排销子的正下方为好，然后拧紧顶丝。
+3.4　投影部分
+　　现在使用的这种硬度计上的投影部分已基本不用，用便携式读数显微镜测量压痕，主要是因为投影屏上的压痕不太清晰，测量不准。造成这种情况的原因主要是室内光线太强，因是投影仪，故影屏前的光线不能太强，一般控制在40 lx以下。光学反射镜上有污物也会影响光反射强度，应定期用镜头纸擦污物。另外,试样表面不光亮，反射光线太弱，应减小试样表面粗糙度Ra(粗糙度Ra一般小于0.4 μm)及保证试样表面的亮度，发黑的试样应把表面的发黑层去掉，不然几乎无反射光。
+　　主题词　变结构控制　稳定性　耦合　飞行器
+A NEW INDEPENDENT DESIGN METHOD 
+FOR CONTROL SYSTEMS OF CRAFTS 
+WITH COUPLED CHANNELS
+Zhou Jun　Zhou Fengqi　Li yanjun
+(Northwestern Polytechnical University*Xi'an*710072)
+　　Abstract　To some aircrafts and spacecrafts,such as bank-to-turn missiles and triaxis stabilized satellites,there exist various strong coupling actions among their channels.This makes the traditional 3-channel independent design method which is based on the classical single-input control throry face many difficulties.By using the variable structure control theory,a new independent design method is proposed here,in which all the coupling factors among the channels are reserved during the design course and regarded as the disturbances.Based on the method,the control laws of the craft's coupled channel are designed and the determination criterion of sliding mode parameters are also studied.
+　　Key words　Variable structure control　Stability 　Coupled channel　Craft
+1　引　言
+　　现代许多航空航天飞行器因本身独特的运动方式或内部部件的影响,俯仰、偏航和滚动三个通道的动力学往往耦合在一起。
+
+陈晶涛：哈尔滨气轮机厂，150046　　
+刘伟国：哈尔滨东安发动机制造公司
+作者单位：松江机械厂，黑龙江省哈尔滨市，150046
+　1998-06-03收稿

@@ -1,0 +1,117 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+基于Web.sql的Web数据库接口程序生成器
+肖宗水　柴乔林　单玉峰
+　　摘　要　本文详细地介绍了Web.sql数据库接口程序生成器的设计思想、功能特点、实现方法及应用。它为Web开发人员提供了一个通过Web服务器访问Sybase数据库的应用程序开发环境。
+　　关键词　Web数据库接口，WWW ，Intranet， Perl语言
+WEB DATABASE INTERFACE
+PROGRAM GENERATOR BASED ON WEB.SQL
+Xiao Zongshui　Chai Qiaolin　Shan Yufeng
+Netware Center, Sandong University of Industry, Sandong.Jinan 250061
+　　Abstract　This paper introduced Web database interface program generatorbased on Web.sql and its main idea , function, features and application,it provides developers with a new kind of developing method and tool ofWeb database interface program.
+　　Keywords　Web database interface，WWW，Intranet，Perl
+1　前言
+　　通过Web.sql接口可以将Web服务器和Sybase数据库服务器透明地集成在一起，为动态构造Web页发布数据库信息［1］提供了一种简便方法。 
+　　通过非线性变换可将 RGB 颜色空间 r、g、b值转换到 HSV 空间的h、s、v值 [2] ： 
+设 v'=max(r,g,b) ，定义 r',g',b' 为： 
+　　（1）
+则
+　　（2）
+其中 
+　　（3）
+式中， r,g,b ∈ [0 … 255] ， h ∈ [0 … 360] ， s ∈ [0 … 1] ， v ∈ [0 … 1] 。而在基于Web.sql的Web数据库应用程序中，许多程序流程大致相似，开发人员不得不编写许多重复的程序代码。另外，在利用FORM交互式界面来完成数据的录入和提交时，用于处理FORM数据的服务器端Web.sql程序通常不能与对应的FORM在同一个HTML文件中，而FORM中各控件的参数定义需要在Web.sql程序引用，这就要求在不同文件之间相互参照，给编程带来较多不便。本文介绍的基于Web.sql的Web数据库接口符号及相应的程序生成器则给出了一种解决上述问题的方法。
+2　设计思想与数据库接口描述符号
+　　通过对Web.sql接口及其Web数据库应用程序［2,3］进行分析和研究。我们将那些常用的应用程序段，如将系统注册、SQL语句的提交、取回SQL语句的结果、FORM提交事件处理和菜单功能等定义为各种接口符号，将其插入到HTML文档中适当的位置，并开发了相应的程序生成器，对含有这些符号的HTML文档进行处理，将其转换为对应功能的Perl程序，从而实现Web服务器对Sybase数据库的访问。图1给出了这种应用示意。 
+　　4) 嵌套染色体对象 
+　　染色体着丝点或染色质定位点及其随机定位函数；染色体的运动轨迹、染色体移动时的形态控制参数；模拟各期染色质、染色体的形态及运动函数等。
+　　（2） <%SQL：sql―sta%>
+　　向数据库服务器发送SQL语句，其中sql―sta是要发送的语句。 
+作者单位：中国科技大学计算机系，合肥 230027
+参考文献 
+1 鲁润龙，顾月华 . 细胞生物学 . 合肥：中国科学技术大学出版 社， 1991 
+。对每个细胞周期经历模拟的详细流程见图 3 。
+　　例如：select name，sex，age from tab―man
+$col［0］－－>name
+$col［1］－－>sex
+$col［2］－－>age
+　　（5） <%ACTION：form―action―name %>......<%/ACTION%>
+　　FORM表单中输入的数据提交后，服务器端的数据处理过程，其对应的程序代码单独生成一个事件处理程序文件。其中form―action―name应与FORM中action的url相同。本仿真系统用一条对象链表连接不同的细胞对象，系统计时器定时激活随机选择细胞链中的一个细胞对象，根据细胞的基因控制因子每次执行当前时间段的仿真操作，完成本段仿真后保存细胞当前状态，等待下一次随机激活继续下一时间段的仿真。
+　　（7） <%REFRESH：n：url%>
+　　设置浏览器定时访问url指明的Web页，其中n为时间间隔，单位是秒。如果url指明的是当前页，则引起该页定时刷新。
+　　（8） <%LOGIN%>......<%/LOGIN%>
+　　执行用户注册功能。只有用户注册成功后才执行该处理。 
+　　方法一是对图象中所包含的对象的边界进行提取 ( 即提取图象的纹理特征 ) ，采用 Snake 边界提取算法、手工交互相结合的方法以及采用小波变换的方法提取图象纹理特征，然后对每个对象所包含的颜色用跨距离扫描线算法进行直方图统计，最后采用距离法对待查图象和库中图象进行相似性匹配。
+　　（9） <%RIGHT：right―name %>....<%/RIGHT%>
+　　检查用户是否具备某项权限，具备right―name权限的用户才能执行其中的程序块。
+　　（10） <%LOGIN CHECK%>....<%/LOGIN CHECK%>
+　　检查用户是否注册，防止用户直接输入URL执行敏感程序。
+　　（11） <%MENU：menu―item %>....<%/MENU%>
+　　用来构造多态CGI处理程序，该类型的程序执行时，通过URL的参数提供菜单选项，根据不同的menu―item，执行对应的MENU块。
+2.2　通常的程序结构
+　　<%DATABASE：db%>
+<LOGIN CHECK%>
+<RIGHT：right―name%>
+　　图象数据库是图象处理技术和传统数据库技术的应用，又为图象处理技术提供了有力的支持
+<%MENU：menu―item%>
+　　HTML代码
+<%SQL：sql―sta%>
+<%RESULT%>
+　　HTML格式化代码
+<%/RESULT%>
+<%/MENU%>
+<%/RIGHT%>
+<%/LOGIN CHECK%>
+<%ACTION：form―action―name%>
+<%SQL：sql―sta%>
+<%GOTO：url%>
+<%/ACTION%>
+3　程序开发过程和程序生成器的实现
+3.1　接口符号程序开发过程
+　　（1） 在Frontpage中编辑HTML文档，Frontpage是较为常用的可视化HTML编辑器，可以用其中的EDIT:Database Column Value功能输入接口符号，或直接在普通的文本编辑器中输入；
+　　（2） 在HTML中的适当的位置插入接口符号，得到的新文件以“.htx”为扩展名；
+　　（3） 将包含接口符号的.htx文档转换为Perl程序；
+　　（4） 测试生成的Perl程序。
+3.2　程序生成器处理流程
+　　（1） 程序生成器符号表
+　　@symbol=｛"各接口符号", ... ...｝；
+　　在接口符号中涉及到可变参数的位置用$para代替。
+　　（2） 接口符号对应的代码块表：
+　　@code=｛qq!.....
+　.....!,
+qq!.....
+　.....!,
+　......｝；
+　　@symbol与@code的元素一一对应。
+　　（3） 扫描.htx文件，对遇到的接口符号用对应的代码块替换，并将符号中的可变参数插入到代码块的相应位置，对遇到的HTML代码，用perl的print语句构造，形式如下：
+　　print qq!HTML代码!;
+　　（4） 对.htx文件中的<%ACTION: form―action―name%>块内的代码，单独生成一perl程序文件，文件名为form―action―name的内容。
+3.3　数据库接口程序生成器的组成
+　　（1） 程序生成器(compiler.pl)：通过调用该程序将接口描述程序(*.htx)转换为perl程序(*.pl)。
+　　（2） 生成与测试环境(wdtool.htm)：该环境提供一个基于浏览器的交互式界面。用户可以输入接口描述程序文件名和将要生成的perl程序文件名，如test.htx和test.pl，然后将其提交到服务器端的compiler.pl，将接口描述程序test.htx转换为对应的perl程序test.pl。另外用户可以测试一下生成的perl程序的执行情况。 
+3 颜色的相似测度
+　　用数值来有效表示两幅图象在颜色上的相似程度，这便是颜色的相似度量问题，它是直接影响检索效果的重要环节。
+　　（4） 程序源码查看器(viewsrc.hts)：该文件用于查看生成的perl程序的源代码。
+　　（5） 程序在线调试器(wd.pl):通过调用该程序完成对接口描述程序的转换和调试。可以在浏览器地址栏中直接输入接口描述程序的文件名进行调试，方式为:“.../wd.pl?htx=test.htx”。
+3.4　运行环境
+　　将上述5个组成文件复制到Web文档目录中，通常与要开发的程序文档同在一个目录下。Web服务器可以是IIS或Netscape Enterprise Web Server。
+4　程序生成器的特点
+4.1　安全性
+　　开放性的信息共享是internet/intranet网络的一个重要特性，但是这又带来了网络资源的安全性问题。WWW是internet/intranet网上最重要的服务之一，因此,Web站点的安全，特别是数据库的安全成为业界非常重视的研究课题。 
+　　采用面向对象的程序设计技术，首先要为模拟的对象定义一个完整的类，类是对一组性质相同的对象的程序描述，它由概括了一组对象共同性质的数据和函数组成。如<%LOGIN CHECK%>、<%login%>、<RIGHT:right―name%>等，其中<LOGIN CHECK%> 的功能是通过核对客户端机器的IP地址和输入的用户名检查用户注册信息。结合其他几个语言符号的使用，验证用户的合法性以及访问的权限等，只有通过合法验证并具有一定权限的用户方可访问Web页。这在一定程度上解决了Web数据库应用系统中的安全问题,有效的对系统进行保护。 
+1 基本设计思想 
+　　本仿真系统采用基于 Windows 95 操作系统的 Microsoft Visual C++ 4.2 作为开发工具。因此，如何准确、快速地选择图象的主色调仍是需要进一步研究的问题。因此如何高效准确地查询用户的图象数据是图象检索方法的主要目标，采用多阶段的 " 粗粒度 " 和 " 细粒度 " 相结合的相似匹配检索方法则不失为一种提高检索效率的有效方法。
+4.3　实用性
+　　该生成器使Web.sql对用户成为透明，用户只需在诸如Frontpage等Web开发工具中编排HTML文档，并在HTML文档中适当的位置插入接口符号，由生成器自动完成接口描述程序到Perl程序的转换。这对不熟悉perl语言和Web.sql的用户，则不必专门学习这些相关知识，只需开发更容易掌握的接口程序，就可以完成Web数据库应用程序的开发任务。而对熟悉perl语言和Web.sql的开发人员，则简化了程序开发过程。
+作者简介：肖宗水　硕士，讲师。主要研究方向：软件工程环境、数据库技术及Intranet技术。
+柴乔林　副教授。主要研究方向：计算机网络及神经网络技术。
+单玉峰　硕士，讲师。主要研究方向：网络多媒体应用。
+作者单位：山东工业大学网络中心　山东.济南（250061）
+参考文献
+［1］　Nguyen T, V. Srinivasan. Accessing relational database from the World Wide Web. Proceeding of the 1996 ACM SIGMOD，Canada，1996,6:529-539
+［2］　张治洪,等. WWW与数据库的连接.计算机研究与发展，1997;(8)
+［3］　刘东波. Web数据库技术进展. 中国计算机用户, 1997;(10)
+收稿日期:1999-01-11

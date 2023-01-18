@@ -1,0 +1,75 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第10期 Vol.19 No.10 1999
+
+
+
+Wizcon组态软件报表功能的改进
+王宏刚　徐玉斌　曾建潮
+　　摘　要　Wizcon组态软件是目前应用比较广泛的一种SCADA软件，但是它的报表外观不能人为地进行控制。本文提出一种利用Microsoft Excel对Wizcon组态软件进行集成的方法。这种方法已在实际工程系统中得到验证。
+　　关键词　ASP，服务器组件，Web页面，图形显示
+1　ASP服务器组件
+　　ASP服务器组件（Server Side Component）实际上是运行在服务器上的一个DLL，它可以完成常规DLL胜任的任何任务。目前，Wizcon组态软件已被公认为是世界上最先进的SCADA应用开发软件工具之一。Wizcon已有10种以上文字，并已在全世界范围的3500多个场、站安装使用，用户许可证已多达14000多套。有关Wizcon的具体介绍参见［1］。
+　　Wizcon的报表生成器使用户能利用历史数据进入深入分析并且易于使用。利用Wizcon报表生成器可以生成用户要求的各种数据，并且可以按照用户的要求制作日报表、周报表、月报表等各种类型的报表。在Wizcon报表生成器生成的报表中，数据可以有如下类型：
+　　⑴ 日期/时间类型：可以在报表中的任何部分显示日期/时间；
+　　⑵ 当前值：可以在报表中的任何部分显示控点的当前值；
+　　⑶ 最大/小值：可以在报表中的任何部分显示控点在某一时间段内的最大/小值；
+　　⑷ 平均值：可以在报表中的任何部分显示控点在某一时间段内的平均值；
+　　⑸ 积分值：可以在报表中的任何部分显示控点在某一时间段内的积分值；
+　　⑹ 加权平均值：可以在报表中的任何部分显示控点在某一时间段内的对时间的加权平均值；
+　　⑺ 范围总时间：可以统计控点处于某个范围内的时间总和；
+　　⑻ 范围总计数：可以统计控点在某一时间段内处于特定范围内的次数；
+　　⑼ 记录No.（时间）：可以统计控点等于特定值时的第n次记录的时间；
+　　⑽ 记录No.（值）：可以统计控点在某一时间段内的第n次记录的值；
+　　⑾ 最后值：统计控点在某一时间段内的最后一个值；
+　　⑿ 求和：统计控点在某一时间段内所有值的和；
+　　⒀ 第n次记录的时间：统计控点等于某一特定值的第n次记录的时间；
+　　⒁ 字符串类型：显示类型为字符串的控点的值。
+　　在该工程中建立ASP页面，点击菜单File | New ，在New 对话框中选Files | Active Server Page ，并指定其名字：Randimage.asp。但是，报表生成器有一个缺点：报表的外观不能人为控制，例如报表的标题字体的选择、字体大小的选择、插入页码等等。
+2　集成的原理
+　　报表生成器可以生成满足用户要求的数据，但是满足不了用户对报表中字体的要求；Microsot Excel电子表格可以生成满足用户对报表中字体的要求，但是用Excel产生报表中的数据的任务却是艰巨的（开发者要进行有关数据库方面的编程）。如果两者互相取长补短，则可解决用户的要求。Visual InterDev将会为我们产生一个空的框架，在其中用手工加入代码。
+　　DDE是不同应用程序之间进行通讯的一种协议，如下图所示。
+4　在ASP页面中使用服务器组件
+　　下面将建立一个ASP页面以测试我们的Server SideComponent。
+
+图1　DDE通讯示意图
+　　利用DDE不但可以在不同应用程序之间进行数据通讯，还可以进行命令通讯。例如，服务器端可以通知客户端执行某条命令。
+　　报表生成器可以实现满足用户要求的数据，而Excel可以实现满足用户要求的报表外观。在集成时，可将Wizcon作为DDE的服务器端、Excel作为DDE的客户端。在定点打印或者用户要求打印时，Wizcon可通过DDE向Excel发送打印命令，Excel接收到命令后立即执行自己的打印操作。这样可使用户感觉不到Excel的存在。
+　　有关如何将报表生成器生成的数据转移到Excel的表格中，可以利用Excel提供的超级链接的功能。例如，此处的图形文件夹images的虚拟路径是：//Servername/TestRandimage/Images（其中Servername是你的Web服务器的名字），其对应的物理路径是C:\Inetpub\wwwroot\TestRandimage\Images 。与Java Applet相比，它直接在Web Server 上执行，其执行结果作为HTML页面的一部分下载到用户端，用户无法分辨他所看到的界面元素是直接的HTML元素，还是Server Side Component的执行结果。
+　　1) 在Wizcon的“设计”菜单中单击“应用设定”，添加运行“wizddes.exe”和“Excel.exe”两个应用程序。wizddes.exe程序由Wizcon提供，主要作用为在Wizcon组态软件和其它应用程序之间建立连接。其中，Wizcon为客户端、其它应用程序为服务器端（在此为Excel）。
+　　2) 在Excel电子表格中，进入VBA的设计模式。在工作表中放置WizproClient控件（Wizcon提供），并在WizproClient控件的SignalShut事件中填写代码：
+　　′添加下列代码确保Wizcon退出时退出Excel
+Private sub WizproClient1―SignalShut()
+Application.quit
+End sub
+′下列代码关闭Excel与用户的交互功能
+Private Sub Workbook―Open()
+Application.ActiveWorkbook.Saved = True
+End Sub
+　　上面代码的作用是确保Wizcon退出后Excel也退出。例如，此处的图形文件夹images的虚拟路径是：//Servername/TestRandimage/Images（其中Servername是你的Web服务器的名字），其对应的物理路径是C:\Inetpub\wwwroot\TestRandimage\Images 。与Java Applet相比，它直接在Web Server 上执行，其执行结果作为HTML页面的一部分下载到用户端，用户无法分辨他所看到的界面元素是直接的HTML元素，还是Server Side Component的执行结果。
+　　4) 在Wizcon中定义如下宏：
+　　宏名：LD―CSV，
+内容：EXCEL SYSTEM ［open("exc.csv")］
+　　宏名：LD―XLS，
+内容：EXCEL SYSTEM ［open("report.xls")］
+　　宏名：CLS，内容：EXCEL SYSTEM ［close()］
+　　宏名：PRINT，内容：EXCEL SYSTEM ［print()］
+　　宏名：REPORT，内容：包括上述四个宏，顺序为LD―CSV、LD―XLS、PRINT、CLS、CLS。可以把这些都安装在同一台机器上，这样可以在单机上方便地编程、调试。第一个宏和第二个宏的作用是在EXCEL中打开文件exc.csv和工作簿report.xls；第三个宏的作用是关闭EXCEL中的活动的工作簿；第四个宏的作用是打印EXCEL中的活动的工作表；第五个宏是Wizcon中类型为Program的宏，其作用是将前四个宏组合在一起。
+　　5) 编写Wizcon语言
+　　定义如下Wizcon语言：
+　　if $time=9.00
+then
+BEGIN
+report "wizrep 0 0 0 1439 exc.csv 0 0 "@flag""
+if @flag=1
+then
+macro "report"
+END
+　　在完成上述步骤后，系统即可在每天早上9：00整定时打印报表且报表的格式完全能够满足用户的需求。
+　　该方法具有简单、实用等特点，已经在北方某油田供水公司深井计算机监控系统中加以应用，取得了令用户满意的效果。
+作者简介：王宏刚　硕士，讲师。研究方向为遗传算法、离散事件动态系统仿真、工业过程控制。
+徐玉斌　硕士，副教授。现主要从事智能控制、系统仿真与计算机应用方面的研究。例如，每次这个Web页面被访问时，从一个包含若干图形文件的文件夹中随机选取一个，在该页面上显示，使访问该页面的用户每次都会得到不同的视觉享受。现研究方向为混合动态系统的建模、控制、优化与仿真，计算机集成控制与管理系统。
+作者单位：太原重型机械学院系统仿真与计算机应用研究所　山西.太原（030024）
+参考文献
+［1］　王宏刚，徐玉斌，曾建潮. Wizcon工业监控软件及应用. 1998年全国（第四届）工业控制系统应用学术会议论文集. 北京：工业出版社，1998
+收稿日期:1999-05-16(修改稿)

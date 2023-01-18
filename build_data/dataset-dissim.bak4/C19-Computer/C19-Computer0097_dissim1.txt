@@ -1,0 +1,30 @@
+计算机工程
+COMPUTER ENGINEERING
+1999年 第25卷 第8期 Vol.25 No.8 1999
+
+
+
+银川海关办公自动化网络系统
+隆益民
+摘要：介绍了银川海关办公自动化网络系统的规划设计、网络拓扑结构及技术性能，系统的基本配置、网络的安全措施、EDI等。同样 Windows NT 系统上的调用者通过 Client 进程经过 (1′) 、 (2′) 、 (3′) 、 (4′) 、 (5′) 、 (6′) 和 (1′) 、 (2) 、 (3) 、 (4) 、 (5) 、 (6′) 调用本系统及 Unix 系统的远地过程。
+关键词：远程过程调用；套接字；WinSock
+The Implementation of PRC Between Unix and Windows NT
+Sun Chunyan,xiang Qinzhi
+(CAD/CAM Software Development and Training Center of China Aerospace Corp.,Beijing 100037)
+【Abstract】This paper introduces the method and mechanism that take advantage of Socket to realize RPC between Unix and Windows NT.In addition,it shows main points of programming.
+【Key words】RPC;socket;WinSock
+　　网络程序开发中常要激活分布在网络中远地机器上的过程，即远程过程调用 RPC(Remote Procedure Call) ，现有的很多成熟的操作系统都有各自的 RPC 应用软件，用户在调用远程过程时，可直接利用库函数给予支持。它们是必须在使用远程调用的功能前，被启动的后台守护服务进程。 
+　　采取有效措施，保证计算机网络系统可靠、安全地运行。要有较强的网络管理手段，合理地配置和调整网络资源、监视网络状态、控制网络运行。 
+　　根据银川海关的实际情况、业务需要，采用交换技术的 100Base-t 快速以太网。 
+2 设备的配置
+　　服务器选用美国 HP 公司的“ NetServer LH Pro ”型网络专用服务器。 它带有 Pentium Pro 200M CPU ， 64M 内存， 4G 热交换 Ultra SCSI 硬盘， 4 个 PCI 插槽， 4 个 EISA 插槽，一个 PCI/EISA 插槽；附有 3 个 Ultra SCSI 通道的 HP NetRAID PCI 磁盘阵列控制器；内带一块 HP 10/100TX PCI 总线局域网接口卡；可选配 SureStore DAT 磁带驱动器进行数据与系统的备份。 
+　　交换机选用 3Com 公司的 Superstack ∏ Switch 3000 TP 型，选用 Superstack ∏ HUB 100 型集线器，它具有 12 个 100M 接口。路由器型号为 Cisco 2511 ，它具有一个以太网接口、 2 个同步串口和 16 个异步串口。 选用 3Com 公司的 Fast Etherlink XL PCI TX 网卡。选用美国 APC 公司的 APC Smart-UPS 。但由于 WinSock 的特点，程序实现细节仍存在差异。因为服务器端操作系统的开放性、可伸缩性、互操作性等是选择产品的重要指标。海关由于其业务性质， 对网络的安全性给予了极大的关注，考虑到“ Windows NT ”在用户账号方面为应用系统提供了更高的灵活性和更好的帐户管理功能，在资源的安全性和审计方面也有很强的优势。 另外，对窗口软件的可视性与可操作性方面的习惯等因素，“ Windows NT ”成为首选。套接字 (Socket) 作为在传送层上提供给应用程序的接口之一，在互连网域支持 TPC/IP 协议，为此 Socket 便成为两种操作系统之间实现通信的基础。它能对所使用的 3 Com 公司的网络设备提供端口管理，设置方便简单，排除故障容易，能对网络交换机、集线器、 路由器中每一端口进行管理和设置。 
+　　(1) Unix 系统上的 Server 方程序 
+　　注册主要用到同一台机器上进程间的信息交换技术。银川海关大厦共有 7 层，其中服务器、 网络交换机等关键设备所在的网络中心机房在 7 楼，报关大厅在一楼， 各工作人员的网络工作站分散在其余层。 1 楼、 4 楼、 5 楼分别放置 3 台 HUB 网络集线器，把整个业务网络划分为 3 个网段。其中一楼使用 Intel 公司的 Intel Express 12 口 10/100M 可堆栈集线器，一楼报关大厅的网络工作站接入这台集线器； 4 楼、 5 楼各放置一台 Superstack ∏ HUB 100 型集线器， 2 、 3 、 4 楼的网络工作站接入 4 楼集线器， 5 、 6 楼的网络工作站接入 5 楼集线器。 registeredProc() 进程作为此处的服务进程在调用 CreateNamePipe() 函数建立一个命名管道实例时指定名字，所有命名管道实例共享相同的管道名，作为客户进程的 RegisterRemoteProc() 和 DelRegistration() ，在调用 CreateFile 和 CallNamePipe 函数时指定同样的管道名，连接到一个管道实例上。当此进程不再被调用时，使用 DelRegistration() 在远程调用过程表内注销此过程，以免浪费资源。 
+　　网络操作系统为中文 Windows NT Server 4.0 ，采用 TCP/IP 协议， 通信介质为美国 AMP 公司的 UTP 5 类无屏蔽双绞线。具体细节在程序介绍中说明。 
+
+图1 网络结构框图
+5 与全国海关的广域网的连接及 EDI 电子报关 
+　　海关卫星以海关总署为中心，通过遍布全国的 PES 小站与总署的主站相连，是一个全国范围内的海关系统综合宽带信息网。此网与全国光缆传输网互为备份，形成天空、 陆地的交叉覆盖网，实现全国海关系统的连网。 
+　　银川海关还开通了异地申报业务， 允许报关单位通过电子邮件进行异地远程申报。程序实现如图 3 中 Client 部分所示。即各报关单位与银川海关之间的数据通信是通过 PSTN 进行的。 
+作者单位：西江大学数计系，广东 526061

@@ -1,0 +1,60 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1999年 第14卷 第3期 Vol.14 No.3 1999
+
+
+
+发动机叶片无损检测的可靠性
+刘登第　傅惠民
+　　【摘要】　提出了一种发动机叶片无损检测可靠性分析方法，利用该方法可以有效地提高叶片中裂纹（缺陷）的检出概率（POD），并能对裂纹的漏检概率（POM）进行准确地评估和控制，使因叶片裂纹漏检而引起发动机故障的可能性降至最低程度，从而确保发动机的安全运行；该方法简单方便，易于工程实施和应用。
+　　主题词：航空发动机　叶片　无损检验　缺陷　可靠性
+　　分类号：TB114.3
+RELIABILITY OF ENGINE BLADE NONDESTRUCTIVE TESTING
+Liu Dengdi and Fu Huimin
+（5th Dept.Beijing University of Aeronautics and Astronautics,Beijing　100083）
+　　ABSTRACT　　The attention has focused on quantifying the capability of nondestructive testing (NDT) system for guaranteeing structural safety through damage tolerance analysis.A method of reliability assessment for engine blades NDT is presented,which can determine exactly the probability of flaw detection（POD）and assess the probability of flaws missed（POM）in the engine blades,as well as control the largest size of the flaws missed at inspections with high probability of flaw detection and confidence level.This method also raises the flaw detection probability and prevents the flight accidents caused by the missed flaws in engine blades.
+　　Key　Words　Aircraft engine　Blades　Nondestructive tests　Flaw　Reliability
+1　引　言
+　　叶片中裂纹(缺陷)漏检是导致发动机损坏的主要原因之一。由4个直径d0为Φ4 mm的喷嘴，沿与转子旋转方向相反的切线方向，以U2＝52 m／s的速度向密封腔中喷入气流。近几年来，尽管无损检测技术有了很大发展，但是不同检测人员对同一裂纹进行检测时，得到的结果仍然存在较大差异，并不能百分之百地检测出结构材料中大于规定尺寸的裂纹。
+　　到目前为止，转子密封系统流体激振的机理尚不十分清楚，它与油膜振荡一起，被认为是二十一世纪的关键技术之一。转子在临界转速时的数值模拟结果为：圆盘振动的峰―峰值为1.0×10-3 m，如图2。
+2　发动机叶片的无损检测可靠性评估
+2.1　发动机叶片裂纹（缺陷）漏检概率(POM)曲线的确定
+　　发动机结构中的叶片缺陷漏检概率（POM）曲线的确定，是研究发动机叶片无损检测可靠性的基础，如何准确地对它们进行测定是问题的关键。对某转子密封系统的计算及其与实验数据的对比，证实了本文方法的有效性，为在工程实际中推广反旋流技术提供了一些理论依据。
+2.2　发动机单个叶片无损检测的可靠性
+　　当采用第j种检测设备对第i级的一个叶片进行一次检测时，其大于规定尺寸的裂纹漏检概率Pij可由式（1）求得，当独立检测K次时，裂纹的漏检概率为：P1=PKij。若用q种不同的检测仪器分别进行Kj次独立检测时，那么该叶片的漏检概率P1为：
+　(2)
+Kj是第j种检测仪器的独立检测次数，j=1，…，2，q。如果叶片按损伤容限设计原则设计，那么当规定的裂纹尺寸取aNDT时，可取Pij=10%，式（2）成为：
+　(3)
+2.3　发动机某一级叶片的无损检测可靠性
+　　设发动机第i级共有n个叶片，对其全部进行无损探伤后，如果每个叶片的裂纹（缺陷）漏检概率相同，则该级叶片中大于规定尺寸的裂纹漏检概率P2i由下式计算：
+P2i＝1-(1-P1)n　(4)
+式中P1由式（2）确定。如果叶片按损伤容限设计原则，那么P1由式（3）确定，即有：
+　(5)
+式中i=1，2，…，n；j=1，2，…，q。
+　　主题词：转子　密封　非线性振动　数据模拟
+　　分类号：O322　TH113.1
+NUMERICAL SIMULATION OF ANTI-SWIRL ARRANGEMENTS FOR SUPPRESSING ROTOR/SEAL INSTABILITY
+He Lidong
+(№703 Research Institute of China Shipbuilding Co.，Нarbin　150036)
+　　ABSTRACT　　A nonlinear oscillator model，which is usually used to study the dynamic characteristics of structures in flow，has been applied to the nonlinear dynamic characteristics of rotor／seal system.Emphasis is put on the effects of the nonlinear unsteady flow in the small clearance on the rotor dynamic characteristics.The mechanism of anti-swirl arrangements for suppressing rotor／seal instability is considered.The comparison between the theoretical and experimental results of a rotor／seal system is in a reasonable agreement and shows that this method provides a theoretical basis　for application of anti－swirl technique to engineering practices.
+　　Key　Words　Rotors　Sealing　Nonlinear vibration　Numerical simulation
+1　前　言
+　　随着透平机械负荷、转速及效率等参数的提高，密封流体激振导致转子失稳的问题，已引起广泛的关注。
+　　对图1所示的转子密封系统，转子的横向振动方程为：
+　(1)
+式中：x为轮盘的横向振动位移，ξ为转子的阻尼比系数，ωn为转子的第一阶固有角频率，m0为轮盘的质量，D和L分别为轮盘的平均直径和宽度，ρ为密封中流体的密度，U0为密封流体的平均周向速度，e为轮盘质心偏心距，Ω为转子角速度，CL为作用在转子上的流体动力系数。因此，检测人员可以通过最佳独立检测次数和检测设备的不同组合来控制缺陷漏检概率。不含密封流体阻尼的转子系统阻尼比ξ为0.01。
+　　若当K1=K2=…=Kq=K时，上式变为：
+　(11)
+　　如果叶片按损伤容限设计原则进行设计，当规定的裂纹尺寸取aNDT时，可取Pij=10%，此时式（11）成为：
+　(12)
+如果计算出的K值不为整数时，可取大于它的最小整数为最佳独立检测次数。但密封的流体阻尼是非线性的，是最难确定的一个参数。ωs为流场脉动主频率。解得x后，代入式（14），即可得到每级叶片应该控制的裂纹漏检概率P*2i；再代入式（13），即可得到每个叶片应该控制的裂纹漏检概率P*1i；然后由式（9）～式（11）求得与每个叶片相对应的无损探伤次数，这样就可以通过增加对每个叶片的独立检测次数和不同探伤仪器之间的不同组合，保证该发动机所有叶片中大于规定尺寸的裂纹（缺陷）的漏检概率低于P*3。该方法的思想是把流体与其中的振动物体，视为一个整体系统，利用描述物体振动和非定常流脉动的非线性数学模型，建立起流动和物体运动参数之间的关系，对方程求解或数值计算，达到了解其总体流动特性和物体受力状态的目的。
+作者简介：刘登第衬小33岁　博士生　北京航空航天大学飞行器设计与应用力学系
+作者单位：北京航空航天大学
+参考文献
+　1　傅惠民，钱若力.无损检测可靠性与寿命控制方法.航空动力报学报，1994，9(3)：227-232
+　2　刘登第，傅惠民等.一种新的数据融合方法.中国安全科学学报，1998，8(6)：1-4
+　3　Gallagher J P，et al.USAF Damage Tolerant Design Handbook.MIL-A-83444,1984
+　4　Berns A P,Hovey P W.Flaw Detection Criteria.AFWAL-TR-84-4022,1984
+　5　Lewis W H, et al. Reliability of Nondestructive Inspections (Final Report). SA-ALC/MME 76-6-38-1,USAF,1978
+　6　Simola K,Pulkkinen U.Models for Nondestructive Inspection Data.Reliability Engineering and System Safety.1998,60：1-12
+1999年3月收稿；1999年5月收到修改稿。

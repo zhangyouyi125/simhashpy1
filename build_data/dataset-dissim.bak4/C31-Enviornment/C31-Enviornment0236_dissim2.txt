@@ -1,0 +1,123 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第2期 No.2 Vol.18 1998
+科技期刊
+
+吉林省主要河流指定标准功能可达性分析
+田　卫　俞穆清　王国平　(中国科学院长春地理研究所，长春 130021)
+郭传新　（吉林省环境监测中心站，长春 130011）
+文　摘　根据吉林省地方标准规定的河流水域功能类别和1995年水质监测结果，采用水质单项标准指数法，对吉林省主要河流34个国控和省控监测断面的单项指标、全指标、有机污染型指标和重金属污染型指标进行了功能评价。结果表明， 仅有6个监测断面满足指定的标准功能要求，符合率仅为17. 6 ％，主要超标污染物是CODMn和挥发酚。以COD为控制指标，根据逆推法的河流水环境容量模式，计算了污水达标排放情况下的污水允许排放量，从而对河流控制断面指定的标准功能进行了可达性分析。结果表明，污水达标排放时，河流流量较大、污径比较小的河流可达到指定标准功能要求；而枯水期流量较小、污径比较大的河流很难达到，应实施重点污染物的排放总量控制制度。
+关键词　河流功能评价　污水允许排放量　标准可达性
+The appointed standard functional achievability analysis of the main rivers in Jilin Province.Tian Wei，Yu Muqing,Wang Guoping(Changchun Institute of Geography, Chinese Academy of Sciences,Changchun 130021);Guo Chuanxin(Environmental Monitoring Center of Jilin Province, Changchun 130011).China Environmental Science.1998,18(2):180～183
+Abstract―On the basis of the river water functional sorts appointed by the local standards of Jilin Province and the water monitoring results in 1995,we adopted the method of water single standard index to carry out the functional assessment on the single index, the total index, the organic-polluted index, and the heavy metal-polluted index of 34 monitoring sections(controlled by the country and the province)in the main rivers in Jilin Province. The results indicate that only 6 monitoring sections meet the appointed standard functional requirement with coincidence only 17.6%;and the major standard exceeded pollutants are CODMn and volatile phnoel.Using COD as control index, according to the river water environmental capacity model of converse inference method,this paper calculated the permited discharge capacity of the standard reached wastewater;and analysised the appointed standard functional achievability of the river controlled sections. The results indicate that: when the wastewater is discharged at small rate and meets the standards,and the rivers have large flow,it could reach the appoint standard function; but the rivers with small flow are difficult to reach during low water periods and thus the total quantity control system of the major pollutants discharged should be put into effect.
+Key words:river functional assessment　permited discharge capacity of the wastewater　standard achievability
+　　目前，我国的水污染从总体上正继续呈恶化趋势，由点源小范围污染发展成为较大区域范围的污染，由个别河段和岸边带污染发展到流域污染。
+1.1.2　PSB菌种　山西大学光合细菌研究室提供，从20多株PSB中选取高效10株菌株合理搭配而成，名录如下:球形红杆菌(Rhodobacter sphaeroide ATCC 17023);深红红螺菌(Rhodospirillum rubrum ATCC 11170);沼泽红假单胞菌(Rhodopseudomonas palustris ATCC 17001)；深红红螺菌(Rhodospirillum rubrum 菌株 8)；沼泽红假单胞菌(Rhodopseudomonas palustris 菌株 18,37);球形红杆菌(Rhodobacter sphaeroide菌株55);荚膜红杆菌(Rhodobacter capsulatus菌株48)；酒色着色菌(Chromatium vinosum 菌株 S)；泥生绿菌(Chlorobium limicola 菌株 N)；着色菌(Chromatium sp. 菌株 52)
+1.1.3　工艺流程见图1
+1.2　废液来源及主要指标
+　　废液来源于糖厂酒精车间蒸馏后的外排液，工业上称废醪液，主要指标见表1。《国务院关于环境保护若干问题的规定》中要求，到2000年，直辖市及省会城市的地面水环境质量，按功能分区达到国家规定的标准。
+表3　处理系统中PSB数量及优势度
+Table 3　The quantity of PSB and dominant level
+
+取样异养菌数
+(个/mL) 光合细菌菌数 
+(个/mL) 优势度 
+(%) 
+PSB1#罐 5.24×106 1.40×10896.4 
+PSB2#罐 2.04×107 3.74×108 94.8 
+PSB3#罐 1.78×107 1.26×109 98.6 
+PSB4#罐 0.97×107 3.45×109 99.7 
+成品罐　 1.44×107 5.60×10９ 99.7 
+
+2.3　CODCr/BOD5的变化情况
+　　从表3可以看出，厌氧罐可溶化处理后，CODCr/BOD5下降，随着PSB 1#2#3#4#罐处理，该比值逐渐升高，说明经厌氧罐可溶化处理后，废醪液被降解，生成大量小分子有机物质，为PSB提供了丰富的营养物质。
+　　作者采用目前通用的单项标准指数法对吉林省境内主要河流中34个国控和省控断面的水质进行了较全面科学的功能评价，并根据流域特征及达标排放下的污水允许排放量，对河流的指定标准功能进行了定量的可达性分析。提出应根据水环境容量，对枯水期不能达标的河流进行季节性功能区划分；对集中式生活饮用水水源地，应充分考虑农业面源和水土流失的影响；对污染物达标排放仍不能达到指定标准功能的河流，应实施重点污染物排放的总量控制制度。这对于河流水域功能合理确定和区划研究有一定的指导作用，并为将来逐步实施水环境容量总量控制提供了重要参考依据。
+1　河流及断面概况
+　　吉林省境内有松花江、辽河、图们江、鸭绿江及绥芬河5个水系，其中松花江和辽河两个水系的流域面积占全省总面积的78%，图们江和鸭绿江占全省总面积的20%。
+表2　废醪液经UASB-PSB法处理效率
+Table.2　Treatment efficiency of wastewater by the UASB-PSB system
+
+项　目CODCr　COD去除率 BOD5BOD5去除率 CODCr/BOD5TVA TVA利用 NH3-N NH3-N 利DO 
+pH值 
+　(mg/L)(％)(mg/L) (％) 　(mg/L)率 (％)(mg/L)用率(%)(mg/L)
+废醪液　 90956 　62812　1.45 1879　129 
+厌氧罐　2126676.62 15201 75.80 1.40 7481　1885
+PSB1#罐8390 90.87 5466 91.30 1.54 4740 36.6 812 56.9 0.1 6.8～7.2
+PSB2#罐 6903 92.41 3982 93.66 1.73 3895 47.9 610 67.6 0.27.0～7.6
+PSB3#罐 5657 93.70 303295.17 1.87 2891 61.4 464 75.4 0.2 7.2～7.4
+PSB4#罐 4248 95.33 2439 96.12 1.74 2348 68.6 420 77.7 0.3 7.2～7.4
+
+　　　　　　
+图2　CODCr去除率变化曲线　　　　　　　图3　BOD5去除率变化曲线
+Fig.2　Theremoval rate of CODCr　　　　　　Fig.3　Theremoval rate of BOD5
+1.总去除率　2.进水CODCr　3.出水CODCr　　　1.总去除率　2.进水BOD5　3.出水BOD5
+　　除个别特殊情况外，废醪液经处理，CODCr和BOD5去除率高，分别可达95.33％和96.12％。
+　　目前还没有经济适用的废糖蜜酒精发酵废液净化处理技术。
+关键词　光合细菌　厌氧可溶化发酵法　糖蜜酒精废液　优势度
+A pilot test on the treatment of sugar-syrup alcohol ferment wastewater with photosynthetic bacteria. Fan Lingwen,Zhang Zhaoming,Zhang Deyong,Yang Suping(Department of Life Science,Shanxi University,Taiyuan 030006).China Environmental Science.1998,18(2):173～175
+Abstract―In this paper,the UASB anaerobic ferment and PSB(photosynthetic bacteria) 4-stage system method to treat sugar-syrup alcohol wastewater are used.The removal of CODCr and BOD5can reach to the rate more than 95.33％ and 96.12％respectively.After the treatment, the solution of PSB can be used in many fields.
+Key words:PSB　UASB　sugar-syrup alcohol wastewater　dominant level
+　　糖蜜酒精废液是制糖工业中残留物废糖蜜进行酒精发酵后产生的酱酒色浓稠的废液,其CODCr高达10余万mg/L，含有大量酵母菌体，成分复杂，严重污染环境。 单指标：对i＝1（1－DO），P1≥1时，满足；否则不满足。对i≠1，Pi≤1 时，满足；否则不满足。有机污染型指标满足条件是：P1≥1，Pi≤1（i＝2，3，…… 6）。
+2.2　菌数和优势度
+　　PSB在处理系统中的数量和优势度见表3。 全指标满足条件是：P1≥1，Pi≤1（i＝2，3，…… 14）。
+　　各河流断面指定的标准功能类别，根据吉林省地方标准 DB22/60－92《吉林省主要江河水域功能分类》来确定。
+4　河流水质指定标准功能评价结果
+　　1995年水质监测结果及水质功能评价结果表明，34个国（省）控制断面中，仅有松花江干流泔水缸、鸭绿江干流云峰、集安和太平江口、浑江大阳岔、图们江崇善6个断面全指标和有机污染型指标符合指定的功能标准要求，符合率仅为17.6％，而不符合达83.4％。重金属型指标符合率为94.1％，超标断面是浑江干流水文站和弯弯川两个断面。松花江、东辽河、伊通河3条河流的对照断面已不能满足规定的标准功能标准要求；15 个控制断面中仅有松花江泔水缸和鸭绿江集安两个控制断面符合规定标准；13个削减断面中仅有鸭绿江太平1个断面符合规定标准。27个断面CODMn超标，13个断面挥发酚超标。浑江干流通化段水文站和弯弯川两个断面的重金属型指标Cr+6超标。
+5　河流水质标准功能可达性分析
+5.1　对照断面指定水质标准功能可达性分析
+　　河流对照断面石油类和挥发酚不符合地面水Ⅱ类标准的主要原因是分析方法问题，即其规定分析检测方法的最低检出限，达不到基准要求。丰满和新立城水库以上流域除有工业废水和城镇生活污水污染源外,农田占流域面积的一半以上。经验表明，丰水期近一半的水环境问题由非点源造成〔2〕。上述3个断面丰、平水期CODMn 浓度明显高于枯水期，这说明CODMn超标主要是农田面源和水土流失造成，而我国目前还很难对面源进行具体有效的管理和治理，因此，流域以上分布有大面积农田的丰满、新立城、辽河源3个对照断面不能满足指定的标准功能要求。图们江、鸭绿江、浑江3条河流对照断面以上河段均属源头区，流经地域为山区，既没有污染源，也没有农田，符合指定水质标准功能要求。
+5.2　控制断面规定的水质功能标准可达性分析
+　　目前，吉林省工业废水处理率不到30％，由于大量工业废水和生活污水未得到有效治理，超标排放，致使河流水质受到较严重的污染，不能满足规定的水质功能标准要求。控制断面超标主要污染物是CODMn和挥发酚，浑江水文站断面六价铬超标。目前大部分企业对含酚废水未进行有效治理。超标排放，这是造成江河控制断面挥发酚超标的主要原因。由于吉林省含酚废水排放量较小，因此只要含酚废水达标排放，经河流稀释和自净后，控制断面挥发酚浓度将会符合地面水Ⅲ类和Ⅳ类标准。为提高PSB在处理系统中的优势度，采取两个措施：(1)菌种的选择。
+　　以COD为控制指标，河流水质模型选用一维稳态衰减模式，当控制断面水质符合指定标准时，污水允许排放量计算公式如下：
+q允＝8.64*Qh*（Cs*ekx/u－Ch）/（Cp－Cs*ekx/u）　(1)
+式中：q允为污水允许排放量(104 m3/d)；Qh为河流流量(m3/s)，取各水期90％保证率下的设计流量；Cs为控制断面指定类别标准值(mg/L)；Ch为对照断面COD浓度(mg/L)；k为COD削减系数(1/d)；x为排污口至控制断面的河段距离(km)；u为河流流速(km/d)；Cp为污水中COD排放浓度(mg/L)。
+　　主要河流的有关参数〔3〕及以COD为控制指标、污水达标排放量时污水允许排放量计算结果见表1。 由于丰水期河流流量及环境容量较大，故只考虑平水期和枯水期。没有考虑辉发河、东辽河、鸭绿江的自净容量。q实为区域1995年工业废水和生活污水实际排放量。
+表1　污水达标排放时污水允许排放量计算结果
+Table 1　The calculated results of the permited discharge
+capacity of the reaching standards wastewater
+
+河流控制　
+断面名称　水期 Qh
+(m3/s)u
+(km/d)x
+(km)Ch
+(mg/L)CS
+(mg/L)Cp
+(mg/L) k
+(1/d)q允
+(104 m3/d)q实
+(104 m3/d)q实/q允污径比
+(%)
+松花江干流枯水期112 43.215 12 20 1000.06102.41201.2 12.4
+九站　　　平水期350 82.015 16 20 1000.15173.4 吉林市 0.7 4.0
+伊通河　　 枯水期1.07 34.5 513 201000.2550.9 26.529.4 286.6
+杨家崴子　 平水期2.05 47.5 5 1520 1000.3601.30 长春市 20.5149.6
+浑江　　　 枯水期1.70 7.06 1020 1000.6405.5 15.0 2.7 102.1
+七道江　　 平水期3.00 14.9 6 12 20 1001.07617.1 白山市 0.9 57.8
+浑江　　　枯水期3.60 15.010 1320 1000.5246.7 18.0 2.7 57.9
+水文站　　 平水期12.89 21.610 15 20 100 0.70619.6 通化市 0.916.2
+图们江　　 枯水期6.27 25.8 37 15 20 3500.25　 2.39.8 4.3 18.1
+图们　　　 平水期16.53 42.3 37 15 20 3500.48 　6.9 开山屯镇 1.46.9
+图们江　　 枯水期7.52 15.832 20 20100 0.25　 12.8 2.5 0.2 3.8
+河东　　　 平水期37.02 52.23220 20100 0.45 　27.6 图们市 0.1 0.8
+嘎呀河　　 枯水期0.303.0 810 20 3500.25　 0.3 8.2 27.3 316.4
+八叶桥　　 平水期8.10 15.1812 20 3500.50　3.0 石砚镇 2.7 11.7
+辉发河　　 枯水期1.07-- 10 15 100 0 0.66.0 10.0 64.9
+沙金　　　 平水期18.30 - - 10 15 100 0 9.3辉南县和桦甸市0.7 4.4
+东辽河　　 枯水期0.20 - - 10 15 100 0 0.1 2.5 0.2 376.2
+河清　　　 平水期6.86 -- 1015 100 0 3.5 辽源市 0.111.0
+鸭绿江　　 枯水期8.53 - - 10 15 100 04.3 8.2 27.3 5.4
+集安　　　 平水期92.50- -10 15 100 0 47.0集安市和临江镇 2.7 0.5
+
+　　根据表1的计算结果，在污水达标排放时，只要严格控制吉林市的污水排放量，适当进行深度处理后再回用，可确保松花江九站控制断面符合指定标准；污径比较大的河流，如伊通河、嘎呀河、东辽河，其接纳的污水量大大超过允许排放量，很难保证控制断面符合指定标准功能要求。辉南县和桦甸市及白山市、通化市的现状污水量已超过其枯水期允许排放量的9倍和近2倍，因此，辉发河和浑江枯水期不能满足指定标准功能要求。吉林省两个最主要工业废水污染源―开山屯化学纤维浆厂和石砚造纸厂目前正在筹建污水处理厂，届时，废水中COD排放浓度可达到350mg/L ，但此时，污水量仍大大超过允许排放量。图们市污水允许排放量是假定图们江和嘎呀河流入图们江时符合Ⅳ类标准情况下计算的，由于开山屯镇和石砚镇污水量远大于允许排放量，不能确保图们市的对照断面符合Ⅳ类标准，因此，图们江很难符合指定标准功能的要求。
+3.2　废液经该法处理后逐步转变成含有大量PSB的菌液，即可以作饲料添加剂又可以作菌肥直接使用，不会造成二次污染，同时还具有很好的经济效益。2000～2010年嫩江汇入松花江之前的月亮泡和泔水缸两个控制断面水质将会符合地面水Ⅲ类标准〔4〕。
+6　结论
+　　1995年吉林省主要河流34个国（省）控制断面中的28个断面不能满足指定标准功能要求，不符合率高达82.4％。超标主要污染物是CODMn和挥发酚。 受农业面源及水土流失的影响，松花江吉林市区和伊通河长春市区对照断面（集中式生活饮用水水源地）不能满足规定的地面水Ⅱ类标准功能要求。作者在小试研究的基础上采用厌氧可溶化发酵-光合细菌（UASB-PSB）四级反应槽法处理大同糖厂糖蜜酒精发酵废液，CODCr去除率可达94％以上，且处理后废液中光合细菌浓度可达107～108个/mL，既可作饲料添加剂又可作为菌肥使用〔3〕。对于枯水期不能满足指定标准的河流，如浑江、辉发河等，应进行季节性功能区划分。对实现水污染物达标排放仍不能达到指定标准功能的河流，如伊通河、图们江、嘎呀河、东辽河等，应实施重点污染物排放的总量控制制度。
+参考文献
+1　孙海东.中国环境报，1996，5，16 (1)
+2　傅国伟，郭京菲，陈　刚．中国环境科学，1997，17(1)：1～5
+3　李蕴博．环境科学，1990，(3)：5～12
+4　王本琳，朱颜明，肖笃宁编著．东北区“北水南调”工程对资源开发、经济发展和生态环境的影响．北京：科学出版社，1995．199～204
+作者简介
+田　卫　男，1962年11月生。现任环境研究评价中心副主任，高级工程师。1985年毕业于南开大学环境科学系，主要从事水环境研究和环境评价工作。成品罐光照厌氧培养其它条件同上。发表论文6篇。
+收稿日期：1997-05-08

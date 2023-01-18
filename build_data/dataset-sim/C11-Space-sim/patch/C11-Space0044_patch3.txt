@@ -1,0 +1,141 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+用于电场探头校准的一种新设备―
+吉赫横电磁波传输室(GTEM小室)
+张勇军
+　　摘　要　介绍了近年来在电磁兼容性测量及场强测量领域已经广泛应用的吉赫横电磁波传输室(GTEM小室)。提出了将其用于校准电场探头的条件和方法。
+　　关键词　吉赫横电磁室(GTEM小室)　校准　电磁兼容性　电场探头
+A New Equipment for Calibrating Electric Field Probe―GTEM Cell
+Zhang Yongjun
+　　Abstract　The GTEM cell widely used for measuring the electromagnetic compatibility and field strength recent years is introduced in this paper.The condition and method of using the cell for calibrating the electric field probe are proposed.
+　　Key words　GTEM cell,Calibration,Electromagnetic compatibility,Electric field probe
+
+　　引言
+　　吉赫横电磁波小室(GTEM小室)自从1987年由瑞典人D.Konigstein和D.Hansen发明以来，立即引起了世界各国的重视，得到了蓬勃的发展。这两种威胁是
+相互关联的,飞行任务规划需要在减少坠毁概率的高飞与减小被摧毁概率的低
+飞之间进行折衷。此后，世界各相关专业的大公司纷纷推出自己的GTEM小室，大到可以开进汽车，小到可以像手提箱随身携带；频率高端可达20 GHz，低端可达几个Hz，形成了系列化产品。由于准确度高、使用方便、造价低廉，在从民用到军用极其广泛的范围内，已经成为电磁兼容性测量的一种重要设备；但是，由于GTEM小室形状复杂，理论分析困难，所以，在准确度要求较高的计量校准领域的应用进展相对迟缓。
+若Pfa=10-6，参考单元总数R=M+N=32，表1给出了MOSCM的部分门限参数T和
+ADT的值。
+1　电场探头校准的传统方法
+　　电场探头是电磁兼容性测量中用于测量频率50 MHz以上的电场强度的重要传感器，它实际上是一种小型的三维极化电磁波接收天线。地形可飞性分析就是根据碰地概率的大小、飞行器升限和指定的禁飞
+区,将战区划分为一系列的可飞和不可飞区域。
+　　在电磁兼容性测量和校准中，为了避开各种电磁干扰，得到较精确的标准场，对场地或设施的要求很高。一般采用的场地或设施有开阔场、吸波暗室、TEM小室等。
+
+主题词  雷达  检测  恒虚警率   有序统计
+　
+A ROBUST CFAR DETECTOR WITH AUTOMATIC
+CENSORING TECHNIQUE
+He You Meng Xiangwei
+(Naval Aeronautical Engineering Academy*Yantai*264001)
+Abstract  In this paper a new CFAR detector(MOSCM)based on order statistics(OS)and 
+censored mean(CM)is proposed.It selects the mean value of OS and CM local estimations 
+as a globle noise power estimation for the detector,and it also uses the automatic censoring 
+technique proposed You He［5］.Under SwerlingⅡ assumption,the analytic expression 
+of Pfa,Pd and ADT of MOSCM are derived.By comparison with other schemes,the results 
+show that MOSCM-CFAR detector has an adaptability for both homogeneous background 
+and nonhomogeneous background caused by multiple interfering targets,particularly in 
+multiple target situations,it exhibits good robustness,the detection performance is improved,
+and its sample sorting time is less than half of that of OS,CM.
+
+Key words  Radar  Detection  CFAR  Order statistics
+
+1  前言
+
+　　雷达在噪声和其它干扰背景下检测目标，总是希望无论干扰电平如何变
+化，检测系统的虚警概率最好能维持不变，即使变化，也希望变化较小，这
+就需要采用恒虚警率(CFAR)处理技术。在飞行器进入威胁区域时提高飞行速度,给敌防空系统留下的
+反应时间越短,敌人进行拦截的难度越大,从而提高突防性能。这两种场地功能齐全，但是都存在着造价极其昂贵的缺点。对于电场探头这样小型仪器的校准，用不着开阔场和吸波暗室这种昂贵的大空间场地设施。70年代出现的TEM小室克服了造价昂贵的缺点，可以使用较小的输入功率产生较大场强的标准场，尽管可用空间小，用于校准电场探头是完全可以的；但是TEM小室上限使用频率一般为500 MHz，从而限制了它在高频电场探头校准中的应用。
+　　GTEM小室由于上限使用频率高、造价较低等优点，在电磁兼容性测量领域得到了广泛的应用，同时人们又把目光转向了用GTEM小室进行校准方面，国外早在90年代初就已经把GTEM小室作为产生标准场装置使用。
+2　GTEM小室用于电场探头校准
+　　GTEM小室实际上是一个变形同轴线。从ADT的结果来看，MOSCM检测器在均匀背景中的性能是比较好的，
+例如，OS在R=32、k=27时的ADT最优值为19.025，GOSCA在M=N=16,k=l=14时
+的ADT最优值为18.919，而MOSCM在M=20,N=12,k=16,r=2时的ADT值为18.902。
+
+　　每一知识源作为一独立的进程在计算机上执行,有一个专用的窗口,知识
+源之间的协作由分布式黑板来实现。从表2中的结果可以看出，随着干扰目标的增多，MOSCM检测
+器的恒虚警损失比OS和GOSCA增长得缓慢，这也就是说它对干扰目标呈现出
+较好的鲁棒性，MOSCM检测器在均匀背景中的恒虚警损失比GOSCA小，在多
+目标情况下从总体上讲也是优于GOSCA的。
+文献［6］提出了基于有序统计(OS)和单元平均(CA)的恒虚警检测器(MOSCA)，
+但因检测概率Pd通常小于1，仍会有干扰目标进入后沿滑窗，会导致MOSCA的
+检测性能恶化。这样，从低频端到高频端都能将输入端传来的电磁波良好地吸收掉，从而在传输室内形成横电磁波(TEM电磁波)。
+　　GTEM小室由于形状复杂，直接从电磁场方程中解出其内部的场分布几乎是不可能的。直到90年代中期，利用计算机解法才得出了GTEM小室中的横截面的电磁场分布(如图2)，从而为GTEM小室用于校准打下了理论基础。在均匀背景中，检测单元变量v和
+参考单元变量xi、yj(i∈，j∈)是统计独立和同分布的随机变量，它们的概
+率密度函数(pdf)和概率分布函数(cdf)分别为
+f(x)=e-x　　　　x＞0
+(3)
+F(x)=1-e-x
+(4)
+MOSCM的前沿滑窗采用OS方法估计杂波功率水平，它先对参考单元的样本按幅
+值大小排序，然后选取第k个样本作为前沿滑窗对杂波功率水平的局部估计
+X=x(k)
+(5)
+它的pdf为
+
+(6)
+后沿滑窗采用CM方法估计杂波功率水平，先筛除掉最大的r个样本，
+对剩下的(N-r)个样本求平均，作为后沿滑窗对杂波功率水平的局部估计
+
+(7)
+r≠0时，Y的pdf为［7］
+
+(8)
+其中
+
+(9)
+MOSCM检测器取两个局部估计的均值作为检测器对杂波功率水平的估
+计，可将均值的因子1／2归并到门限参数中去，故有
+Z=X+Y
+(10)
+Z的pdf为
+
+(11)
+3  MOSCM-CFAR检测器在均匀背景中的性能分析
+
+    设置门限的统计量Z是随机变量，检测器的性能由平均检测概率和平均虚警
+概率决定［3］，平均虚警概率和平均检测概率分别为
+
+(12)
+计算Pfa和Pd的关键就在于求fZ(z)的拉氏变换ΦZ(u)由式(11)，得
+ΦZ(u)=ΦX(u)ΦY(u)
+(13)
+其中Φx(u)、Φy(u)分别是fx(x)、fy(x)的拉氏变换，有
+
+(14)
+由(12)式和(13)式，可得MOSCM检测器的平均虚警概率和平均检测概
+率分别为
+
+(15)
+(16)
+在均匀背景下，平均判决门限ADT常用来比较不同CFAR检测器的检
+测性能，可得MOSCM检测器的平均判决门限ADT［1］的解析表达式
+
+(17)
+　　在均匀背景中，对于任意给定的Pfa，解式(16)可得MOSCM的门限参数T。3 dB区称为测试区，1 dB区称为高准确区。一般电磁兼容性测量是在测试区进行的，高准确区则可以用于校准，校准框图如图3所示。
+
+图　2
+
+图　3
+　　鉴于被测物对小室内电磁场存在扰动现象，所以军标规定被测物位置不超过中板到上或下底板间距的78％，被测物的尺寸不超过测试区尺寸的1／3，这一要求一方面保证了被测物位于测试区内，另一方面兼顾了放置被测物后对场的扰动，以确保测量精度。
+　　电场探头作为电场强度的接收装置，其主要特性包括准确度和全向性。在一般的电磁兼容性测量中要求的准确度是3 dB，所以在GTEM小室中的1 dB高准确区内是完全可以达到校准所要求的1／3原则的。由于无人飞行器的飞行
+区域基本上被敌人防御系统所覆盖,为最大限度地减少被敌方雷达发现的概率,
+它需要作超低空地形跟踪/地形回避(TF/TA)飞行,因此飞行任务规划需要在
+各种因素之间进行仔细权衡。表2给出了在SwerlingⅡ型目标条件下，几种检测器出现多目
+标时的CFAR损失。国家计量检定规程中要求使用TEM小室校准电场探头时，小室的阻抗及误差是(50+0-0.2)Ω，就是对这一特性的要求。根据有关文献，只要GTEM小室的电压驻波比VSWR≤1.2，就可以保证小室内部场的TEM性质达到校准所需要的高准确度要求。由于INS存在漂移误差,
+为精确到达目标,INS需要辅以地形匹配制导系统(TERCOM)和数字景象匹配
+制导系统(DSMAC)进行定期修正。实际上，考虑到被测物对场的扰动，一方面被校探头体积要小于或等于高准确度区域体积；另一方面，小室内只能放置探头，使用高阻线，最好是光纤将其连接到小室外部的显示部分，同时，探头一定要放置在木制或电磁透明的支架上。分别沿着三维空间相互垂直的三个方向放置被校探头，就可以校准其方向性。由于局部黑板与本地K
+S紧密相关,大部分存取操作均发生在本地黑板,减少了通讯开销。
+32岁　男　工程师　读者服务卡索引号： 117
+作者单位：长城计量测试技术研究所，北京市，100095
+参考文献
+　[1]　黄志询、贺涛.GTEM室内场强分布的计算分析.计量学报,1997,(1):63～70
+　[2]　国家军用标准GJB152―86 电磁兼容性Ⅰ
+　[3]　国家计量检定规程JJG561―88 无线电(3)
+　[4]　The Electro-Mechanics Company EMCO ANTEN-
+NAS & ACCESSORIES FOR EMC TESTING
+　[5]　冯桂山.电磁干扰测量系统的校准方法.宇航计测技术,1989,(5):65～73
+1998-11-03收稿

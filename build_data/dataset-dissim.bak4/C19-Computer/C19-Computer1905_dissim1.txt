@@ -1,0 +1,80 @@
+微型机与应用
+WEIXINGJI YU YINGYONG
+2000　Vol.19　No.5　P.31-32
+
+
+
+
+ASP的Session对象在网上购物系统中的应用
+林鹤鸣
+摘 要：ASP是近年来新兴的动态网页设计技术，Session对象在ASP编程技术中占有相当重的份量。二者之间的主要差别是：在这种方式下，标记绑定信息不仅在物理上相邻的交换机中发布，而且也在处于同1个域中的边缘交换机中发布。
+关键词：ASP Session对象 购物网页
+1 网上购物系统基本构架
+　　网上购物是当今Internet应用十分热门的话题。标记交换的简单机制在支持高性能价格比的同时也增强了传输性能。提供可选择的购物分类，让用户进入自己感兴趣的购物区，即购物网页。
+　　（2）购物网页。例如，同1个传送算法既适用于单点发送，又适用于多点发送，1个单点发送的条目只包含1个子条目，而1个多点发送的条目包含1个或多个子条目（对于多点访问链路，输出链路层信息包括多点发送MAC地址）。设有“放入购物袋”按钮，含有“查看购物袋”，“退回所有商品”，及各分类购物网页的连接。
+　　（3）查看购物袋网页。列出用户选择的所有商品，能更改所选某商品的数量，取消选中的某商品。如果使用RSVP以获得一类数据包的QoS，那么必须为每1个RSVP会话分配1个标记。把用户选择的所有商品记录在Session对象中。
+　　（5）退回所有商品程序。清除购物袋内容。
+　　由于ASP（Active Server Pages）的Session是某一连接者所有网页的共同对象，可以用它来记录用户在不同网页上选购的商品。传送部分使用数据包携带的标记信息和标记交换机支持的标记传输信息进行数据包传输。
+2 Session对象在购物网页和购物袋程序中的应用
+　　购物网页的主体是数据表单。可以在数据表单内引入表格，结合复选框形式来展示数据库内各种商品，为方便起见，只列出商品编号、名称、单价、简介。表单设有“放入购物袋”按钮，当按下此按钮时指定服务器端执行放入购物袋程序。放入购物袋程序把在本购物网页所选购的商品编号先放在1个Products数组中，使用以下命令：
+　　Products＝Split （Request （″ProductID″），″，″）
+　　式中Split函数能把所选中的商品编号分割成字符串数组。这种通知可以通过把绑定放在已有的网络层协议之上，或者通过独立的标记发布协议（TDP）来完成。如：
+　　Products（0）＝″1002″，Products（1）＝″1004″，Products（2）＝″1008″
+　　然后把这个数组成员追加到一个总购物字符串变量ProductList中，如下代码：
+　　＜％
+　　　　ProductList＝Session（″ProductList″）　　　　 ′还原Session 
+　　　　　　　　　　　　　　　　　　　　　′（″ProductList″）中内容
+　　　　For I＝0 To Ubound（Products）
+　　　　　If Len（ProductList） ＝ 0 Then
+　　　　　　　ProductList ＝″′″ ＆ ProductID ＆ ″′″ 
+　　　　　ElseIf InStr（ProductList，ProductID）＜＝ 0 Then
+　　　　　　　ProductList＝ProductList ＆ ″，′″ ＆ ProductID ＆ ″′″ 
+　　　　　End If
+　　　　Next
+　　　　Session（″ProductList″）＝ProductList 　　　′将追加好的Pro－
+　　　　　　　　ductList存储于Session（″ProductList″）对象中
+％＞
+　　总购物字符串变量ProductList存放的是用户在各购物网页所选购的商品编号，内容如：
+　　ProductList＝″′2001′，2006′，′1002′，′1004′，′1008′″
+3 Session对象在查看购物袋网页中的应用
+　　查看购物袋网页设计的主要功能是列出用户所选购的商品、能更改所选某商品的数量、取消选中的某商品、统计金额。传送间隙与不依靠传送部分的控制的结合，导致了可以使用新的路由功能去满足日益发展的网络需求。通过把大范围的传输间隙与一个标记结合起来，同一个传送规范可以支持很多路由功能，如基于目标的路由、多点发送、路由知识组织和灵活的路由控制。
+　　（3）利用数据表单引入表格来展示rs中数据记录，表头格式为：
+　　＜TR BGCOLOR＝＃00FFFF＞
+　　＜TD＞取消＜／TD＞＜TD＞商品编号＜／TD＞＜TD＞商品名称＜／TD＞＜TD＞单价＜／TD＞＜TD＞数量＜／TD＞＜TD＞总价＜／TD＞＜TD＞商品简介＜／TD＞＜／TR＞
+　　用以下代码列出rs中所有被选中的商品的记录：
+　　＜％
+　　　　While Not rs．EOF
+　　　　　Quatity＝CInt（Request（″Q＿″ ＆ rs（″ProductID″）） ）
+　　　　　If Quatity ＜＝ 0 Then
+　　　　　　Quatity＝CInt（ Session（rs（″ProductID″）） ）
+　　　　　　If Quatity ＜＝ 0 Then Quatity＝1
+　　　　End If
+　　　　Session（rs（″ProductID″））＝Quatity
+　　　　Sum＝Sum＋CDbl（rs（″Price″））＊ Quatity
+　　％＞
+　　＜TR＞
+　　＜TD Align＝Center＞
+　　＜Input Type＝CheckBox Name＝″ProductID″ Value＝
+　　　　　　　　　″＜％＝rs（″ProductID″）％＞″ Checked＞
+　　＜／TD＞
+　　＜TD＞＜％＝rs（″ProductID″）％＞＜／TD＞
+　　＜TD＞＜％＝rs（″ProductName″）％＞＜／TD＞
+　　＜TD Align＝Right＞＜％＝rs（″Price″）％＞＜／TD＞
+　　＜TD＞＜Input Type＝Text Name＝″＜％＝″Q＿″ ＆ rs（″Pro－
+　　　　ductID″）％＞″ Value＝＜％＝Quatity％＞ Size＝3＞＜／TD＞
+　　＜TD Align＝Right＞＜％＝CDbl（rs（″Price″））Quatity％＞＜／TD＞
+　　＜TD＞＜A HREF＝＜％＝rs（″Link″）％＞＞＜％＝rs（″Description″） 
+　　　　　　　％＞＜／A＞＜／TD＞
+　　＜／TR＞
+　　＜％
+　　　　　rs．MoveNext
+　　　　Wend
+　　％＞
+　　其中HTML代码部分为利用表格列出rs中所有被选中商品的记录。
+　　为了支持基于目的路由的标记交换，1个ATM交换机可能需要多个或1个路由相关的标记（或者是具有同一个下一驿站的1组路由）。而下游指派则由上游的交换机完成。
+林鹤鸣（广州广东省电力工业学校计算中心510520）
+参考文献
+［1］王国荣．Active Server Pages ＆ Web数据库．北京：人民 邮电出版社，1999
+［2］杨内，江南．精品动态网页制作．北京：清华大学出版社，1999
+［3］林金霖．ASP实务经典．北京：中国铁道出版社，1999
+收稿日期：2000－02－10

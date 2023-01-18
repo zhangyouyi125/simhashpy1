@@ -1,0 +1,132 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000 Vol.19 No.3 P.19-20
+
+
+
+32位Windows应用程序的实例检测技术
+高升　邱湘茹　唐世伟　贾文举
+　　摘　要：对32位Windows中的实例检测技术进行了研究,并对各种检测技术进行了对比。
+　　关键词：应用程序实例 实例检测 API函数
+　　多任务操作系统Windows允许用户同时运行多个程序,甚至对1个应用程序,也可以创建它在内存中的多个副本,将每个应用程序的1个内存副本称为实例。当服务器向浏览器返回Web页时,同时将用户在当前服务器上的状态和环境作为1个Cookie写入客户机。在16位Windows应用程序中,通过检测操作系统传送给WinMain函数的第2个参数hPrevInstance,来检测其它实例的存在。WinMain函数在建立窗口函数和进入消息循环之前,检测hPrevInstance的值,若此参数的值为真则说明应用程序的实例已经存在。这一动作由用户对页面的申请触发,且在一定的时间内持续有效。本文以Delphi为工具,对32位Windows中应用程序实例的各种检测技术进行了论述。Cookie内包含其自身的生命期信息,当用户下次重新请求该页面时,浏览器首先检查Cookie是否超出其生命期,若是,忽略Cookie,将对该页面的请求当成第一次请求;若尚未超出生命期,浏览器把Cookie一起提交服务器,以便服务器记忆起用户上次请求时的状态信息。FindWindow有2个参数:窗口类名称和窗口标题,前1个参数就是用API函数RegisterWindow注册窗口时使用的WNDCLASS窗口类的名称,在Delphi中,该参数就是应用程序主窗口的类名称。经过分析用Windows SDK编制的程序,发现第1个实例负责向Windows注册窗口类,其它实例在创建窗口之前,总是要检测窗口类是否已经注册,若没有注册,则说明本次启动是应用程序的第1个实例。因此可以在Delphi的DPR文件中对程序启动做如下控制:
+　　//Test1.DPR
+　　var hWnd:Thandle;
+　　begin
+　　　　　//检测并获取主窗口句柄
+　　　　　HWnd:=FindWindow（
+　　　　　′TMyMainForm′,　//主窗口类名称
+　　　　　′Test App Instance′//标题（可为空）
+　　　　　）;
+　　　　if hWnd=0 then begin
+　　　Application.CreateForm（
+　　　　　　TmyMainForm,
+　　　　　　MyMainForm
+　　　　）;
+　　　Application.Run;
+　　　end;
+　　end.
+　　这个方法在非Delphi IDE环境中可以正常检测到前1个实例（若存在）,并保证只有应用程序的1个实例运行。
+王华火（厦门大学自动化系361005）
+罗键（厦门大学自动化系361005）
+参考文献
+1，Chapman D.Visual Basic 5 Web开发人员指南.北京:机械工业出版社,1998
+2，S．希利尔.Active Server Pages编程指南.北京:宇航出版社,1998
+3，Berlin D.精通CGI编程.北京:清华大学出版社,1998
+4，张林.Cookie的安全性及拒绝方法讨论.微型机与应用,1999;(3)
+收稿日期：1999-09-27
+!而当最后一个用户超时结束会话时,Application_OnEnd激活,清除应用的公共环境,释放占用的服务器资源。而当最后一个用户超时结束会话时,Application_OnEnd激活,清除应用的公共环境,释放占用的服务器资源。窗口枚举函数EnumWindows需要2个参数,第1个参数指向1个实际将要查找的目标窗口与当前所有正在运行的窗口进行匹配操作的回调函数MatchProc的内存地址,第2个参数则用于返回找到的目标窗口的句柄。而在Web中,HTTP事务是随机、独立、不确定的,用户经常在页面间、站点间跳转,浏览器无法保持一致连续性和连接的状态。
+　　//Test2.DPR
+　　var hWnd:Thandle;
+　　begin
+　　　　　hWnd:=0;
+　　　　　EnumWindProc（
+　　　　　　　@MatchProc,
+　　　　　　　LONGINT（@hWnd）
+　　　　　）;
+　　　　　if hWnd=0 then begin
+　　　　　Application.CreateForm（
+　　　　　TMyMainForm,
+　　　　　MyMainForm
+　　　　）;
+　　　　Application.Run;
+　　End.
+　　//进行匹配的回调函数
+　　function MatchProc（
+　　　　　　hWndFromOS:THandle;
+　　　　　　hMatchedWnd:^HWND）;
+　　　　　　bool;
+　　　　　　stdcall;
+　　var str1,str2:string100;
+　　begin
+　　　　Result:=True;
+　　　　//获得窗口类名称
+　　　　GetClassName（
+　　　　　　hWndFromOS,
+　　　　　　PChar（str）,
+　　　　　　100
+　　　）;
+　　　str1:=PChar（str）;
+　　　if str1=′TmyMainForm′ then begin
+　　　　　　//若窗口类名称匹配,则继续比较可执行文件名
+　　　　　　GetModuleFileName（
+　　　　　　　hInstance,
+　　　　　　　PChar（str1）,
+　　　　　　　100
+　　　）;
+　　　str1:=PChar（str1）;
+　　　GetModuleFileName（
+　　　　　GetWindowLong（
+　　　　　　　HWndFromOS,
+　　　　　　　GWL_HINSTANCE
+　　　　　）,
+　　　　　PChar（str2）,
+　　　　　100
+　　　）;
+　　　str2:=PChar（str2）;
+　　　if str1=str2 then begin
+　　　　　hMatchedWnd^:=hWndFromOS;
+　　　　　Result:=False;
+　　　　end;
+　　　end;
+　　end;
+　　上述匹配过程,除了像窗口查找法那样进行窗口类名称比较外,还比较应用程序可执行文件的名称,因而克服了窗口查找法的不足。即使在设计时刻的Delphi IDE环境内,也可以正常工作。
+　　<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+　　SUB    Session_OnStart
+　　　　　Application.Lock
+　　　　　Application（″Counter″）=Application（″Counter″）+1
+　　　　　Application.Unlock
+　　　　　SessionID=Request.Form（″userid″）
+　　　　　Set userConnect=Application（″userConnect″）
+　　　　　SQL=″UPDATE tblUser″
+　　　　　SQL=SQL & ″SET″ & ″userid=″ & Request.Form
+　　　　　　　（″userid″）
+　　　　　SQL=SQL & ″SET″ & ″password=″ & Request.Form
+　　　　　　　（″password″）
+　　　　　SQL=SQL & ″SET″ & ″bookid=″ & Request.Form
+　　　　　　　（″bookid″）
+　　　　　SQL=SQL & ″SET″ & ″logondate=#″ & Date（） 
+　　　　　　　& ″#″
+　　　　　userConnect.Executer（SQL）
+　　　　　Set bookConnect=Application（″bookConnect″）
+　　　　　SQL=″SELECT″ & Request.Form（″bookid″） &
+　　　　　　　″FROM tblBook″
+　　　　　RecordSet=bookConnect.Execute（SQL）
+　　END SUB
+　　</SCRIPT>
+　　3.Session_OnEnd事件
+　　当用户超时时触发,使Application对象的计数器减1,同时删除用户数据库中的相应记录,释放系统资源。
+3 应用举例
+　　以下例子简要说明1个在线阅读服务的HTTP状态管理情况,一些与本文无关的细节没有给出。
+　　<SCTIPT LANGUAGE=VBScript RUNAT=Server>
+　　SUB Application_OnEnd
+　　　　bookConnect.Close
+　　　　userConnect.Close
+    　END SUB
+　　</SCRIPT>
+4 结束语
+　　ASP中Application和Session对象把对HTTP状态的管理集中到服务器端,通过对象和组件的技术,采用事件驱动的方法,使得Web中状态的管理简单、明晰且高效,克服了传统方法的复杂性和不安全性,使得用户的HTTP状态清晰、连续,从而大大改善了Web的性能。
+高升（大庆石油学院计算机科学系151400）
+邱湘茹（大庆石油学院计算机科学系151400）
+唐世伟（大庆石油学院计算机科学系151400）
+贾文举（大庆石油学院计算机科学系151400）
+收稿日期：1999-09-10

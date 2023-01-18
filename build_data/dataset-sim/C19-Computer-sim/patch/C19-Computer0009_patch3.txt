@@ -1,0 +1,117 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+多线程应用程序的同步技术
+冯美霞
+　　摘　要　本文描述了写一个多线程应用程序时，如何控制对全局变量和共享资源的访问。特别是在大量的读写操作且读／写比很大的情况下，如何通过使用复合同步对象使程序性能得到很大提高。本文阐述了一种算法用以实现这种提高。
+　　关键词　线程，共享，同步，同步对象
+SYNCHRONIZATION TECHNIQUE FOR MULTITHREADED APPLICATIONS
+Feng Meixia
+Computer Center of Industry Developing & Training Center, Southeast University, Jiangsu.Nanjing 210018
+　　Abstract　This article describes how to control the access to the global variables and sharedresources when writing a multi-threaded application in Windows 95 or Windows NTenvironment. Especially how to increase performance by using composite synchronizationobject when the ratio of read to write is very high. The article provides an algorithmto achive this.
+　　Keywords　Thread, Share, Synchronization, Synchronization object
+1　前言
+　　随着Windows 95 和 Windows NT 操作系统的流行，32位应用软件开始逐渐普及，运用Win32 API（应用程序界面）来编写32位软件所带来的一个好处，就是可以运用多线程来提高程序的性能。如 EMS/SCADA 系统， RMIS 系统等。因为在软件中的每个线程都有对全局变量，函数内部静态变量，以及其它一些进程相关的资源如文件句柄等的相同的访问权。在网络层协议方面： (1) 华东网调和上海市调的 EMS/SCADA 主机的局域网采用了 DECNet 网，其接入采用 DECNet 协议通过 DECNet 网卡进入通信服务机； (2) 江苏、浙江、安徽的 EMS/SCADA 主机的接入则采用 TCP/IP ； (3) 对于有些老的 SCADA 系统，如江苏省调，其 RTU 主机要通过 SUN 通信服务机的串行口直接入网，所以通信服务软件要支持串行口链路协议。 
+作者单位：何星　施华军　唐亮　方兴其　上海交通大学自动化研究所，上海 200030；
+　　　　　李根蔚　华东电力管理局高度室，上海 200001
+参考文献 
+1 能源部调自 [1992]66 号 . 电网调度自动化信息传输规定 .1992 
+2 华东电网调度系统计算机网络规划 .1995 
+3 电力行业标准 DL476-92. 电力系统实时数据通讯应用层协议 . 1992 
+。
+　　Win32 API提供了许多灵活的同步对象，它们可以使程序能管理对在同一个或不同的进程中的线程之间共享的数据和资源的访问。使用Win32同步对象的优点就是可以不通过串行化线程来控制对资源的访问。但如果同步做得不仔细，性能将因为线程的串行化而下降：它们将被阻塞或不必要的长期等待对共享资源的访问。如果需要重听一段音轨按字母键 "S" 就确定了音轨的开始时间，按字母键 "X" 确定了音轨的结束时间，这时重放按钮自动使能，单击重放然后击播放，该段音轨开始重播。
+2　使用Win32同步对象技术
+2.1　统一的方法：Mutexes
+　　最简单也是最好的控制访问共享资源的方法就是使用单个的Mutex。如果不想使用控件中的按钮，而只是想用 Multimedia MCI 控件的多媒体功能，可将 Visible 和 Enabled 属性设置为 False 。 Pentium 通信服务机采用高性能的 Pentium PC ，操作系统是 Window 95 。于是,当你想控制程序的所有代码时最好让它们在单个进程中。在 Visual Basic 中，应将 MCI Open 命令放到 Form_Load 事件中 ( 执行 MCI.Command="Open") 。人工编辑界面以行列形式表单顺序表示各个节拍，每行表示一个节拍，编辑者随乐曲逐格填入相应的乐曲控制码，在进行控制码编辑时，允许编辑者播放 / 停播乐曲以利于构思。
+关键词：音乐喷泉；造型码；分级控制；实时仿真
+The Visual Design and Real-time Emulation of Music Spring System
+Chen Yimin,Liu Yunchao,Chen Lin,Li Yuan
+(School of Computer Engineering & Science,Shanghai University,Shanghai 200072)
+【Abstract】In this paper the constructions of music spring system are introduced and the designing thought of music spring system is also introduced.The theory of grade control and the way of bringing it about are introduced in accordance with the shortcomings of the traditional music spring systems together with the problems in actual situations.the visual programming of control code of the music spring and realtime emulation of its model is explained in details.And VB,the popular programming tool,is used to bring them about.In this system,sound and animation is used to present the multimedia technology and the charm of music spring.
+【Key words】Music spring;Control code;grade control;Real-time emulation
+　　纵观目前的音乐喷泉系统，由于只采用单片机作为核心部件进行控制，因此都存在音乐节奏和喷泉动作同步困难，控制效果不佳。
+　　尽管这种情况似乎不可能发生，但在一个模块化程序中完全有可能。如果两个模块都使用Mutex来保护自己的数据，则每一个使用这些模块的组件，都将不得不按相同顺序，访问它们以避免死锁。不幸的是，这需要你将内部的具体实现暴露给其它的模块。
+　　每一个增加的Mutex，都会增加死锁的可能性，可以用设置时间限制来避免这一点，但是又不得不增加许多代码，来处理得不到所需的Mutex时的情况。因此，通常最简单的办法就是只用一个Mutex，并且避免在使用Mutex时进行耗时的操作以使串行化程度最小。
+2.2　SYNCHRO类
+　　一个提供同步功能的C++类。通信服务机是增值网的中心环节，其主要功能是将主机的通信负荷分离出来；提供主机通信软通道和通信资源服务。同时，提供一个一致的界面，便可不必修改程序，就可以演示多个不同的复合同步对象。向文本框 (" 编辑 " 框 ) 添加更新数据的功能，将数据从文本框复制到 MsFlexGrid 的功能? 
+1 音乐喷泉系统的结构 
+　　系统由上下两级微机组成，通过 RS232 进行上下两级微机的通讯。同步对象的状态有：“Signaled”允许等待函数返回和“nonSignaled”可以防止函数返回。多个函数可以拥有同一个同步，对象从而使跨进程同步成为可能。
+　　Mutex对象　一个Mutex对象就是这样一个同步对象：当它不属于任何一个线程时它的状态是Signaled，反之则处于nonSignaled状态。 
+　　在应用层协议方面，由于电力部的部颁应用层协议是支持点对点通信的应用层协议，它不再适用于多点通信。为适应网络通信，我们对应用层协议进行了扩展，在部颁应用层协议的报文头加了 8 个字节的路由块，前 4 个字节为报文目的地址，后 4 个字节为报文源地址称之为扩展部颁应用层协议。事件对象在通知线程一个特定事件发生时很有用。
+　　关键段对象　关键段对象提供类似于Mutex的同步机制。在网络层协议方面： (1) 华东网调和上海市调的 EMS/SCADA 主机的局域网采用了 DECNet 网，其接入采用 DECNet 协议通过 DECNet 网卡进入通信服务机； (2) 江苏、浙江、安徽的 EMS/SCADA 主机的接入则采用 TCP/IP ； (3) 对于有些老的 SCADA 系统，如江苏省调，其 RTU 主机要通过 SUN 通信服务机的串行口直接入网，所以通信服务软件要支持串行口链路协议。在 Visual Basic 中，应将 MCI Open 命令放到 Form_Load 事件中 ( 执行 MCI.Command="Open") 。
+　　接下来有一个称作GetCaps的函数，它使类的用户知道一个特定的实现具有何种功能。IsValid成员函数确定一个特定的SYNCHRO对象是否有效。最使人感兴趣的是Lock和Unlock函数，它们允许类的用户，按需要的方式声明对对象的访问。
+关键词：增值网；通信服务机；主站接入
+The Design of Value-added Data Communication Network for East China Electric Power Information System
+He Xing,Shi Huajun,Tang Liang,fang Xingqi,Li Genwei
+(Automation Research Institute of Shanghai Jiaotong Univ.,Shanghai 200030; East China Power Dispatch Center,Shanghai 200001)
+【Abstract】In this paper,the design of the system structure and the related communication-service software of the Value-added Data which alleviates the master station's communication-load,and implements the transparent call among different network protocols.Furthermore,using various application Layer Protocol for Real Time Data Communication in Power System is extended,and the access of master stations using various application protocols is also provided.
+【Key words】Value-added network;communication server;Master station access
+　　华东电力系统数据通信网是正在建设中的中国电力数据网络 (CEDnet) 的第一个二级网络。一经声明后，线程就可以访问共享的数据和资源。结束时，线程释放锁，使其可以被其它线程使用。
+　　要注意的是，没有在类中定义任何私有的数据，成员函数也未定义。
+3　SYNCHRO类的实现
+3.1　SYNCHAPP程序
+　　SYNCHAPP是一个用于演示SYNCHRO类的Win32控制台程序。 
+　　(2) 若已经按过字母键 "S" 和字母键 "X" ，在这种情况仅仅按字母键 "X" ，则重听该段音轨的开始时间为上次所按字母键 "S" ，结束时间为所按字母键 "X" 时的时间。这就是网络协议的开放性。
+　　在讨论SYNCHAPP的实现之前，先介绍它的局限性。那就是它不基于任何一种现实情况。通过调整线程的数目和不同同步请求的比例，可以产生各种“交通”模式。
+　　因为SYNCHAPP是一个模拟程序，它并不代表你的实际应用程序。SYNCHAPP中的锁的开关时间间隔比实际应用要长得多。这样做使得SYNCHAPP的输出结果比较短。SYNCHAPP中最令人感兴趣的是SynchroSimulation函数和它的GetAction辅助函数。简要的介绍一下：主函数调用SYNCHRO类的构造函数，准备控制台，并建立工作线程以实施模拟。 
+　　(2) 若已经按过字母键 "S" 和字母键 "X" ，在这种情况仅仅按字母键 "X" ，则重听该段音轨的开始时间为上次所按字母键 "S" ，结束时间为所按字母键 "X" 时的时间。
+　　每个工作线程运行SynchroSimulation函数，它包含一个无限循环，该循环不定期的休息，并申请SYNCHRO类支持的锁。
+3.2　读／写同步
+3.2.1　如何合并多个Win32同步对象
+　　设想一下如下的情况：你有一个管理用户帐号和密码的数据库。管理员可以增加或删除一个用户，用户能修改密码。二路环灯的造型码为 XY ， X(1-4) 表示每组灯开的个数，Y(0-7) 表示循环的间隔时间，以 100 毫秒为单位？
+关键词：音乐喷泉；造型码；分级控制；实时仿真
+The Visual Design and Real-time Emulation of Music Spring System
+Chen Yimin,Liu Yunchao,Chen Lin,Li Yuan
+(School of Computer Engineering & Science,Shanghai University,Shanghai 200072)
+【Abstract】In this paper the constructions of music spring system are introduced and the designing thought of music spring system is also introduced.The theory of grade control and the way of bringing it about are introduced in accordance with the shortcomings of the traditional music spring systems together with the problems in actual situations.the visual programming of control code of the music spring and realtime emulation of its model is explained in details.And VB,the popular programming tool,is used to bring them about.In this system,sound and animation is used to present the multimedia technology and the charm of music spring.
+【Key words】Music spring;Control code;grade control;Real-time emulation
+　　纵观目前的音乐喷泉系统，由于只采用单片机作为核心部件进行控制，因此都存在音乐节奏和喷泉动作同步困难，控制效果不佳？
+　　显然，如果允许两个线程同时读取数据库，或一个正在读但另一个正在写。由于验证请求并不需要修改数据库，没有理由不让多个验证请求同时发生。如果用单个Mutex，不需要串行化验证请求。听过重播后再按字母键 "X" 还有连续重播的功能。于是就把这种同步对象称作“多读或单写”同步对象。
+　　当提到读方式或写方式访问资源的时候，更精确的提法是共享和独占资源。
+关键词：增值网；通信服务机；主站接入
+The Design of Value-added Data Communication Network for East China Electric Power Information System
+He Xing,Shi Huajun,Tang Liang,fang Xingqi,Li Genwei
+(Automation Research Institute of Shanghai Jiaotong Univ.,Shanghai 200030; East China Power Dispatch Center,Shanghai 200001)
+【Abstract】In this paper,the design of the system structure and the related communication-service software of the Value-added Data which alleviates the master station's communication-load,and implements the transparent call among different network protocols.Furthermore,using various application Layer Protocol for Real Time Data Communication in Power System is extended,and the access of master stations using various application protocols is also provided.
+【Key words】Value-added network;communication server;Master station access
+　　华东电力系统数据通信网是正在建设中的中国电力数据网络 (CEDnet) 的第一个二级网络。 
+3.5 造型码及仿真画面 
+　　系统中有 11 个喷泉泵，其中 0 、 5 、 7 号泵每个泵控制一个喷头，其它的泵每泵控制两个喷头，如图 2 所示。管道调度用于解决调用接口的竞争问题。对于一般彩灯用开关控制， 1 表示亮， 0 表示关，占 8 位 , 用十六进制数表示，二路环灯分两组 (0 － 3,4 － 7) ，占 4 位 , 用 Ⅰ、Ⅱ、Ⅲ、Ⅳ分别表示 I － IV 个灯亮； N ：移位时间， 100ms × N 值。那么你如何构造一个“多读或单写”的同步对象呢？如拖后，则最后一拍的控制时间缩短此时间差，每拍的时间长度存于一个数组中，用户计算好节拍的时间后，填入从哪拍起至哪拍止，将所有节拍时间相加，与实际播放时间比较，再对最后一拍的时间长度进行调整。为适应网络通信，我们对应用层协议进行了扩展，在部颁应用层协议的报文头加了 8 个字节的路由块，前 4 个字节为报文目的地址，后 4 个字节为报文源地址称之为扩展部颁应用层协议。这对虚拟的单个写不起作用。因为在这种情况中，Mutex的拥有者不能保证是其释放者。但幸运的是，可以用Win32自动重置事件去完成它。Win32自动重置事件可以被任何一个线程设置。 
+　　华东电力信息网是一个具有多种网络协议和多种应用层协议的复杂网络。为适应网络通信，我们对应用层协议进行了扩展，在部颁应用层协议的报文头加了 8 个字节的路由块，前 4 个字节为报文目的地址，后 4 个字节为报文源地址称之为扩展部颁应用层协议。所以，仅有一个读线程在它读完之后设置自动重置事件。类似的，只有一个读线程认为它是第一个读线程，因此如果第一个读线程被阻塞以等待写线程完成，其它的读线程也一样。
+　　hevExclusive事件保证了只允许一个写线程在任一时间通过锁函数。主站的交换信息通过服务机的代理，利用广播的方式由服务机负责发送至全网各站点，大大缓解了主站的负担。管道调度用于解决调用接口的竞争问题。写线程和第一个读线程被阻塞在hevExclusive，其余的读线程被阻塞在csReader。 
+　　(2) 人工编辑造型界面 屏幕上设计有人工编辑界面， CD 播放器及喷泉效果图。图1给出了多个线程试图拥有读／写锁，以及SYNCHRO类中针对“多读或单写”同步对象的实现细节。
+写线程1　 读线程1　 读线程2　 写线程2
+申请hevExclusive
+　　　　　申请cdReader
+　　　　　cReaders=1
+　　　　　阻塞在hevExclusive
+　　　　　　　　　　阻塞在cdReader
+　　　　　　　　　　　　　　　阻塞在hevExclusive
+释放hevExclusive
+　　　　　申请hevExclusive
+　　　　　释放cdReader
+　　　　　　　　　　申请cdReader
+　　　　　　　　　　cReaders=2
+　　　　　　　　　　释放cdReader
+　　　　　申请cdReader
+　　　　　cReaders=1
+　　　　　释放cdReader
+　　　　　　　　　　申请cdReader
+　　　　　　　　　　cReaders=0
+　　　　　　　　　　释放hevExclusive
+　　　　　　　　　　　　　　　申请hevExclusive
+　　　　　释放cdReader
+图1　"多读或单写"同步对象的实际运行示例
+3.2.2　SYNCHRO类对SYNCHAPP模拟程序的影响
+　　SYNCHAPP现在以4:1的比例产生读和写请求。当读／写请求比例加大时，一个“多读或单写”同步对象比一个Mutex同步对象性能好，因为它允许多个读请求同时进行。显然，读／写比例随程序的不同而不同，不过在上述的数据库的例子中，当读／写比例加大到100:1甚至1000:1时，性能的改进是很明显的。
+4　小结
+　　当写一个多线程应用程序的时候，控制对全局变量和资源的访问是很必要的。在大多数情况下，单个的Mutex同步对象已经足够了。但在某些情况下，特别是在大量的且读／写比很大的情况下，使用复合同步对象可以在性能上得到很大改进。本文描述了一种算法用以实现这种改进。当然，这不是绝对的，读者可以在实际应用中根据具体情况运用上述算法或其它的算法。
+作者简介：冯美霞　主要从事计算机管理信息研究。
+作者单位：东南大学工业发展与培训中心　江苏.南京(210018)
+参考文献
+［1］　李　霖.SGI IRIX系统中的多线程引用程序设计.软件世界,1995;(12)
+［2］　(美)Charles Petzold. Windows 95程序设计.北京：清华大学出版社，1997
+收稿日期:1999-01-21

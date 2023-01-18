@@ -1,0 +1,66 @@
+浙江体育科学
+ZHEJIANG SPORTS SCIENCE
+1999年 第21卷 第5期 Vol.21 No.5 1999
+
+
+
+女运动员月经周期中性激素变化与运动成绩的研究
+张景红　郭海英　王华英
+摘要：通过对36名不同项目女运动员，在月经周期中血清雌二醇(E2)、促卵泡激素(FSH)、促黄体生成素(LH)、孕激素(P)的测定，观察女运动员月经周期不同时相性激素变化与不同项目运动成绩的关系。受试者必须在卵泡期和黄体期分别按规定项目测试两次全速力竭运动成绩。赛艇队员测试500m及2000m成绩，田径队员测定100m、200m成绩，游泳队员测试每人专项成绩后统一评分。结果显示除赛艇运动员2000m测试成绩无显著性差异外，其它各项成绩黄体期均优于卵泡期(P＜0.05或P＜0.01)，且黄体期P的浓度也较高(P＜0.05)。
+关键词：女运动员；月经周期；女性激素；卵泡期；黄体期
+中图分类号：G804.7　　文献标识码：A
+A Study on the relationships between levels of
+hormones and results in female athletes
+ZHANG Jin-hong1，GUO Hai-ying2,WANG Hua-ying3
+(1.Zhejiang people's hospital,Hangzhou 310014,China;2.Zhejiang research institute 
+of sports science,Hangzhou 310004,China;3.The sports hospital of Zhejiang
+committee of PE and sports,Hangzhou 310004,China)
+Abstract：The purpose of this study was to observe the relationships between levels of hormones and results in female athletes, and determine which menstrual phase was more favorable for them to gain excellent achievement.The concentrations of serum estradiol(E2),follicle-stimulating hormole(FSH),luteinizing hormone(LH)and progeterone(P)were determined by chemo-luminescence immunoassay with automatic Ascil80,which made in USA.We determined the concentrations of the hormones and the results in 36 female athletes'follicular phase and luteal phase,the athletes should finish the prescribed events with all their strength to gain the best results.The rowers were examined 500m and 2000m in rowing ergometers, the runners were examined 100m and 200m,the swimmers were examined self special event and scored the results according to the standards of grading.The results showed:except rowers'results of 2000m being no significant difference,the results of the other events were better in luteal phase than in follicular phase(P＜0.05 or P＜0.01),and the concentration of P was higher in luteal phase too(P＜0.05).
+Key words：female athlete;menstrual phase;sex hormone;follicular phase; luteal phase
+　　随着医学科学发展运动员开展寻求充分发挥体能的途径，月经周期与女子运动能力有着密切的关系，已渐引起我国体育界的关注。本研究通过对赛艇、田径、游泳三个专项的36名女运动员在月经周期中女性激素及运动成绩的测定，观察不同时相性激素的变化与各项运动成绩的关系。
+1　实验对象
+　　浙江省体训二大队赛艇专项的女运动员12名，浙江省体训一大队田径专项女运动员13名，游泳专项女运动员11名。训练年限均在3年以上，每周训练6天，每日训练4～6小时，身体健康，月经周期规则，未使用过影响月经周期的药物。当比分24∶24时，比赛继续进行至某队领先2分为止。(说明：即对方得一分)。
+2.3　性激素测定
+2.3.1　性激素的测定时间及项目　分别在受试者卵泡期(周期第6～10天)和黄体期(周期第(19～23天)上午8～9时抽取血样，测定血清E2、FSH、LH、P值。
+规则的修改(主要部份)
+规则1比赛场地
+1.4.5　处罚区域
+　　在替补席后方1.5m处，用宽5cm红线划出1×1m见方的区域。
+2.3.2　性激素测定设备及方法　应用美国Chiron公司生产的Acsi180全自动化学发光免疫仪，试剂为Chiron公司原装试剂，发光剂吖啶酯。抽血后分离血清立即测定，质量控制达国际标准水平，批内CV＜5%。)
+21.4.1　不良行为的判罚是针对个人的，整场比赛中有效，同时均应登记在记录表上。赛艇运动员使用美国产Concett Ⅱ划船测功仪进行2000m、500m全力拉，田径运动员进行100m、200m全速跑，记录所需时间，游泳运动员考虑到发挥最好水平及评分准确性进行各自专项测定，但两次测试项目一致，记录所需时间及根据国际泳联1994年确定的游泳成绩评分表统一评分。
+2.5　数据处理
+　　数据统计使用SPSS软件包处理，各项指标以均值和标准误表示，采用非参数相关进行显著性检验。
+3　结果
+　　除赛艇运动员的2000m成绩无显著性差异外，其它各项成绩黄体期均优于卵泡期，黄体期的P水平也高于卵泡期(见表2)。
+表2　女运动员不同月经周期激素及运动成绩的比较(X±SE)
+
+项目卵泡期黄体期P值
+E2(ng/L)6.44±14.5892.56±12.96＞0.05
+FSH(IU／L)6.44±0.477.77±0.72＞0.05
+LH(IU／L)5.69±0.878.27±1.45＞0.05
+P(ug／L)0.56±0.874.27±0.9＜0.001
+500m2min0.60sec±7.49sec1min56.10sec±8.25sec＜0.01
+2000m7min54.09sec±31.78sec7min42.82sec±19.02sec＞0.05
+100m12.25sec±0.31sec12.10sec±0.31sec＜0.05
+200m26.06sec±1.11sec25.63sec±0.85sec＜0.01
+游泳成绩(分)762.58±54.33795.00±54.39＜0.01
+
+4　分析与讨论
+　　正常生理状态下，月经周期的调节是一个非常复杂的过程，它牵涉到下丘脑、垂体、卵巢及子宫。受中枢神经系统的影响及这些器官之间的相互协调作用下，才能发挥正常的生理功能，被称为下丘脑――垂体――卵巢轴。下丘脑分沁卵泡刺激素释放激素(FSH―RH)与黄体生成激素释放激素(LH―RH)，促使垂体前叶释放FSH与LH，而FSH使卵巢中的卵泡生长成熟，并分沁E2，称卵泡期。当FSH和LH达一定峰值时，促使成熟卵泡排卵，称排卵期，排卵后形成黄体，黄体分泌E2和P，称黄体期。E2及P量的变化又能对下丘脑、垂体起反馈作用，而子宫作为靶器官在各种作用下出现女性的月经周期。
+　　本研究表1显示规则的月经状况以及运动员FSH、LH、E2、P激素测定值均在国人女性正常范围，其黄体期P值显著大于卵泡期(P＜0.05)，说明受试者极大多数有排泡的，也提示她们的下丘脑――垂体――卵巢轴的调节功能是比较完善的。)
+规则3　球
+3.1　特性
+　　允许使用皮革或合成革制成外壳，内装橡皮或类似质料制成的球胆。水平有限，若有出入应以中国排球协会将要出版的规则为准。
+　　三组运动员不同项目的测试及比赛成绩，包括赛艇500m测功仪，田径100m、200m全力跑，以及游泳专项成绩的得分，黄体期均优于卵泡期，这一事实说明黄体期受试运动员机体处于较佳状态。我们认为这和月经周期中激素水平的变化，激素的生理作用以及在运动状态下各种激素间具有协同效应密切相关。(说明：无最高限分)。)
+规则12　球网附近的队员
+12.3　触网
+　　队员触及球网或标志杆不为犯规，除非队员在击球或试图击球时触及到球网或标志杆才为犯规。(3)文献报导运动过程中由于神经系统高度兴奋，特别下丘脑交感肾上腺系统发放冲动，使呼吸、循环功能加强，也波及到生殖系统，尤其在黄体期E2、P、T水平增高，并有协同效应，使同等强度运动时乳酸浓度升高在此期最低，以利于在运动中节省糖原的消耗。
+　　另有研究报道女运动员在黄体期显示神经传导加速，神经过程灵活性增强，肌纤维的兴奋性、协调性最好，有利于提高速度和灵敏性，以利于运动成绩的发挥。
+作者简介：陈培基(1941-)，男，辽宁大连人，浙江省体训一大队高级教练，国际级裁判、浙江省排球协会副主席.
+作者单位：浙江省体训一大队 排球队，浙江 杭州　310004
+责任编辑：梁瑾
+收稿日期：1999-09-28
+
+
+。可能由于受试者人数不多，项目单一，赛艇2000m的成绩无显著性差异，但黄体期有提高成绩的趋势，至于月经周期对长时间有氧运动成绩的影响，报道的结果不一。
+　　综上所述，黄体期运动能力明显强于卵泡期，训练中应充分注意到女运动员体能变化特点，合理安排和调整运动量，根据不同的训练和比赛项目，尽可能与月经周期时相相符合，作为医务人员尽量使女运动员在重大比赛前把月经周期调整到最佳状态，为她们提供充分发挥运动水平的条件。(说明：此类警告不登记在记录表上，主要起到教育作用

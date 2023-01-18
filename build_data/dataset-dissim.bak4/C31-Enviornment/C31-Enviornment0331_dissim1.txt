@@ -1,0 +1,48 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第5期 No.5 Vol.18 1998
+科技期刊
+
+BP及RBF人工神经元网络对臭氧生物
+活性炭水处理系统建模的比较* 
+田　禹1　王宝贞2　周　定1　（1.哈尔滨工业大学应用化学系，哈尔滨 150001；
+2.哈尔滨建筑大学市政与环境工程学院，哈尔滨 150001）
+文　摘　运用BP和RBF人工神经元网络建立臭氧生物活性炭系统模型，考察了两个网络对水处理系统建模的适应性。研究表明，BP和RBF人工神经元网络的臭氧生物活性炭系统模型准确地描述了系统影响因素的关系,可以求出系统中臭氧的经济投量；用BP人工神经元网络建立水处理系统模型,泛化能力好,但逼近速度较慢；运用RBF人工神经元网络建模,泛化能力较差,但逼近速度快。该项研究克服了运用传统方法建模的不足，为实现水处理系统的优化设计提供了可行的途径 。
+关键词　BP人工神经元网络　RBF人工神经元网络　臭氧生物活性炭系统　模型
+Comparative of BP and RBF artificial neural network's function on model-building of ozonation and biological activated carbon water purification system.Tian Yu1，Wang Baozhen2，Zhou Ding1 （1.Department of Applied Chemistry, Harbin Institute of Technology,Harbin 150001；2.School of Municipal and Environmental Engineering, Harbin University of Civil Engineering and Architecture, Harbin 150001）.China Environmental Science.1998,18(5):394～397
+Abstract―Through setting up ozonation and biological activated carbon system model by BP and RBF artificial neural networks,the applicability of the two neural networks are investigated to the water purification system.The study shows that these models accurately describe the relationships among the influence factors of the system and economical ozone's dosage can be obtained comparatively though the model;the model established by BP network has a good general ability and a slow impending speed,on the other hand,the model established by RBF neural network has a bad general ability and a fast impending speed.The limitations of the traditional model-identification methods were get rid of.A means to realize the water purification system in line control is provided.
+Key words:BP artificial neural networks　RBF artificial neural networks　ozonation and biological activated carbon system model
+　　在臭氧生物活性炭系统中，进水水质、臭氧投量、臭氧氧化时间、活性炭吸附时间、微生物量等影响因素相互作用、相互影响，确定它们在设计阶段作为参数所要选定的数值和在运行时要控制的范围，直接关系到系统出水水质的好坏和效能的发挥。但由于受到它们之间非线性关系、系统不确定因素以及微生物再生机理不清等因素影响，描述臭氧生物活性炭系统的数学模型迄今还是空白,对其建模是一个非线性系统的求解问题,传统的方法难以适应该系统在精度和实时性上的要求。 为了便于统计和分析生物多样性数据集的信息，根据《国家机构调查指南》(参阅UNEP，1995)，并结合有关部门数据集实际内容，将本次调查收集的生物多样性数据集信息分为六大类：土地利用类，包括野生动物、林业、农业、自然保护区和生态旅游等；生境和自然特征类，包括自然植被、海洋和海岸、淡水、湿地、水资源、地质、地形、土壤和气象等；物种类，包括动物、植物和微生物；遗传资源类，包括作物、畜禽、牧草、鱼类和林木等种质资源；中药资源类，包括药用动物、植物和菌类等；环境、社会、经济和法律类，主要包括与生物多样性有关的环境污染和环境规划以及社会、经济和法律等信息。
+2.3　生物多样性数据获取状况
+　　调查结果表明，几乎所有的数据集都可让外界获取，其中可全部获取的占84.3％，有限获取的占16.7％。为实现复杂水处理系统的优化设计,提高其运行控制水平,促进其工程实践应用提供了一条可行途径。
+1　BP神经元网络和RBF神经元网络的结构、基本原理及主要区别
+　　把BP和RBF网络作为研究对象,是由于这两种网络既是神经元网络中发展比较成熟的技术,又彼此有许多不同之处〔2〕。主要差别是:从原理上讲,BP是全局逼近的网络,RBF是局部逼近的网络；从结构上讲,BP网络一般是三层网络,但也可以由四层至更多层组成,采用的节点函数通常为Sigmoid型 。
+2.1.2　数据集储存状况　103个目标机构共储
+存数据集160个，其中，中国科学院占32.5％，农业部和林业部分别占17.5％和13.8％；国家教委和国家环保总局分别占8.8％和7.5％，其它各部门约占4%～7％。RBF网络的训练方法大都采用最小二乘法或者递推最小二乘法〔3〕；从逼近能力上讲，RBF网络逼近速度要快于BP网络,而BP网络的泛化能力即对未知样本的预测能力要好于RBF网络。在首次把神经元网络引入水处理和实际系统建模过程中,具体地考察两者对水处理系统的实用性和范围,对今后的研究工作很有意义。
+2　臭氧生物活性炭系统实验样本数据
+　　本研究以CODMn值为衡量水质好坏的指标，实验数据如表1所示。
+3　结语 
+　　初步查明在国家水平上储存和管理生物多样性数据集的机构；基本上掌握这些机构的数据集储量、主题内容、规模、形式、建立途径、覆盖面、管理手段和获取途径等信息；经过对所得数据集的综合编辑，现已整理出《中国生物多样性数据集名录》。首先确定具有一个输入层结点、一个输出层结点的三层BP神经元网络用于臭氧生物活性炭系统的建模研究,输入层结点数与系统的输入数据量和输出数据量相等。由于网络的训练样本数并不是很多,过大规模的网络模型又会使收敛速度减慢,因此，中间层结点数定为10～20个,BP网络的学习算法,可以采用标准的BP学习算法或者其它的快速学习算法,为了提高收敛速度,在本研究中采用了自适应变步长快速学习算法,并将网络的预期逼近误差预先定为0.01。但是目前我国生物多样性数据资源、管理水平和获取状况的定量分析尚未见报道。主要包括文献集、标本、地图、表格、地理信息系统、数据库、野外记录、报告、字处理文件、遥感数据和图片等。
+
+图1　初始化BP神经元网络模块
+Fig.1　Iniff.m initiated BP neural network pattern
+　　 在确定了BP和RBF网络的结构后对两个网络进行训练。在BP网络的训练实验中，将实验数据归一化处理后以贯序输入方式输入到Matlab软件包,调用其中Neural Network Toolbox里的函数模块Initff.m,Trainbp.m,Simuff.m等,实现网络的训练过程。其它获取途径（如标本交换、会议交流和信函等）占13.4％。在对RBF网络训练时,顺序调用各个模块,RBF网络训练流程如图3所示。造成这一情况的主要原因是由于目前还没有完整标准的生物多样性信息分类体系。
+2.2.2　数据管理的软件和硬件　在生物多样性数据管理所使用的软件类型中，数据库管理系统(DBMS)占83％，其余各类软件之和仅占17％。RBF神经元网络曲线图的意义与BP神经元网络的（c)相同,它反映了臭氧生物活性炭系统中臭氧投量对系统CODMn去除率的影响。
+
+图4　基于BP神经元网络的臭氧生物活性炭系统进水CODMn、出水CODMn、臭氧投量
+Fig.4　The three-dimensional diagram of influent and effluent ,ozone amount in 
+ozonation biological activiated carbon system on BP neural network
+　　由仿真曲线可以看到，基于BP和RBF人工神经元网络的臭氧生物活性炭模型,可以实现在计算机上对设计参数的选取过程,节省了人力、物力提高了效率；可以根据基于人工神经元网络的臭氧生物活性炭系统模型求出在给定入水CODMn和臭氧投量的条件下,出水CODMn值；也可以求出在给定入水CODMn的条件下,使出水CODMn达到最小的臭氧投量。运用基于人工神经元网络的水处理系统模型,可以使上述两个数据预测及分析过程在计算机上准确、快速、方便地进行；可以根据上述模型求出表示三维图“曲率”的曲线,该曲线有很重要的实际意义,即反映在入水条件一定时,臭氧投量对处理效果的影响程度,这样可以得到比较经济的臭氧投量,并对明确臭氧生物活性炭系统的除污染机理有很大帮助；比较BP网络和RBF网络的仿真曲线,可以看到两者在反映系统影响因素关系上,其趋势是一致的,但BP网络的仿真图形清晰直观,RBF网络的图形震荡复杂,这说明对于本次仿真实验采用的数据结构和数量,BP网络更适合其仿真要求,而RBF网络没有局部极小及逼近速度快的优势并没有完全体现出来。
+
+图5　基于RBF神经网络的臭氧生物活性炭系统
+进水CODMn、出水CODMn、臭氧投量
+Fig.5　The three-dimensional diagram of influent and 
+effluent,ozone amount in ozonation biological activiated
+carbon system on RBF neural network
+4　结论
+4.1　根据人工神经元网络具有的分布式信息存储、并行处理及自组织、自学习的特点,建立了基于BP和RBF人工神经元网络的水处理系统模型,克服了运用传统方法建模的不足，运用该方法通过系统输入与输出数据即可建立较为准确的模型,模型的通用性及时效性只取决于实验数据的广泛及准确;运用该方法建立的模型对于不同的水质条件可做出准确的预测,能够为工程设计人员提供设计参数,为实现水处理的在线控制提供了一条可行的途径 。 
+4.2　运用BP人工神经元网络建立的水处理系统的模型,具有良好的泛化能力,但逼近速度较慢,存在局部极小问题,适用于在线要求较低、数据量较少的水处理系统模型辩识 。
+4.3　运用RBF人工神经元网络建立的水处理系统模型,泛化能力较差,但逼近速度快,不存在局部极小问题,适用于在线要求较高、数据量较多的水处理系统模型辩识。
+4.4　基于BP和RBF人工神经元网络的臭氧生物活性炭系统模型准确地描述了系统中各影响因素间的关系,可以根据建立的模型求出臭氧的经济投量。从统计结果来看，数据库、文献集和标本是储存生物多样性数据的3种主要形式，分别占24.1％、18.2％和 16.0％，三者合计约占60％，其余8种形式约共占40％。博士。1997年进哈尔滨工业大学博士后流动站作博士后工作。近年来主要从事臭氧生物活性炭系统除污染效能与机理的研究。已完成黑龙江省科学基金重点项目“基于人工神经元网络的臭氧生物活性炭系统智能建模研究”和大庆等地的饮用水深度处理工程项目4项。发表论文7篇。
+收稿日期：1997-11-24
+* 黑龙江省自然科学基金资助项目

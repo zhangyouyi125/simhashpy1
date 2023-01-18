@@ -1,0 +1,87 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+智能结构及其控制系统集成优化设计
+惩踔叶　袁国良　陈塑寰
+　　摘　要　将智能结构的振动控制性能指标和集成结构的质量作为目标函数，结构尺寸参数和控制系统的控制参数同时作为独立的设计变量，并施加约束条件，从而将智能结构及其控制系统集成优化设计问题转化为多目标数学规化问题。数值结果表明，利用本文方法设计出的智能结构及其控制系统，能极大地抑制系统的振动。
+　　主题词　智能结构　控制系统　集成优化设计　压电传感元件和执行元件
+THE INTEGRATED OPTIMIZATION OF INTELLIGENT
+STRUCTURES AND CONTROL SYSTEMS
+Wang Zhongdong Yuan Guoliang
+(Department of Agronomy and Agricultural Machinery Agriculture 
+and Animal University of PLA . Changchun . 130062)
+Chen Suhuan
+(Department of Mechanics Jilin University of Technology . Changchun . 130022))
+　　Abstract　Conventional structural sizing variables and elements of the feedback gain matrix are both treated as the independet design variables,the performance index of vibration control and the mass of the integrated structure are chosen as objective functions,and some constraints are included in the optimization.Then,the integrated optimization of intelligent structures and control systems is converted into multiobjective optimization.The numerical results show that the in telligent structure and the control system designed by the present method can greatly suppress the vibration of the structure.
+　　Key words　Intelligent structure Control system Integrated optimization Piezodelectric sensor and actuator
+1　引言
+　　近十年来，常规结构及其控制系统集成优化设计问题吸引了很多国内外研究者，并发表了多篇有关这方面的论文［1-5］。本文针对压电类智能结构的特点，提出了结构及其控制系统集成优化设计的一种新方法。该方法与其它方法相比较，具有设计变量少，通用性强的特点。
+2　模态空间最优控制系统设计
+压电类智能结构的运动方程表示为［6］
+　　　　　　　(1)
+式中［Ms］、［Mp］、［Kuus］和［Kuup］分别为主结构和压电传感元件及执行元件的质量阵和机械刚度阵，［Kuv］和［Kuu］为主结构和压电材料区的机电耦合刚度阵，［Kvv］为压电材料区的压电刚度阵，［Cs］为系统的结构阻尼阵，［D］为控制力分布阵，{}、{}和{u}分别为结构节点加速度、速度和位移向量，{uc}为控制力向量。
+　　设［M］=［Ms］+［Mp］、［K］=［Kuus］+［Kuup］+［Kuv］［Kvv］-1［Kvu］，则式(1)简化为
+［M］{}+［Cs］{}+［K］{u}=［D］{uc}　　　　　　　　　　(2)
+取前nc个正规化的模态矩阵［Φ］∈Rn×nc，由展开定理得
+　　　　　　　　　　　　　　(3)
+式中{q}为模态坐标
+将式(3)代入式(2)并进行正交变换，则有
+　　　　　　　(4)
+式中［ξ］=diag［ξ1　ξ2　…　ξnc］和［Ω］2=diag［ω21　ω22　…　ω2nc］分别为结构的模态阻尼比对角阵和特征值对角阵,{fmc}为模态控制力。
+当采用独立模态控制法［7］控制模态时，方程(4)可由nc个下面的一阶方程代替
+i+2ξiωii+ω2iqi=fmci　i=1,2,…,nc　　　　　　　　　　　(5)
+引进{zi}={qi　i}T和{umci}=fmci，式(5)可转化为状态空间方程形式
+{i}=［Ami］{zi}+［Bmi］{umci}　　　　　　　　　　　　(6)
+式中
+
+此时对应第i模态的控制力为
+{umci}=-［Gmpi　Gmvi］{zi}　　　　　　　　　　　　(7)
+式中Gmpi和Gmvi为第i个模态增益。由此可根据电路参数对该电路电源故障作如下分析。
+根据最优控制规律，第i个最优模态控制力可表示为
+{umci}=-［Ri］-1［Bmi］T［Pi］{zi}　　　　　　　　　　(10)
+式中［Pi］为2×2阶加权阵，它满足2×2阶Riccati方程
+［Pi］［Ami］+［Ami］T［Pi］+［Qmi］-［Pi］［Bmi］［Ri］-1［Bmi］T［Pi］=0　(11)
+联合求解式(7)、(10)和(11)，整理得
+　　　　　　　　　　　　(12a)
+　　　　　　　　　(12b)
+3　智能结构及其控制系统的集成优化设计
+　　在智能结构及其控制系统集成优化设计中，将主结构的尺寸参数{Vs}和控制系统的控制参数{Vc}同时作为独立的设计变量，结构振动控制性能指标J及集成结构的质量作为目标函数，并施加以下约束：(1)闭环特征值的实部；(2)闭环阻尼频率；(3)瞬时控制力。
+　　采用主目标优化法，将振动控制性能指标作为主目标函数，集成结构质量转变为约束条件。R25开路是由于电极帽与两帽间的电阻分离造成的。
+3.1　结构振动控制性能指标
+　　将贮存在结构中总能量从初始时间到无穷时间的积分J定义为结构振动控制性能指标。锁紧后的俯仰轴一段时间里若存有小角度的变化――慢爬，将直接影响着主轴的方位指向，给整个测试结果的准确性带来影响,尤其是在转台低速或超低速运转的长时间测量中尤为突出;所以在转台台体的设计时,会针对这一问题提出俯仰轴8 h或24 h慢爬在几个角秒内的指标要求。
+在模态空间中，J表示为
+　　　　　　　　　　　　　(14)
+式中{w}=({q}　{})T,［Qm］=diag(［Ω］2［I］)。由于BG14和BG15的基极电压共为UDW4,它不仅使两管的集电极电流IC14和IC15恒定，而且也使基准电压UDe1＝Uc3＋UDW3＝14－6＝8 V恒压(实测UC3＝14V，UDW3＝6 V，DW14两端的稳压值UDW4＝5.2 V)，从而使BG13的集电极电流IC13和流过DW4的稳定电流%IDW4稳定，保证了恒流比较放大器的基准电压UDe1恒定和调节RW3＋RW4时其输入、输出电压变化量及电流输出变化量稳定，最终使该稳压电源负载端输出稳定。
+　　关键词　故障分析　测试　可靠性
+Malfunction Analysis and Test of Type KWD-502 Silicon
+Controlled DC Voltage-stabilized Source
+Xiao Runlu
+　　Abstract　Associating the circuit operation principle,the methods of an analysis and test of the four malfunction patterns of type KWD-502 silicon controlled DC voltage-stabilized source are mainly introduced in order to truly ensure its serviceability during measuring process.
+　　Key words　Malfunction analysis,Test,Reliability
+
+　　KWD―502型可控硅直流稳压电源是南京理工大学为配套DCS―75A型双路存储测时仪而专门设计生产的一种电压为0.5～50V，电流为0～2A的连续可调直流稳压电源。也可应用于对其他工程上长时间小角度变化的监测。
+根据式(8)，可将对应于第i模态的闭环系统的复特征值问题表示为
+det(λi［I］-［Amci］)=0　　　　　　　　　　　　(22)
+解之得
+　　　　　(23)
+由式(21)，则有
+　　　　　(24)
+3.3　瞬时控制
+考虑t=0时瞬时控制力的峰值。
+取eij中最大正变化量e＋i和最大负变化量e－i
+　　　△＝max｜e＋i－e－i｜
+式中，△为俯仰轴的慢爬；
+　　　e＋i为第i组测量中光管读数的最大正变化量；
+　　　e－i为第i组测量中光管读数的最大负变化量。
+将式(26)代入式(25)，并考虑式(19)关系，则t=0时，瞬时控制力的峰值表示为
+{uc(0+)}=-(［Φ］T［D］)-1［Gmv］{F0}　　　　　　　　　　(27)
+4　数值示例及讨论
+　　如图1所示为一压悬臂梁结构。主结构上下表面各粘结一层压电材料(PVDF)。在振动控制中，主结构上表面的压电材料层充当分布的执行元件，下表面的压电材料层充当分布的传感元件。主结构及压电材料的材料性质如表1所示。
+　　1.3.3　主滤波电容C6,C7的电特性测量
+　　将SCR阳极连线复原，并另用一短粗导线将阳极与阴极短路焊接，断开BG7集电极连线，在连线端与电路地C点间接入负载，开机后，测量负载两端电压Ufc应为75～80V，若低于此值较远，则C6,C7已击穿，有严重漏电故障。即当市电正向波动10％时,C5上所承受的电压为12.5 V(1＋10％)≈14 V，比较接近其额定耐压值。
+　　利用优化准则法进行优化设计，得到的数值结果如表2、表3所示。对三种方法设计出来的结构，采用闭环控制后，进行了瞬态位移响应计算，其结果如图2所示。也可用于测量地基的变化。并且，经过控制后，位移衰减速度最快。这些结果表明，此时的智能结构及其控制系统，其抑制自身振动的效果最好，整个系统更易于控制。从表中不难看出，光管的漂移大致在每8 \%h\% 1.2\+″左右。这个结果说明，此时的结构尺寸接近最优尺寸。以上的数值结果说明，采用文中的方法对智能结构及其控制系统进行集成优化设计后，不仅改善了结构振动控制性能及控制系统的性能，而且降低了结构的尺寸，达到了同时优化控制系统，又优化结构尺寸的目的。
+　　3)试验环境：环境温度20±2°C；相对湿度≤70％；被测转台放在隔震基础上，周围无剧烈振动和冲击

@@ -1,0 +1,63 @@
+因此该CVI的传质过程可认为是沿预制体厚度方向的一维传质过程
+　　1为孔隙模型的示意图宇航学报
+JOURNAL  ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+2D/碳纤维RIA的
+值演示科学研究
+姜开宇　李贺军　李克智
+　　摘　要　本文根据2D碳循环/碳复合材料的结构特征及CVI工艺的特点建立了孔隙模型和动力学模型，并利用该模型对其CVI过程进行了模拟与分析。模拟结果与试验结果的对比表明该数学模型是合理的。
+　　主题词　2D碳/碳复合材料　CVI　数值模拟　孔隙模型
+NUMERICAL SIMULATION OF CHEMICAL VAPOR INFILTRATION
+FOR 2D C/C COMPOSITES
+Jiang Kaiyu Li Hejun Li Kezhi
+(Institute of C/C Composites,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　According to structure feature of 2D C/C composites and the characteristics of CVI process,a porous model and dynamics model are established in this paper.The CVI Process of 2D C/C composites has been simulated and analyzed by the use of these models.It is evinced that these models are feasible by comparing the results of simulation and experiments.
+　　Key words　2D C/C composite CVI Numerical simulation Porous model
+1　引言
+　　化学气相(CVI)工艺是制取碳/碳复合材料的主要工艺之一。
+
+2  控制方程及对流项的求解
+
+    以下给出二维(轴对称)含有限速率非平衡化学反应流体流动的守恒方程
+组及辅助性方程(以三组分系统为例，三组分以上系统情况，可相应类推)。具体的模拟值与实验值见表2。。式中C0为沉积炉内反应气浓度。对2D碳/碳复合材料CVI工艺进行数值模拟，有助于更好地将CVI的动力学理论与实际应用结合起来。本文所建立的孔隙模型及相关动力学模型可以作为碳/碳复合材料CVI模拟的基础，通过模拟结果与实验结果的比较，表明利用该模型来模拟碳/碳复合材料的CVI过程可以取得比较满意的结果。
+2　数学模型的建立
+　　碳/碳复合材料的CVI过程实质上是预制体的致密化过程。由于2D碳/碳复合材料的内部孔隙结构较为复杂，如何建立一个既能够较好地描述预制体内部孔隙结构及其变化的符合实际情况的结构模型，是模拟成功的关键。曲线表明模拟预测值与实验值符合得较好，这说明本文所建立的2D碳/碳复合材料CVI工艺的数学模型是可行的。然而过于追求这种一致性，将导致几何模型的过分复杂化，给以后的模拟计算带来很大的不便。而且由于变量的增加，将使迭代过程中产生的积累误差增加，影响计算精度，甚至无法得到收敛解。
+
+b.运动结束时，弹性振动、位移为零，即p（tｆ）＝0，（tｆ）＝0。。该模型将预制体沿厚度方向地划分成若干单元(单元的数量根据计算精度要求而定，一般可取为碳布层数)，单元上均匀分布着直径相等的圆柱形孔隙，孔隙半径r0取纤维束平均间隙的1/2(即r0=α/2)，根据预制体的孔隙率ε，由下式可确定单位占地面积上孔隙的数量n0：
+n0=ε/(π r20)　　　　　　　　　　　　　　　(1)
+
+图1　孔隙模型示意图
+　　预制体的致密化过程可通过孔隙半径的变化来描述。
+　　为求出孔隙半径的变化，必须建立一个动力学模型来达到这一目的。建模时需作如下假设：
+　　(1)反应气(C3H6)仅靠扩散作用向预制体内部扩散；
+　　(2)反应气的扩散速度远大于碳的沉积速度，因而该过程为一稳态过程；
+　　(3)C3H6的热解反应可认为是一级反应；
+　　对于盘状2D碳/碳复合材料预制体，当其直径D远大于其厚度h时(D＞h)时，反应气沿径向的扩散可忽略不计。。数值模拟技术有助于更好地理解CVI的工艺过程，预测系统的行为，为工艺参数的优化及数据分析服务；它还可以检验新的设计思想，模拟由于经济原因或实验条件所限而难以进行的实验过程，因而对碳/碳复合材料CVI工艺的研究具有十分积极的意义。图2为不同温度下的预制体密度变化曲线。然而对于实际应用中使用较多的2D碳/碳复合材料(其预制体为2向碳布叠层)的CVI模拟，迄今为止国内尚未见公开发表的有关文章，国外也很少有资料报导［3，4］。
+　　假设经过时间δt后，预制体单元中的孔隙半径由r变为r*，则根据沉积速率可得出孔隙半径与反应气浓度的关系式：
+　　　　　　　　　　　　(4)
+式中Mi为热解碳摩尔质量(g/g)，ρi为热解碳(g/cm3)。。由图中还可看出模拟结果与实验结果还存在着一定的误差，造成误差的原因有以下几点：
+　　(1)实验过程中沉积炉内总存在一定程度的气体流动，反应气向预制体内部的渗透过程或多或少要受到气体流动的影响；(2)C3H6的热解反应要比理想情况复杂，实际的反应并不完全是一级反应；(3)由于预制体有一定的厚度，所以实际并不完全是一维扩散。低温液态氦的温
+度为1.3K。随着当量比的增加,马赫数开始下降的位置
+越靠近上游,即热堵塞引起激波位置越往上移,并且马赫数下降的程度也大。由该图可看出，沉积温度较高，预制体的致密化速度就越快。但沉积温度越高，预制体外层孔隙封闭快。这使得复合材料制做的最终密度有所降低。图3表明在其它工艺参数不变的情况下，沉积温度越高，制件最终孔隙率的分布就越不均匀。因此在制备2D碳/碳复合材料时，应根据实际要求选择合适的沉积温度，尽量用最短的时间得到符合要求的制件。
+　　　　　　　　　　
+图2　不同沉积温度密度增长曲线　　　　　　　　图3　不同沉积温度孔隙率分布曲线
+
+图4　模拟值与实验值对比曲线
+　　图4为模拟结果与实验结果的对比曲线。实验中预制体由吉体碳素厂的3KPAN平纹碳布制成，采用等温CVI方法在沉积炉内进行沉积，沉积炉内温度为T(750℃＜T＜1000℃)。根据传质理论［5］可建立一维传质连续方程如下：
+　　　　　　　　　　　　(2)
+式中Deff为等效扩散系数，Ks为反应速率常数，S为预制体孔隙表面积，Ci为预制体内反应气浓度。建模时应尽量使几何模型能够与预制体的实际结构相一致。所需的相关参数取值见表1。而双层涂层中因陶瓷表面层与金属底层直接结
+合，致使在涂层中存在着成分的变异和由此形成的宏观界面，如图3所示。
+*国防基金及国防总体设计基金资助项目
+单位：西北工业大学401教研室 . 西安 . 710072
+参考文献
+1　Tai Nyanhwa,Chou Tsuwei.Modeling of an Improved Chemical Vapor Infiltration Process for Ceramic Composites Fabrication.J.Am.Ceram.Soc.1990,73(6):1489-98
+2　Chung Guiyung,McCoy B J.Modeling of Chemical Vapor Infitration for Ceramic Composites Reinforced with Layered.Woven Fabrics.J.Am.Ceram.Soc.1991,74(4):746-51
+3　Vaidyaraman S,Lackey W J,Agrawal P K,Starr T L.1D Model for Forced Folw-Thermal Gradient Chemical Vapor Infiltration Process for Carbon/Carbon Composites.Carbon,1996,34(9):1123-33
+4　McAllister P,Wolf E E.Modeling of Chemical Vapor Infiltraqtion of Carbon in Porous Carbon Substrates.Carbon,1991,29(3):387-396
+5　Sher Wood T K等著，时钧等译.传质学.化学工业出版社，1988
+收稿日期:1998年5月18日
+修回日期:1999年5月17日

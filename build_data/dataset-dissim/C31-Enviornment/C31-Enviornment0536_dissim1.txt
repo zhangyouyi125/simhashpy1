@@ -1,0 +1,60 @@
+城市环境与城市生态
+URBAN ENVIRONMENT & URBAN ECOLOGY
+1999年 第12卷 第5期 Vol.12 No.5 1999
+
+
+
+系统评价EM菌液在生活污水处理中的应用效果
+孟范平，李桂芳，李科林
+　　摘要：采用在生活污水中投加有效微生物群（EM）的方法，系统评价了EM对污水中三类常见污染物去除率的影响。
+　　实验用培养液体积为40mL，按每瓶4mL接种量通过无菌操作接入菌株。②EM在好氧条件下能显著或极显著提高污水NH4+-N的硝化程度，当EM加入量为5/1000时效果最好，增幅达37.62%；厌氧条件下，当加入量为1/10000-1/1000时，能极显著增强污水的反硝化作用，NO3--N的去除率约提高14%。溴氨酸浓度高时，采用稀释法测定，稀释倍数为K。由此提出，在处理污水时，应根据处理要求，选择适宜的EM加入量。
+　　关键词：有效微生物群（EM）；生活污水；化学需氧量（CODcr）；氨氮（NH4+-N）；总磷（T-P）
+　　中图分类号：X172　　文献标识码：A　　文章编号：1002-1264(1999)05-0004-04
+A Systematic Study on the Effect of Effective Microorganisms(EM)
+on the Removal of Pollutants from Domestic Sewage
+MENG Fan-ping，LI Gui-fang，LI Ke-lin
+(College of Resources & Environment, Central South Forestry University, Zhuzhou 412006)
+Abstract：The effect of Effective Microorganisms(EM) on the re moval of three main kinds of pollutants from domestic sewage(DS) was studied by adding EM into DS. It showed that: ①In aerobic condition, EM addition (VEM/VDS) between 5/10000-1/1000 raised the removal rate of CODcr significantly with an increment of about 10%; however, in anaerobic condition, EM had no remarkable effect on CODcr remo val. ②5/1000 of EM addition could enhance the nitrification in DS significantly with a largest increment of 37.62% of NH4+-N removal rate; EM addition between 1/10000-1/1000 also promoted the denitrification with an increment of ab out 14% of NO3--N removal. ③Removal rate of phosphorus from DS was increased signif ican tly when EM addition surpassed 5/1000. Therefore, suitable EM addition need to be chosen to meet with different purposes of wastewater treatment.
+Key words：effective microorganisms(EM)；　domestic sewage；　 chemical oxygen demand(COD)；　ammonia nitrogen (NH4+-N)；　total phosphorus (T- P)
+　　有效微生物群（Effective Microorganisms，简称EM）自1978年问世以来，受到了许多行业专家、学者的青睐，并在饲料发酵、禽舍除臭等方面获得了极好的效果，它在环境污染治理方面也有独特的效果［1］。在此前曾采用正交试验研究了投加EM对生活污水中有机物的降解能力［2］，发现EM有效去除生活污水中有机物的最适条件是：水温25℃，曝气时间HRT/3，菌液加入量（VEM/V污水）为1/10000，进水pH为8.0。在此条件下，污水经过较短时间（2d）处理即能达到较高的COD、BOD去除率，比不加EM而要达到同等处理效果的时间缩短了1/2。
+　　关键词：菌株NKS-3；脱色特性；溴氨酸
+　　中图分类号：X172　　文献标识码：A　　文章编号：1002-1264(1999)05-0001-03
+Investigation on Decoloring Characters of Strai n NKS-3 to
+1-Amino-4-Bromoanthraquinone-2-Sulfonic Acid
+XIN Bao-ping,ZHUANG Yuan-yi,HU Guo-chen,
+SONG Wen-hua,JIN Zhao-hui,ZOU Qi-meng
+(Department of Environmental Science,Nankai University,Tianjin 300071) 
+Abstract：Strain NKS-3 was screened from the soil polluted by 1-amino-4-bromoanthraquinone-2-sulfonic acid(I).The strain was effective in the d ecolorization of compound I.The growth of the strain rises with the increase of concentration of carbon source.The compound I can enhance the growth of the stra in.The compound I can be completely decolorized even in the concentration of 100 0　mg/L.High-salinity inhibits the growth of the strain.The decolorizatio n was completely inhibited in the cultures with salinities.
+Key words：strain NKS-3;　decoloring character;　1-amino-4-bromoanthraquinone-2-sulfonic acid
+1　前言
+　　在难降解有机物的生物降解研究中，特效菌或优势菌的筛选，或利用生物工程技术通过构建或基因重组获得了不少成果。但是，它对污水中含氮、磷污染物的净化能力如何以及厌氧条件下是否也能起到同样的较好效果。本文将就这些问题做详细的探讨。沉淀的菌体用生理盐水洗涤，离心，经两次处理后，定容，用高频振荡器振荡，使重新形成菌悬液，在425　nm波长处，以经过相同处理无菌空白培养液作参比，测定吸光度值(A)，此值反映菌量多少。为讨论方便可将图4的曲线分为两类，一类代表500　mg/L及以下的浓度组，曲线在48　h处有拐点，即开始脱色；另一类代表750　mg/L及以上的浓度组，曲线在72　h出现拐点，开始脱色，到第6　d后，脱色率也接近100%(图中未标出)。
+1.2　水质监测方法
+　　污水处理前后CODcr、NH4+-N、NO3--N、NO2--N、T-P等污染物的分析按文献［3］的规定进行，即：CODcr――重铬酸钾法、NH4+-N――纳氏试剂分光光度法、NO3--N――酚二磺酸分光光度法、NO2--N――萘乙二胺分光光度法、T-P――过硫酸钾氧化―钼锑抗分光光度法。
+1.3　EM加入与污水处理方法
+　　EM与污水好氧处理：在污水排放口处采集一定量的生活污水，静置半小时后，取上层污水分装于15只1000　mL广口瓶中，每瓶装1000　mL，然后将15只广口瓶分为五组（即每组设3个重复），分别按VEM/V污水为0、1/10000、5/10000、1/1000和5/1000的比例加入EM菌液，并充分混匀，在室温条件下，用AR-6500型充气泵对污水曝气24　h，测定曝气前后污水中5种污染物的浓度，并据每一组污染物的平均浓度计算相应的去除率。在染料的生物降解研究方面，对偶氮染料做了较多、较系统的研究，对蒽醌染料的研究报道很少。另外，EM加入后，立即密塞，保持厌氧24h。
+
+
+图1　不同碳源浓度的菌生长曲线
+
+
+图2　不同碳源浓度的t-A关系
+　　另外，在不加淀粉的实验组中，经6　d培养，溴氨酸的颜色也降至接近于零(图中未标出)。
+
+
+图3　不同溴氨酸浓度的菌生长曲线
+
+
+图4　不同溴氨酸浓度的t-A曲线(图中符号意义同图3)
+3.3　盐度对菌生长和溴氨酸脱色的影响
+　　在溴氨酸浓度均为100　mg/L，而盐度分别为1.5%、3.0%、5.0%、7.5%和10.0%的5个实验组中菌生长曲线和溴氨酸脱色曲线列于图5和图6中。同对照相比，随着污水中EM加入量的增加，曝气24　h后污水中的CODcr逐渐降低，特别是VEM/V污水的比值为5/10000和1/1000两个处理组的CODcr浓度与对照的差异达到了显著水平（相应的去除率分别达到59.99%和60.42%），表明EM中的有效菌能够促进污水中有机物的降解。
+　　关键词：菌株NKS-3；脱色特性；溴氨酸
+　　中图分类号：X172　　文献标识码：A　　文章编号：1002-1264(1999)05-0001-03
+Investigation on Decoloring Characters of Strai n NKS-3 to
+1-Amino-4-Bromoanthraquinone-2-Sulfonic Acid
+XIN Bao-ping,ZHUANG Yuan-yi,HU Guo-chen,
+SONG Wen-hua,JIN Zhao-hui,ZOU Qi-meng
+(Department of Environmental Science,Nankai University,Tianjin 300071) 
+Abstract：Strain NKS-3 was screened from the soil polluted by 1-amino-4-bromoanthraquinone-2-sulfonic acid(I).The strain was effective in the d ecolorization of compound I.The growth of the strain rises with the increase of concentration of carbon source.The compound I can enhance the growth of the stra in.The compound I can be completely decolorized even in the concentration of 100 0　mg/L.High-salinity inhibits the growth of the strain.The decolorizatio n was completely inhibited in the cultures with salinities.
+Key words：strain NKS-3;　decoloring character;　1-amino-4-bromoanthraquinone-2-sulfonic acid
+1　前言
+　　在难降解有机物的生物降解研究中，特效菌或优势菌的筛选，或利用生物工程技术通过构建或基因重组获得了不少成果

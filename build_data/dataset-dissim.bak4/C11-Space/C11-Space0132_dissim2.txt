@@ -1,0 +1,90 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+组合发动机空气预冷换热器
+动态特性的数值分析
+程惠尔　浦保荣
+(上海交通大学280教研室*上海*200030)
+　　摘　要　基于守恒原理,导出叉流管-管型换热器非稳态传热过程的数学模型及相应的离散方程。利用隐式格式,求得组合发动机空气预冷换热器随时间而变的出口及壁面温度。指出此类动态计算若采用显式格式是极其费时的。两个传感器同时发生故障的情况在控制系统中是较严重的情况,但采用本文方法也可以对付这类故障。所编计算机程序可用于发动机系统调式。
+　　主题词　换热器　非稳态传热　组合发动机　数值分析
+NUMERICAL ANALYSIS OF DYNAMIC 
+CHARACTERISTICS OF AIR-PRECOOLED 
+HEAT EXCHANGER FOR COMPOUND ENGINE
+Cheng Huier　Pu Baorong
+(Shanghai Jiaotong University*Shanghai*200030)
+　　Abstract　Based on the conservation laws mathematical model and corresponding discritization equations of transient heat trunsfer process in a crossflow tube-tube heat exchanger are presented.By use of implicit scheme,exit and wall temperature varying with time in air-precooled heat exchanger for compound engine are extracted.It is pointed out that this kind of dynamic calculation is very spending time if explicit scheme is used.As compared with results of analytical solution and explicit method,it has been proved that the solution of implicit method is effective and feasible.The compiled computer program can be used in debugment of engine system.
+　　Key words　Heat exchanger　Transient heat exchanger　Compound engine　Numerical analysis
+1　引言
+　　组合发动机空气预冷换热器的性能和温度分布特点,已有文献作了详细报导［1,2］。然而,组合发动机从开始工作到飞行M=6左右这段近二十分钟工作时间里,空气预冷换热器的进、出口参数实际上始终处在某种动态的变化状态,通常的稳态计算不能反映这种工作特点。本文对预冷换热器全工况工作特性展开分析,旨在求得其随时间或飞行M数而变的实际出口参数。通过对一实际控制系统［1］中两个传感器漂移故障检测的仿真表明本文方法是有效的。于是,基于守恒定律的换热器瞬态温度分布可用如下三个偏微分方程来描写:
+(1)
+(2)
+(3)
+式中,uh和uc指热、冷流体流速,th和tc指热、冷流体温度,τh=(ρcv/αA)h,τc=(ρcv/αA)c,τw,h=(GCp)w/(αA)h和τw,c=(GCp)w/(αA)c分别为热、冷流体及热、冷壁面的时间常数。
+2　基于神经网络在线建模的传感器故障检测方法
+　　一个多输入多输出非线性动态系统:
+y(k+1)=F(y(k),…,y(k-m+1),u(k+1),…,u(k-n+1))(1)
+(u(k+1)是一p维输入矢量,y(k+1)是一q维输出矢量,n,m是输入和输出的最大延迟,对于线性系统n=m=1,F(…)代表一般的非线性函数)。
+　　在流量和对流换热系数为常数时,叉流式换热器有数学解析解［3］。但是,对于任意入口条件下换热器的响应特性,还需借助于数值计算方法。
+3　差分方程
+　　对于图2所示控制容积,求积守恒方程(1)～(3)。在处理扩散项时,取th对x和tc对y为分段线性分布,在处理牛顿换热项时,认为流体温度随位置阶跃分布,其值等于两界面即控制容积进、出口位置温度的算术平均值。经推导整理后,得相应差分方程为
+th(i+1,j,k+1)=H1th(i+1,j,k)+H2th(i,j,k+1)+H3tw(i,j,k+1)(7)
+tc(i,j+1,k+1)=C1tc(i,j+1,k)+C2tc(i,j,k+1)+C3tc(i,j,k+1)(8)
+tw(i,j,k+1)=W1tw(i,j,k)+W2［th(i+1,j,k+1)+th(i,j,k+1)］
++W3［tc(i,j+1,k+1)+tc(i,j,k+1)］(9)
+式中诸系数分别为
+　　为确保得到物理上真实的解,要求式(7)～(9)中全部系数为正,即1-B≥0及1-E≥0,据此导出如下限制条件
+(10)
+注意,这里只是对距离步长Δx及Δy提出了约束条件,而时间步长Δτ可以自由选择。
+　　式(7)～(9)是一种隐式差分格式,而至今见到的文献,大多采用显式格式计算换热器的动态特性［4,5］。采用显式格式求解时,出于稳定性上的考虑,必定要对时间步长Δτ提出制约条件,致使这种格式将只适宜于求解那些从一个工况迅速转变为另外一个工况的短暂过程,常见的换热器动态计算大多属于这一情况。而组合发动机空气预冷换热器明显与此不同,它要求解的问题是全工况跟踪出口参数,跟踪时间长达1000秒左右。4.没有考虑系统的输入量。目前传感器故障诊断方法有多种,比较多的是采用分析冗余方法［1］,人工神经网络方法［2-6］等。这在工程上是难以接受的。3.只能完成静止映射,即神经网络输入和输出都是在同一时刻。采用分析冗余方法需要系统的精确数学模型,所以这个方法难以应用于具有模型不确定性的系统和非线性系统。
+4　算例
+　　计算对象为一台组合发动机使用的空气-液氢管-管型换热器。其工作参数见图3和图4,结构尺寸见文献［1］,流体物性数据由文献［7］和［8］查得。空气通道分成N1=10段,氢通道N2=35。时间步长取Δτ=0.1秒。本文的优点是可以检测多个传感器故障,同时由于采用在线学习方式,非常适于航天器自主系统传感器故障检测的需要。
+　　(2)计算进口处温度,然后按式(7)～(9)计算Δτ后各节点温度。
+　　(3)将算出的各节点温度作为新的初始条件,重复上述计算,直到计算时间达到设定值为止。　　
+
+
+图5　热流体(空气)进出口温度曲线
+计算结果见图5～图7。图5显示空气(热流体)出口诸通道平均温度的响应曲线,从这张图可以看出,从τ=0［s］到τ=1000［s］的时间间隔里,换热器大致可使空气降温Δt=30℃～120℃,效果明显,图6给出冷流体氢的动态温度变化状况,图7是换热器最高壁温(位于最末一根热空气通道入口和第一根氢通道出口的交界位置,参见文献［2］)随时间变化关系。从图6和图7可知,在τ=1000s即M=6时,氢的出口温度tc达到650K,已呈气态,而换热器的最高壁温此时大于1000℃,超出了高温不锈钢的安全使用范围。
+
+
+图6　冷流体(氢)进出口温度曲线
+
+
+图7　换热器最高壁面温度曲线
+为了验证隐式方法的可靠性,用显式格式的差分方程作了对比计算。从表1给出的数据可知,就空气出口温度而言,两者相差小于3℃,对于氢出口温度及壁温,隐式与显式结果几乎相同。有关换热器非稳态对流换热问题的数值解及其在特定情况下与精确解的比较,文献［9］有专门介绍,本文不再予以引述。
+表1　空气预冷换热器两种格式计算结果比较
+
+时间τ(s)空气进口温度t′h［K］空气出口温度t″h［K］　氢出口温度t″c［K］　壁温tw［K］
+隐式显式隐式显式隐式显式
+200310.63279.34279.63　131.23131.28　205206
+400457.61416.67416.64　195.64195.25　317316
+600620.30567.77567.20　260.23260.11　433435
+8001145.801049.391049.20　453.07452.42　814814
+10001772.831647.031644.25　643.13642.70　12831282
+
+　　注:氢的进口温度t′c=40K
+5　结论
+　　1.隐式差分格式适于组合发动机空气预冷换热器动态特性的数值计算,据此编制的计算机程序,可供发动机系统设计时调用。
+　　2.在高M下,换热器壁温可能超出1000℃,为安全计,必须采取相应措施,如增加液氢流量,来加强冷却效果。2.仍需系统的数学模型来估计系统的状态矢量。
+　　主题词　非线性系统　传感器故障　故障检测　神经网络　在线学习
+MULTIPLE SENSOR FAILURE DETECTION 
+IN NONLINEAR SYSTEM BASED 
+ON SYSTEM IDENTIFICATION METHOD 
+USING ON-LINE LEARNING NEURAL NETWORK
+Niu Yongsheng　Zhao Xinmin
+(Dept.of Automated Test,Measurement and Control.,
+Harbin Instiute of Technology*Harbin*150001)
+　　Abstract　This paper presents an innovative approach for multiple sensor failure detection in a nonlinear system based on system identification using an on-line learning neural network.The approach builds an one-step ahead prediction model for the nonlinear system using an on-line learning neural network firstly,and then the discprepancy between the on-line estimations of the sensors using the built neural system model and the actual values of them is compared with a predetermined threshold to detect sensor failures.One advantage of the approach is the ability to detect multiple sensor failures.Another advantage is that it may be suitably used in autonomous systems with the neural network learning and working on-line.The method is proved to be very effective by a simulation result of detecting two sensor failures for a space robot system.
+　　Key words　Nonlinear system　Sensor failure　Fault detection　Neural network　On-line learning
+1　引言
+　　随着科学技术的不断进步,高性能的航天器和空间站机器人需具备对传感器故障的容错能力。
+参考文献
+  1　程惠尔.空气预冷换热器的性能计算.推进技术,1993(6):44-50
+  2　程惠尔,姚健.叉流管-管型换热器二维温度场的数值分析,推进技术,1994(4):62-66
+  3　Spiga M and Spiga G.Transient Temperature Fields in Crossflow Heat Exchangers with Finite Wall Capacitance.journal of Heat Transfer.Vol.110,1988
+  4　Yamashita H et al.Analysis of the Dynamic Characteristics of Crossflow Heat Exchangers with Both Fluids Unmixed JSME Bulletin,1978,21:479-485
+  5　Simonson J R.Transient and Steady-state Analysis of Crossflow Heat Exchangers by Program in FORTRAN.Trans.Insin Chem.Engrs,Vol.55,1977
+  6　浦保荣.显式差分格式时间步长与几何步长的最佳匹配.第三届全国计算传热会议论文集.上海,1984
+  7　居怀明等.载热质热物性计算程序及数据手册.北京:原子能出版社,1990
+  8　郑德馨,袁秀玲.低温工质热物理性质图和表.北京:机械工业出版社,1980
+  9　浦保荣,程惠尔,董葳.一维非稳态对流换热问题的数值解.上海交通大学学报,1996,30(11):122-126

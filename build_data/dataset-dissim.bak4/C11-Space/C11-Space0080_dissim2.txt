@@ -1,0 +1,58 @@
+航空计测技术
+AVIATION METROLOGY &MEASUREMENT TEHNOLOGY
+1999年　第19卷　第4期　Vol.19　No.4　1999
+
+
+
+8902A测量接收机检定高频电压表的实验研究
+彭先洪+
+摘　要　对8902A测量接收机用作高频中、小电压标准进行了分析研究，介绍了一种检定超高频毫伏表的新方法，并给出了实验数据，对该标准装置的不确定度进行了分析。
+关键词　8902A测量接收机　标准　检定　超高频毫伏表　不确定度
+Experimental Study of High Frequency Voltmeter Verification by 
+8902A Measuring Receiver
+Peng Xianhong
+Abstract　In this paper,the 8902A measuring receiver as the high frequency medium and low voltages standard is analyzed and studied.A kind of new method for verifying ultrahigh frequency millivoltmeter is iutroduced and experiment data are provided.The uncertainty of this standard equipment is analyzed.
+Key words　8902A Measuring receiver,Standard,Verification,Ultrahigh frequency millivoltmeter,Uncertainty.
+　　8902A测量接收机是美国惠普公司生产的，用微处理器控制的，全自动、多功能、高准确度信号分析仪器。改进后的放大器，把截止频率提高到300 Hz，在LXJ―40精密离心机的整个转速范围内，放大器的放大倍数保持不变，减小了放大器引起的光栅测速系统误差，从而减小了对稳速系统的影响。如果使用光电二极管，那么必须使用高增益的放大器，但放大器的增益提高时，其截止频率会下降，因此选用光电三极管作为光电转换器件。本文对这一应用进行实验研究。
+1　基本原理
+　　8902A测量接收机是一个带校准功能的外差式接收机。
+　　通过对光栅测速系统的改进，从技术上解决了一直困扰着光栅测速系统的信号频响和相位波动的问题，突破了“光栅不能用于高转速测量”这一传统观念。进行高频功率测量时，高频信号直接从功率灵敏头(如HP11722A)输入，被功率头内的热电偶吸收，产生与输入高频信号功率成比例的直流电压，8902A接收机将该电压斩波、放大、检波，再经电压―时间变换，然后计数输出。
+　　当离心机转动时，主、副光栅产生莫尔条纹，由光栅读数头中的光电转换器接收莫尔条纹信号，经放大、整形后产生频率为f1的方波信号。
+2　测量环境与设备
+　　测量环境：温度(25±5)°C；湿度(65±15)％;无外界强磁场和振动干扰。
+测量设备见表1。
+表1
+
+设备名称参考型号主要技术指标
+测量接收机HP8902Af：100 kHz～1300 MHz；0.2～1.0 V量程内的不确定度＜0.9％
+功率灵敏头HP11722Af：100 kHz～2.6 GHz；校准因子的不确定度＜1.1％
+功分器HP11667Af：DC～18 GHz
+合成高频信号发生器6060 Bf：10～1050kHz；V：1 mV～2 V
+超高频毫伏表DA22Af：5 kHz～1 GHz；V：1 mV～3 V
+
+3　检定方法与步骤
+　　检定方法如图1所示。
+　　功分器输入端通过高频电缆与高频信号发生器相连接，两输出端分别通过功率灵敏头与8902A接收机相连接，通过高频三通及检波器与被检超高频毫伏表DA22相连接。
+　　因此，有必要在放大器后加一个二阶有源带通滤波器，对由于光栅均匀性误差引起的低频波动信号和高频干扰信号进行滤波，从而提高光栅测速系统测速信号的质量。按8902A“RF”键，使其进入高频功率测量状态，显示单位转换成mV，使其直接显示被测电压值。
+
+图4　以LM318和AD521组成的不同放大器的频率响应
+3.3　增加带通滤波器
+　　由于光栅存在的均匀性误差，所以光电三极管的输出信号中，直流分量也会产生波动，即V＝A0(1＋sin(2πLnt／60))＋Asin(2πKnt／60)式中,A0sin(2πLnt／60)是光栅均匀性误差引起的变化;L为光栅在一周内透光率变化的次数，LK.所以,输出信号中直流分量的波动是一低频信号，这个低频信号会引起转速测量信号相位不稳定，很容易引起“滑相”现象。调节信号发生器的输出频率和幅度，在频率为100 kHz处，使被检表DA22指示为800 mV，此时， 8902A的指示值即为被检表DA22的基准频率点的相应电压实测值(当被检表为高阻抗时，8902A的实测值为指示值的2倍)。改变信号频率，调节信号幅度，每次使被检表DA22指示为800 mV，从8902A读取相应的读数，即得到一组被检表频率范围的频响电压值。
+4　测量数据与结果分析
+　　在相同条件下，进行重复性实验，每隔10天进行一组稳定性实验，测量结果表明：被检超高频毫伏表DA22的频率附加误差在±2.8％以内，与其技术指标要求相符。标准装置的重复性和稳定性都比较好，与国内其它高频电压标准装置(如ZC―100A)相比较，其准确度比较高，特别是当被测信号频率较高时，本检定装置的频响特性很好。
+5　不确定度分析
+　　从理论上分析，本检定装置的标准不确定度来源于8902A测量接收机功率校准不确定度、功率灵敏头的校准因子的不确定度、功分器的不确定度、信号发生器的波形失真以及传输线效应等。光栅测速系统输出信号的质量直接关系到LXJ―40精密离心机稳速精度及其工作可靠性，它对LXJ―40精密离心机来说是至关重要的。其它几项因素影响不很大，因为功率灵敏头的校准因子在95％～100％之间，校准因子的不确定度小于1.1，它对功率校准带来的不确定度在万分之一左右，可忽略不计；将功分器的两个输出端与标准表和被检表交替相接进行测量，结果，所测数据相近，功分器对该检定装置的标准不确定度的影响可忽略不计；选用信号失真小、性能好的信号发生器可消除波形失真的影响；功率灵敏头和被检表检波器直接与功分器输出端相连接，可基本消除传输线效应。因此，本检定装置的标准不确定度主要由8902A的功率校准不确定度确定，其大小为1％左右。根据上节的分析，解决LXJ―40精密离心机“飞车”和“滑相”等问题的关键在于提高光栅测速系统的频率响应及产生相位稳定的测速信号，因此分以下四个方面对LXJ―40精密离心机的光栅测速系统进行改进。它具有随频率变化而自动修正测量结果的优点。因此，在频率较高时，其测量准确度相对较高，与目前国内高频电压标准装置(如ZC―100 A)相比，频率特性好是它的最大优点。
+关键词　离心机　光栅　测速系统　信号
+The Means for Improving the signal Quality of Centrifuge Optic Grating 
+Measuring Speed System
+Long Zuhong,Zhang Zhimin,Liu Kexian,Dong Xueming
+Abstract　This article describe the character of optic gratings measuring speed which is used for the Model LXJ-40 precision centrifuge.According to speed control system's signal quality,we obtained why the precision centrifuge's speed is out of control and the control speed system's PLL (Phase Locked Loop) unlocked.We put forward the means to improve the signal quality of LXJ-40 Centrifuge optic gratings measuring speed system.
+Key words　Centrifuge,Optic gratings,Measuring speed system,Signal
+前言
+　　LXJ―40精密离心机是我国现有离心机加速度最高标准装置，自建标以来使用过程中，经常发生稳速系统锁相环“滑相”现象及在高速(180～202 r／min)中“飞车”现象，经分析其原因是光栅测速系统测速信号质量不高，相位变化太大，从而引起稳速系统锁相环“滑相”，导致转速误差变大，离心机测量不确定度降低；而光电信号转换、处理部分的频率响应太低造成了“飞车”现象。
+作者简介:+31岁　男　高级工程师
+作者单位:长城计量测试技术研究所，北京市，100095
+参考文献
+1.张善钟等.计量光栅技术.北京:机械工业出版社,1980
+2.缪家鼎.光电技术基础.杭州:浙江大学出版社,1988
+收稿日期:　　1999-04-26收稿

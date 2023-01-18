@@ -1,0 +1,58 @@
+计算机应用
+Computer Applications
+1999年 第19卷　第8期 Vol.19　No.8 1999
+
+
+
+Delphi 3.0中的多线程编程技术
+王　红　赵国红　
+1　前言
+　　Windows95是基于线程的多任务操作系统，它支持两种形式的多任务机制，一种是基于进程的，这也是Windows从一开始就支持的多任务类型。进程是指正在执行着的程序。在基于进程的多任务环境下，多个程序可以并发地执行。第二种多任务类型是基于线程的。线程是进程的一个执行流，多个线程可以并发地执行于同一个进程中。Delphi3.0充分利用了Windows95的多线程机制而提供了对线程编程的支持，这也是Delphi3.0与Delphi1.0的重大区别之一。利用这种机制能编写出很高效的程序。
+　　既然多个线程可以并发地执行于同一进程中，那么协调线程间的执行顺序，以避免对临界资源的使用而引起冲突就十分重要。
+2　Delphi3.0中线程对象
+　　在Windows95操作系统下，编写基于线程的程序可以利用应用程序接口函数（API），也可以使用Delphi3.0中线程对象（TThread对象）。线程对象可使编写多线程程序更简单、高效、易读。线程对象（TThread)提供了许多特性和方法（成员函数），只要根据需要对这些函数和方法重写，就可以在程序中实现多线程机制。先后使用V键(Vender销售商)，A键添加销售商名字(输入卡号前六位)， 然后使用B键，A键新增一个 BootBlock(引导块)输入引导块名如boot1和对应销售商名，以及启动文件名BbcFile=BBLOCK\NETBEUI\NE2000\DOSBB.CNF，接着使用C键，A键新增 Config(配置)如config1,输入对应引导块名,一级目录名dos, 二级目录名dos622共享配置文件fits\dos622.fit,个人配置文件fits\dos622p.fit,配置注释名如MyDos622，其他未列出的项均用回车作答。
+2.1　线程对象的特性
+　　Free on Teiminate特性：布尔型，只可在运行时使用。当线程结束时，该特性决定是由VCL（可视构件）自动清除线程对象还是由你自己负责清除。当为True时，自动清除。默认值为False。
+　　Thandle特性：线程句柄，API中大多数线程函数需要使用该句柄。
+　　Priority:线程的优先级特性，只能在运行时使用，后文中有详述。
+　　RetuinValue特性：整数类型，受保护特性
+　　（Protected），该特性指示线程的执行成功与否。登录一台普通的Windows 95工作站,执行NETSETUP.EXE,将Windows 95的文件安装到\\NTS4\PWIN95S中(其中NTS4为服务器名)。
+　　Teuminated特性：布尔型，且是受保护的(Protected)，只读。该特性决定线程是否停止执行，如该特性值为True时，线程执行结束。
+　　Thread ID特性：线程标识符，有的API线程函数使用该标识。
+2.2　线程对象的方法
+　　线程对象的方法有很多，介绍常用的几种方法如下：
+　　Do Teiminate方法　该过程只能由线程对象内部方法调用，用于与主VCL线程的同步，并产生Onteiminate的事件，一般说来，当线程终止时，线程会自动调用该方法，不需要写代码。
+　　Execute过程　该方法开始一个线程的执行，你必须在线程类中，重写该过程，Execute方法返回时，终止线程的执行、释放线程所占资源，并调用Onteinate事件过程。Execute方法必须周期性地检测Teiminate特性，该特性一旦为True，Execute必须立即返回。
+　　Resume过程　该方法恢复一个被挂起的线程的执行。
+　　Suspend过程　该方法挂起一个线程的执行，它和Rosume方法是配对的。
+　　Synchronize过程　在Delphi3.0的多线程编程中，各种VCL构件都是临界资源，只能由主线程使用，其它的线程要使用这些VCL构件，必须使用Synchronize方法，避免多线程与VCL构件的冲突，该过程带一个TThreadMethod类型的参数。
+　　Teiminate过程　该方法设置Teiminated特性为True，并终止你的线程的执行。
+　　WaitFor函数　该方法等待线程执行的终止，然后返回ReturnValue特性的值，因此，在调用该函数后，必须确保线程的退出。最后启动远程工作站。此外，个别主板不支持这种无盘启动。Onterminate事件发生在线程的Execute方法已经返回，TThread结束线程之前，该事件驱动只可在主线程使用，可以调用各种VCL方法和特性。
+3　创建Delphi3.0中的线程对象
+　　Delphi3.0环境中，线程对象是始视对象Tobject的直接派生类，它和其它的Delphi3.0构件和对象不同，不能在程序中直接使用，而必须从TThread对象中产生一个派生类，并对其中的某些成员函数进行重写以覆盖（Override）TThread对象中的方法，完成自己的功能。在Delphi3.0中可以直接书写代码创造自己的线程类，也可能和Delphi3.0的线程生成器来创建原始的公用代码，而后再在此基础上修改。　刘世元　硕士研究生。软件：Microsoft Windows NT Server 4.0 中文版 ,WINDOS95中文版,,必需的Netsetup.exe等文件，这些文件若不在Windows95安装盘上，可以从以下站点获取：ftp://ftp2.nwpu.edu.cn/incoming/netsetup 注意Windows95序列号必须型如425-XXXXXXX，早期的95版本一般都符合要求，不要使用随机的OE M版本，安装时CPU不要超频，否则容易死机。其二，线程被创建后，处于挂起状态，而不被立即执行，要想执行，必须调用线程的Resume方法。至于为什么会挂起，与它的构造函数有关。
+　　．　在服务器上准备文件
+　　设NT安装在 E:\WINNT下,所用网卡为TE2008B,因该卡与NE2000网卡兼容，故可直接用E:\WINNT\RPL\BBLOCK\NDIS下的NE2000.dos和E:\WINNT\RPL\BBLOCK\NETBEUI\NE2000目录下的dosbb.cnf和protocol.ini文件，此外将dosbb.cnf文件中“EXE BBLOCK\I13.COM ～ ～ ～”一行改为“EXE BBLOCK\W95I13.COM ～ ～ ～”并另存为W95BB.CNF文件,以备启动WIN95时使用。按缺省值完成安装即可。 
+4.3　线程的挂起和恢复
+　　在线程的执行当中，我们可以通过调用Suspend方法或设置Suspended特性为True而暂停线程的执行，节约的CPU时间以加其它线程的执行，当我们调用线程的Resume方法时，它又恢复线程的执行。其中AUTOEXEC.BAT文件内容如下：
+　　IPX
+NETX
+F:
+LOGIN
+CONFIG.SYS文件内容如下：
+　　Files=50
+Dos=High.Umb
+Buffers=50
+Device=Himem.sys
+Device=Emm386.exe
+　　登录后用该软盘生成DOS启动映像文件，以下用SYS:PUBLIC下的SYSCON，USERDEF,MAKEUSER，MAP，SETPASS设置软件，编辑登录脚本(Login Script）等。
+3　需要注意的问题
+3.1　关于PCI网卡
+　　若使用的是一般PCI网卡，由于其中断号与地址号不可修改，且数值随计算机的不同而变化，所以还应编辑E:\winnt\rpl\rplfiles\profiles\mywin95\suboot\protocol.ini文件，修改Bingings项和Interrupt,Iobase项。
+　　tpIdle：这是线程的最低优先级，只有当系统闲置时，该优先级的线程才被执行。
+　　tpLowest：该优先级比正常优先级（tpNormal）低2个点。
+　　tpNormal：正常优先级。
+　　tpHigher：该优先级比正常优先级高一个点。
+　　tpHighest：该优先级比正常优先级高2个点。
+　　tpTimeCritical：线程的最高优先级。
+5　结语
+　　用delphi3.0实现多线程编程是简洁和方便的，它把开发的重点放在了如何重载线程类的Execute函数上，避免了和操作系统的过多的交互，在较高一级的层次上实现了多线程编程。需要注意的是BootRom中的引导程序是上NT网的，且与相应卡型（ISA/PCI）匹配

@@ -1,0 +1,67 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第4期 No.4 Vol.18 1998
+科技期刊
+
+纵向塞曼恒温平台石墨炉原子吸收连续测定环境水中痕量元素镉、砷、铜、铅
+吴　华　吴福全　李绍南　 （苏州市环境科学研究所，苏州 215004) 
+文　摘　为了准确测定环境水样中痕量元素Cd、As、Cu、Pb含量。采用集恒温平台石墨炉(STPF)一体的纵向塞曼效应背景校正,最大功率升温,钯作通用基体改进剂和峰面积积分的一种新方法。由于我国的燃煤电厂长期以来一直存在着煤种波动大、煤质低劣、燃烧工况多变等问题（这一现象短时期内不易改变）,致使飞灰的比电阻经常处于变化之中，有时严重偏离电除尘器设计值，给电除尘器的运行控制管理增加了难度。方法准确可靠，展现了绝对分析的前景。
+关键词　恒温平台石墨炉　塞曼效应　镉、砷、铜、铅　环境水
+Continuous determination of trace cadmium，arsenic，copper and lead in environmental water by stabilized temperature platform furnace AAS using longitudinal arrangement Zeemen-effect background correction. Wu Hua，Wu Fuquan，Li Shaonan (Suzhou Research Institute of Environmental Science , Suzhou 215004).China Environmental Science.1998,18(4):374～377
+Abstract― A new method for the precise determination of trace cadmium, arsenic, copper and lead in environmental water by using longitudinal arrangement Zeemen-effect background correction, maximum power heating, peak area integration and Pd as a matrix modified,called altogether the stabilized temperature platform furnace (STPF) AAS,has been studied. This method is rapid, accurate and precise. The detection limits(3σ) , relative standard deviation(n=6) and recovery for Cd,As,Cu and Pb were 2.5×10-13，5.0×10-11,3.8×10-11 and,2.5×10-11g;3.4％～4.9％,2.5％～4.3％,1.8％～3.6％ and 1.8％～4.1％;93.5％～106％,91.5％～103％,93.5％～110％ and 91.8%～108％respectively. This satisfactory method has shown an outlook for the absolute analysis.
+Key words:stabilized temperature platform furnace 　Zeemen-effect　Cd、As、Cu、Pb　environmental water
+　　为评价环境水质质量需要监测的项目，诸如痕量元素镉、砷、铜和铅，由于水体易受环境影响，其基体与含量往往变化不一，靠单一的方法测定难以准确定量。箱内安装有升降式高压托盘电极及加热组件(如图2所示)。其中最大功率升温〔1,2〕能在瞬间升到预定的最高温度使原子浓度增大，提高待测元素的测定灵敏度；L'vov平台〔1〕可使加在其上的样品滞后到石墨炉恒温时原子化，消除了气相干扰；钯作通用基体改进剂〔3,4〕，使灰化温度大为提高，有利于水样中干扰基体的排除，使干扰降至最低；纵向塞曼效应〔5〕在精确扣除高背景吸收的同时，又因革除了偏振元件而使光能量增强，噪音减少，改善了测定精度；峰面积积分(A.s)〔6,7〕，则进而消除吸光度信号形成过程的动力学影响，从而可实现绝对分析〔8，9〕。
+1　实验
+1.1　主要仪器与试剂
+　　主要仪器为P-E 4100ZL型纵向塞曼石墨炉原子吸收光谱仪；P-E AS-70型自动进样器；P-E 横向加热涂层石墨管；P-E EDL 2型无极放电灯电源；P-E GEM Desktop 操作系统；砷无极放电灯(德国P-E公司)；镉、铜和铅空心阴极灯。
+　　 镉、砷、铜和铅的标准贮备液浓度均为1000mg/L。用此标准贮备液以0.2％硝酸(G.R)逐级稀释配制成镉、砷、铜和铅的混合标准使用液，其中Cd的浓度为1.0μg/L，As为100μg/L，Cu、Pb均为50.0μg/L。近年来承担过“DR型高压粉尘比电阻试验台”(获电力部科技进步二等奖)；“BDL便携式飞灰比电阻现场测定仪”(获电力部科技进步三等奖)；“飞灰比电阻与电晕电场特性参数的研究”(获电力部科技进步三等奖)等项目的研究工作。称取0.1g海绵钯于50mL容量瓶中，加入浓硝酸1.5mL，加盖室温过夜溶解(不可加热)，用二次去离子交换水稀释至刻度，摇匀。
+1.2　试验方法
+　　将环境水样(含硝酸0.2％)倾入2mL塑料小杯中，对号置于自动进样器的位置，自动进样器分别吸取5μL二次去离子交换水，5μL钯溶液，25μL水样，然后一起加入石墨管中，按表1选择的仪器测定条件和表2的恒温平台石墨炉升温程序进行干燥、灰化、原子化和清除，连续完成水样的测定。同时设置了3条加热线路，以作备用，从而保证了在正常加热功率下不会因加热丝熔断而中止试验，保持试验的连续性。支架座伸出的4只悬臂分别吊起4组低压电极组件。
+2.2　灰化和原子化温度及基体改进剂
+　　灰化温度选择的原则必须使水样中干扰基体(如氯化物)最大限度地排除，同时确保待测元素不能损失。实验表明，镉、砷从300℃和铜、铅从500℃开始有挥发损失，不可能最大限度排除在1000℃以上才能挥发的氯化物。加入钯基体改进剂后，钯可与上述4种待测元素形成热稳定合金，使其灰化温度大为提高〔3,4〕，又可改善原子化温度。当加入2mg/mL钯溶液5μL，镉、砷、铜、铅的灰化温度可分别提高到700℃、1500℃、1300℃和1100℃，其原子化温度分别选择1400℃、2200℃、2300℃和2200℃，此时各吸收峰面积(积分信号以A.s表示)最大。具体灰化和原子化温度曲线见图1。
+2.3　L'vov石墨平台及吸收峰面积(积分)测量
+　　以往采用普通石墨炉(HGA)，对待测元素浓度相同而基体不同的两个水样测定，无论用吸收峰高测量还是吸收峰面积(积分)测量，其吸光度信号均无法消除基体的影响。采用L'vov石墨平台和最大功率升温可使加在其上的水样基体挥发和原子化推迟到石墨管达到温度平衡时发生，既降低基体干扰，又增加待测元素的测定灵敏度，保证吸收峰面积(积分)测定准确可靠。同时还使原子化温度比通常的低200℃。
+2.4　基体干扰及酸度试验
+　　魏复盛等〔10〕运用水化学知识系统论述各种环境水样基体的成分及其对痕量或超痕量待测元素的测定影响，指出水的基体成分K+、Na+、Ca2+和Mg2+的浓度比待测的超痕量金属浓度高出5～10个数量级，这些金属的氯化物和硫酸盐及SiO2-３构成水的基体成分，对原子吸收的测定均有不同程度的干扰。针对这种情况本文采用扣除背景能力高而且精确的纵向塞曼效应，最大功率升温提高灵敏度，L'vov平台消除由基体形成的气相干扰，加入钯基体改进剂提高灰化温度最大限度排除氯化物、硫酸盐和硅酸盐基体的干扰，从而能够无需分离即可直接准确测定环境水中痕量元素镉、砷、铜、铅。
+　　对于重金属的测定，水样的酸化一般规定用硝酸(G.R)，其浓度为1％。此时电极组件的额定重量恰好全部施加在灰样表面之上，使灰样表面的压强保持额定压强。为兼顾石墨管的寿命，本文选择用以酸化水样的硝酸浓度为0.2％。
+
+图1　镉、砷、铜、铅的灰化和原子化曲线
+Fig.1　Curves of ashing temperature and atomization temperature on the absorbency of Cd、As、Cu and Pb
+1,2 灰化温度曲线　3,4 原子化温度曲线　*未加基体改进剂　。 加基体改进剂钯
+2.5　标准工作曲线
+　　应用纵向塞曼效应横向加热的STPF石墨炉测定痕量元素镉、砷、铜、铅，实验结果表明，最佳标准工作曲线范围镉为0～1.0μg/L，砷为0～100μg/L，铜、铅为0～50.0μg/L，用一元线性回归方程得出的线性相关系数(r)分别为0.9994、0.9997、0.9996、0.9999，见图2。
+
+参考文献
+1　原永涛等.BDL便携式飞灰比电阻现场测定仪.中国电力,1993,26(7):26～31
+
+作者简介
+原永涛　男，1954年9月生。
+
+图1　测量原理示意
+Fig.1　Diagram of measuring system 
+1.温度传感器　2.高温电极箱　3.灰盘(电极)
+4.高压电源设备　5.交流接触器　6.温控仪　
+1.2　高温高压电极箱
+　　电极箱为立式布置，上下双体结构。
+参考文献
+1　L'vov B V.Electrothermal atomization―the way foward absolute methods of atomic absorption analysis. Spectrochim.Acta.,1978,33B(5):153～193
+2　Slavin W.Manning D C，Carnrick G R.The stabilized temperature platform furnace. At.Spectrosc.，1981,2(5):137～195
+3　Edger R D.Atomic absorption analysis with graphite furnace using matric modification.At.Absorpt.Newslitt.,1975,14(5):127～132
+4　Schlemmer G，Welz B. Palladium and magnesium nitrates ,a more universal modifier for graphite furnace atomic absorption spectrometry.Spectrochim.Acta.,1986,41B(11):1157～1165
+5　Fernandez EJ,Bohler W,Beaty M M,et al.Corretion for high background levels using the zeeman effect. At.Spectrosc.,1981,2(3):73～80
+6　L'vov B V,Nikolaer A G,et al.Theoretical calculation of the characteristic mass in graphite furnace atomic absorption spectrometry .Spectrochim.Acta.,1986,41B(10):1043～1053
+7　Slavin W S,Carnrick G R,Manning D C, et al. Recent experiences with the stabilized temperture platform furnace and zeeman background correction.At.Spectrosc.,1983，4(3):69～86
+8　Slavin W，Carnrick G R.The possibility of standardless furnace atomic absorption spectroscopy.Spectrochim.Acta.,1984，39B(2/3):271～282
+9　L'vov B V.Recent advances in analysis by graphite furnace atomic absorption spectometry.Spectrochim.Acta.,1990，45B(7):633～655
+10　魏复盛，齐文启. 原子吸收光谱及其在环境分析中的应用. 北京：中国环境科学出版社，1988.225～276
+作者简介
+吴　华　女，1962年2月生。现为苏州市环境科学研究所工程师。
+
+图1　测量原理示意
+Fig.1　Diagram of measuring system 
+1.温度传感器　2.高温电极箱　3.灰盘(电极)
+4.高压电源设备　5.交流接触器　6.温控仪　
+1.2　高温高压电极箱
+　　电极箱为立式布置，上下双体结构。参加完成“砷的测定―原子吸收分光光度法”、“汞的分析―冷原子荧光法”被编录在国家环境保护局1995年环境保护科学技术研究成果公报中的监测分析方法中。发表论文10余篇，其中5篇获自然科学优秀论文奖。
+1.1　主、辅测控盘台
+　　 主测控台为一桌面屏式盘台

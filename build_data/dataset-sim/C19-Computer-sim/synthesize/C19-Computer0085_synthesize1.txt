@@ -1,0 +1,168 @@
+在 AVIcap 窗口的回调函数如 capVideo-StreamCallback ， capStatusCallback 等函数计算机工程建设
+COMPUTER ENGINEERING
+1999年 第25卷 第8期 Vol.25 No.8 1999
+
+
+
+Windows自然环境下的实时技术
+石峻，余松煜
+全文：结合软件实现PSTN可视电话的实际应用，针对其实现之中的一个重要环节--实时视频，讲座了在Windows环境下利用Visual C++所提供的 for Windows库实现实时视频采集的关键技术，给出了软件实现视频流捕捉的内部结构流程和相应的编程示例。。因此如何实时获取数据就成为该类应用中的重要环节和关键前提。同时随着计算机运算、处理性能的迅猛发展，原来许多需要专用硬件才能实现的技术，现在已经完全可以利用 CPU 的高性能通过软件来实现。例如现在的 PSTN 可视电话已经完全可以通过 PC 机用软件方案实现。。结构设计人员甩掉了图板，从手工设计中解放出来，实
+现了设计全过程电脑化。 
+1 Video for Windows 简介
+　　Video for Windows 表达式是 Windows 环境下实现实时视频捕捉的重要工具，主要包括 vfw.h 头文件和 vfw32.lib 函数库。 
+　　参数设置完成之后，视频数据的采集是整个应用的关键，根据应用的不同可以将视频帧采集到的文件或采集的缓存直接加以处理。。 AVIcap 为应用提供了一个访问视频采集硬件简便的、基于消息的界面，并且能够控制视频流数据存储到磁盘的过程。 
+1.1 AVIcap 窗口类的基本功能 
+　　AVIcap 窗口类是完成由视频捕获硬件获取数据，并按照需要的文件格式进行存储、转换的重要方式，它提供的主要功能包括：
+　　1) 动态有钝视频和音频输出器连接或断开； 
+　　2) 设置视频捕获速率； 
+　　3) 提供设置视频源，视频格式以及是否采用视频压缩的对话框； 
+　　4) 设置视频采集的表明模式为 Overlay 或者 Preview 模式； 
+　　5) 实时获取每一帧数字视频数据； 
+　　6) 将一视频流和音频流捕获并留存到一个 AVI 文件中； 
+　　7) 按用户要求捕获某一帧数字的视频数据，并将图象以 DIB 格式的文件保存； 
+　　8) 创建、保存、或载入 RGB 格式下的调色板； 
+　　9) 将捕获图象和相关的调色板拷贝到剪切板； 
+　　10) 指定捕获数据的文件名，并能够将捕获的内容拷贝到另一个文件。 Previes 模式的显示速度慢，该显示模式所支持的视频采集格式为 RGB 格式。在 Overlay 模式下所捕获的视频数据的显示不需要经过占用系统资源，显示速度快，同时不影响系统的其它任务。其过程由系统完成，而函数的具体内容则由用户自己设定。在系统中当某一回调函数被设定后，在某一特定的条件满足时，系统自动的该回调函数。。该类函数在使用之前需要先由用户设定函数的内容，然后将其注册到系统中，判断调用条件是否满足以及对该函数的调用则都由系统自动完成，不需要显式的调用命令。 
+　　(2) 宏 
+　　在 AVIcap 窗口类中，宏的使用完全类似于普通的函数，其功能等同于发送相应的窗口消息。例如 
+　　capSetCallbackOnVideoStream 与显式发送 WM_AP_SET_CALLBACK_VIDEOSTREAM 消息所完成的功能完全相同。
+    这项研究自１９８９年立项开始，就在适用性强、采用技术手段新、起点高上下功
+夫。设计人员甩掉了图板，从手工设计中解放出来，实
+现了设计全过程电脑化。 
+　　std ViewCapture(void) 
+　　{ 
+　　　　 int nID; 
+　　　　 BOOL cError; 
+　　　　 CRect Rect; 
+　　　　 nID = 1; 
+　　　　 cError = TRUE; 
+　　// 创建视频捕获窗 
+　　　　 hwndParent = m_hWnd; 
+　　　　 GetClientRect( Rect); 
+　　　　  = capCreateCaptureWindow( 
+　　　　　 "My capture Window", 
+　　　　　 WS_CHILD|WS_VISIBLE, 
+　　　　　 Rect.left,Rect.top,192, 
+　　　　　 144,hwndParent,nID); 
+　　 // 由捕获窗获取视频捕获的缺省设置 
+　　capCaptureGetSetup(hwndCap, gCapParms,(CAPTUREPARMS)); 
+　　// 设置捕获窗的参数 
+　　gCapParms.dwRequestMicroSecPerFrame = 40000; 
+　　 gCapParms.fCaptureAudio= FALSE; 
+　　 gCapParms.fLimitEnabled= FALSE; 
+　　 gCapParms.fAbortLeftMouse=FALSE; 
+　　 gCapParms.fAbortRightMouse=FALSE; 
+　　 gCapParms.fYield=TRUE; 
+　　// 注册回调函数 
+　　 capSetCallbackOnError(hWndCap, ErrorCallbackProc); 
+　　 capSetCallbackOnStatus(hWndCap, StatusCallbackProc); 
+　　 capSetCallbackOnYield(hWndCap, YieldCallbackProc); 
+　　 capSetCallbackOnVideoStream(hwndCap, 
+　　　　 capVideoStreamCallback); 
+　　// 设置捕获窗参数 
+　　 capCaptureSetSetup(hwndCap, gCapParms, 
+　　　　 sizeof(CAPTUREPARMS)); 
+　　// 建立与视频捕获设备的连接 
+　　capDriverConnect(hwndCap,NULL); 
+　　// 获取捕获窗当前状态 
+　　capGetStatus(hwndCap, gCapStatus, sizeof(gCapStatus)); 
+　　// 获取视频捕获设备的能力 
+　　capDriverGetCaps(hwndCap, 
+　　gCapDriverCaps,sizeof(CAPDRIVERCAPS)); 
+　　// 设置捕获窗的显示模式为 Overlay 模式 
+　　capOverlay(hwndCap,TRUE); 
+　　// 激活 capVideoStreamCallback 回调函数 
+　　capCaptureSequenceNoFile(hwndCap); 
+　　} 
+　　(4) 关闭视频捕获窗 
+　　// 注销回调函数 
+　　capSetCallbackOnError(hWndCap,NULL); 
+　　capSetCallbackOnStatus(hWndCap,NULL); 
+　　capSetCallbackOnYield(hWndCap,NULL); 
+　　capSetCallbackOnVideoStream(hwndCap,NULL); 
+　　// 取消与视频捕获设备的连接 
+　　capDriverDisconnect(hwndCap); 
+　　在以上过程中，所捕获的视频帧被保存到了指定的位置，可以根据应用的需要进行处理，如进行压缩编码或传输等。 
+2 视频捕获基本结构流程 
+　　视频捕获的结构框图如图 1 所示。与采集的过程并无多大关系。它是通过 capCreate-CaptureWindow 函数创建的。 
+　　在系统回调函数中常用的为状态设置、出错处理、流捕获或帧捕获等回调函数，它们的注册是通过相应的宏完成的。如 capSetCallbackOnError 将系统出错处理的回调函数注册到系统中，当系统出错时自动调用进行处理。具体处理的内容由用户自己编写。 
+　　捕获窗参数设定及系统参数设定需要根据用户的具体要求决定。这里主要对视频显示的两种模式即：视频叠加模式 (Overlay 模式 ) 和预览模式 (Preview 模式 ) 加以详细说明。 
+　　1) Overlay 模式：该模式为部分采集设备所具有的技能，可以通过 CAPDRIVERCAPS 结构中的 fHasOverlay 域来判断设备是否具备该模式。 
+1.2 AVIcap 窗口类函数分类 
+　　1) 回调函数 
+　　在 Windows 系统中，回调函数是一类特殊的函数，功能类似于中断函数。该显示模式所支持的视频采集格式为 YUV 格式。本文所提出的应用框架适合于实时视频捕获与处理的大部分应用场合，根据不同的应用要求可以作相应的扩充和修改，作者应用该框架实现了可视电话系统视频输入端的实时视频捕获功能，并将其集成到可视电话的应用系统中，取得了满意的效果。。
+    步入９０年代，国家下决心加强计算机智能化工程研究和开发。通过 capPreview 宏实现。“８６
+３”高技术项目、国家“八五”重点科技攻关项目―――清华图纸自动输入及管理系统
+的研究成果，使工程设计人员可以甩掉图板，甩掉图库。 
+
+图1 视频捕获软件实现的结构框图
+　　要进行视频捕获首先必须创建一个捕获窗，所有的捕获操作及其它设置都是以它为基础的。它主要应用于采集帧的本地回显。由于 Video for Windows 函数可以方便地实现视频、音频数据流到 AVI 文件的存储，在 Visual C++ 中也将 Video for Windows 函数称为 AVIcap 通道类函数。。它的优势是速度快，实时性强。完成视频帧到文件的存储可以利用相应的宏实现，如 capCaptureSequence 宏将捕获帧存储到指定的文件。设计人员甩掉了图板，从手工设计中解放出来，实
+现了设计全过程电脑化。这里 callback 函数可以使用 capSetCallbackOnFrame 或 capSetCallback-OnStream 来注册。其不同点在于后者所能够达到的采集速率比前者要高，但需要用 capCaptureSequenceNoFile 加以激活。其相应的回调函数的接口及内容可以完全一致。 
+3 视频捕获程序示例 
+　　以下程序将视频帧捕获到指定的缓存内，以便后序处理。 
+　　(1) 定义全局变量 
+　　HWND ghWndCap; // 捕获窗的句柄 
+　　CAPDRIVERCAPS gCapDriverCaps; // 视频捕获设备的能力 
+　　CAPSTATUS gCapStatus; // 捕获窗的状态 
+　　CAPTUREPARMS gCapParms ； // 捕获窗的 参数 
+　　unsigned char RBuf[192*144*2]; 
+　　unsigned char *ReadBuf = RBuf;// 指定捕获帧的存储缓存指针 
+　　(2) 定义回调函数的具体内容 
+　　// 当捕获过程发生错误时调用 
+　　LRESULT CALLBACK ErrorCallbackProc 
+　　(HWND hWnd, int nErrID, LPSTR lpErrorText) 
+　　{ 
+　　 if (!ghWndCap) return FALSE; 
+　　 if (nErrID == 0) return ; 
+　　lstrcpy(gachLastError, lpErrorText); 
+　　(hWnd, lpErrorText, 
+　　 gachAppTitle,MB_OK | 
+　　 MB_ICONEXCLAMATION) ; 
+　　 return (LRESULT) TRUE ; 
+　　} 
+　　// 当捕获窗状态改变时调用 
+　　LRESULT CALLBACK StatusCallbackProc 
+　　(HWND hWnd, int , LPSTR lpStatusText) 
+　　{ 
+　　 static int CurrentID; 
+　　 if (!ghWndCap) return FALSE; 
+　　 if (nID == IDS_CAP_END) { 
+　　if ((CurrentID == 
+　　 IDS_CAP_STAT_VIDEOAUDIO) 
+　　 || (CurrentID == 
+　　 IDS_CAP_STAT_VIDEOONLY)) 
+　　 return(TRUE); 
+　　 } 
+　　 CurrentID = nID; 
+　　 // 更新捕获窗的状态 
+　　 statusUpdateStatus(gCapStatus, lpStatusText); 
+　　 return (LRESULT) TRUE ; 
+　　} 
+　　// 当捕获过程中其它应用处于 Yield 时调用 
+　　LRESULT CALLBACK YieldCallbackProc 
+　　(HWND hWnd) 
+　　{ 
+　　 // 在此仅作消息传递，可根据需要处理 
+　　 MSG msg; 
+　　 if (PeekMessage( msg, 
+　　 NULL,0,0,PM_REMOVE)){ 
+　　　　 TranslateMessage( msg); 
+　　　　 DispatchMessage( msg); 
+　　 } 
+　　 return (LRESULT) TRUE; 
+　　} 
+　　// 当缓存中一帧视频数据满时调用 
+　　LRESULT CALLBACK capVideoStreamCallback 
+　　(HWND hWnd, LPVIDEOHDR lpVHdr) 
+　　{ 
+　　 // 将一帧的图象数据拷贝到指定缓存 
+　　 memcpy(ReadBuf,lpVHdr->lpData, 
+　　　　 lpVHdr->dwBytesUsed); 
+　　 return (LRESULT)TRUE; 
+　　} 
+　　(3) 启动视频捕获窗 
+　　视频捕获窗的启动过程主要由 ViewCapture 函数实现，视频数据的采集则由回调函数完成。 
+　　其中前 3 种结构都有相应的函数来设置和获得结构包含的信息。 
+4 结束语 
+　　Visual C++ 所提供的 Video for Windows 函数是软件方式实现实时视频捕获重要工具，合理利用它所提供的函数、宏、结构以及回调函数可以方便地实现实时视频捕获，为后续的处理工作打好基础。在多媒体通信应用中尤为重要。 
+　　Preview 模式和 Overlay 模式都只是用以显示。

@@ -1,0 +1,139 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+测控仪输出对称性检查的讨论
+冯庆洪
+　　摘　要　介绍由BLR―1型拉压力传感器与JSS―P型测控仪组成的数据采集系统，在对传感器进行标定试验时，进行测控仪输出对称性检查的必要性及输出对称性检查方法。
+
+　　作为例子，本文研究了绕ｙ″轴旋转产生的重力梯度加速度引起的卫星
+贮箱中流体的晃动问题(见图1)。由于装置使用较为频繁，在传感器受损率较高的情况下,系统标定试验的次数也必然增加。涂层试样尺寸为15×8×6.4ｍｍ３，采用扫描电镜(SEM)和能谱仪(ED)
+研究涂层的热震失效特征。
+　　JSS―P型测控仪设有四个电路相同的通道，各通道对应传感器作用力，共用一个三位半显示器，并由转换开关实现通道变更。
+
+主题词  微重力  晃动力学  气液界面
+　
+SLOSHING INDUCED MOMENT DRIVEN BY
+GRAVITY GRADIENT ASSOCIATED 
+WITH SPACECRAFT SLEW MOTION
+H.L.Pan Wei Yanming
+(Beijing Institute of Control Engineering*Beijing*100080)
+R.J.Hung
+(The University of Alabama in Huntsvell,Alabama 35889,U.S.A.)
+Abstract  The mathematical formulation of spacecraft sloshing for a partially liquid fill 
+cryogenic helium Ⅱ in dewar container driven by the gravity gradient acceleration 
+associated with slew motion is studied.The Advanced X-Ray Astrophysics Facility-
+Spectroscopy spacecraft is chosen as an example in this study.Explicit mathematical 
+expressions which manage orbital gravity gradient acceleration associted with slew 
+motion acting on the spacecraft fluid systems are derived.the numerical computation of 
+sloshing dynamics is based on the non-inertial frame spacecraft bound coordinates and 
+intends to seek the solution of time-dependent,three-dimensional formulations of 
+partialdifferential equations subject to initial and boundary conditions.The numerical 
+computation of fluid forces and moment fluctuation exerted on dewar container are 
+investigated.This study discloses the sloshing dynamic modulated liquid-vapor interface 
+fluctuations,fluid forces and moment fluctuations exerted on the spacecraft system.The 
+relationship with the major driving force of gravity gradient acceleration associated with 
+slew motion on the fluid system in a microgravity environment are also presented.
+
+Key words  Microgravity  Slosh wave  Liquid-vapor interface
+
+1  引言
+
+　　一些科学实验卫星为了达到非常稳定的机械和力学条件，以及观测仪、
+望远镜和陀螺仪的超导传感器在非常低的温度下工作(接近绝对零度)，使用了
+低温液态氦充当推进剂达到冷却和控制的双重目的。
+1　常规系统标定试验方法
+　　标定拉压力传感器，通常采用挂砝码的方法，对传感器拉向加荷进行标定试验。传感器与测控仪连接后，作用力使传感器产生与应变对应的电压信号，该信号经测控仪放大后，由数字电压表读出作用力对应的电压。在测控仪正常状态下，各通道输出对称性应该是理想的。由于没有考虑故障隐患，在最初的多次标定试验中，没有在意测控仪输出是否对称。只要在传感器接入后，能在静态下正常调零，且在拉向额定负荷下输出5 V左右的电压，就认为测控仪基本正常。然后便进入标定试验。
+2　测控仪输出对称性检查必要性
+　　通常所说的传感器标定，完整的说法应该是拉压力传感器与测控仪组成的采样系统标定。
+
+3  结果与分析
+3.1  梯度涂层的宏观组织特征
+
+图2为梯度涂层的宏观金相组织照片。
+
+图　1
+　　由图1知，测控仪不仅为传感器提供10 V稳定的激励电压，而且还承担传感器在力作用下产生的信号电压的放大。前面已述，传感器标定时仅做单向位力加荷，而实际使用时拉压向都有作用力。
+
+    作用在流体上的重力梯度加速度：
+ａgg＝－n２［3（rｃ*d）rｃ－d］　　　　(3）
+式中，ｄ是流体单元是卫星质心的向量，对于固连于贮箱上的园柱坐标系
+（r，θ，z），ｄ＝｛－rcosθ，－rsinθ，－（ｚ－Ｌｃ）｝。
+　　标定试验前要做测控仪输出对称性检查的想法，是在测控仪的一次故障检修后产生的。当时送修的测控仪第二、三通道由于前级运放IC1(AD620)集成块损坏，导致传感器接入后，测控仪输出无法调零，且在力作用下，输出不能跟随反应，故障排除后，为考核其性能，将其输出对称性进行检查的同时，并随测第一、四通道输出对称性。偶然发现未做修理的第一通道输出严重不对称。查加到该通道各运放的正负电源仍对称。在同样输入条件下，为何唯有第一通道输出不对称?起初曾怀疑末级跟随器IC3性能不佳；但通过采用替换OP07证实并非运放隐患。继而分析输出稳压管限幅保护电路原理，要求两只稳压管性能一致，是保证跟随器双向输出对称的基本条件。在对稳压管产生疑虑后，将限幅保护支路切断再做试验，双向输出已基本对称。
+　　为了准确判定稳压管存有隐患，将原限幅保护电路恢复，并先后加入±15 mV信号，在输出端分别测得＋5.955 V和－5.504 V不对称状态下，对DW1、DW2稳压管的端电压也进行测量，其结果是，当输出为正时，DW1上的反向压降为5.5 V，DW2上的正向压降仅为0.45 V；当输出为负时，DW1上的正向压降为0.7 V，而DW2上的反向压降为4.8 V。分析两组数据，不难看出，由于DW2性能变劣，导致VW1≠VW2，引起输出不对称已很明显。将两只稳压管更换后，异常现象消失。
+　　分析输出限幅保护电路，两支背靠背串接的稳压管，并接在跟随器输出端，既是测控仪末级运放的输出限幅保护，也是计算机采样A／D输入的过载保护。图7为经900°C、25次热循环后涂层与基
+体结合区截面的SEM形貌。正常情况下，测控仪输出的V0大于稳压管击穿电压后，稳压管才起限幅作用。
+　　上述由于稳压管性能变劣引起输出不对称故障比较典型。后来还曾碰到DW2击穿短路的情况，做输出对称性检查时发现，输入－15 mV的信号,输出限制在－0.7 V上。总之，两支稳压管中任意一支击穿短路，就会引起双向输出严重不对称。如果DW1击穿短路，常规的拉向加荷标定即可发现，当加荷到一定值，输出电压就被DW2正向钳位在0.7 V上，这种情况虽然标定时可以发现，但标定试验必须暂时中断。由于卫星的旋转轴
+远离贮箱的几何中心，贮箱中的流体会受到一个不平衡的重力梯度加速度作
+用，进而引起流体自由液面的晃动，而自由液面晃动所产生的晃动力影响会
+带来卫星控制系统的诸多问题。这种情况与DW2性能变劣的结果虽然不同，但在常规标定试验中都难以发现，唯有通过模拟传感器，给测控仪外加电压信号，通过检测去发现其隐患。
+
+
+图6 梯度涂层试样于900°C试验时的热震失效形貌
+
+图7 经900°C，25次热循环后梯度涂层与
+基体结合区域的截面SEM形貌
+
+梯度涂层在900°C热震试验时，其抗热震循环次数显著增多与在涂层与基体
+结合界面形成了元素富集区有关。梯度涂层的失效
+方式则随试验温度的改变而变化，在1100°C和1200°C试验时，梯度涂层
+整体自基体表面剥落，剥离面平整，表现为涂层与基体的机械式分离；在10
+00°C试验时，梯度涂层也自基体表面剥落，但其剥离面凹凸不平，表现为
+部分区域发生涂层与基体机械分离，而另一部分区域则以撕裂基体表面层的
+方式发生剥离；在900°C试验时，其失效方式发生了较大的改变，表现为涂
+层的纵向断裂和一部分涂层自基体表面剥落，如图6所示。
+
+本文于1996年1月15日收到
+
+参考文献
+1  Kamotani Y,Prasad A,Ostrach S.Thermal Convection in an Enclosure Due to 
+Vibration Abroad a Spacecraft.AIAA Journal,1981,19(4):511-516
+2 Hung R J,Shyu K L.Constant Reverse Thrust Activated Reorientation of Liquid 
+Hydrogen with Geyser Initiation.AIAA Journal of Spacecraft and Rocket,
+1992,29(2):279-285
+3 Hung R J,Lee C C,Leslie F W.Response of Gravity Level Fluctuations on the 
+Gravity Prob-B Spacecraft Propellant System.AIAA Journal of Propulsion and Power,
+1991,7(3):556-564
+4  Hung R J Hong B B,Leslie F W.Dynamical Behavior of surface Tension on Rotating 
+Fluies in Low and Microgravity Environments.International Joural for Microgravity Research 
+and Applications,1989,11(1):81-95
+5 Leslie F W.Measurements of Rotating Bubble Shapes in Low Gravity Environment.
+Journal of Fluid Mechanics,1985,161(2):269-275
+6 Hung R J,Pan H L.Differences in Gravity Gradient and Gravity Jitter-Excited Slosh 
+Waves in Microgravity.Transactions of the Japan Society for Aeronautical and Space 
+Sciences,1993,36(1):153-169
+7  Hung R J,Pan H L,Leslie F W.Gravity Gradient or Gravity Jitter Induced Viscous Stress 
+and Monment Fluctuations in Microgravity.Fluid Dynamics Research,1994,14(1):29-51
+8  Hung R J,Pan H L.Fluid Force Activated Spacecraft Dynamics Driven by Gravity 
+Gradiend and Jitter Accelerations.AIAA Journal of Guidance,Control,and Dynamics,
+1995,18(5):1190-1197
+9  Harlow F H,Welch F E.Numerical Calculation of Time Dependent Viscous Incompr-
+essible Flow of Fluid With Free Surface.Physics of Fluids,1965,8(10):2182-2189
+。
+
+　　两种涂层的内聚强度值均大于粘结强度值，并且测定粘结强度时，在外
+加拉应力的作用下，两种涂层的拉伸断裂位置均处于涂层与基体的结合界面，
+涂层与基体发生机械分离，这说明NiCoCrAlY底层与钛合金基体的结合界
+面是整个涂层-基体体系中的最薄弱之处。
+
+图　2
+　　检测时，在测控仪输入端先后加入正、负极性的mV信号，信号大小可根据传感器额定负荷下产生的mV值推算，并分别选几个点，这样既可检查输出对称性，又可粗略检查通道放大器线性度、稳定度及输出限幅保护功能等技术指标。要求求解的数学方程是一个
+在非惯性系的园柱坐标下满足一定初始和边界条件的Navier-Stokes方程
+［６，７］。
+表　1
+
+分压箱
+倍率测控仪输入
+mV正向输出
+V负向输出
+V
+×500±3.0＋1.381－1.392
+×200±7.5＋3.443－3.457
+×100±15.1＋6.032－6.042
+×50±30.2＋6.055－6.038
+
+读者服务卡索引号： 121
+作者单位：四川山川机械厂，四川省隆昌，642177
+1998-02-06收稿

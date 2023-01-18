@@ -1,0 +1,15 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第5期 No.5 Vol.18 1998
+科技期刊
+
+美国将发射卫星监测地球环境
+　　和美国海军签订的一项协议内容是开发和运行一颗新的卫星，它将提供图象，便于进行环境评价并监测人类活动或自然现象引起的环境变化。
+3.2　MutM蛋白可去除DNA上的氧化损伤，如8-羟基鸟苷。在以前的研究中发现，太阳光照射引起M13mp2噬菌体以鸟嘌呤颠换为主的突变，推测鸟嘌呤的氧化损伤可能与这种颠换的发生有关；而UVB则引发以 C→T转换为主的突变，与太阳光引发突变类型存在明显的差异，这种差异的一种可能原因是，在太阳光诱变作用中，除UVB外，其它成分如UVA，也发挥一定的作用〔4，5〕。
+　　NEMO上的传感器的高信号噪声比使它能观察湖泊、河流和海洋的污染。
+关键词　长波紫外线　致突变作用　DNA氧化损伤
+Mutagenesis of M13mp2 phage by near-ultraviolet light. Hao Weidong,Shang Lanqin,Zheng Yu,Jin Qingzhong (School of Public Health, Beijing Medical University, Beijing 100083).China Environmental Science.1998,18(5):472～475
+Abstract―The mutagenic potential of UVA (ultraviolet A) on the lacZα region of M13mp2 phage was observed in wild-type CSH50 and mutM-deficient (MF67) E.coli.The results showed that UVA induced mutations at lacZα region of phage and the mutation frequency was significantly higher in MF67 than in CSH50. The effect of free radical scavanger (mannitol) on mutagenesis by UVA was also investigated. The mutagenesis was inhibited in part by 0.1mol/L of mannitol. These results indicate that UVA can cause mutation in phage and its mutagenic effect can be ascribed to oxidative damage of DNA.
+Key words:ultraviolet A　mutagenesis　DNA oxidative damage
+　　太阳光照射被认为是皮肤癌发生的原因之一，但其确切机理还不清楚〔1〕。该项目将花费1，289亿美元，其中包括卫星运行3～5年的费用。到2000年底为止的开发、建造和发射NEMO以及运行将共花费1，136亿美元。政府将提供约40%的资金，其余由STDC和它的工业界伙伴及供应商提供。
+江　年　摘自《Water Environment ＆ Technology》,June,19(1998)

@@ -1,0 +1,110 @@
+计算机工程
+COMPUTER ENGINEERING
+1999年  第25卷 第7期 Vol.25 No.5 1999
+
+
+
+高级综合中寄存器合并问题的研究
+袁小龙　高德远
+摘要　高级综合技术的研究在当前倍受关注。在进行资源分配时，为了减少互连线的数目，提高设计质量，应对数据路径综合中所需的寄存器进行合并。合一操作在定理证明、自动推理等方面起到重要的作用,反合一同样也是一种非常有用的操作,可以应用于类似推理、程序重写、机器学习等方面。经实验证明，该算法具有速度快、效率高的特点，应用在高级综合系统中时，可提高综合设计的质量。
+关键词　高级综合寄存器合并
+A Study on Register Merging Problem for High-level Synthesis
+Yuan Xiaolong Gao Deyuan
+Aerospace Microelectronice Center，Northwest Polytechnical University Xian 710072
+Abstract：High-level synthesis is an active area of research presently.Inthe process of resource allocation,the registers required in data path should be merged in order to reduce the interconnection wires.Based on the study of the register merging,a register merging algorithm is presented in this paper.This algorithm is very efficient and can improve the quality of the design in high-level synthesis.
+Key words：High-level synthesis；Register；Merge
+　　高级综合也叫行为综合，其基本任务是完成从数字系统的行为描述到寄存器传输级(RTL)设计的转换。从行为描述到 RTL结构的转换可分为4个子任务，即：内部表示、操作分配和调度、映射、控制器综合。内部表示子任务将行为描述转化为计算机可以处理的机内表示形式。操作调度将构成设计行为的操作划分到控制步中，使得在一个控制步中的所有操作均可在一个时钟周期中执行。操作分配确定在给定的面积与性能约束下实现一个设计所需的资源的类型与数量。映射将行为描述设计中的操作、存储器访问及互连分配给硬件单元，得到优化的面积与性能。一旦操作调度、操作分配完成及数据路径单元选取完毕后，须根据操作调度的需要生成相应的控制器，控制器实际上是一个有限状态自动机FSM(Finite State Machine)，操作调度及操作分配确定了FSM的状态数目、状态转换情况及FSM的输入、输出信号，可由这些信息综合出相应的控制电路。
+　　这4个子任务相互联系，相互影响。高级综合的第一步是将以算法形式的行为描述转化为一个内部表示，而后其它子任务在此基础之上工作。本文针对多模式,对反合一问题进行了研究,证明了在多模式下存在最小反合一,并提出计算最小反合一的算法。和大多数高级综合系统一样，在操作调度阶段就完成了功能单元的分配，因此在资源分配阶段主要完成存储单元(主要是寄存器)与互连单元(如总线、多路选择器、三态驱动器等)的分配，其中寄存器的分配是数据路径综合中的一个重要任务，高级综合中寄存器的分配可以通过3个步骤来完成，即求出每个变量的生命期、寄存器的分配和寄存器的合并。当前，关于寄存器的分配问题所进行的研究不多，关于寄存器的合并，当前所进行的研究主要集中于用存储器来取代所需要的寄存器。基于实际的芯片设计经验，本文将探讨用寄存器组来取代单个的寄存器，在不影响芯片性能的条件下减少互连线，从而达到减小芯片的面积、提高综合设计质量的目的。
+1　变量的生命期
+　　我们知道，在一个以VHDL给出的数字系统的行为描述中，含有许多变量，如果它们在产生后，经过一段时间后还要用到，则必须对这些变量分配寄存器将它们保存起来，但是如果对每个变量分配一个寄存器，这将会增大最后所产生的设计的面积，导致低质量设计的产生，因此必须考虑变量对寄存器的共享问题。
+
+Fig.2　HTML fragments of AAAI conference homepage
+图2　AAAI会议主页的HTML文本片断
+
+Fig.3　OEM objects extracted from AAAI homepage
+图3　AAAI页面抽取出的OEM对象
+1.4　结合数据抽取格式描述和启发式规则的算法
+　　输入：数据抽取格式SECTXT1,SECVAR1,SOURCE1,...,SECTXTM,SECVARM,SOURCEM
+　　　　　SECTXTi,SECVARi,SOURCEi分别代表第i行的段文本,段变量,资源
+　　输出：页面的OEM数据OEMdata
+　　OEMdata EXTRACTOR(SECTXT1,SECVAR1,SOURCE1,...,SECTXTM,SECVARM,SOURCEM)
+　　按照SOURCE1的网络地址获取HTML文本
+　　抽取SECTXT1中描述的左右分割符之间的文本段作为根对象值
+　　创建标记为SECVAR1的根对象R0
+　　将根对象SECVAR1名称和值Value记录在已处理表中
+　　While(数据抽取格式描述行未处理完)
+　　　　｛将已处理表中第1个记录作为当前项
+　　　　While(在当前项中存在和SOURCEm一致的SECVARm对应的值Value)
+　　　　　　｛将Value作为资源
+　　　　　　如果SECTXTm不出现字体大小标记、缩进标记组合
+　　　　　　　｛按照SECTXTm从资源中获取各文本段作为标记为SECVARm的各个对象值
+　　　　　　　　如果SECVARm为常数字符串,所有子对象标记都是SECVARm
+　　　　　　　　否则按照SECVARm从Value值中获取各个对象标记
+　　　　　　　　　　生成对象作为标记为SECVARm对象的亲子
+　　　　　　　　　　将这些亲子的SECVARm和值Value记录在已处理表中
+　　　　　　｝
+　　　　如果SECTXTm出现字体大小标记的组合,用启发式确定层次结构
+　　　　　　｛在资源中获取所有尺寸的字体标记,从大到小记录在字体列表中
+　　　　　　将字体列表中首记录作为当前字体记录
+　　　　　　While(当前字体记录不为空)
+　　　　　　　　｛按照当前字体标记从资源中获取各文本段作为各个对象值
+　　　　　　　　按照SECVARm从资源中获取各个对象标记
+　　　　　　　　生成对象作为标记为SECVARm对象的亲子
+　　　　　　　　　将这些亲子的SECVARm和值Value记录在已处理表中
+　　　　　　　　　将所有Value作为资源列表
+　　　　　　　　　字体列表记录下移一个记录作为当前字体记录
+　　　　　　　　｝
+　　　　｝
+　　如果SECTXTm出现缩进标记的组合,用启发式确定层次结构
+　　　　　　｛在资源中获取所有尺寸的缩进标记,从小到大记录在缩进列表中
+　　　　　　将缩进列表中首记录作为当前缩进记录
+　　　　　　While(当前缩进记录不为空)
+　　　　　　　　｛按照当前缩进标记从资源中获取各文本段作为各个对象值
+　　　　　　　　按照SECVARm从资源中获取各个对象标记
+　　　　　　　　生成对象作为标记为SECVARm对象的亲子
+　　　　　　　　　将这些亲子的SECVARm和值Value记录在已处理表中
+　　　　　　　　　将所有Value作为资源列表
+　　　　　　　　　缩进列表记录下移一个记录作为当前缩进记录
+　　　　　　　　｝
+　　　　　　｝
+　　已处理表下移一个记录作为当前项
+　　　　｝
+　　　　　读取下一个数据格式描述行
+　　　　｝
+　　　　Return OEMdata
+　　该抽取算法将启发式规则纳入数据抽取格式中,即当抽取格式段文本SECTXTm中出现字体大小标记的组合、缩进标记的组合时,用启发式确定层次结构。
+　　寄存器分配是在操作调度的基础之上进行的，前面已提到过，操作调度的任务是将行为描述中的操作划分到控制步中，因而每个变量必须在有效的时间段就确定好，这个时间段就是变量的生命期，以控制步数来度量。在确定变量的生命期时需要注意的一个问题是，当行为描述中含有条件结构时，由于一个条件结构中的两个分枝不会同时执行，如果两个变量是在不同的条件分枝中产生的，则它们不会同时产生，这样，即使它们的生命期有重叠，也可用一个寄存器来保存它们的值，即需要考虑对变量的生命期进行合并的问题。变量的生命期可用一个表格表示，也可以集合的形式来表示。例如，变量i必须在第2个控制步、第3个控制步和第4个控制步中有效(需要对其值进行保存)时，则它的生命期为集合Si=(2,3,4)。
+2　寄存器的分配
+　　当确定了每个变量的生命期后，就可进行寄存器的分配。该数据被包装到一个OEM对象中,如图3所示。其中,段文本表示从资源中反复抽取满足要求的文本作为新创建的OEM对象的值；段变量作为被创建的OEM对象的标记；资源取值为一个页面地址或者是前面抽取格式行中出现的段变量,表示用于抽取文本的资源是该页面的HTML文本或者是当前父对象的值。图1中给出了文献[5]中的例子的VHDL行为描述，经操作调度后，该行为需要5个控制步就可完成执行，语句前面的括号中的数字j表示本行语句将在控制步骤j中完成执行。
+
+图1 一段VHDL行为描述
+　　从图1中可看出，该行为描述中包含了15个变量，在这里，假定图1中的VHDL行为描述是连续循环执行的，则很容易确定如图2所示的变量的生命期。
+
+图2 变量的生命期表
+　　在图2中，vi表示第i个变量，行表示控制步，列表示变量，l(live)表示变量vi在该控制步中的值必须有效，d(dead)表示变量vi在该控制步中的值是无效的(不需要保存其值)。显然，对这15个变量，如果给每个变量均分配一个寄存器时，就需要15个寄存器，这样将会浪费硬件资源。 To express each component of pages as an OEM object, the authors design an algorithm which extracts semi-structured data from HTML pages, and the testing results are given。当确定了数据路径综合中所需的寄存器后，将讨论寄存器的合并问题。
+3　寄存器的合并算法
+　　对于每个寄存器，在数据路径综合过程中，需要将它与某些功能单元相连接，以进行数值的传输，从而能正确地实现行为描述所定义的功能。如果将每个连接都用连线来实现，对于某些设计，连线的数目将是非常大的。
+中图法分类号　TP311
+Extracting Semi-Structured Information from the WEB
+HUANG Yu-qing　QI Guang-zhi　ZHANG Fu-yan
+(Multimedia Computer Institute　Nanjing University　Nanjing　210093)
+Abstract　In order to integrate and query irregular and dynamic information on WEB in a database-like fashion, the authors use object exchange model (OEM) to construct information model of WEB in this paper。在寄存器的合并过程中，首先要考虑的问题就是找出可以合并成一个组的寄存器组，并且使每个组包含尽可能多的寄存器。在对高级综合技术进行研究的过程中发现，如果寄存器组具有的读出端口和写入端口数目比较多时，则每个寄存器组可包含更多的寄存器，但增加了控制开销，相反，如果寄存器组具有的读出端口和写入端口数目比较少时，则每个寄存器组可包含的寄存器就比较少，但控制开销比较小。基于对微处理器和MPP计算机的芯片设计经验，认为，每个寄存器组包含一个写入端口和两个读出端口是比较合适的。我们可以通过抽取页面上的结构信息,经过包装器来提供这样的查询能力。在进行寄存器的合并时，是先求出可合并到一个寄存器组的最大的寄存器集合，然后再从剩余的寄存器中求出可合并到下一个寄存器组的最大的寄存器集合，重复该过程直至剩下最后一个寄存器或所有的寄存器均已被分配到寄存器组中，当剩下最后一个寄存器时，可根据对它的读写关系将它与相关的元件相连接即可。下面给出求出可合并到一个寄存器组中的寄存器集合的算法。
+　　定理3. 不存在最小的二阶反合一。
+　　通过对该0-1线性规划问题进行求解，就可找到可合并到一个寄存器组RG中的最大数目的寄存器集合。
+4　实验结果
+　　在对寄存器合并问题进行研究且给出了相应的算法之后，我们用C语言实现了该算法，采用文献[5]中5.6节给出的例子来验证本文中给出的合并算法的有效性。由于A,B为不同模式的实例,因此A,B中必存在i,使得ai,bi的类型不一致,在替换中,yi不能是yi→ai,yi→bi,只能是yi→,yi→bi（或yi→ai,yi→）。可看出，新产生的数据路径中连线的数目减少了，并且比较规整了。
+　　证明：对于模式P的实例A,B,可以有下列3种情况：
+　　(1) A,B为P的同一模式的实例。
+　　采用本文中给出的算法对LS MPP中的处理元(包括一个ALU，一个移位器，路由器，一个缓冲器，8个寄存器)进行寄存器合并后，互连线的数目减少了许多，所产生的结果与手工设计的完全一致。
+5　结论
+　　实验证明，本文的寄存器合并算法能很好地解决高级综合中的寄存器合并问题。
+　　定义2。
+本文受“九五”预研专题航空基金97F53133资助
+作者简介：袁小龙 男，28岁，博士后，研究方向为EDA技术
+作者单位：西北工业大学航空微电子中心西安710072
+参考文献
+1　Yuan Xiaolong，Shen Xubang.A New Control and Data  Flow Graph Model.in Proceedings of International Workshop on Advanced Parallel Processing Technology，Beijing, 1995：107
+2　袁小龙，沈绪榜.一种新的操作调度算法.计算机学报，1997，20(3):193
+3　袁小龙，沈绪榜.一种基于路径的调度算法.计算机研究与发展，1998，35(3)：193
+4　Tseng C J,Siewiorek D P.Automated Synthesis of Data Paths in Digital Systems.IEEE Trans.on CAD，CAD-5(3)：1986-07
+收稿日期：1998-11-02

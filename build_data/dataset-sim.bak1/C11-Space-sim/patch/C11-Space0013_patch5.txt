@@ -1,0 +1,97 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+模态参数识别的小波变换方法
+于开平　邹经湘　杨炳渊
+　　摘　要　系统地研究了使用调频高斯小波变换识别结构系统模态参数。进入90年代以后，随着工厂自动化水平的提高，分散式数据采集系统进入了一个崭新的发展阶段。
+　　5)DATASCAN7000的ERM4032模块具有事件捕获、计量、计数、周期及频率测量的特性，分辨力为1 ms。
+　　主题词　载人飞船　再入　制导　自适应控制
+ALL COEFFICIENTS ADAPTIVE REENTRY LIFTING
+CONTROL OF MANNED SPACECRAFT
+Hu Jun
+(Beijing Institute of Control Engineering,P.O.Box 2729*Beijing*100080)
+　　Abstract　This Paper analyses the characteristics of reentry lifting control of manned spacecraft from the pointview of control,and applies all coefficients adaptive control(ACAC) method to the study of reentry lifting control of manned spacecraft,and compares the classic method based on standard trajectory,PID method and ACAC method based on landing point prediction,proved the superiority of ACAC within the aspects of landing point precision,maximum overload,fuel consumption and attitude smooth.
+　　Key words　Manned spacecraft　Reentry　Guidance　Adaptive control
+1　引言
+　　载人飞船再入过程是指飞船返回舱进入地球大气层,利用大气层减速最终安全返回地球表面的过程。在小于10 μm的近场范围内，理论分析图形与测量结果之间的差距较大(见图10，氮气，p＝1000 mbar)。在控制方案(7)中,我们取参数k=20,δ=3.510-3,c0=1,c1=0.1,仿真结果图略。限于篇幅,图略。设这时计测到Tx1，反相后就计测到Tx2，以此类推。
+6　算例
+　　(1)本文选取文献［3］中的算例,b=0.45m,h=0.6m,初始条件为当t=0时:
+
+贮箱受横向加速度激励:
+αx(t)=-X0ω2sinωt;X0=0.002m;ω=5.5rad/sec;Δt=0.008sec
+计算结果如图3,与文献［3］比较基本一致,从计算结果可知,经过一段时间(例如8秒)历程后晃动幅值将不再有明显增加,这是因为液体微料的纵向加速度不可能超过质量力场的加速度,这一结论与试验结果吻合。
+　　针对控制器能量受限条件,即已知｜τ(t)｜≤Tj,其中Tj是喷气执行机构产生的恒幅值力矩,只利用对刚体旋转角的测量数据,以目的2-姿态机动问题为控制设计的目的,对于给定的θm∈(-π,π］,我们设计变结构控制:
+(6)
+其中θe(t)=θ(t)-θm,c(t)＞0将根据我们的需要进行设计,c(t)恒为常值时为定切换平面情形;反之则为变切换平面情形。
+3　模态参数识别方法
+　　结构系统的脉冲响应函数含有系统本身的固有特性，单自由度系统的脉冲响应函数可表示为：
+　　　　　　　　　　　　(9)
+它的小波变换为：
+　　　　(10)
+在上式中令z=iω再使用留数定理可得：
+　　(11)
+其中：
+　　　　　　　　　　(12)
+可以看到A2完全可以忽略，这样从(11)式得出：
+　　　　　　　　　　　　　(13)
+∠WTh(a,b)=ωdb+1，1=-aξωnσ2(aωd-ω0)-π/2　　　　　　(14)
+这样对给定的a值，特别是当a=ω0/ωd时从脉冲响应函数的小波变换模在半对数刻度上直线的斜率以及小波变换的幅角的直线斜率即可得到模态频率和阻尼。
+　　对多自由度系统，在某一点上的脉冲响应等于各阶模态的叠加［1］，即：
+　　　　　　　　　(15)
+小波变换是线性变换［5］，所以有：
+　　　　　(16)
+当频率参数的选取使小波基的频窗中心近似等于某阶模态频率即可实现模态滤波，上式中该阶模态给出主要的贡献，对第j阶模态有aj=ω0/ωdj，(16)式可近似为：
+　　　　　　　　　　(17)
+实现了模态解耦，由(13)、(14)式即可识别出该阶模态参数。图3为系统定零的示意。按原电路进行测表，分不出两种周期Tx1和Tx2，每次测试时，Tx1、Tx2随机性很大。
+　　关键词　表面轮廓传感器　动态特性　分析　讨论
+Dynamic Characteristic of Crystal Vibration Non-contact Type
+Surface Profile Transducer
+Miao Rong,Ma Liqun
+　　Abstract　The dynamic characteristic of quartz linear extensional-mode oscillator has been analyzed theoritically and various damps affecting quality of the quartz oscilator under near field have been discussed.The obtained analytic model has been compared with the experiment result.
+　　Key words　Surface profile transducer,Quartz oscillator,Dynamic characteristic,Analysis,Discussion
+　　前言
+　　晶振式非接触表面轮廓传感器利用了谐振石英与被测表面之间的流体摩擦效应。
+可以看到:
+　　　　　　　(2)
+由(1)式得:
+(3)
+其中:ci=ui-wi,定义为ALE描述下的对流速度。
+5　数值验证
+　　分别用模态频率接近和分得较开的两个两自由度例子来验证，采样频率为256Hz，采样周期为1s。
+　　坐标系夹角测量采用移动法，示意如图4所示。
+表1　模态参数识别结果及误差
+　第一组第二组(σ=1)第二组(σ=1.2)
+f110.0160.16%9.9980.02%10.0010.01%
+f230.0020.006%27.8897.04%29.9800.07%
+ξ10.009693.1%0.03892.75%0.03912.25%
+ξ20.04872.6%0.08496.13%0.7792.63%
+
+
+
+图1　第二组(σ=1)情况的脉冲响应函数的小波变换模
+(上：左为一阶，右为二阶)与相位(下：左为一阶，右为二阶)
+例2：f1=25Hz,f2=30Hz,阻尼取值为：ξ1=0.02,ξ2=0.06，σ=1，ω0的取值及识别结果见表2
+表2　模态频率比较接近情况的识别结果
+　ω0=5πω0=6πω0=7π
+f125.0160.064%25.0180.072%25.0210.084%
+f226.03413.22%29.9960.013%29.9850.05%
+ξ10.01943.0%0.01914.50%0.01857.50%
+ξ20.02853.33%0.048918.5%0.05429.67%
+
+6　结论
+　　基于脉冲响应函数的小波变换可以建立模态参数识别方法，该方法概念清楚，方法简单有效，对模态有一定密集程度的问题，在先验已知模态频率的情况下，可以较精确地识别阻尼值。作为该方法在航天工程上的应用比较适合飞机、导弹的颤振试验数据分析，这也是作者的进一步的研究工作。
+*航天工业总公司“九五”预研基金和哈尔滨工业大学校基金资助项目
+作者单位：于开平、邹经湘：哈尔滨工业大学航天工程与力学系 . 哈尔滨 . 150001
+　　　　　杨炳渊：上海航天局第八设计院第八部 . 上海 . 200233
+参考文献
+1　傅志方，邹经湘.振动模态分析与参数辨识.北京：机械工业出版社，1990
+2　许椿荫，杨炳渊，华守廉.防空导弹的结构与强度.北京：宇航出版社，1993
+3　徐佩霞，孙功宪.小波分析与应用实例.合肥：中国科技大学出版社，1996
+4　Pierre Argoul.Linear dynamical identification:An integral transform seen as a complex wavelet transform.Meccanica,1997,32:215-225
+5　王永刚，张景绘.小波变换在结构动力学识别中的应用.强度与环境，1997，4：22-29
+收稿日期:1998年4月15日
+修回日期:1999年3月18日

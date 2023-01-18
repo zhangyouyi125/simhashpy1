@@ -1,0 +1,113 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1998年  第13卷  第1期科技期刊
+
+矢量喷管数学模型研究
+
+西北工业大学 刘小勇**   樊思齐 陈辅群
+【摘要】  采用计算流体力学的有限体积法和神经网络方法，对矢量喷管的统一数
+学模型进行了研究，并得到了一种以神经网络描述形式的数学模型。但是若时间步长Δτ选取不当，就会发生计算结果的“振荡”现象，为此时间步长需满足条件dT(k+1)j／dT(k)j＞ 0，即：
+　(4)
+对于有n个节点的系统，满足式(4)的△τ(k)j就有n个。   
+主题词：  喷管  矢量控制  数学模型  有限元法   神经网络
+分类号：  V233.7
+
+    带有推力矢量的飞行／推进系统综合控制和矢量喷管控制律研究必须建立矢量
+喷管的数学模型。由于矢量喷管流场的复杂性，用解析法和试验法建模都存在许多
+困难。矢量喷管的数值计算可以对矢量喷管静态特性进行比较准确的描述，但把它
+用于矢量喷管控制和推力矢量控制问题研究是困难的。需要指出的是，在失去润滑条件下，由于传动系统温度场的时变特性，所以有关材料的热物性参数也将随温度场的变化而变化。
+
+１  流场计算及结果
+
+    图1为矢量喷管几何模型简图［1］。本文采用Jameson提出的有限体积法［2］求
+解矢量喷管的内流及出口参数。
+
+
+图2　输入轴部件瞬态温度场
+
+图3　输出轴部件瞬态温度场
+　　由图2和图3可见：(1)输入轴有关节点(1，2，3，5，8，10，13)的温升率最大，当时间经历τ=220秒时，主动齿轮齿面温度上升了151℃，已达到272℃，其余各节点温度在原有基础上上升了120℃～130℃。以上各图中的Ti，δ，NPR，
+Cfg，Cfgx，Pu，Pd和Pt分别表示喷管的矢量推力、矢量角、压比、总推力系数、轴
+向推力系数、上、下壁面压力和进口总压。如以上各图所示，流场计算结果与试验
+数据吻合较好，这说明在给定的喷管进、出口及边界条件下，该计算方法可以较精
+确地计算出喷管的内流、出口参数及推力系数。
+
+图1 矢量喷管示意图    图2 试验与流场计算结果比较
+
+图3 试验值与流场计算结果比较    图4 试验值与流场计算结果比较
+
+    在以上基础上，将α在［4°，28°］，β1在［5°，40°］，β2在［0°，30°］范
+围内各自以4°，5°，5°增加取7个值、8个值、7个值，而喷管的其它尺寸均取自文
+献［1］，分别计算了喷管的出口参数和相应的Ti，Cfg和δ。总计得到392组数据。
+
+２ 统一数学模型
+
+    假定喷管进、出口条件不变，矢量喷管的数学模型为：
+
+Ti=f1（α，β1，β2） ， Cfg=f2（α，β1，β2） ， δ=f3（α，β1，β2）    (1)
+
+f1，f2和f3是非线性函数，而三层神经网络能够逼近任意非线性，所以本文采用3
+个3层网络来逼近以上3个函数。
+　　主题词：齿轮传动　温度场　热分析
+　　分类号：TH132　V275.1
+TRANSIENT THERMAL ANALYSIS OF A HELICOPTER GEAR TRANSMISSION SYSTEM
+Liu Zhiquan
+(Mechanism Division, Beijing Institute of Spacecraft System Engineering,Beijing　100086)
+Shen Yunwen，Chen Guoding，Su Hua
+(Mechanical Engineering Department,Northwestern Polytechnical University,Xi'an　710072)
+　　ABSTRACT　　Survivability of a gear transmission system in attack helicopter after Loss-Of-Lubrication (LOL) is greatly dependent on the transient temperature fields of the systems.A helicopter gear transmission system was researched.A method is put forward to calculate the transient temperature fields of this system after LOL and the models for power losses and heat transfer (convection) coefficients are established.In these models,the time-variance characteristics of thermal physical parameters,such as viscosity,thermal conductivity are considered.A computer program is worked out for calculating the transient temperature fields of the system on the basis of these models.In the computation,the calculational results of the steady state temperature field in the transmission system are used as initial values of the transient temperature fields and the time steps are properly controlled so as to prevent "data oscillation".The transient temperature fields of the gear transmission system are obtained from the computation and can serve for predicting the survivability of the gear transmission system.
+　　Key　Words　Gear transmission　Temperature field　Thermal analysis
+1　引　言
+　　军用直升机传动系统，在战场上遭敌方火力攻击而中弹漏油失去正常润滑的概率很大。在神经网络中用广义S型函数描述神经元的输入、输
+出特性，即
+oi,k=θi,k／［1+exp（-λi,kneti,k）］ ， neti,k=Wi,j,koj,k-1+φi,k           (2)
+
+其中oi,k，neti,k，θi,k，λi,k，φi,k，Wi,j,k分别表示k层i节点输出、输入、
+饱和值、调节S型函数的斜率、阈值以及k-1层j节点对k层i节点的权值。失去润滑情况下的传导和对流热阻仍按文献［1］中的热阻公式来计算，但需考虑失去润滑后热物性参数随温度变化的因素。神经网络通过学习适当调整学习参数Wi,j,k，θi,k，
+λi,k，φi,k使神经网络输出值与通过流场计算得到的Ti，Cfg，δ之间的el和e趋
+于极小。对于传动系统内的4个圆锥滚子轴承I1，I2，O1和O2可按式(5)分别算出其平均功率损失N(I1)f，N(I2)f，N(O1)f和N(O2)f。在稳态热分析的基础上，求解了某直升机齿轮传动系统的瞬态温度场，为该传动系统生存能力的预测提供了理论依据。
+
+假设σi,k=-e1／neti,k ， σi,k=-e1／oi,k             (4)
+
+则由(2)～(4)式可以得到与e1有关的学习参数偏导数：
+
+e1／X=［-σi,koj,k-1 -ξi,k（oi,k／θi,k -ξi,koi,k（1-oi,k／θi,kneti,k -σi,k］T
+
+其中e1／X=［e1／Wi,j,k  e1／θi,k  e1／λi,k  e1／φi,k］T      (5)
+
+(5)式中除了σi,k和ξi,k外，其它量均可在前向通道计算得到，σi,k和ξi,k
+通过误差在网络中反向传播计算到。
+
+    考虑输出层，并由(2)和(3)式得
+
+σl,n=(d1-ol,n)ol,n(1-ol,n/θl,n)λl,n ， ξl,n=dl-ol,n             (6)
+
+对于隐层有
+
+ξi,k=（σj,k+1+Wi,j,k+1） ， σi,k=ξi,koi,k1-(oi,k)/(θi,k)λi,k           (7)
+
+k层ξ取决于k+1层的σ，计算时从输出层逐层计算到输入层，在同一层ξ可以并处理。除此之外，其它节点处（节点号为j=2，7，11，12，20，24，25）的对流换热系数可用下式计算［5］：
+αj＝0.3Re0.57jxjKj/Lj　(6)
+式中：Re，K，x和L分别为雷诺数、导热系数、修正系数和定型尺寸。
+。表1列出了矢量喷管的试验数据，流场计算
+结果及神经网络输出结果，从表中可以看出三者相对误差均小于10-2，能够满足工
+程要求。计算结果：(1)传动系统输入轴有关节点温度随时间的变化关系如图2和图3所示。这种建模方法可以得到矢量喷管在不同状态下的空间域连续的统
+一数学模型；也适用于不同类型矢量喷管的建模。由于神经网络具有逼近任意非线
+性的优点，因而所建立的统一数学模型具有较高的精度。该模型为研究矢量喷管控
+制规律提供了一定的基础，对推力矢量控制、带有推力矢量的飞行／推进系统综合
+控制等研究具有重要的意义。
+
+男  28岁  博士生  西安市西北工业大学动力与热力工程系709教研室   710072
+参考文献
+1Richard J R,Laurence D L.Static Internal Performance Including Thrhust 
+Vectoring and Reversing of Two-Dimensional Converging-Diverging Nozzle.N84-18165
+2Jameson A,Schmidt W,et al.Numerical Solution of the Euler Equation by 
+Finite Volume Methods Using Runge-Kutta Time Stepping Schemes.AIAA:81-1259,1981
+3Nguyen D H,Widrow B B.Neural Networks for Self-Learning Control Systems.
+IEEE Control Systems Magzine,1990:18-23
+4刘小勇，樊思齐．采用BP网络辨识航空发动机模型．航空动力学报，
+1996，11(2)：153-156
+
+1997年1月收稿；1997年5月收到修改稿。
+
+（责任编辑  魏星禄）

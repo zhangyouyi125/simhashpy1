@@ -1,0 +1,95 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　No.19　No.1　P.53-54
+
+
+
+
+WINDOWS环境下动态设置打印机参数
+铁治欣　陈奇　俞瑞钊
+摘 要： 一种动态设置打印机参数的方法。在程序中运用此方法，用户在打印时只需在打印机中放入合适的纸张，而不用考虑打印机的设置。然后每当有网络变量发生变化时，会触发nv＿update＿occurs（ ）事件，在本事件中首先判断CD是否有效，若有效则将该网络变量编码并发送给MODEM，再通过电话线送给远端计算机。因此，如果我们不对打印机的设置进行有效的控制，就要求用户在运行这些系统时不断地更改打印机设置，以适应系统的需要。对于分布在较大范围内的系统，用电话线连接实现远程监控在目前还是有着比较重要的意义。一种比较简单的解决办法就是对同一台物理打印机在WINDOWS中安装几台逻辑打印机，每台逻辑打印机对应一种票据或报表格式，在打印某一票据或报表时就选择与之对应的逻辑打印机。这种方法的缺点是每次打印时还要去选择1个逻辑打印机，增加了操作人员的操作步骤。基于此，本文给出了一种比较自动和通用的解决方法。为了使节点和MODEM之间的通信简化，这里只用了RS232接口的5个接口信号，如表1所示。
+2 动态设置打印机
+　　在WINDOWS 95环境下，与计算机设置有关的信息全部记录在注册表(REGISTRY)中。由于神经元芯片的I／O口的电平为TTL电平，还必须用专用芯片如MAXIM202进行TTL电平到RS232电平的转化。功能上也可以做得更为完善，只是由于数据的采集是通过动态数据交换得到的，在数据的更新速度上会有一些不足。远端计算机拨通现场的电话后，节点1首先将当前的网络变量值发送过来，此后便随着系统的运行而实时地进行更新。
+　　经研究发现，与打印机有关的主要设置有二项，其中第1项为当前默认打印机，其注册表入口为：HKEY＿LOCAL＿MACHINE\Config\0001\System\CurrentControlSet\Control\Print\Printers，设置值存放在default项中的字符串，即我们可以通过这一注册表的这一分支的default项得到WINDOWS的当前默认打印机。节点1和MODEM之间的电路如图2所示。
+表1 打印机参数表
+
+设置项目偏移量字节数说明
+纸张设置0x2F2打印机纸张类型，256为用户自定义纸张，小于256的数值为该打印机能打印的标准纸张的编号，随打印机类型改变。
+纸张长度0x312当纸张设置为256（即用户自定义纸张）时才有用，意义为要设置的打印纸的长度（以0．1毫米为单位）。
+纸张宽度0x332当纸张设置为256（即用户自定义纸张）时才有用，意义为要设置的打印纸的宽度（以0.1毫米为单位）。
+打印方向0x2D20x01-纵向打印，0x02-横向打印。
+进纸方式0x3920x04-手动送纸，0x08-传纸器。如果系统发生故障，则相应的网络变量值会发生变化，不同的值代表不同类型的故障，此时若还没有建立载波链路，程序应调用拨号子程序dial（ ）拨通设定的远端计算机电话号码。因此比较适合于对已经投入应用的系统进行监控，或者对系统进行临时的监控。具体应用时，可以用第1个函数将打印设置为我们需要的状态，并将打印机的原状态保存起来，再用第2个函数将打印机状态恢复。DDE Server可以监测LonWorks网络上的网络变量或消息及其变化。
+//函数功能：用自定义参数设置打印机
+//输入参数：al＿Lengn-打印纸长度，al＿Width-打印纸宽度
+//　　　　　ai＿PaperSource-进纸方式，ai＿PrintDirection-
+//打印方向输出参数：ablb＿setvalue-打印机的原参数
+//返回值：1-成功，0-不成功
+Gf＿PrnSetting(long al＿Lengh，long al＿Width，int ai＿PaperSource，int ai＿PrintDirection，blob ablb＿setvalue)
+constant string cls＿valuename＝″Default DevMode″
+constant uint clu＿pos＿width＝51
+constant uint clu＿pos＿length＝49
+constant uint clu＿pos＿papersize＝47
+constant uint clu＿pos＿papersource＝57
+constant uint clu＿pos＿printdirection＝45
+constant uint clu＿usersizepaper＝256
+blob lb＿value，newvalue
+string ls＿key，ls＿printer
+int li＿ret
+li ret＝RegistryGet(″HKEY＿LOCAL＿MACHINE\Config\0001\
+　　　　　　　　System\CurrentControlSet″＋＆″\Control\Print\
+　　　　　　　　Printers″，′default′，RegString!，ls＿printer)
+IF li＿ret＜＞1 THEN
+　　MESSAGEBOX(″系统提示″，″打印机未设置！″，Excla－ mation!)
+　　RETURN 0
+END IF
+ls＿key＝″HKEY＿LOCAL＿MACHINE\System\CurrentControlSet\
+　　　　　control\Print\Printers\″＋ls＿printer
+RegistryGet(is＿key，cls＿valuename，RegBinary！，lb＿value)
+ablb＿setvalue＝lb＿value
+lb＿newvalue＝blobmid(lb＿value，1，clu＿pos＿papersize－1)＋
+　　　　　　　blobmid(lb＿value，clu＿pos＿width＋2)
+blobedit(lb＿newvalue，clu＿pos＿papersize，clu＿usersizepaper)
+blobedit(lb＿newvalue，clu＿pos＿length，al＿Length)
+blobedit(lb＿newvalue，clu＿pos＿width，al＿Width)
+lb＿value＝lb＿newvalue
+lb＿newvalue＝blobmid(lb＿value，1，clu＿pos＿papersource－1)
+　　　　　　　＋blobmid(lb＿value，clu＿pos＿papersource＋1)＋
+　　　　　　　＆ blobmid(lb＿value，1，clu＿pos＿printdirec－
+　　　　　　　tion－1)＋blobmid(lb＿value，clu＿pos＿printdi－
+　　　　　　　rection＋1)
+blobedit(lb＿newvalue，clu＿pos＿papersource，ai＿papersource)
+blobedit(lb＿newvalue，clu＿pos＿printdirection，ai＿printdirection)
+ls＿key＝″HKEY＿LOCAL＿MACHINE\System\CurrentControlSet\
+　　　　　Control\Printers\″＋ls＿printer
+li＿ret＝RegistrySet(ls＿key，cls＿valuename，RegBinary!，lb＿newvalue)
+IF ii＿r＜＞1 THEN
+　　MESSAGEBOX(″系统提示″，″打印机设置失败！″，Exclamation！)
+　　RETURN 0
+END IF
+RETURN 1
+//函数功能：恢复原打印机设置
+//输入参数：ablb＿setvalue-打印机原设置串
+//输出参数：无
+//返回值：1-成功，0-不成功
+Gf＿PrnSettingBack(blob ablb＿setvalue)
+int li＿ret
+string ls＿printer，ls＿key
+constant string cls＿valuename＝″Default DevMode″
+li＿ret＝RegistryGet(″HKEY＿LOCAL＿MACHINE\Config\0001\
+　　　　 System\CurrentControlSet″＋＆″\Control\Print－
+　　　　 ers″，′default′，RegString!，ls＿printer)
+IF li＿ret＜＞1 THEN
+　　MESSAGEBOX(″系统提示″，″打印机未设置！″， Exclamation!)
+　　RETURN 0
+END IF
+ls＿key＝″HKEY＿LOCAL＿MACHINE\System\CurrentControlSet\
+　　　　　Control\Print\Printers\″＋ls＿printer
+li＿ret＝RegistrySet(ls＿key，cls＿valuename，RegBinary!，
+　　　　　lb＿newvalue)
+if li＿ret＜＞1 then return 0
+return 1 
+　　本文所提供的程序在1台内装WINDOWS 95操作系统的PentiumⅡ266计算机上用PowerBuilder 6．0和Epson LQ－1600K打印机调试通过，并在我们开发的MRP/ERP系统中得到应用，效果良好。对于其它开发工具及其它打印机型号，其实现方法和上面给出的相类似。
+铁治欣（杭州浙江大学计算机科学与工程系310027）
+陈奇（杭州浙江大学计算机科学与工程系310027）
+俞瑞钊（杭州浙江大学计算机科学与工程系310027）
+收稿日期：1999－07－21

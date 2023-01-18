@@ -1,0 +1,89 @@
+微型机与应用
+WEIXINGJI YU YINGYONG
+2000　Vol.19　No.5　P.57-58
+
+
+
+
+在中文VFP6．0中使用OLE自动服务
+李元
+摘 要：使用OLE自动化服务在VFP中调用Excel或Word，完成报表的制作。全文检索不需要对资料进行人工标引、加工抽取关键词，而且比关键词检索具有更广泛的检索范围。
+3．2 数据压缩技术
+　　目前《长江日报》50年共计有8万个版面，文字量约5亿汉字。这时可以使用OLE自动化服务在VFP中调用Excel或Word来完成这种特殊任务（VFP数据库应用软件作为客户，Excel或Word作为服务器）。Excel有强大的数据处理功能，而Word有强大的图文处理功能，不管什么样的报表任务都可很好完成。下面简单的例子说明如何在VFP应用软件运行中将数据库中的数据交给Word来完成1个报表的制作。
+　　为简单起见，假定在1个VFP项目中有关于科研经费开支情况的数据表：kyjf．dbf（其中不录入合计数），如表1所示。在现有的全文检索系统中，采用按词检索技术、倒排索引、Cache技术和查询优化技术等，可以显著提高系统的响应速度和查询的准确性。下面的程序Word01．prg实现了这些要求。图2中的“检索结果输出”表示：用户经过选取各种检索途径和输入各种检索条件并提交之后，检索出符合条件的文章并进入检索结果输出界面。
+　　＊＊源程序：word01．prg：
+　　SET DEFAULT TO d＼myvfp＼kwsjk
+　　Clear
+　　SET DEFAULT TO d＼myvfp＼kwsjk
+　　oleApp＝CREATEOBJECT（″Word．Application″）
+　　　　　　　　　　　　　　　　　　　　＆＆启动Word
+　　oleApp．Visible＝．T．　 ＆＆显示Word
+　　oleApp．Documents．Add　 ＆＆创建一个缺省设置工
+　　　　　　　　　　　　　　＆＆作文稿（A4）
+　　＊＊oleApp．Documents．Add（″Nomal″，．T．） 
+　　　　　　　　　　　　　　＆＆使用模板创建1个工作文稿
+　　＊＊设置字体、字号
+　　oleApp．Selection．Font．Bold＝．T．
+　　oleApp．Selection．Font．Size＝18oleApp．Selection．Font．Name＝″幼圆″
+　　＊＊　　
+　　oleApp．Selection．TypeText（″贵州大学计算机软件与理
+　　　　　　　　　　　　　　　　　　　　　　　论研究所″）
+　　oleApp．Selection．TypeParagraph　　　＆＆换行
+　　oleApp．Selection．TypeText（″科研经费使用报表，1999
+　　　　　　　　　　　　　　　　　　　　　　　　　年8月″）
+　　oleApp．Selection．TypeParagraph 　　　＆＆换行
+　　oleApp．DisplayAlerts＝．F．
+　　oleApp．Selection．Font．Size＝12
+　　oleApp．Selection．Font．Name＝″宋体″
+　　＊＊打开数据表，取得该表的记录数
+　　use kyjf．dbf
+　　j1＝RECCOUNT（）－1
+　　＊＊在Word工作文稿中增加1个表格（表格的列数与数
+　　＊＊据表table1．dbf的字段数相同为7；行数比记录数多
+　　＊＊1，因第1行用来做表头）
+　　oleApp．ActiveDocument．Tables．Add（oleApp．Selection．
+　　　　　　　　　　　　　　　　　　　　　Range，j1＋2，6）
+　　loTable＝oleApp．ActiveDocument．Tables（1）
+　　＊＊填写报表头：
+　　loTable．Cell（1，1）．Range．InsertAfter（″费用项目″）
+　　loTable．Cell（1，2）．Range．InsertAfter（″一季度″）
+　　loTable．Cell（1，3）．Range．InsertAfter（″二季度″）
+　　loTable．Cell（1，4）．Range．InsertAfter（″三季度″）
+　　loTable．Cell（1，5）．Range．InsertAfter（″四季度″）
+　　loTable．Cell（1，6）．Range．InsertAfter（″合 计″）
+　　＊＊将数据表table．dbf的记录放入Word文稿的表格
+　　＊＊中，自动计算总分：
+　　FOR i＝0 TO j1－1
+　　　　go i＋1 ＆＆ 第i＋1条记录
+　　　　loTable．Cell（i＋2，1）．Range．InsertAfter（kyjf．费用项目）
+　　　　loTable．Cell（i＋2，2）．Range．InsertAfter（kyjf．一季度）
+　　　　loTable．Cell（i＋2，3）．Range．InsertAfter（kyjf．二季度）
+　　　　loTable．Cell（i＋2，4）．Range．InsertAfter（kyjf．三季度）
+　　　　loTable．Cell（i＋2，5）．Range．InsertAfter（kyjf．四季度）
+　　　　　＊＊计算各项费用的合计数 loTable．Cell（i＋2，6）．Range．InsertAfter（kyjf．第一季度＋kyjf．第二季度＋kyjf．第三季度＋kyjf．第四季度）
+　　ENDFOR
+　　＊＊计算各季度费用的合计数
+　　hj1＝0 ＆＆第一季度的合计
+　　hj2＝0 ＆＆第二季度的合计
+　　hj3＝0 ＆＆第三季度的合计
+　　hj4＝0 ＆＆第四季度的合计
+　　FOR i＝0 TO j1
+　　　　go i＋1 ＆＆第i＋1条记录
+　　　　　＊＊计算各季度的合计数
+　　　　hj1＝hj1＋kyjf．一季度 ＆＆ 计算第一季度的合计
+　　　　hj2＝hj2＋kyjf．二季度 ＆＆ 计算第一季度的合计
+　　　　hj3＝hj3＋kyjf．三季度 ＆＆ 计算第一季度的合计
+　　　　hj4＝hj4＋kyjf．四季度 ＆＆ 计算第一季度的合计
+　　ENDFOR
+　　loTable．Cell（j1＋2，1）．Range．InsertAfter（″合 计″）
+　　loTable．Cell（j1＋2，2）．Range．InsertAfter（hj1）
+　　loTable．Cell（j1＋2，3）．Range．InsertAfter（hj2）
+　　loTable．Cell（j1＋2，4）．Range．InsertAfter（hj3）
+　　loTable．Cell（j1＋2，5）．Range．InsertAfter（hj4）
+　　＊＊计算全年费用的合计数
+　　loTable．Cell（j1＋2，6）．Range．InsertAfter（hj1＋hj2＋hj3＋hj4）
+　　OleApp．ActiveDocument．SaveAs（″D＼myvfp＼kwsjk＼temp．doc″） ＆＆ 保存Word报表文件
+　　OleApp．Quit　　　　＆＆ 退出Word
+　　程序在安装有Office97的WIN95／98／NT，中文VFP6．0下通过。图1即为程序运行的结果。
+　　（1）系统的结构
+　　根据功能及用途的不同，我们将整个检索系统分为全文检索、分类检索、特色检索、其它检索、显示打印和系统管理等部分，有关检索系统的基本结构如图1所示

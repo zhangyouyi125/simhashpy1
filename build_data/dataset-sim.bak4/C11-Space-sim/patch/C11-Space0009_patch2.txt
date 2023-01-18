@@ -1,0 +1,107 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+空间拦截智能自适应变结构
+导引规律研究
+周荻　慕春棣　徐文立
+　　摘　要　结合空间拦截的精确末制导问题，本文介绍一种对目标机动和参数摄动具有鲁棒性的自适应变结构制导律(AVSG)。在此基础上，我们研究了一种智能自适应变结构制导方法(IAVSG)。
+　　1)87C51单片机由87C51 CPU、晶振、八位液晶显示器组成，如图5。
+　　主题词　空间拦截　自适应变结构制导　人工智能
+INTELLIGENT ADAPTIVE VARIABLE STRUCTURE 
+GUIDANCE FOR SPACE INTERCEPTION
+Zhou Di Mu Chundi Xu Wenli
+(Department of Automation,Tsinghua University . Beijing . 100084)
+　　Abstract　An adaptive variable structure guidance law (AVSG) which is robust to target maneuver and parameter perturbations is proposed for the precise guidance of space interceptor.Based on the AVSG,we study an intelligent AVSG method (IAVSG),which autonomously adjusts the magnitude of variable structure term in the AVSG according to the magnitude of an approximetely estimated target maneuver.The IAVSG is albe to eliminate chattering and ensure guidance accuracy.Simulation results show the effectiveness of the presented method.
+　　Key words　Space interception Adaptive variable structure guidance Artificial intelligence
+1　引言
+　　空间拦截器是一种体积小、重量轻的高精度制导武器，它直接碰撞目标，利用相互碰撞时的功能来杀伤人造地球卫星、弹道导弹等目标。精确未制导技术是实现空间拦截的核心技术之一。
+　　在实际应用当中，制导律应该对各种不确定因素，特别是目标机动具有鲁棒性。变结构控制理论对系统参数摄动和干扰具有鲁棒性［1］，因此，应用这一理论设计制导律受到了重视［2-4］。本文在自适应变结构制导律(AVSG)［2］的基础上，引入人工智能方法，得到一种智能AVSG方法。对付不同机动程度的目标，这种方法均具有良好效果，既可以保证命中精度，又可以消除抖动。显示通道数和场强值，如：“CH08：250.7”，即为第八通道，场强值为250.7 V／m。y3轴位于纵向平面内，且垂直于x3轴，指向上方为正。z3轴方向按右手定则确定。实践中可重点开展正交试验法、三次设计(系统设计、参数设计、容差设计)、方差分析和回归分析法、显著性试验法、田口方法、维修性设计、测试设计等方法，协助计量技术开发及计量管理工作完成向适应型管理模式转变。在末制导过程中，姿态控制系统令空间拦截器不滚转，那么目标-导弹相对运动可以解耦成纵向平面ox3y3和横向平面ox3z3内的运动。
+
+图1　视线坐标系
+　　以纵向平面内的相对运动为例，设在一段微小时间间隔Δt内视线仰角的增量为y，只要Δt充分小，则充分小，那么有
+　　　　　　　　　　　　　　　(1)
+其中R(t)代表导弹与目标之间的相对距离，y3(t)代表y3轴方向上的相对位移。
+1.2.1　掌握多种计量技能、拓宽计量专业水平
+　　根据计量设备在线维护的发展趋势，应联系生产现场，系统管理计量人员的培训工作。
+　　为便于设计制导律，取状态变量x1=y(t),x2=y(t),则由方程(2)可以推导出
+　　　　　　(4)
+其中a1(t)=-(t)/R(t),a2(t)=-2(t)/R(t),b(t)=-1/R(t),d(t)=1/R(t),u=nMy3(t)视作控制量，f=nMy3(t)视作干扰量。
+2.2　自适应变结构制导律(AVSG)
+　　为了使系统(4)对参数摄动和干扰具有鲁棒性，我们考虑用变结构控制理论设计制导律。
+　　根据准平行接近原理，希望在制导过程中视线角速度趋近于零，所以选取切换函数为
+s=R(t)x2　　　　　　　　　　　　　　　　　　　　(5)
+为保证系统状态能够到达滑模，而且在到达滑模的过程中具有优良的动特性，可以应用趋近律来推导出控制器［1］。一般的指数趋近律、等速趋近律等只适用于线性定常系统。系统(4)是一个线性时变系统，因此需要构造一种自适应滑模趋近律来保证滑模到达条件及良好的动特性。这里，令系统(4)的自适应滑模趋近律为
+　　　　　(6)
+它的物理意义是，当R(t)较大时，适当放慢趋近滑模的速度，而当R(t)→0时，则使趋近速率迅速增加，确保视线角速度不发散，从而使导弹有很高的命中精度。另外，对趋近速率进行自适应调节可以有效地削弱绕滑模的抖动。
+　　把方程(5)代入方程(6)，并考虑到R　(t)＞0得到
+R(t)2=［-k|(t)|-(t)］x2-εsgnx2　　　　　　　　　　　　(7)
+再把方程(4)代入方程(7)，并考虑到＜0，得到自适应变结构制导律(AVSG)的精确表达式
+u=(k+1)|(t)|x2-(t)x1+εsgnx2+f　　　　　　　　　　　(8)
+在实际应用中，干扰f是未知量，因此可实现的AVSG为
+u=(k+1)|(t)|x2-(t)x1+εsngx2　　　　　　　　　　　　　　(9)
+精确实现方程(9)，需要在线地估计(t)和(t)。显然，当Δt→0时，x1=y(t)→0。因此，只要控制周期足够小，则可以认为(t)x1=0。严格地实现AVSG中的自适应性需要实时地估计(t)。然而，由于滑模制导律对参数摄动有鲁棒性，而且空间拦截过程中(t)变化不大，因此可以假设(t)≈(0)=const,其中(0)代表末制导初始时刻相对速度的估计值。这样方程(9)又简化为
+u=(k+1)|(0)|x2+εsgnx3　　　　　　　　　　　　　　　(10)
+将u=nMy3,x2=y=y代入方程(10)，得到纵向平面内的AVSG，
+nMy3=(k+1)|(0)|y+εsgny　　　　　　　　　　　　　　(11)
+　　同理，设R1(t)=R(t)cosqy,则横向平面内的AVSG为
+nMz3=-［(k+1)|1(0)|z+ε1sgnz］　　　　　　　　　　(12)
+其中1(0)代表末制导初始时刻1(t)的估计值，nMz3代表作用在视线坐标系z3轴方向上的导弹加速度分量。
+　　关键词　计量人员　培训　考核　激励
+Management of Enterprises Metrological Personnel under Market Economy (1)
+Hu Qi　Wang Nianhuai
+　　Abstract　Following the deep development of the market economy,it is more evident that the metrological work in the enterprises is the basic guarantee of the product quality.The protruding day by day and not too high profesional quality and single special technical ability influence the playing the effects of enterprise metrological system and become the problem concerned for the leaders who are in charge of the metrological work.Combining with the certification of quality system and practice of improving the system of metrology and test and measurement,developing trend and method of managing work about training,checking and exciting the personnel in the enterprises under market economy are analyzed and researched in this paper.
+　　Key words　Metrological personnel,Training,Check,Excit
+　　引言
+　　计量人员是指从事计量确认活动的人员，即对计量设备进行检定、校准、调试、维修的计量技术和管理人员，一般有计量技术检测、调修人员(专、兼职)、计量管理人员和计量设备使用人员。通过对计量人员进行管理、技术和法律知识等方面的培训及对计量人员进行管理能力、技术水平和业务实绩的考核，达到提高计量人员素质、胜任工作的目的，从而确保“计量确认的所有工作都由具备相应资格、经过培训、有经验、有才能、会管理的人员来实施”，这一计量体系基本要素实现，是企业计量检测体系完善并有效运行的重要基础，也是适应市场经济条件下企业追求最佳质量成本、实施精益生产方式的必然趋势。在编写软件时，需要借助于流程图，各功能模块的
+
+
+图5　87C51单片机原理图
+逐层分割，其实就是流程图由粗到细的过程。取k=3，则有效导航比为N=k+1=4。AVSG中的第二项为变结构项，在目标机动时，它会发挥重要作用。
+　　下面，我们讨论如何选取ε这一参数。Lyapunov第二法，取一个Lyapunov函数V=。将此函数相对时间进行微分，并考虑系统方程(4)，得到
+　　　　　　(15)
+把(9)式代入(15)式，得到
+　　　　　　　　　　(16)
+方程(16)的右半部分中(t)＜0，所以当k＞1时第一项小于零；如果ε＞|f|，则第二项也小于零；从而有＜0。假设k＞1，(t)≤-β＜0，0＜R(t)≤M，β和M为常数。若ε＞|f|，则即x2=y=y→0。
+　　在末制导过程中，当导弹与目标充分接近时，导弹上的探测器进入盲区，这时制导系统停控。
+　　多通道智能近区场强仪将数据采集、处理、控制功能集于一体，它包括硬件和软件两大部分，其核心为87C51单片机。
+1.6　87C51单片机
+　　为了减小功耗，采用低功耗的CHMOS器件，CPU选用87C51，液晶显示，最大静态电流控制在30 mA以内。
+　　基于上述经验，我们采用如下规则：
+　　1) 如果|nTy3|(|nTz3|)为零或很小，那么令ε(ε1)为零；
+　　2) 如果|nTy3|(|nTz3|)小，那么令ε(ε1)小，而且略小于|nTy3|(|nTz3|)；
+　　3) 如果|nTy3|(|nTz3|)中等，那么令ε(ε1)中等，但略小于|nTy3|(|nTz3|)；
+　　4) 如果|nTy3|(|nTz3|)大，那么令ε(ε1)大，但略小于|nTy3|(|nTz3|)。
+其中nTz3代表目标加速度在视线坐标系z3轴上的分量。实现上述规则，需要粗略地估计出|nTy3|(|nTz3|)的大小，这可以用解析重构法［5］来完成，即
+　　　　　　　　　(17)
+　　　　　　　　(18)
+其中tf代表末制导结束时间。
+　　将上述规则与AVSG相结合，得到一种智能AVSG方法(IAVSG)。
+3　空间拦截过程的数字仿真
+　　在仿真研究中，首先给出末制导初始时刻，目标和导弹在地心惯性坐标系中的位置，目标和导弹初始弹道参数，导弹的初始姿态角和姿态角速率以及初始质量等。然后应用四阶龙格-库塔法求出弹道方程［6］在当前仿真时刻的数值解。在每一个仿真周期内，都要计算目标-导弹相对距离，若相对距离已开始增加，则结束本次仿真，并以前一时刻的相对距离作为终端脱靶量。设俯仰和偏航视线角速度的测量噪声均是方差为1.67×10-5rad/sec的零均值白噪声。
+　　关于目标的飞行轨迹，主要有两种情况。第一种情况是目标沿着预定的弹道飞行，不作机动；第二种情况是，目标具有逃避敌方攻击的机动能力，在纵向平面和横向平面内均可以进行法向机动。A／D转换中，有一个量化误差的问题，它和分辨率是统一的，是由于有限数字对模拟数值进行离散取值(量化)而引起的误差。比较IAVSG和比例导引律(PN)的制导效果，就可以说明这一点。计量检测体系的直接执行者是各类计量人员，更主要是专兼职计量管理人员、专职计量检测人员，质量管理的基础理论、必要的科学管理方法的掌握与否直接影响其工作效能。
+1　计量人员的培训
+　　计量人员经过培训，达到所需具备的资格(根据所从事的计量确认活动的技术含量、工作性质来确定相应的资格条件)。IAVSG不会造成视线角速率抖动。拦截机动目标时，设目标从第二秒开始在纵向和横向平面内同时实施机动，机动过载为nTy3=2g，nTz3=2g，IAVSG和PN下的视线俯仰角速率和视线偏航角速率律如图4、图5所示。显然，目标机动使得PN下的视线角速率发散，因此脱靶量达到21.66mm；而IAVSG下的视线角速率始终位于零附近不发散也不抖动，所以脱靶量只有0.0278m。
+　　　　　　　　　
+图2　IAVSG和PN下视线俯仰角速率(目标不机动) 图3　IAVSG和PN下视线偏航角速率(目标不机动)
+　　　　　　　　
+图4　IAVSG和PN下视线俯仰角速率(目标机动)　图5　IAVSG和PN下视线偏航角速率(目标机动)
+　　IAVSG能够根据目标机动程度，自主地调整变结构项的强度(ε和ε1的大小)，而AVSG则不具备这样的能力。在AVSG中，变结构项的强度是恒定的，为了应付最大程度的目标机动，ε和ε1必须取得足够大。当目标不作机动或机动程度较小时，变结构项容易造成视线角速率抖动(实际上是导弹的抖动)，这一方面可能会影响弹上机构的工作，另一方面也使脱靶量增加。以目标不机动为例，设在AVSG中，ε和ε1均为10，那么，AVSG的脱靶量为0.013m，而在同样的情况下，IAVSG的脱靶量只有0.007m。AVSG下视线角速率如图6、图7所示，图中视线角速率明显地发生了抖动。
+　　　　　　　　　　
+图6　AVSG下视线俯仰角速率(目标不机动)　　　图7　AVSG下视线偏航角速率(目标不机动)
+4　结论
+　　建立在自适应变结构制导律(AVSG)基础上的智能AVSG方法对目标机动有很好的鲁棒性，而且可以消除抖动，并保证制导精度。
+*国家教委博士点基金资助项目
+作者单位：清华大学自动化系 . 北京 . 100084
+参考文献
+1　高为炳.变结构控制理论基础.北京：中国科学技术出版社，1990
+2　周荻，胡恒章，胡国辉.一种自适应变结构制导律.宇航学报，1996，17(4)：9-12
+3　Brierley S D,Longchamp R.Application of Sliding-Mode Control to Air-Air Interception Problem.IEEE Transactions on Aerospace and Electronic Systems,1990,26(2):306-325
+4　Babu K R,Sarma I G,Swamy,K N.Switched Bias Proportional Navigation for Homing Guidance against Highly Maneuvering Target.Journal of Guidance,Control and Dynamics,1994,17(6):1357-1363
+5　C J贝茨.攻击机动目标的最优制导规律.北京：宇航出版社，1989
+6　钱杏芳，张鸿端，林端雄.导弹飞行力学.北京：北京工业学院出版社，1987
+收稿日期:1998年3月26日
+修回日期:1998年5月13日

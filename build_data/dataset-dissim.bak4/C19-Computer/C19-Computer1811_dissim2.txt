@@ -1,0 +1,97 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　No.19　No.1　P.37-38
+
+
+
+
+用Java语言实现Internet远程考试
+刘志明
+摘 要： 一个用Java语言编写的、可在因特网上运行的考试程序，可以实现实时在线的网上考试。因此，设置代理服务器的主要目的是利用其缓存功能，用户通过访问代理服务器缓存中的历史记录来提高访问速度，减少局域网连入Internet的出口流量与负载。能不能将考试也移植到Internet上，用网络来完成传统考试繁琐的全过程已成为人们所思考的问题。本文介绍了一个用Java语言编写的可在因特网上运行的考试程序，通过这个程序，无论在哪个国家或地区，只要有1台能接入Internet的电脑，就可以实现实时在线的网上考试。文章对此程序的一些重要的编程细节做一简要介绍，希望能对从事这方面的工作者有所裨益。
+1 编程思想
+　　此程序是一个可以模拟GRE（美国研究生入学考试）的程序，其考试界面完全按照ETS的标准界面绘制而成，操作流程也完全按照真正的考试过程设计。为了适应网上教学的需要，软件设计了2个版本，1个为在线考试版，用于模拟真实考试；另1个为测试练习版，带有答案校验、复习改错功能。如果再安装相应的软件，还可以实现Web Server、FTP Server等功能。
+　　2．访问站点控制
+　　在Internet中有大量违法信息及站点，要限制或禁止访问这些站点，可在MS Proxy Server 2．0中设置禁访的IP地址或域名来解决。设置“允许”用户访问时，则选“Denied”，然后在“Except to those listed below”中输入允许访问的站点地址或域名，这时除了表中显示的站点外，其余站点用户都不能访问。有些代理服务软件包甚至可以统计局域网内部用户的出口流量，并计算出用户的流量费用。
+　　程序段举例如下：
+　　//随机调取5道句子填空题
+　　for(number＝1；number＜＝5；number＋＋)
+　　{
+　　　　while(equal)
+　　　　{
+　　　　　　current＿number＝(int)(Math．random()*1000)；
+　　　　　　//产生1个随机数，为题库中1000道题中的//某一图片题号
+　　　　for(i＝1；i＜＝5；i＋＋)
+　　　　{
+　　　　　　if(current＿number＝＝compare[i])
+　　　　　　{
+　　　　　　　equal＝true；//比较已调用题号，检验是否有//重复调用
+　　　　　　　break；
+　　　　　　}
+　　　　　　else
+　　　　　　equal＝false；
+　　　　}
+　　}
+　　problem[number]＝getImage(getCodeBase()，″lib/Verbal/ Sentence/no″＋current＿number＋″．gif″)；//从题库中调出题目图片
+　　equal＝true；
+　　compare[number]＝current＿number；
+　　ranswer[number]＝sentence＿rightanswer．charAt(cur－ rent＿number－1)；
+}
+　　此段程序为从“C：/…/lib/Verbal/Sentence/”目录中调出5道句子填空题，调出的题目保存在problem[number]图片数组中，对应的正确答案保存在ranswer[number]数组中。读者可以从中看出这段程序很方便地实现了从题库中随机调取题目的功能。将来只需再将已调的题目图片用g．drawImage()方法显示在题目区中即可。
+1.2 分数的统计
+　　将正确答案保存在ranswer[number]数组的过程正是通过使用Java中的HTML参数实现的。编程时预先将正确答案放在HTML文件中，在做题过程中，根据所调题目的编号从HTML参数中获得相应的正确答案，再通过对照应试者所选答案即可实现分数统计。代理服务器与客户机均采用Internet合法的IP地址，它们之间既可连接在同一网段上，也可跨网段连接。设置“禁访”时，在“Enables Filtering”界面中选择“Granted”，然后在“Except to those listed below”中添加要禁止访问站点的地址或域名，除了“Except to those listed below”中指定的站点外，用户可以访问其它所有Internet站点。
+HTML文件中：
+　　＜param name＝sentence＿rightanswer value＝″AEEADEDEBB…″＞
+源程序中：
+　　parameter＝getParameter(″sentence＿rightanswer″)；//获 //取答案参数
+　　if(parameter!＝null)
+　　sentence＿rightanswer＝parameter；
+　　ranswer[number]＝sentence＿rightanswer．charAt(cur－rent＿number－1)；
+//根据随机调取的题号从HTML参数中获得相应的正确答案
+　　if(answer[problem＿number]!＝ranswer[problem＿number]) mistake＿count＋＋；
+　　final＿score＝800－mistake＿count*20－(30－problem＿num－ ber＋1)*20；//比较应试者所选答案进行分数统计
+1.3 考试时间的监控
+　　既然是正式考试，就要有严格的时间控制。通过Java的Runnable接口可以很容易地控制考试的全部进程，不仅可以随时知晓考试的时间，而且能做到准时开始，准时结束，没有监考老师也同样能严格把握考试。程序段为：//时间显示线程
+　　public void start()
+　　{
+　　　　if(time＿thread＝＝null) {
+　　　　time＿thread＝new Thread(this)；
+　　　　time＿thread．start()；　//开始考试
+　　　　}
+　　}
+　　public void run()　　　//线程运行
+　　{
+　　　　while(time＿thread!＝null) {
+　　　　　　draw＿time(g)；　//时间显示
+　　　　　　try　{
+　　　　　　Thread．sleep(1000)；
+　　　　　　}
+　　　　　　catch(InterruptedException e)
+　　　　　　{　}
+　　　　}
+　　}
+　　public void stop()　　//线程停止
+　　{
+　　　　time＿thread．stop()；
+　　　　time＿thread＝null；
+　　}
+　　public void draw＿time(Graphics g)
+　　{
+　　　　……　//显示时间(略)
+　　　　if(minute＝＝0 ＆＆ second＝＝0)　{
+　　　　end＿bool＝true；　//时间到达，强制结束考试
+　　　　g．setColor(blue 1)；
+　　　　g．fillRect(iconx[3]＋165，icony[3]，200，50)；
+　　　　final＿score＝800－mistake＿count*10－(30－prob－lem＿number＋1)*20；
+　　　　g．setColor(Color．black)；
+　　　　g．setFont(answer＿font)；
+　　　　g．drawString(″Final Score：″＋final＿score，iconx [3]＋140，icony[3]＋10)；
+　　　　update(g)；　//显示最终分数
+　　　　stop()；
+　　　}
+　　　second－－；
+　　}
+　　在这段程序中可以看到，在程序一启动start()方法时考试便自动开始，考试过程中通过draw＿time()方法考生可随时看到考试时间，而当考试时间到达后，程序利用1个逻辑变量end＿bool强制结束考试，从而实现了对考试全过程的监控。
+1.4 答案的记录与报送
+　　若为正式考试，可将考生所选答案和正确答案一同输出保存在文件中，待考试结束后由专人将文件通过Internet传送回考试中心，考试中心审核后再将官方成绩送至各个地区的各个考点。
+　　由于用户的代理服务请求必须注册，因此用户在客户机上使用某项服务时，必须先从客户机登录到服务器上去注册，只有合法用户才能使用代理服务器的所有服务，否则除HTTP以外的所有服务用户都无权使用。
+　　3．软件应尽量安装在Windows NT的NTFS分区中。还可以对Internet上的一些站点进行过滤，使用户只能访问某一IP地址范围或某个域（Domain）范围的信息

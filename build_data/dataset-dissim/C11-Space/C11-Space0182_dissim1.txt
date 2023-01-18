@@ -1,0 +1,116 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+　软件可靠性修改的Schneidewind
+增长模型的特性分析
+宋晓秋
+(北京计算机应用和仿真技术研究所*北京142信箱213分箱2号*100854)
+　　摘　要　本文对软件可靠性修改的Schneidewind增长模型进行了详细的数值特性分析,剖析了该模型的参数解结构,从而构造了模型参数估计的高效求解算法,并进行了相应的数值实验。
+　　主题词　软件工程　软件可靠性　可靠性模型
+ANALYSIS ON NUMERICAL CHARACTERISTIC 
+OF MODIFIED SCHNEIDEWIND’S SOFTWARE 
+RELIABILITY GROWTH MODEL
+Song Xiaoqiu
+(Beijing Institute of Computer Application and Simulation Technology*Beijing*100854)
+　　Abstract　In this paper,the numerical characteristic of modified Schneidewind's software reliability growth model is analyzed in detail,therefore an efficient evaluation algorithm is constructed based on the theory of this model's parameter solution,and some corresponding numerical experiments are tested for this model.
+　　Key words　Software engineering　Software reliability　Reliability model
+1　引　言
+　　Jelinski和Moranda在1972年给出的软件可靠性增长的JM模型,其基本思想是假设软件当前的故障率正比于错误残留数,在一个错误被修改到下一个错误被发现的时间段内故障率保持为常数,每当一个错误被修改后,故障率都降低一固定值,即每个错误对故障率改善的影响是相同的。这种假设虽然在某些情况下具有一定的代表性,但在许多情况下却是不符合客观实际的。IBM的Adams在1980年和1984年的两篇研究报告中总结IBM典型软件的缺陷时指出:有的大缺陷的MTBF为一年半,而大量小缺陷的MTBF可达1500年,有的更可达5000年,它们相差2～3个数量级。一般来讲,当软件的故障率λ(t)大时,缺陷易于暴露,因此dλ(t)/dt应负得多一些。Schneidewind基于此,假设在不太长的时间区间内,dλ(t)/dt=-βλ(t),其解为λ(t)=αe-βt。在原始的Schneidewind模型中,把时间区间从t=0起分为等长时间间隔,第i个区间的λi=αe-β(i-1)Δt,i=1,2,…,k,利用在第i个区间内发现并纠正的故障统计数,依据最大似然法求出模型参数估计α和β,于是在最后一个区间内即第k个区间的故障率λk=αe-β(k-1)Δt。
+　　我们注意到,原始的Schneidewind模型只利用到了每个时间区间内的错误发现并纠正的总统计数,而未利用到每一错误发现并纠正的具体时刻,因此原始统计数据的信息并未利用充分。
+　　何国伟在文献［1］中,使用Schneidewind的dλ(t)／dt=-βλ(t)这一简明的工程假设,充分利用每一错误发现并纠正的具体时刻信息,给出了一种新的软件可靠性增长模型,即修改的Schneidewind模型:
+　　设第i个错误被发现并纠正的时刻为ti,i=1,2,…,k,则类似JM模型的推导方法,得到α和β的最大似然估计满足如下非线性方程组
+
+(1)
+于是在时刻tk时的故障率估计值为λ(tk)=αe-βtk。按图2(a)规定的正方向,单元左结点的内力正方向与坐标轴方向相反。
+2　参数解特性分析
+　　将方程组(1)中的α消元得到关于β的单个方程
+
+记
+
+(2)
+设x=e-β,代入(2)式得到
+
+(3)
+由于发现修改错误的时间ti通常是采用整单位数(如秒、分、日、月、年等)来统计的,所以可以假设ti∈N。令ni=ti-t0,得到
+
+(4)
+由前假设x＞0,所以g(x)=0等价于
+
+(5)
+的求根问题。
+　　定理1　p(x)在(0,+∞)内有且只有一个根。
+3.2.3　系统方程
+　　对第m个单元,定义w　mo=［w　T　o1,w　T　o2］T,w　mi=［w　T　i1,WTi2］T,再令Wo=［w　T　1o,w　T　2o,…,w　　T　　Mo］T,Wi=［w　　T　　1i,w　　T　　2i,…,w　　T　　Mi］T,M为单元总数,Wo,Wi分别称为系统出射和入射波模式向量。
+　　由软件可靠性故障率的含义可知,当故障率呈上升趋势时显然是所不期望的,一旦软件可靠性的评估结果为故障率单调上升,说明软件本身还没资格到软件可靠性评估这一阶段。故障率不增即为β大于等于0,对于p(x)即为根小于等于1。对w(ξ,t)有边界条件
+
+(4)
+
+(5)
+研究系统的稳态行为,令初值为零,对(3)式进行傅利叶变换有
+(6a)
+
+(6b)
+对边界条件亦有相应的变换。
+　　证明　因为p(1)＞0,p(+∞)=-∞,所以p(x)在(1,+∞)上必有一根。
+　　由定理2可知,软件故障率不增的条件为:
+
+　　依据上述模型参数解结构的分析结果,我们可以方便地构造出参数估计的数值求解算法。
+3　数值算法
+　　我们不难看出,关于α和β的非线性方程组(1)的一般性数值求解并非易事。
+　　首先,方程组(1)的非线性很强。如果用诸如简单迭代法、牛顿迭代法等进行数值求解将遇到初值如何选取的问题。通过考虑单元间的边界条件可以得到姿态动力学的解析模型,并由此可以获得外扰动和姿态角到附件弹性位移之间的传递特性。如果我们用诸如区间迭代法等具有全局收敛的方法进行数值求解,往往在求解的速度和效率上付出很大的代价。
+　　其次,无论用哪一种通用数值方法,如果求解出β小于0都是无意义的。其余参数均同上节,特征函数取法同上。(6b)式的解为
+
+(7)
+上式即为附件弹性振动的波动表达式,eikξ,ekξ项对应着向左传播的波,e-ikξ,e-kξ对应向右传播的波,最后一项是由于姿态运动带来的。图中结果表明,波动模型对变截面的附件仍然给出了结构的精确动力学特性,而混合坐标模型不权未反映系统的高频特性,而且由于选取的特征函数与附件的振动模态有差别,在低频段的动力学特性也产生了误差。我们之所以称其为高效是因为:首先,它不需初值,任何情况下都会给出满足精度要求的数值解;其次,对故障率单调上升的情况是直接代数式判别,而无需迭代求解;最后,它所具有的［0,1］区间上二分法量级的寻根速度将是386微机上都可接受的速度。
+2　混合坐标下的姿态动力学模型
+
+
+图1　带柔性附件航天器结构
+考虑如图1所示的中心刚体带梁式附件的航天器结构,中心体绕O点转动,附件由若干段物理特性各异的均质梁连接而成,且未变形时的方向通过O点,附件与刚体的连接点为e点,附件相对其刚体运动位置的弹性位移为w(ξ,t),ξ为位置参量。与传统的以混合坐标表示的模型相比,此模型能够获得更全面、更精确的姿态动力学特性。错误统计数据见表1,评估结果见表2,故障率图见图1。
+表1　错误统计数据(时间单位:日)
+
+序 号间 隔 时 间累 计 时 间序 号间 隔 时 间累 计 时 间
+19914987
+2122115491
+3113216192
+443617395
+574318398
+6245196104
+7550201105
+88582111116
+95632233149
+10770237156
+111712491247
+12677252249
+13178261250
+
+表2　评估结果
+
+初始故障率α0.1817663
+影响故障率比例常数β0.00585515
+参数精度(方程组残量的欧氏范数)0.00055641
+当前故障率(t=250)0.04205873
+平均故障前时间(MTBF)23.77678384
+下一故障可能时间273.77678384
+
+　　评估的结果表明,该软件系统的平均故障前时间(MTBF)约为24日,即软件离正式交付尚有一定距离,仍需进一步的测试。实际中该软件在进一步的测试中又发现了5个错误。
+　　例2　我们采用装甲兵工程学院的某软件测试例子(只取前16个数据)。错误统计数据见表3,评估结果见表4,故障率图见图2。
+参考文献　
+　1　Balas M J.Trends in Large Space Structrue Control Theory:Fondest Hopes,Wildest Dreams,IEEE Transactions on Automatic Control,1982,27(3):522-535
+　2　Martin G D,Bryson A E.Attitude Control of a Flexible Spacecraft,Journal of Guidance and Control,1980,3(1):37-41
+　3　Yossi Chait,Clark J Radcliffet.Control of Flexible Structure with Spillover Using an Augment Observer.Journal of Guidance and Control,1989,12(2):155-161
+　4　Helmicki A J,Jacobson C A,Nett C N.Control-Oriented Modeling of Distributed Parameter Systems.Journal of Dynamic Systems,Measurement,and Control,1992,114(2):339-346
+　5　Miller D W,von Flotow A.A Travelling Wave Approach to Power Flow in Structrual Networks.Journal of Sound and Vibration,1989,128(1):145-162
+　6　Beale L S,Accorsi M L.Power Flow in Two-and Three-Dimensional Frame Structures,Joumal of Sound and Vibration,1995,185(4):685-702
+　7　Tanaka N,Kikushima Y.Active Wave Control of Flexible Beam.JSME International Journal Series Ⅲ,1992,35(2):236-244
+　8　L.米罗维奇著,陈幼明等译.结构动力学计算方法.国防工业出版社,1987:313-318
+本文于1996年7月8日收到
+　　*国家自然科学基金资助项目(批准号19632001
+。实际中该软件在继续进行的测试中下一个错误的发现时间为300秒,与评估预计的335秒相差35秒,所以修改的Schneidewind模型对此软件系统基本适用。
+参考文献
+  1　何国伟.软件的MTBF及其验证试验.电子产品可靠性与环境试验,1995,(1)
+  2　徐仁佐等.软件可靠性模型及应用.清华大学出版社和广西科学技术出版社,1994年
+  3　国外软件可靠性资料汇编.全国军事技术装备可靠性标准化技术委员会,R.M.S译文选10,1994年9月
+本文于1996年5月28日收到
+　　*该项研究得到国防科工委基础研究基金资助

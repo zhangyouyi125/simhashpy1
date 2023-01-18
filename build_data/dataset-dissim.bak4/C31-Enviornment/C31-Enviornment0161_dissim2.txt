@@ -1,0 +1,83 @@
+土壤与环境
+SOIL AND ENVIRONMENTAL SCIENCES
+1999年 第8卷 第3期 Vol.8 No.3 1999
+
+
+
+不同母质砖红壤的磷有效性差异
+李淑仪　廖观荣　廖新荣　蓝佩玲
+　　摘要：不同母质的砖红壤，其磷素含量有差异；磷的有效性受土壤营养体系中其它元素的制
+约；桉树植株的磷营养受土壤有效磷含量和土壤营养体系中多种元素相互作用的影响。
+　　关键词：砖红壤；玄武岩；浅海沉积物；磷有效性；锰；铁
+　　中图分类号：S158.3 文献标识码：A
+The Difference between Availability of Phosphorus in Latosol Derived from 
+Different Parent Material
+LI Shu-yi，LIAO Guan-rong，LIAO Xin-rong，LAN Pei-ling
+（Guangdong Institute of Eco-environmental and Soil Sciences, Guangzhou 510650, China）
+Abstract: There is difference between contents of phosphorus in latosol derived from different parent material. 
+The availability of phosphorus is restricted by other elements of the soil nutritious system. The phosphorus nutrition 
+of plants of eucalyptus is affected by the content of available phosphorus in soil and by the interaction of various 
+elements of soil nutritious system.
+Key words: latosol; basalt; shallow-sea deposit matter; availability of phosphorus; manganese; iron
+　　广东省的砖红壤主要分布于雷州半岛，其母质主要有浅海沉积物和玄武岩。在桉树营养与施
+肥研究过程中，我们发现在这两种母质发育的砖红壤上生长的桉树，其叶片营养有差异；这种差
+异是由于不同土壤母质导致磷肥有效性有差异而引起的。本文就此进行一些探讨，旨在促进砖红
+壤施磷有效性问题的研究和提高砖红壤的生产力。
+　　我们将24块高耕作水平的水稻田的地力产量与施肥产量标于图1，施肥产量是在正常年份早稻
+中迟熟种所能达到的产量结果。
+2.2 等产线的求导
+　　限于篇幅，本文只讨论氮、钾配合施用对水稻产量的影响。有效Fe、
+Mn、Cu、Zn用1mol/L 的HCL浸提；交换性Ca、Mg用醋酸铵浸提；Fe、Mn、Cu、Zn、Ca、Mg均用原
+子吸收分光光度计测定。
+　　桉树叶片采自刚果W5，采样时间为造林当年的11月份；采样方法和分析方法均与文献[1～2]一
+致。
+2　结果与讨论
+2.1 两种母质发育的砖红壤的磷和其它有关元素的含量差异
+　　土壤基本性质如表1所示。两种不同母质发育的砖红壤的全磷和有效磷及全Fe、Mn和有效Fe、
+Mn均有很大差异，全磷量与有效磷量并没有呈相关的关系，但土壤中的Fe、Mn与有效磷有相关的
+关系。
+1　试验方法
+　　1991～1996年，我们在兴宁市福兴镇研究“水稻年产18t/hm2栽培技术规程”，进行了大量的
+基础调查，布置了大量的小区和大田试验；试验地段在丘陵垌田区，土质为砂泥质水稻肥田；试
+验品种多采用中迟熟高产杂交水稻良种。
+　　在本试验所涉及的元素含量中，两种母质发育的砖红壤的锰含量差异最大。就全量而言，玄
+武岩砖红壤的全锰是浅海沉积物的104倍；而锰的有效量变化更大，前者是后者的194倍。
+　　关键词：水稻；氮；钾；施肥量；最佳配比
+　　中图分类号：S511.044；S147.22 文献标识码：A
+Study on Optimum Proportion of Nitrogen to Potassium for High-yield Rice
+LU Pu-xiang，LUO Lian-xiang，LUO Bo-sheng，ZHANG Mei-xing，YUAN Cai-ting
+（Guangdong Institute of Eco-environmental and Soil Sciences，Guangzhou 510650，China）
+Abstract：In this paper, we work out a forecast equation for aim-yield of rice, an equal-product-curve equation 
+under different application rates of N and K2O，and the optimum proportion equation for N and K2O. 
+According to these equations, we calculate the optimum application proportion of N to K2O for the field, which 
+capability yield is 6345 kg/hm2, under the aim yield 8589 kg/hm2. The proportion is 1∶1.22，namely, N 139.4 
+kg/hm2 and K2O 170.6 kg/hm2. It quite accords with practice .
+Key words：rice；nitrogen；potassium；application rates；optimum proportion
+　　水稻施肥技术研究已经有很多报道，但养分配比方面的研究很多还停留在一般对比试验上。
+2.2 两种砖红壤上桉树叶片的磷及其它元素含量的差异
+　　表2和图1表明，两种不同母质砖红壤上的桉树叶片磷、铁、锰、钙、镁、铜、锌含量均有差
+异，但以锰差异最大，其次为磷。玄武岩砖红壤上的桉叶养分含量较浅海沉积物砖红壤上桉叶养
+分含量低的元素只有磷，前者的磷含量比后者少25.2%；其余均是前者的高，其中前者叶片锰含量
+是后者的6.33倍。氮、钾肥料效应的数学模型为二元二次方程：
+Y=B0+B1X1+B2X2-B3X12-B4X22+B5X1X2　　（2）
+　　对表1的试验数据作回归统计分析，得出（2）式中的各项系数B0、B1、B2、B3、B4、B5分别为
+3626、9.365、7.779、0.03383、0.01956、0.1495。表1列出了不同的氮、钾量配合施
+用的水稻产量。表1也表明，玄武岩砖红壤上的有效锰比有效铁更高，Mn/Fe达
+9.75；而且从表2和图1都可看出，其桉树叶片中的锰含量也很高，甚至超过了磷的含量，所以，
+其磷有效性除了受铁影响之外，还可能受锰的影响。
+
+图2　等产线与最佳配比线
+2.3 氮钾最佳配比方程的求导
+　　氮钾最佳配比线方程模型为[3]：
+X1 =（B1K-B2）/（2B3K+B5）+（2B4+B5K）X2 /（2B3K+B5）　　（4）
+　　（4）式中K=P2 /P1，P1、P2分别为N和K2O的市场零售价格。
+在我们以前的水稻施肥试验中，取得最高产量时施N和K2O分别为172.5kg/hm2和135.0kg/km2，折合
+比例为1∶0.78[1]。
+　　至于锰如何影响磷的有效性，如何抑制植物对磷的吸收，铁和锰的相互关系以如何，这些问
+题有待于今后进一步研究。从图1可见施肥产量Y与地力产量X之间的关系很密切；经统计分
+析，Y与X的相关系数r=0.9085，其回归方程为：
+Y =1844+1.063X　　（1）
+
+图1　施肥产量与地力产量的关系
+　　对（1）式作显著性检验，其F值为104.0，大大超过极显著水准的临界F值7.95。氮钾最佳配比线与某目标产量下的氮钾等产线的交点坐标即
+为氮、钾的最佳经济施肥量

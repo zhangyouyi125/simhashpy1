@@ -1,0 +1,124 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+PowerBuilder的若干公用对象设计
+李振华　吕国斌　墙芳躅
+　　摘　要　在PowerBuilder开发过程中，将常用操作做成公用对象，并存入公用库（.pbl）中，这种设计方法有利于提高程序的可重用性和可维护性。设计公用对象的一种方法及其设计实例在本文中作了探讨。
+　　关键词　PowerBuilder，公用对象，公用库
+引言
+　　PowerBuilder作为主要的数据库前台开发语言，已得到了广泛的应用。但在实际的开发过程中，特别是在大型的开发项目中，某些操作总会多处重复出现，比如查询、打印等操作，几乎在每一个窗口里都会出现。如果每出现一次这样操作都相应的为其写一次程序的话，那么，这些不同窗口中的程序是相似的甚至是重复的，这既增加了程序的编写工作量，又增加了程序的维护工作量。一种可行的方法是将这些常用操作做成公用对象，并存入公用库（.pbl）中，这样，在程序设计时便可直接地调用或使用这些对象。这种做法既提高了程序的可重用性和程序编制效率，又提高了程序的可维护性。
+1　设计思想
+　　公用对象的设计难点在于其通用性的设计：能普适几乎所有的操作要求，同时其程序设计又必须保持独立。函数原型：BOOL CloseHandle( HANDLE hObject );其中hObject参数为CreateFile()返回的端口句柄。当然，采用此种方法，设计的关键就在于传递参数的选择及其处理。
+2　几个设计实例
+　　以下将要讨论的几个公用对象按其性质可以分为两类：窗口和自定义控件。如果lpOverlapped设置为NULL，则ReadFile()工作在同步方式；如果lpOverlapped指向一个重叠结构，则工作在异步方式。以下分述之。
+2.1　窗口类
+2.1.1　查询窗口
+　　查询窗口的设计流程是：在获取了被查询数据窗口的有关参数后，即弹出本窗口，由用户在本窗口
+中构造出检索表达式（或称条件表达式，同where子句），并将此表达式回送原数据窗口进行过滤，并在原数据窗口中得到用户所需的查询结果。
+　　在使用查询窗口前，需知道被查询窗口的有关参数。因此须先定义一公用函数，以获取数据窗口的有关参数。
+　　. 数据窗口参数获取函数
+　　本函数获取数据窗口以下参数：所有的字段名及其数据类型和标识。
+　　定义如下:
+　　入口参数：数据窗口控件名（类型Reference）。返回值：字符串。系统可实时地监控从市话网上不断传来的报警电话。
+i―ColCount = Integer(dw―1.Describe(′DataWindow.Column.Count′))[ ZK)〗 
+　　其中dw―1为欲检索的数据窗口对象。
+　　② 建立循环，以第1步得到的字段个数为循环次数，依次得到数据窗口中每个字段的字段名及其数据类型和标识，并将它们存入字符串中。
+　　通过下面的程序来说明串行通信参数的设置方法。
+　　③ 返回此字符串。
+　　. 查询窗口
+　　定义如下:　　
+入口参数：字符串（系上述公用函数返回结果）。返回值：字符串（即检索表达式）。
+　　窗口中主要控件为一数据窗口和一命令钮（见图1）。
+
+图1　公用查询窗口示例
+　　数据窗口控件用于构造检索表达式，它对应的数据窗口对象以入口参数（即原数据窗口有关参数）为数据源（其数据源设计为外部（External）），其结果集（Result Set）由以下四项组成：
+　　① 字段标识――由入口参数提供，在窗口open事件中生成，编辑形式为下拉列表框，其显示值（Display Value）对应于入口参数中s―ColText，其数据值（Data Value）对应于入口参数中s―ColName。
+　　② 检索符――关系运算符，编辑形式为下拉列表框。报警电话的监控是通过检测从电话交换机中馈送的RS232标准的串行通信信号，其中串行口通信采用3线方式。
+　　④ 逻辑符――与或符，编辑形式为下拉列表框。
+　　命令钮则根据数据窗口的用户操作结果，生成一字符串（即检索表达式）并返回。
+　　有关的程序设计主要有：
+　　本窗口open事件：
+　　① 获取传入的参数。并将它们传入数据窗口标识字段的编辑形式中。
+dw―1.Modify(′#1.values = "′ + Message.StringParm + ′"′)
+　　注意传入参数Message.StringParm须符合编辑形式的定义格式。② 如第1步操作无误，则在数据窗口是插入一空行，等待用户的输入。
+　　数据窗口的itemchanged事件：当数据窗口中当前行的所有列都填满时自动插入一行，等待用户下一行的输入（程序略）。
+　　命令钮clicked事件：
+　　③ 删除空行。
+DWORD ReadThread(LPDWORD lpdwParam)
+{ BYTE Buff［100］; 　　　　　　　　　　　　　　　　　　　　　　　　　//读数据缓冲区
+DWORD nBytesRead, dwEvent, dwError;
+COMMTIMEOUTS Timeouts;　　　　　　　　　　　　　　　　　　　　　　　　　　//超时设置
+Memset(&Timeouts,0,sizeof(COMMTIMEOUTS));
+Timeouts.ReadTotalTimeoutMultiplier=5;
+Timeouts.ReadTotalTimeoutConstant=100;
+SetCommTimeouts(hComm,&Timeouts);
+SetCommMask(hComm,EV―RXCHAR);　　　　//设置EV―RXCHAR掩码，当任何字符到达时产生事件
+While(bReading){
+if(WaitCommEvent(hComm,&dwEvent,NULL))
+{　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//接收缓冲区有字符到达
+if(dwEvent & EV―RXCHAR)
+{ 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//确认是EV―RXCHAR事件
+if(。如为空，则返回空值。否则以数据窗口中行数为循环次数，依次取字段名，检索符，检索值（并根据其字段类型决定其表示形式），逻辑符，并将以上各项存入字符串中返回。此返回的字符串即为所需的检索表达式。
+2.1.2　打印预览窗口
+　　本窗口对数据窗口如下参数作定义：边界、纸张尺寸、打印方向、预览缩放比例，并作相应输出。调用CreateFile()打开串口成功，返回一个操作句柄。
+　　数据窗口是原数据窗口的一个拷贝。
+3.6　关闭串口API函数
+　　串行口是非共享资源，某应用程序打开串行口后，即独占该资源，使其它应用程序无法再访问，直到该应用程序释放串口。不直接对原数据窗口进行操作也是基于通用性的考虑。
+　　参数设置类控件一般为单行编辑框或下拉式列表框，供用户设置打印参数。
+　　操作类控件一般为命令钮或检查框。注意：WaitCommEvent()函数和读写操作函数一样可以同步使用，也可以异步使用，这主要取决于在第三个参数中是否指定OVERLAPPED结构。
+　　dw―1.Create(dw―source.Object.DataWindow.Syntax) 其中dw―source为原数据窗口
+　　② 取本窗口中数据窗口有关打印参数，并将它们填入相应的控件中。有关参数有：边界、纸张尺寸、打印方向、页数。
+
+图2　公用打印预览窗口示例
+　　以取边界参数为例：
+　　取上边界值em―top.text=dw―1.Object.DataWindow.Print.Margin.Top取边界参数单位st―topunit.text = ′PBU′ （据取得单位程序′0′， ′1′， ′2′， ′3′ 相应地给′pbu′， ′pxl′， ′in′， ′cm′值）
+　　虽然每个参数都要进行设置，但它们的操作步骤是相同的：
+　　① 参数设置。
+2　下串行通信编程特征
+　　MSDOS下的串行通信编程较简单，通信编程可以直接对串口的物理地址进行编程操作同时配合BIOS调用，即可实现串行口数据读写。
+　　以边界参数设置为例：
+　dw―1.Modify("datawindow.print.margin.top="
++em―top.text+&
+"datawindow.print.margin.bottom="+em―bottom.text+&
+"datawindow.print.margin.left="+em―left.text+&
+"datawindow.print.margin.right="+em―right.text)
+　　② 重新计算页数。如当前数据窗口已在预览状态下，则直接计算出。否则须改变数据窗口至预览览态下计算，计算毕，再改变回原状态。函数原型：BOOL CloseHandle( HANDLE hObject );其中hObject参数为CreateFile()返回的端口句柄。限于篇幅，不再赘述。
+　　弄清串行通信API函数的用法是掌握串行通信编程技术的关键。例程中利用BuildCommDCB函数来设置DCB，然后用函数SetCommState()配置串行通信口。用自定义控件实现这些操作是一种可行的方法。用以下方法设计的自定义控件，可在父窗口中直接被使用。
+　　以删除操作为例进行说明，其余操作的设计方法与此类似。
+DWORD ReadThread(LPDWORD lpdwParam)
+{ BYTE Buff［100］; 　　　　　　　　　　　　　　　　　　　　　　　　　//读数据缓冲区
+DWORD nBytesRead, dwEvent, dwError;
+COMMTIMEOUTS Timeouts;　　　　　　　　　　　　　　　　　　　　　　　　　　//超时设置
+Memset(&Timeouts,0,sizeof(COMMTIMEOUTS));
+Timeouts.ReadTotalTimeoutMultiplier=5;
+Timeouts.ReadTotalTimeoutConstant=100;
+SetCommTimeouts(hComm,&Timeouts);
+SetCommMask(hComm,EV―RXCHAR);　　　　//设置EV―RXCHAR掩码，当任何字符到达时产生事件
+While(bReading){
+if(WaitCommEvent(hComm,&dwEvent,NULL))
+{　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//接收缓冲区有字符到达
+if(dwEvent & EV―RXCHAR)
+{ 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//确认是EV―RXCHAR事件
+if(。
+　　以上讨论了两类公用对象：窗口类和控件类。当然，这两类公用对象在设计时也可以互相包含，公用窗口中可以直接使用公用控件，反过来，公用控件也可以调用公用窗口。
+3　结语
+　　将常用操作做成公用对象放入公用库中，在设计时直接调用或使用它们，是一种有效率和可维护性好的设计方法，在大型开发项目中，这种设计方法的优越性更为明显。在本文中，为保证公用对象的通用性，采取了参数传递的方法。当然，为了获得通用性，牺牲了一定程序运行效率。COMMTIMEOUTS结构的定义如下：
+　typedef struct ―　COMMTIMEOUTS {
+DWORD ReadIntervalTimeout; 　　　　　　　　　　　　　　　　　　　　　//读端口间隔超时
+DWORD ReadTotalTimeoutMultiplier;　　　　　　　　　　　　　　　　//读端口总超时乘数
+DWORD ReadTotalTimeoutConstant; 　　　　　　　　　　　　　　　//读端口总超时常数(ms)
+DWORD WriteTotalTimeoutMultiplier; 　　　　　　　　　　　　　　　//写端口总超时乘数
+DWORD WriteTotalTimeoutConstant;　　　　　　　　　　　　　　　//写端口总超时常数(ms)
+} COMMTIMEOUTS,*LPCOMMTIMEOUTS;
+3.4　读串口API函数
+　　串行口打开后，可以对它进行读写操作！
+作者简介：李振华　讲师。
+吕国斌　副教授。
+墙芳躅　 教授。下面介绍几个与串行通信编程密切相关的API函数，着重说明这些API函数在进行串行通信时参数设置需要注意的地方。
+作者单位：中国地质大学网络中心　湖北.武汉（430074)
+参考文献
+［1］　Biberdorf,D,著.PowerBuilder 5开发人员指南.陈向群,译.北京：机械工业出版社，1997,9
+收稿日期:1998-12-27(修改稿)

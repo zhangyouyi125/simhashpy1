@@ -1,0 +1,86 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+竞争学习模糊神经网络及在导弹
+故障诊断中的应用
+胡昌华　王青　陈新海
+　　摘　要　尽管基于解析冗余的故障诊断方法有许多突出的优点而越来越多地得到研究和应用，但它依赖于系统的模型，当系统存在非线性或不确定性时，存在难以建模的困难，模糊神经网络可以通过学习建立系统的模型，且模型参数有明确的物理意义，初始参数易于选择，成为解决这一问题的优选途径，作者通过把模糊神经网络的学习转化为竞争聚类和线性优化问题，基于竞争聚类和最小二乘原理，提出了一种模糊神经网络学习算法，并在某伺服机构上进行了学习和故障诊断的实验，获得了良好的实验结果。
+　　主题词　故障诊断　竞争学习　模糊神经网络
+FUZZY NEURAL NETWORK BASED ON COMPETITIVE 
+LEARNING AND ITS APPLICATION TO 
+FAULT DIAGNOSIS OF MISSILE
+Hu Changhua
+(Section 302,Xian Inst.Of Hi-tech,Hongqing town . Xi'an . 710025)
+Wang Qing
+(Department of Automation,Beijng University of Aeronautics and Astronautics . Beijing . 100084)
+Chen Xinhai
+(College of Aeronautic,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　The fault Diagnosis based on analytical redundancy depends on system's model,while it is difficult to get the system's model when the system is non-linear or uncertain time-varying,there are some difficulties to put this method into application of non-linear system.The fuzzy neural network can build the system's model by learning,and the model's parameter established by this method has clear mean,it provide an effective way to solve the above problem.The key of the Application of the fuzzy neural network is the determination of its parameters.Different from the other researchers,the authors convert the learning process to cluster and linear optimum,based on competitive learning and least-square error criterion,suggest a learning algorithm for the fuzzy neural network system,the experiment in certain servo-mechanism get very good result.
+　　Key words　Fault diagnosis Competitive learning　Fuzzy neural network
+1　引言
+　　对于导弹等大型复杂系统，对其可靠性提出了极高的要求，系统应具有故障诊断和容错能力，美国NASA就曾规定空间机器人应有一个故障诊断系统。
+2.4　定时器
+　　如图4所示，我们用NE555和继电器设计了一个1 min定时器，然后把定时输出接到8031的外部定时器上，就可以方便的实现从1 min到几小时的定时。其相应的搜索规则分别为：
+
+IFe1≤yr－y(KT) THEN S1
+IFe2≤yr－y(KT)＜e1 THEN S2
+IFe3≤yr－y(KT)＜e2 THEN S3
+IF0≤yr－y(KT)＜e3 THEN S4
+IF－e3≤yr－y(KT)＜0 THEN S5
+IF－e4≤yr－y(KT)＜－e3THEN S6
+IFyr－y(KT)＜－e4 THEN S7
+IFy(KT)∈SiTHEN Ri
+
+
+图6　控制局势划分
+　　其中S1为大偏差情况，S2、S3为过渡情况，S4、C5为允许误差情况，S6为超调情况，S7为大超调报警情况。本文基于竞争学习的原理提出了一种模糊神经网络的学习算法，以该模糊神经网络作为系统的建模工具，实现导弹伺服机构故障诊断，并进行了实际实验验证，实验获得了较好的结果。
+作者简介：39岁　男　高级工程师
+作者单位：北京长城计量测试技术研究所，北京市，100095
+参考文献
+　1　何立民.MCS单片机应用系统设计.北京:北京航空航天大学出版社,1990
+　2　陆志方.电子秤、质量计量丛书.北京:中国计量出版社,1994
+　3　王洪业.传感器技术.湖南:湖南科学技术出版社,1985
+1998-12-01收稿
+。我们自1970年以来一直在探索飞机称重中的有关问题，最近通过在千斤顶下面加装滑动底盘的方法解决了千斤顶式飞机称重系统的抗侧向能力差的难题。本系统有四个传感器通道，可进行三点、四点两种支撑方式的飞机称重并计算其水平重心。
+　　模糊规则库由一组模糊规则构成，模糊规则是通过(如果一则/IF-THEN)语言描述的，即：
+
+　　其中隶属函数式中★表示T算子，经常采用的T算子有“模糊交”和“代数乘”。
+4　结束语
+　　本系统以单片机为核心，由于采用了热偶放大器及光耦晶闸管，使硬件接口简单，软件编程简化；液晶显示模块的采用使提示信息量更为丰富,操作简便；运用了智能控制领域的产生式控制算法，使控温精度提高。
+3　模糊神经网络的竞争学习算法
+　　类似文［1］，易证(4)式的模糊神经网络可以以任意精度逼近任意非线性函数。(4)式的模糊神经网络用一条规则对应一组数据，Xjk为该组数据对应的输入模式的中心，如果固定σjk，则问题归结为如何确定Yk和Xjk，Xjk可由竞争学习方法确定。一般说来，控制周期长于基本周期。当P3.1输出一个低电平时，NE555开始振荡，1 min定时开始。
+　　(2)若‖Xj-Xl‖≤r，则用竞争学习算法确定Xj属于的聚类，并调整聚类中心的参数。
+表1
+
+类型结构操作准确度校准造价
+地中衡复杂简单高复杂昂贵
+小台面较复杂复杂高很难较高
+千斤顶简单简单高简单低
+
+
+　　在以往的千斤顶式飞机称重系统中，最不好解决的是称重的准确度和重复性问题。
+　　(b)修正Xc
+　　　　　　　　　(7)
+　　使用pt‖X-Xt‖进行比较可使pt参与竞争，从而避免一般竞争学习算法中的死点问题，因为作为死点，它被选为中心Xt的次数几乎为零，引入pt后，意味着nt参与比较，使死点有机会参与竞争。此外，cosα的变化所引起的R的变化范围是等式(1)中的第二项0.01 Psinα cosφ的变化范围，表2中的△％＝(R－P)／P×％。
+
+图1　基于模糊神经网络的非线性系统故障诊断原理图
+　　利用系统正常工作的输入输出数据，用竞争学习算法建立模糊神经网络，使之与实际系统并行工作，当系统正常工作时，二者的残差比较小，一旦系统偏离正常工作状态或故障时，则二者的残差就比较大，据此借助一定的故障分离策略就可实现故障诊断，
+5　基于模糊神经网络的某导弹伺服机构故障诊断实验及结果分析
+　　导弹伺服机构是一个具有严重非线性的部件，采用机理建模的方法得到的模型很复杂而失去使用的价值，因此我们根据伺服机构的正常工作数据利用本文的方法建立模糊神经网络，并构造图1所示的诊断系统，考察这种模糊神经网络的非线性逼近能力和基于模型的故障诊断能力。
+　　实验方法：根据导弹的幅相频率特性和阶跃响应曲线选择合适的激励信号(本试验中激励信号选择为长度为64的逆M序列，Δt=0.01)，用该激励信号分别激励系统，我们共进行了伺服机构正常和存在反馈电位计接触不良故障等8种初始状态的实验，每种初始状态进行了5～10组实验。利用正常系统的输入输出测量数据建立模糊神经网络，以该模糊神经网络作为伺服机构的观测器，构造图1所示的基于模糊神经网络的故障诊断系统，观测残差的输出情况。这是因为传感器上部焊接密封的膜片除了起密封的作用外，更主要的还起抵抗侧向力的作用。诸如此类的检测实验，关键问题是测、控温的问题。
+*国家自然科学基金重点课题和国防基础科学基金课题资助项目
+作者单位：胡昌华：解放军二炮工程学院302教研室 . 西安 . 710025
+　　　　　王青：北京航空航天大学自动控制系 . 北京 . 100084
+　　　　　陈新海：西北工业大学航天工程学院 . 西安 . 710072
+参考文献
+1　毛志宠，张雪枫，李衍达.模糊系统作为通用函数逼近器的研究.中国科学(E)，1997，27(4)：362-367
+2　胡昌华.控制系统故障诊断与容错控制的分析与设计.北京：国防工业出版社，1999
+3　陈建勤，席裕庆，张剑俊.模糊规则的学习及其在非线性系统建模中的应用.自动化学报，1997，123(4):533-537
+4　Wang Lixin.Adaptive Fuzzy Systems and Control.Prentice-Hall International.Inc,1992
+5　Paul M Frank.Fault Diagnosis Using Analytical and Knowledge-based Redundancy-A Survey and some New Results.Automatica,1990,26(3),459-474
+收稿日期:1998年6月15日
+修回日期:1999年1月10日

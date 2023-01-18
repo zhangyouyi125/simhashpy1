@@ -1,0 +1,129 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+一种显微硬度测试用小型台钳
+朱子才
+　　显微硬度计是进行硬度试验的精密仪器，可以测试样品中,小到某个晶粒的硬度值。
+本文于1995年2月24日收到
+
+参考文献
+1  Meirovitch L,Kwak K.Dynamics and Control of Spacecraft with Retargeting Flexible 
+Antennas.J.Guidance,1990,13(2):241-248
+2  Robertson DK.Three-dimensional Vibration Analysis of a Uniform Beam with Offset 
+Inertial Masses at the Ends.NASA TM 86393
+3  Kakad YP.Dynamics of Spacecraft Control Laboratory Experiment (SCOLE) Slew 
+Maneuvers.N88-10082
+4肖业伦.航天器飞行动力学原理.宇航出版社,1995
+5章仁为.静止卫星的轨道和姿态控制.科学出版社,1987
+6缪炳祺.挠性卫星姿态动力学模型的建立.宇航学报,1986,7(4)
+7王照林.运动稳定性及其应用.高等教育出版社,1992
+8张乃恭.卫星挠性附件的动力学问题――太阳电池阵动力学的有限分析.光学
+机械,1981,(6)
+9邵成勋,黄文虎等.带挠性附件的卫星的姿态动力学方程.宇航学报,1989,
+10(2):79-85
+10刘墩,杨大明.带挠性附件卫星的模型化及截断.宇航学报,1989,10(4)
+:87-95
+
+
+附录A
+　
+图1中有关符号说明
+
+    R0代表从坐标系OXYZ的原点O至坐标系oxyz的原点o的矢量,由其在坐标
+系OXYZ中的分量描述;roe代表挠性附件与主刚体连接点在坐标系oxyz中的
+位移矢量,由其在坐标系oxyz中的分量描述;re代表挠性附件上的典型点在
+坐标系xeyeze中的位置矢量,由其在坐标系xeyeze中的分量描述;ue代表挠性
+附件上的典型点在坐标系xeyeze中的弹性位移矢量,由其在坐标系xeyeze中的
+分量描述;(mref)e代表弹性附件e的末端刚体质量;mr代表主刚体的质量;me代
+表挠性附件-e的质量;(Iref)e代表弹性附件e的末端刚体对过其质心的主惯性
+坐标系的惯性张量矩阵。
+
+　　假设末端刚体起因于弹性变形而相对于弹性附件(未变形状态)的转动
+角度矢量为βe,在小变形假设条件下有［3］:
+(dβe)/(dt)=Ψe(dqe)/(dt)
+这里,Ψe为与矩阵Φe(re)有关的矩阵。
+　　不规则的样品显然不能直接放到显微硬度计载物台上进行硬度测试。限于篇幅,这里省略
+SCOLE(Ⅰ)与SCOLE(Ⅱ)的前九阶动力学结果(指其固有频率与模态)。
+
+主题词  挠性航天器动力学  耦合振动  SCOLE模型
+　
+DYNAMICS OF SPACECRAFT
+WITH FLEXIBLE APPENDAGES
+Kuang Jinlu
+(School of Spacecraft Technology,Beijing University 
+of Aeronautics and Astronautics*Beijing*100083)
+Abstract  The dynamics of spacecraft with flexible appendages is investigated.The set of 
+dynamical equations which are derived by means of a Lagrangian approach in terms of 
+quasicoordinates incorporate rigid-body attitude dynamics and three-dimensional 
+vibrations of the complete assembly comprising the rigid shuttle,the flexible beams,and the 
+reflectors with offset masses at the ends.The final set of dynamical equations obtained are 
+nonlinear and coupled in terms of the flexible modes and the rigid-body modes.The 
+equations are further linearized and evaluated numerically to include the first eighteen 
+flexible modes.The computer program written by us could calculate natural frequencies 
+and three-dimensional mode shapes and the rotation-couple coefficient matrix of the 
+state equations of the system.It is shown that the dynamical modes(of the SCOLE model) 
+derived from our computer program are the same as the NASA's reports.This research 
+yields a model for designing control systems to perform three-axis stabilized spacecraft with 
+appendages.
+
+Key words  Dynamics of spacecraft with flexible appendages   Coupled vibration  
+SCOLE model
+
+1  背景
+
+　　随着航天技术的发展,航天器主刚体常带有大型挠性太阳电池帆板与挠性
+天线装置或其它挠性附近。在给样品进行显微硬度测试时，只要将样品待测面打磨平整，按做金相测试的要求抛光，将试样放在小型台钳的底座上夹紧，使待测面保持水平，然后将小型台钳放置到显微硬度计的载物台上，对好焦距，即可进行显微硬度测试。SCOLE模型(Ⅰ)［2］与SCOLE模
+型(Ⅱ)总体参数如表3.1,SCOLE(Ⅰ)模型的有关动力学结果的前5阶动力学与文献
+［2］所给的结果(文献［2］仅给出了前5阶)完全一致。本文编制的有关“带末端偏置质量的连续梁子系统的固有频率与模态”分
+析的部分软件通过SCOLE模型动力学进行了验证。
+
+主题词  图像相关  多模跟踪   速度和加速度滤波器  模型概率
+　
+MULTIPLE MODELS ADAPTIVE 
+TARGET IMAGE TRACKING
+Zhou Rui Shen Gongxun
+(Beijng University of Aeronautics and Astronautics*
+Beijing*100083)
+Cui Hutao Yang Di
+(Harbin Institute of Technology*Harbin*150001)
+Abstract  In this paper,the target image position offset measurement models in image 
+sequence are developed under the effects of additive and multiplitive noise.In consid-
+eration of the target maneuvering,the target states are estimated by multiple-model 
+filters and two-stage Kalman filters,depressing the effects of noise and avoiding the 
+explicit maneuvering detection.The algorithm has good performance with high speed 
+and small savings.
+
+Key words  Image correlation  Multiple model tracking   Velocity and acceleration 
+filter  Model probabitity 
+
+1  引言
+
+　　在基于图像传感器的目标跟踪系中,由于各种噪声影响,例如传感器噪声、
+背景噪声和图像量化噪声等,使得跟踪器提取到的目标位置信息含有较大误差。
+　　经过多次使用证明：这种小型台钳在给不规则样品做显微硬度试验时,方便、实用、稳定、可靠，是做显微硬度测试不可缺少的工具。
+显微硬度计是进行硬度试验的精密仪器，可以测试样品中,小到某个晶粒的硬度值。采用本文建立
+的图像偏移值测量模型和多模滤波算法对目标图象的运动状态进行估值。
+　　显微硬度计载物台是一个四方的平台，显微硬度计在测试样品时，要求样品的待测面平整，放在载物台上要稳定，当加荷时待测面不得晃动，保持水平状态，只有这样,打出来的压痕尺寸才准确；打完硬度，用测量显微镜进行测量时才能保证测量精度，否则就没有办法看清压痕的轮廓，更谈不上进行测量。
+　　不规则的样品显然不能直接放到显微硬度计载物台上进行硬度测试。要是花时间去加工样品使其形状符合测试要求是个费工、费时，甚至徒劳无益的事。可以看出,该算法对机动目标具有很好的跟踪效果,
+位置跟踪基本重合。在给样品进行显微硬度测试时，只要将样品待测面打磨平整，按做金相测试的要求抛光，将试样放在小型台钳的底座上夹紧，使待测面保持水平，然后将小型台钳放置到显微硬度计的载物台上，对好焦距，即可进行显微硬度测试。
+
+2  目标图像偏移值测量模型
+
+　将目标图像中要跟踪的点作为参考点,则参考点与传感器视场中心之间的
+距离即为目标偏移量。
+
+　　为求得r(x,y)在x和y方向的偏导数,,定义复数λ=x+jy,j2=-1,则有
+r(x,y)/郸=+j,将,的傅立叶变换表示为实部和虚部形式
+
+
+根据二维傅氏变换性质,有
+DFT{}=j(2π/N)fxDFT{r}
+DFT{}=j(2π/N)fyDFT{r}
+(8)
+由(6)式和(8)式得到A1,A2,B1和B2,代入(7)式并作逆变换得,。在制作时要注意底座的底面要磨平，否则小型台钳放在显微硬度计载物台上会晃动。
+　　经过多次使用证明：这种小型台钳在给不规则样品做显微硬度试验时,方便、实用、稳定、可靠，是做显微硬度测试不可缺少的工具。文献［3］采用速
+度滤波器和加速度滤波器并行切换的方法实现了对机动性或随机不确定性运
+动目标的跟踪,滤波维数低,计算量小,但需要显式的机动性检测

@@ -1,0 +1,101 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+2D碳/碳复合材料CVI过程的
+数值模拟研究
+姜开宇　李贺军　李克智
+　　摘　要　本文根据2D碳/碳复合材料的结构特征及CVI工艺的特点建立了孔隙模型和动力学模型，并利用该模型对其CVI过程进行了模拟与分析。中科院教授卞荫贵先生和九所教授符鸿源先生在讲话中指出:该项目是多学科互相渗透的边缘学科,体现了项目的复杂性和问题的重要性以及应用的广泛性。
+　　主题词　2D碳/碳复合材料　CVI　数值模拟　孔隙模型
+NUMERICAL SIMULATION OF CHEMICAL VAPOR INFILTRATION
+FOR 2D C/C COMPOSITES
+Jiang Kaiyu Li Hejun Li Kezhi
+(Institute of C/C Composites,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　According to structure feature of 2D C/C composites and the characteristics of CVI process,a porous model and dynamics model are established in this paper.The CVI Process of 2D C/C composites has been simulated and analyzed by the use of these models.It is evinced that these models are feasible by comparing the results of simulation and experiments.
+　　Key words　2D C/C composite CVI Numerical simulation Porous model
+1　引言
+　　化学气相渗透(CVI)工艺是制备碳/碳复合材料的主要工艺之一。该工艺能够避免常规工艺对纤维和基体的破坏，改善基体的微观组织结构，提高复合材料的性能，然而由于生产周期很长，成本很高，各种工艺参数如温度、压力、反应气的流动情况等对该工艺过程的影响也极为复杂，这都给CVI工艺参数的优化带来了很大的困难。数值模拟技术有助于更好地理解CVI的工艺过程，预测系统的行为，为工艺参数的优化及数据分析服务；它还可以检验新的设计思想，模拟由于经济原因或实验条件所限而难以进行的实验过程，因而对碳/碳复合材料CVI工艺的研究具有十分积极的意义。
+　　目前，国外已有研究人员对碳纤维增强SiC基复合材料的CVI模拟进行了研究［1，2］，取得了较好效果。然而对于实际应用中使用较多的2D碳/碳复合材料(其预制体为2向碳布叠层)的CVI模拟，迄今为止国内尚未见公开发表的有关文章，国外也很少有资料报导［3，4］。
+
+
+(a)线性校正的阶跃响应　　(b)非线性校正的阶跃响应
+图2　采用nPI与PI校正系统阶跃响应的比较
+
+
+(a)线性校正的正弦响应　　(b)非线性校正的正弦响应
+图3　采用nPI与PI校正系统正弦响应的比较
+4　结　论
+　　本文利用非线性积分器,构造一种非线性控制器nPI。本文所建立的孔隙模型及相关动力学模型可以作为碳/碳复合材料CVI模拟的基础，通过模拟结果与实验结果的比较，表明利用该模型来模拟碳/碳复合材料的CVI过程可以取得比较满意的结果。
+2　数学模型的建立
+　　碳/碳复合材料的CVI过程实质上是预制体的致密化过程。由于2D碳/碳复合材料的内部孔隙结构较为复杂，如何建立一个既能够较好地描述预制体内部孔隙结构及其变化的符合实际情况的结构模型，是模拟成功的关键。
+　　主题词　初轨　单位矢量法　摄动
+A METHOD OF PERTURBED INITIAL 
+ORBIT DETERMINATION
+Lu Benkui Li Jianfeng Ma Jingyuan Xia Yi
+(Purple Mountain Observatory,Academia Sinica.Nanjing.210008)
+　　Abstract　In this paper,a method considering perturbation is presented for initial orbit determination,according to the principle of Unit-Vector-Method(UVM).This method is applicable to not only angle observations,but also distance and velocity observations and different combinations of various types,It's suitable to the orbit of any eccentricity and any inclination.It is beneficial to improve accuracy of orbit determination and convergency of algorithm.The simulated and practical computational results show that this method is reliable and effective in the case of suitable arc length and sample density of observations.
+　　Key words　Initial orbit Unit vector method Perturbation
+1　引言
+　　初始轨道计算,是人造地球卫星轨道测定的重要内容之一。然而过于追求这种一致性，将导致几何模型的过分复杂化，给以后的模拟计算带来很大的不便。而且由于变量的增加，将使迭代过程中产生的累积误差增加，影响计算精度，甚至无法得到收敛解。根据2D碳/碳复合材料的结构特点，可将其几何抽象成一个比较便于计算的结构模型――孔隙模型，来描述2D碳/碳复合材料预制体的致密化过程。
+　　图1为孔隙模型的示意图。
+2.2　nPI控制器的特性分析
+　　非线性比例积分控制器的结构如图1所示。
+　　为求出孔隙半径的变化，必须建立一个动力学模型来达到这一目的。建模时需作如下假设：
+　　(1)反应气(C3H6)仅靠扩散作用向预制体内部渗透；
+　　(2)反应气的扩散速度远大于热解碳的沉积速度，因而该过程为一稳态过程；
+　　(3)C3H6的热解反应可认为是一级反应；
+　　对于盘状2D碳/碳复合材料预制体，当其直径D远大于其厚度h时(D＞h)时，反应气沿径向的扩散可忽略不计。在其以后的文章［3］中使用了如下公式:
+Ms/Fs=(MA/FE)(YA/Ys)
+式中: 
+Ms――空间原子氧环境下材料单位面积的质量损失: 单位:g/cm2,
+Fs――材料所承受的空间原子氧通量单位:atom/cm2,
+MA――地面模拟实验原子氧环境下材料单位面积的质量损失单位:g/cm2,
+FE――材料所承受的地面模拟实验有效原子氧通量单位:atom/cm2,
+YA――数值模拟得到的无保护层聚酰亚胺在地面实验环境下的厚度损失 单位:格点数,
+Ys――数值模拟得到的无保护层聚酰亚胺在空间环境下的厚度损失 单位:格点数。根据传质理论［5］可建立一维传质连续方程如下：
+　　　　　　　　　　　　(2)
+式中Deff为等效扩散系数，Ks为反应速率常数，S为预制体孔隙表面积，Ci为预制体内反应气浓度。
+　　会议讨论的主题很集中,因此学术气氛浓厚而热烈。在进行评定时认为数据的分布类型是已知的。
+　　假设经过时间δt后，预制体单元中的孔隙半径由r变为r*，则根据沉积速率可得出孔隙半径与反应气浓度的关系式：
+　　　　　　　　　　　　(4)
+式中Mi为热解碳摩尔质量(g/mol)，ρi为热解碳密度(g/cm3)。
+3　模拟结果分析
+　　为分析2D碳/碳复合材料CVI工艺的特点，检验模拟效果，我们对圆盘状碳/碳复合材料零件的CVI过程进行了模拟。从本文的工作可以看出,对低地轨道环境初始反应概率取0.138、镜面反射概率取0.5、热同化反应概率取7.77×10-6是合适的。
+表1　CVI模拟所需相关参数
+参数D(cm)h(cm)r0(cm)ε0(%)C0(10-7mol/cm3)
+数值1520.01556.046
+
+　　由于反应气在预制体内的扩散系数、热解碳的沉积速率都直接与沉积温度有关，因此沉积温度对碳/碳复合材料的CVI工艺有极其重要的影响。当初值估计的误差较大,影响轨道测定的收敛性时,采用加速收敛公式（2）,可望得到改善。
+2　综合分析方法的数学物理模型
+　　综合分析方法的流程如图1所示。图4为经过800℃、1小时氧化后在材料表面形成保护膜的SEM照片,它们确实起到了保护材料,提高氧化起始点的作用。这使得复合材料制作的最终密度有所降低。结果表明:制备的材料不仅氧化失重率小、氧化起始点高,而且致密。因此在制备2D碳/碳复合材料时，应根据实际要求选择合适的沉积温度，尽量用最短的时间得到符合要求的制件。
+　　　　　　　　　　
+图2　不同沉积温度密度增长曲线　　　　　　　　图3　不同沉积温度孔隙率分布曲线
+
+图4　模拟值与实验值对比曲线
+　　图4为模拟结果与实验结果的对比曲线。实验中预制体由吉体碳素厂的3KPAN平纹碳布制成，采用等温CVI方法在沉积炉内进行沉积，沉积炉内温度为T(750℃＜T＜1000℃)。
+3.3　固体火箭发动机壳体设计方法的讨论
+　　几何非线性的引入和材料性能的提高会使模拟壳体封头部位的相对承载能力降低,却使真实壳体封头的相对承载能力提高,也就是说,模拟壳体的最佳设计方案对真实结构却不是最佳的,应从材料、结构等诸多方面综合考虑,若用模拟壳体结构外推真实结构,这种设计方法是不正确的,应引起重视。曲线表明模拟预测值与实验值符合得较好，这说明本文所建立的2D碳/碳复合材料CVI工艺的数学模型是可行的。
+2.2　失效分析
+　　本文不具体探讨壳体的树脂开裂、分层、纤维断裂等损伤过程,只是唯象地用最大应力强度准则区分不同加载方向上的单元失效。
+表2　实验值与模拟值对照表
+时间050100150200250300350400450500
+模拟值0.8701.0241.1941.3441.4731.5811.6691.7371.7881.8241.849
+实验值0.871.021.141.301.371.421.571.621.701.751.78
+
+4　结论
+　　(1)本文根据2D碳/碳复合材料的结构特征及CVI工艺的特点建立了孔隙模型和动力学模型，该模型为2D碳/碳复合材料的CVI工艺数值模拟打下了理论基础；
+　　(2)实验结果与模拟结果的对比表明，用该模型模拟薄片状2D碳/碳复合材料制件的CVI过程可以取得比较满意的结果；
+　　(3)通过对2D碳/碳复合材料的CVI工艺的模拟，可以得到关于预制体内部孔隙率的分布、沉积温度及沉积时间等工艺参数对预制体致密化过程的影响等重要信息，便于对CVI工艺进行优化。
+*国防基金及国防预研基金资助项目
+作者单位：西北工业大学401教研室 . 西安 . 710072
+参考文献
+1　Tai Nyanhwa,Chou Tsuwei.Modeling of an Improved Chemical Vapor Infiltration Process for Ceramic Composites Fabrication.J.Am.Ceram.Soc.1990,73(6):1489-98
+2　Chung Guiyung,McCoy B J.Modeling of Chemical Vapor Infitration for Ceramic Composites Reinforced with Layered.Woven Fabrics.J.Am.Ceram.Soc.1991,74(4):746-51
+3　Vaidyaraman S,Lackey W J,Agrawal P K,Starr T L.1D Model for Forced Folw-Thermal Gradient Chemical Vapor Infiltration Process for Carbon/Carbon Composites.Carbon,1996,34(9):1123-33
+4　McAllister P,Wolf E E.Modeling of Chemical Vapor Infiltraqtion of Carbon in Porous Carbon Substrates.Carbon,1991,29(3):387-396
+5　Sher Wood T K等著，时钧等译.传质学.化学工业出版社，1988
+收稿日期:1998年5月18日
+修回日期:1999年5月17日

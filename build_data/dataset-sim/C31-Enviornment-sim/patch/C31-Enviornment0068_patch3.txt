@@ -1,0 +1,88 @@
+产业与环境试验从1993年早稻移栽开始，连续进行了四季水稻（两季早稻和两季晚稻）的观察INDUSTRY AND ENVIRONMENT
+1998年 第20卷 第4期 Vol.20 No.4 1998科技期刊
+采矿技术的环境评价
+　　一个工业点何以安装一种新技术，会有很多理由。
+表3　不同施氮量条件下0～20 cm土层中硝态氮占0～100 cm土层中硝态氮的比例(%)
+测定时间施氮量/(kg× hm-2）
+075150225300375
+1997-04-0419.716.317.620.419.112.8
+1997-05-2831.428.622.837.215.622.9
+1997-09-2634.420.823.728.47.37.4
+1998-03-1930.824.022.924.121.329.9
+1998-05-2029.529.515.429.515.014.8
+1998-09-2234.024.631.418.726.615.9
+
+
+表4　不同施氮量条件下80～100 cm土层中硝态氮 占0～100 cm土层中硝态氮的比例(％)
+测定时间施氮量/(kg× hm-2）
+075150225300375
+1997-04-0417.919.016.412.921.214.5
+1997-05-2814.822.423.310.88.812.8
+1997-09-2610.210.210.313.49.113.8
+1998-03-1916.020.823.420.814.816.0
+1998-05-2016.415.619.615.510.910.1
+1998-09-2213.117.38.510.410.210.2
+
+　　由表3可以看出，不施氮的土壤中硝态氮有19.7％-34.4％分布在0～20 cm土层，比其他施氮肥处理略高。
+　　当前环境议程的复杂性――它包括对排放、废物、能源、化学品、生物多样性和土地利用等问题的考虑――意味着需要考察一大批变量。因此，有用的是进行一种正式的环境技术评价(EnTA)，以确保一切有关环境因素都能考虑到。
+　　关键词：潮土；硝态氮；分布；氮肥；施用量
+　　中图分类号：S147. 22；X131. 22 文献标识码：A
+Study on Distribution of Nitrate-N in Chao Soil and Reasonable Application of N Fertilizer under the Crop Rotation System of Winter Wheat and Corn
+HUANG Shao-min，BAO De-jun，HUANGPU Xiang-rong，ZHANG Hong-cheng
+（Soil and Fertilizer Research Institute, Henan Academy of Agricultural Sciences, Zhengzhou 450002, China）
+　　Abstract:　The distribution of nitrate-N in one meter of soil layer under the different application rates of N fertilizer at various stages was studied. The results indicated that there was still 6～16 kg/hm2 nitrate-N in soil layer without applying N fertilizer for three years, and of which, there were 20～34 percent distributed in 0～20 cm soil layer, 10～18 percent in 80～100 cm soil layer. When N application rate was less than 225 kg/hm2 per season, the contents of nitrate-N in soil varied little, being 11.4～41.3 kg/hm2. It increased by 1.5～7.4 times when the N fertilizer application rate added to 375 kg/hm2, and under this application rate, there were 7.4～29.9 percent of nitrate-N distributed in 0～20 cm soil layer, and 10～16 percent in 80～100 cm soil layer. The application rate of 225 kg/hm2 would be reasonable for the crops and soil environment.
+　　Key words:　Chao soil; nitrate-N; distribution; N fertilizer; application rate
+　　近年来我省氮肥施用量不断增加，许多地方出现氮肥施用相对过多的现象。EnTA可以成为诸如项目环境影响评价(EIA)的一个组成部分，也可以在每次做出关于设备 现代化或更换的决策时以一种更简单的形式使用。在许可证审批过程期间也可以使用EnTA。
+　　熟悉其它评价类型(例如EIA、LCA)的任何人都会立即认识EnTA程序。在系统考察一种技术的规格及其预期应用之后，确认其各种环境含义。把这些与替代技术的影响加以比较。 由于早稻稻草还田，晚稻稻田N2O排放量即使在水分落干期间也不高。
+　　对于采矿或加工技术的各个事项来说，EnTA程序可以十分迅速地进行。EnTA也可以用于各种技术类型的战略性研究：例如，氰化物在金矿开采中的使用，生物技术，或溶液采矿。
+基金项目：国家自然科学基金项目（49870039）
+作者简介：徐华（1966～），男，博士，副研究员。
+　　在华盛顿(哥伦比亚特区)Kanawha研究所为联合国环境署工业与环境中心编制的一本最新出版物《预测技术的环境影响――入门和工作手册》中讨论了关于此类战略性研究的进一步细节。样品N2O浓度用气相色谱测定，ECD作检测器。它适用于所有工业。硝态氮测定用酚二磺酸－紫外分光光度计法测定[4]。
+表1　土壤基础农化性状
+土层
+h/cm质地体积质量
+ρ/(g× cm-3)pH值全N有机质速效磷速效钾硝态氮碱解氮
+w/(g× kg-1)w/(mg× kg-1)
+0～28轻壤1.488.11.0110.621.271.71.2876.6
+28～52轻壤1.678.40.405.03.859.21.2054.1
+52～87轻壤　8.30.374.02.262.31.6148.7
+87～120轻壤　8.20.373.62.054.51.4865.8
+
+1.2 试验设计
+　　试验在每公顷每季施用底肥过磷酸钙（以P2O5计）90 kg、硫酸钾（以K2O计）45 kg的基础上，设不施氮、施75 kg、150 kg、225 kg、300 kg、375 kg 6个施氮水平，小区面积为20 m2，3次重复，随机排列。
+　　联合国环境署已经开始把EnTA方法论引进它的采矿政策与培训活动中。
+
+
+A. 1993年早稻；B. 1993年晚稻；C. 1994年早稻；D. 1994年晚稻
+图1 丘陵区稻田水稻生长期N2O排放通量随时间的变化
+　　图2表示各处理四季水稻生长期N2O排放通量与田面水层厚度的关系。由于1993年早稻坡底稻田、1994年早稻坡顶稻田及1994年早稻坡腰稻田很低或极高的N2O平均排放通量是由非正常的水肥因素引起的，所以在计算两年N2O平均排放通量时未将它们包括在内。通过按照一种逻辑方法论考察所有影响、替代技术和注意事项，一场公开讨论往往能达到一种共同理解，而这在自由式公众辩论中是不可能达到的。
+表3　不同施氮量条件下0～20 cm土层中硝态氮占0～100 cm土层中硝态氮的比例(%)
+测定时间施氮量/(kg× hm-2）
+075150225300375
+1997-04-0419.716.317.620.419.112.8
+1997-05-2831.428.622.837.215.622.9
+1997-09-2634.420.823.728.47.37.4
+1998-03-1930.824.022.924.121.329.9
+1998-05-2029.529.515.429.515.014.8
+1998-09-2234.024.631.418.726.615.9
+
+
+表4　不同施氮量条件下80～100 cm土层中硝态氮 占0～100 cm土层中硝态氮的比例(％)
+测定时间施氮量/(kg× hm-2）
+075150225300375
+1997-04-0417.919.016.412.921.214.5
+1997-05-2814.822.423.310.88.812.8
+1997-09-2610.210.210.313.49.113.8
+1998-03-1916.020.823.420.814.816.0
+1998-05-2016.415.619.615.510.910.1
+1998-09-2213.117.38.510.410.210.2
+
+　　由表3可以看出，不施氮的土壤中硝态氮有19.7％-34.4％分布在0～20 cm土层，比其他施氮肥处理略高。EnTA过程通过揭示一家采矿公司正在使用的一种技术的一切有关环境特征，可以帮助行政主管部门办理EIA和许可证审批程序。
+　　关键词：潮土；硝态氮；分布；氮肥；施用量
+　　中图分类号：S147. 22；X131. 22 文献标识码：A
+Study on Distribution of Nitrate-N in Chao Soil and Reasonable Application of N Fertilizer under the Crop Rotation System of Winter Wheat and Corn
+HUANG Shao-min，BAO De-jun，HUANGPU Xiang-rong，ZHANG Hong-cheng
+（Soil and Fertilizer Research Institute, Henan Academy of Agricultural Sciences, Zhengzhou 450002, China）
+　　Abstract:　The distribution of nitrate-N in one meter of soil layer under the different application rates of N fertilizer at various stages was studied. The results indicated that there was still 6～16 kg/hm2 nitrate-N in soil layer without applying N fertilizer for three years, and of which, there were 20～34 percent distributed in 0～20 cm soil layer, 10～18 percent in 80～100 cm soil layer. When N application rate was less than 225 kg/hm2 per season, the contents of nitrate-N in soil varied little, being 11.4～41.3 kg/hm2. It increased by 1.5～7.4 times when the N fertilizer application rate added to 375 kg/hm2, and under this application rate, there were 7.4～29.9 percent of nitrate-N distributed in 0～20 cm soil layer, and 10～16 percent in 80～100 cm soil layer. The application rate of 225 kg/hm2 would be reasonable for the crops and soil environment.
+　　Key words:　Chao soil; nitrate-N; distribution; N fertilizer; application rate
+　　近年来我省氮肥施用量不断增加，许多地方出现氮肥施用相对过多的现象。

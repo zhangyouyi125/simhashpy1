@@ -1,0 +1,97 @@
+
+
+3.3  梯度涂层的抗热震行为
+
+　　图5为两类热障涂层的抗热震循环试验结果
+　　实验方法：根据导弹的幅相频率特性和阶跃响应曲线选择合适的激励信号(本试验中激励信号选择为长度为64的逆M序列，Δt=0.01)，用该激励信号分别激励系统，我们共进行了伺服机构正常和存在反馈电位计接触不良故障等8种初始状态的实验，每种初始状态进行了5～10组实验
+2　自适应模糊逻辑系统――一种模糊神经网络
+　　模糊神经网络由四部分组成：，模糊规则库，模糊推理机和反模糊化
+
+　　涂层的耐热震性能取决于涂层中热应力的大小和涂层的结合强度［８］宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+竞争自学模糊及在导弹
+告警中的应用
+胡昌华　王青　陈新海
+　　摘　要　尽管基于解析冗余的故障诊断方法有许多突出的优点而愈来愈多地得到研究和应用，但它依赖于控制控制系统的模型，当系统存在非线性或不确定性时，存在难以建模的困难，模糊神经网络可以通过学习建立系统的模型，且模型参数有明确的物理意义，参数易于选择，成为解决这一问题的优选途径，作者通过把模糊神经网络的学习转化为竞争和线性优化问题，基于竞争分类器和最小二乘原理，提出了一种模糊神经网络学习算法，并在某伺服机构上进行了学习和故障诊断的实验，获得了良好的实验结果。
+　　主题词　故障诊断　竞争学习　模糊神经网络
+FUZZY NEURAL NETWORK BASED ON COMPETITIVE 
+ AND ECA APPLICATION TO 
+FAULT DIAGNOSIS OF MISSILE
+Hu Chdnghua
+(Section 302,Xian .Of Hi-tech,Hongqing town . Xi'an . 710025)
+Wang Qing
+(Department of Automation,Beijng University of Aeronautics and Astronautics . Beijing . 100084)
+Chen Xinhai
+(College of Aeronautic,Northwest Polytechnical University . Xi'an . 710072)
+　　Abstract　Of fault Diagnosis data on  redundancy depends on 's model,while it is difficult to get the system's model when the system is non-linear or uncertain time-varying,there are some difficulties to put this method into application of non-linear system.The fuzzy neural network can build the system's model by learning,and the model's parameter established by this method has clear mean,it provide an effective way to solve the above problem.The key of the Application of the fuzzy neural network is the determination of its parameters. from the other researchers,the authors convert the learning process to cluster and linear optimum,based on competitive learning and least-square error criterion,suggest a learning  for the fuzzy neural network system,the experiment in certain servo-mechanism get very good result.
+　　Key words　Baseline diagnosis Competitive learning　Fuzzy neural network
+1　引言
+　　对于导弹等大型复杂系统，对其可靠性提出了极高的要求，系统应具有故障诊断和容错能力，美国NASA就曾规定空间机器人应有一个故障诊断系统。基于解析冗余的故障诊断方法不需要增加硬件，利于减小系统的表面积和重量，在航天器控制系统故障诊断和容错控制中得到了越来越多的研究和应用。
+　　模糊规则库由一组模糊规则构成，模糊规则是通过(如果一则/IF-THEN)语言叙述的，即：
+
+　　其中隶属函数式中★表示T算子，经常采用的T算子有“模糊”和“代数乘”。
+聚类中心的竞争学习算法：
+　　Step1　从第一个数据对开始，在X1上建立一个聚类中心，且令X1=X1,Y1=Y1，并选择一个聚类半径r。。
+
+主题词  等离子喷涂  热障涂层  抗热震性能   ZrO２陶瓷  Ni基合金
+
+　
+THERMAL SHOCK BEHAVIOUR OF PLASMA
+SPRAYED ZrO2-NiCoCrAIY GRADED
+COATING ON Ti-6AL-4V SUBSTRATE
+Xiang Xinghua Quan Chengjun Zhu Jingchuan 
+Yin Zhongda
+(School of Materials Science and Engineering,Harbin Insti
+tute of Technology*Harbin*150001)
+Lai Zhonghong
+(Centre of Analysis and Test,Harbin Institute of Technology
+*Harbin*150001)
+Abstract  Since the components in ZrO２-NiCoCrAlY graded fraction distribute gradually 
+along the direction of thickness,the adherent strength of coating and the coherent strength 
+between coating and substrate are improved,and the thermal shock property of the graded 
+coating is superior to that of the duplex coating.Under the condition of greater thermal 
+shock stress,the coating spalls integrally from the surface of Ti-6Al-4V substrate;Under 
+the condition of weaker thermal shock stress,the coating fractures and spalls partly from 
+the surface of the substrate.
+
+Key words  Plasma spraying  Thermal barrier coatings Thermal shock property  
+ZrO２ ceramics  Ni-base alloy
+
+1  引言
+
+    等离子喷涂陶瓷-金属梯度涂层是应航空、航天、兵器等高技术迅速发展
+的需要于近年来开发出来的一种新型热障涂层，其成分(或组元)沿厚度方向呈
+梯度化分布，能够充分缓和因温度梯度形成的热应力［１－４］。。问题是基于解析冗余的故障诊断和容错控制方法需要系统的精确，而对于具有不确定时变的系统或非线性系统，很难用机理分析的方法建立系统的数学模型，近年来，模糊神经网络的任意非线性函数逼近能力得到了广泛研究和证实，而与人工神经网络相比，模糊神经网络的参数有明确的物理意义，初始参数的选择有一定的依据，显示出更大的优越性。。
+3　模糊神经网络的竞争学习算法
+　　类似文［1］，易证(4)式的模糊神经网络可以以任意精度逼近任意非线性函数。本文基于竞争学习的原理提出了一种模糊神经网络的学习算法，以该模糊神经网络作为系统的建模工具，实现导弹伺服机构故障诊断，并进行了实际实验验证，实验获得了较好的结果。成分梯度化
+分布消除了涂层中的宏观交叉界面，和由此造成的物理性质突变，因此改善
+了层间粒子结合状况，缓和了涂层中的制备应力，使涂层的结合强度得以提
+高。
+　　Step2　对于第j对数据(Xj,Yj)(j=2,3，…)假定此时已有M个聚类，其聚类中心分别为Xk(k=1,2,…，M)，若‖Xj-Xl‖=mink‖Xj-Xl‖,则
+　　(1)若‖Xj-Xl‖＞r，则增加一新聚类XM+1=Xj,M=M+1,Yk=Yj。。
+　　(a)计算
+　　　　　　　　　　　　　　　(5)
+　　　　　　　　　　(6)
+　　pt表示中心点Xt附近样本的密集程度，ni为Xi被选最近点的次数。
+　　(b)修正Xc
+　　　　　　　　　(7)
+　　使用pt‖X-Xt‖进行比较可使pt参与竞争，从而避免一般竞争学习算法中的死点问题，因为作为死点，它被选为中心Xt的次数几乎为零，引入pt后，意味着nt参与比较，使死点有机会参与竞争。。可见该区域富含元素Ni、Ti和Al等，这
+表明梯度涂层经900°C长时间热循环后，NiCoCrAlY底层与TC4合金基体
+发生了热相互作用。。利用正常系统的输入输出测量数据建立模糊神经网络，以该模糊神经网络作为伺服机构的mentioned，构造图1所示的基于模糊神经网络的故障诊断系统，观测残差的输出情况。。。
+*国家自然科学重点课题和国防基础科学基金课题资助项目
+作者单位：胡昌华：解放军工程学院302教研室 . 成都 . 710025
+　　　　　王青：航空航天大学自动控制系 .  . 100084
+　　　　　陈新海：西北工业大学航天工程学院 . 西安 . 710072
+参考文献
+1　毛志宠，张雪枫，李衍达.模糊系统作为通用函数逼近器的研究.中国科学(E)，1997，27(4)：362-367
+2　胡昌华.控制系统故障诊断与容错控制的分析与设计.北京：国防工业出版社，1999
+3　陈建勤，席裕庆，张剑俊.模糊规则的学习及其在非线性系统建模中的应用.自动化学报，1997，123(4):533-537
+4　Wang Lixin.Adaptive Fuzzy Systems and Control.Prentice-Hall International.Inc,1992
+5　Paul M John.Fault Diagnosis Using Analytical and Knowledge-based Redundancy-A Survey and some New Results.Automatica,1990,26(3),459-474
+收稿:1998年6月15日
+修回日期:1999年1月10日

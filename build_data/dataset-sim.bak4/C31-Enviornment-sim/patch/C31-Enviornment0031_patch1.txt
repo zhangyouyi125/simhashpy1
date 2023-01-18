@@ -1,0 +1,48 @@
+水土保持通报
+BULLETIN OF SOIL AND WATER CONSERVATION
+1999年 第19卷 第2期 No.2 Vol.19 1999
+
+
+
+一种新型果树滴灌装置的制做和使用方法
+　　这种有贮水功能的新型滴灌装置,结构简单、好操作、不堵塞,根治了传统滴灌堵塞、滴头滴水量不均的问题。由表5可见，单施化肥和对照处理潮土养分管理指数均比生物管理指数大，而其它处理则相反。
+　　首先在果树的北侧筑起土床，土床的弧底高出自然地平10～20cm，弧度要和贮水器相吻合，土床上装贮水器。贮水器用聚乙烯透明薄膜制作，顶部有注水口，底部联接4～8个联接盘，联接盘内孔插入导流管的一端，导流管上设有流量控制器和流量观察器。
+　　　　　　表2 土壤肥力各项指标权重值
+
+项目有机碳氮素磷素钾素MBCMBNIVACATPRA
+权重0.2720.2770.2480.2030.2580.2440.1740.1680.156
+
+　　其中B为生物综合管理指数，N为养分综合管理指数，×100是为了各指数间更好地比较。
+作者单位：沈宏　曹志洪　中国科学院南京土壤所开放室，南京210008
+　　　　　徐志红　澳大利亚林业研究所
+参考文献
+1 Dick R P. Soil enzyme activities as indicators of soil quality. In: Doran J W, Coleman D C, Bezdicek D F et al. (eds). Defining Soil Quality for A Sustainable Environment. Madison: SSSA, Spec Pub no 35, 1994. 167～186
+2 Trasar-Cepeda C, Seoane S. Towards a biochemical quality index for soils: An expression relating several biological and biochemical propeties. Biol Fertil Soils, 1998, 26: 100～106
+3 Elliott E T. The potential use of soil biotic activity as an indicator of productivity, sustainability and pollution. In: Pankhust C E, Boube B M, Gupta V V S R et al. (eds). Soil Biota: Management in Sustainable Farming Systems. Melbourne: CSIRO, 1994
+4 Blair G J, Lefroy R D B. Soil carbon fractions based on their degree of oxidation and the development of a carbon management index for agricutural systems. Aust J Agri Res, 1995, 46: 1459～1466
+收稿日期：1998-10-27
+。关好流量控制器，利用各种水源过滤后给贮水器注满水备用。因此，必须坚持“环保至上”，“预防为主”的原则，有效地控制新丰江水库的富营养化进程。另外，得绿寨为旅游景点之一，旅游业的发展使该区富营养化综合指数略有上升。本文借助长期定位试验，综合土壤微生物量、土壤酶和土壤养分三方面的指标探讨了土壤肥力的可持续性。但是在发展经济的同时，必须保护好环境，防止水体富营养化。
+　　　　表1 新丰江水库营养类型评价标准
+
+营养状态评分叶绿素a
+μg/L透明度
+m总磷
+μg/L总氮
+mg/LCOD
+mg/LBOD5
+mg/L
+极度贫营养100.1015.00.90.020.240.65
+重贫营养200.268.02.00.040.480.96
+贫营养300.664.44.60.080.961.41
+贫中营养401.602.410.00.161.802.08
+中营养504.101.323.00.313.603.06
+中富营养6010.00.7350.00.657.104.51
+富营养7026.00.40110.01.2014.06.64
+重富营养8064.00.22250.02.3027.09.78
+极度富营养90160.00.12555.04.6054.014.42
+
+2.3 新丰江水库富营养化状态评价
+　　各监测点富营养化状态指标为其上中下三层多次监测值的平均值。
+　　贮水器的制做机械用塑料热合机。
+3 新丰江水库富营养化综合防治对策
+　　尽管新丰江水库绝大部分水域为贫中营养状态，仅新港等库湾达到中营养状态，氮磷污染物含量均能满足GB 3838-88Ⅱ类水质要求，作为饮用水源是完全合格的，但是新丰江水库为深水水库，停留时间达2～3年，污染物一旦进入水体，随水排出的周期很长。我国湖泊、水库富营养化问题十分突出，太湖、东湖、西湖、玄武湖水质均为富营养化，甚至极度富营养化[1]。导流管、流量控制器、流量观察器可直接利用医用静脉注射器代替，导流管的长度可根据实际情况接长。土壤生物和养分性状见表1。贮水池定位后，应将其周围地面适当修整，使其形成一个通往贮水池的流式，以保证贮水池周围地面水流向贮水池，贮水池积水后应经沉淀过滤才能装入贮水器，然后再利用滴灌的灌溉功能，达到使地面径流资源化的目的。这种贮水池的好处是除了有积存天然降雨功能外，在平时还能增加反射光和防止土壤中的水分蒸发及防止杂草生长的作用。土壤碳素氧化用mg/g表示(l mmol/L KMnO4氧化1 mgC)，根据消耗的KMnO4量，求出活性碳含量

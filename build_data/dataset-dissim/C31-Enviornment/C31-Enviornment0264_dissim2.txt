@@ -1,0 +1,70 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第3期 No.3 Vol.18 1998
+科技期刊
+
+论工业固体废物全过程总量控制*
+杨玉峰　傅国伟　(清华大学环境科学与工程系,北京 100084)
+文　摘　针对我国目前实施工业固体废物排放量总量控制存在的问题，结合国内外研究进展和趋势，提出了工业固体废物的全过程总量控制概念，即：基于工业固体废物的最小产生量、最大综合利用量、最大处理处置量、最小排放量这一连续的、全过程的总量控制程序，并就典型案例介绍了全过程总量控制的两种方法(物质流核算控制法，环境规划控制法)。有关计算的结果将反映在图下方的方框内和水系各控制单元的颜色上。贸易和非法贸易导致的工业废物转移排放和向水体倾倒废物也很严重〔2〕，根据亚洲发展银行的统计数字估计，亚洲一些主要国家的废物产生量(由于生产和贸易)在1992～2010年间将会增加3倍多，且相应的排放量也会急剧上升。
+3.2　图形色彩变化模块
+　　该模块根据有关数学模型计算的结果，调用色彩函数，将水系的不同区域染成不同的颜色〔3〕，颜色越深，越接近黑色，则表明该区域污染越严重；反之颜色越浅，越接近浅兰色，则表明该区域较为清洁，应保持下去。另外，由于我国的固体废物污染防治起步较晚，《中华人民共和国固体废物污染环境防治法》刚刚颁布，污染防治仍面临着艰巨任务〔4〕。
+关键词　水污染　可视化　交互处理　动态显示
+Study on the visualization of control analysis for water pollution.Xuan Hua (Department of Environmental Information, Chinese College of Environmental Management Officials,Qinhuangdao 066000).China Environmental Science.1998,18(3):231～235
+Abstract―Taking Wanjin Canal water system for example, this paper for the first time in our country,puts forword the technical route of realizing the visualization system of computer pictures for the control analysis of water pollution and the design program of the system. The possibility of realizing mutual treatments for the dynamic pictures of river system is discussed in detail. The simple and practical mean is provided for dealing with the water environmental information of a large number of changing valley in a twinkle. By way of this technique, decision makers can make a new decision successfully when they grasp and know well the various changing circumstances of actual water systems.
+Key words:water pollution　visualization　mutual treatments　dynamic pictures
+　　进行水环境规划，首先要揭示的是规划范围内环境性质的空间变化规律，摸清环境现状，并由此进行功能区划、环境容量计算等一系列工作，这些工作都基于地理位置图。而欧洲联盟则在有关条例中要求成员国防止与减少废弃物的生产，并利用或重复利用变废为宝，例如利用废弃物发电等。日本由于人口密集、国土狭窄，减量化、无害化、资源化一直是固体废物处理处置领域强调的重点。我国虽然在综合利用、稳定与固化、焚烧、填埋等技术方面有了一定的进展与规模，但总体而言，废物的资源化程度还很低。现在，国家已将工业固体废物排放量作为污染物排放量总量控制指标之一，从尾部控制转变为全过程控制是发展的必然趋势。
+参考文献
+1　唐泽圣.科学计算可视化.中国计算机用户,1996,(3):1～4
+2　林　宏,李　颖,式保真.工程应用可视化系统的开发.计算机工程与设计,1996,17(1):39～46
+3　李学军,周嘉玉.真实图形的颜色量化.计算机辅助设计与图形学学报,1996,8(3):193～196
+4　夏　青,王华东.环境容量开发与利用.北京：北京师范大学出版社,1990
+
+作者简介
+宣　华　女，1960年10月生。
+关键词　水污染　可视化　交互处理　动态显示
+Study on the visualization of control analysis for water pollution.Xuan Hua (Department of Environmental Information, Chinese College of Environmental Management Officials,Qinhuangdao 066000).China Environmental Science.1998,18(3):231～235
+Abstract―Taking Wanjin Canal water system for example, this paper for the first time in our country,puts forword the technical route of realizing the visualization system of computer pictures for the control analysis of water pollution and the design program of the system. The possibility of realizing mutual treatments for the dynamic pictures of river system is discussed in detail. The simple and practical mean is provided for dealing with the water environmental information of a large number of changing valley in a twinkle. By way of this technique, decision makers can make a new decision successfully when they grasp and know well the various changing circumstances of actual water systems.
+Key words:water pollution　visualization　mutual treatments　dynamic pictures
+　　进行水环境规划，首先要揭示的是规划范围内环境性质的空间变化规律，摸清环境现状，并由此进行功能区划、环境容量计算等一系列工作，这些工作都基于地理位置图。因为就目前世界整体发展水平而言，工业固体废物排放是不可避免的，因而提出了考虑工业固体废物排放在内的全过程总量控制模式(多层目标优化模式，详见图1)。
+　min P (最小产生量)
+　　　　↓
+　　max U (最大综合利用量)
+　　　　　↓
+　　　max(min P-maxU) (最大处理、处置量)
+　　　　　　　　↓
+　　　　minD′(最小排放量)＝minP-maxU-max(minP-maxU)
+图1　工业固体废物全过程总量控制模式示意
+Fig.1　The total amount control model of discharged
+solid waste from industry in every process
+　　上述提出的是一个理想化的控制模式，在此基础上可以考虑费用最小化的松动模式，即最小产生量、最大综合利用量、最大处理处置量之间根据费用松动可分为3种形式。
+1.1　一般情形下的总量控制概念(源削减＋综合利用+处理处置＋排放)
+
+式中：C1、C2、C3、C4分别为源削减、综合利用、处理处置和排放所需的费用函数；S、U、D、D′分别为废物的源削减量，综合利用量、处理处置量、排放量；P为废物产生量。
+1.2　源削减量为零条件下的总量控制概念 (综合利用 + 处理处置 + 排放)
+
+1.3　排放量为零条件下的总量控制概念(源削减＋综合利用+处理处置)
+
+　　这种情形达到了废物的零排放，这是力求所达到的目标。
+2　工业固体废物排放量全过程总量控制方法
+　　首先，可将工业固体废物的全过程控制分为以下6个阶段：
+源头最小化→资源化→减量化→无害化→有序化→信息化
+　(产生)　　(利用)　(处置)　(处理)　(排放)　(监管)
+　　以这6个阶段的不同组合，在现实中可分为8种类型的全过程总量控制：
+A　源头最小化产生＋有序化排放＋信息化监管
+B　源头最小化产生＋资源化利用＋有序化排放＋信息化监管
+C　源头最小化产生＋减量化处理＋有序化排放＋信息化监管
+D　源头最小化产生＋无害化处置＋有序化排放＋信息化监管
+E　源头最小化产生＋资源化利用＋减量化处理＋有序化排放＋信息化监管
+F　源头最小化产生＋资源化利用＋无害化处理＋有序化排放＋信息化监管
+G　源头最小化产生＋资源化利用＋减量化处理＋无害化处置＋有序化排放＋信息化监管
+H　源头最小化产生＋资源化利用＋减量化处理＋无害化处置＋信息化监管
+2.1　物质流核算控制法
+　　这种方法要经过资源选择(种类、数量)、生产选择(产品类型与数量、技术与工艺、管理)、消费选择(限制与管理、科学消费)、废物去向安置(回收利用、资源与能源化、最终无害化处理、处置与排放)等过程，这是一种典型的全过程总量控制法。日本用1987年数据进行了零排放跟踪研究，图2为根据这一研究给出的物质流核算总量控制系统示意。
+
+图2　日本1987年的物质流核算总量控制系统示意(t/人*a)
+Fig.2　The total discharged pollutants control mothod 
+of material flow accounting of Japan in 1987
+2.2　环境规划控制法
+　　这种方法要经过废物最小产生量规划(如: 渣比系数控制、清洁生产)、废物资源化规划(综合利用、废物交换等)、废物无害化规划(无害化处理、处置、排放)。图3给出济南市主要工业固体废物总量控制规划流程示意。
+3　结语
+　　本研究的工业固体废物排放量全过程总量控制既是未来工业固体废物可持续管理的必然选择和方向，也是工业可持续发展的基础。它限定了全过程的每一个环节中量的概念，有利于引导走集约化资源利用的道路。在现实中，对一个特定区域的工业固体废物而言，可根据具体条件(技术、经济水平等)选择文中提到的8种类型之一因地制宜地实施有地方特色的工业固体废物全过程总量控制。决策者可根据颜色的深浅变化，反复修改数据，找出最满意的结果。有关计算的结果将反映在图下方的方框内和水系各控制单元的颜色上。主要从事环境管理与环境系统工程研究。在万金渠水系中，选择COD、SS和石油类三项指标，将各污染源以圆圈的图符标识在图上，并以直线标明它的排污去向及所排向的区域，当用户需要了解有关污染源的信息，需要修改有关数据时，可用鼠标点动该图符，则在其附近自动开出一污染源的信息窗口，如图2所示。可直观地推测出指定区域内的重点污染源的主要污染指标。即找出对不同功能河段影响最大的污染因子，计算出每条河流每个控制单元污染最重的指标，定量分析污染物的构成，计算出各个污染源对每个标准的超标倍数

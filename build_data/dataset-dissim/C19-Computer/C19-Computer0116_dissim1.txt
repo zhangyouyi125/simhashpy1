@@ -1,0 +1,106 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第9期 Vol.19 No.9 1999
+
+
+
+基于ASP/ADO的NT网络数据库解决方案
+向坚持　林亚平
+　　摘　要　本文介绍了在NT的Web服务器上，利用IIS所内含的ASP和ADO，将ASP与ADO技术相结合，实现NT网络数据库访问的方法。
+　　关键词　IIS, ASP, ADO, ODBC, SQL
+1　引言
+　　在客户端使用普通浏览器，通过Internet或者Intranet，访问网络数据库中的数据，已有多种解决方案，如传统的CGI方式、现在较常见的ADC方式和IDC方式等。Microsoft公司最新推出的基于ASP/ADO的网络数据库解决方案，代表着NT网络数据库解决方案的新趋势。
+2　ASP与ADO数据库设计方法
+　　ASP是动态服务器主页的缩写，内含于Microsoft公司的IIS 3.0及其以上版本中，是Microsoft公司为它的Web服务器开发的一个开放的、独立于浏览器、不需要编译的Web应用环境。ASP 提供了一个服务器端的脚本编写环境，它可以组合HTML页、脚本命令和ActiveX服务器组件，创建和运行动态、交互的基于Web 服务器的功能强大的应用程序。
+　　ADO是位于ODBC和OLE 数据库之上的高性能的数据访问接口。
+
+图1　触发器应用于数据分散――集中式模型
+　　在这种模型中，要注意设计好部门表相关字段的完整性约束，使各部门表内的数据是唯一的，以防止不同部门表出现相同的数据记录，从而导致在汇总表中出现混乱。
+2.2　历史数据导出
+　　数据库中的表只记载最新的数据，而不记载历史数据。并可利用VBScript或JScript等脚本语言来控制数据库的访问，实现查询结果的输出显示等功能。换言之，它们之间能够做到无缝连接吗。
+　　在这种情况下，如果不使用触发器的话，数据库设计就存在困难：
+　　. 如果为每个部门都建立一个表，显然难以得到汇总的数据（在这种情况下，无法利用视图机制）；
+　　. 如果所有的部门都共享一个表的话（这时，这张表中的数据实际就是汇总的数据），因为每个部门需要维护数据，所以都对这个表有修改权，因此在数据安全上难以控制。
+　　ASP与ADO技术相结合，实现数据库访问的具体方法如下：
+　　首先，选择一种支持ODBC的数据库，如Access等，建立数据库和相应的数据表。
+　　其次，创建数据源名DSN（Data Source Name）。操作如下：选择“控制面板”中的ODBC选项，再选择一种DSN（如System DSN），然后单击“添加”按钮，选择相应数据库的驱动程序。
+3　结语
+　　触发器对数据库开发过程中遇到的问题，往往会有独到的解决方法。
+2　触发器的另外几种应用
+2.1　数据分散――集中式模型设计
+　　在实际开发过程中，经常遇到这样的数据维护要求：单位由多个部门组成，要求各部门只能维护本部门的数据，但另一方面，又需要将分散到各部门的数据集中起来进行汇总，得到本单位的汇总数据。
+
+NT网络数据库访问的基本过程
+　　接着，创建数据库链接，并打开数据库。换言之，它们之间能够做到无缝连接吗。方法如下：“MyConn.Open "数据源名" "username","password"”。
+　　然后，执行数据库的访问操作。对于简单的SQL命令，可以直接使用语句“Set RS = MyConn.Execute("SQL命令")”实现；对于复杂的SQL命令串，可以通过连字符“&”连接起来，也可以用存贮过程来实现。文中的3个例子，代表了触发器3个方面的典型应用。分别通过两个简单的命令实现：RS.Close和MyConn.Close。
+3　实例
+　　利用Internet和WWW开展远程教育(Distance Education)是当今计算机发展的一个全新的课题，是对传统教育的重大革新和补充。远程教育技术涉及到许多重要的技术如协同工作、交互式技术等。
+　　如何使数据库也能记载历史数据呢。下面，以在线报名为例，简要介绍该设计方法。
+　　使用Web服务器中Access97建立数据库名：BMXT.MDB，数据表名：BMB。包含字段：xm char(8),xb char(2),nl number(2),bmzy char(40),byxx char(40),lxdz char(40)，bz char（10）,bmrq date()。数据源名：students，ASP文件：bmxt.asp。
+　　bmxt.asp的部分源程序如下:
+<!-- 设计客户端的输入表单 -->
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=gb―2312-80">
+<meta name="GENERATOR" 
+content="Microsoft FrontPage Express 2.0">
+<title>网上报名系统</title>
+<bgsound src="The―Microsoft―Sound.wav" loop="1">
+</head>
+<body background="file:///C:/WINDOWS/Backgrnd.gif"
+bgcolor="#FFFFFF" topmargin="4" leftmargin="15">
+<p align="center"><font color="#FF0000" size="7" face="隶书"><strong>网上报名系统</strong></font></p>
+<p><font color="#008000" size="4" face="楷体―GB2312"><em><strong><u>
+请输入以下信息：</u>　</strong>　</em>　</font>　</p>
+<form action="bmxt.asp" method="post">
+<p align="left"><font color="#FF00FF">
+姓名：</font><input type="text" size="10" 
+name="T1"><font color="#FF00FF">
+报名专业：　<input type="text" size="17" name="T1">　</font>　</p>
+<p align="left"><font color="#FF00FF">
+性别：<select name="D1" size="1">
+<option selected>男</option> 
+<option>女</option>
+</select>
+毕业学校：　<input type="text" size="22" name="T1"></font></p>
+<p align="left"><font color="#FF00FF">
+年龄：<input type="text" size="5" name="T1"> 
+通讯地址：</font><input type="text" size="22" name="T1"></p>
+<p align="center"><font color="#FF00FF">
+<input type="submit" name="B1" value="提交"> 
+<　input type="reset" name="B2" value="复原"　>　<br　>
+</font></p>
+</form>
+<! -- Web服务器端处理 -- >
+<%
+if request.form("xm")<>"" and request.form("xb")<>"" and request.form("nl") <　>"" and request.form("bmzy")　<　>""
+and request.form("lxdz")<>"" then
+set MyConn=Server.CreateObject("ADODB.Connection")
+MyConn.Open "Students","",""
+SQL="insert into bmb(xm,xb,nl,bmzy,byxx,lxdz,bmrq) 
+values(′"&request.form ("xm")&"′,
+′"&request.form("xb")&"′ ,
+′"&request.form("nl")&"′,
+′"&request.form("bmzy")&"′,′"&request.form("byxx")&"′,′"&request.form("lxdz")&"′, 
+′"&request.form("&date()")&"′)"
+set RS=MyConn.Execute(SQL)
+response.write("您的报名号是："&RS("ID1"))
+Response.write("您的报名工作已结束!")
+RS.close
+MyConn.close
+else
+Response.write("您填写的信息不完全,请重新填写!")
+Response.end
+end if
+%>
+</body>
+</html>
+作者简介：向坚持　在职硕士研究生，讲师。主要研究方向：计算机网络及远程教育技术。
+　　在文献［1］中，列举了触发器的几种应用：审计;复杂的完整性约束;复杂的安全性授权;事件登录;列值导出;分布式数据库中表复制。主要研究方向：计算机网络。
+作者单位：向坚持　湖南师范大学计算机教学部　湖南.长沙 (410081）
+林亚平　湖南大学计算机系　湖南.长沙 （410082）
+参考文献
+［1］　周世雄. NT动态站点设计.大连：大连理工大学出版社，1997
+［2］　刘艳梅，等.基于B/S结构的跨平台异构型数据库系统.计算机系统应用，1998;(8)
+收稿日期:1999-06-28(修改稿)

@@ -1,0 +1,106 @@
+计算机应用
+Computer Applications
+1999年 第19卷　第8期 Vol.19　No.8 1999
+
+
+
+Windows NT与NetWare无盘工作站的安装
+杨艺山　刘明春　刘世元
+1　Windows NT无盘工作站安装过程
+1.1　准备工作
+　　硬件：一台SBS（Server-based setup）服务器 ,一台Windows95有盘工作站，若干台配有BootRom的无盘工作站。需要注意的是BootRom中的引导程序是上NT网的，且与相应卡型（ISA/PCI）匹配。本人曾用卡型有TE3500(Realtek 8029芯片PCI网卡)，TE2500,TE2008B/A（UM9008芯片ISA网卡）。软件：Microsoft Windows NT Server 4.0 中文版 ,WINDOS95中文版,,必需的Netsetup.exe等文件，这些文件若不在Windows95安装盘上，可以从以下站点获取：ftp://ftp2.nwpu.edu.cn/incoming/netsetup 注意Windows95序列号必须型如425-XXXXXXX，早期的95版本一般都符合要求，不要使用随机的OE M版本，安装时CPU不要超频，否则容易死机。
+1.2　安装过程
+　　．　启动远程启动服务
+　　首先在安装 NT Server的主控域服务器上从控制面板―网络―协议中添加DLC(数据链接控制)协议，然后在服务中添加远程启动服务，在提示窗口中须两次正确输入安装路径，设含NT4.0光盘的光驱为F：,第一个路径为F:\I386,第二个路径为F:\clients\rpl，即可安装成功。在控制面板―服务中启动远程启动服务，并设为自动启动。积分系数Ki在偏差e的绝对值较小(稳态值附近)时取较大值，在偏差e的绝对值较大时取较小值（或者0)，这样既有利于保证稳态无静差，又不会引起积分饱和而使超调增大、调节时间延长。 由(13)可见，虽然引入了具有非线性特性的神经网络进行补偿, 但系统的特征多项式仍为PB+AQ，和基于线性对象设计时是一致的。一般ISA卡I/O Base为300h，中断为3，BootRom基址选为C8000。若设置完毕重新开机后显示器“黑屏”，应拔下BootRom，用软件重新选择 BootRom 地址和程序字节数直到故障排除。经上述步骤更正后，一定要在服务器远程启动管理器中看到该卡地址号。
+　　．　在服务器上准备文件
+　　设NT安装在 E:\WINNT下,所用网卡为TE2008B,因该卡与NE2000网卡兼容，故可直接用E:\WINNT\RPL\BBLOCK\NDIS下的NE2000.dos和E:\WINNT\RPL\BBLOCK\NETBEUI\NE2000目录下的dosbb.cnf和protocol.ini文件，此外将dosbb.cnf文件中“EXE BBLOCK\I13.COM ～ ～ ～”一行改为“EXE BBLOCK\W95I13.COM ～ ～ ～”并另存为W95BB.CNF文件,以备启动WIN95时使用。若网卡不与E:\WINNT\RPL\BBLOCK\NETBEUI\下的任一网卡兼容，就必须将其DOS驱动程序复制到E:\WINNT\RPL\BBLOCK\NDIS目录下,一般其扩展名为.DOS,如PCIND.dos( TE3500N型PCI网卡)。新建一个目录,将NE2000目录下的PROTOCOL.INI和DOSBB.CNF复制到此目录下，编辑这两个文件, 并将网卡驱动器（NE2000）改成本网卡的名字（如PCIND）。同样将“EXE BBLOCK\I13.COM ～～～”一行改为“EXE BBLOCK\W95I13.COM ～～～”,并另存为W95BB.CNF。文献[3]提出 了一种基于模糊推理的自校正PID控制器，在ZieglerNichols公式[5]基础上进行参数的模糊自校正，参数可校正范围较小，而且模糊规则表不直观，不便于建立。
+　　．　在MS－DOS方式下执行RPLCMD
+　　RPLCMD是用来查看和更新远程启动服务数据库的，远程启动服务必须正在运行。先后使用V键(Vender销售商)，A键添加销售商名字(输入卡号前六位)， 然后使用B键，A键新增一个 BootBlock(引导块)输入引导块名如boot1和对应销售商名，以及启动文件名BbcFile=BBLOCK\NETBEUI\NE2000\DOSBB.CNF，接着使用C键，A键新增 Config(配置)如config1,输入对应引导块名,一级目录名dos, 二级目录名dos622共享配置文件fits\dos622.fit,个人配置文件fits\dos622p.fit,配置注释名如MyDos622，其他未列出的项均用回车作答。
+　　．　建立Dos6.22的无盘工作站
+　　将DOS6.22的系统文件复制到E:\WINNT\RPL\RPLFILES\BINFILES\DOS622下,并解除MSDOS.SYS和IO.SYS的S和H的属性，否则工作站启动后出现“Non System Disk”错。打开远程启动管理器，检查配置文件，更新数据库，添加新的配置文件。
+作者简介：靳其兵,男,27岁,博士生.研究领域为神经网络及模糊控制在多变量系统中的应用.
+　　　　　李鸿儒,男,30岁,博士生,讲师.研究领域为智能控制及其在多变量系统中的应用.
+　　　　　顾树生,男,59岁,博士生,教授,博士生导师,东北大学信息科学与工程学院院长.研究领域为 多变量控制理论及其应用、智能控制、交流调速系统等.
+作者单位：靳其兵：北京石油化工学院　102600;　
+　　　　　李鸿儒、顾树生：东北大学信息科学与工程学院　沈 阳　110006
+参考文献
+1　罗小青,孙优贤. 基于神经元网络的前馈学习控制器. 信息与控制, 1994,23(5):311～314
+2　李少远,刘浩,袁著祉. 基于神经网络误差修正的广义预测控制. 控制理论及应用, 1996, 13(5): 677～680
+3　Fuli Wang, Li Mingzhong, Yang yinghua. A Neural Network-based Adaptive Pole P lacement Controller for Nonlinear System. International Tournal of Systems Scien ce, 1997,28(4):415～421
+4　Robert S S, N Tepedelenliogln. A Fast New Algorithm for Training Feed Forward Neural Networks. IEEE Trans. on Signal Processing, 1992,40(1):202～2 10
+5　ChaoChee K, Y L Kwang. Diagonal Recurrent Neural Networks for Dynamic Syst ems Control. IEEE trans. on Neural Networks, 1994,6(1):144～156
+6　Tianyou Chai. An Indirect Stochastic Adaptive Scheme with On-Line Choice of W eighting Polynomials. IEEE Trans.on Automatic Control, 1990,35(1): 8 2～88
+7　谭永红. 基于BP神经网络的自适应控制. 控制理论及应用,1994,11(1):84～ 87
+8　Mingzhong Li, Fuli Wang. Adaptive Control of Black-Box Nonlinear Systems Usi ng Recurrent Neural Networks. 36th IEEE CDC, 1997,December: 10-12, California US A
+收稿日期:1998-06-15
+。最后启动远程工作站。
+　　．　建立Windows 3.2的无盘工作站
+　　启动Dos622远程工作站,使用Net Use映射放入服务器共享光驱的Windows 3.2安装盘,执行SETUP/A将Windows 3.2安装到C:\WIN目录下,进入C:\WIN,执行SETUP/N,将Windows 3.2安装到C:\Windows目录下。回到根目录,执行XCOPY /E C:\Windows C:\WKSTA.PRO\WIN以后，所有以此profile登录的工作站都可以共享Windows3.2了，一般此步骤可省，因为现在几乎不用Windows3.2了。
+　　．　安装Windows 95的共享文件
+　　首先，在NT服务器上建一共享目录(如PWIN95S)用于保存公共文件，并建另一共享目录(如:RPL95)用于保存每台工作站的私有文件,本人将其装在D盘。登录一台普通的Windows 95工作站,执行NETSETUP.EXE,将Windows 95的文件安装到\\NTS4\PWIN95S中(其中NTS4为服务器名)。按缺省值完成安装即可。文献[1，2]提出了一种自校正控制器，其实质与常规自校正控制器相同，即在线辨识对象模型，根据辨识模型按照经验公式来校正PID参数。[2]中提出了带神经网络补偿的预测控制，在用神经网络进行预测补偿时，要用到未来时刻的控制量输入，而未来时刻的控制量输入是未知的，通常采用的处理方法是将前一时刻的控制序列作为已知量加入。
+　　 ．　在Windows 95下添加网卡
+　　在服务器的MS－DOS方式下再次执行RPLCMD，使用B键，A键新增一个引导块如boot2,输入对应销售商名和引导文件BBLOCK\NETBEUI\NE2000\W95BB.CNF,接着使用C键，A键新增 一个配置如config2,输入对应引导块名,一级目录名dos, 二级目录名win95，共享配置文件fits\win95.fit,个人配置文件fits\Win95p.fit，配置注释名Mywin95，其他未列出的项也均用回车作答。结果表明，对于非最小相位系统，VAPID可以获 得比常规PID好得多的效果(ISE指标提高25%)，而且控制对象参数发生一定的变化时，性能变化不大。NET USE F:\\NTS4\PWIN95S，NET USE G:\\NTS4\RPL95，在F盘上执行SETUP,将Windows 95安装到G:\CLIENT1目录下，若安装过程中对话框全中文，表示没有运行WIN95SRV.BAT 。安装出现“Setup Options”选择“Custom”;出现“Analyzing Your Computer”对话框时选择“No I want to modify the hardware list”，并删除所有硬件;出现“Network Configuration”对话框时,选择相应网卡，设置好相应的IRQ和I/O地址,其余选择Windows 95的缺省值。若“Network Configuration”对话框中未出现相应网卡名，可运行infinst.exe（与Netsetup.exe在同一目录下）将一些外部组件（网卡）添加到网络安装树，这时可以选择该网卡继续安装，否则会出现Setupx.dll保护模式错。运行“远程启动管理器”,执行“检查配置”和“修复安全性”，建立一个使用“Mywin95”配置的profile,例如:Mywin95。执行服务器上的E:\WINNT\RPL\BIN\WIN95CLT.BAT建立配置文件与工作目录及服务器的对应关系,例如:Win95clt d:\rpl95\client1 \\NTS4 Mywin95，若d:\rpl95\client1目录下缺少autoexec.bat,config.sys文件，应人为补上。修改D:\PWIN95S目录下的MACHINES.INI文件。
+　　引入下列Diophantine方程
+P(z-1)=A(z-1)E(z-1)+z-dG(z-1)　　　　　　　　　　(9)
+C(z-1)E(z-1)=F(z-1)+z-dN(z-1)　　　　　　　　　　(10)
+degE=d-1, degG=max(n-1,np-d), degF=d-1, degN=nc-1
+E=E0+E1z-1+…+Ed-1z-(d-1)
+用E乘(7)式两边并利用(9)，得(为了简化书写，以下将复杂表达式括号内的z-1忽略，如P(z-1)写成P)
+Py(k+d)=Gy(k)+BEu(k)+CEξ(k+d)+Eym(k+d)+Ee(k+d)
+　　再利用(10)式，得到
+Py(k+d)=Gy(k)+BEu(k)+Nξ(k)+EyN(k+d)　　　　　　　　　　　
++Fξ(k+d)+Ee(k+d)　　　　　　　　　　　　　　(11)
+(11)式等号右边的Fξ(k+d)、Ee(k+d)是和其余各项无关的量, 由(8)和(11)式，很容易得 到控制量u(k)由以下方程确定。
+　　．　安装其他Windows95工作站
+　　安装其他Windows 95无盘工作站时，先启动一台DOS无盘工作站。在一台普通的Windows 95工作站上执行Windows 95光盘上的NETSETUP.EXE程序。出现“服务器安装”对话框时,单击“设置路径”。出现“服务器路径”对话框时,输入\\NTS4\PWIN95S,单击“确定”。单击“机器安装目录”中的“添加”按钮,分别输入计算机名，本机工作目录和第一台无盘工作站的工作目录。首先用如下常规线性模型对被控对象进行辨识
+y(k)=-a1y(k-1)-a2y(k-2)-…-any(k-n)+b0u(k-d)+b1u(k-d-1)　　　　　
++…bmu(k-d-m)+ξ(k)+clξ(k-1)+…+cncξ(k-nc)　　　　　　(2)
+辨识以后得到i(i=1,…,n),j(j=1,…,m),l(l=1,…,nc), 利用i、j、l就可以对k时刻的对象输出进行估计，估计值记为yL(k),则
+　(3)
+　　由于非线性、时变及未建模动态的影响，yL(k)和对象的实际输出y(k)将存在余差y(k)-yL(k)，这个余差可以用一个神经网络进行逼近，记神经网络的输出为yN(k), 则
+yN(k)=g1[y(k-1),y(k-2),…,y(k-n),u(k-d),…,u(k-d-m)]　　　　　(4)
+利用(1),将y(k-i)(i=1,2,…,d+1)依次代入(4)，并不考虑干扰的影响，得到
+yN(k)=g[y(k-d),y(k-d-1),…,y(k-d-n+1),u(k-d-1),…,u(k-2d-m+1)]　　　(5)
+对神经网络进行训练的目的是为了满足以下性能指标函数：
+J1=min|y(k)-yL(k)-yN(k)|
+从而可以得到：
+y(k)=yL(k)+yN(k)+e(k)　　　　　　　　　　　　　　(6)
+其中e(k)为最后的辨识误差，将(3)和(5)代入(6)，得到
+
+即　　　　　A(z-1)y(k)=z-dB(z-1)u(k)+C(z-1)ξ(k)+yN(k)+e(k)　　　　　　　　　　(7)
+　　　　　　　
+　　　　　　　
+　　　　　　　
+　　(7)即为本文所采用的辨识模型，仿真表明，这种结构对非线性、带随机干扰的对象具有很高的精度。在服务器上修改工作站的启动记录,让它使用第一台工作站的profile,修改MACHINES.INI,加入该工作站的信息。重新启动工作站，完成安装。
+2　NetWare无盘工作站的安装过程
+2．1　准备工作
+　　硬件：一台Netware服务器 ,一台有盘(软盘即可)工作站，若干台配有BootRom的无盘工作站。软件：Novell Netware 3.12以上版本，Dos6.22, Windows95中文版，必需的Netsetup.exe等文件,注意事项同上。
+2．2　安装过程
+　　NetWare DOS无盘工作站的安装
+　　首先在服务器DOS6.22操作系统上安装Netware3.12网络操作系统。然后用一有盘工作站用软盘上网成功。软盘含DOS6.22系统COMMAND.COM(隐含IO.SYS，MSDOS.SYS),IPX.COM, NETX.COM, HIMEM.SYS,AUTOEXEC.BAT,CONFIG.SYS等文件。其中AUTOEXEC.BAT文件内容如下：
+　　IPX
+NETX
+F:
+LOGIN
+CONFIG.SYS文件内容如下：
+　　Files=50
+Dos=High.Umb
+Buffers=50
+Device=Himem.sys
+Device=Emm386.exe
+　　登录后用该软盘生成DOS启动映像文件，以下用SYS:PUBLIC下的SYSCON，USERDEF,MAKEUSER，MAP，SETPASS设置软件，编辑登录脚本(Login Script）等。
+　　NetWare Windows95无盘工作站的安装
+　　与NT的Windows95无盘站相比，有许多相同之处：比如硬软件要求相同，都需要安装共享目录和文件，配置安装脚本和Machines.ini文件。若NT 下无盘95安装成功，参照着安装NOVELL无盘95就容易一些。
+3　需要注意的问题
+3.1　关于PCI网卡
+　　若使用的是一般PCI网卡，由于其中断号与地址号不可修改，且数值随计算机的不同而变化，所以还应编辑E:\winnt\rpl\rplfiles\profiles\mywin95\suboot\protocol.ini文件，修改Bingings项和Interrupt,Iobase项。此外，个别主板不支持这种无盘启动。
+3.2　需要区分的几个概念
+　　RAS(远程访问服务)　RAS为远程访问服务，RAS服务器最多允许256个远程客户拨入，通过调制解调器，ISDN卡，X.25线路提供访问服务。大家熟悉的拨号网络是其客户机版，通过他们可以连到Internet。
+5　结论
+　　理论分析和仿真结果都表明了本文所提出的带神经网络补偿的极点配置广义最小方差自校正 控制方法是有效的，它比极点配置自校正控制具有更高的控制精度、更快的响应速度、更好 的鲁棒性，且适用于非线性对象。本文还就该控制器的抗干扰性能、 鲁棒性能、对非最小相位系统的适用性进行了仿真。
+4结束语
+　　使用远程启动服务有以下优点：通过使用无硬盘驱动器的工作站增加网络安全性，防止引进计算机病毒；在分配信息和软件资源上具有更大权限,更易集中升级软件,降低购买和维护工作站的成本。因此在教学、培训、游戏网等场合用途很大。
+作者简介：杨艺山　副教授，主要从事网络技术，多媒体技术等领域的研究。　刘明春　博士研
+　　　　　究生。微分系数Kd在偏差e的绝对值较小(稳态值附近)时取较大值，在偏差e的绝对值较大时取较小值，这样有利于加快对小偏差的反应速度，提高控制器对干扰的灵敏度，出现干扰时及时调节。
+作者单位：杨艺山　刘明春　刘世元　西北工业大学电子工程系　陕西．西安(710072)
+收稿日期:1999-05-13(修改稿)

@@ -1,0 +1,92 @@
+航空计测技术
+AVIATION METROLOGY & MEASUREMENT TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+用于电场探头校准的一种新设备―
+吉赫横电磁波传输室(GTEM小室)
+张勇军
+　　摘　要　介绍了近年来在电磁兼容性测量及场强测量领域已经广泛应用的吉赫横电磁波传输室(GTEM小室)。提出了将其用于校准电场探头的条件和方法。利用菲涅尔系数矩阵法来计算多层膜的分光特性，它的膜堆特征矩阵表示为
+
+膜堆的光学导纳Y为
+Y＝C／B＝(η2cosδ1＋iη1sinδ1)／(cosδ1＋iη2／(η1sinδ1))
+反射系数：　r＝(η0－Y)／(η0＋Y)
+反射率：　R＝r.r*
+透射率：　T＝1－R
+　　计算程序是根据膜堆的特征矩阵基本公式编写的，求出一层界面上的等效导纳Y，再求出振幅反射系数，叠加起来，最后求出整个膜系的反射率。1989年英国的Belling Lee公司即推出了三个型号的商品，可用在0～5 GHz频段，并且迅速得到了市场的认可。此后，世界各相关专业的大公司纷纷推出自己的GTEM小室，大到可以开进汽车，小到可以像手提箱随身携带；频率高端可达20 GHz，低端可达几个Hz，形成了系列化产品。
+　　在实际工作中，所遇到的各种技术要求各不相同，如果对于每项技术要求都通过实验来确定膜系，无疑是人力物力的浪费。自从90年代中期以来，得益于理论进展，GTEM小室已经开始走入计量校准领域。
+　　关键词　膜堆特征矩阵　振幅反射系数　光学导纳　反射率　透射率
+Computer Program Design of Calibrating Film System of Thin Film
+Ma Qian
+　　Abstract　The optical admittance of a single-layer film is derived from the characteristic matrix of the film pile.Based on the single-layer,recurring layer by layer,supercomposing one by one,deriving the equivalent admittance of the film pile and calculating the reflect coefficient of the amplitude,the reflectivity and transmissivity of hte whole film system is derived at last.
+　　Key words　Characteristic matrix of film pile,Reflect coeffient of the amplitude,Optical admittance,Reflectivity,Transmissivity
+
+　　薄膜膜系是指由不同的材料的膜层与基底所构成的整体。对电场探头的校准无论采用比较法、标准天线法、插入损耗法，还是标准场法，就整体的校准体系来说都离不开一个标准场作为基准。
+　　在电磁兼容性测量和校准中，为了避开各种电磁干扰，得到较精确的标准场，对场地或设施的要求很高。一般采用的场地或设施有开阔场、吸波暗室、TEM小室等。
+　　在理论上，利用薄膜光学的计算公式，可以计算出任何层数薄膜的反射率及透射率。吸波暗室是在一个电磁屏蔽的空间内层贴附吸波材料，为电磁兼容性测量和电磁兼容测量仪器的校准提供一个近似无干扰的自由空间。实际上，光波在薄膜上的形状，是光波在分层介质的各个界面上菲涅尔系数相互叠加的结果。对于电场探头这样小型仪器的校准，用不着开阔场和吸波暗室这种昂贵的大空间场地设施。主要是仪器、仪表的精度，施加电压、电流是否合适，材料纯度，工件表面清洁度，观察仪表读数的准确性，关闭挡板的速度等等。
+　　GTEM小室由于上限使用频率高、造价较低等优点，在电磁兼容性测量领域得到了广泛的应用，同时人们又把目光转向了用GTEM小室进行校准方面，国外早在90年代初就已经把GTEM小室作为产生标准场装置使用。
+2　GTEM小室用于电场探头校准
+　　GTEM小室实际上是一个变形同轴线。
+　　关键词　膜堆特征矩阵　振幅反射系数　光学导纳　反射率　透射率
+Computer Program Design of Calibrating Film System of Thin Film
+Ma Qian
+　　Abstract　The optical admittance of a single-layer film is derived from the characteristic matrix of the film pile.Based on the single-layer,recurring layer by layer,supercomposing one by one,deriving the equivalent admittance of the film pile and calculating the reflect coefficient of the amplitude,the reflectivity and transmissivity of hte whole film system is derived at last.
+　　Key words　Characteristic matrix of film pile,Reflect coeffient of the amplitude,Optical admittance,Reflectivity,Transmissivity
+
+　　薄膜膜系是指由不同的材料的膜层与基底所构成的整体。
+
+图　1
+　　图1,GTEM小室的三面视图中，被测物放置在中板下部的较大空间内。锥体顶点为同轴线输入端，右方挡板内侧贴附吸波材料，并在中板末端与右方挡板之间接有50 Ω匹配负载。在低频端，电阻匹配负载网络起作用，在高频端，吸波材料作为负载。这样，从低频端到高频端都能将输入端传来的电磁波良好地吸收掉，从而在传输室内形成横电磁波(TEM电磁波)。
+　　GTEM小室由于形状复杂，直接从电磁场方程中解出其内部的场分布几乎是不可能的。直到90年代中期，利用计算机解法才得出了GTEM小室中的横截面的电磁场分布(如图2)，从而为GTEM小室用于校准打下了理论基础。
+　　图中，曲线表示的是各电场值与中心点电场值相差分别为1、2、3 dB区域。3 dB区称为测试区，1 dB区称为高准确区。一般电磁兼容性测量是在测试区进行的，高准确区则可以用于校准，校准框图如图3所示。
+
+图　2
+
+图　3
+　　鉴于被测物对小室内电磁场存在扰动现象，所以军标规定被测物位置不超过中板到上或下底板间距的78％，被测物的尺寸不超过测试区尺寸的1／3，这一要求一方面保证了被测物位于测试区内，另一方面兼顾了放置被测物后对场的扰动，以确保测量精度。例如：有一要求镀反射、透射比为中性的分光镜，查出用硫化锌、氟化镁两种材料，镀四层合适，每层厚度为1／4波长。在一般的电磁兼容性测量中要求的准确度是3 dB，所以在GTEM小室中的1 dB高准确区内是完全可以达到校准所要求的1／3原则的。利用边界条件的连续性，考虑到相位因子，推导出光束在具有两种不同偏振状态的反射光和透射光能量公式
+E(r)0P＝
+E(r)0S＝
+E(t)1P＝
+E(t)1S＝(n0cosθt－n1cosθi)／(n1cosθi＋n0cosθt).E(i)0P
+(n0cosθi－n1cosθt)／(n0cosθi＋n1cosθt).E(i)0S
+2n1cosθi／(n1cosθi＋n0cosθt).E(i)0P
+2n0cosθi／(n0cosθi＋n1cosθt).E(i)0S
+
+单层膜的反射率公式为
+R＝r.r*＝(r21＋r22＋r1r2cos2δ)／(1＋r21r22＋2r1r2cos2δ)
+其中菲涅尔系数为
+r1＝
+ηP1＝
+ηS1＝
+r2＝
+η2＝
+ηS2＝(η0－η1)／(η0＋η1)
+n0／cosθi
+n0.cosθi
+(η1－η2)／(η1＋η2)
+n1／cosθi
+n1.cosθi
+
+把菲涅尔系数带入反射率公式得到
+R＝((η0－η2)2cos2δ1＋
+(η0η2／η1－η1)2.
+sin2δ1)／((η0＋η2)2
+cos2δ1＋(η0η2／η1－
+η1)2sin2δ1)
+
+其中位相差
+δ＝2π／λ.ndcosθi
+可见单层反射率、透射率取决于入射介质折射率、膜层材料折射率、基底材料折射率、入射角、膜层厚度、光波长及膜层数。电压驻波比实际上也反映了GTEM小室的阻抗匹配情况。国家计量检定规程中要求使用TEM小室校准电场探头时，小室的阻抗及误差是(50+0-0.2)Ω，就是对这一特性的要求。根据有关文献，只要GTEM小室的电压驻波比VSWR≤1.2，就可以保证小室内部场的TEM性质达到校准所需要的高准确度要求。另一方面，只要高准确度区域(±1 dB)的几何尺寸能够包容被测电场探头，就可以使用该GTEM小室对该型电场探头的准确度进行校准。实际上，考虑到被测物对场的扰动，一方面被校探头体积要小于或等于高准确度区域体积；另一方面，小室内只能放置探头，使用高阻线，最好是光纤将其连接到小室外部的显示部分，同时，探头一定要放置在木制或电磁透明的支架上。随机给定七个参数，即,材料的高折射率、低折射率、基底折射率、膜层厚度、入射波长、入射角度、膜层数。
+3　结论
+　　使用VSWR≤1.2，高准确度区域体积能够包容被校探头的GTEM小室，使用光纤或高阻线连接小室内的探头与外部的显示部分，可以实现三维极化全向电场探头准确度和方向性的校准。
+32岁　男　工程师　读者服务卡索引号： 117
+作者单位：长城计量测试技术研究所，北京市，100095
+参考文献
+　[1]　黄志询、贺涛.GTEM室内场强分布的计算分析.计量学报,1997,(1):63～70
+　[2]　国家军用标准GJB152―86 电磁兼容性Ⅰ
+　[3]　国家计量检定规程JJG561―88 无线电(3)
+　[4]　The Electro-Mechanics Company EMCO ANTEN-
+NAS & ACCESSORIES FOR EMC TESTING
+　[5]　冯桂山.电磁干扰测量系统的校准方法.宇航计测技术,1989,(5):65～73
+1998-11-03收稿

@@ -1,0 +1,36 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000 Vol.19 No.2 P.58-59
+
+
+
+
+Windows 9x使用技巧问答（一）
+谢晓巍　陈轩飞　谢晓艳
+　　Windows 9x因其使用方便、操作简单而迅速成为目前最为流行的操作系统。
+　　2．受损引导扇区引导记录的修复
+　　硬盘上引导记录（BDR）是在用DOS命令FORMAT对硬盘做格式化操作时生成的，硬盘BDR损坏以及DOS的3个系统文件损坏或丢失也都会引起硬盘不启动，故障处理方法也完全相同。概括起来可分为：CMOS数据参数丢失。
+1 系统环境
+　　问：Windows 9x总是将用户编辑的文档自动保存在“我的文档”（C＼My Documents）文件夹中，这个看似体贴用户的设计却给不少用户带来了麻烦。当1台电脑被多人同时使用时，如果用户希望将自己的文件保存在自己特定的文件夹中，应该怎样设置呢？
+　　答：运行Windows文件夹中的regedit程序，打开注册表编辑器，逐层进入HKEY＿CURRENT＿USER＼Software＼Microsoft＼Windows＼CurrentVersion＼Explorer＼Shell Folders目录和HKEY＿CURRENT＿USER＼Software＼Microsoft＼Windows＼CurrentVersion＼Explorer＼User Shell Folders目录，再在右边的工作区中双击“Personal”字符串，将其值改为自己喜欢的文件夹名，以后再保存的文件都会存到你所设定的文件夹中。
+　　如果使用的是Windows 98，那么更改“我的文档”的默认位置将更为方便。然后才将控制权交与主分区活动分区内操作系统，并让主分区信息表来管理硬盘。引导扇区是指硬盘中DOS分区开始的第1个扇区，即逻辑驱动器的第1个扇区又称BOOT区，经由FORMAT高级格式化写到该扇区，有5部分组成，即：（1）跳转指令，（2）厂商标识和DOS版本号，（3）BPB，（4）DOS引导程序，（5）结束标志字（AA55）？其主要任务是重新设置引导驱动器，将根目录的第1个扇区装载到内存，检查FDT中的前2个文件是否为DOS的2个系统文件引，装载DOS系统隐藏文件I0．SYS和IBMI0．COM装载到内存。如果后一用户不希望别人修改他所设定的Windows风格，可运行regedit程序，打开注册表编辑器，逐层进入HKEY＿CURRENT＿USER＼Software＼Microsoft＼Windows＼CurrentVersion＼Policies＼Explorer目录，再在右边的工作区中单击右键，选择“新建／DWORD值”，并将这个DWORD值命名为“NoSaveSettings”，然后双击这个值，在“编辑DWORD值”对话框中设置键值为“1”。这样，别人就无法更改你所设定的原有风格了。
+2 硬盘引导扇区引导失败的修复
+　　引起系统不承认硬盘或硬盘不能自举的原因大多是关键程序区和数据区信息损坏等软故障造成的？
+　　答：Windows 9x利用“系统属性”中的“设备管理器”页来设置硬件的中断和输入／输出范围等，如果用户任意改变这些参数，就可能引起硬件冲突，造成硬件不能正常工作。要禁止他人任意修改“系统属性”中的“设备管理器”页，可运行regedit程序，打开注册表编辑器，逐层进入＼HKEY＿USERS＼．DEFAULT＼Software＼Microsoft＼Windows＼CurrentVersion＼Policies＼System目录，再在右边的工作区中单击右键，选择“新建／DWORD值”，并将这个DWORD值命名为“NoDevMgrPage”，然后双击这个值，在“编辑DWORD值”对话框中设置键值为“1”。
+　　问：怎样禁止使用“控制面板”？我们必须弄清引导扇区的结构和功能，以便发生故障时能及时排除。下面的方法即可禁止用户使用“控制面板”，同时还将禁止用户使用“打印机”来添加或删除打印机。
+　　运行regedit程序，打开注册表编辑器，逐层进入＼HKEY＿USERS＼．DEFAULT＼Software＼Microsoft＼Windows＼CurrentVersion＼Policies＼Explorer目录，再在右边的工作区中单击右键，选择“新建／二进制值”，并将这个二进制值命名为“NoSetFolders”，然后双击这个值，在“编辑二进制值”对话框中设置键值为“01 00 00 00”。若出现：
+　　NO SYSTEM ON DEFAULT DRIVE
+说明执行命令的当前盘上，没有原启动计算机的DOS版本的3个系统文件。
+2 系统安全
+　　问：怎样禁止非法用户使用Windows 9x？我们可以利用DEBUG程序来完成修复工作，而原有数据不会受损。下面的设置可禁止非授权用户进入Windows 9x系统。
+　　首先使用控制面板中的“用户”来添加此电脑的授权用户，然后运行regedit程序，打开注册表编辑器，逐层进入HKEY＿LOCAL＿MACHINE＼Network＼Logon目录，在右边的工作区中选择“新建／DWORD值”，将键名改为MustBeValidated，设置它的值为0x 00 00 00 01（1）。以后再进入Windows 9x时在登录窗口按“取消”按钮或按“Esc”键都不能进入Windows 9x系统。
+关键词： 硬盘 主引导扇区 引导扇区 扇区故障
+　　硬盘具有体积小，容量大，存取速度快，记录密度高的特点，由于硬盘内磁盘的盘片和磁头都被密封，硬盘制造时空气要通过高效过滤口才能进入密封室内，所以硬盘的硬故障，即物理损坏，如盘片划伤，驱动器控制系统损坏等发生率大大低于另一种软故障，如病毒感染，配置不当等软件故障，而许多软故障多与硬盘上的引导扇区的内容有关？ 
+　　答：用户为了保密，通常不愿意在文档菜单中保留自己使用过的文件记录，这时用户可以运行regedit程序，打开注册表编辑器，在HKEY＿CURRENT＿USER＼Software＼Microsoft＼Windows＼CurrentVersion＼Policies＼Explorer目录下新建名为NoRecentDocsHistory的DWORD值，将其值设置为0x 00 00 00 01（1），这样就可以保证以后新打开的文档不再加入文档菜单中。
+　　问：怎样隐藏驱动器？
+　　答：如果用户有机密文件需要保密，我们可以通过将这个文件所在的驱动器隐藏起来，达到加密的效果。打开注册表编辑器，在“HKEY＿CURRENT＿USER＼Software＼Microsoft＼Windows＼CurrentVersion＼Policies＼Explorer”
+目录下，选“新建／二进制值”，输入NoDrives，缺省值为00 00 00 00，它的4个字节中每个字节的每一位（bit）就对应于1个驱动器（从A：到Z：），当相应位为1时，该驱动器即被隐藏起来。在这4个字节中，每个字节代表了8个驱动器之一，第1个字节代表了A：到H：即01为A，02为B，04为C，08为D…80为H，依此类推，第2个字节代表了I：到P：，第3个字节代表了Q：到X：，第4个字节代表了Y：到Z：。― 未完待续 ― 
+谢晓巍（长沙电力学院计算中心410077）
+陈轩飞（长沙电力学院动力系）
+谢晓艳（湖南财经学院信息系）
+（收稿日期：1999－09－01）

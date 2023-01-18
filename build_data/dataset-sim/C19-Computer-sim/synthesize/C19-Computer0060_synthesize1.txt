@@ -1,0 +1,165 @@
+
+　　关键词　超媒体，形式化模型，Petri网，
+A PETR NET FORMAL MODEL THE HYPERMEDIA（HPN）
+Zhang Ling
+College of Computer Science and Technology, Wuhan University, Hubei.Wuhan 430072
+　　Abstract　This paper presents HPN, a Petri-net formal model of hypermedia. It has three layers, each is represented with an augmented Petri net , several sets of objects and the mapping of the Petri net and the objects. HPN use the structure of Petri net and execution semantics to specify the linking, browsing and rendering of hypermedia. It has the ability to describe the main properties of hypermedia systems. We mainly give the formal definition of the model and an illustration.
+　　Keywords　Hypermedia, Formal model , Petri net, Token
+1　引言
+　　超媒体系统是一种新型的复杂信息管理系统，它将多媒体信息组织成非线性、非顺序的结构，提供更多比传统系统更加直观、灵活和快速的信息访问与查询
+　　引入下列Diopha偶数tine方程
+S(z-1)=A(z-1)E(z-1)+z-dG(z-1)　　　　　　　　　　(9)
+C(z-1)E(z-1)=F(z-1)+z-dN(z-1)　　　　　　　　　　(10)
+degE=d-1, degG=max(n-1,np-d), degF=d-1, degN=nc-1
+E=E0+E1z-1+…+Ed-1z-(d-1)
+用E乘(7)式两边并利用(9)，得(为了简化书写，以下将复杂表达式括号内的z-1忽略，如P(z-1)写成P)
+Pu(k+d)=Gy(k)+AEu(k)+CEξ(k+d)+Eym(k+d)+Ee(k+d)
+　　再利用(10)式，得到
+Py(k+d)=Gy(k)+BEu(k)+Nξ(k)+EyN(k+d)　　　　　　　　　　　
++Fξ(k+d)+Ee(k+d)　　　　　　　　　　　　　　(11)
+(11)式等号右边的Fξ(k+d)、Ee(k+d)是和其余各项无关的量, 由(8)和(11)式，很容易得 到控制量u(k)由以下方程确定计算机应用
+Computer Applications
+年 第19卷　第8期 Vol.19　No.8 1999
+
+
+
+基于Petri网的HPN*
+张　苓
+　　摘　要　本文提出一个基于Petri网的超媒体模型HPN。它采用三层次组织，各层由一个扩展Petri网、若干第一类以及Petri网与对象之间的映射表示，通过Petri网和继续执行语义说明超媒体的链接机制、下载和媒体表现，具有刻画超媒体主要性质的能力。文中给出了HPN模型的形式化定义并举例说明其用途。。采用带神经网络补偿的极点配置广义自校正控制的结果示 于图2。
+　　基于Petri网理论［1］的模型在超媒体系统的描述方面具有广泛的前景。原因在于Petri网能方便、自然地表示为五部有向，适合于说明超媒体的链接机制；同时它是一种具有并行执行语义的自动机，可以表达超媒体系统中的动态执行语义，解决并发浏览、存取控制和版本问题。而且Petri网具有说明基于严格同步关系的实时进程交互的能力，满足描述多媒体表现的需要［2］。标识超媒体的浏览模型由Petri网的执行语义提供。在基于Petri网的超文本和多媒体建模方面，Trellis［3］是典型的超文本形式化模型，O［2］很好地刻画了多媒体的表现时序，两者在某种程度上存在着性能上的互补，可以结合起来统一刻画超媒体。超媒体系统具有较大的规模和众多的相关因素，在一个Petri网中表达往往使网络变得十分庞大，超媒体文档结构及各成员的关系含混复杂，给浏览语义的说明以及系统的分析和验证带来相当的难度。
+作者简介：靳其兵,男,27岁,博士生.研究领域为神经网络及模糊控制在多变量系统中的应用.
+　　　　　李鸿儒,男,30岁,博士生,讲师.研究领域为智能控制及其在多变量系统中的应用.
+　　　　　顾树生,男,59岁,博士生,教授,博士生导师,东北大学信息科学与工程学院院长.研究领域为 多变量控制理论及其应用、智能控制、交流调速系统等.
+作者单位：靳其兵：北京石油化工学院　102600;　
+　　　　　李鸿儒、顾树生：东北大学信息科学与工程学院　沈 阳　110006
+参考文献
+1　罗小青,孙优贤. 基于神经元网络的前馈学习控制器. 信息与控制, 1994,23(5):311～314
+2　李少远,刘浩,袁著祉. 基于神经网络误差修正的广义预测控制. 控制理论及应用, 1996, 13(5): 677～680
+3　Fuli Wang, Li Mingzhong, Yang yinghua. A Neural Network-based Adaptive Pole P lacement Controller for Nonlinear System. International Tournal of Systems Scien ce, 1997,28(4):415～421
+4　Robert S S, N Tepedelenliogln. A Fast New Algorithm for Training Feed Forward Neural Networks. IEEE Trans. on Signal Processing, 1992,40(1):202～2 10
+5　ChaoChee K, Y L Kwang. Diagonal Recurrent Neural Networks for Dynamic Syst ems Control. IEEE trans. on Neural Networks, 1994,6(1):144～156
+6　Tianyou Chai. An Indirect Stochastic Adaptive Scheme with On-Line Choice of W eighting Polynomials. IEEE Trans.on Automatic Control, 1990,35(1): 8 2～88
+7　谭永红. 基于BP神经网络的自适应控制. 控制理论及应用,1994,11(1):84～ 87
+8　Mingzhong Li, Fuli Wang. Adaptive Control of Black-Box Nonlinear Systems Usi ng Recurrent Neural Networks. 36th IEEE CDC, 1997,December: 10-12, California US A
+收稿日期:1998-06-15
+。
+2　HPN模型
+2.1　HPN模型的形式化定义
+　　HPN模型分为三层：顶层的链接层，中间的无机层和底层的原子层。复合层中的每一个Petri都对应于链接层Petri网中的，复合层Petri网中的每一个库所则与底层的Petri子网相关联。HPN模型形式化定义为：
+定义1.　HPN = < ，CPN， >。其中，
+CPN = < CPN1，CPN2，…，CPNn> 
+是LPN的子网的集合。
+BPNi = < BPNi1，BPNi2，…，BPNim> 
+是CPNi的子网的集合，i ∈n。
+　　链接层定义超媒体文档的链接结构。其中，库所表现为通过链相连的结点或复合节点，变迁表现为节点或复合节点之间的语义联系。超媒体的动态行为由标识刻画。链接层Petri网（LPN）的形式化定义为：
+定义2.　LPN=<PL,TL,FL,ML0,N,CN,I,L,W,ALl>
+其中，
+(1) PL：库所的有限集，PL={PL1，PL2，PL3 }；
+　　PL1：抽象库所集，抽象库所对应复合层中的CPN网，类型为空；
+
+
+　　图1
+PL2：导航控制库所集，包含历史、索引两种类型的库所，分别与历史、索引节点相对应；
+PL3：存取控制库所集，，p0用作存取控制或版本管理［3］。
+(2) TL：变迁的有限集，TL={TL1，TL2，TL3，TL4，TL5}；
+(3) FL：库所与变迁之间的流关系集合，FL={FL1，FL2，FL3，FL4，FL5}；
+：普通流关系；
+，
+：同一存取库所间以及与其余库所的关系；
+，
+：导航控制库所与其余库所的关系；
+(4) ML0：PL→N+为LPN的初始标识；
+标识表示超媒体浏览时的状态，不同的状态转换代表不同的浏览路径。
+　　超媒体又称作多媒体超文本，从某种意义上说是多媒体与超文本的综合。
+(5) N = { N1，N2，…，Nn } ( n≥0 ),为节点对象集合；
+(6) CN = {CN1，CN2，…，CNk }( k≥0),为复合节点对象集合；
+(7) I = { I1，I2，…，Ip } ( p≥0 ),为输入对象的集合；
+(8) L = { L1， L2，…，Lm } ( m≥0 ),为链接对象的集合；
+(9) W是窗口的集合；
+(10) ALl是LPN的逻辑联系,ALl=<APLl,ATLl,WLl>
+这里，
+逻辑联系ALl提供LPN成员与系统对象之间的映射，v为空值。APLl创建库所与节点对象和复合节点对象的映射；ATLl建立链对象和输入对象与变迁的映射；WLl将每一个抽象库所映射到一个逻辑窗口。该方法适用于非线性对象，且具有较高精度和较 快的收敛速度，具有较强的鲁棒性。复合层Petri网（CPN）形式化定义为：
+定义3.　CPNi = <PC，TC，FC，MC0，MB，L，I，R，ACl >。其中，
+(1) PC、TC、FC：分别表示库所、变迁和流关系的有限集。
+(2) MC0：PC→N+为CPN的初始标识。
+(3) MB = {MB1，MB2，…，MBk }( k≥0 )为复合块对象集合;
+(4) L = { L1， L2，…，Lm } ( m≥0 ) 为链接对象的集合；
+(5) I = { I1，I2，…，Ip } ( p≥0 ) 为输入对象的集合；
+(6) R是窗口内区域的集合；
+(7) ACl是CPN的逻辑联系,ACl=<APCl,ATCl,RCl>这里，
+
+函数APCl建立库所与多块对象或CPN子网的联系；ATCl建立链对象和输入对象与变迁的映射；RCl建立库所与窗口内区域的映射。
+　　原子层定义各成员内部媒体间的时序关系，库所类型与所包含媒体的类型一致，每一个库所与一个实数相联（演播时间），变迁表示同步点。。其中，
+(1) PB：库所的有限集，PB = { PB1，PB2}，这里，
+PB1：媒体库所集，库所类型与其中媒体类型一致；
+PB2：同步库所，类型为空，不包含媒体内容，仅用于同步；
+(2) TB：变迁的有限集；
+(3) FB：库所与变迁之间的流关系集合；
+(4) MB0：PB → N+为BPN网的初始标识，当库所中有藏宝图时，表示该库所有资源，该库所中的内容被装载。
+(5) B={B1，B2，…，Bn }(n≥0)为块对象的集合；
+(6) S={S1，S2，…，Sm }(m≥0)为同步对象的集合；
+(7) T是库所到实数（时间延迟）的映射。下图给出HPN模型对历史链的刻画，其余隐式链的刻画与此类似。
+2.2　变迁燃烧
+　　变迁的点火由点火控制。为了全局的收敛性，本文就应用这一算法，并提出了带神经网络补偿的极点配置广义最小方差自校正控制。
+　　原子层中的库所有令牌表示该库所中有资源，媒体内容能够被装载并显示在屏幕，令牌的流动刻画表现的。不同激活集中的流关系称为或流，相同激活流 中的流在图中以弧相连，称为与流。
+定义6.　若*T=I，则称变迁T为开始变迁，记作Tstart；若T*=I，则称变迁T为结束变迁,记作Tend。
+　　下面具体给出HPN模型中各层Petri网的点火规则：
+　　. 原子层Petri网的点火规则
+　　若BPNi被激活，则开始变迁Tstart立即点火，生成与所联库所数目相等的令牌。
+　　由(5)式可知
+yN(k+d-i)=g[y(k-i),y(k-i-1),…,y(k-n+1-i),u(k-i),u(k-i-1),
+…,u(k-d-m+1-i)]
+则yN(k+d-1)、yN(k+d-2)、…yN(k+1)可以由k时刻以前的输入、输出加入经过训练 的神经网络直接求得。点火后，Ti将其前集中所有令牌拆掉，所有输出库所获得令牌。。。
+定义5.　设集合SP1，SP2，…，SPn，若i∈n：SPi*T且SPi∩SPj=I(i≠j)，则称SP1，SP2，…，Spn是变迁T的激活集。
+　　对于其余变迁Ti，当某一激活集中所有库所包含令牌时，若发生输入事件，并且输入事件与变迁中链对象的条件相匹配，则点火执行。
+　　点火后，变迁Ti将其前集中所有令牌移走，收回它们对应子网中的所有令牌，所有输出库所获得令牌。
+　　引入下列Diophantine方程
+P(z-1)=A(z-1)E(z-1)+z-dG(z-1)　　　　　　　　　　(9)
+C(z-1)E(z-1)=F(z-1)+z-dN(z-1)　　　　　　　　　　(10)
+degE=d-1, degG=max(n-1,np-d), degF=d-1, degN=nc-1
+E=E0+E1z-1+…+Ed-1z-(d-1)
+用E乘(7)式两边并利用(9)，得(为了简化书写，以下将复杂表达式括号内的z-1忽略，如P(z-1)写成P)
+Py(k+d)=Gy(k)+BEu(k)+CEξ(k+d)+Eym(k+d)+Ee(k+d)
+　　再利用(10)式，得到
+Py(k+d)=Gy(k)+BEu(k)+Nξ(k)+EyN(k+d)　　　　　　　　　　　
++Fξ(k+d)+Ee(k+d)　　　　　　　　　　　　　　(11)
+(11)式等号右边的Fξ(k+d)、Ee(k+d)是和其余各项无关的量, 由(8)和(11)式，很容易得 到控制量u(k)由以下方程确定。
+　　若Tend点火，则收回子网中所有令牌。
+　　. 链接层Petri 网的点火规则
+　　对于变迁Ti，当某一输入库所包含令牌时，若发生输入事件，并且输入事件与变迁中链对象的条件相匹配，则点火执行。
+　　点火时，变迁Ti将其前集中令牌移出，所有输出库所获得令牌。。
+3　HPN模型对超媒体性质的刻画
+3.1　静态结构
+　　超媒体系统有三种静态结构：语义结构(Semantic Structure)、逻辑结构(Logical Structure)和时序结构 (Temporal Structure)［4］。
+　　语义结构定义超媒体成员之间的语义联系（链接）。超媒体系统中常用的链分为两类，一类属于显式链，包括基本链、交叉索引链和节点内注释链；一类属于隐式链如组织链、链、执行链等等。在HPN模型中，显式链通过复合层和链接层的变迁说明，变迁点火意味着链接成立。许多模型忽视了对执行索引、历史查询等操作的隐式链的描述，HPN模型做出改进。
+(8) La是窗口内层的集合；
+(9) ABl是BPN的逻辑联系，ABl=<APBl,TBl,LaBl>，这里，
+
+函数APBl建立库所与块对象和同步对象的联系；TBl将库所映射到实数，表示库所令牌在库所中的滞留时间；LaBl将库所映射到窗口某区域的层次。
+
+
+图2　HPN对历史链的描述
+　　超媒体系统的逻辑结构体现在节点和复合节点的构造。在HPN模型中，节点和复合节点的构造利用了Petri网层次建模的特性，将Petri子网用抽象库所――复合库所表示。这样，库所的内容可以不仅仅是简单的信息，可以包含另一个超媒体文档。复合库所与对应子网之间不仅结构相等，而且时序一致。
+3　带神经网络补偿的极点配置广义最小方差自校正控制
+　　由于带神经网络补偿的模型结构的特殊性，就要求采用显式自适应控制，[6]提出了一种极点配置广义最小方差自校正显式控制算法，该算法能够保证全局的收敛性。。这样BPN可以采用OCPN的结构化方法构造复杂的同步关系。并且给定任意媒体对象和时间关系，都有唯一的BPN表示与它相对应。也就是说根据HPN模型构造的超媒体的表现和同步不会有冲突和死锁产生。
+3.2　动态特征
+　　HPN模型不仅能够表达超媒体文档的静态结构，而且还能够通过Petri网的执行语义刻画超媒体的动态行为：浏览和表现。
+　　对链接层中的LPN网，标识代表超媒体浏览时的状态，库所中有令牌表示相应的节点或复合节点被访问，其内容显示在屏幕上。初始标识M0表示浏览的初始状态，开始浏览时，初始标识中具有令牌的库所的内容被显示。随着令牌在网络中运动，标识不断。。。令牌的流动由变迁控制，如果在状态M时没有被激活的变迁，则浏览终止。
+　　复合层中子网CPN的初始状态由开始变迁确定。
+　　采用HPN模型刻画，这段非形式化的说明描述成三元组H =（L，C，B），L是链接层的LPN网，C是复合层的CPN网，B是原子层的BPN网。当库所获得令牌时，相应BPN网被激活，多媒体成员在屏幕上表现；当令牌移出库所，成员表现结束。令牌的移动由变迁控制，表示当前表现内容的变化。。[2]中提出了带神经网络补偿的预测控制，在用神经网络进行预测补偿时，要用到未来时刻的控制量输入，而未来时刻的控制量输入是未知的，通常采用的处理方法是将前一时刻的控制序列作为已知量加入。当结束变迁点火之后相联的成员表现结束。
+　　总之，LPN网中的标识表示浏览中哪些节点（复合节点）是可见的；CPN子网中的标识表示节点的哪些成员是正在表现的；BPN子网中的标识表示成员中当前的表现媒体。点火CPN网中的变迁将改变表现的内容，点火LPN网中的变迁将改变浏览的内容。ITS有三个组成库所：IMAGE，TEXT和SOUND，它们根据同步关系合成为BPN子网。。采用极点配置广义自校正控制，而不进 行神经网络补偿，结果示于图1。如果用户激活了与此相联的按钮，那么计算机屏幕上显示有关电脑介绍的媒体信息。信息包括一段文字，一幅图像和一段音频解说。有二条链与该多媒体信息相关联：一条称作“重复”，允许用户重新浏览多媒体信息，它能够在多媒体信息显示完后的任意时刻触发；第二条称作“视频”，屏幕上演播相关的视频信息，必须在文字等信息表现完之后触发。另外，如果用户触发屏幕中的两个热区，当前屏幕上的内容将隐去，分别导致有关显示器的介绍和主机的介绍。库所中有令牌表示相应的内容能够被显示。。链接层具有下述浏览语义：最初，由库所card0表示的文字说明呈现出于用户眼前，当T10点火，库所card1获得令牌。这时如果有触发事件，且满足变迁T11或T12的点火条件，则令牌流动，显示变化。
+
+
+
+图3　超媒体应用的HPN模型的例子
+　　链接层中的库所card1与复合层子网相对应。当card1获得令牌时，Tstart立即点火，库所ITS获得令牌，与该库所相联的多媒体信息被演播。若变迁T21点火，结束当前演播，库所VIDEO获得令牌，与它相联的视频信息被显示。视频信息显示完毕之后，结束变迁点火，链接层中的库所card1处于非激活状态。
+* 本文研究得到国家863高科技项目基金资助。。BPN网中的变迁表示媒体表现的同步点。当库所ITS被激活后，BPN中的开始变迁立即点火，库所TEXT获得令牌，相联的文字被显示于屏幕上，在此期间，令牌处于加锁状态。演播完毕后，库所中的令牌被解锁，变迁T31点火。。演播结束后，结束变迁点火，库所ITS处于非激活态，收回BPN子网中的所有令牌。[2]中提出了带神经网络补偿的预测控制，在用神经网络进行预测补偿时，要用到未来时刻的控制量输入，而未来时刻的控制量输入是未知的，通常采用的处理方法是将前一时刻的控制序列作为已知量加入。
+　　在HPN形式化模型基础上我们开发了一个超媒体演播系统原型，它是在Windows环境下采用BC++ 4.5语言及OWL工具实现，是超媒体应用的开发引擎，能够满足当前超媒体应用开发的主要要求。若变迁T22点火，库所ITS获得令牌，其内容被重复。
+作者简介：张　苓　博士生。主要研究领域为分布并行处理、超媒体。
+作者单位：张　苓　武汉大学计算机科学与技术学院　湖北.武汉（430072 )
+参考文献
+　［1］　袁崇义.Petri 网. 南京：东南大学出版社, 1989
+　［2］　Thomas D C Little, Arif Ghafoor. Synchronization and storage models for multimedia objects.IEEE Journal on Selected Areas in Communications, 1990；8(3)：413-426
+　［3］　P D Stotts, R Furuta. Petri-Net-based hypertext: document structure with 　browsing semantics. ACM Transactions on Information System,1989；7(1):3-29
+　［4］　P Senac, M Diaz, A Leger, P de Saqui-Sannes. Modeling logic and temporal synchronization in hypermedia systems. IEEE Journal of Selected Areas in Communication, 1996；14(1)
+　　收稿日期:1999-05-07(修改稿)

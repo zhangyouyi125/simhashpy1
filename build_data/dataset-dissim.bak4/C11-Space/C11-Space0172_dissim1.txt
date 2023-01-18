@@ -1,0 +1,46 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年  第3期   No.3 May   1998
+科技期刊
+航天器柔性伸展附件非线性
+振动稳定性研究*
+
+李俊峰　王照林
+(清华大学工程力学系*北京*100084)
+　　摘　要　研究由中心刚体和柔性伸展附件组成的非线性刚柔耦合系统,假设附件为有限变形梁,但本构方程是线性的。利用能量积分构造Lyapunov函数,根据部分变量稳定性定理,证明了当中心刚体无控制力矩,附件驱动力为零时,梁在等速伸展或收缩时的横向非线性振动是稳定的。
+　　主题词　伸展柔性梁　刚柔耦合系统　部分变量稳定性
+STUDY ON THE STABILITY OF NONLINEAR 
+VIBRATIONS OF A DEPLOYING FLEXIBLE 
+APPENDAGE OF A SPACECRAFT
+
+Li Junfeng　Wang Zhaolin
+(Department of Engineering Mechanics,Tsinghua University*Beijing*100084)
+　　Abstract　Consider a rigid-flexible coupled system which consists of a central rigid body deploying a flexible appendage.The appendage is modeled as a finite deflection beam having linear constitutive equations.By taking the energy integral as Lyapunov function,it is proved that nonlinear transverse vibrations of the beam undergoing uniform extension or retrieval are stable when there are not controlling moment in the central rigid body and driving force on the beam,according to the partial stable theorem.
+　　Key words　Deploying flexible beam　Rigid-fiexible coupled system　Partial stability
+1　引　言
+　　近年来,航天器的柔性附件(梁、板等)在伸展过程中的振动得到了广泛的关注［1-4］。
+3.2　补偿装置设计
+　　网络权值经离线训练后,即获得扰动力矩的神经网络模型。文献［1］的渐近公式表明,在等速伸展时所有模态振动发散。文献［2］的计算结果表明,在等速伸展时有一些模态振动发散而另一些模态振动稳定。这两个结论有差异的原因在于对系统模型的简化程度不同。隐节点激励函数为双曲正切函数tanh(x)=(1-exp(-2x))/(1+exp(-2x)),输出节点激励函数为线性函数。文［2］考虑了刚体运动和附件运动的耦合,但是基于小变形假设对系统运动方程进行了线性化处理,所以耦合仅限于线性耦合。它使用闭环系统的反馈误差量调整神经网络权值,目标是极小化反馈误差,从而在线辩识对象逆动态模型,实现高精度的位置控制。本文假设附件是本构方程为线性的有限变形梁,考虑中心刚体运动与附件运动的非线性耦合,利用Lyapunov直接法严格证明了等速伸展或收缩的梁的横向振动是稳定的。
+2　系统建模
+
+
+图1　系统示意图
+考虑图1所示作平面运动的力学系统。CX0Y0是惯性坐标系,而OXY是描述梁伸展运动和变形运动的固联于中心刚体O点的动坐标系。然后依据全补偿原则设计补偿环节传递函数,补偿环节结构简单,容易实现。进而考察一类非线性伺服系统对象,研究使用神经网络模型实现对象逆动态模型的在线辩识和控制,在实验室条件下进行了神经网络伺服系统补偿控制的实验研究。设Q为梁上任意点,在梁未变形状态Q点在动坐标系中的坐标为(x,0),在梁变形状态Q点在动坐标系中的坐标为(X(x,t),Y(x,t)),梁的中轴线在Q点的切线与OX轴夹角为θ(x,t)。首先,用神经网络方法建立起扰动力矩的数学模型,与以前的分段线性模型和常值型相比,更能够真实反映扰动力矩的变化过程。
+则Q点向径为
+
+Q点的绝对速度为
+
+Q点的绝对加速度为
+
+梁对固定点C的动量矩为
+
+其中ρ为梁的密度,A为横截面面积。u2(k)为网络逼近输出,以实线表示。M(x,t),P(x,t),S(x,t)分别是梁的弯矩、轴向力和剪力,连界条件为
+
+式中F(t)为梁的伸展驱动力。
+容易验证,当Mc(t)=0,F(t)=0时系统运动方程有如下特解:
+
+该特解表示的运动是中心刚体不转动,梁无横向变形地等速伸展或收缩。
+　　使用启发式随机训练算法的在线训练误差曲线如图6(e)所示。
+　　2)慢变常值模型,即认为摩擦力矩在一定范围内是常值。
+4　结　论
+　　可定轴转动的中心刚体和安装在其上柔性附件组成一个刚柔耦合系统。假设附件为有限变形梁,则系统的运动微分程是非线性的。如果中心刚体的控制力矩、附件的驱动力和中心刚体初始角速度均为零,那么当梁等速伸展或收缩时,其横向非线性振动是稳定的。反馈误差学习控制结构如图3所示

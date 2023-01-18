@@ -1,0 +1,30 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第10期 Vol.19 No.10 1999
+
+
+
+JDK 1.1的多语种支持
+路骏
+　　JDK 1.1的改变主要影响了三个包：
+　　Java.util, 增加Locale类。
+作者单位：太原重型机械学院系统仿真与计算机应用研究所　山西.太原（030024）
+参考文献
+［1］　王宏刚，徐玉斌，曾建潮. Wizcon工业监控软件及应用. 1998年全国（第四届）工业控制系统应用学术会议论文集. 北京：工业出版社，1998
+收稿日期:1999-05-16(修改稿)
+。但并不提供实际的局域化操作。如果没有指定一个Locale, JDK1.1会从环境中提取缺省的Locale(us-en)。
+　　java.io 中所有的类，它们用InputStream和OutputStream流工作，都增加了相应的Reader和Writer字符流类。新增的Reader和Writer除了处理16位的国际码特性以外，和其他字节流的工作是一样的。
+徐玉斌　硕士，副教授。在工作表中放置WizproClient控件（Wizcon提供），并在WizproClient控件的SignalShut事件中填写代码：
+　　′添加下列代码确保Wizcon退出时退出Excel
+Private sub WizproClient1―SignalShut()
+Application.quit
+End sub
+′下列代码关闭Excel与用户的交互功能
+Private Sub Workbook―Open()
+Application.ActiveWorkbook.Saved = True
+End Sub
+　　上面代码的作用是确保Wizcon退出后Excel也退出。其中，Wizcon为客户端、其它应用程序为服务器端（在此为Excel）。JDK 1.1提供了InputStreamReader和OutputWriter两个类，用来创建基于字节流的新的Reader和Writer对象，使Reader/Writer类同目前使用字节流的其他类兼容。
+　　java.txt 是一个完全意义上的新包。
+　　2) 在Excel电子表格中，进入VBA的设计模式。
+　　该方法具有简单、实用等特点，已经在北方某油田供水公司深井计算机监控系统中加以应用，取得了令用户满意的效果。
+作者单位：中科院安徽光机所

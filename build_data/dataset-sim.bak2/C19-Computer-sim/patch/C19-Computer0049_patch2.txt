@@ -1,0 +1,81 @@
+计算机应用
+Computer Applications
+1999年 第19卷 第7期  Vol.19 No.7 1999
+
+
+
+Solaris 系统动态链接库的建立及其程序设计接口
+曹广华　袁子龙　李鹏举
+
+　　摘　要　建立用户自己的动态链接库、使用动态链接程序设计接口是大型、高质量程序设计的一项重要技术。95835。它们都将到达的HTTP请求转发到不同的Web服务器,取得结果后,再返回给用户。
+　　关键词　动态链接，动态链接库，动态链接接口函数
+
+　　动态链接技术是计算机系统软件的一项重要技术，它采用动态代码共享技术，不但使整个系统资源得到有效使用，而且增强了应用程序的通用性、稳定性和可扩展性。在现代UNIX操作系统中，系统软件和大型应用软件都采用动态链接技术。本文以Sun工作站使用的Solaris操作系统为例分析其动态链接环境、动态链接库的建立及其使用方法。除此之外,画图(graph drawing)在电路布线、网络管理、软件工程、图形学、程序可视化、计算机辅助教学等领域中都有着众多的应用。通过系统提供的链接程序(link editor)、共享函数库(shared library)和运行时链接器(runtime linker)，我们可以方便地建立和运行动态可执行程序。
+1.1　Solaris系统的函数库
+　　Solaris操作系统在/usr/lib目录中提供各种函数库，包括各种静态库（lib<name>.a）和各种动态链接共享库（lib<name>.so），这些函数库作为缺省值在编译程序时被系统链接程序链接，根据不同情况生成静态链接或动态链接可执行程序。动态链接可执行程序在运行时还要由系统运行时链接程序动态调用所需要的动态链接共享库［1］。
+1.2　Solaris系统的链接程序
+　　Solaris系统的链接程序ld本质上是一个动态链接程序，即系统对目标码进行链接时，优先选择动态链接库。基于遗传算法的无向图的通用画图算法框架描述如下:
+　　
+　　
+其中Draw_Graph(G,X,Y)过程画出顶点的x坐标为X=(x1,x2,...,xn),顶点的y坐标为Y=(y1,y2,...,yn)的图G。
+　　在程序编译过程中，可以采用不同的选项控制系统链接程序的执行，从而得到静态链接可执行程序、动态链接可执行程序［2］或共享函数库。
+1.3　Solaris系统的运行时链接程序
+　　Solaris系统提供的运行时链接器是ld.so，它在动态可执行程序运行时被启动，以选择合适的共享库，控制动态可执行程序的运行［1］。
+　　
+2　建立动态链接库
+　　采用动态链接技术设计程序时，除了使用系统提供的标准动态链接库之外，建立用户自己的动态链接库、使用动态链接程序设计接口设计程序是一项十分重要的技术。
+　　Solaris系统提供的编译程序、链接程序、共享函数库和运行时链接程序为用户使用其标准动态链接库提供了支持，同时也允许用户自己建立动态链接库。Solaris1.x（SunOS4.1.x）和Solaris2.x（SunOS5.x）的链接程序通过生成PIC码(position independent code)使动态链接码作到最大限度的共享。Reingold将一个无向连通图看作是一个力学系统,算法的最终目的是要使力学系统达到平衡。下面我们以C语言为例，说明在Solaris系统中建立动态链接库的方法。当用户通过Virtual IP Address（即调度器的外部地址）访问服务器时,请求报文到达调度器,调度器以负载均衡方法从一组真实服务器选出一个,将报文的目标地址Virtual IP Address改写成选定服务器的地址,报文的目标端口改写成选定服务器的相应端口,最后将报文发送给选定的服务器。假设Web服务器的平均吞吐率为600KBytes/s,当服务器的数目升到15台时,才达到虚拟服务器的最大吞吐率。例如，下面的命令将版本号“libfoo.so.1”记录在了libfoo.so.1共享函数库中：
+% cc -K PIC -h libfoo.so.1 -o libfoo.so.1 f1.c f2.c f3.c
+　　这样，使用libfoo.so.1的程序在运行时首先链接该共享库。例如，下面的编译命令
+% cc -o prog prog.c -Ldir -lfoo
+　　使用了libfoo.so.1库，prog程序在运行时自动链接该共享库，即使/usr/lib中的libfoo.so符号链接指向了新版本的libfoo.so.2，这样就保证了依赖于libfoo.so.1程序的正常运行。
+2.3　新建动态链接库的使用
+　　新建的动态链接库可以放到/usr/lib目录中作为标准附加库使用［1］，也可以单独放到其它目录中使用。例如，新建的libmylib.so（可以是符号链接）放到/usr/lib目录中时，使用该库时编译命令如下：
+　　% cc prog.c -o prog -lmylib
+　　此时的动态链接库为标准附加库。将图整齐、美观地画出来,对于理解和分析模型都十分重要。015。接口函数包括建立动态链接dlopen()、返回共享码地址dlsym()、关闭动态链接dlclose()和动态链接错误处理dlerror()四个函数。下面举例说明他们的用法。
+　　设pnum()是当前目录中动态链接函数库libtest.so.1中的函数，其内容如下：
+/* libtest.so.1中 */
+#include <stdio.h>
+...
+void pnum(int num)
+{
+printf("num=%d\n",num);
+}
+...
+　　使用动态链接程序接口函数调用pnum()库函数的程序如下：
+#include <stdio.h>
+#include <dlfcn.h> 　　　　　　　　/* 必需包含该头文件 */
+main()
+{
+void *open_handle, 　　　　　　　　/*库句柄*/
+(*access_handle)(); 　　　　　　　　/*函数句柄*/
+/*装入共享库，获得库句柄 */
+open_handle=dlopen("./libtest.so.1",RTLD_LAZY);
+if(open_handle==NULL){
+printf("dlopen failed: %s\n",dlerror());
+exit(1);
+}
+/*获得pnum函数的句柄 */
+access_handle=(void(*)())dlsym(open_handle,"pnum");
+if(access_handle==NULL){
+printf("dlsym failed: %s\n",dlerror());
+exit(1);
+}
+/* 使用函数句柄调用pnum函数 */
+(*access_handle)(10);
+/* 关闭共享库，程序结束*/
+if(dlclose(open_handle)!=0){
+printf("dlclose failed: %s\n",dlerror());
+exit(1);
+}
+}
+　　该程序非常简单，主函数main直接调用共享库中的pnum函数打印输出一个整数10。若条件(1)不满足,则使式(1)中的第1个和式增加;若条件(2)不满足,则使式(1)中的第2个和式增加,因而画图问题转化为求式(1)的最小值点。
+　　 
+4　结束语
+　　建立和使用动态链接函数库是现代程序设计的重要技术，它对提高程序的灵活性和高效性都起到了非常重要的作用，特别对于大型应用程序的设计尤其重要，应引起我们足够的重视。1,服务器都是Pentium 166、32M内存和100M Intel EtherExpress网卡的PC,运行Linux操作系统,Web服务器是Apache 1。ippfvsadm管理程序通过setsockopt()函数将虚拟服务器的规则写入PFVS-table表中,通过/proc文件系统把PFVS-table表中的规则读出。
+　　作者单位：曹广华　袁子龙　李鹏举（大庆石油学院勘探系　黑龙江．安达151400）
+参考文献
+［1］　曹广华. Solaris 系统的动态链接环境与使用. 中国计算机报（光盘Info CD），1998；(4)
+［2］　SunSoft, Inc.SunOS5.5 Linker and Libraries Manual,Mountain View，1996
+［3］　Sun Microsystems Inc.SunOS5.5 Online Manual, 1995
+　　收稿日期:1999-01-12

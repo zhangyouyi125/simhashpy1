@@ -1,0 +1,139 @@
+土壤与环境
+SOIL AND ENVIRONMENTAL SCIENCES
+1999年 第8卷 第3期 Vol.8 No.3 1999
+
+
+
+不同硫肥品种的水稻肥效试验研究
+姚建武　刘国坚　周修冲
+　　摘要：在缺硫土壤上以石膏、硫磺、硫酸钾镁（SPM）作为硫源进行硫肥水稻试验，并设置与
+石膏等钙量、与SPM等镁量的石灰、MgCl2处理，结果显示，增施硫、钙、镁，水稻均有显著增产，
+其中硫的增产效果最好；在3个硫肥品种中，以施石膏增产最大、施硫磺效益最佳。讨论了施硫对
+水稻生长发育、营养状况及对稻谷品质的影响。
+　　关键词：硫肥；水稻；肥效
+　　中图分类号：S143.91；S147.5 文献标识码：A
+Studies on Effect of Different Varieties of Sulfur Fertilizer on Rice
+YAO Jian-wu，LIU Guo-jian，ZHOU Xiu-chong
+（Soil and Fertilizer Research Institute, Guangdong Academy of Agricultural Sciences, Guangzhou 510640, China）
+Abstract: The experiment with different sulfur fertilizers (gypsum, sulfur, potassium magnesium sulphate- SPM) 
+application to rice was carried out in the soil of sulfur deficiency. The results showed that application of sulfur, 
+calcium and magnesium to rice all have significance for yield increase, and sulfur is the best one. Among the 
+application of three kinds of sulfur fertilizers, the application of gypsum has the biggest yield increase and the 
+application of sulfur has the best benefit. This paper also discussed the effect of sulfur on rice growth, nutrition 
+conditions and quality.
+Key words: sulfur fertilizer; rice; fertilization effect
+　　1993～1995年在广东省缺硫土壤上进行了10造以石膏作为硫源的水稻施硫试验，结果水稻增
+产5.4％～8.7%，推荐硫肥（S）用量为30kg/hm2[1]。又有试验结果认为水稻施N和K2O的最佳经济施肥量为202.5kg/hm2 和
+141.0kg/hm2，折算比例为1∶0.70[2]。
+1　材料与方法
+　　试验在增城正果进行，共3造，即1996年早、晚造和1997年早造。
+　　关键词：水稻；氮；钾；施肥量；最佳配比
+　　中图分类号：S511.044；S147.22 文献标识码：A
+Study on Optimum Proportion of Nitrogen to Potassium for High-yield Rice
+LU Pu-xiang，LUO Lian-xiang，LUO Bo-sheng，ZHANG Mei-xing，YUAN Cai-ting
+（Guangdong Institute of Eco-environmental and Soil Sciences，Guangzhou 510650，China）
+Abstract：In this paper, we work out a forecast equation for aim-yield of rice, an equal-product-curve equation 
+under different application rates of N and K2O，and the optimum proportion equation for N and K2O. 
+According to these equations, we calculate the optimum application proportion of N to K2O for the field, which 
+capability yield is 6345 kg/hm2, under the aim yield 8589 kg/hm2. The proportion is 1∶1.22，namely, N 139.4 
+kg/hm2 and K2O 170.6 kg/hm2. It quite accords with practice .
+Key words：rice；nitrogen；potassium；application rates；optimum proportion
+　　水稻施肥技术研究已经有很多报道，但养分配比方面的研究很多还停留在一般对比试验上。考虑到石
+膏中含有钙质、SPM中含有镁素，因此设置与石膏等钙量的石灰处理、与SPM等镁量的MgCll2处理
+（表1）。
+表1　试验处理及肥料用量
+处理肥料用量/(kg/hm2)
+尿素磷铵KCl石灰石膏硫磺SPMMgCl2
+1.NPK30813122100000
+2.NPK+石灰(Ca)308131221740000
+3.NPK+石膏(Ca、S)3081312210167000
+4.NPK+硫磺(S)308131221003000
+5.NPK+SPM(S、Mg)3081311700001370
+6.NPK+MgCl2(Mg)3081312210000125
+
+石灰含Ca 230g/kg，含S 180g/kg；SPM含K2O 220g/kg，含S 220g/kg，含Mg 110g/kg；MgCl2含Mg 
+120g/kg
+　　供试土壤肥力中等，有机质23g/kg，pH 5.2，有效硫12mg/kg（低于硫临界值25mg/kg[1]），
+代换性镁56mg/kg（稍低于60mg/kg临界值[2]）。报酬递减律告诉我们，过高的集约投入与产出并不成正比，市场经济要求我们以
+合理的投入获得尽可能高的收益。
+　　试验小区面积27m2，3次重复，随机区组排列。尿素分3次施用，基肥占40%，分蘖肥占30%，幼
+穗分化肥占30%，其它肥料在施基肥时一次施用。试验采用当地优质稻种华更占、双野占等，田间
+管理与周围大田一致。
+2　结果与讨论
+2.1 施硫、钙、镁对水稻产量的影响及不同硫肥品种的增产效应
+　　试验结果表明，施用硫、钙、镁能明显地提高水稻产量（表2）。处理1仅施NPK，水稻平均产
+量5415kg/hm2。处理2增施钙质，平均产量5760kg/hm2，增产345kg，增产率6.4%；增产效果显著，
+这可能与石灰一方面中和土壤酸度，另一方面提供作物钙质营养有关。经显著性检验（2）式回归方程的F值为
+50065，极大地超过了极显著水准的临界F值8.75，因此以（2）式来表述氮钾配合施用的肥料效应
+是很恰当的。处理6施NPK＋Mg，平均产量
+5730kg/hm2，较NPK处理增产315kg，增产率5.8%。增施硫、镁稻谷增产效果均达到显著水平，其中
+以增施硫素的作用最大，这可能与土壤缺硫更甚有关。
+表2　硫肥品种试验稻谷产量及效益
+处理平均产量增产量增产率/%效益1kg硫增产稻谷/kg交互效应
+(kg/hm2)(元/hm2)(kg/hm2)
+1.NPK5415 a　　　　　
+2.NPK+石灰(Ca)5760 b3456.4570　　
+3.NPK+石膏(Ca、S)5925 c5109.461517-285
+4.NPK+硫磺(S)5865 bc4508.373515　
+5.NPK+SPM(S、Mg)5835 bc4207.863014-345
+6.NPK+MgCl2(Mg)5730 b3155.8375　　
+
+肥料价格(元/kg)：KCl 1.4，石灰0.8，石膏1.8，硫磺2.5，SPM1.4，MgCl21.6。氮钾最佳配比线与某目标产量下的氮钾等产线的交点坐标即
+为氮、钾的最佳经济施肥量。
+　　处理3施NPK＋石膏，其石膏中含有与处理2等量的钙质，与处理4等量的硫素，即是在处理2的
+基础上增施硫或在处理4的基础上增施钙，稻谷产量5925kg/hm2，较处理1，增施石膏增产
+510kg/hm2，增产率为9.4%。显然施用石膏所取得的增产包含了钙与硫的共同作用，但后两者的作
+用有轻重之分。比较处理2与处理3，增施硫素增产165kg/hm2，达到显著水平；比较处理3与处理
+4，增施钙质增产60kg/hm2，未达到显著水平，可见硫的作用大于钙。
+1　试验方法
+　　1991～1996年，我们在兴宁市福兴镇研究“水稻年产18t/hm2栽培技术规程”，进行了大量的
+基础调查，布置了大量的小区和大田试验；试验地段在丘陵垌田区，土质为砂泥质水稻肥田；试
+验品种多采用中迟熟高产杂交水稻良种。在处理5中，SPM的
+用量中含有与处理4等量的硫，以及与处理6等量的镁，也即是在处理4的基础上增施镁或在处理6
+的基础上增施硫；处理5所得的稻谷产量为5835kg/hm2；较NPK处理，增施SPM增产420kg/hm2，增产
+率为7.8%；但处理5所得的产量比处理4所得的产量还低，可见SPM中的硫与镁存在更严重的负交互
+效应，其值为-345kg/hm2。同时我们亦可以看出SPM中硫的增产作用大于镁。
+　　作为硫肥来源的3种肥料（石膏、硫磺、SPM）的增产都很明显，但三者之间的产量差异未达
+到显著水平。由于石膏含硫量低，施同等水平的硫，石膏用量最大，硫磺用量最少；施用硫磺每
+公顷只需75元，SPM需120元，石膏需300元，经济效益以硫磺最好。这3种硫肥每千克硫平均增产
+稻谷15kg。
+2.2 植株农艺性状的调查
+　　从表3我们可以看到：在NPK的基础上，水稻增施硫、钙、镁，其长势大都有所改善，至收获
+期构成产量的三要素（有效穗、实粒数、千粒重）均有不同程度的提高。
+　　对增施硫肥的3个处理在插秧后30d进行调查，结果表明，株高增加1.1～3.1cm，每棵苗数增
+加1.4～2.1条。收获时也做了调查，结果株高增加为0～1cm；每棵有效穗增加0.7～2.0条；每穗
+实粒数增加6.5～12.7粒；千粒重增加0.1～0.2g。
+2.3 施硫、钙、镁对水稻植株营养状况的影响
+　　水稻植株在施NPK的基础上增施硫、钙、镁，其营养状况大多数都有不同程度的提高。
+表1　不同氮钾施用量的水稻产量结果
+N(X1)K20(X2)产量(Y)N(X1)K20(X2)产量(Y)N(X1)K20(X2)产量(Y)
+21012085209024081601801809825
+18012081009027085051502109750
+1501508355240150100351202409315
+120180826521015094501202709780
+
+　　将上文中的目标产量Y 值以及B0、B1、B2、B3、B4、B5值代入（2）式即得该产量水平下的氮
+钾配比等产线方程：
+9.365X1+7.779X2-0.03383X12-0.01956X22+0.1495X1X2-6124=0　　（3）
+　　氮钾等产线在图形上的反映，就如图2中的弧形曲线所示。本文利用其中的部分数据来研究高产水稻氮、钾施用量
+的最佳配比。
+2　试验结果
+2.1 目标产量的确定
+　　我们栽种水稻时首先要知道水稻田的增产潜力，确定水稻目标产量，然后根据目标产量制订
+施肥方案。由于硫是构成蛋白质的成分之一，因此，稻谷含硫量提
+高，其中蛋白质含量也提高，这有利于稻谷品质的改善。从图1可见施肥产量Y与地力产量X之间的关系很密切；经统计分
+析，Y与X的相关系数r=0.9085，其回归方程为：
+Y =1844+1.063X　　（1）
+
+图1　施肥产量与地力产量的关系
+　　对（1）式作显著性检验，其F值为104.0，大大超过极显著水准的临界F值7.95。硫与钙及硫与镁存在明显的负交互效应。在3个硫肥品种
+（石膏、硫磺、SPM）中，以石膏增产最大，但硫磺、SPM亦有较大增产，但三者差异不显著；从
+经济效益上看，施用硫磺最佳。施硫能够增强水稻植株的长势，促进发育，提高植株的营养水
+平，改善稻谷品质。
+基金项目：国际硫肥研究所重点科技项目
+作者简介：姚建武(1966～)，男，副研究员。
+作者单位：广东省农科院土壤肥料研究所，广州 510640
+参考文献：
+　1　姚建武.水稻硫肥效应研究[J].广东农业科学，1997(1):23～25
+　2　彭克明.农业化学[M].北京：农业出版社，1980.191
+收稿日期：1998-12-07

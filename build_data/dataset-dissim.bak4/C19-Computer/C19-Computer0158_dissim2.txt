@@ -1,0 +1,56 @@
+微型电脑应用
+MICROCOMPUTER APPLICATIONS
+2000　Vol.16　No.1　P.62-63
+
+
+
+处理消息环中消息的一种安全方法
+刘华蓥　韩建民　王桂华
+摘　要：本文阐述了Windows下消息映射函数中检测并处理消息的一种安全方法，并给出了程序实例。余下的图幅为四分之一页、二分之一页的试题有七种排版模式，根据具体情况选择相应模式排版，不足一页按一页计。消息可以由用户发出，如移动鼠标；也可由系统发出，如建立一个窗口。Windows中的消息是以一定的规则排列起来，这就是消息环。消息环的结构是一个队列，即“先进先出”。在一般Windows程序中，都是由主函数来检测消息环中的消息，然后对它进行翻译，并将翻译过的消息发送到消息指定的窗口，处理完消息后控制从消息处理函数中返回，再取出消息环中的下一个消息，这就是windows编程中的消息映射机制。
+　　消息映射机制是windows编程的基本机制之一，它的优点是编程的结构化；但它也有缺点，就是在处理一个消息的过程中不能检测是否有其它的消息。例如在程序中有一段重复显示动画，或传输文件等时间比较长的操作，如果进程允许被用户中断或终止，进程就必须间或地检测并处理用户发来的消息。要解决此类问题，必须直接对消息环进行操作。本文论述了在Windows环境下，检测和处理消息环中消息的一种安全方法。
+二、消息的检测与发送
+　　1.消息的检测
+　　检测消息环的函数有两个：GetMessage和PeekMessage,这两个函数的区别有两点：(1)如果消息环中没有消息，GetMessage一直等到有消息才返回，而PeekMessage则直接返回，且返回值为0；(2)PeekMessage检测到WM_QUIT没有什么特殊反应，而GetMessage检测到WM_QUIT则返回值为0。
+　　由于在消息环中可能没有消息，使用GetMessage进程会进入循环等待消息的状态。所以用PeekMessage比较安全，PeekMessage用法如下：
+　　BOOL PeekMessage (1pMsg, hWnd, wMsgfilterMin, wMsgFilterMas, wRemoveMsg);
+　　该函数的功能是检测发送给hWnd窗口并且值在wRsgFilterMin和wMsgFilterMax之间的消息，如有，则将消息放入lpMsg指向的MSG结构中。根据试题总数进行循环，完成自动组卷。它不仅使教师从繁重的组卷工作中解放出来，更重要的是易于实现教考分离，促进教学质量的提高。如果hWnd为NULL，则检测属于本应用程序的所有窗口的消息，如wMsgFilterMin和wMsgFilterMax都为0，则检测发送给指定窗口的所有消息。
+　　题库选择目前最流行的可视化编程语言Visual Basic 6.o进行编程，使用OLE控件，可以同步将与Access数据库连接Auto CAD图形试题在VB程序中显示。关键在于图形试题的存储格式是否合理，题库的查询、维护是否方便，自动组卷能否满足规定条件，排版打印是否符合要求等，对这些问题我们在题库的开发过程中进行了较为深入的研究和探讨。这就使工程制图试题库的设计和开发有其特殊性，不同于一般以文字为主的试题库。
+三、处理消息的安全方法
+　　为了安全检测和处理消息环中的消息，需注意以下几点：
+　　首先，在消息环中可能有很多消息，所以检测消息时应一直检测下去直到没有消息为止。
+　　其次，如果在处理本消息过程中又做了关闭本程序窗口的操作，若不滤掉关闭窗口的消息直接发送出去，而DispatchMessage语句本身又不在函数的末尾，则会导致内存渗漏，窗口关闭了，但程序还在内存中，且无法再对它进行操作。所有试卷模型放在同一文件中，同一类型的模型放在一起。但点阵图形所占存储空间比矢量图大得多，上千道试题的图形如果采用点阵格式必将占居庞大的存储空间，使运行速度降低；再者点阵图形无法修改，题库只能设计成封闭型，给题库的维护和使用带不不便。解决办法是设置一个布尔变量，若该布尔变量为真则表示正在处理本消息。在函数首对此布尔变量进行检测，如为真则直接返回；否则设置为真，处理此消息后在函数尾将它设置为假。题库的维护和使用都很方便 。也可将试题特征、难易程度、优先权设置为“无”按试题章节查询浏览库。
+　　void D1View::OnEditUndo0
+{//IsEditUndo 在头文件中的C1View类中定义为BOOL型
+//如IsEditUndo为真，表示正在处理ID_EDIT_UNDO,则不执行任何操作，直接返回
+if(IsEditUndo)return;
+//将IsEditUndo设置为真，表示正在处理ID_EDIT_UNDO
+IsEditUndo=TRUE；
+MSG msg1
+MSG* msg=&msg1;
+BOOL bb,bbb;
+　　　……
+do{ bb=::PeekMessage(msg,NULL,O,O,PM_REMOVE);
+　　bbb=FALSE;
+　　//接收到此消息证明用户选择了系统菜单的关闭窗口的命令
+if(msgmessage==WM_SYSCOMMAND)&&(msgwParm==SC_CLOSE)
+{bbb=TRUE;goto eee;}
+//接收到此消息证明用户选择了File/Exit命令
+else if ((msgmessage==WM_COMMAND)&&(msgwParam==ID_APP_EXIT))
+{bbb=TRUE;goto eee;}
+//接收到此消息证明用户在窗口的右上角的叉号上单击了一下
+else if ((msgmessage==WM_NCLBUTTONDOWN)&&(msgwParam==HTCLOSE))
+{bbb=TRUE;goto eee;}
+else
+{if(::TranslateAccelerator(m_hWnd,AccelTable,msg)==0)
+　　{　::TranslateMessage(msg);
+　　　 ::DispatchMessage(msg);}}}while(bb);
+　　　……
+//将IsEditUndo设置为假，表示已处理完ID_EDIT_UND
+IsEditUndo=FALSE;
+eee:if(bbb==TRUE)
+　　{::TranslateMessage(msg);
+　　 ::DispatchMessage(msg);}}
+五、结束语
+　　消息映射机制是Windows下应用程序的重要组成部分，本文论述了Windows下应用程序开发中对消息进行检测和处理的一种安全方法。在实际应用中，具有一定的普遍意义。■
+作者单位：刘华蓥(大庆石油学院计算机系 安达 151400)
+收稿日期：1999-07-12

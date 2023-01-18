@@ -1,0 +1,105 @@
+以RMAX作为优化准则，可使我们在一开始不用考虑卫星的轨道高度H，当RMAX确定后，由(7)式和(8)式就可以求出相应的轨道高度H宇航学报
+JOURNAL OF ASTRONAUTICS 
+1999年　第20卷　第4期　vol20　No.4　1999
+
+
+
+
+玫瑰花天蝎座的优化设计方法
+白鹤峰　任萱
+　　摘　要　玫瑰星座是一种均匀分布的星座，常用于全球连续覆盖。本文对玫瑰星座的基本理论进行了论述，提出了玫瑰星座用于实现全球一重连续覆盖时的优化方法。用本文提出的方法对总数多达300的玫瑰星座进行了优化计算并了计算结果。
+命题1：球面上不相互重合的N个点将球面划分为2N-4个不相互重叠的球面三角形。。受其启示，在本文中将提出另一种优化方法，该方法较Ballard的方法更为简洁、可靠和易行，并能对优化过程中的多种进行处理。本文的方法更适于卫星数目较大的星座的优化计算，而这正是现在的航天任务所亟需的，用本文的方法对卫星数目多达300的玫瑰星座进行了优化计算并给出结果。
+2　基本概念
+　　玫瑰星座用标志码(N,P,m)β来标记，其中N为卫星总数，P为轨道面数目，m=M/S用以确定卫星的初始相位，S=N/P为每个轨道面内的卫星数目，M可在0，1，…，N-1间取值，β为轨道面相对于参考平面(通常为赤道平面)的轨道倾角。星座中各卫星依次以i=0,1,…，N-1标记，初始时刻第i颗卫星在天球上的位置可由以下三个量确定：
+αi=2πi/P,i=0,…,N-1　　　　　　　　　　　　　　(1)
+βi=β　　　　　　　　　　　　　　　　　　　　　　(2)
+γi0=mαi　　　　　　　　　　　　　　　　　　　　　　　　　　(3)
+其中，αi为升交点钟赤经，βi为相对于参考平面的轨道倾角，γi0为初始相位，它是初始时刻从升交点沿卫星路径至卫星之间的地心夹角。
+　　360°是Rmax变化的周期，但通常不是最小周期。
+
+图1　标志码为(5，5，1)∶β=45°的玫瑰星座
+3　优化准则
+　　在设计全球连续覆盖星座时，可以不用考虑地球的转动。首先预测一下地面观测者与圆轨道卫星的空间几何关系，若轨道高度为H，卫星至地面观测者之间的球面大圆弧为R，地球的平均半径为RE，则地面观测者至卫星的观测仰角与R满足
+　　　　　　　　　　　　(6)
+　　可见，R越小，越大。
+　　增大移动距离AB可以提高角度测量的精度；但会增加机床导轨误差的影响。
+5　数值仿真和物理仿真实验
+　　用变切换平面的变结构控制算法进行姿态机动的数值仿真。就整个星座而言，星下点仍然是最“好”的点，如果将球面按各卫星的星下点分解为互不重叠的有效三角形，则有效三角形的外接圆圆心是局域最“差”点，而半径最大的外接圆圆心是全球最“差”点，该点距其最近星下点的球面大圆弧R取最大值Rmax，它等于该外接圆的半径。将一个轨道周期内Rmax的最大值可记为。
+　　主题词　液体晃动　边界元法　FLIR边界元方法
+THE ALE BOUNDARY ELEMENT METHODS IN 
+SOLVING NONLINEAR SHOSHING PROBLEMS
+Yue Baozeng　Wang Zhaolin　Kuang Jinlu
+(Department of Engineering Mechanics,Tsinghua Univerity,Beijing*100084*China)
+　　Abstract　The ALE(Arbitrary Lagrange-Euler)boundary element method is used for dealing with nonlinear sloshing problem(nonlinear oscillations of a liquid in a container subjected to forced oscillation).The ALE boundary element methods is derived by applying the idea of ALE finite element method.The dynamic boundary condition is redused to a weighted residual equation by employing the Galerkin nethod.Due to the nonlinearity of the problem,a general corrective procedure is used for the numerical analysis.The system equation is discretized by the use of Newmark Method timewise and the predict-multi corrective steps method is used in iteration procedure.At last,computation example and computed result is given.
+　　Key words　Fluid sloshing　Boundary element method　ALE boundary element method
+　1　引言
+　　液体的晃动问题在航天、航空、大型化工设备等许多方面都有研究的背景。
+　　玫瑰星座的优化，就是在卫星总数N一定时，选择标志码(N，P，m)∶β中的P、m和β使RMAX最小。。
+4　相关的表述与命题
+　　首先给出有几个相关的定义和命题。
+　　利斯涅　　星座　覆盖　优化
+THE OPTIMAL DESIGN METHOD FOR 
+ROSETTE CONSTELLATIONS
+Ba Hepeng
+(Beijing Institute of Tracning @ Telecommunication Technique . Beijing . 100094)
+Ren Xuan
+(National University of Defense  . Changsha . 410073)
+　　Abstract　For the even deployment of statellites,rosette constellations are usually used for continuous whole earth coverage.In this paper,the theory are discussed and an optimization method is proposed for designing rosette constellation which can offer one tuple whole earth covergge. this method,rosette constellations with satellites up to 300 are optimized and the result is list.
+　　Key words　Satellite Constellations Coverage Optimization
+1　开场白
+　　玫瑰星座因其在天球上的投影象一朵盛开的玫瑰而得名，星座中各卫星均匀分布，通常采用圆轨道，较适用于全球连续覆盖。
+　　球面上所有有效三角形将不相互重叠的对该球面覆盖一次。
+定义1：设球面上不相互的N个点，如果一个由球面上某三个点确定的球面三角形的外接圆内不包括其它任何点，则称此球面三角形为有效三角形。例如，玫瑰星座优化时常常会碰到有四颗或更多颗卫星的星下点的纬度相同而经度不同，这时的这些卫星相互间是不重合的，但它们是共面的。全球连续一重覆盖的圆轨道星座的最少卫星数目为5，文献［1］给出了N=5～15的最优玫瑰星座，在此仅重新给出N=10的情况。
+　　证明：由拓扑学的知识［2］我们知道球面的Euler数为2，即
+v-e+f=2　　　　　　　　　　　　　　　　　(9)
+其中，v为多面体的顶点数，e为多面体的边数，f为多面体的面数。现在已知
+v=N
+　 f=2N-4
+则由(9)式可得
+e=3N-6
+5　计算方法
+　　球面上任意不重合的三点可将球面划分为两个球面三角形，给球面三角形定义方向则可区别这两个球面三角形。
+　　如果出现这种情况，则该星座在实际的航天任务中是不可采用的，因而优化时应先判断待优化的玫瑰星座中的卫星是否会在某一时刻重合，如果会重合则该玫瑰星座就应剔除出优化的范围。如图2所示，球面上包含细点的球面三角形为i→j→k→i，而球面的其余部分是球面三角形k→j→i→k，分别为球面三角形()和()。相应的，()的三条有方向的边就是和。
+
+图2　球面三角形(ijk)→
+　　若()三个顶点的单位地心矢径分别为和，则其外接圆圆心的单位地心矢径与外接圆半径Rijk可由以下方法求得
+　　　　　　　　　　　　　　　　(10)
+　　　　　　　　　　　　　　　　(11)
+　　　　　　　　　　　　　　(12)
+　　　　　　　(13)
+　　如果对于球面上N个点中与点i、j、k都不重合的任意一点1(单位地心矢径为)都满足下式
+　　　　　　　　　　　　　　　(14)
+则(ijk)→是有效三角形。对球面上所有2N-4个有效三角形求Rijk的最大应该
+　　　　　　　　　　　　　　　　(15)
+　　在一个轨道周期内，求Rmax的最大应该
+　　　　　　　　　　　　　　　(16)
+　　χ=0°时，标志码为(5，5，1)　∶β=45°的玫瑰星座的星下点对球面的有效三解形分解如图3所示，有效三角形为和。
+
+图3　球面的有效三角形分解
+6　星座优化时的注意问题
+6.1　玫瑰星座的优化周期
+　　Rmax是随时变相角χ周期变化的。
+　　定义2：Rmax值的最小变化周期称为玫瑰星座的优化周期。卫星在t时刻的相位为
+γi(t)=γi0+χ(t)　　　　　　　　　　　　　　　(4)
+χ(t)称为时变相角(time-varing phase angle)，若初始时刻为t0，卫星轨道周期为T，则
+χ(t)=2π(t-t0)/T　　　　　　　　　　　　　　　(5)
+　　图1是标志码为(5，5，1)∶β=45°的玫瑰星座的俯视图。如果两个星座的标志码(N,P,m)∶β中N、P和m相同，而仅仅β不同，则这两个玫瑰星座的优化周期相同。玫瑰星座(5，5，1)∶β=43.66°是N=5时的最优星座，图4为该星座的Rmax随时变相角χ的变化曲线，由图可知(5，5，1)∶β这一类星座的优化周期为36°。当卫星数目更多时，优化周期将更小。可见，在优化周期内求Rmax的最大值，比在360°范围内求Rmax的最大值将大大减少计算量。
+
+图4　Rmax随χ的变化曲线
+6.2　玫瑰星座优化时的
+　　以下两种异常情况在星座优化时经常遇到，必须予以讨论。。按照右手法则，球面三角形的方向由其三个顶点的循环顺序定义为由球心指向该球面三角形的外接圆圆心。。
+　　异常情况二：球面上多方位(三点以上)共面。
+　　通常，球面上不重合的四个点是不共面的，但也有少数时刻会发生球面上四点或更多的点共面。
+　　将有效三角形的边称为有效边，则有如下命题。对于球面上多点共面异常情况的处理需引入有效多边形的概念。
+定义3：设球面上有不相互重合的N个点，如果有多点(大于3)共面并且由这些点组成的球面多边形的外接圆内不包括其它任何点，则称此球面多边形是有效多边形。一般而言，越大对航天任务的完成越有利，因此不妨认为地面上距星下点越近的点越“好”。球面多边形也具有方向，其方向的定义与球面三角形方向揎义类似。。例如，玫瑰星座(20，20，4)∶β在初始时刻卫星序号为i=4、9、14、19的四颗卫星位于同一纬线上，此时四点共面。
+7　计算结果
+　　用本文方法可得以下计算结果，其中χopt是最小优化周期，χmax是Rmax=RMAX时χ的取值。
+命题2：如果球面上不相互重合的N个点将球面划分为2N-4个不相互重叠的有效三角形，则球面上共有3N-6条有效边。参数限制［5］
+α1(k)∈［1.4331,　1.9974］
+α2(k)∈［-0.9999,　-0.5134］
+β0(k)∈［0.003,　0.65］
+参数之和限制
+α1(k)+α2(k)∈［0.920,　0.995］
+2.2.3　线性反馈控制
+uL(k)=-(L1α1(k)y(k)+L2α2(k)y(k-1))/β0(k)
+L1,L2是小于1的正数

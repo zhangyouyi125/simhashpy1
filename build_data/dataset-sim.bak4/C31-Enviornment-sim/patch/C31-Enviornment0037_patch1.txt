@@ -1,0 +1,95 @@
+产业与环境
+Lndustry and Environment
+1998年 第20卷 第3期科技期刊
+
+加拿大能源管道协会(CEPA)
+会员公司的管道应急
+Canadian Energy Pipeline Association,1650-801 6th Avenue South West,Calgary,Alberta,T2P 3W2,Canada
+摘　要
+　　加拿大能源管道协会会员公司通过其设计、建设和缓解实践，前瞻性地解决了管道完整性。本文讨论了与泄漏和断裂检测、故障部位关闭与隔离以及应急准备有关的会员公司程序。近十年来，应急已经从出现紧急情况时由管道操作人员实施的纯技术功能演变成一个在各公司内部有详细记载而且与潜在受影响社区一体化的过程。一般而言，嗜温菌最适合的温度为30～40℃，嗜热菌发酵最适合温度是45～60℃[17, 20, 24]。1996年，这个重要运输环节把300多亿元(加元，下同)产品交给国内市场和出口市场。我们直接雇用9000多人，每年缴纳财产税超过2。这种情况也只有在天然肥力较高或能施用足量肥料的土壤中才可能实现。
+　　1995年，国家能源局(NEB)推出了对应力腐蚀开裂(SCC)的公开质询。NEB在1996年12月公布了它的质询报告。它包括27条SCC管理建议。
+　　该协会准备代表其会员公司向国家能源局呈文，以论述SCC的所有方面问题。该呈文包括CEPA会员公司应急实践的描述。这份呈文再现如下。
+　　CEPA会员公司通过谨慎的设计、建设和缓解实践，前瞻性地解决了管道完整性。它们把应急视为当一个服务事故发生时，无论其原因如何，都要采用的一种措施。以下将按照泄漏和断裂检测、故障部位关闭与隔离以及应急准备来讨论CEPA会员公司实践。
+泄漏和断裂检测
+　　CEPA会员公司实施各种方法来防止各自的管道系统发生泄漏或断裂。这些方法包括按照工业标准进行设计与建设，阴极保护，和广泛的状况监测与缓解计划，如SCC整体性管理计划。在出现服务性泄漏或断裂时，快速检测将减少油或气的逸散量，从而减少对公众和环境的后果。
+　　CEPA会员公司也使用各种各样的方法来检测其管线沿途的服务性泄漏或断裂。各种方法相互补充，形成一个能确认油管道和气管道上各种各样的泄漏规模与断裂的检测体系。输送原油与石油产品的CEPA会员公司遵守它们协助制订的“推荐的油管道系统泄漏检测实践”(附录E，CSA-Z662-94)。基本泄漏检测方法是：
+　　◆监控与数据采集系统(SCADA)；
+　　◆计算机为基础的管道监测系统；
+　　◆空中/地面管线巡查；
+　　◆第三方报告
+　　◆公司职员进行的检查。
+　　监控与数据采集(SCADA)系统
+　　管线沿途的关键点以及压缩机和泵站的仪器化测量了诸如服务流体流量、压力和温度等参数。这种数据由计算机采集，在中央控制中心显示，并由控制中心操作员不断监测。操作员能评估这些数据中的无规则性，这些无规则性可以表征为泄漏或断裂，且必要时可启动应急程序。在堆肥的前期，通气主要是提供微生物O2以降解有机物，在堆肥的后期，则应加大通气量，以冷却堆肥及带走水分，达到堆肥体积、重量减少的目的[21]。该模式把这种信息与该管道构型的模式结合起来，计算出能模仿真实管道实际液压行为的参数值。一旦有管道泄漏发生，该模式就再也不会与SCADA数据保持一致。此时，控制中心操作员将遵照一个短程序确定是误报警还是有实际泄漏。若这种评估确定有泄漏，则关闭管道，并派遣缓解人员前往泄漏或断裂部位。
+　　空中/地面管线巡查
+　　管道公司职员用飞机、步行或驱车执行管道通行权目视检查。他们监测土工问题通行权、暴露的管道和第三方引起的侵害。他们也寻找那些太小而无法用其它手段检测的泄漏。这些检查因地形、巡查方法、人口密度和管道缓解历史而异。
+　　第三方报告
+　　管道公司进行的道路交叉处管道标志和土地所有者意识计划有助于向那些可能发现管道泄漏的公众成员提供公司运营与缓解人员的联系电话号码。同时对各厂家、企业等排放的污水进行严格监控，达标排放，以尽量减低污染物在污泥中的含量。
+　　公司职员进行的检查
+　　管道公司缓解职员在其日常活动过程中不断监测管道是否有泄漏或异常状况。
+故障部的关闭和隔离
+　　管道隔离阀及其活化是检测到一处服务性泄漏或断裂之后应急过程的一个重要组成部分。用C/N比低的原料(15.7∶1)进行堆肥实验，结果是微生物对有机物的生物氧化过程中显示了严重的氮素损失。阀门间隔是按照CSA-Z622-94确定的，而且正比于住宅(等级位置)数目、易接近性和所输送流体的潜在危险。
+　　天然气管道
+　　输送低硫天然气的管道在主管线上和连接两条或多条主管线的跨越管线上有阀门。主管线阀门的间隔通常不大于30公里。大多数主管线阀门能够由压敏装置和气体/液压阀操作器自动启闭。一旦阀门任意一侧的压力下降到某一压力以下，该传感装置就会使阀操作器关闭断裂部位上游和下游的阀门。
+　　当检测到一处管道断裂时，立即派遣操作人员以确保该断裂处上游和下游主管线阀门已经关闭。然后，他们锁住这些阀门，以防止它们被无意打开。在管道断裂的情况下，压缩机站要停车，吸气阀和排气阀要关闭，瓦斯从站场自动放空。所有站旁通阀都将保持关闭状态。
+　　液体烃管道
+　　输送低蒸气压(LVP)液体如原油和炼制产品的管线在所有泵站、以及主要穿水管段两侧及其它位置都有阀门，以限制来自事故性排放的损害。最低限度，控制中心操作员可以关闭泵站阀门和以遥控方式隔离该管段。管道缓解人员可以手工关闭可能更近于泄漏处的其它阀门。主要危险涉及环境损害，而这些阀门的设置已证明能最大限度减少对可恢复水平的损害。
+　　输送高蒸气压(HVP)液体如丙烷和丁烷并穿过有2级人口密度地点的管道，其阀门彼此间隔不大于15公里，而且这些地点每一侧都有阀门。这些阀门是从控制中心远程操作的。在主要水穿管段两侧也都设置遥控阀门。由于这些流体释放期间有可能出现稠密或灰色飘浮的蒸气云，因而已经在一些战略性地点安装了阀门，以最大限度减少此类后果。
+　　管道隔离阀形成了管道公司对管道泄漏或断裂的反应能力的一个重要组成部分，而且对管道工业出色的安全记录做出了贡献。已经根据住宅数目、可接近性和所输送流体的潜在危险，制定了这些阀门的设置和启闭标准。CEPA认为，当前的管道关闭与隔离实践是以防止一切已知的对管道完整性的威胁。它们在利用有机物的过程中，有一部分转化成热量，堆层温度不断上升，1～2天后可以达到50～60℃。应急是一种旨在保护雇员与公众的健康和安全以及最大限度减少对财产和环境的影响的过程。由于管道的线性膨胀，每根管道都有许多应急计划来解决该管道不同位置的特定危险。
+　　近十年来，应急计划已经从管道工作人员在对紧急状况作出反应时实施的纯技术功能演变成一种在这些公司内部有详细记载并与当地社区一体化的过程。每个CEPA会员公司都制定了应急计划，以解决利用其管道输送的流体的释放所引起的特定危险。一份应急计划的4个主要组成部分是：规划，资源，培训与检试，和社区参与。
+　　规　划
+　　CEPA会员公司已经制定了综合性应急计划，旨在解决应急的一切方面，包括危险确认，环境敏感区域的指定，应急组织，角色与责任，应急程序，通知与报告程序，内部与外部资源，和沟通体系。这些计划是公司职员制定的，他们代表对紧急状况作出反应所涉及的一系列不同群体。该计划由公司专门指定的一名个人协调，而其实施则是公司管理层的责任。一些公司也征求当地社区主管部门的意见。这些计划每年至少更新一次。也已编制并广泛发行了应急概览，其中列出了应急合约方、政府机构、地方应急服务和工业应急联系人。
+　　资　源
+　　CEPA会员公司有设备和人员，能为一切可能受到其所输送流体类型影响的区域提供初步反应能力。
+作者单位：李艳霞　王敏健　王菊思　中国科学院生态环境研究中心环境水化学国家重点实验室；
+　　　　　李艳霞　陈同斌　中国科学院地理研究所农业与环境技术试验站，北京 100101
+参考文献
+1 高吉喜, 曹洪法, 舒伶民等. 我国城市固体废弃物现状及其处理处置规划探讨. 环境污染与防治, 1994, 16(4): 30～33
+2 余国瑞. 污泥脱水及处置. 化工给排水设计, 1993, 3: 21～23
+3 Wang M J. Land application of sewage sludge in China. The Science of the Total Environment, 1997, 197: 149～160
+4 杨林章, 毛景东. 污泥在农业上的合理应用. 土壤学进展, 1995, 23(6): 43～47
+5 杨朝晖, 扬霞. 污水处理厂的污泥处置. 环境科学与技术, 1995, 4: 40～42
+6 Trout T J, Smith J L, Mcwhorter D B. Environmental effects of land application of anaerobically digested municipal sewage sludge. Trans. ASAE, 1976, 19: 266～270
+7 Robert J R. Sludge reuse strategies changing. Environmental protection, 1981, 2(1): 30～40
+8 张福锁, 薛澄泽. 土壤与植物营养新进展. 北京: 农业出版社, 1994
+9 USEPA. Composting Facility Design. In: Composting of Municipal Wastewater Sludges, 1985. 3
+10 陈世和, 张所明. 城市垃圾堆肥原理与工艺. 上海：复旦大学出版社，1990
+11 陈世和. 城市生活垃圾堆肥化处理的微生物特性研究. 上海环境科学, 1989, 8: 17～21
+12 金家志, 邵凤君, 陆华. 肉鸡舍垫料堆肥化处理研究. 农业环境保护, 1997, 16(2): 65～67
+13 薛澄泽, 马云, 张增强等. 污泥制作堆肥及复合有机肥料的研究. 农业环境保护, 1997, 16(1): 11～15, 31
+14 Haug R. T. Engineering principles of sludge composting. J Water Pollut Control Fed, 1979, 51: 2189～2206
+15 Crombie G. Evolution of A Compost Plant. Biocycle, 1982, 23(6): 17～25
+16 Smith W H, Margolis Z P, Janonis B A. High attitude sludge composting. Biocycle, 1992, August: 68～71
+17 Kasper Jr V, Derr D A. Sludge composting and utilization: an economic analysis of the camden sludge composting facility. Final Report to USEPA, NJDEP. CCMUA. Rutgers State Univ., New Brunswick, N J, 1981. 342
+18 Miller F C, Finstein M S. Materials balance in the composting of wastewater sludge as affected by process control strategy. Journal Water Pollution Control Federation, 1985, 57(2): 127
+19 Jimenez E I, Garcia V P. Composting of domestic refuse and sewage sludge. I. evalution of temperature, pH, C/N ratio and cation-exchange capacity. Resources, Conservation and Recycling, 1991, 6: 45～60
+20 Golueke C G, Diaz L F. Low tech composting for small communities. Biocycle, 1990, November: 62～64,74
+21 Hoitink H A J, Keener H M, Krause C R. Key steps to successful composting. Biocycle, 1993, August: 30～33
+22 卢杰, 李成江, 薛文源. 污泥与城市垃圾混合堆肥技术. 城市环境与城市生态, 1992, 5(2): 17～20, 26
+23 何品晶, 邵立明, 陈绍伟. 城市垃圾与排水污泥混合堆肥配比的研究, 1994, 13(6): 21～23
+24 Pioncelot R P. A Scientific Examination of the Principles and Practice of Composting. Compost Science, 1974, 15(2): 24～31
+25 Nakasaki K, Yaguchi H, Sasaki Y, et al. Effects of pH control on composting of garbage. Waste Management & Research, 1993, 11: 117～125
+26 Wat P. The principal of composition and utilization in practise. Control Tech, 1975, 47(4): 741 
+27 Mackinley V L, Vestal J R. Physical and chemical correlates of microbial activity and biomass in composting municipal sewage sludge. Applied Environmental Microbiology, 1985, 50: 1395～1403
+收稿日期：1998-11-11
+。经营液体管道的公司将在拖车上贮备专用应急设备(溢油沾污围栏、小船、撇油器等)，放置在该管道系统沿途的战略性地点。这种设备补充了也可以在应急期间使用的标准公司设备。进一步的设备和专门知识也可通过溢油合作社和互助团体得到，这些单位同意调用它们的资源以期加强反应能力。这些性质的改善都是有利于增加雨水入渗、减少水土流失的重要机制。
+作者单位：华南农业大学资源环境学院，广州 510642
+参考文献
+1 莫测辉，吴启堂，周友平等. 城市污泥对作物种子发芽及幼苗生长影响的初步研究. 应用生态学报, 1997, 8(6): 645～649
+2 广东省科学院丘陵山区综合科学考察队. 广东山区水土流失及其治理. 广州. 广东科技出版社, 1991. 18, 66
+3 王礼先. 水土保持学. 北京. 中国林业出版社, 1995. 94～144, 229～290
+4 Sort X,Alcaniz J M. Contribution of sewage sludge to erosion control in the rehabilitation of limestone quarries. Land Degradation and Development, 1996, 7(1): 69～76
+5 Sopper W E. Utilisation of sewage sludge in the United States for mine land reclamation. In: Hall J E (ed). Alternative Uses for Sewage Sludge. Pergamon Press, 1989. 21～40
+6 周立祥, 胡霭堂, 戈乃分. 城市生活污泥农田利用对土壤肥力性状的影响. 土壤通报, 1994, 25(3): 126～129
+7 张增强, 薛澄泽. 污泥堆肥对几种木本植物生长响应的研究. 西北农业大学学报, 1995, 23(6): 47～51
+8 Werner W, Scherer W H, Reinartz F. Experiences of the usage of heavy amounts of sewage sludge for reclaiming opencast mining areas and amelioration of very steep and stony vineyards. In: Hall J E (de). Alternative Uses for Sewage Sludge. Pergamon Press, 1989. 71～82
+9 Bayes C D, Taylor C M A, Moffat A J. Sewage sludge utilisation in forestry: the UK research programme. In: Hall J E (de). Alternative Uses for Sewage Sludge. Pergamon Press, 1989. 115～138
+10 Nichols C G. US forestry uses of municipal sewage sludge. In: Hall J E (de). Alternative Uses for Sewage Sludge. Perrgamon Press, 1989. 155～166
+11 张科利, 细山田健三. 人工防蚀生草膜保持及改良土壤作用的研究. 土壤侵蚀与水土保持学报. 1997, 3(4): 19～24
+12 金凤鹤, 西崎泰, 山口逵明等. 沙漠绿化改造的基础研究。输送液体的CEPA会员公司提供关于管道系统沿途的土地、溪流、河流和湖泊上溢漏应急设备开发的培训。输送HVP液体或含硫气体的公司也提供关于使这些气体云点燃从而避免危害公众的培训。随着污泥施用量的增加和土壤中有机质含量的累积和提高，土壤的理化性质会发生明显的变化，表现为正相关关系，而水土流失量的变化则表现为负相关关系[4, 5]。检验是通过模拟实际紧急状况的“演习”完成的。这些演习也使职员能从实践中学习。CEPA会员公司通常使用的两种演习类型是桌面演习和现场演习。
+　　桌面演习通常在会议室环境中举行，能促进那些非常熟悉一个重大紧急事件中预期会发生的情况的参加者作出反应。这种演习类型是非正式的，没有真实紧急状况那样的压力和时间限制。参加者讨论一种准备好的紧急状况情景。
+3.2.6 加强污泥施用对生态环境影响的研究和监测 以防为主，防治结合，避免生态环境受到污染和破坏。
+　　现场演习是重大应急演习，旨在提供一种现实的应急模拟。重大演习在内容上类似 于桌面演习，所不同的是在类似于实际紧急状况那样的压力和时间限制下部署一切所需资源。
+　　演习之后，参加者要评议所取得的成绩，确认需改善的领域，和制订针对这些领域的行动计划。
+　　社区参与
+　　CEPA会员公司与社区官员和应急者(包括市政府、法规机构以及警察、消防队、救护队和互助团体)―道工作，以承担联合应急规划与培训。工艺过程中要控制的各种参数，就是那些对堆肥过程有影响的物理、化学和生物因素。这个过程还在继续演变，因为在广阔的管道路线沿途有很多机构在一道工作。
+　　紧急状况准备与反应已发展到这样的程度：所有CEPA会员公司都已经为任何管道紧急状况编制并检验了组织良好的应急计划。CEPA管道公司正聚焦于管道故障的预防与缓解，而且坚信当前的应急实践是有效的。

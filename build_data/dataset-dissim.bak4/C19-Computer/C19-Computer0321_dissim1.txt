@@ -1,0 +1,75 @@
+计算机应用
+Computer Applications
+1999年 第19卷 第7期  Vol.19 No.7 1999
+
+
+
+交换式以太网数据采集和分析软件
+刘　莉　叶高英
+
+　　摘　要　交换式以太网数据采集系统以交换式、高速、宽带以太网为基础,CAMAC系统直接与网络接口，避免了为单个计算机系统重写CAMAC驱动程序，保证了网络上CAMAC系统和主机之间较高的数据传输率。利用其中的数据采集和分析软件，用户不必写任何代码就可以建立一个完整的数据采集通道，获取并处理数据。
+　　关键词　DAS, CAMAC, 交换式,以太网
+
+　　目前，在聚变领域用于实验的数据采集系统(DAS)几乎都是分布式系统。这些系统［1,2,3,4,5］主要由计算机和瞬态记录器（通常为CAMAC系统）组成，CAMAC系统按层次原则设计,并分别与各计算机接口连接，各计算机连接组成局域网络。
+　　通常上述几步都会用到，但并不是必须的，ADO可以灵活地使用原型中的一部分进行工作。
+　　参数（Parameter）　Parameter是命令的附加可变部分，可以通过改变Parameter来发布具有相同功能的命令。
+　　交换式以太网数据采集系统（TDAS）［6］即是为克服这些困难而研制的。au―fname & " " rs。　　
+
+
+图1　交换式以太网数据采集系统
+　　这样的系统结构较之以往的分布式数据采集系统有了质的提高：建立了高速交换式以太网，保证了网络上CAMAC 系统和主机之间较高的数据传输率；CAMAC机箱直接连到网络上，避免了麻烦的专用CAMAC计算机接口及驱动问题，永久地消除了CAMAC系统对特定的计算机系统的依赖性。
+　　TDAS的数据采集和分析软件以模块数据系统MDS［7］为基础，结合交换式以太网数据采集系统的新特点进行了某些部分的重新设计和修改，主要集中在标准CAMAC模块的驱动程序、关于CAMAC模块操作的命令等。该软件系统运行在VAX/VMS操作系统中，由数据采集、驱动软件、绘图、数据管理等模块组成，很多应用环境作为DCL（Digital Command Language） 命令执行，很象VMS操作系统的一部分，非常容易使用，用户不必写任何代码，就可以建立一个包括数据采集、分析、显示的完整诊断数据采集通道。下面介绍其中主要的子系统。　
+1　TDAS数采和分析软件系统结构
+　　TDAS数采和分析软件系统结构如图2所示。其中，ESONE/DOE是以太网CAMAC控制器ECC 1365 MK Ⅲ提供的CAMAC子程序，用于访问ECC 1365模块，执行管理CAMAC模块的操作；，而CAMAC模块驱动程序即是调用ESONE/DOE子程序对CAMAC模块(包括CAMAC 硬件模块和非CAMAC 软件模块)进行初始化、存储等操作；CSV环境用于模块采集频率、通道名称等信息的设置，供初始化、存储模块所用；scanner负责在共享程序中寻找相应的模块支持子程序，并执行相应的初始化或存储动作；所有数据的存储借用MDS提供的数据库；利用IDL和PCL访问、分析和显示MDS数据库中的数据。
+
+
+图2　TDAS的数据采集和分析软件系统结构
+1．1　模块驱动软件
+　　TDAS的数据采集和分析软件系统中包括CAMAC 硬件模块和软件模块，驱动它们的程序都由三个子程序组成：“设置”子程序,提供显示用户交互输入采集频率、通道名称等信息的格式，由TDMS格式包支持；“初始化”子程序，负责解释“设置”子程序中记录的信息，并执行合适的初始化模块的功能；“存储”子程序，数字化结束后从模块存储中取回数据。
+　　CAMAC模块的驱动子程序与传统的分布式数据采集系统有很大不同，在TDAS结构中，CAMAC机箱通过以太网CAMAC控制器直接与网络相连，使得驱动CAMAC模块的程序与计算机系统无关。
+　　以L8212 CAMAC模块为例，典型的驱动子程序结构如图3所示。用FORTRAN语言编写的L8212初始化、存储、设置子程序的代码加起来不足300条语句，相比于CAMAC机箱与计算机系统直接相连，驱动CAMAC模块的程序代码要短得多。固定Property是ADO对象的一部分，并且始终有效；动态Property由数据提供者添加到ADO对象的Property集合中，仅当使用该数据提供者时才有效。　　
+
+
+图3　L8212模块驱动程序
+
+1．2　数据采集
+　　模块逻辑名　在TDAS的数据采集和分析软件系统中，所有模块是由VMS的逻辑名表示的。VMS所提供的逻辑名服务把一个名字与CAMAC模块的站号、机箱号联系起来。采用这种方法可以在系统中分配模块到任何位置，而在数据采集和分析软件系统中不必修改任何模块。通过一个解码程序翻译模块逻辑名得到模块位置。
+3.1　建立一个数据连接
+　　ADO采用Connection.Open或Recordset.Open方法建立连接，语法如下：
+　　connection.Open ConnectionString, UserID, Password, 
+　　OpenOptions
+　　recordset.Open Source, ActiveConnection, CursorType, 
+　　LockType, Options
+　　其中ConnectionString指定准备连接的数据源。在CSV环境中可以建立一个新的扫描表，也可以对已存在的扫描表进行增加、删除、修改、浏览模块的操作。
+　　CSVSCAN环境　当发出一个CSVSCAN命令时，扫描器就开始工作。一种是间接的，数据变化贮存在一个内部数据区中，当确定更新的时候才将数据变化写入记录集；另一种是直接的，在用户确定数据处理完成时直接把单个记录或成批把一系列记录的更新传送给数据源，通过CursorLocation属性和 LockType属性进行管理。与对象相关的事件说明了将要发生或已经发生的数据操作过程。当初始化过程完成后，执行存储过程，调用“store”子程序。重复上述过程完成多通道大规模采集任务。
+1．3　数据存储
+　　所有采集到的数据都存储在MDS提供的数据库中，该数据库包括数据库定义文件、放电序号确认文件和数据文件集合。数据库定义文件中含有MDS查找或产生数据文件的导航信息。一个数据库中的数据由三条信息确认：放电序号、数据项名称和位于数据库哪一级。
+　　在本系统中我们定义了一个名为HL1M的数据库，所采集的数据都存入该数据库中。
+1．4　数据分析和显示
+　　TDAS的数据采集和分析软件系统提供一个界面给两个绘图软件，IDL（Interactive Data Language）和GP4。具体语法如下：
+connection.Execute(CommandText, RecordsAffected, Options)
+command.Execute(RecordsAffected, Parameters, Options)
+recordset.Open Source, ActiveConnection, CursorType, 
+LockType, Options
+　　本例中这样来激活命令：
+Recordset rs = New ADODB.Recordset
+rs.Open cmd, conn, adOpenDymanic, adLockBatchOptimistic
+3.4　处理数据
+　　记录集是一组记录，Move、Find方法都可以在记录间移动，设置Bookmark属性也可以改变记录的位置，Filter属性用于过滤进行存取的记录，而Sort属性决定记录移动的次序。例如，为连接MS SQL Server中附带的ODBC数据库pubs，对象方法可写成：
+　　Connection.Open "DSN=pubs;uid=sa;pwd=pa;
+　　database=pubs"
+　　uid和pwd 关键词指定了Connection对象的UserID（用户号）和Password（口令）参数。 PCL（Plot Command Language）环境即是使用GP4为图解数据库中的数据提供的一个简单的显示工具。可用的绘图设备包括VT125、VT240、VT241、VT640、TK终端等。解决这个问题的方法就是OLE DB，这是一个系统级的数据库编程接口，它提供了一系列有关数据库管理系统服务的统一的COM（Component Object Model）接口。所有这些子程序遵从VMS子程序调用标准，只要坚持该标准，用户可用任何编程语言书写分析程序。
+2　意义
+　　交换式以太网数据采集系统成功地解决了大型数据采集系统中CAMAC与计算机耦合连接的瓶颈问题，为今后采集器与计算机系统之间的平衡发展铺平了道路，给未来的DAS技术创造了广阔的发展空间。其数据采集和分析软件系统有以下特点：用户可以通过产生包括他自己的模块支持子程序的更多的共享程序增加新模块到该数据采集和分析软件系统中；提供一套包括数据采集、分析和显示的完整工具，最大限度地减少了用户所要做的工作；许多应用环境作为DCL命令执行，很象是VMS操作系统的一部分，对于已经熟悉VMS操作系统的用户来说，可以大大缩短学习周期。
+　　刘　莉　硕士研究生。
+　　作者单位：刘　莉　叶高英（核工业西南物理研究院　四川．成都610041）
+参考文献
+［1］　M.Korten, B.Becks, R.Klein. TEXTOR Diagnostic Data Acquisition and Processing in a Distributed System Environment. IEEE Trans.Nucl.Sci.NS-39 (1992) 220
+［2］　L.Pacios, J.Guasp, J.Vega. A fully programmable data acquisiton system for the TJ-Ⅰand TJ-IU devices. Rev.Sci.Instr.,1992;63(10):4806
+［3］　N.R.Sauthoff et al. Conceptual design of the physics support portion of the CIT instrumentation and control system. Rev.Sci.Instr.,1998;59(8):1771
+［4］　J.A.Murphy, T.R.Gibney. PLT data acquisiton and analysis system. Rev.Sci.Instr.,1986;57(8):1986 
+［5］　P.D.Villers et al. The Data Acquisition and management system for the TdeV TOKAMAK. Proc.Intern.Conf.on Fusion Tech.,1992,2:1032
+［6］　Gaoying Ye et al. A Prototype Switched Ethernet Data
+Acquisition System. To be published in Fusion Engineering and Design,1999
+［7］　T.w.Fredian, J.A.Stillerman. MDS/MIT high-speed data-acquisition and analysis software system. Rev.Sci.Instr.,1986;57:1907 
+收稿日期:1999-04-04(修改稿)

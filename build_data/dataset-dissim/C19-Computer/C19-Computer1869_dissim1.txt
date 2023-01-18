@@ -1,0 +1,155 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000 Vol.19 No.3 P.43-45
+
+
+
+基于3层C/S结构的数据库管理系统的实现
+刘华蓥　韩建民　薛继伟
+　　摘　要：3层C/S结构的应用程序的组成及优点,说明了Delphi下开发3层C/S结构应用程序的方法。
+　　关键词：3层C/S结构 分布式数据库 ActiveXForm 组件
+　　客户/服务器计算机系统是20世纪90年代分布式处理的主流系统。传统C/S结构一般分为2层:客户端和服务器端。但随着应用系统的不断扩大,2层C/S结构表现出效率低下、维护困难、安全性差和伸缩性差等缺点。
+　　JNIEXPORT jint JNICALL Java_jMPI_Get_processor
+　　_name（JNIEnv env,jobject obj,jstring jname,jint jlen）
+　　｛
+　　　　char＊cName;
+　　　　jint＊jval;
+　　　　/＊Get string information＊/
+　　　　cName=（char＊）getJavaString（jName）;
+　　　/＊Call MPI routine＊/
+　　　jval=（jint）MPI_Get_processor_name（cName,jlen）;
+　　/＊Free memory＊/
+　　releaseJavaString（jName,cName）;
+　　return jval;
+　　2.在Java端,编写Java程序jMPI.java实现jMPI类。本文论述了3层C/S结构的组成及特点,并论述了一个基于3层C/S结构的数据库管理系统的设计方法。
+1 3层C/S结构
+　　3层C/S结构可分成3部分,其组成如图1。如Java Applet可以嵌在HTML主页中,由支持Java的浏览器自动下载和执行。通常实现用户界面,它提供了一个可视化接口,用来表示信息和收集数据,它只与应用服务器打交道,确保用户与应用服务器紧密结合。（2）应用服务器。
+　　Java是一种新的面向对象的编程语言,它只有简单、面向对象、解释执行、坚固性、安全性等特色。它响应用户发来的请求,执行某种业务任务。它具有以下主要特点:
+　　（1）通用性强,即适于TCP/IP网络,又适于MPP大规模并行系统;
+　　（2）系统规模小（约几兆字节）;
+　　（3）所有的现有并行机厂商都宣布支持MPI;
+　　（4）成熟度高;
+　　（5）使用简单,编程方便。（3）数据库服务器。实现数据的定义、维护、访问、更新以及管理,并响应应用服务器的数据请求。它的物理实现可以在某种数据库管理系统中,也可以是一个异种数据库的集合,这种数据库可以驻留在多种平台上。
+
+图1 3层C/S结构组成图
+
+　　3层C/S结构和2层C/S结构相比,优势主要表现在:（1）效率高。应用服务器减轻了客户端的负担,也降低了与数据库服务器的连接代价,从而实现真正的“瘦客户”。（2）易于维护。应用逻辑集中在中间层,因而,当应用逻辑变化时,仅需修改应用服务器,从而提高了可维护性,也增强了数据的一致性。（3）可伸缩性。3层结构强调的是逻辑意义而不是物理意义,它说明如何设计应用程序,而不是如何具体部署。
+　　本文将主要介绍怎样在MPI中提供对Java语言的支持,最后给出1个Java MPI应用程序的例子。
+表1 jMPI接口类中实现的接口方法
+分类本地方法名
+消息的发送和接收MPI_Send(),MPI_Recv(),MPI_sendrecv(),MPI_1send(),MPI_1recv(),
+MPI_Prob(),MPI_Wait(),MPI_Test(),MPI_Cancel
+用户自定义类型MPI_Type_contiguous(),MPI_Type_vector(),MPI_Type_hvector(),
+MPI_Type_indexed(),MPI_Type_hindexed(),MPI_Type_struct()
+使用用户自定义类型MPI_Type_commit(),MPI_Type_free(),MPI_Get_element(),
+MPI_Address(),MPI_Type_lb(),MPI_Type_ub()
+打包和解包MPI_Pack(),MPI_Unpack(),MPI_Pack_Size(),
+通信和组操作MPI_Group_size(),MPI_Group_rank(),MPI_Group_incl(),
+MPI_Group_excl(),MPI_Comm_size(),MPI_Comm_rank(),MPI_Comm_dup()
+环境管理MPI_Get_processor_name(),MPI_Wtime(),MPI_Init(),MPI_Finalize().
+MPI_Initialized(),MPI_Abort()
+错误信息处理MPI_Errhandler_create(),MPI_Errhandler_set,MPI_Errhandler_free(),
+MPI_Error_string()
+
+　　下面是用Java JNI编写jMPI类的过程。
+2.2 3层C/S应用程序的结构
+　　Delphi 4实现3层C/S结构的原理如图2。通过MPI,不同子任务间可以进行通信,从而达到并行计算的目的。在3层C/S结构下,几个客户有可能同时与1个应用服务器通讯,应用服务器实际上充当了1个网关的作用。
+
+图2 Delphi下实现3层C/S结构原理图
+　　客户程序通常包含二类模块:一类是窗体模块,它们为用户提供数据维护的界面;另一类是数据模块,它一般包括以下几类组件:（1）连接组件,负责连接应用服务器;（2）客户数据集组件,它一般从应用服务器接口获取数据;（3）数据源组件,负责连接数据集组件与数据控制组件。
+2.3 所涉及的组件
+　　（1）远程数据模块（REMOTE DATA MODULE）
+　　它与普通的数据模块有些相似,不同的是它可以作为COM服务器或CORBA服务器,让客户程序访问它的接口。它提供了IdataBroker接口,客户程序与应用服务器连接,就通过IdataBroker接口获得Iprovider接口。
+　　（2）提供器组件
+　　有二种提供器组件:Tprovider,Tdatasetprovider。
+  /**********文件名:test.java**********/
+  class test 
+  static public void main（String[]args）
+　　char buf[]=new char［128］;
+　　　　int i,j,id,np;
+　　　　Status stat;
+　　　　String host;
+　　　　　MPI.Init（args）;
+　　　　　host=MPI.Get_processor_name（）;
+　　　　　np=MPI.COMM_WORLD.Size（）;
+　　　　　id=MPI.COMM_WORLD.Rank（）;
+　　　　　System.out.println（″Process″+id+″/″+np+
+　　　　　　　″on″+host）;
+　　　　　MPI.Finalize（）;
+　　　　｝
+　　｝
+4 结束语
+　　Java与MPI的结合即能发挥Java语言可移植性强的优势,又能通过MPI充分利用网上的计算机资源,实现大型问题的网络并行计算。
+　　（3）客户数据集组件（TClientDataset）
+　　它是1个从Tdataset继承下来的组件,通常用于客户端。它最大的特点是不依赖BDE,但它需要1个动态链接库（即DBCLIENT.DLL）的支持。它支持诸如编辑、查询、浏览、修改、过滤等功能。由于TClientDataset在内存中建立了数据的本地副本,使数据操作的执行速度非常快。
+　　（4）MIDAS连接组件
+　　客户与应用服务器之间,可以根据选用通信协议的不同,使用不同的连接方式。Delphi 4.0提供了6种连接组件。分别是:
+　　TDCOMConnection按DCOM方式连接。不需要专门的运行期软件,但需安装DCOM95程序。
+　　TSOCKETConnection按TCP/IP方式连接。应用服务器必须运行1个专门的运行期软件SCKTSRVC.EXE或SCKTSRVER.EXE。SCKTSRVC.EXE只适合于Windows NT,可以作为1个服务器在后台运行。如Java Applet可以嵌在HTML主页中,由支持Java的浏览器自动下载和执行。应用服务器和客户端都必须运行1个运行期软件。
+　　TCORBAConnection按CORBA方式连接。需要ORB的支持。然而MPI只支持C、Fortran和C++语言的网络分布并行计算环境,这就存在MPI应用程序在不同系统之间的二进制兼容的问题。
+2.4 自定义应用服务器
+　　远程数据模块是应用服务器的核心部件,它提供了应用服务器和客户程序通信的接口。
+1 实现原理
+　　MPI系统使用非常简单,它提供给用户的只是一组库程序（libmpi.a,libampi.a,libmpich.a等）。
+　　要向接口中添加属性和方法,首先应打开类型库编辑器;利用工具栏上的New Method或New Property命令,加入新的方法或属性,并设置有关属性。因而可充分利用Internet网络上的现有计算机资源,进行网络并行计算解决大型问题。
+　　对于基于DCOM的远程数据模块来说,新的成员将出现在接口的实现单元和类型库的描述文件中。本文主要介绍如何实现Java语言的MPI。以下是一个简单的用C语言编写的例子:
+　　#include ″mpi.h″
+　　main（argc,argv）
+　　int argc;
+　　char ＊＊argv;
+　　｛
+　　　　　char message20;
+　　　　　int myrank;
+　　　　　MPI_Status status;
+
+　　　　　MPI_Init（&argc,&argv）;
+　　　　　MPI_Comm_rank（MPI_COMM_WORLD,&myrank）;
+　　　　　if（myrank==0）｛ /＊ code for process zero ＊/
+　　　　　　　　strcpy（message,″Hello,there″）;
+　　　　　　　　　　　MPI_Send（message,strlen（message）,
+　　　　　　　　　　　　　　　　　　　　　　MPI_CHAR,1,99,
+　　　　″MPI_COMM_WORLD）;
+　　　　｝else ｛　　　/＊code for process one＊/
+　　　　　　MPI_Recv（message,20,MPI_CHAR,0,99,
+　　　　　　　　　　　MPI_COMM_WORLD,&status）;
+　　　　　　printf（″received:%s：\n″,message）;
+　　　　｝
+　　　　MPI_Finalize（）;
+　　｝
+　　在本例中,进程0 （rank=0）向进程1（rank=1）发消息串“Hello there”,进程1从进程0收消息,消息由消息信封标识。
+　　（2）通过调用TClientDataset的属性和方法,间接调用Iprovider接口。因为大部分对Iprovider接口的调用已封装在TClientDataset的属性和方法中。
+　　（3）通过MIDAS的连接组件的Appserver属性可以获得应用服务器上的远程数据模块接口,通过此接口可以调用远程数据模块中的方法。
+3 教职工信息管理系统的设计与实现
+3.1 总体设计
+　　教职工信息管理系统实现了对教职工数据库的综合管理。主要完成对数据库的维护和查询,代码库、结构库及系统字典的维护,报表的打印等功能。程序员通过使用这些库中的库函数来编写MPI并行程序。对代码库及系统字典的维护,要实现分布式数据库的维护。系统中客户与应用服务器的连接采用DCOM协议。系统的软件层次结构如图3所示。
+
+图3 教职工管理系统结构图
+3.2 3层C/S结构设计
+　　1.创建数据库服务器
+　　数据库服务器采用Windows NT上的SQL Server,包含的库主要有:
+　　数据库:存储教工信息的所有数据库,包括教工基本信息表、工资表、培训出国情况表等。本文主要介绍如何实现Java语言的MPI。程序员通过使用这些库中的库函数来编写MPI并行程序。
+　　数据库目录字典:所有数据库及所在服务器的目录。
+　　代码库字典:所有代码库的目录。
+　　用户字典:有关用户的信息。
+　　数据库描述字典:所有数据库的描述信息,包含数据库与结构库的对应关系,各个数据库之间的关联关系。
+　　2.应用服务器的建立
+　　创建1个3层的C/S应用程序,应先创建应用服务器,然后注册或安装应用服务器,只有在应用服务器已注册并正常运行的情况下,才能创建客户程序。对于客户程序来说,既可以在设计期,也可以在运行期连接应用服务器。
+　　创建应用服务器时,首先创建1个新工程,在工程中,创建1个远程数据模块,在远程数据模块上添加所需组件,包括:（1）数据集组件;（2）提供器组件。提供器组件必须与1个数据集组件对应。添加完提供器组件后,在组件上单击右键,在弹出菜单中选择“Export from <name> in DataModule”,引出Iprovider接口在类型库中注册。然后编写代码,实现业务规则。最后保存、编译、注册或安装应用服务器。如果使用DCOM,TCP/IP作为通信协议,应用服务器就好象1个自动化服务器一样必须注册。如果服务器没使用DCOM,就必须安装有关运行期软件。
+2 具体实现
+　　jMPI接口类中必须实现表1中所列的本地方法。
+　　3.客户程序的建立
+　　本系统采用Browser/Server结构,即采用浏览器-Web服务器-应用服务器-数据库服务器的结构。Delphi 4.0提供了ActiveXForm,可以很容易地创建基于Browser/Server结构的“瘦客户”应用程序。
+张晓军（长沙国防科技大学计算机系410073）
+杨灿群（长沙国防科技大学计算机系410073）
+黄春（长沙国防科技大学计算机系410073）
+收稿日期：1999-09-20
+。在ActiveXForm中用程序创建主窗体,主窗体和其它窗体应该用一般的Form。然后编写代码,保存和编译工程,最后应该用Delphi的发布功能将其发布到Web服务器上。
+　　在3层体系结构中,客户程序至少需要1个TClientDataset组件,其作用是引用数据集。创建1个客户程序,首先新建1个工程,加入了1个数据模块。然后向数据模块中加入组件,包括:（1）连接组件,系统中选择TDCOMConnection组件,并设置它的ServerName属性,指定和连接应用服务器,可以从其下拉列表中选择应用服务器;（2）TClientDataset组件,设置其Remoteserver属性为指定的连接组件,设置其ProviderName属性指定应用服务器上的提供器组件,可从下拉列表中选择。这样,客户程序就可以通过Iprovider接口与应用服务器通信;（3）TdataSource组件,设置它的Dataset属性指定TClientDataset组件,连接数据集组件与用户界面的数据控制组件。
+　　本系统是在校园网的环境下开发的,采用分布式数据库系统。本系统的成功开发和应用,证明了在大型应用系统中,3层C/S结构具有效率高、易于维护、可靠性高等优点。
+刘华蓥（大庆石油学院计算机科学系151400）
+韩建民（大庆石油学院计算机科学系151400）
+薛继伟（大庆石油学院计算机科学系151400）
+参考文献
+1，赵立军,张曙光,唐旭章.用三层C/S结构实现数据库应用.计算机应用研究,1999;(2)
+2，郭庆林,陈海强,沈旭升.三层C/S的机理及在宾馆管理中的应用.计算机应用研究,1999;(4)
+收稿日期：1999-09-28

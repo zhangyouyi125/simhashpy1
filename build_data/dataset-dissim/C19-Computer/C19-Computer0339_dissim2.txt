@@ -1,0 +1,105 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第9期 Vol.19 No.9 1999
+
+
+
+一种实时过程控制中的数据挖掘算法研究
+杨学兵　刘胜军　蔡庆生
+　　摘　要　计算机在工业生产过程控制中的应用已十分广泛，因此这一领域的数据挖掘方法研究也具有十分重要的意义。本文将根据这一领域的特殊情况，提出一种实时有效的自动数据挖掘算法，以便使计算机能在实时过程控制中自动挖掘，并根据挖掘的结果进行趋势预测。
+　　关键词　数据挖掘，过程控制，序列模式
+A DATA MINING ALGORITHM IN REAL-TIME
+PROCESS CONTROL SYSTEM
+Yang Xuebing　Liu Shengjun　Cai Qingsheng
+Department of Computer Science, University of Science and Technology of China, Anhui.Hefei 230027
+　　Abstract　Computers are widely used in the field of real-time process control, and it′s very necessary to pay more attention to the research in this field. In this article, we′ll give an efficient mining algorithm in real-time data.
+　　Keywords　Data mining, Process control, Sequential pattern
+1　引言
+　　数据库中进行知识发现KDD(Knowledge Discovery in Database)，是目前人工智能研究中一个极富应用前景的新领域。在这一领域中，目前已有了大量的知识发现算法，大部分算法都能从数据库中发现有效的知识，由于算法的设计目标是从各种类型的大中型数据库中挖掘知识，具有一定的通用性，但算法效率较低，难以满足工业生产过程中的实时性要求，很难直接用于实时过程控制中。
+　　程序设计语言Visual Basic 5.0是一种功能非常完善的嵌入式智能工具，它能使你的编程工作取得事半功倍的效果，特别是VB 5.0的数据访问可以使用户的程序十分轻松方便地读取SQL Server 6.5数据库中的数据。
+3.2　系统软件的构成和功能
+　　在代理服务器这台计算机中需要安装如下软件：
+　　. Window NT4.0 Server版操作系统（附加 Pack 3包）。
+2　问题描述
+2.1　实时过程控制的特点
+　　与通常的数据库管理系统中的数据（如商场购物数据，银行储蓄、贷款数据等）相比，生产过程中产生的数据有着明显的特点，主要表现在以下几个方面：
+　　重复性　生产过程一般是一批一批地生产产品的，设备运转具有明显的周期性，若数据采集是按一定的时间间隔进行，则每周期采集的数据量是一定的。
+　　数据的准确性　生产过程中的数据是直接采集的不落地数据，因此数据准确性高，处理过程中不必考虑数据缺省等情况。
+　　杂音数据少　过程控制中考虑到成本问题，采集的信号一般都是经过精心选取的，因此对过程控制没有直接影响的信号通常是不会被采集的。而对于企业来讲，计费管理是尤为重要的，因为，目前单位或企业要想进入Internet都是向电信局租用X.25或DDN专线入网,其有效带宽从9600-128K不等，并且带宽越宽租用费越贵，还有如果让人们无限制地访问Internet必造成以下问题：
+　　企业网出口拥挤，数据传送速度变慢；
+　　使急需访问Internet用户得不到保障；
+　　费用大量增加。每个完整序列我们也称之为一个范例(Case)。
+　　设数据集D={Case1,Case2,．．．,Casen}，它表示一个已采集的范例的集合，Casei表示第i个周期所对应的范例，1≤i≤n，Casei={Sti1,Sti2,．．．,Stik}，k为一周期中共采集的状态数，Stih={st1,st2,．．．,stm}表示第i个范例序列中第h个项，1≤h≤k，st1,st2,．．．,stm为第i范例序列中h时刻采集的各状态值。
+2　系统设计原理
+　　Internet目前采用TCP/IP协议进行网络通信，在Internet网中的每一台计算机都必须拥有唯一的一个只属于自己的IP作为主机地址，这样所有Internet网上的计算机都可以通过这个IP地址找到这台主机与其通讯交换信息。S′本质上是D的一个投影，Si′={Sti1,Sti2,…,Stim}。
+　　本文介绍了一种与路由器无关的基于代理服务的计费思想，并已在一些单位正式运行，取得了很好效果。
+　　本算法的目的主要是从集合D中产生出集合S，再利用S来生成规则用以预测。针对这种计费的网络结构，我们用VB5.0开发的计费软件可以以多种方式统计出用户上网的数据量和费用。
+　　. 最低范例数(min―case―num),指用户给定的一个数，使得若数据集D中范例总数低于此数，则不产生任何规则。
+　　. 子序列（sub―sequence）,指范例序列中从第一个元素开始的一个连续元素构成的子集。
+　　. k子序列（k―sub―sequence）,指元素个数为k的子序列。第二种方式的计费是在代理服务的作用下对每个允许进入Internet网的用户进行统计然后打印出这些使用者的使用情况，该方式可以限制企业上网的人数，限制上网的功能，例如，只允许用户HTTP、FTP，而不能Oline交谈，Oline游戏。
+　　. 最低支持度(min―support),指用户给定的一个数，若子序列的支持度大于等于此数，则此子序列为频繁子序列。
+　　. 信任度(confidence),一个范例是从周期开始到周期结束的一个完整有序序列（按时间序），若存在这样一个序列，即St1,St2,…,Sti-->Stj,…,Stk,其中1≤i≤j≤k。信任度指此k子序列的支持度与i子序列St1,St2,…,Sti的支持度的比值。
+　　一个单位或企业的网络要想与Internet连接，可以采用两种连接方式，第一种方式，根据自己企业网中计算机数向ISP商申请IP，然后给每一台计算机都配置相应的IP，这样这个企业网中的计算机都可以上Internet，这种企业网络结构如图1所示。
+　　. 状态比较函数(compare)，根据具体领域而定义的一个判别两个范例序列中相应位置的两个状态值集是否相似的函数，通过此函数，可依次比较两序列中相应项是否均相似来判断两个序列是否相似，此函数返回值为-1，0或1，分别表示<，=，>。
+3　算法
+3.1　从集合D中生成集合S算法generate―S
+初始化：S={},D=目前已存在的所有Cases组成的集合,
+datacount=0　　　　　　　　　　　　　　　　　　　　//datacount用以标记D中的范例总数
+for all Case∈D do 　　　　　　　　　　　　　　　　　　　　　　//循环扫描所有例子一遍
+　if Case不在S中then　　　　　　　　　　　　　　　　　　　//如果此范例是首次出现，则
+　　将Cases变成Sx，将Sx中所有c置为0, 
+　　　　　　　　　　　　　　　　　　　　　　　　　//将此范例变成含有计数域c的新序列
+　　S=S U {Sx}　　　　　　　　　　　　　　　　　　　　　　　　　//并将其加入集合S中
+　fi
+　for all Si∈S do　　　　　　　　　　　　　　　　//循环检查S中的所有序列，并酌情调
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//整所有子序列的出现计数
+　　for all Si的子序列Subk do
+　　　if Subk是Case 的k子序列 then
+　　　　Si中第k项中的ck加1
+　　　fi
+　　od
+　od
+　datacount=datacount+1
+od
+3.2　实时增量更新及预测算法RTIUPA
+假设一周期采集数据为v次
+LOOP start直到机器设备停止生产
+　Stemp={},并等待一新周期开始,k=0
+　do while k<= v
+//依次读入一周期中采集的各状态值，并处理。
+　　第二种连接方式，向ISP商申请2个IP采用代理服务的方法，企业网的所有计算机都用自己定义的内部IP地址，当内部网的计算机想上Internet时，必须通过代理服务方式把内部IP转成正规的IP然后进入Inernet，如图4：
+
+
+图4
+　　在以上两种方式（图1、图4）中，第一种计费是对每台计算机的IP进行统计然后打印出各台计算机使用的情况，对使用者来讲所有Internet功能都能实现，没有限制。
+　　　fi
+　　fi
+　od
+　if Stemp不在S中then
+　　S = S U {Sx} 　　　　　　　　　　　　　　　　　　　　　　　　　//将新范例加入S中
+　fi
+　D=D U {Stemp}
+　datacount=datacount+1
+　LOOP continue
+3.3　DMRP算法
+　　if 首次运行 then
+　　　call generate―S
+　　else
+　　　call RTIUPA
+　　fi
+4　算法分析
+　　如果是首次运行，则需扫描数据库一次（调用generate―S），产生集合S，考虑到机器设备的重复性，集合S的元素数量应较少，因此算法执行时间主要是由数据库D的元素个数和每个序列的长度来决定，即时间复杂度约为（n×k）,n为D中例数，k为序列长度。
+　　RTRUPA算法是实时运行，算法效率主要由3.2程序中的两个for循环决定，这两个循环均依赖于S，而S一般较小，所以这两个效率很高，能满足实时性要求。
+注：本文研究得到国家自然科学基金资助。
+作者简介：杨学兵　在职硕士研究生。
+　　为了便于对上网用户的管理，我们利用NT设置一个用户组，属于这个组的成员都允许它们上Internet，企业网的系统管理员只要对该组的成员进行增加、删除、更改。
+刘胜军　在职硕士研究生。研究方向：人工智能、知识发现。
+蔡庆生　教授，博士研究生导师。研究方向：人工智能、知识发现。
+作者单位：中国科学技术大学计算机科学系　安徽.合肥（230027）
+参考文献
+［1］　史忠植.高级人工智能.北京：科学出版社，1997,12
+［2］　R.Agrawal,R.Srikant. Mining Sequential Patterns.11th,Int′l Conf. on Data Engineering(DE-95),Taipei, Taiwan, March 1995
+［3］　R.Srikant,R.Agrawal. Mining Sequential Patterns. Generalizations and Performance Improvements. EDBT-96,Avignon,France,March 1996
+［4］　欧阳为民，蔡庆生.在数据库中自动发现广义序贯模式.软件学报，1997;8（11）：864-870
+［5］　C.Hidber. Online Association Rule Mining. Technical Report, UCB/GSD-98-1004,Department of Electrical Engineering and Computer Science, University of California at Berkeley
+收稿日期:1999-03-18

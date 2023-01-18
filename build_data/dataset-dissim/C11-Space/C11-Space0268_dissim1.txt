@@ -1,0 +1,73 @@
+航空工程与维修
+A VIATION ENGINEERING & MAINTENANCE
+1999年 第3期 No.3　1999
+
+
+
+精锻叶片批生产技术
+王乐安　唐祥松　刘强　陈英杰
+Mass Production Technology of Precision Forging Blades
+　　采用螺旋压力机挤压和平锻机镦粗制坯及机械压力机恒载荷精锻工艺锻造叶片，所生产的TC11钛合金叶片精锻件可比常规模锻件节约原材料42％，并大幅度减少了后续加工工时。
+　　一台航空发动机有数千件叶片，其中钛合金叶片占一半以上。目前国外已普遍采用钛合金叶片精锻件，而我国则主要采用钛合金叶片普通模锻件，已不适应航空工业的发展。80年代初，北京航空材料研究院(BIAM)研究成功机械压力机恒载荷精锻(叶片)技术。本文介绍的是在该成果基础上，针对TC11钛合金叶片进行的精锻叶片批生产工艺的技术研究。
+　　经过100次Monte-Carlo仿真，得到了自适应两步滤波器(ATSF)对相对距离、相对速度及目标加速度的估计误差，分别见图1～图3。美、日、俄等国主要采用第一种工艺方法，而欧洲各国则采用第二种工艺方法。我国基本上沿用原苏联50年代的细长毛坯锻机镦粗和机械压力机模锻工艺。精锻叶片的典型工艺及其特点见表1。
+　　最后，推导出新状态yk的一步预报值及预报误差协方差阵的计算公式：
+由
+　　　　　　　　　　　　　　　　　　　　　　　　　(18)
+可近似求得
+　　　　　　　　　　　　　　　　　　　　　　　　(19)
+定义协方差矩阵
+　　　　　　　　　　　　　　　　　　　(20)
+近似认为,，而且利用定义和，可以求得
+
+(21)
+(19)式和(21)式完成了第一步滤波的时间修正功能。方法2多采用专用曲柄压力机制坯，制坯精度高，但生产率较低；精锻采用装备有能量预选装置的电动或液压螺旋压力机，这种设备生产率低，但比同等能力机械压力机的设备投资低。
+　　主题词　两步滤波器　自适应滤波器　导弹被动制导
+ADAPTIVE TWO-STEP FILTER 
+WITH APPLICATIONS TO MISSILE 
+GUIDANCE WITH PASSIVE MEASUREMENTS
+Zhou Di Mu Chundi
+(Department of Automation,Tsinghua University.Beijing.100084)
+Hu Hengzhang
+(Department of Control Engineeringm,Harbin Institute of Technology.Harbin.150001)
+　　Abstract　The two-step filter suits a class of nonlinear systems which include a linear dynamic model and a nonlinear measurement model.This filter consists of a Kalman filter and a Gauss-Newton iterative algorithm.We integrate the two-step filter with a time-varying measurement noise statistical estimator to obtain an adaptive two-step filter,which still performs well in the case where the statistical properties of the measurement noise are unknown apriori.The adaptive two-step filter is applied to missile guidance with passive measurements and the numerical results show that this filter is really effective.
+　　Key words　Two-step filter Adaptive filter Missile guidance with passive measurements
+　　1　引言
+　　非线性系统的状态估计是一个很重要的研究课题。其工艺流程如下：
+　　车棒料→超声探伤→切断→喷砂→除油→涂玻璃→加热→挤压→喷砂→腐蚀→外观和尺寸检查→喷砂→腐蚀→外观和尺寸检查→磨削杆部→喷砂→除油→涂玻璃→加热→预锻→喷砂→外观和尺寸检查→打磨缺陷→除油→涂玻璃→加热→终锻→切边→喷砂→外观和尺寸检查→打磨缺陷→除油→涂玻璃→加热→校正→喷砂→外观和尺寸检查→打磨缺陷→化学腐蚀→外观和尺寸检查→光饰→热处理→检验
+　　采用此工艺方案短粗毛坯挤压制坯精确、可节省材料，并且机械压力机精锻生产率高；同时，还充分利用了本国现有设备和传统使用机械压力机的技术特长及经验。忽略f的二阶导数和高阶导数可以保证Lk,i的正定性，即
+　　　　　　　　　　　　　　　　　　(13)
+应用(13)式，(12)式成为
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　(14)
+其中。
+　　主题词　两步滤波器　自适应滤波器　导弹被动制导
+ADAPTIVE TWO-STEP FILTER 
+WITH APPLICATIONS TO MISSILE 
+GUIDANCE WITH PASSIVE MEASUREMENTS
+Zhou Di Mu Chundi
+(Department of Automation,Tsinghua University.Beijing.100084)
+Hu Hengzhang
+(Department of Control Engineeringm,Harbin Institute of Technology.Harbin.150001)
+　　Abstract　The two-step filter suits a class of nonlinear systems which include a linear dynamic model and a nonlinear measurement model.This filter consists of a Kalman filter and a Gauss-Newton iterative algorithm.We integrate the two-step filter with a time-varying measurement noise statistical estimator to obtain an adaptive two-step filter,which still performs well in the case where the statistical properties of the measurement noise are unknown apriori.The adaptive two-step filter is applied to missile guidance with passive measurements and the numerical results show that this filter is really effective.
+　　Key words　Two-step filter Adaptive filter Missile guidance with passive measurements
+　　1　引言
+　　非线性系统的状态估计是一个很重要的研究课题。挤压工序采取厚膜润滑方式，其他工序采取薄膜润滑方式。
+2.试验结果
+　　某压气机2～9级TC11钛合金叶片(每级投料455～662件，共4665件)，以3.7～4.2的挤压比挤压，所有挤压件表面玻璃膜覆盖完整、光洁、无缺陷，尺寸和形状符合技术要求。挤压件杆部的500℃高温拉伸和持久性能均符合HB5286－84TC11钛合金叶片锻件技术条件规定。
+　　依此工艺方法生产的叶片精锻比常规工艺生产的锻件节约钛合金棒材约42％，并取消了后续的电解加工工序，经济效益十分显著。按此工艺生产的某发动机钛合金叶片的主要锻压工序见图。
+机械压力机恒载荷精锻工艺预研成果向生产转化分析
+　　社会无需求的技术，难于向生产转化。因此，社会需求是科研成果向生产转化的必要条件。而且，仅是单项技术先进，如果技术不成熟或无相应配套技术支持也难于转化。当时，迭代过程结束。
+　　根据目前实际国情，在不影响科技成果主要技术性能的条件下，按照工厂现有设备和技术条件，因陋就简，在短期内使工厂获得效益，再逐步完善条件的方式，容易被工厂接受。本项目的推广应用就是充分利用工厂设备(老式机械压力机、平锻机和螺旋压力机)和现有技术(FR2玻璃润滑剂)条件下、通过对工艺装备改进和对挤压制坯工艺二次开发实现的。
+　　公式(6)中的rk和Rk是无法验前已知的时变向量和时变矩阵。在批量生产条件下，会出现实验室没有或不可能出现问题。这些问题，往往十分复杂、难度很大，需要技术攻关。
+　　最后，推导出新状态yk的一步预报值及预报误差协方差阵的计算公式：
+由
+　　　　　　　　　　　　　　　　　　　　　　　　　(18)
+可近似求得
+　　　　　　　　　　　　　　　　　　　　　　　　(19)
+定义协方差矩阵
+　　　　　　　　　　　　　　　　　　　(20)
+近似认为,，而且利用定义和，可以求得
+
+(21)
+(19)式和(21)式完成了第一步滤波的时间修正功能。由于螺旋压力机的工作速度比曲柄压力机和液压机的工作速度大一个数量级以上。在许多实际情况下，测量噪声统计特性是时变的，无法验前已知，这时应用噪声统计估值器可以在线地确定测量噪声的均值和方差。本实验研究采取减小挤压比、降低加热温度和厚膜润滑技术等措施，圆满解决了这个问题。一类特定的非线性系统指的是由一个线性的动态模型和一个非线性的测量模型所构成的系统。科研成果向生产转化涉及面广、问题复杂、难度大，为加速其向生产转化，改变我国科研成果转化率低的局面，建议制定科研成果向生产转化政策和奖励办法
+作者单位：王乐安 北京航空材料研究院
+　　　　　唐祥松　刘强　陈英杰　新艺机械厂

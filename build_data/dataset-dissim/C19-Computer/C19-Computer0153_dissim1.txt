@@ -1,0 +1,88 @@
+微型电脑应用
+MICROCOMPUTER APPLICATIONS
+2000　Vol.16　No.1　P.54
+
+
+
+一种高校团组织信息管理系统的开发
+张春生
+摘　要：本文利用VFP5.0可视化编程工具开发了适合于普通高校的团组织信息管理系统，该系统功能强，涉及面广，使用方便，界面精美，已投入运行，且运行较好。通过对此基本定时信号的调度以获得诸如对外部多通道的模拟量进行采集、控制算法处理、控制结果输出以及实时屏幕刷新等多任务的定进信号［4］。
+二、设计思路
+　　由于Windows98的优良性能，特别是与internet的结合，我们采用它作为开发运行平台，以便本系统进入校园网和教育网，开发工具采用VFP5.0，该系统具有面向对象、可视化的编程思想，丰富的控件，可以缩短软件周期，程序用户界面友好，使用简单，维护方便。
+三、功能介绍
+　　本软件为了使结构清晰，功能独立性强，模块化分比较详细，具体来说有以下平行的9大模块，现分别介绍如下：
+　　1.院团委数据录入
+　　该模块主要完成院团委有关的信息录入修改等工作，具体内容为：院团组织分工，院团校信息，文件目录，奖项，人才库，院学生会，院社会实践团体，志愿者服务队。
+　　2.系团委数据录入
+　　该模块完成各系团组织数据录入，修改等，包括：系团总支机构，各系各班团支部信息，系学生会，系级社团，系志愿者服务队，系团总支获奖情况。"MB-OK);//与VxD通讯失败
+然后在自定义消息处理函数中加入自己的实时处理代码。"MB-OK);//与VxD通讯失败
+然后在自定义消息处理函数中加入自己的实时处理代码。
+　　例如：组成分工查询，院团校查询，文件目录查询，获奖情况查询，人才库查询，院学生会查询，社会实践团体查询，志愿者服务队查询等。VMM和VxDs共同构成了Windows Ring 0层的系统内核。
+　　例如：系团总支查询，团支部查询，系学生会查询，志愿者服务队查询，获奖情况查询等。
+　　6.团员青年基本信息查询
+　　可按各种复杂条件查询团员青年个人及小团体的各种数据。时钟控制在实时控制中处于十分重要的地位，它负责推进控制过程、激活各控制任务或发关控制消息，起到了总控制器的作用。
+//通过VPICD-Virtualize-IRQ服务将已定义结构传入VPICD，VPICD分配IRQ并返回其句柄
+RTCIRQHandle=VPICD-Virtualize-IRQ(&IRQdesc);
+if(RTCIRQHandle==0)returnFALSE;//虚拟化失败
+//保存初始RTC状态寄存器以便退出时恢复现场
+SavedStatusRegisterA=ReadCMOS(STATREG-A);
+SavedStatusRegisterB=ReadCMOS(STATREG-B);
+RTClockFreqIndex=6;设置中断频率，见下文说明；
+statreg=(SavedStatusRegisterA & ～0xF)｜(RTClockFreqIndex & 0xF);
+WriteCMOS(STATREG-A,statreg);
+//设置RTC状态寄存器使得status register flags to enable it to assert its IRQ
+statreg=ReadCMOS(STATREG-B);
+statreg｜=ENABLE-INTERRUPT;
+WriteCMOS(STATREG-B,statreg);
+ReadCMOS(STATREG-C);
+TickCounter=0;//初始化中断计数器
+//保证IRQ在PIC中未被屏蔽
+VPICD-Physically-Unmask(RTCIRQHandle);
+return TRUE;
+｝
+BOOL IrqtestDevice:OnSysDynamicDeviceFxit()｛
+//恢复现场；
+Cancel-Global-Event(hEvent);
+WriteCMOS(STATREG-A,SavedStatusRegister A);
+WriteCMOS(STATREG-B,SavedStatusRegister B);
+VPICD-Physically-Mask(RTCIRQHandle);
+VPICD-Force-Default-Behavior(RTCIRQHandle);
+return TRUE;
+｝
+DWORD IrqtestDevice::OnW32DeviceIoControl
+(PIOCTLPARAMS pDIOCParams)
+｛
+switch(pDIOCParams->dioc-IOCtICode)｛
+case DIOC-OPEN;//CreateFile
+｛hWnd =0;//Ring 3层应用程序主窗口句柄初始化
+return 0;｝
+case W32IF-PASS-EVENT:
+PostMsghWnd=(DWORD*)pDIOCParams->dioc-InBuf;
+hWnd=(HANDLE)*PostMsghWnd;//获得主窗口句柄
+return 0;
+default:return-1;｝
+return 0;｝
+BOOL -stdcall RTCInt-Handler(VMHANDLE hVM,IRQHANDLE hIRQ)｛
+//在中断服务例程中，对中断计数器计数并向Ring 3层应用程序发送自定义消息；
+if(hWnd&&(TickCounter%100==0))｛
+SHELL-PostMessage(hWnd,WM-My-MESSAGE,0,0,NULL,NULL);｝
+TickCounter++；
+ReadCMOS(STATREG-C);//清除RTC状态标志
+VPICD-Phys-EOI(hIRQ);//指定VPICD清除此中断
+return TRUE;//thunk将清除进位
+｝
+//篇幅所限，针对COMS端口操作的两个函数ReadCMOS(BYTE reg)和WriteCMOS(BYTE reg,BYTE value)的源程序略，请参考VtoolsD连机帮助中的CHIME例子。时钟控制在实时控制中处于十分重要的地位，它负责推进控制过程、激活各控制任务或发关控制消息，起到了总控制器的作用。
+　　9.报表功能
+　　完成以上各模块中所需提供的各种报表。本文将讨论在Windows 9X下实现实时控制的关键技术一一实时时钟中断驱动程序的设计及实现。
+　　.在中断频率较高的数据采集系统中。
+　　3.功能强大
+　　由于该软件制作过程一直与团委人员合作，故该软件完全适合于实际应用，涉及团组织工作的方方面面，非常全面，查询功能强，采用表单集、多条件、模糊查询；复选、单选、列表，微调等工具作为条件共存于表单，形成了复杂，操作简便的查询工具。
+五、结束语
+　　由于本软件采用windows98系统平台，网络环境设计，所以非常适合于校园网中运行，同时该软件涉及面广，实用价值强，再加上强大的查询功能，友好的人机界面，具备一定的推广价值。■
+作者单位：张春生(内蒙古民族师院数学系 通辽 028043)
+参考文献：
+［1］Michael Antonovich著《Visual FoxPro5开发使用手册》机械工业出版社　1997
+［2］瓮正科著《FoxPro2.5实用教程》清华大学出版社　1995
+［3］Griffith Kadnier著《Windows NT 4使用详解》机械工业出版社　1998
+［4］巴亚东　继续教育管理信息系统的设计　《微型电脑应用》　1998年第6期
+收稿日期：1999-09-06

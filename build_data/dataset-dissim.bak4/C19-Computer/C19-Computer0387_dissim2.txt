@@ -1,0 +1,97 @@
+信息与控制
+INFORMATION AND CONTROL
+1999年 第28卷 第3期 Vol.28 No.3 1999
+
+
+
+基于信息化的并行设计研究*
+唐敦兵　李东波　张世琪
+　　摘要：提出了在并行设计中信息进化的观点，以信息进化矩阵为基础，导出了设计过程中的各活动信息调整量模型，研究了并行设计过程中耦合活动集从迭代到收敛的规律，为并行设计的规划和控制提供了理论依据。
+　　关键词：并行设计，信息进化，耦合
+　　中图分类号：TP14　　　　　　文献标识码：B
+A RESEARCH ON CONCURRENT DESIGN BASED ON
+INFORMATION EVOLUTION
+TANG Dunbing　LI Dongbo　ZHANG Shiqi
+(School of Manufacturing Engineering , Nanjing University of Science & Technology, Nanjing 210094)
+　　Abstract　The view of information evolution in concurrent design process is put forward in this paper. Based on the information evolution matrix, the information evolution model in concurrent design process is established. And the convergence law of coupled activities in concurrent design process is presented by analyzing the information evolution matrix, which can give theory guidance to control and plan the concurrent design
+　　Key words　concurrent design, information evolution, coupling
+　　1　引言
+　　产品设计从根本上决定着产品的内在质量和生产成本，研究者们一直没有停止对新的、有效的设计理论和方法学的探索。目前，并行设计方法的研究与实施正受到学术界和企业界的广泛重视，它的指导哲学是在设计阶段尽可能地同时考虑产品生命周期中的众多因素，尽早地发现设计中可能出现的问题并加以解决，实际上是希望以设计初始阶段局部过程的反复与迭代来克服传统设计中全局的较大的反复与迭代。然而，对设计过程的这种组织方法，必然会增加设计过程管理的复杂性与综合性。因此，有必要从本质上揭示并行设计的内在规律，确定有效的控制和管理方法，否则，如果因为局部过程的反复与迭代周期过长，则会造成整个设计周期的加长，甚至导致设计过程的发散。M称为量化感知器，c称为感知野。但在并行设计中，设计活动是并行进行的（并不等于同时进行），大部分时间里获得的都是并不完整的设计信息。从生命系统理论的观点来看，随着并行设计中耦合活动迭代过程的逐渐收敛，设计信息是通过不断地调整，逐渐由不完整状态进化到完整状态的[5,6]。为了更为深入地研究并行设计的活动规律，特别是并行设计中耦合迭代的收敛规律，作者提出了并行设计中信息进化的观点，并以信息进化矩阵为基础，导出了设计过程中的各活动信息调整量模型，研究了并行设计过程中耦合活动集从迭代到收敛的规律，为并行设计的规划和控制提供了理论依据。
+　　2　有关信息进化的基本概念
+　　2.1　信息量大小的度量
+　　为了能度量活动间信息的流量，将活动间的信息交互看作是以信息发送和接受的形式进行的。并行设计中的每个活动的进行实际上可看作是一系列的决策过程，这种决策可能需要其它活动的信息才能作出，信息量的大小反映在这种信息帮助决策的贡献大小上。非线性软测量可以采用统计回归法建模，也可采用基于严格机理的方法建模，而模糊模式识别法也是一类方法。这给过程的控制和监测带来很大困难。信息调整向量ΔIt是N×1维向量，N对应耦合集中活动的数目，ΔIt所含元素ΔIit表示在迭代过程的t阶段，i活动需要完成的信息调整量。信息调整向量ΔI0表示过程开始时耦合集中活动的初始信息调整量，ΔIt+1表示下一次迭代各活动的信息调整量。特别是基于广义基函数的CMAC，它本身就是一种模糊逻辑系统。
+　　2.4 信息进化矩阵
+　　信息进化矩阵C是一个M×M阶方阵，M表示耦合集中活动的数目。清华大学学报，1996，36(5):17～23
+　52　Chen Fu-Chuang, Hassan K Khilil. Adaptive Control of a Class of Nonlinear Discrete Time Systemss using Neural Networks. IEEE Trans. Automatic Control, 1995, 40(5):791～801
+　53　Hu Y, Fellman, Ronald D. Implementation Effient Learning Algorithm for Adaptive Control using Associative Content Addressable Memory. IEEE Tran. Syst. Man and Cybern, 1995,25(4):704～09
+　54　Ahmed M S, M Farooq. Neural-net-based Direct Self-tuning Control of Nonlinear Plants. INT. J. CONTROL, 1997,66(1): 85-104.Computers chem. Engng., 1992, 16(12):1039～1057
+　55　Nahas E P et al. Nonlinear Internal Model Control Strategy for Neural Network Models. Computers Chem. Engng., 1992, 16(12):1039～1057
+　56　Lin, Chun Shin Kim, Hyongsuk Selection of Learning Parameters for CMAC-based Adaptive Critic Learning. IEEE Transactions on Neural Networks. 1995, 6:642～7
+　57　Tan Y, Cauwenberghe A V. Nonlinear One-step-ahead Control using Neural Networks: Control Strategy and Stability Design. Automatica, 1996, 32(12):1701～1706
+　58　Lee S W, Kim J H. Control of Systems with Deadzones using Neural Network Based Learning Controller. Proceedings of IEEE Conference on Neural Networks, 1994,2535～38
+　59　Commuri S, Lewis F L. CMAC Networks for Control of Nonlinear Dynamical System: Structure, Stability and Passivity. Automatica,1997,33(4):635～41
+　60　P E An et al. Associative Memory Neural Networks: Adaptive Modelling Theory, Software Implementations and Graphical user Interface. Engng Applic. Artif. Intell. 1994,7(1):1～21
+　61　James K. & Peterson. Software Design for Neuralcontrol Code. Journal of Intelligent Material Systems and Structures. 1994, 5: 172～185
+　62　Farrell J A. Persistence of Excitation Conditions in Passive Learning Control. Automatica, 1997,33(4):699～703
+　63　Chen Fu-chuang, Chang Chih Horng. Practical Stability Issues in CMAC Neural Network Control Systems. IEEE Trans. On Control Systems Technology. 1996,4(1): 86～91
+1998-04-22收稿
+。由信息进化的假设，它的元素即信息进化系数在迭代过程中保持常量。
+　　信息调整总量为
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(4)
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(5)
+　　信息调整总量ΔI表示了由于耦合迭代引起的整个设计过程任务量的增加，因而信息调整总量标识了迭代过程的收敛性。
+　　另外，信息进化矩阵主要是依据耦合设计活动间联系的强弱来建立的。除此以外，对于线性系统，传递函数矩阵提供了定常系数的黑箱式输入输出。为了避免学习冲突，David 和Kwon给出了一种领域顺序(Neighbor Sequential)法［21］，在整个学习期间，每个记忆单元对应的权系数只调整一次。
+　　从信息发送的角度看，每个活动ak可能向M个活动发送信息，信息量分别为：
+
+其中Ikk=0。平均值为
+　　　　　　　　　　　　　　　　　　　　　　　　　　　(6)
+标准差为
+　　　　　　　　　　　　　　　　　　　　　(7)
+标准化值为
+　　　　　　　　　　　　　　　　　　　(8)
+　　根据欧氏距离法，通过定义活动间的距离来确定ai与aj相互依赖的程度（即确定各信息进化系数cij）：
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(9)
+　　3　基于信息进化矩阵的并行设计收敛性分析
+　　3.1　信息进化矩阵的分析
+　　本文对信息进化矩阵的分析是通过对角化来实现的[1,2,7]。由矩阵论[8]的有关知识可知，对于方阵C，存在特征结构矩阵Λ和相对应的特征向量矩阵S，并有如下关系
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(10)
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(11)
+将（11）式代入（5）式得
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(12)
+　　通过信息进化矩阵的对角化，建立了迭代过程中信息调整总量与信息进化矩阵特征值及其特征向量之间的关系。信息调整总量所代表的耦合迭代过程的收敛性，可以通过C的特征结构矩阵的收敛性表示。由向量与矩阵收敛理论有
+　　　　　　　　　　　　　　　　　　　(13)
+　　若Max(λ1,…,λi,…,λn)＜1, 其中λi为C的特征值，则有[8]
+(E为单位矩阵)　　　　　　　　　　　　　　　　　　　　　　　　　(14)
+　　由（13）、（14）式可知，耦合迭代过程只有当信息进化矩阵的所有特征值均小于1时才会收敛；否则，若有λmax＞1，则说明在耦合迭代过程中会因为信息调整总量的不断递增而造成迭代过程的不收敛。
+　　3.2　对信息进化矩阵特征值的具体分析
+　　信息进化矩阵的特征值反映并决定了并行设计中耦合迭代过程的收敛特性。2) CMAC函数逼近器对学习数据出现的次序不敏感。
+　　信息进化矩阵的特征值对应了耦合活动间相互作用的一种作用方式，特征值的大小定性反映了信息调整总量收敛的趋势［7］，也反映了信息进化的速度快慢。
+　　(1) 实特征值对信息进化的影响
+　　当λ=a∈[-1，1]时，负的特征值对信息进化有较小的影响，正的特征值对信息进化具有重要的影响，a值越大，则1/(1-a)的值越大，表示迭代过程收敛越慢，则信息进化速度也越慢，并行设计中的信息处于不完整状态的时间越长。
+　　(2) 复特征值对信息进化的影响
+　　若λ=a+bi，a,b∈R
+　　　　　　　　　　　　　　　　　　　　　　　　(18)
+　　若b≠0, 且a2+b2＜1，有
+　　　　　　　　　　　　　　　　　　　　　　　　　　　(19)
+　　又
+　　　　　　　　　　　　　　　　　　(20)
+通过（18）、（19）、（20）式的变化，复特征值对信息调整量的影响，可转化为对其实部的作用，复特征值实部的增大将使迭代过程收敛减慢，也使信息进化速度减慢。由（一）、（二）两点可知，信息进化矩阵特征值中的实数部分定性地描述了信息调整量的影响（见图1），实数部分增大，信息调整量增大，则迭代过程收敛减慢，其中最大特征值的作用尤为显著。
+　　快速的信息进化表明在迭代过程的早期各耦合活动就能得到较为完整的信息，因而可以根据其它活动较为正确的结果进行调整，使得迭代过程能在较短的时间内收敛。慢速的信息进化与此相反。图2以信息进化度ε(t)描述了信息的进化状态，以及信息进化速度快慢的区别。
+
+
+图1　特征值对迭代收敛性的影响
+
+图2　信息进化示意图
+　　另外，与特征值相对应的特征向量则定量地描述了耦合活动间相互作用的程度，即各耦合活动在收敛迭代过程中对信息进化的一种影响率。特征向量的元素表现了耦合活动对信息调整总量的影响程度，不同的元素值则表明了各活动对信息进化的影响程度的差异。
+　　4　结束语
+　　本文提出了并行设计中信息进化的观点，以信息进化矩阵为基础，推导出了信息调整量模型，进一步揭示了并行设计过程收敛的规律，为并行设计的控制、规划以及并行设计的正确实施提供了理论指导。
+*国防科技预研跨行业基金项目,98J18.1.4BQ026
+作者简介：唐敦兵，27岁，男，博士生。研究领域为CIMS、并行工程等先进制造系统和CAD/CAPP集成技术研究。
+作者单位：南京理工大学制造工程学院　南京　210094
+参考文献
+　1　董　明，查建中，郭　伟。此外，还有一些特殊的控制方案解决某类非线性系统的控制问题，如仿射非线性系统，带死区的非线性系统［58］，Brunowskii非线性系统［59］等。基于效率的并行设计研究，华中理工大学学报，1997，25，(12):50～62
+　3　崔南方，陈荣秋，马士华。企业业务流程的结构建模。
+　　2　CMAC神经网络的优越性
+　　神经计算和神经控制主要应用神经网络的函数逼近能力，若从这个角度看，神经网络可分为全局逼近神经网络和局部逼近神经网络。并行设计实施理论与方法的研究. 天津大学博士学位论文，1994
+　8　黄有度，狄成恩，朱士欣。矩阵论及其应用，合肥：中国科学技术大学出版社，1995
+1998-06-23收稿

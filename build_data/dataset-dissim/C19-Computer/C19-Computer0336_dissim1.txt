@@ -1,0 +1,130 @@
+计算机应用
+Computer Applications
+1999年 第19卷　第8期 Vol.19　No.8 1999
+
+
+
+VB实现所见即所得的报表打印一例
+高欣婷　潘书军
+　　摘　要　通过对利用VB实现报表打印的几种方法的概要分析，本文提供了一种VB环境下完全意义上的所见即所得打印功能的实现方法。
+　　关键词　Visual Basic,报表打印
+　　Visual Basic是一个可视性极强的面向事件及对象的编程工具，因其简单高效，易学易用而具有极其广泛的用户基础。例如，单个用户的表和总表
+
+姓名：日期：计算机名：
+开始时间：结束时间：上机时间：
+数据流量：单价：总费用：
+
+
+
+日期： xxxx.xx.xx到 xxxx.xx.xx　
+计算机名数据量金额（元）
+计算机1xxxxxxxxxx
+…　　
+计算机nxxxxxxxxxx
+总　计xxxxxxxxxxxxxx 
+
+　　除了上面安装的软件外，这台计算机还要在安装Microsoft Internet Information server 2.0 和TCP/IP。
+　　由于VB中的窗体及图像框皆可做为其他对象的容器，并且可将自身直接输出至打印机，所以一方面我们可以在窗体上加上一个图像框，利用图像框的Print 、Circle等方法，在图像框上实现用户报表的输出，然后再利用图像框的Paintpicture方法实现报表的打印；另一方面，我们可以将一个窗体设置为无边框无控制象标的样式，然后再利用其Print、Circle等方法在其上输出文字和简单的几何图形，亦可放上Label、Image等控件，引入文字或图像，还可利用VB的网格控件实现用户要求的报表，然后利用窗体的Printform方法实现所编辑报表至打印机的输出。
+　　但是由于图像框的显示及窗体的打印仅仅局限于屏幕显示范围内的内容，不能实现真正意义上的所见及所得的功能。因此，对企业来讲，代理计费方式经济实用，管理和使用都方便。例如，单个用户的表和总表
+
+姓名：日期：计算机名：
+开始时间：结束时间：上机时间：
+数据流量：单价：总费用：
+
+
+
+日期： xxxx.xx.xx到 xxxx.xx.xx　
+计算机名数据量金额（元）
+计算机1xxxxxxxxxx
+…　　
+计算机nxxxxxxxxxx
+总　计xxxxxxxxxxxxxx 
+
+　　除了上面安装的软件外，这台计算机还要在安装Microsoft Internet Information server 2.0 和TCP/IP。
+1　方法概述
+　　为了在屏幕上模拟打印效果，我们仍然利用VB的一个窗体模拟打印纸。
+作者单位:张　庄　福建省经济信息中心　福建*福州（350003）
+收稿日期:1999-02-10
+。将被打印窗体设为子窗体，其大小设为打印纸大小，这样即可利用父窗体的水平和垂直滚动条实现待打印对象的100%的预览。
+作者单位:张　庄　福建省经济信息中心　福建*福州（350003）
+收稿日期:1999-02-10
+。
+2　程序实现
+　　下面以实现以下报表为例，讲述程序的具体编制。
+　　关键词　网络结构，网络连接
+1　引言
+　　随着Internet的普及，越来越多的单位或企业纷纷将自己的企业网与Internet网连接，这样就给企业网络管理带来了许多问题：安全问题，配置管理，计费管理等。
+
+对　象NameCaption
+Mdiform1mdifrm报表打印
+Form1frmprint　
+Grddispgrddisp　
+Label1lblheading雇员情况一览表
+Label2lbldata　
+Label3lblsigne制表人：
+
+　　此外，将frmprint的Borderstyle设为None、Controlbox 设为False、caption设为空、 Mdichild设为True；将mdifrm的Windowstate设为Maximized。附源程序如下：
+Private Sub MDIForm―Load()
+frmprint.Show
+End Sub
+
+Private Sub Form―DblClick()
+frmprint.PrintForm
+Unload frmprint
+End Sub
+
+Private Sub Form―Load()
+
+Rem变量high、leftsize、jiange用以定位
+Dim high, leftsize, jiange,i As Integer,j As Integer
+Dim grdhigh As Integer, grdwide As Integer
+′分别表示网格的高、宽
+jiange = 100：high = 0： grdhigh = 0： grdwide = 0
+
+Rem 确定网格的大小
+Grddisp.Cols = 6： Grddisp.Rows = 7
+
+Rem设置窗体大小为打印纸宽度
+frmprint.Width = Printer.Width：
+frmprint.Height = Printer.Height
+frmprint.Left = 0：frmprint.Top = 0
+
+lblheading.FontSize = 16： lblheading.FontBold = -1
+lblheading.Top = 500
+lblheading.Left = (frmprint.ScaleWidth
+- TextWidth(lblheading.Caption))/2
+high = lblheading.Top + TextHeight(lblheading.Caption)
+
+lbldata.Top = high + jiange
+lbldata.Caption = Format(Now, "yyyy.mm.dd")
+high = lbldata.Top + TextHeight(lbldata.Caption)
+
+…
+′在此进行行高、列宽以及对齐方式等项的设置
+For i = 0 To Grddisp.Cols - 1
+grdwide = grdwide + Grddisp.ColWidth(i)
++ Screen.TwipsPerPixelX
+Next i
+For i = 0 To Grddisp.Rows - 1
+grdhigh = grdhigh + Grddisp.RowHeight(i)
++ Screen.TwipsPerPixelY
+Next i
+grdwide = grdwide + Screen.TwipsPerPixelX
+grdhigh = grdhigh + Screen.TwipsPerPixelY
+Grddisp.Width = grdwide：Grddisp.Height = grdhigh
+Grddisp.Top = high + jiange * 3
+Grddisp.Left=(frmprint.ScaleWidth-Grddisp.Width)/2
+lbldata.Left=frmprint.ScaleWidth/2+Grddisp.Width/2
+-TextWidth(lbldata.Caption) - 450
+high = high + Grddisp.Height + jiange
+
+…
+′在此进行字体、字号设置及网格内容的填充
+lblsign.top=high+jiange
+lblsign.Left = frmprint.ScaleWidth / 2 + Grddisp.Width / 2 - TextWidth(lblsign.Caption) - 450
+
+End Sub
+　　本文程序在简体中文Windows 3.2、Windows 9x下调试通过。所用VB版本为：Visual Basic 4.0-32专业版。
+　　本文介绍了一种与路由器无关的基于代理服务的计费思想，并已在一些单位正式运行，取得了很好效果。从事数字存储示波器等的计量检定工作。
+　　一个单位或企业的网络要想与Internet连接，可以采用两种连接方式，第一种方式，根据自己企业网中计算机数向ISP商申请IP，然后给每一台计算机都配置相应的IP，这样这个企业网中的计算机都可以上Internet，这种企业网络结构如图1所示。
+　　解决以上问题最有效的措施是采用计费机制约束入网用户，谁能上网谁不能上网，对每位上网用户详细纪录他们的使用情况，因此用户只有需要时才上Internet，这样才能达到企业网与Internet网连接的真正目的
