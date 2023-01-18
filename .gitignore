@@ -111,6 +111,12 @@ docs/_build/
 
 # My configurations:
 .history/
+<<<<<<< HEAD
 data/
 # chinese_simbert_L-6_H-384_A-12/
 # chinese_simbert_L-12_H-768_A-12/
+=======
+# data/
+# chinese_simbert_L-6_H-384_A-12/
+# chinese_simbert_L-12_H-768_A-12/
+>>>>>>> 51c86b41a8d53c862b291fba169b244d3bd2618a
